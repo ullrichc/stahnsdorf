@@ -1,3 +1,4 @@
+import 'leaflet/dist/leaflet.css'
 import '@/styles/globals.css'
 import { Metadata, Viewport } from 'next'
 import BottomNav from '@/components/BottomNav'
