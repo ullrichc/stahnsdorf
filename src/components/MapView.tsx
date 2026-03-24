@@ -1,6 +1,7 @@
 'use client'
 import { useState, useRef, useCallback } from 'react'
-import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet'
+import { TileLayer, Marker, useMap } from 'react-leaflet'
+import ClientMap from './ClientMap'
 import L from 'leaflet'
 import { getAllPOIs } from '@/lib/content'
 import { POI } from '@/lib/types'
@@ -44,7 +45,7 @@ export default function MapView() {
 
   return (
     <div className={styles.container}>
-      <MapContainer
+      <ClientMap
         center={CENTER}
         zoom={ZOOM}
         className={styles.map}
@@ -65,7 +66,7 @@ export default function MapView() {
           />
         ))}
         <LocateButton />
-      </MapContainer>
+      </ClientMap>
       <POICard poi={selectedPOI} onClose={() => setSelectedPOI(null)} />
     </div>
   )

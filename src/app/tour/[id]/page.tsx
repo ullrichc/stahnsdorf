@@ -1,8 +1,6 @@
-import dynamic from 'next/dynamic'
 import { getAllTours, getTourById } from '@/lib/content'
 import Link from 'next/link'
-
-const TourPlayer = dynamic(() => import('@/components/TourPlayer'), { ssr: false })
+import TourPlayerLoader from '@/components/TourPlayerLoader'
 
 export function generateStaticParams() {
   return getAllTours().map((tour) => ({ id: tour.id }))
@@ -20,5 +18,5 @@ export default function TourPage({ params }: { params: { id: string } }) {
     )
   }
 
-  return <TourPlayer tour={tour} />
+  return <TourPlayerLoader tour={tour} />
 }

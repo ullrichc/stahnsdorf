@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
+import { TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
+import ClientMap from './ClientMap'
 import L from 'leaflet'
 import Link from 'next/link'
 import { Tour } from '@/lib/types'
@@ -73,7 +74,7 @@ export default function TourPlayer({ tour }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.mapArea}>
-        <MapContainer
+        <ClientMap
           center={positions[0] || [52.3915, 13.2050]}
           zoom={16}
           className={styles.map}
@@ -105,7 +106,7 @@ export default function TourPlayer({ tour }: Props) {
             />
           )}
           <FitBounds positions={positions} />
-        </MapContainer>
+        </ClientMap>
       </div>
       <div className={styles.panel}>
         <div className={styles.progress}>
