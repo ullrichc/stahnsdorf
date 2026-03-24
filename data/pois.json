@@ -1,0 +1,68 @@
+[
+  {
+    "id": "heinrich-zille",
+    "type": "grave",
+    "name": { "de": "Heinrich Zille" },
+    "coordinates": [52.3912, 13.2054],
+    "summary": { "de": "Berliner Zeichner und Fotograf, bekannt für seine Milieustudien des Berliner Arbeiterlebens." },
+    "description": { "de": "Heinrich Zille (1858–1929) war ein deutscher Grafiker, Maler und Fotograf. Er wurde berühmt durch seine Darstellungen des Berliner Volkslebens in den Arbeitervierteln. Seine Werke zeigen mit liebevollem Humor das Leben der einfachen Leute in den Hinterhöfen und Kneipen Berlins. Zille war Mitglied der Berliner Secession und wurde im Volksmund 'Pinselheinrich' genannt." },
+    "dates": { "born": "1858-01-10", "died": "1929-08-09" },
+    "images": ["zille-01.jpg"],
+    "audio": { "de": "zille-de.mp3" },
+    "tags": ["artist", "famous"]
+  },
+  {
+    "id": "lovis-corinth",
+    "type": "grave",
+    "name": { "de": "Lovis Corinth" },
+    "coordinates": [52.3918, 13.2048],
+    "summary": { "de": "Bedeutender Maler des deutschen Impressionismus und Expressionismus." },
+    "description": { "de": "Lovis Corinth (1858–1925) zählt zu den wichtigsten Vertretern des deutschen Impressionismus. Er war ein äußerst produktiver Künstler, der Porträts, Landschaften, Stillleben und mythologische Szenen malte. Nach einem Schlaganfall 1911 entwickelte sich sein Stil zu einer expressiveren Malweise, die ihn zu einem Wegbereiter des Expressionismus machte." },
+    "dates": { "born": "1858-07-21", "died": "1925-07-17" },
+    "images": ["corinth-01.jpg"],
+    "audio": { "de": "corinth-de.mp3" },
+    "tags": ["artist", "famous"]
+  },
+  {
+    "id": "engelbert-humperdinck",
+    "type": "grave",
+    "name": { "de": "Engelbert Humperdinck" },
+    "coordinates": [52.3908, 13.2062],
+    "summary": { "de": "Komponist der berühmten Oper 'Hänsel und Gretel'." },
+    "description": { "de": "Engelbert Humperdinck (1854–1921) war ein deutscher Komponist der Spätromantik. Sein bekanntestes Werk ist die Märchenoper 'Hänsel und Gretel', die 1893 unter der Leitung von Richard Strauss uraufgeführt wurde. Humperdinck war ein enger Vertrauter Richard Wagners und half bei den Bayreuther Festspielen mit. Seine Grabstätte auf dem Südwestkirchhof ist ein beliebtes Ziel für Musikliebhaber." },
+    "dates": { "born": "1854-09-01", "died": "1921-09-27" },
+    "images": ["humperdinck-01.jpg"],
+    "audio": { "de": "humperdinck-de.mp3" },
+    "tags": ["composer", "famous"]
+  },
+  {
+    "id": "hauptkapelle",
+    "type": "building",
+    "name": { "de": "Hauptkapelle" },
+    "coordinates": [52.3915, 13.2040],
+    "summary": { "de": "Die im norwegischen Stabkirchenstil erbaute Hauptkapelle ist das Wahrzeichen des Friedhofs." },
+    "description": { "de": "Die Hauptkapelle des Südwestkirchhofs wurde 1911 nach Plänen des Architekten Gustav Werner im Stil einer norwegischen Stabkirche errichtet. Das beeindruckende Holzbauwerk mit seinem markanten Dachreiter ist das architektonische Herzstück der Anlage. Die Kapelle wird bis heute für Trauerfeiern genutzt und kann nach Anmeldung besichtigt werden." },
+    "images": ["kapelle-01.jpg"],
+    "tags": ["architecture", "landmark"]
+  },
+  {
+    "id": "friedhofseingang",
+    "type": "landmark",
+    "name": { "de": "Haupteingang" },
+    "coordinates": [52.3920, 13.2030],
+    "summary": { "de": "Der historische Haupteingang mit Verwaltungsgebäude und Informationstafel." },
+    "description": { "de": "Der Haupteingang des Südwestkirchhofs an der Bahnhofstraße ist der zentrale Zugangspunkt zur Anlage. Hier befinden sich das Verwaltungsgebäude, eine Übersichtstafel mit Lageplan sowie Informationsmaterial für Besucher. Der Eingangsbereich wurde zusammen mit der Friedhofsanlage 1909 gestaltet." },
+    "images": ["eingang-01.jpg"],
+    "tags": ["entrance"]
+  },
+  {
+    "id": "waldcharakter",
+    "type": "nature",
+    "name": { "de": "Waldcharakter" },
+    "coordinates": [52.3905, 13.2070],
+    "summary": { "de": "Der parkähnliche Waldcharakter macht den Südwestkirchhof zu einem einzigartigen Naturerlebnis." },
+    "description": { "de": "Der Südwestkirchhof Stahnsdorf ist mit über 206 Hektar einer der größten Waldfriedhöfe der Welt. Die Anlage zeichnet sich durch ihren einzigartigen Waldcharakter aus: Alte Kiefern, Eichen und Birken bilden ein natürliches Dach über den Grabstätten. Zahlreiche Vogelarten und andere Wildtiere haben hier ein Refugium gefunden. Ein Spaziergang durch den Friedhof gleicht einem Waldspaziergang." },
+    "images": ["wald-01.jpg"],
+    "tags": ["nature", "landscape"]
+  }
+]
