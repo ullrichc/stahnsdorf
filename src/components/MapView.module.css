@@ -30,8 +30,3 @@
 .locate:hover {
   background: var(--color-bg);
 }
-
-:global(.custom-marker) {
-  background: none !important;
-  border: none !important;
-}

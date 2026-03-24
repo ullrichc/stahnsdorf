@@ -82,9 +82,3 @@
 .detailLink:hover {
   text-decoration: underline;
 }
-
-:global(.tour-marker),
-:global(.user-marker) {
-  background: none !important;
-  border: none !important;
-}

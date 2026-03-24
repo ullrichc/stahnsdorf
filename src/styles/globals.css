@@ -24,3 +24,10 @@ html, body {
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
 }
+
+.custom-marker,
+.tour-marker,
+.user-marker {
+  background: none !important;
+  border: none !important;
+}
