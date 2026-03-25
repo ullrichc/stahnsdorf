@@ -2,6 +2,7 @@ import 'leaflet/dist/leaflet.css'
 import '@/styles/globals.css'
 import { Metadata, Viewport } from 'next'
 import BottomNav from '@/components/BottomNav'
+import { LocaleProvider } from '@/lib/LocaleContext'
 
 export const metadata: Metadata = {
   title: 'Südwestkirchhof Stahnsdorf',
@@ -19,8 +20,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de" suppressHydrationWarning>
       <body>
-        <main style={{ paddingBottom: 'var(--nav-height)' }}>{children}</main>
-        <BottomNav />
+        <LocaleProvider>
+          <main style={{ paddingBottom: 'var(--nav-height)' }}>{children}</main>
+          <BottomNav />
+        </LocaleProvider>
       </body>
     </html>
   )

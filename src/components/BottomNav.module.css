@@ -21,7 +21,7 @@
   color: var(--color-text-muted);
   font-size: 0.7rem;
   gap: 2px;
-  padding: 4px 16px;
+  padding: 4px 12px;
 }
 
 .tab.active {
@@ -34,4 +34,40 @@
 
 .label {
   font-weight: 500;
+}
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 4px 4px;
+}
+
+.langBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 3px 4px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.langBtn:hover {
+  color: var(--color-primary);
+}
+
+.langActive {
+  color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+
+.langSep {
+  color: var(--color-text-muted);
+  font-size: 0.6rem;
+  opacity: 0.5;
+  user-select: none;
 }

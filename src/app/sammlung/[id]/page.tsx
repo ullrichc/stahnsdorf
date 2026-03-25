@@ -1,9 +1,7 @@
 import { getCollectionById, getAllCollections } from '@/lib/content'
-import DynamicMapView from '@/components/DynamicMapView'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { t } from '@/lib/i18n'
-import styles from './page.module.css'
+import SammlungContent from './SammlungContent'
 
 export async function generateStaticParams() {
   return getAllCollections().map((collection) => ({
@@ -18,25 +16,11 @@ export default async function SammlungPage({ params }: { params: Promise<{ id: s
   if (!collection) {
     return (
       <div style={{ padding: '20px' }}>
-        <h2>Sammlung nicht gefunden</h2>
-        <Link href="/sammlungen">Zurück zur Übersicht</Link>
+        <h2>Collection not found</h2>
+        <Link href="/sammlungen">Back to collections</Link>
       </div>
     )
   }
 
-  return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <div className={styles.headerTop}>
-          <Link href="/sammlungen" className={styles.backButton}>
-            {'←'} Zurück
-          </Link>
-          <h1 className={styles.title}>{t(collection.name)}</h1>
-        </div>
-      </header>
-      <main className={styles.mapContainer}>
-        <DynamicMapView poiIds={collection.pois} />
-      </main>
-    </div>
-  )
+  return <SammlungContent collection={collection} />
 }

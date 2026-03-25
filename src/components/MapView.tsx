@@ -34,13 +34,13 @@ function LocateButton() {
   }, [map])
 
   return (
-    <button className={styles.locate} onClick={handleLocate} aria-label="Standort finden">
+    <button className={styles.locate} onClick={handleLocate} aria-label="Locate">
       {'\u{1F4CD}'}
     </button>
   )
 }
 
-function POIMarkers({ onSelect, poiIds }: { onSelect: (poi: POI) => void, poiIds?: string[] }) {
+function POIMarkers({ onSelect, poiIds, locale }: { onSelect: (poi: POI) => void, poiIds?: string[], locale: string }) {
   const map = useMapInstance()
   const allPois = getAllPOIs()
   const pois = poiIds ? allPois.filter(p => poiIds.includes(p.id)) : allPois
@@ -52,20 +52,36 @@ function POIMarkers({ onSelect, poiIds }: { onSelect: (poi: POI) => void, poiIds
     const markers = pois.filter(poi => poi.coordinates).map((poi) => {
       const marker = L.marker(poi.coordinates!, { icon: createMarkerIcon(poi) })
       marker.on('click', () => onSelect(poi))
+      marker.bindTooltip(t(poi.name, locale), {
+        permanent: true,
+        direction: 'right',
+        offset: [18, 0],
+        className: 'poi-tooltip',
+      })
       marker.addTo(map)
       return marker
     })
 
-    const updateZoomClass = () => {
-      if (map.getZoom() < 17) {
-        map.getContainer().classList.add('zoom-low')
-      } else {
-        map.getContainer().classList.remove('zoom-low')
-      }
+    let isZoomedIn = map.getZoom() >= 17
+
+    const setTooltipOpacity = (m: L.Marker, visible: boolean) => {
+      const el = m.getTooltip()?.getElement()
+      if (el) el.style.opacity = visible ? '1' : '0'
     }
+
+    const updateTooltipVisibility = () => {
+      isZoomedIn = map.getZoom() >= 17
+      markers.forEach((m) => setTooltipOpacity(m, isZoomedIn))
+    }
+
+    // Show tooltip on hover/touch when zoomed out
+    markers.forEach((m) => {
+      m.on('mouseover', () => { if (!isZoomedIn) setTooltipOpacity(m, true) })
+      m.on('mouseout',  () => { if (!isZoomedIn) setTooltipOpacity(m, false) })
+    })
     
-    updateZoomClass() // Initial state
-    map.on('zoomend', updateZoomClass)
+    updateTooltipVisibility() // Initial state
+    map.on('zoomend', updateTooltipVisibility)
 
     if (poiIds && pois.length > 0) {
       const group = L.featureGroup(markers);
@@ -73,10 +89,10 @@ function POIMarkers({ onSelect, poiIds }: { onSelect: (poi: POI) => void, poiIds
     }
 
     return () => {
-      map.off('zoomend', updateZoomClass)
+      map.off('zoomend', updateTooltipVisibility)
       markers.forEach((m) => m.remove())
     }
-  }, [map, pois, onSelect])
+  }, [map, pois, onSelect, locale])
 
   return null
 }
@@ -115,7 +131,7 @@ function SearchOverlay({ onSelect }: { onSelect: (poi: POI) => void }) {
       <input 
         type="search" 
         className={styles.searchInput}
-        placeholder="Namen oder Tags suchen..." 
+        placeholder={locale === 'en' ? 'Search names or tags...' : locale === 'fr' ? 'Rechercher noms ou tags...' : 'Namen oder Tags suchen...'} 
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
@@ -136,6 +152,7 @@ function SearchOverlay({ onSelect }: { onSelect: (poi: POI) => void }) {
 
 export default function MapView({ poiIds, showSearch = false }: { poiIds?: string[], showSearch?: boolean }) {
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
+  const locale = useLocale()
 
   const handleSelect = useCallback((poi: POI) => {
     setSelectedPOI(poi)
@@ -145,7 +162,7 @@ export default function MapView({ poiIds, showSearch = false }: { poiIds?: strin
     <div className={styles.container}>
       <ClientMap center={CENTER} zoom={ZOOM} className={styles.map} zoomControl={false}>
         {showSearch && <SearchOverlay onSelect={handleSelect} />}
-        <POIMarkers onSelect={handleSelect} poiIds={poiIds} />
+        <POIMarkers onSelect={handleSelect} poiIds={poiIds} locale={locale} />
         <LocateButton />
       </ClientMap>
       <POICard poi={selectedPOI} onClose={() => setSelectedPOI(null)} />
