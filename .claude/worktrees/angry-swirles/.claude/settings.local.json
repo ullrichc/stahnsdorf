@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Read(//c/Code/stahnsdorf/stahnsdorf/**)",
+      "Bash(npx next:*)",
+      "Bash(where npx:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3002)",
+      "Bash(taskkill /PID 43800 /F)",
+      "WebSearch",
+      "WebFetch(domain:nominatim.openstreetmap.org)",
+      "WebFetch(domain:www.openstreetmap.org)",
+      "WebFetch(domain:overpass-api.de)",
+      "Bash(taskkill //PID 43800 //F)"
+    ]
+  }
+}

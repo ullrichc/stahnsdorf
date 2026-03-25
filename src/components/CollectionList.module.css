@@ -46,4 +46,26 @@
   gap: 16px;
   font-size: 0.8rem;
   color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.distanceHighlight {
+  display: inline-block;
+  background: var(--color-background);
+  color: var(--color-primary-dark);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border: 1px solid var(--color-primary);
+}
+
+.preview {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-style: italic;
+  line-height: 1.4;
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
 }

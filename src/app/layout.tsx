@@ -17,7 +17,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <body>
         <main style={{ paddingBottom: 'var(--nav-height)' }}>{children}</main>
         <BottomNav />

@@ -1,33 +1,100 @@
 :root {
-  --color-bg: #f5f0eb;
+  --color-primary: #8da47e;
+  --color-primary-dark: #6b7d5f;
+  --color-secondary: #e6dac3;
+  --color-background: #f8f5f0;
   --color-surface: #ffffff;
-  --color-text: #2c2c2c;
-  --color-text-muted: #6b6b6b;
-  --color-primary: #5a7247;
-  --color-primary-dark: #3d5230;
-  --color-accent: #8b7355;
-  --color-border: #d4cdc4;
+  --color-text: #2c3e50;
+  --color-text-muted: #666666;
+  --color-border: #e0e0e0;
   --color-shadow: rgba(0, 0, 0, 0.1);
-  --nav-height: 56px;
+  --nav-height: 64px;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--color-bg);
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-background);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
 }
 
-.custom-marker,
-.tour-marker,
-.user-marker {
-  background: none !important;
-  border: none !important;
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
 }
+
+.leaflet-control-attribution svg {
+  display: none !important;
+}
+
+.marker-container {
+  background: none;
+  border: none;
+}
+
+.marker-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.custom-marker {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 4px solid white;
+  width: 44px;
+  height: 44px;
+  z-index: 2;
+}
+
+.marker-label {
+  position: absolute;
+  left: 54px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-text);
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom-low .marker-label {
+  opacity: 0;
+  transform: translateX(-10px);
+  pointer-events: none;
+}
+
+.zoom-low .marker-wrapper:hover .marker-label,
+.zoom-low .marker-wrapper:active .marker-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.marker-grave { border-color: #8b5a2b; }
+.marker-building { border-color: #4a90e2; }
+.marker-landmark { border-color: #e24a4a; }
+.marker-nature { border-color: #2b8b38; }

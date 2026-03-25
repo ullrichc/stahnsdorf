@@ -1586,8 +1586,8 @@
     "type": "building",
     "name": {
       "de": "Friedhofskapelle",
-      "en": "Cemetery Chapel",
-      "fr": "Chapelle du cimetière"
+      "en": "Friedhofskapelle",
+      "fr": "Friedhofskapelle"
     },
     "coordinates": [
       52.389506,
@@ -2377,8 +2377,8 @@
     "type": "entrance",
     "name": {
       "de": "Haupteingang",
-      "en": "Main Entrance",
-      "fr": "Entrée principale"
+      "en": "Haupteingang",
+      "fr": "Haupteingang"
     },
     "coordinates": [
       52.3885935,
@@ -4694,6 +4694,72 @@
       "status": "bestätigt",
       "birth_date": "1856-11-03",
       "death_date": "1933-05-16"
+    },
+    "uncertainty_note": "Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert."
+  },
+  {
+    "id": "waldcharakter",
+    "type": "landscape",
+    "name": {
+      "de": "Waldcharakter",
+      "en": "Waldcharakter",
+      "fr": "Waldcharakter"
+    },
+    "coordinates": [
+      52.3895,
+      13.176
+    ],
+    "coordinates_status": "approximate",
+    "location_note": {
+      "de": "Nicht punktförmig; stellvertretender Landschafts-POI für den Charakter der Gesamtanlage.",
+      "en": "Not a single point; representative landscape POI for the character of the whole site.",
+      "fr": "Pas un point unique ; POI paysager représentatif du caractère de l’ensemble."
+    },
+    "summary": {
+      "de": "Der Südwestkirchhof ist als großräumiger Waldfriedhof mit parkartig behandeltem Bestand angelegt.",
+      "en": "The South-Western Cemetery was laid out as a large forest cemetery with a park-like treatment of the existing woodland.",
+      "fr": "Le Südwestkirchhof a été conçu comme un vaste cimetière forestier où le couvert boisé existant a été traité comme un parc."
+    },
+    "description": {
+      "de": "Der offizielle Kirchhofstext betont die Einbindung des vorhandenen Waldbestands in Louis Meyers Gesamtplanung. Öffentliche Beschreibungen heben den Südwestkirchhof mit rund 206 Hektar als eine der größten und landschaftlich markantesten Friedhofsanlagen Deutschlands hervor.",
+      "en": "The official cemetery text emphasises the integration of the existing woodland into Louis Meyer’s overall design. Public descriptions highlight the approximately 206-hectare grounds as one of Germany’s largest and most distinctive landscape cemeteries.",
+      "fr": "Le texte officiel du cimetière souligne l’intégration du couvert boisé existant dans la conception d’ensemble de Louis Meyer. Des descriptions publiques présentent les quelque 206 hectares comme l’un des ensembles funéraires paysagers les plus vastes et les plus remarquables d’Allemagne."
+    },
+    "images": [],
+    "audio": [],
+    "tags": [
+      "landscape",
+      "nature"
+    ],
+    "categories": [
+      "landscape",
+      "history",
+      "nature"
+    ],
+    "source_refs": [
+      {
+        "title": "Über den Kirchhof",
+        "type": "website",
+        "publisher": "Südwestkirchhof Stahnsdorf",
+        "url": "https://www.suedwestkirchhof.de/kirchhof.html",
+        "accessed": "2026-03-25",
+        "note": "Offizielle Informationen zu Geschichte, Anlage und Kapelle."
+      },
+      {
+        "title": "Südwestkirchhof Stahnsdorf",
+        "type": "wikipedia",
+        "publisher": "Wikipedia",
+        "url": "https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf",
+        "accessed": "2026-03-25",
+        "note": "Aktuelle Übersicht zu Blocks, Grabstätten und Bauwerken."
+      }
+    ],
+    "status": "bestätigt",
+    "alt_names": [],
+    "last_reviewed": "2026-03-25",
+    "image_source_urls": [],
+    "dates": {
+      "established": "1909"
     },
     "uncertainty_note": "Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert."
   },

@@ -1,24 +1,80 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
-import { MapContainer, MapContainerProps } from 'react-leaflet'
+import { createContext, useContext, useEffect, useRef, useState, ReactNode } from 'react'
+import L from 'leaflet'
 
-/**
- * Wrapper around MapContainer that handles React strict mode double-mounting.
- * Leaflet throws "Map container is already initialized" when React unmounts
- * and remounts the component (strict mode in dev). This wrapper uses a key
- * that changes on remount, forcing a fresh DOM element.
- */
-export default function ClientMap(props: MapContainerProps) {
-  const [mapKey, setMapKey] = useState(0)
-  const mountedRef = useRef(false)
+type ClientMapProps = {
+  center: [number, number]
+  zoom: number
+  className?: string
+  zoomControl?: boolean
+  children?: ReactNode
+}
+
+const MapInstanceContext = createContext<L.Map | null>(null)
+
+export function useMapInstance(): L.Map {
+  const map = useContext(MapInstanceContext)
+  if (!map) throw new Error('useMapInstance must be used inside ClientMap')
+  return map
+}
+
+export default function ClientMap({ center, zoom, className, zoomControl = true, children }: ClientMapProps) {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [map, setMap] = useState<L.Map | null>(null)
 
   useEffect(() => {
-    if (mountedRef.current) {
-      // Component was remounted (strict mode) — bump key to force fresh DOM
-      setMapKey((k) => k + 1)
-    }
-    mountedRef.current = true
-  }, [])
+    const el = containerRef.current
+    if (!el) return
 
-  return <MapContainer key={mapKey} {...props} />
+    const mapDiv = document.createElement('div')
+    mapDiv.style.width = '100%'
+    mapDiv.style.height = '100%'
+    el.appendChild(mapDiv)
+
+    const instance = L.map(mapDiv, {
+      center,
+      zoom,
+      zoomControl: false, // We manually add it below to control position safely
+      maxZoom: 22,
+    })
+
+    if (zoomControl) {
+      L.control.zoom({ position: 'bottomright' }).addTo(instance)
+    }
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxNativeZoom: 19,
+      maxZoom: 22,
+    }).addTo(instance)
+
+    // Handle Next.js soft navigations causing 0x0 size mounts
+    const observer = new ResizeObserver(() => {
+      instance.invalidateSize()
+    })
+    observer.observe(mapDiv)
+    
+    // Fallback trigger after paint
+    const timeoutId = setTimeout(() => instance.invalidateSize(), 150)
+
+    setMap(instance)
+
+    return () => {
+      observer.disconnect()
+      clearTimeout(timeoutId)
+      instance.remove()
+      setMap(null)
+      if (el.contains(mapDiv)) el.removeChild(mapDiv)
+    }
+  }, [center, zoom, zoomControl])
+
+  return (
+    <div ref={containerRef} className={className} style={{ width: '100%', height: '100%' }}>
+      {map && (
+        <MapInstanceContext.Provider value={map}>
+          {children}
+        </MapInstanceContext.Provider>
+      )}
+    </div>
+  )
 }

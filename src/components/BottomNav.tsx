@@ -4,9 +4,9 @@ import Link from 'next/link'
 import styles from './BottomNav.module.css'
 
 const tabs = [
-  { href: '/', label: 'Karte', icon: '\u{1F4CD}' },
-  { href: '/tours', label: 'Touren', icon: '\u{1F6B6}' },
-  { href: '/info', label: 'Info', icon: '\u2139\uFE0F' },
+  { href: '/', label: 'Karte', icon: '📍' },
+  { href: '/sammlungen', label: 'Sammlungen', icon: '🗂️' },
+  { href: '/info', label: 'Info', icon: 'ℹ️' },
 ]
 
 export default function BottomNav() {

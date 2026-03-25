@@ -1,14 +1,97 @@
 .card {
-  position: fixed;
-  bottom: var(--nav-height);
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   background: var(--color-surface);
   border-radius: 16px 16px 0 0;
-  box-shadow: 0 -4px 20px var(--color-shadow);
-  padding: 20px 20px 24px;
-  z-index: 999;
-  animation: slideUp 0.25s ease-out;
+  padding: 24px;
+  box-shadow: 0 -4px 16px var(--color-shadow);
+  z-index: 1000;
+  animation: slideUp 0.3s ease-out;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: var(--color-background);
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.close:active {
+  transform: scale(0.9);
+}
+
+.tagsContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.distanceBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--color-primary-dark);
+}
+
+.dates {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.summary {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.detail {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 24px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.detail:active {
+  background: var(--color-primary-dark);
 }
 
 @keyframes slideUp {
@@ -18,58 +101,4 @@
   to {
     transform: translateY(0);
   }
-}
-
-.close {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  color: var(--color-text-muted);
-  cursor: pointer;
-  padding: 4px;
-}
-
-.badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-primary);
-  background: rgba(90, 114, 71, 0.1);
-  padding: 2px 8px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.name {
-  font-size: 1.2rem;
-  margin-bottom: 4px;
-}
-
-.dates {
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  margin-bottom: 8px;
-}
-
-.summary {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--color-text);
-  margin-bottom: 12px;
-}
-
-.detail {
-  display: inline-block;
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.detail:hover {
-  text-decoration: underline;
 }

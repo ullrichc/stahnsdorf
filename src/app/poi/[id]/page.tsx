@@ -22,8 +22,9 @@ export function generateStaticParams() {
   return getAllPOIs().map((poi) => ({ id: poi.id }))
 }
 
-export default function POIDetailPage({ params }: { params: { id: string } }) {
-  const poi = getPOIById(params.id)
+export default async function POIDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const poi = getPOIById(id)
 
   if (!poi) {
     return (
@@ -35,7 +36,7 @@ export default function POIDetailPage({ params }: { params: { id: string } }) {
     )
   }
 
-  const audioSrc = poi.audio ? t(poi.audio) : undefined
+  const audioSrc = (poi.audio && poi.audio.length > 0) ? poi.audio[0] : undefined
 
   return (
     <div className={styles.page}>
@@ -55,7 +56,7 @@ export default function POIDetailPage({ params }: { params: { id: string } }) {
         )}
         <p className={styles.description}>{t(poi.description)}</p>
         <AudioPlayer src={audioSrc} />
-        {poi.tags.length > 0 && (
+        {poi.tags && poi.tags.length > 0 && (
           <div className={styles.tags}>
             {poi.tags.map((tag) => (
               <span key={tag} className={styles.tag}>{tag}</span>

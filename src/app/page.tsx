@@ -1,8 +1,6 @@
 'use client'
-import dynamic from 'next/dynamic'
-
-const MapView = dynamic(() => import('@/components/MapView'), { ssr: false })
+import DynamicMapView from '@/components/DynamicMapView'
 
 export default function MapPage() {
-  return <MapView />
+  return <DynamicMapView showSearch={true} />
 }
