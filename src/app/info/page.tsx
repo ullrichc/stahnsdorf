@@ -48,9 +48,12 @@ export default function InfoPage() {
 
       <section className={styles.section}>
         <h2 className={styles.heading}>Kontakt</h2>
-        <p>Evangelischer Friedhofsverband Berlin Stadtmitte</p>
-        <p>Telefon: 030 / 000 000 00</p>
-        <p>E-Mail: info@suedwestkirchhof.de</p>
+        <p>Förderverein Südwestkirchhof Stahnsdorf e.V.</p>
+        <p>Bahnhofstraße 2</p>
+        <p>14532 Stahnsdorf</p>
+        <p>Telefon: 0179 3793503</p>
+        <p>Telefon: 03329 614106</p>
+        <p>Webseite: <a href="https://www.suedwestkirchhof.de" target="_blank" rel="noopener noreferrer">www.suedwestkirchhof.de</a></p>
       </section>
     </div>
   )
