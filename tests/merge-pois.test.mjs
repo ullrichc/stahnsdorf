@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { mergeCoordinates, createNewPoi, generateSlug, buildMergedPois } from '../scripts/merge-pois.mjs';
+import { mergeCoordinates, createNewPoi, generateSlug, buildMergedPois, buildMergedCollections } from '../scripts/merge-pois.mjs';
 
 describe('mergeCoordinates', () => {
   it('adds coordinates from scraping to a POI without coords', () => {
@@ -119,6 +119,14 @@ describe('buildMergedPois', () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
+  it('scraping coords replace lower-precision existing coords', () => {
+    const result = buildMergedPois();
+    // lovis-corinth had coords 52.391, 13.176 (3 decimals) -> scraping has 52.38764, 13.17958
+    const corinth = result.find(p => p.id === 'poi_sws_lovis-corinth');
+    expect(corinth.koordinaten.lat).toBe(52.38764);
+    expect(corinth.koordinaten.lng).toBe(13.17958);
+  });
+
   it('output POIs only have schema-conformant fields', () => {
     const VALID_FIELDS = new Set([
       'id', 'typ', 'name', 'koordinaten', 'kurztext', 'beschreibung',
@@ -131,5 +139,19 @@ describe('buildMergedPois', () => {
         expect(VALID_FIELDS.has(key)).toBe(true);
       });
     });
+  });
+});
+
+describe('buildMergedCollections', () => {
+  it('renames all non-standard IDs in pois arrays', () => {
+    const result = buildMergedCollections();
+    const allPoiRefs = result.flatMap(c => c.pois);
+    const nonStandard = allPoiRefs.filter(id => !id.startsWith('poi_sws_'));
+    expect(nonStandard).toEqual([]);
+  });
+
+  it('preserves collection count', () => {
+    const result = buildMergedCollections();
+    expect(result).toHaveLength(9);
   });
 });

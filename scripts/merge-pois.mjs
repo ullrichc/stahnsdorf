@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { SCRAPING_TO_EXISTING, NEW_SCRAPING_IDS, applyRenames } from './id-mapping.mjs';
+import { SCRAPING_TO_EXISTING, NEW_SCRAPING_IDS, applyRenames, applyRenamesInCollections } from './id-mapping.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -138,6 +138,14 @@ export function buildMergedPois() {
   return merged;
 }
 
+/**
+ * Build the merged collections array with renamed POI IDs.
+ */
+export function buildMergedCollections() {
+  const collections = JSON.parse(fs.readFileSync(path.resolve(rootDir, 'data', 'collections.json'), 'utf-8'));
+  return applyRenamesInCollections(collections);
+}
+
 // CLI: node scripts/merge-pois.mjs
 if (process.argv[1] && process.argv[1].endsWith('merge-pois.mjs')) {
   const merged = buildMergedPois();
@@ -146,4 +154,9 @@ if (process.argv[1] && process.argv[1].endsWith('merge-pois.mjs')) {
   console.log(`Wrote ${merged.length} POIs to ${outPath}`);
   const withGPS = merged.filter(p => p.koordinaten !== null).length;
   console.log(`  ${withGPS} with GPS coordinates`);
+
+  const collections = buildMergedCollections();
+  const colPath = path.resolve(rootDir, 'data', 'collections.json');
+  fs.writeFileSync(colPath, JSON.stringify(collections, null, 2) + '\n', 'utf-8');
+  console.log(`Wrote ${collections.length} collections to ${colPath}`);
 }
