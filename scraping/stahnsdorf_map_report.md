@@ -179,3 +179,40 @@ Aus der API sind **11 von 27 Grabstellen** als Ehrengrab markiert (`ehrengrab: 1
 - **Kein GeoJSON** — Daten als JSONP-Objekte
 - **PDF nicht analysiert** — strukturierte Daten aus API waren ausreichend
 - **Datenqualität: Hoch** — direkt aus der produktiven API extrahiert
+
+---
+
+## 10. Merge-Ergebnis (2026-04-04)
+
+Die extrahierten Scraping-Daten wurden mit `scripts/merge-pois.mjs` in `data/pois.json` integriert.
+
+### Zusammenfassung
+
+| Metrik | Vorher | Nachher |
+|--------|--------|---------|
+| POIs gesamt | 71 | 75 |
+| POIs mit GPS | 12 | 33 |
+| Nicht-Standard-IDs | 11 | 0 |
+
+### Koordinaten hinzugefügt (21 POIs)
+
+Folgende POIs hatten vorher keine Koordinaten und erhielten GPS-Daten aus der wo-sie-ruhen.de API:
+`poi_sws_adolf-bastian`, `poi_sws_adolf-rohrbach`, `poi_sws_alexander-von-kluck`, `poi_sws_carl-ludwig-schleich`, `poi_sws_edmund-rumpler`, `poi_sws_elisabeth-von-ardenne`, `poi_sws_emil-krebs`, `poi_sws_erik-jan-hanussen`, `poi_sws_ferdinand-von-richthofen`, `poi_sws_gustav-kadelburg`, `poi_sws_gustav-langenscheidt`, `poi_sws_hugo-conwentz`, `poi_sws_julius-wissinger`, `poi_sws_karl-ludwig-manzel`, `poi_sws_max-jordan`, `poi_sws_rudolf-breitscheid`, `poi_sws_wilhelm-kuhnert`
+
+### Koordinaten aktualisiert (6 POIs)
+
+Vorhandene, niedrigere Präzision durch Scraping-Daten ersetzt:
+`poi_sws_engelbert-humperdinck`, `poi_sws_ernst-gennat`, `poi_sws_fw-murnau`, `poi_sws_heinrich-zille`, `poi_sws_lovis-corinth`, `poi_sws_werner-von-siemens`
+
+### Neue POIs (4)
+
+| ID | Name | Quelle |
+|----|------|--------|
+| `poi_sws_reinhold-felderhoff` | Reinhold Carl Thusmann Felderhoff | wo-sie-ruhen.de API |
+| `poi_sws_julius-schaarwaechter` | Julius Cornelius Schaarwächter | wo-sie-ruhen.de API |
+| `poi_sws_hans-essen` | Hans Henrik Freiherr von Essen | wo-sie-ruhen.de API |
+| `poi_sws_ernst-seger` | Ernst Seger | wo-sie-ruhen.de API |
+
+### IDs umbenannt (11)
+
+`engelbert-humperdinck` → `poi_sws_engelbert-humperdinck`, `ernst-gennat` → `poi_sws_ernst-gennat`, `hauptkapelle` → `poi_sws_hauptkapelle`, `fw-murnau` → `poi_sws_fw-murnau`, `friedhofseingang` → `poi_sws_friedhofseingang`, `heinrich-zille` → `poi_sws_heinrich-zille`, `hugo-distler` → `poi_sws_hugo-distler`, `joachim-gottschalk` → `poi_sws_joachim-gottschalk`, `lovis-corinth` → `poi_sws_lovis-corinth`, `theodor-fontane-jun` → `poi_sws_theodor-fontane-jun`, `werner-von-siemens` → `poi_sws_werner-von-siemens`
