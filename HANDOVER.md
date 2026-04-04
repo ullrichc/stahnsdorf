@@ -61,7 +61,6 @@ The POI coordinates in `data/pois.json` were updated to better match real-world 
 | Engelbert Humperdinck | 52.3908, 13.2062 | 52.3920, 13.1940 | Estimated (inside cemetery) |
 | Hauptkapelle | 52.3915, 13.2040 | 52.3930, 13.1965 | Estimated (central cemetery) |
 | Haupteingang | 52.3920, 13.2030 | 52.3963, 13.2077 | OSM gate data (verified) |
-| Waldcharakter | 52.3905, 13.2070 | 52.3895, 13.1920 | Estimated (forest area) |
 
 **Important:** Only the Haupteingang coordinate (52.3963, 13.2077) is verified from OSM. The others are rough estimates placed within the cemetery grounds. They should be validated against actual grave locations, ideally using the cemetery's official Grabstättenplan (burial site map) available at: https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf
 

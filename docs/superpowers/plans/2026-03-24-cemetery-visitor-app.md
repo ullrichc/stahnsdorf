@@ -257,7 +257,6 @@ Create `data/pois.json` with 6 sample POIs:
 - Engelbert Humperdinck (grave, composer)
 - Hauptkapelle (building)
 - Friedhofseingang / cemetery entrance (landmark)
-- Waldcharakter / woodland area (nature)
 
 Use realistic coordinates within the Südwestkirchhof area (~52.391, ~13.205). Write German summaries and descriptions (3-5 sentences each). Use placeholder image filenames.
 

@@ -317,7 +317,6 @@ Logik:
     "pois": [
       "hauptkapelle",
       "friedhofseingang",
-      "waldcharakter",
       "poi_sws_christusdenkmal"
     ],
     "tags": ["architecture", "landscape", "mausoleum"],

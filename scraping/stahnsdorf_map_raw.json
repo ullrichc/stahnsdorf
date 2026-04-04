@@ -1,0 +1,328 @@
+{
+  "source_page": "https://www.wo-sie-ruhen.de/friedhof?id=18",
+  "extraction_date": "2026-04-04",
+  "extraction_method": "Static HTML/JS analysis + JSONP API fetch",
+
+  "discovered_endpoints": [
+    {
+      "url": "https://www.wo-sie-ruhen.de/newapi?graveyard=18",
+      "type": "jsonp",
+      "purpose": "Cemetery details + all grave entries (flat array)",
+      "response_fields_graveyard_details": [
+        "geolat", "geolong", "name", "ort", "adresse", "telefon", "webseite",
+        "oeffnungszeiten", "anfahrt", "beschreibung"
+      ],
+      "response_fields_graves": [
+        "ID", "ordering", "graveyardID", "cityID", "name", "vorname",
+        "geburtsort", "sterbeort", "geburtsdatum", "sterbedatum",
+        "berufkat", "beruf", "lage", "grabid",
+        "name2", "vorname2", "geburtsort2", "sterbeort2",
+        "geburtsdatum2", "sterbedatum2", "beruf2", "lage2", "grabid2",
+        "zoom_pic", "personImagePic", "audio", "audio_title",
+        "autor", "ehrengrab", "architekt", "geolat", "geolong",
+        "state", "hightlight"
+      ]
+    },
+    {
+      "url": "https://www.wo-sie-ruhen.de/newapi?grave={ID}",
+      "type": "jsonp",
+      "purpose": "Individual grave detail (same fields as above, used for modal popups)"
+    },
+    {
+      "url": "https://www.wo-sie-ruhen.de/wsr-search?search={query}",
+      "type": "jsonp",
+      "purpose": "Global search across all cemeteries and graves"
+    }
+  ],
+
+  "script_files": [
+    {
+      "type": "inline",
+      "description": "Main page script block 1 - Leaflet map init, slick carousel, AJAX data load",
+      "key_elements": [
+        "L.map('graveYardMap') initialization",
+        "50 custom marker icons (images/map/maker_1.png through maker_50.png)",
+        "wsrIcon = L.Icon.extend({...}) with iconSize [35,35]",
+        "Cookie-based consent check: $.cookie('mapSettings') == 'mapOn'",
+        "JSONP call to newapi?graveyard=18",
+        "Marker creation loop: $.each(graveyard.graves, ...)",
+        "L.layerGroup() for graves layer",
+        "OpenStreetMap HOT tile layer: https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+      ]
+    },
+    {
+      "type": "inline",
+      "description": "Main page script block 2 - Modal popups, search, audio player",
+      "key_elements": [
+        "Grave detail JSONP call to newapi?grave={ID}",
+        "MediaElementPlayer for audio",
+        "Search with JSONP to wsr-search endpoint",
+        "nl2br helper function"
+      ]
+    }
+  ],
+
+  "map_configuration": {
+    "library": "Leaflet",
+    "container_id": "graveYardMap",
+    "tile_provider": "OpenStreetMap France HOT",
+    "tile_url": "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+    "initial_view": { "lat": 52, "lng": 11, "zoom": 15 },
+    "cemetery_center": { "lat": 52.39000, "lng": 13.17700, "zoom_after_load": 17 },
+    "zoom_control_position": "bottomright",
+    "max_zoom": 20,
+    "min_zoom": 6,
+    "marker_icon_config": {
+      "icon_size": [35, 35],
+      "shadow_size": [0, 0],
+      "icon_anchor": [12, 35],
+      "popup_anchor": [4, -35],
+      "icon_count": 50,
+      "icon_url_pattern": "images/map/maker_{n}.png"
+    },
+    "consent_mechanism": "Cookie 'mapSettings' must equal 'mapOn'; user sees data protection modal before map loads"
+  },
+
+  "pdf_plan": {
+    "url": "https://www.wo-sie-ruhen.de/_media/pdf/18-1653927548.pdf",
+    "label": "Friedhofsplan & Erlaeuterungen"
+  },
+
+  "media_paths": {
+    "images_sm": "https://www.wo-sie-ruhen.de/_media/pics/_sm/",
+    "images_xs": "https://www.wo-sie-ruhen.de/_media/pics/_xs/",
+    "audio": "https://www.wo-sie-ruhen.de/_media/audio/",
+    "pdf": "https://www.wo-sie-ruhen.de/_media/pdf/"
+  },
+
+  "raw_objects": [
+    {
+      "ID": 367, "ordering": 1, "vorname": "Ernst", "name": "Gennat",
+      "beruf": "Kriminalist, Beamter der Kriminalpolizei",
+      "geolat": 52.38852, "geolong": 13.18782,
+      "lage": "Block Reformation, Gartenblock II, Gartenstelle 23",
+      "ehrengrab": 0,
+      "zoom_pic": "ik3iqbfhjw.jpg"
+    },
+    {
+      "ID": 369, "ordering": 2, "vorname": "Edmund", "name": "Rumpler",
+      "beruf": "Flugzeug- und Automobilkonstrukteur",
+      "geolat": 52.38845, "geolong": 13.18757,
+      "lage": "Block Reformation, Gartenblock III, Erbbegräbnis 28",
+      "ehrengrab": 1,
+      "zoom_pic": "tytcr6esvt.jpg"
+    },
+    {
+      "ID": 371, "ordering": 3, "vorname": "Alexander Heinrich Rudolph von", "name": "Kluck",
+      "beruf": "Militär, Generaloberst",
+      "geolat": 52.38805, "geolong": 13.18674,
+      "lage": "Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12",
+      "ehrengrab": 0,
+      "zoom_pic": "8fmyhwldkv.jpg;antpifwhnf.jpg"
+    },
+    {
+      "ID": 373, "ordering": 4, "vorname": "Karl Ludwig", "name": "Manzel",
+      "beruf": "Bildhauer, Maler, Graphiker",
+      "geolat": 52.38791, "geolong": 13.18600,
+      "lage": "Block Heilige Geist, Gartenblock V, Grabstelle 1",
+      "ehrengrab": 0,
+      "zoom_pic": "7fn70h05di.jpg;1vds2klpzq.jpg"
+    },
+    {
+      "ID": 375, "ordering": 5, "vorname": "Carl Ludwig", "name": "Schleich",
+      "beruf": "Chirurg, Schriftsteller, Philosoph, Geheimrat",
+      "geolat": 52.38732, "geolong": 13.18542,
+      "lage": "Block Erlöser, Gartenblock I, Grabstelle 47",
+      "ehrengrab": 1,
+      "zoom_pic": "o1peq8f5zb.jpg;5fzivuqs6j.jpg"
+    },
+    {
+      "ID": 376, "ordering": 6, "vorname": "Engelbert", "name": "Humperdinck",
+      "beruf": "Komponist",
+      "geolat": 52.38720, "geolong": 13.18393,
+      "lage": "Block Erlöser, Feld 4, Erbbegräbnis 10",
+      "ehrengrab": 1,
+      "zoom_pic": "yqtwa3q7zv.jpg;2m35atm97n.jpg"
+    },
+    {
+      "ID": 377, "ordering": 7, "vorname": "Gustav", "name": "Kadelburg",
+      "beruf": "Schauspieler, Lustspieldichter, Schriftsteller",
+      "geolat": 52.38796, "geolong": 13.18378,
+      "lage": "Block Erlöser, Gartenblock V, Erbbegräbnis 26",
+      "ehrengrab": 0,
+      "zoom_pic": "oe6z5o5ju6.jpg;p0fv0fz192.jpg"
+    },
+    {
+      "ID": 378, "ordering": 8, "vorname": "Friedrich Wilhelm", "name": "Murnau",
+      "beruf": "Stummfilmregisseur",
+      "geolat": 52.38820, "geolong": 13.18389,
+      "lage": "Block Schöneberg, Feld 3a, Erb. 5",
+      "ehrengrab": 1,
+      "zoom_pic": "q3kzrp2q54.jpg;vdcqmwu8fq.jpg"
+    },
+    {
+      "ID": 379, "ordering": 9, "vorname": "Ernst Werner von", "name": "Siemens",
+      "beruf": "Erfinder, Industrieller",
+      "geolat": 52.38890, "geolong": 13.17921,
+      "lage": "Block Trinitatis, Feld 3a, Erbbegräbnis 22",
+      "ehrengrab": 0,
+      "zoom_pic": "bngqnz27we.jpg;dgaulp4cu7.jpg"
+    },
+    {
+      "ID": 380, "ordering": 10, "vorname": "Hermann Otto Julius", "name": "Wissinger",
+      "beruf": "Kaufmann, Saatguthändler",
+      "geolat": 52.38840, "geolong": 13.18023,
+      "lage": "Kapellenblock, Erbbegräbnis 42/53",
+      "ehrengrab": 0,
+      "zoom_pic": "dh87sk4jqr.jpg"
+    },
+    {
+      "ID": 381, "ordering": 11, "vorname": "Lovis", "name": "Corinth",
+      "beruf": "Maler, Graphiker",
+      "geolat": 52.38764, "geolong": 13.17958,
+      "lage": "Block Trinitatis, Feld 8, Erbbegräbnis 47",
+      "ehrengrab": 1,
+      "zoom_pic": "iid8s8munw.jpg;5f28tf1i34.jpg"
+    },
+    {
+      "ID": 382, "ordering": 12, "vorname": "Max", "name": "Jordan",
+      "beruf": "Historiker, Kunsthistoriker, Museumsleiter",
+      "geolat": 52.38668, "geolong": 13.17977,
+      "lage": "Block Trinitatis, Feld 21, Wahlstelle 162",
+      "ehrengrab": 1,
+      "zoom_pic": "0r2qtepj8p.jpg;phlnne6w39.jpg;iiloq53aov.jpg"
+    },
+    {
+      "ID": 383, "ordering": 13, "vorname": "Philipp Wilhelm Adolf", "name": "Bastian",
+      "beruf": "Arzt, Ethnologe, Museumsdirektor",
+      "geolat": 52.38673, "geolong": 13.17995,
+      "lage": "Block Trinitatis, Feld 21, Wahlgrabstelle 153/154",
+      "ehrengrab": 1,
+      "zoom_pic": "ij7bu7d1lv.jpg;qszqnb99ic.jpg"
+    },
+    {
+      "ID": 384, "ordering": 14, "vorname": "Hugo", "name": "Conwentz",
+      "beruf": "Botaniker, Museumsdirektor, Schriftsteller",
+      "geolat": 52.38464, "geolong": 13.18068,
+      "lage": "Neue Umbettung, Feld 17, Wahlstelle 178",
+      "ehrengrab": 0,
+      "zoom_pic": "jpdil70voo.jpg"
+    },
+    {
+      "ID": 385, "ordering": 15, "vorname": "Reinhold Carl Thusmann", "name": "Felderhoff",
+      "beruf": "Professor, Bildhauer, Graphiker",
+      "geolat": 52.387747, "geolong": 13.177103,
+      "lage": "Block Trinitatis, Feld 10, Wahlstelle 64",
+      "ehrengrab": 0,
+      "zoom_pic": "574kzgntbb.jpg;ve4augi1vm.jpg"
+    },
+    {
+      "ID": 386, "ordering": 16, "vorname": "Elisabeth Baronin von", "name": "Ardenne",
+      "beruf": "Krankenpflegerin",
+      "geolat": 52.38712, "geolong": 13.17647,
+      "lage": "Block Trinitatis, Gartenblock V, Erbbegräbnis 112a",
+      "ehrengrab": 1,
+      "zoom_pic": "1vkg8b51q3.jpg"
+    },
+    {
+      "ID": 387, "ordering": 17, "vorname": "Rudolf", "name": "Breitscheid",
+      "beruf": "Nationalökonom, Politiker, Reichstag-Mitglied",
+      "geolat": 52.38804, "geolong": 13.17518,
+      "lage": "Lietzensee, Feld 22, Wahlstelle 115",
+      "ehrengrab": 1,
+      "zoom_pic": "fpo3kzuaoq.jpg;r4g3ce3r2l.jpg"
+    },
+    {
+      "ID": 388, "ordering": 18, "vorname": "Adolf Karl", "name": "Rohrbach",
+      "beruf": "Flugzeugkonstrukteur",
+      "geolat": 52.38884, "geolong": 13.17543,
+      "lage": "Block Lietzensee, Gartenblock IV, Erbbegräbnis 19",
+      "ehrengrab": 0,
+      "zoom_pic": "oj5fpgog82.jpg"
+    },
+    {
+      "ID": 389, "ordering": 19, "vorname": "Johann Ludwig Gustav", "name": "Langenscheidt",
+      "beruf": "Sprachlehrer, Verlagsbuchhändler",
+      "geolat": 52.39117, "geolong": 13.17367,
+      "lage": "Alte Umbettung, Abt. D, Erbb. 179",
+      "ehrengrab": 0,
+      "zoom_pic": "lyomq7735l.jpg"
+    },
+    {
+      "ID": 390, "ordering": 20, "vorname": "Julius Cornelius", "name": "Schaarwächter",
+      "beruf": "Hoffotograf, Verleger",
+      "geolat": 52.39134, "geolong": 13.18001,
+      "lage": "Alte Umbettung, Erbb. 101",
+      "ehrengrab": 0,
+      "zoom_pic": "q3zkyhjp50.jpg;lpj8trb4cv.jpg"
+    },
+    {
+      "ID": 391, "ordering": 21, "vorname": "Ferdinand Freiherr von", "name": "Richthofen",
+      "beruf": "Geologe, Kartograph, Geograph, Forschungsreisender",
+      "geolat": 52.39135, "geolong": 13.17956,
+      "lage": "Alte Umbettung, Abt. C, Erbb. 127",
+      "ehrengrab": 0,
+      "zoom_pic": "co38iw43jd.jpg;qiqvm1666k.jpg"
+    },
+    {
+      "ID": 392, "ordering": 22, "vorname": "Heinrich Rudolf", "name": "Zille",
+      "beruf": "Professor, Zeichner, Lithograf, Fotograf",
+      "geolat": 52.39016, "geolong": 13.17733,
+      "lage": "Epiphanien, Feld 14, Grabstelle 34/35",
+      "ehrengrab": 1,
+      "zoom_pic": "lqm3dflw0t.jpg;d0z0so70ce.jpg;949zol1kva.jpg"
+    },
+    {
+      "ID": 393, "ordering": 23, "vorname": "Friedrich Wilhelm", "name": "Kuhnert",
+      "beruf": "Maler, Tiermaler, Bildhauer",
+      "geolat": 52.38999, "geolong": 13.17892,
+      "lage": "Epiphanien, Gbl. I, Grabstelle 85/86",
+      "ehrengrab": 0,
+      "zoom_pic": "6kyno36q1j.jpg;0jdnus7e23.jpg"
+    },
+    {
+      "ID": 394, "ordering": 24, "vorname": "Hans Henrik Freiherr von", "name": "Essen",
+      "beruf": "Diplomat, Schwedischer Gesandter in Berlin",
+      "geolat": 52.38968, "geolong": 13.17891,
+      "lage": "Block Epiphanien, Schwedenblock, Erbbegräbnis 19",
+      "ehrengrab": 0,
+      "zoom_pic": "7kqto9t7n5.jpg;5dufp6n6nl.jpg"
+    },
+    {
+      "ID": 395, "ordering": 25, "vorname": "Emil", "name": "Krebs",
+      "beruf": "Jurist, Diplomat, Sprachforscher, Dolmetscher",
+      "geolat": 52.39001, "geolong": 13.17902,
+      "lage": "Block Epiphanien, Gartenblock I, Gartenstelle 81",
+      "ehrengrab": 0,
+      "zoom_pic": "lupad3ukt8.jpg;22dbkjyfzj.jpg;9nr2bs7hmt.jpg"
+    },
+    {
+      "ID": 396, "ordering": 26, "vorname": "Ernst", "name": "Seger",
+      "beruf": "Bildhauer",
+      "geolat": 52.39067, "geolong": 13.18178,
+      "lage": "Block Schöneberg, Feld 8, Wahlstelle 276",
+      "ehrengrab": 0,
+      "zoom_pic": "0a99576zgh.jpg"
+    },
+    {
+      "ID": 397, "ordering": 27, "vorname": "Jan Erik", "name": "Hanussen",
+      "beruf": "Varietékünstler",
+      "geolat": 52.39061, "geolong": 13.18382,
+      "lage": "Block Charlottenburg, Gartenblock III, Grabstelle 50",
+      "ehrengrab": 0,
+      "zoom_pic": "imf8qloij6.jpg"
+    }
+  ],
+
+  "notes": [
+    "All 27 POIs come from the JSONP API endpoint newapi?graveyard=18",
+    "Marker icons are numbered maker_1.png through maker_50.png (typo 'maker' in original)",
+    "Markers are created in a loop: grave index d -> marker(d+1) icon assignment",
+    "Map requires cookie consent (mapSettings=mapOn) before rendering",
+    "graveGroups array referenced in JS for carousel display grouping (by berufkat category), but all graves appear in the flat graves array for map markers",
+    "Coordinates for ID 397 (Hanussen) showed minor variation between graveyard API and individual grave API; individual grave API values used (52.39061, 13.18382)",
+    "The 'ehrengrab' field is explicitly present in the API (0 or 1)",
+    "No GeoJSON endpoint found - all data served as JSONP objects",
+    "No additional external JS files detected - all logic is inline"
+  ]
+}
