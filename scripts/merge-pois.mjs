@@ -124,11 +124,15 @@ export function buildMergedPois() {
   // Apply ID renames (non-standard IDs -> poi_sws_ convention)
   merged = applyRenames(merged);
 
-  // Add new POIs from scraping
+  // Add new POIs from scraping (skip if already present — idempotent)
+  const existingIds = new Set(merged.map(p => p.id));
   for (const scrapingId of NEW_SCRAPING_IDS) {
     const scrapingEntry = scrapingById.get(scrapingId);
     if (scrapingEntry) {
-      merged.push(createNewPoi(scrapingEntry));
+      const newPoi = createNewPoi(scrapingEntry);
+      if (!existingIds.has(newPoi.id)) {
+        merged.push(newPoi);
+      }
     }
   }
 
