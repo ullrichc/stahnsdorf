@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Mockup — POI-Tabelle</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #1a1a2e; color: #e0e0e0; }
+  
+  .header { background: #16213e; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #334; }
+  .header h1 { font-size: 18px; font-weight: 600; color: #a8d8a8; }
+  .header .user { font-size: 13px; color: #888; }
+  
+  .toolbar { padding: 16px 24px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; background: #16213e; border-bottom: 1px solid #223; }
+  .toolbar input[type="search"] { background: #1a1a2e; border: 1px solid #334; color: #e0e0e0; padding: 8px 12px; border-radius: 6px; width: 220px; font-size: 14px; }
+  .toolbar input[type="search"]::placeholder { color: #666; }
+  .toolbar select { background: #1a1a2e; border: 1px solid #334; color: #e0e0e0; padding: 8px 10px; border-radius: 6px; font-size: 13px; }
+  .toolbar .spacer { flex: 1; }
+  .btn-new { background: #4caf50; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; font-size: 14px; cursor: pointer; font-weight: 500; }
+  .btn-new:hover { background: #45a049; }
+  
+  .stats { padding: 8px 24px; font-size: 13px; color: #888; background: #16213e; }
+  .stats span { color: #a8d8a8; font-weight: 500; }
+  
+  table { width: 100%; border-collapse: collapse; }
+  thead { background: #16213e; position: sticky; top: 0; }
+  th { text-align: left; padding: 10px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; border-bottom: 2px solid #334; cursor: pointer; user-select: none; white-space: nowrap; }
+  th:hover { color: #a8d8a8; }
+  td { padding: 10px 16px; border-bottom: 1px solid #222; font-size: 14px; }
+  tr:hover { background: #1e2a45; }
+  tr.row-clickable { cursor: pointer; }
+  
+  .typ-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+  .typ-grab { background: #3d2f1d; color: #d4a76a; }
+  .typ-bauwerk { background: #1d3d2f; color: #6ad4a7; }
+  .typ-denkmal { background: #3d1d2f; color: #d46aaa; }
+  .typ-bereich { background: #1d2f3d; color: #6aaad4; }
+  .typ-mausoleum { background: #2f3d1d; color: #aad46a; }
+  .typ-gedenkanlage { background: #3d2f3d; color: #c46ad4; }
+
+  .status-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+  .status-bestaetigt { background: #1d3d2f; color: #6ad4a7; }
+  .status-pruefen { background: #3d3d1d; color: #d4d46a; }
+
+  .publish-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 500; }
+  .publish-entwurf { background: #333; color: #999; }
+  .publish-zur_pruefung { background: #3d3520; color: #f0c040; }
+  .publish-veroeffentlicht { background: #1d3d2f; color: #4caf50; }
+
+  .coord-yes { color: #4caf50; }
+  .coord-no { color: #666; }
+  
+  .dates { color: #aaa; font-size: 13px; white-space: nowrap; }
+  .name-cell { font-weight: 500; }
+  .actions { display: flex; gap: 6px; }
+  .actions button { background: none; border: 1px solid #334; color: #aaa; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  .actions button:hover { border-color: #a8d8a8; color: #a8d8a8; }
+  
+  .toggle-filter { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #aaa; cursor: pointer; }
+  .toggle-filter input { accent-color: #4caf50; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌲 Südwestkirchhof — Redaktion</h1>
+  <div class="user">editor@foerderverein.de · <a href="#" style="color:#a8d8a8">Abmelden</a></div>
+</div>
+
+<div class="toolbar">
+  <input type="search" placeholder="🔍 Name suchen...">
+  <select>
+    <option>Alle Typen</option>
+    <option>grab</option>
+    <option>bauwerk</option>
+    <option>denkmal</option>
+    <option>bereich</option>
+    <option>mausoleum</option>
+    <option>gedenkanlage</option>
+  </select>
+  <select>
+    <option>Alle Publish-Status</option>
+    <option>entwurf</option>
+    <option>zur_prüfung</option>
+    <option>veröffentlicht</option>
+  </select>
+  <select>
+    <option>Alle Status</option>
+    <option>bestätigt</option>
+    <option>prüfen</option>
+  </select>
+  <label class="toggle-filter">
+    <input type="checkbox"> Nur ohne Koordinaten
+  </label>
+  <div class="spacer"></div>
+  <button class="btn-new">+ Neuer POI</button>
+</div>
+
+<div class="stats">
+  <span>71</span> POIs · <span>12</span> mit Koordinaten · <span>3</span> zur Prüfung · <span>59</span> Entwürfe
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name ↕</th>
+      <th>Typ</th>
+      <th>Status</th>
+      <th>Publish</th>
+      <th>📍</th>
+      <th>Zeitraum</th>
+      <th>Aktionen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row-clickable">
+      <td class="name-cell">Adolf Bastian</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-entwurf">entwurf</span></td>
+      <td class="coord-no">—</td>
+      <td class="dates">1826 – 1905</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Friedhofskapelle</td>
+      <td><span class="typ-badge typ-bauwerk">bauwerk</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">—</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Friedrich Wilhelm Murnau</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">1888 – 1931</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Ernst Gennat</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-pruefen">prüfen</span></td>
+      <td><span class="publish-badge publish-zur_pruefung">zur Prüfung</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">1880 – 1939</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Christusdenkmal</td>
+      <td><span class="typ-badge typ-bereich">bereich</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-entwurf">entwurf</span></td>
+      <td class="coord-no">—</td>
+      <td class="dates">—</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Engelbert Humperdinck</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">1854 – 1921</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Heinrich Zille</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">1858 – 1929</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Berlin South-Western Cemetery</td>
+      <td><span class="typ-badge typ-bereich">bereich</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">—</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Werner von Siemens</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-veroeffentlicht">veröffentlicht</span></td>
+      <td class="coord-yes">✅</td>
+      <td class="dates">1816 – 1892</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Manfred Krug</td>
+      <td><span class="typ-badge typ-grab">grab</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-entwurf">entwurf</span></td>
+      <td class="coord-no">—</td>
+      <td class="dates">1937 – 2016</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+    <tr class="row-clickable">
+      <td class="name-cell">Anlage für die Opfer von Krieg und Gewaltherrschaft</td>
+      <td><span class="typ-badge typ-gedenkanlage">gedenkanlage</span></td>
+      <td><span class="status-badge status-bestaetigt">bestätigt</span></td>
+      <td><span class="publish-badge publish-entwurf">entwurf</span></td>
+      <td class="coord-no">—</td>
+      <td class="dates">—</td>
+      <td class="actions"><button>✏️</button><button>👁️</button></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

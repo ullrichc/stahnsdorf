@@ -1,88 +1,45 @@
 import { describe, test, expect, vi } from 'vitest'
 
-// Mock the JSON data imports before importing the module under test.
-// This gives us full control over the test data without loading 200KB+ of real POIs.
+// Mock-Daten im neuen Schema (docs/schema.md)
 vi.mock('../../data/pois.json', () => ({
   default: [
     {
       id: 'poi-valid-exact',
-      type: 'grave',
+      typ: 'grab',
       name: { de: 'Gültiges Grab', en: 'Valid Grave' },
-      coordinates: [52.3906, 13.2028] as [number, number],
-      coordinates_status: 'exact',
-      location_note: { de: '' },
-      summary: { de: 'Zusammenfassung' },
-      description: { de: 'Beschreibung' },
-      dates: {},
-      images: [],
-      audio: [],
-      tags: [],
-      categories: [],
-      source_refs: [],
+      koordinaten: { lat: 52.3906, lng: 13.2028 },
+      kurztext: { de: 'Zusammenfassung' },
+      beschreibung: { de: 'Beschreibung' },
+      bilder: [],
+      audio: {},
+      quellen: [],
       status: 'bestätigt',
-      alt_names: [],
-      last_reviewed: '2025-01-01',
-      image_source_urls: [],
     },
     {
       id: 'poi-valid-approx',
-      type: 'monument',
+      typ: 'denkmal',
       name: { de: 'Ungefähres Denkmal', en: 'Approximate Monument' },
-      coordinates: [52.391, 13.203] as [number, number],
-      coordinates_status: 'approximate',
-      location_note: { de: '' },
-      summary: { de: '' },
-      description: { de: '' },
-      dates: {},
-      images: [],
-      audio: [],
-      tags: [],
-      categories: [],
-      source_refs: [],
+      koordinaten: { lat: 52.391, lng: 13.203 },
+      kurztext: { de: '' },
+      beschreibung: { de: '' },
+      bilder: [],
+      audio: {},
+      quellen: [],
       status: 'bestätigt',
-      alt_names: [],
-      last_reviewed: '2025-01-01',
-      image_source_urls: [],
+      notiz: 'Koordinaten nur angenähert.',
     },
     {
-      id: 'poi-unknown-status',
-      type: 'grave',
-      name: { de: 'Unbekannt' },
-      coordinates: [52.0, 13.0] as [number, number],
-      coordinates_status: 'unknown',
-      location_note: { de: '' },
-      summary: { de: '' },
-      description: { de: '' },
-      dates: {},
-      images: [],
-      audio: [],
-      tags: [],
-      categories: [],
-      source_refs: [],
+      id: 'poi-ohne-koordinaten',
+      typ: 'grab',
+      name: { de: 'Ohne Koordinaten' },
+      koordinaten: null,
+      kurztext: { de: '' },
+      beschreibung: { de: '' },
+      bilder: [],
+      audio: {},
+      quellen: [],
       status: 'prüfen',
-      alt_names: [],
-      last_reviewed: '2025-01-01',
-      image_source_urls: [],
-    },
-    {
-      id: 'poi-null-coords',
-      type: 'building',
-      name: { de: 'Null Koordinaten' },
-      coordinates: null,
-      coordinates_status: 'exact',
-      location_note: { de: '' },
-      summary: { de: '' },
-      description: { de: '' },
-      dates: {},
-      images: [],
-      audio: [],
-      tags: [],
-      categories: [],
-      source_refs: [],
-      status: 'unsicher',
-      alt_names: [],
-      last_reviewed: '2025-01-01',
-      image_source_urls: [],
+      notiz: 'Block Trinitatis. Koordinaten vor Ort ermitteln.',
     },
   ],
 }))
@@ -92,24 +49,18 @@ vi.mock('../../data/collections.json', () => ({
     {
       id: 'col-1',
       name: { de: 'Sammlung Eins', en: 'Collection One' },
-      summary: { de: 'Erste Sammlung' },
-      description: { de: '' },
-      // References both valid and invalid (filtered-out) POIs
-      pois: ['poi-valid-exact', 'poi-unknown-status', 'poi-null-coords', 'poi-valid-approx'],
-      tags: ['test'],
+      kurztext: { de: 'Erste Sammlung' },
+      beschreibung: { de: '' },
+      pois: ['poi-valid-exact', 'poi-ohne-koordinaten', 'poi-valid-approx'],
       status: 'bestätigt',
-      last_reviewed: '2025-01-01',
     },
     {
       id: 'col-2',
       name: { de: 'Leere Sammlung' },
-      summary: { de: '' },
-      description: { de: '' },
-      // Only references POIs that will be filtered out
-      pois: ['poi-unknown-status', 'poi-null-coords'],
-      tags: [],
+      kurztext: { de: '' },
+      beschreibung: { de: '' },
+      pois: ['poi-ohne-koordinaten'],
       status: 'bestätigt',
-      last_reviewed: '2025-01-01',
     },
   ],
 }))
@@ -119,17 +70,12 @@ import { getAllPOIs, getPOIById, getAllCollections, getCollectionById } from './
 // ─── getAllPOIs ───────────────────────────────────────────────
 
 describe('getAllPOIs', () => {
-  test('never returns POIs with coordinates_status "unknown"', () => {
+  test('gibt nie POIs ohne Koordinaten zurück', () => {
     const pois = getAllPOIs()
-    expect(pois.every(p => p.coordinates_status !== 'unknown')).toBe(true)
+    expect(pois.every(p => p.koordinaten !== null)).toBe(true)
   })
 
-  test('never returns POIs with coordinates: null', () => {
-    const pois = getAllPOIs()
-    expect(pois.every(p => p.coordinates !== null)).toBe(true)
-  })
-
-  test('returns only the two valid POIs from test data', () => {
+  test('gibt nur die zwei POIs mit Koordinaten zurück', () => {
     const pois = getAllPOIs()
     expect(pois).toHaveLength(2)
     const ids = pois.map(p => p.id)
@@ -141,67 +87,63 @@ describe('getAllPOIs', () => {
 // ─── getPOIById ──────────────────────────────────────────────
 
 describe('getPOIById', () => {
-  test('returns POI for a valid ID', () => {
+  test('findet einen POI mit gültiger ID', () => {
     const poi = getPOIById('poi-valid-exact')
     expect(poi).toBeDefined()
     expect(poi!.id).toBe('poi-valid-exact')
     expect(poi!.name.de).toBe('Gültiges Grab')
   })
 
-  test('returns undefined for an unknown ID', () => {
-    expect(getPOIById('does-not-exist')).toBeUndefined()
+  test('gibt undefined für unbekannte ID', () => {
+    expect(getPOIById('gibt-es-nicht')).toBeUndefined()
   })
 
-  test('returns undefined for a filtered-out POI ID', () => {
-    // This POI exists in raw data but is filtered due to coordinates_status: 'unknown'
-    expect(getPOIById('poi-unknown-status')).toBeUndefined()
+  test('gibt undefined für herausgefilterte POI-ID', () => {
+    expect(getPOIById('poi-ohne-koordinaten')).toBeUndefined()
   })
 })
 
 // ─── getAllCollections ────────────────────────────────────────
 
 describe('getAllCollections', () => {
-  test('removes POI refs that point to filtered-out POIs (ghost pointer scrub)', () => {
+  test('entfernt POI-Referenzen auf herausgefilterte POIs', () => {
     const collections = getAllCollections()
     const col1 = collections.find(c => c.id === 'col-1')!
-    // Original had 4 POI refs; two should be scrubbed (unknown + null-coords)
     expect(col1.pois).toHaveLength(2)
     expect(col1.pois).toContain('poi-valid-exact')
     expect(col1.pois).toContain('poi-valid-approx')
-    expect(col1.pois).not.toContain('poi-unknown-status')
-    expect(col1.pois).not.toContain('poi-null-coords')
+    expect(col1.pois).not.toContain('poi-ohne-koordinaten')
   })
 
-  test('collection with only invalid POI refs ends up with empty pois array', () => {
+  test('Collection mit nur ungültigen POI-Referenzen hat leeres pois-Array', () => {
     const collections = getAllCollections()
     const col2 = collections.find(c => c.id === 'col-2')!
     expect(col2.pois).toHaveLength(0)
   })
 
-  test('preserves other collection fields after scrubbing', () => {
+  test('bewahrt andere Collection-Felder nach dem Filtern', () => {
     const collections = getAllCollections()
     const col1 = collections.find(c => c.id === 'col-1')!
     expect(col1.name.de).toBe('Sammlung Eins')
-    expect(col1.tags).toEqual(['test'])
   })
 })
 
 // ─── getCollectionById ───────────────────────────────────────
 
 describe('getCollectionById', () => {
-  test('returns collection for a valid ID', () => {
+  test('findet eine Collection mit gültiger ID', () => {
     const col = getCollectionById('col-1')
     expect(col).toBeDefined()
     expect(col!.id).toBe('col-1')
   })
 
-  test('returns undefined for an unknown ID', () => {
-    expect(getCollectionById('does-not-exist')).toBeUndefined()
+  test('gibt undefined für unbekannte ID', () => {
+    expect(getCollectionById('gibt-es-nicht')).toBeUndefined()
   })
 
-  test('scrubs ghost pointers in returned collection', () => {
+  test('filtert ungültige POI-Referenzen in zurückgegebener Collection', () => {
     const col = getCollectionById('col-1')!
     expect(col.pois).toHaveLength(2)
-    expect(col.pois).not.toContain('poi-unknown-status')
+    expect(col.pois).not.toContain('poi-ohne-koordinaten')
   })
 })

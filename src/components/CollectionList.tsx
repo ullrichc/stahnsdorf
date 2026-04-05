@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { Collection } from '@/lib/types'
-import { getPOIById } from '@/lib/content'
+import { Collection, POI } from '@/lib/types'
+import { usePOIs } from '@/lib/useFirestore'
 import { useGeolocation } from '@/lib/useGeolocation'
 import { getDistanceMeters, formatDistance } from '@/lib/geo'
 import { t } from '@/lib/i18n'
@@ -15,6 +15,9 @@ type Props = {
 export default function CollectionList({ collections }: Props) {
   const { location } = useGeolocation()
   const locale = useLocale()
+  const { pois } = usePOIs()
+
+  const getPOI = (id: string) => pois.find(p => p.id === id)
 
   const headingText = locale === 'en' ? 'Collections' : locale === 'fr' ? 'Collections' : 'Sammlungen'
   const gravesText = locale === 'en' ? 'Graves' : locale === 'fr' ? 'Tombes' : 'Gräber'
@@ -30,16 +33,16 @@ export default function CollectionList({ collections }: Props) {
           let minDistance = Infinity
           if (location) {
             collection.pois.forEach(id => {
-              const p = getPOIById(id)
-              if (p && p.coordinates) {
-                const d = getDistanceMeters(location.lat, location.lng, p.coordinates[0], p.coordinates[1])
+              const p = getPOI(id)
+              if (p && p.koordinaten) {
+                const d = getDistanceMeters(location.lat, location.lng, p.koordinaten.lat, p.koordinaten.lng)
                 if (d < minDistance) minDistance = d
               }
             })
           }
 
           const poiNames = collection.pois
-            .map(id => getPOIById(id))
+            .map(id => getPOI(id))
             .filter(Boolean)
             .map(poi => t(poi!.name, locale))
             .join(', ')
@@ -47,7 +50,7 @@ export default function CollectionList({ collections }: Props) {
           return (
             <Link key={collection.id} href={`/sammlung/${collection.id}`} className={styles.card}>
               <h2 className={styles.name}>{t(collection.name, locale)}</h2>
-              <p className={styles.description}>{t(collection.description, locale)}</p>
+              <p className={styles.description}>{t(collection.beschreibung, locale)}</p>
               <div className={styles.meta}>
                 <span>{'\u{1F4CD}'} {collection.pois.length} {gravesText}</span>
               </div>

@@ -2,18 +2,20 @@ import L from 'leaflet'
 import { POI } from '@/lib/types'
 
 const markerIcons: Record<string, string> = {
-  grave: '\u{1FAA6}',
-  building: '\u26EA',
-  landmark: '\u{1F4CC}',
-  nature: '\u{1F333}',
+  grab: '\u{1FAA6}',
+  bauwerk: '\u26EA',
+  bereich: '\u{1F4CC}',
+  denkmal: '\u{1F3DB}',
+  mausoleum: '\u{1F3DB}',
+  gedenkanlage: '\u{1F56F}',
 }
 
 export function createMarkerIcon(poi: POI): L.DivIcon {
   return L.divIcon({
     html: `
       <div class="marker-wrapper">
-        <div class="custom-marker marker-${poi.type}">
-          <span style="font-size:1.8rem; line-height:1;">${markerIcons[poi.type] || markerIcons['landmark']}</span>
+        <div class="custom-marker marker-${poi.typ}">
+          <span style="font-size:1.8rem; line-height:1;">${markerIcons[poi.typ] || markerIcons['bereich']}</span>
         </div>
       </div>
     `,

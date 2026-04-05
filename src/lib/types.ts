@@ -1,63 +1,73 @@
-export type Translation = {
-  de?: string;
+// Verbindlich: docs/schema.md
+
+export type LocalizedText = {
+  de: string;
   en?: string;
   fr?: string;
+  pl?: string;
+  ru?: string;
+  sv?: string;
   [lang: string]: string | undefined;
 };
 
-export type Coordinates = [number, number];
-
-export type SourceRef = {
-  title: string;
-  type: string;
-  publisher?: string;
-  url: string;
-  accessed?: string;
-  note?: string;
+export type Koordinaten = {
+  lat: number;
+  lng: number;
 };
 
-export type PersonRef = {
-  name: string;
-  role_note?: string;
-  status?: "bestätigt" | "unsicher" | "prüfen";
-  birth_date?: string;
-  death_date?: string;
+export type Bild = {
+  datei: string;
+  nachweis: string;
+  nachweis_url?: string;
+  beschriftung?: LocalizedText;
 };
 
-export type PoiStatus = "bestätigt" | "unsicher" | "prüfen";
-export type CoordinateStatus = "exact" | "approximate" | "unknown";
+export type PoiTyp = 'grab' | 'mausoleum' | 'denkmal' | 'gedenkanlage' | 'bauwerk' | 'bereich';
+export type Status = 'bestätigt' | 'prüfen';
 
 export type POI = {
   id: string;
-  type: string;
-  name: Translation;
-  coordinates: Coordinates | null;
-  coordinates_status: CoordinateStatus;
-  location_note: Translation;
-  summary: Translation;
-  description: Translation;
-  dates: Record<string, string>;
-  images: string[];
-  audio: string[]; // Re-typed as array in new schema, but UX layer assumes Record? Wait. No, schema says string[]
-  tags: string[];
-  categories: string[];
-  source_refs: SourceRef[];
-  status: PoiStatus;
-  alt_names: string[];
-  last_reviewed: string;
-  image_source_urls: string[];
-  primary_person?: PersonRef;
-  persons?: PersonRef[];
-  uncertainty_note?: string | Translation;
+  typ: PoiTyp;
+  name: LocalizedText;
+  koordinaten: Koordinaten | null;
+  kurztext: LocalizedText;
+  beschreibung: LocalizedText;
+  datum_von?: string | null;
+  datum_bis?: string | null;
+  wikipedia_url?: string | null;
+  bilder?: Bild[];
+  audio?: Record<string, string>;
+  quellen?: string[];
+  status: Status;
+  notiz?: string;
 };
 
 export type Collection = {
   id: string;
-  name: Translation;
-  summary: Translation;
-  description: Translation;
+  name: LocalizedText;
+  kurztext: LocalizedText;
+  beschreibung: LocalizedText;
   pois: string[];
-  tags: string[];
-  status: "bestätigt" | "unsicher" | "prüfen";
-  last_reviewed: string;
+  status: Status;
+  notiz?: string;
+};
+
+// --- Firestore-spezifische Typen (Authoring Tool) ---
+
+export type PublishStatus = 'entwurf' | 'zur_prüfung' | 'veröffentlicht';
+
+export type FirestorePOI = POI & {
+  publish_status: PublishStatus;
+  erstellt_von: string;
+  erstellt_am: any; // Firestore Timestamp
+  geaendert_von: string;
+  geaendert_am: any; // Firestore Timestamp
+};
+
+export type FirestoreCollection = Collection & {
+  publish_status: PublishStatus;
+  erstellt_von: string;
+  erstellt_am: any;
+  geaendert_von: string;
+  geaendert_am: any;
 };

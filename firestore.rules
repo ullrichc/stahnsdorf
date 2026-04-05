@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- POIs ---
+    match /pois/{poiId} {
+      // Öffentlich: nur veröffentlichte POIs lesen
+      allow read: if resource.data.publish_status == "veröffentlicht";
+
+      // Editoren: alles lesen und schreiben
+      allow read, write: if isEditor();
+    }
+
+    // --- Collections ---
+    match /collections/{collectionId} {
+      allow read: if resource.data.publish_status == "veröffentlicht";
+      allow read, write: if isEditor();
+    }
+
+    // --- Editor-Whitelist ---
+    // Jeder Editor hat ein Dokument editors/{email}
+    // User darf nur sein eigenes Dokument lesen
+    match /editors/{email} {
+      allow read: if request.auth != null
+                  && request.auth.token.email == email;
+      allow write: if false; // Nur über Firebase Console
+    }
+
+    // --- Helper ---
+    function isEditor() {
+      return request.auth != null
+          && exists(/databases/$(database)/documents/editors/$(request.auth.token.email));
+    }
+  }
+}

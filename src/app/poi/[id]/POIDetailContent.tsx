@@ -8,50 +8,47 @@ import AudioPlayer from '@/components/AudioPlayer'
 import styles from './page.module.css'
 
 const typeIcons: Record<string, string> = {
-  grave: '\u{1FAA6}',
-  building: '\u26EA',
-  landmark: '\u{1F4CC}',
-  nature: '\u{1F333}',
+  grab: '\u{1FAA6}',
+  bauwerk: '\u26EA',
+  bereich: '\u{1F4CC}',
+  denkmal: '\u{1F3DB}',
+  mausoleum: '\u{1F3DB}',
+  gedenkanlage: '\u{1F56F}',
 }
 
 const typeLabels: Record<string, Record<string, string>> = {
-  grave: { de: 'Grabstätte', en: 'Grave', fr: 'Tombe' },
-  building: { de: 'Gebäude', en: 'Building', fr: 'Bâtiment' },
-  landmark: { de: 'Orientierungspunkt', en: 'Landmark', fr: 'Point de repère' },
-  nature: { de: 'Natur', en: 'Nature', fr: 'Nature' },
+  grab: { de: 'Grabstätte', en: 'Grave', fr: 'Tombe' },
+  bauwerk: { de: 'Bauwerk', en: 'Building', fr: 'Bâtiment' },
+  bereich: { de: 'Bereich', en: 'Section', fr: 'Section' },
+  denkmal: { de: 'Denkmal', en: 'Memorial', fr: 'Mémorial' },
+  mausoleum: { de: 'Mausoleum', en: 'Mausoleum', fr: 'Mausolée' },
+  gedenkanlage: { de: 'Gedenkanlage', en: 'Memorial site', fr: 'Lieu de mémoire' },
 }
 
 export default function POIDetailContent({ poi }: { poi: POI }) {
   const locale = useLocale()
 
-  const audioSrc = (poi.audio && poi.audio.length > 0) ? poi.audio[0] : undefined
-  const label = typeLabels[poi.type]?.[locale] || typeLabels[poi.type]?.de || poi.type
+  const audioSrc = (poi.audio && typeof poi.audio === 'object') ? poi.audio[locale] || poi.audio['de'] : undefined
+  const label = typeLabels[poi.typ]?.[locale] || typeLabels[poi.typ]?.de || poi.typ
 
   return (
     <div className={styles.page}>
       <div className={styles.header}>
         <Link href="/" className={styles.back}>{'\u2190'}</Link>
-        <span>{typeIcons[poi.type] || '\u{1F4CC}'}</span>
+        <span>{typeIcons[poi.typ] || '\u{1F4CC}'}</span>
       </div>
       <div className={styles.content}>
         <span className={styles.badge}>{label}</span>
         <h1 className={styles.name}>{t(poi.name, locale)}</h1>
-        {poi.dates && (
+        {(poi.datum_von || poi.datum_bis) && (
           <p className={styles.dates}>
-            {poi.dates.born && `* ${poi.dates.born}`}
-            {poi.dates.born && poi.dates.died && ' \u2013 '}
-            {poi.dates.died && `\u2020 ${poi.dates.died}`}
+            {poi.datum_von && `* ${poi.datum_von}`}
+            {poi.datum_von && poi.datum_bis && ' \u2013 '}
+            {poi.datum_bis && `\u2020 ${poi.datum_bis}`}
           </p>
         )}
-        <p className={styles.description}>{t(poi.description, locale)}</p>
+        <p className={styles.description}>{t(poi.beschreibung, locale)}</p>
         <AudioPlayer src={audioSrc} />
-        {poi.tags && poi.tags.length > 0 && (
-          <div className={styles.tags}>
-            {poi.tags.map((tag) => (
-              <span key={tag} className={styles.tag}>{tag}</span>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   )

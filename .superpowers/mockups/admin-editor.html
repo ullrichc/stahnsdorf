@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Mockup — POI Editor</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #1a1a2e; color: #e0e0e0; }
+  
+  .header { background: #16213e; padding: 12px 24px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #334; }
+  .header .back { color: #a8d8a8; text-decoration: none; font-size: 16px; }
+  .header h1 { font-size: 18px; font-weight: 600; color: #a8d8a8; }
+  .header .id-label { font-size: 13px; color: #666; font-family: monospace; }
+  
+  .editor { display: grid; grid-template-columns: 1fr 360px; gap: 0; min-height: calc(100vh - 52px); }
+  
+  .left { padding: 24px 32px; overflow-y: auto; }
+  .right { background: #16213e; padding: 24px; border-left: 1px solid #334; overflow-y: auto; }
+  
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 12px; font-weight: 600; border-bottom: 1px solid #334; padding-bottom: 6px; }
+  
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-size: 13px; color: #aaa; margin-bottom: 4px; }
+  .field label .required { color: #e57373; }
+  .field input, .field textarea, .field select { 
+    width: 100%; background: #0f0f23; border: 1px solid #334; color: #e0e0e0; 
+    padding: 8px 12px; border-radius: 6px; font-size: 14px; font-family: inherit;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus { 
+    outline: none; border-color: #a8d8a8; box-shadow: 0 0 0 2px rgba(168,216,168,0.15); 
+  }
+  .field textarea { resize: vertical; min-height: 80px; }
+  .field .hint { font-size: 11px; color: #666; margin-top: 2px; }
+  
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  
+  .map-placeholder { 
+    width: 100%; height: 200px; background: #0f2e0f; border: 1px dashed #3d6; 
+    border-radius: 8px; display: flex; align-items: center; justify-content: center; 
+    color: #6d8; font-size: 14px; margin-bottom: 12px;
+  }
+  
+  .coord-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; align-items: end; }
+  .btn-locate { background: #2d4; color: #000; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; white-space: nowrap; height: 37px; }
+  
+  .source-list { list-style: none; }
+  .source-list li { display: flex; gap: 8px; margin-bottom: 6px; align-items: center; }
+  .source-list li input { flex: 1; }
+  .btn-remove { background: none; border: 1px solid #533; color: #e57373; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  .btn-add { background: none; border: 1px dashed #334; color: #888; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; width: 100%; margin-top: 4px; }
+  .btn-add:hover { border-color: #a8d8a8; color: #a8d8a8; }
+  
+  /* Right column */
+  .publish-status { text-align: center; margin-bottom: 20px; }
+  .publish-current { font-size: 14px; color: #aaa; margin-bottom: 12px; }
+  .publish-current .badge { 
+    display: inline-block; padding: 4px 12px; border-radius: 12px; 
+    font-weight: 600; font-size: 13px; 
+  }
+  .badge-entwurf { background: #333; color: #999; }
+  .badge-pruefung { background: #3d3520; color: #f0c040; }
+  .badge-live { background: #1d3d2f; color: #4caf50; }
+  
+  .workflow-btns { display: flex; flex-direction: column; gap: 8px; }
+  .btn-workflow { padding: 10px; border: none; border-radius: 6px; font-size: 14px; cursor: pointer; font-weight: 500; }
+  .btn-submit { background: #f0c040; color: #000; }
+  .btn-publish { background: #4caf50; color: #fff; }
+  .btn-unpublish { background: #333; color: #aaa; border: 1px solid #555; }
+  
+  .meta-info { font-size: 12px; color: #666; margin-top: 8px; }
+  .meta-info div { margin-bottom: 4px; }
+  
+  .save-bar { 
+    position: sticky; bottom: 0; background: #16213e; border-top: 1px solid #334; 
+    padding: 12px 24px; display: flex; justify-content: flex-end; gap: 12px;
+  }
+  .btn-save { background: #4caf50; color: #fff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 14px; cursor: pointer; font-weight: 500; }
+  .btn-cancel { background: none; border: 1px solid #555; color: #aaa; padding: 10px 24px; border-radius: 6px; font-size: 14px; cursor: pointer; }
+
+  .lang-tabs { display: flex; gap: 4px; margin-bottom: 8px; }
+  .lang-tab { padding: 3px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; background: #222; color: #666; border: 1px solid #334; }
+  .lang-tab.active { background: #334; color: #a8d8a8; border-color: #a8d8a8; }
+  .lang-tab.readonly { opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="admin-table.html" class="back">← Zurück</a>
+  <h1>POI bearbeiten</h1>
+  <span class="id-label">poi_sws_adolf-bastian</span>
+</div>
+
+<div class="editor">
+  <div class="left">
+    
+    <!-- Grunddaten -->
+    <div class="section">
+      <div class="section-title">Grunddaten</div>
+      <div class="field">
+        <label>Typ <span class="required">*</span></label>
+        <select>
+          <option selected>grab</option>
+          <option>bauwerk</option>
+          <option>denkmal</option>
+          <option>bereich</option>
+          <option>mausoleum</option>
+          <option>gedenkanlage</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Name <span class="required">*</span></label>
+        <div class="lang-tabs">
+          <span class="lang-tab active">DE</span>
+          <span class="lang-tab readonly">EN</span>
+          <span class="lang-tab readonly">FR</span>
+          <span class="lang-tab readonly">PL</span>
+          <span class="lang-tab readonly">RU</span>
+          <span class="lang-tab readonly">SV</span>
+        </div>
+        <input type="text" value="Adolf Bastian">
+      </div>
+      <div class="field">
+        <label>Kurztext <span class="required">*</span></label>
+        <input type="text" value="Ethnologe und Museumsgründer (1826–1905)" placeholder="Eine Zeile — erscheint beim Antippen in der App">
+        <div class="hint">Erscheint beim Antippen auf der Karte</div>
+      </div>
+      <div class="field">
+        <label>Beschreibung <span class="required">*</span></label>
+        <textarea rows="4">Adolf Bastian (1826–1905) war ein deutscher Ethnologe und Gründer des Museums für Völkerkunde in Berlin. Seine Grabstätte befindet sich im Block Trinitatis des Südwestkirchhofs.</textarea>
+        <div class="hint">Rein inhaltlich — kein Status, keine Redaktionshinweise</div>
+      </div>
+    </div>
+    
+    <!-- Daten & Links -->
+    <div class="section">
+      <div class="section-title">Daten & Links</div>
+      <div class="row">
+        <div class="field">
+          <label>Datum von</label>
+          <input type="text" value="1826-06-26" placeholder="YYYY-MM-DD">
+          <div class="hint">Geburtsdatum / Baudatum</div>
+        </div>
+        <div class="field">
+          <label>Datum bis</label>
+          <input type="text" value="1905-02-02" placeholder="YYYY-MM-DD">
+          <div class="hint">Sterbedatum / Abriss</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Wikipedia-URL</label>
+        <input type="url" value="https://de.wikipedia.org/wiki/Adolf_Bastian" placeholder="https://de.wikipedia.org/wiki/...">
+      </div>
+    </div>
+    
+    <!-- Quellen -->
+    <div class="section">
+      <div class="section-title">Quellen</div>
+      <ul class="source-list">
+        <li>
+          <input type="text" value="Wikipedia: Südwestkirchhof Stahnsdorf, abgerufen 2026-03-25">
+          <button class="btn-remove">🗑</button>
+        </li>
+        <li>
+          <input type="text" value="Wikipedia: Adolf Bastian, abgerufen 2026-03-25">
+          <button class="btn-remove">🗑</button>
+        </li>
+      </ul>
+      <button class="btn-add">+ Quelle hinzufügen</button>
+    </div>
+
+    <!-- Medien -->
+    <div class="section">
+      <div class="section-title">Medien</div>
+      <div class="field">
+        <label>Bilder</label>
+        <div class="hint" style="margin-bottom:8px">v1: Dateiname + Nachweis (Urheber, Lizenz). Kein Upload.</div>
+        <button class="btn-add">+ Bild hinzufügen</button>
+      </div>
+      <div class="field">
+        <label>Audio</label>
+        <div class="hint">URL pro Sprache (de, en, fr, ...)</div>
+        <button class="btn-add">+ Audio hinzufügen</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="right">
+    
+    <!-- Karte -->
+    <div class="section">
+      <div class="section-title">Position</div>
+      <div class="map-placeholder">🗺️ Leaflet-Karte<br><small>Klicken um Marker zu setzen</small></div>
+      <div class="coord-row">
+        <div class="field">
+          <label>Lat</label>
+          <input type="text" placeholder="52.389..." style="font-family:monospace; font-size:13px">
+        </div>
+        <div class="field">
+          <label>Lng</label>
+          <input type="text" placeholder="13.180..." style="font-family:monospace; font-size:13px">
+        </div>
+        <button class="btn-locate" title="GPS-Position verwenden">📍</button>
+      </div>
+    </div>
+    
+    <!-- Veröffentlichung -->
+    <div class="section">
+      <div class="section-title">Veröffentlichung</div>
+      <div class="publish-status">
+        <div class="publish-current">
+          Aktuell: <span class="badge badge-entwurf">Entwurf</span>
+        </div>
+        <div class="workflow-btns">
+          <button class="btn-workflow btn-submit">📤 Zur Prüfung einreichen</button>
+          <button class="btn-workflow btn-publish">✅ Direkt veröffentlichen</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Redaktion -->
+    <div class="section">
+      <div class="section-title">Redaktion</div>
+      <div class="field">
+        <label>Redaktionsstatus</label>
+        <select>
+          <option>prüfen</option>
+          <option>bestätigt</option>
+        </select>
+        <div class="hint">Inhaltliche Qualität, unabhängig von Veröffentlichung</div>
+      </div>
+      <div class="field">
+        <label>Notiz (intern)</label>
+        <textarea rows="3" placeholder="Lagehinweise, Koordinaten-Unsicherheiten, To-dos...">Block Trinitatis. Koordinaten vor Ort ermitteln.</textarea>
+        <div class="hint">Erscheint nicht in der App</div>
+      </div>
+    </div>
+    
+    <!-- Metadaten -->
+    <div class="section">
+      <div class="section-title">Metadaten</div>
+      <div class="meta-info">
+        <div>Erstellt von: <strong>editor@foerderverein.de</strong></div>
+        <div>Erstellt am: 04.04.2026, 16:30</div>
+        <div>Zuletzt bearbeitet: 04.04.2026, 20:15</div>
+        <div>Bearbeitet von: <strong>editor@foerderverein.de</strong></div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="save-bar">
+  <button class="btn-cancel">Abbrechen</button>
+  <button class="btn-save">💾 Speichern</button>
+</div>
+
+</body>
+</html>

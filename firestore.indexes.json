@@ -1,0 +1,22 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "pois",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "publish_status", "order": "ASCENDING" },
+        { "fieldPath": "typ", "order": "ASCENDING" },
+        { "fieldPath": "name.de", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "pois",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "publish_status", "order": "ASCENDING" },
+        { "fieldPath": "koordinaten", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
