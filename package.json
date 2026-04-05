@@ -8,7 +8,9 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "deploy:firestore": "firebase deploy --only firestore"
+    "deploy:firestore": "firebase deploy --only firestore",
+    "emulators": "firebase emulators:start",
+    "emulators:seed": "npx tsx scripts/seed-emulator.ts"
   },
   "dependencies": {
     "firebase": "^12.11.0",

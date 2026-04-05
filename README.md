@@ -46,12 +46,25 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
    # ...weitere Felder
    ```
 
-3. **Entwicklungsserver starten:**
+### Starten (Normal / Production-Daten)
+```bash
+npm run dev
+# App: http://localhost:3000
+# Admin: http://localhost:3000/admin
+```
+
+### Starten (Test-Datenbank / Emulator)
+Um bei der lokalen Entwicklung nicht die echte Datenbank zu verändern, nutzt das Projekt die Firebase Local Emulator Suite. *(Hinweis: Setzt voraus, dass Java installiert ist).*
+1. In der `.env.local` sicherstellen, dass `NEXT_PUBLIC_USE_FIREBASE_EMULATOR=true` gesetzt ist.
+2. In einem separaten Terminal die Emulator Suite starten:
    ```bash
-   npm run dev
-   # App: http://localhost:3000
-   # Admin: http://localhost:3000/admin
+   npm run emulators
    ```
+3. Testdaten (aktueller JSON-Stand) in den Emulator laden (optional, da der Emulator anfangs leer ist):
+   ```bash
+   npm run emulators:seed
+   ```
+4. Die App starten (`npm run dev`). Alles läuft nun sicher in der lokalen Sandbox.
 
 ### Tests ausführen
 Das Projekt verfügt über umfassende Unit/Integration-Tests.

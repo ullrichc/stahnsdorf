@@ -168,6 +168,9 @@ Alle Felder verwenden **deutsche Namen**:
 - Project-ID: `stahnsdorf-90e03`
 - Konfiguration über `NEXT_PUBLIC_FIREBASE_*` Umgebungsvariablen (7 Werte)
 - `src/lib/firebase.ts` initialisiert App + Firestore (mit Offline Persistence) + Auth
+- **Test-Datenbank / Emulator:** Um lokal zu testen, ohne die echte Datenbank zu beeinflussen, nutzen wir die [Firebase Local Emulator Suite](https://firebase.google.com/docs/emulator-suite).
+  - Aktiviert in `.env.local` über `NEXT_PUBLIC_USE_FIREBASE_EMULATOR=true`.
+  - Starten mit `npm run emulators`.
 - Editor-Whitelist: Collection `editors/{email}` — nur über Firebase Console verwaltbar
 - Security Rules: öffentliches Lesen nur für `publish_status == "veröffentlicht"`, Schreiben nur für Editoren
 - CLI: `npm run deploy:firestore` deployed Rules + Indexes
