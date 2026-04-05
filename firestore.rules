@@ -8,14 +8,31 @@ service cloud.firestore {
       // Öffentlich: nur veröffentlichte POIs lesen
       allow read: if resource.data.publish_status == "veröffentlicht";
 
-      // Editoren: alles lesen und schreiben
-      allow read, write: if isEditor();
+      // Editoren: alles lesen und schreiben, mit Audit-Prüfung
+      allow read: if isEditor();
+      allow create: if isEditor()
+                    && request.resource.data.erstellt_von == request.auth.token.email
+                    && request.resource.data.geaendert_von == request.auth.token.email;
+      allow update: if isEditor()
+                    && request.resource.data.erstellt_von == resource.data.erstellt_von
+                    && request.resource.data.erstellt_am == resource.data.erstellt_am
+                    && request.resource.data.geaendert_von == request.auth.token.email;
+      allow delete: if isEditor(); // Falls Delete später benötigt wird
     }
 
     // --- Collections ---
     match /collections/{collectionId} {
       allow read: if resource.data.publish_status == "veröffentlicht";
-      allow read, write: if isEditor();
+      
+      allow read: if isEditor();
+      allow create: if isEditor()
+                    && request.resource.data.erstellt_von == request.auth.token.email
+                    && request.resource.data.geaendert_von == request.auth.token.email;
+      allow update: if isEditor()
+                    && request.resource.data.erstellt_von == resource.data.erstellt_von
+                    && request.resource.data.erstellt_am == resource.data.erstellt_am
+                    && request.resource.data.geaendert_von == request.auth.token.email;
+      allow delete: if isEditor();
     }
 
     // --- Editor-Whitelist ---

@@ -114,7 +114,7 @@ export default function CollectionsPage() {
     try {
       const now = Timestamp.now();
       const id = editing._isNew
-        ? 'col_sws_' + name.toLowerCase().replace(/[^a-z0-9äöüß]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+        ? 'collection_sws_' + name.toLowerCase().replace(/[^a-z0-9äöüß]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
         : editing.id!;
 
       const { _isNew, ...rest } = editing;

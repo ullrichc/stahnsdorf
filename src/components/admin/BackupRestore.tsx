@@ -7,6 +7,7 @@ import {
   query,
   doc,
   setDoc,
+  deleteDoc,
   Timestamp,
 } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
@@ -34,6 +35,7 @@ export default function BackupRestore() {
   const [preview, setPreview] = useState<ImportPreview | null>(null);
   const [importStatus, setImportStatus] = useState<'entwurf' | 'veröffentlicht'>('entwurf');
   const [mergeMode, setMergeMode] = useState<'skip' | 'overwrite'>('skip');
+  const [deleteMode, setDeleteMode] = useState<boolean>(false);
   const [message, setMessage] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -108,8 +110,15 @@ export default function BackupRestore() {
       const text = await file.text();
       const data = JSON.parse(text);
       const isFullBackup = !!data._backup;
-      const importPOIs = data.pois ?? [];
-      const importCols = data.collections ?? [];
+      const importPOIs: any[] = data.pois ?? [];
+      const importCols: any[] = data.collections ?? [];
+
+      // Basic Runtime Validation
+      const isValidPOI = (p: any) => p && typeof p.id === 'string' && p.id.startsWith('poi_sws_') && p.name?.de && typeof p.typ === 'string';
+      const isValidCollection = (c: any) => c && typeof c.id === 'string' && c.id.startsWith('collection_sws_') && c.name?.de;
+
+      if (!importPOIs.every(isValidPOI)) throw new Error('Das JSON enthält ungültige POI-Daten (z.B. fehlende Pflichtfelder).');
+      if (!importCols.every(isValidCollection)) throw new Error('Das JSON enthält ungültige Collections.');
 
       // Load existing data for comparison
       const [existingPoiSnap, existingColSnap] = await Promise.all([
@@ -214,7 +223,30 @@ export default function BackupRestore() {
         colCount++;
       }
 
-      setMessage(`✅ Import abgeschlossen: ${poiCount} POIs, ${colCount} Collections.`);
+      let deleteCount = 0;
+      if (preview.isFullBackup && deleteMode) {
+        // Find documents in DB that are not in backup and delete them
+        const existingPoiSnap = await getDocs(query(fbCollection(db, 'pois')));
+        const existingColSnap = await getDocs(query(fbCollection(db, 'collections')));
+        
+        const backupPoiIds = new Set(preview.data.pois.map((p: any) => p.id));
+        const backupColIds = new Set(preview.data.collections.map((c: any) => c.id));
+
+        for (const pd of existingPoiSnap.docs) {
+          if (!backupPoiIds.has(pd.id)) {
+            await deleteDoc(doc(db, 'pois', pd.id));
+            deleteCount++;
+          }
+        }
+        for (const cd of existingColSnap.docs) {
+          if (!backupColIds.has(cd.id)) {
+            await deleteDoc(doc(db, 'collections', cd.id));
+            deleteCount++;
+          }
+        }
+      }
+
+      setMessage(`✅ Import abgeschlossen: ${poiCount} POIs, ${colCount} Collections.${deleteCount > 0 ? ` (${deleteCount} veraltete gelöscht)` : ''}`);
       setPreview(null);
     } catch (err: any) {
       setMessage('❌ Import fehlgeschlagen: ' + err.message);
@@ -334,6 +366,20 @@ export default function BackupRestore() {
                 <option value="skip">Überspringen</option>
                 <option value="overwrite">Überschreiben</option>
               </select>
+            </div>
+          )}
+
+          {preview.isFullBackup && (
+            <div className="admin-field" style={{ marginTop: '12px' }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', color: '#e57373' }}>
+                <input 
+                  type="checkbox" 
+                  checked={deleteMode} 
+                  onChange={(e) => setDeleteMode(e.target.checked)} 
+                  style={{ accentColor: '#e57373', width: '16px', height: '16px', minWidth: '16px' }}
+                />
+                Zusätzliche Einträge aus der Onlinedatenbank komplett löschen (Destruktiv)
+              </label>
             </div>
           )}
 
