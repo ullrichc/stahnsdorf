@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc, Timestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc, deleteDoc, collection as fbCollection, getDocs, query, Timestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
@@ -174,6 +174,32 @@ export default function POIForm({ poiId }: POIFormProps) {
       setError('Fehler beim Speichern: ' + err.message);
     }
     setSaving(false);
+  }
+
+  async function handleDelete() {
+    if (isNew || !poiId) return;
+    if (!window.confirm('POI wirklich dauerhaft löschen?')) return;
+    
+    setSaving(true);
+    try {
+      // 1. Delete POI
+      await deleteDoc(doc(db, 'pois', poiId));
+
+      // 2. Remove POI reference from all collections
+      const colSnap = await getDocs(query(fbCollection(db, 'collections')));
+      for (const colDoc of colSnap.docs) {
+        const data = colDoc.data();
+        if (data.pois && Array.isArray(data.pois) && data.pois.includes(poiId)) {
+          const updatedPois = data.pois.filter((id: string) => id !== poiId);
+          await setDoc(doc(db, 'collections', colDoc.id), { ...data, pois: updatedPois });
+        }
+      }
+
+      router.push('/admin');
+    } catch (err: any) {
+      setError('Fehler beim Löschen: ' + err.message);
+      setSaving(false);
+    }
   }
 
   // --- GPS ---
@@ -447,6 +473,12 @@ export default function POIForm({ poiId }: POIFormProps) {
 
       {/* Save Bar */}
       <div className="admin-save-bar">
+        {!isNew && (
+          <button className="admin-btn-cancel" style={{ color: '#e57373', borderColor: '#e57373' }} onClick={handleDelete} disabled={saving}>
+            Löschen
+          </button>
+        )}
+        <div className="spacer" style={{ flexGrow: 1 }} />
         <button className="admin-btn-cancel" onClick={() => router.push('/admin')}>Abbrechen</button>
         <button className="admin-btn-save" onClick={handleSave} disabled={saving}>
           {saving ? 'Speichern…' : 'Speichern'}

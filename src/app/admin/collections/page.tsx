@@ -139,6 +139,21 @@ export default function CollectionsPage() {
     setSaving(false);
   }
 
+  async function handleDelete() {
+    if (!editing || editing._isNew || !editing.id) return;
+    if (!window.confirm('Sammlung wirklich dauerhaft löschen?')) return;
+    
+    setSaving(true);
+    try {
+      await deleteDoc(doc(db, 'collections', editing.id));
+      setEditing(null);
+      await loadData();
+    } catch (err: any) {
+      setError('Fehler beim Löschen: ' + err.message);
+    }
+    setSaving(false);
+  }
+
   // Filtered POIs for selection
   const filteredPOIs = useMemo(() => {
     if (!poiSearch) return allPOIs;
@@ -315,6 +330,11 @@ export default function CollectionsPage() {
 
               {/* Buttons */}
               <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end', marginTop: '20px' }}>
+                {!editing._isNew && (
+                  <button className="admin-btn-cancel" style={{ marginRight: 'auto', color: '#e57373', borderColor: '#e57373' }} onClick={handleDelete} disabled={saving}>
+                    Löschen
+                  </button>
+                )}
                 <button className="admin-btn-cancel" onClick={() => setEditing(null)}>Abbrechen</button>
                 <button className="admin-btn-save" onClick={handleSave} disabled={saving}>
                   {saving ? 'Speichern…' : 'Speichern'}
