@@ -1,16 +1,16 @@
-/* ===== Admin Layout — Light Theme ===== */
+/* ===== Admin Layout — Eternal Archive Dark Theme ===== */
 
 :root {
-  --admin-bg: #f5f5f5;
-  --admin-surface: #ffffff;
-  --admin-border: #e0e0e0;
-  --admin-text: #1a1a1a;
-  --admin-muted: #666;
-  --admin-accent: #2e7d32;
-  --admin-green: #2e7d32;
-  --admin-yellow: #f9a825;
-  --admin-red: #c62828;
-  --admin-input-bg: #fafafa;
+  --admin-bg: var(--color-background);
+  --admin-surface: var(--color-surface-container-low);
+  --admin-border: var(--color-border);
+  --admin-text: var(--color-text);
+  --admin-muted: var(--color-text-muted);
+  --admin-accent: var(--color-primary);
+  --admin-green: var(--color-secondary);
+  --admin-yellow: var(--color-primary);
+  --admin-red: #ffb4ab;
+  --admin-input-bg: var(--color-surface-container-lowest);
 }
 
 /* ===== Auth Screens ===== */
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0f2f5;
+  background: var(--admin-bg);
 }
 
 .admin-login-card {
@@ -206,7 +206,7 @@
 }
 
 .admin-toolbar input::placeholder {
-  color: #999;
+  color: var(--admin-muted);
 }
 
 .admin-toolbar select {
@@ -279,7 +279,7 @@
 }
 
 .admin-table thead {
-  background: #fafafa;
+  background: var(--admin-bg);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -308,13 +308,13 @@
 
 .admin-table td {
   padding: 10px 16px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--admin-border);
   font-size: 14px;
   color: var(--admin-text);
 }
 
 .admin-table tr:hover {
-  background: #f0f7f0;
+  background: var(--color-surface-container-highest);
 }
 
 .admin-table tr {
@@ -332,26 +332,26 @@
 }
 
 /* Typ badges */
-.badge-grab { background: #fff3e0; color: #e65100; }
-.badge-bauwerk { background: #e0f2f1; color: #00695c; }
-.badge-denkmal { background: #fce4ec; color: #ad1457; }
-.badge-bereich { background: #e3f2fd; color: #1565c0; }
-.badge-mausoleum { background: #f1f8e9; color: #558b2f; }
-.badge-gedenkanlage { background: #f3e5f5; color: #7b1fa2; }
+.badge-grab { background: #3f4d3c; color: #aebda7; }
+.badge-bauwerk { background: #2f3133; color: #c5c6ca; }
+.badge-denkmal { background: #4b3e19; color: #bdaa7b; }
+.badge-bereich { background: #1a1c1e; color: #e9c176; }
+.badge-mausoleum { background: #273424; color: #bccbb5; }
+.badge-gedenkanlage { background: #3b2f0b; color: #d9c594; }
 
 /* Status badges */
-.badge-bestaetigt { background: #e8f5e9; color: #2e7d32; }
-.badge-pruefen { background: #fff8e1; color: #f57f17; }
+.badge-bestaetigt { background: #1b5e20; color: #e8f5e9; }
+.badge-pruefen { background: #775a19; color: #ffdea5; }
 
 /* Publish badges */
-.badge-entwurf { background: #f5f5f5; color: #757575; border-radius: 10px; }
-.badge-zur_pruefung { background: #fff8e1; color: #f57f17; border-radius: 10px; }
-.badge-veroeffentlicht { background: #e8f5e9; color: #2e7d32; border-radius: 10px; }
+.badge-entwurf { background: var(--color-surface-container-lowest); color: var(--color-text-muted); border-radius: 10px; }
+.badge-zur_pruefung { background: #775a19; color: #ffdea5; border-radius: 10px; }
+.badge-veroeffentlicht { background: #1b5e20; color: #e8f5e9; border-radius: 10px; }
 
 .coord-yes { color: var(--admin-green); }
-.coord-no { color: #bbb; }
+.coord-no { color: var(--admin-muted); }
 
-.dates { color: #888; font-size: 13px; white-space: nowrap; }
+.dates { color: var(--admin-muted); font-size: 13px; white-space: nowrap; }
 .name-cell { font-weight: 500; }
 
 /* ===== Actions ===== */
@@ -421,7 +421,7 @@
 .admin-field label {
   display: block;
   font-size: 13px;
-  color: #555;
+  color: var(--admin-text);
   margin-bottom: 4px;
 }
 
