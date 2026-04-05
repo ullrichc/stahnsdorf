@@ -4,26 +4,33 @@
  * Aufruf:
  *   npx tsx scripts/setup-editors.ts editor1@gmail.com editor2@gmail.com
  *
- * Voraussetzung: .env.local Variablen geladen
+ * Verwendet das Firebase Admin SDK, um Sicherheitsregeln zu umgehen.
  */
 
-import { initializeApp } from "firebase/app";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import * as admin from "firebase-admin";
+import { existsSync } from "fs";
+import { resolve } from "path";
+import * as dotenv from "dotenv";
 
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-};
-
-if (!firebaseConfig.projectId) {
-  console.error("❌ NEXT_PUBLIC_FIREBASE_PROJECT_ID nicht gesetzt.");
-  console.error("   Lade zuerst die .env.local Variablen.");
-  process.exit(1);
+// Lade .env.local falls vorhanden
+const envPath = resolve(__dirname, "../.env.local");
+if (existsSync(envPath)) {
+  dotenv.config({ path: envPath });
 }
+
+const PROJECT_ID = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "stahnsdorf-90e03";
+
+// Prüfe ob Emulator verwendet werden soll
+const useEmulator = process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATOR === "true";
+if (useEmulator) {
+  process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";
+}
+
+admin.initializeApp({
+  projectId: PROJECT_ID,
+});
+
+const db = admin.firestore();
 
 const emails = process.argv.slice(2);
 if (emails.length === 0) {
@@ -32,17 +39,14 @@ if (emails.length === 0) {
   process.exit(1);
 }
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
 async function main() {
-  console.log("🔑 Editor-Dokumente anlegen...");
-  console.log(`   Projekt: ${firebaseConfig.projectId}`);
+  console.log(`🔑 Editor-Dokumente anlegen in ${useEmulator ? 'LOKALEM EMULATOR' : 'PRODUKTION'}...`);
+  console.log(`   Projekt: ${PROJECT_ID}`);
   console.log("");
 
   for (const email of emails) {
     try {
-      await setDoc(doc(db, "editors", email), {
+      await db.collection("editors").doc(email).set({
         role: "editor",
         angelegt_am: new Date().toISOString(),
       });
@@ -57,4 +61,7 @@ async function main() {
   process.exit(0);
 }
 
-main();
+main().catch(err => {
+  console.error("\n❌ Fehler beim Setup:", err);
+  process.exit(1);
+});
