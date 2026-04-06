@@ -33,6 +33,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" suppressHydrationWarning className={`${manrope.variable} ${newsreader.variable}`}>
+      <head>
+        {/* Material Symbols Outlined — thin weight for Eternal Archive aesthetic */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <LocaleProvider>
           <main style={{ paddingBottom: 'var(--nav-height)' }}>{children}</main>

@@ -1,0 +1,3 @@
+claude/angry-swirles |  | 98b0d82 | feat: complete MVP — static export, media dirs, polish
+main | origin/main | 196724c | feat: Implement Eternal Archive dark theme UI
+new-ui | origin/new-ui | 196724c | feat: Implement Eternal Archive dark theme UI

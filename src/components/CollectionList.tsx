@@ -20,14 +20,25 @@ export default function CollectionList({ collections }: Props) {
   const getPOI = (id: string) => pois.find(p => p.id === id)
 
   const headingText = locale === 'en' ? 'Collections' : locale === 'fr' ? 'Collections' : 'Sammlungen'
-  const gravesText = locale === 'en' ? 'Graves' : locale === 'fr' ? 'Tombes' : 'Gräber'
-  const nearestText = locale === 'en' ? 'Nearest target:' : locale === 'fr' ? 'Cible la plus proche :' : 'Nächstes Ziel:'
+  const subtitleText = locale === 'en' ? 'Thematic trails through the heritage site.' : locale === 'fr' ? 'Parcours thématiques à travers le site.' : 'Thematische Pfade durch das Flächendenkmal.'
+  const sitesText = locale === 'en' ? 'sites' : locale === 'fr' ? 'sites' : 'Orte'
+  const nearestText = locale === 'en' ? 'Nearest:' : locale === 'fr' ? 'Plus proche :' : 'Nächstes:'
   const awayText = locale === 'en' ? 'away' : locale === 'fr' ? 'de distance' : 'entfernt'
-  const containsText = locale === 'en' ? 'Contains:' : locale === 'fr' ? 'Contient :' : 'Enthält:'
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{headingText}</h1>
+      {/* Editorial Header */}
+      <header className={styles.header}>
+        <div className={styles.headerLabel}>
+          <span className={styles.labelRule} />
+          <span className={styles.labelText}>
+            {locale === 'en' ? 'Archive of Eternity' : locale === 'fr' ? 'Archive de l\'Éternité' : 'Archiv der Ewigkeit'}
+          </span>
+        </div>
+        <h1 className={styles.heading}>{headingText}</h1>
+        <p className={styles.subtitle}>{subtitleText}</p>
+      </header>
+
       <div className={styles.list}>
         {collections.map((collection) => {
           let minDistance = Infinity
@@ -41,25 +52,27 @@ export default function CollectionList({ collections }: Props) {
             })
           }
 
-          const poiNames = collection.pois
-            .map(id => getPOI(id))
-            .filter(Boolean)
-            .map(poi => t(poi!.name, locale))
-            .join(', ')
-            
           return (
             <Link key={collection.id} href={`/sammlung/${collection.id}`} className={styles.card}>
-              <h2 className={styles.name}>{t(collection.name, locale)}</h2>
-              <p className={styles.description}>{t(collection.beschreibung, locale)}</p>
-              <div className={styles.meta}>
-                <span>{'\u{1F4CD}'} {collection.pois.length} {gravesText}</span>
-              </div>
-              {location && minDistance !== Infinity && (
-                <div className={styles.distanceHighlight}>
-                  ✨ {nearestText} {formatDistance(minDistance)} {awayText}
+              <div className={styles.cardContent}>
+                <h2 className={styles.name}>{t(collection.name, locale)}</h2>
+                <p className={styles.description}>{t(collection.beschreibung, locale)}</p>
+                <div className={styles.cardFooter}>
+                  <span className={styles.countPill}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>location_on</span>
+                    {collection.pois.length} {sitesText}
+                  </span>
+                  {location && minDistance !== Infinity && (
+                    <span className={styles.distanceTag}>
+                      <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>directions_walk</span>
+                      {nearestText} {formatDistance(minDistance)} {awayText}
+                    </span>
+                  )}
                 </div>
-              )}
-              <p className={styles.preview}>{containsText} {poiNames}</p>
+              </div>
+              <div className={styles.arrowWrap}>
+                <span className="material-symbols-outlined">arrow_forward</span>
+              </div>
             </Link>
           )
         })}

@@ -1,4 +1,5 @@
 import { AuthGate } from '@/components/admin/AuthGate';
+import AdminSidebar from '@/components/admin/AdminSidebar';
 import './admin.css';
 
 export const metadata = {
@@ -13,7 +14,12 @@ export default function AdminLayout({
 }) {
   return (
     <AuthGate>
-      {children}
+      <div className="admin-shell">
+        <AdminSidebar />
+        <div className="admin-main">
+          {children}
+        </div>
+      </div>
     </AuthGate>
   );
 }

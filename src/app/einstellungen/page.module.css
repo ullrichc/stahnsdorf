@@ -1,0 +1,84 @@
+.page {
+  padding: 24px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: var(--font-newsreader), 'Newsreader', serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+
+.section {
+  background: var(--color-surface-container-lowest);
+  padding: 24px;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(68, 71, 74, 0.15);
+}
+
+.sectionTitle {
+  font-family: var(--font-newsreader), 'Newsreader', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-on-surface);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionIcon {
+  color: var(--color-primary);
+}
+
+.langGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  border-radius: 0.75rem;
+  background: var(--color-surface-container);
+  color: var(--color-on-surface-variant);
+  border: 1px solid transparent;
+  transition: all var(--transition-stately);
+  cursor: pointer;
+  text-align: left;
+}
+
+.langBtn:hover {
+  background: var(--color-surface-container-high);
+}
+
+.langBtn.langActive {
+  background: var(--color-surface-container-high);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.langCode {
+  font-family: var(--font-manrope), 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: 28px;
+}
+
+.langName {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

@@ -91,7 +91,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
   if (!state.isEditor) {
     return (
       <div className="admin-auth-denied">
-        <h2>🚫 Zugriff verweigert</h2>
+        <h2><span className="material-symbols-outlined" style={{ verticalAlign: 'middle', marginRight: '8px' }}>block</span>Zugriff verweigert</h2>
         <p>{state.error}</p>
         <p className="admin-auth-email">{state.user.email}</p>
         <button onClick={() => signOut(auth)} className="admin-btn-secondary">
@@ -128,7 +128,7 @@ function LoginScreen() {
   return (
     <div className="admin-login">
       <div className="admin-login-card">
-        <h1>🌲 Südwestkirchhof</h1>
+        <h1><span className="material-symbols-outlined" style={{ verticalAlign: 'middle', marginRight: '8px', color: 'var(--color-tertiary)' }}>park</span>Südwestkirchhof</h1>
         <h2>Redaktionswerkzeug</h2>
         <p>Melde dich an, um POIs zu bearbeiten.</p>
         <button
@@ -136,7 +136,7 @@ function LoginScreen() {
           disabled={loading}
           className="admin-btn-google"
         >
-          {loading ? 'Anmelden…' : '🔑 Anmelden'}
+          {loading ? 'Anmelden…' : 'Anmelden'}
         </button>
         {error && <p className="admin-auth-error">{error}</p>}
       </div>

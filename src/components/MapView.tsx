@@ -35,7 +35,7 @@ function LocateButton() {
 
   return (
     <button className={styles.locate} onClick={handleLocate} aria-label="Locate">
-      {'\u{1F4CD}'}
+      <span className="material-symbols-outlined">my_location</span>
     </button>
   )
 }

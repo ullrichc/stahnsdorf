@@ -4,70 +4,57 @@
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 1000;
-  padding-bottom: env(safe-area-inset-bottom);
+  padding: 8px 16px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+  background: linear-gradient(to top, #121416 0%, #1a1c1e 60%, rgba(26, 28, 30, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: var(--shadow-nav);
+  border-top: 1px solid rgba(68, 71, 74, 0.10);
 }
 
 .tab {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: var(--color-text-muted);
-  font-size: 0.7rem;
-  gap: 2px;
-  padding: 4px 12px;
+  color: rgba(226, 226, 229, 0.60);
+  padding: 6px 12px;
+  border-radius: 0.75rem;
+  transition: all var(--transition-stately);
+  min-width: 56px;
+}
+
+.tab:hover {
+  color: var(--color-primary);
+}
+
+.tab:active {
+  transform: scale(0.95);
 }
 
 .tab.active {
   color: var(--color-primary);
+  background: var(--color-surface-container-high);
 }
 
 .icon {
-  font-size: 1.25rem;
+  font-size: 24px;
+  margin-bottom: 2px;
 }
 
 .label {
-  font-weight: 500;
-}
-
-.langSwitcher {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 4px 4px;
-}
-
-.langBtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  padding: 3px 4px;
-  border-radius: 4px;
-  transition: color 0.15s, background 0.15s;
-  letter-spacing: 0.02em;
-}
-
-.langBtn:hover {
-  color: var(--color-primary);
-}
-
-.langActive {
-  color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 12%, transparent);
-}
-
-.langSep {
-  color: var(--color-text-muted);
+  font-family: var(--font-manrope), 'Manrope', sans-serif;
   font-size: 0.6rem;
-  opacity: 0.5;
-  user-select: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 2px;
 }

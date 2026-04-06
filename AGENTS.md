@@ -51,7 +51,6 @@ stahnsdorf/
 │   └── collections.json     # 9 thematische Sammlungen
 ├── docs/
 │   └── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
-├── input/                   # Quelldaten, Recherche-Material
 ├── scripts/
 │   ├── migrate.ts           # Migrationsscript altes → neues Schema
 │   ├── migrate-to-firestore.ts  # Einmalige Migration JSON → Firestore
