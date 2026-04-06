@@ -118,6 +118,15 @@ export async function seedTestCollections(
 }
 
 /**
+ * Read a document from the emulator via Admin SDK to assert on backend state in E2E tests.
+ */
+export async function getTestDoc(collection: string, id: string): Promise<Record<string, any> | null> {
+  const db = getAdminFirestore();
+  const snap = await db.collection(collection).doc(id).get();
+  return snap.exists ? snap.data() || null : null;
+}
+
+/**
  * Login helper for Playwright E2E tests.
  *
  * Firebase Auth uses IndexedDB for session persistence, which Playwright's

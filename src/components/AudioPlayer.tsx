@@ -14,12 +14,7 @@ export default function AudioPlayer({ src }: Props) {
   const [duration, setDuration] = useState('0:00')
 
   if (!src) {
-    return (
-      <div className={styles.placeholder}>
-        <span className={styles.placeholderIcon}>{'\u{1F3A7}'}</span>
-        <span>Audio kommt bald</span>
-      </div>
-    )
+    return null
   }
 
   const formatTime = (s: number) => {

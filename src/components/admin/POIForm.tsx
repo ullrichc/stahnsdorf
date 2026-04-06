@@ -6,6 +6,7 @@ import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import type {
   FirestorePOI,
   PoiTyp,
@@ -70,6 +71,10 @@ export default function POIForm({ poiId }: POIFormProps) {
           const data = snap.data() as FirestorePOI;
           setFormData(data);
           setOriginalData(data);
+          if (data.koordinaten) {
+            setLatInput(data.koordinaten.lat.toString());
+            setLngInput(data.koordinaten.lng.toString());
+          }
         } else {
           setError('POI nicht gefunden.');
         }
@@ -110,12 +115,22 @@ export default function POIForm({ poiId }: POIFormProps) {
     setField('quellen', quellen);
   }
 
-  function setKoordinaten(lat: string, lng: string) {
-    const latNum = parseFloat(lat);
-    const lngNum = parseFloat(lng);
+  const [latInput, setLatInput] = useState<string>('');
+  const [lngInput, setLngInput] = useState<string>('');
+
+  function handleCoordChange(type: 'lat' | 'lng', val: string) {
+    if (type === 'lat') setLatInput(val);
+    else setLngInput(val);
+
+    const currLat = type === 'lat' ? val : latInput;
+    const currLng = type === 'lng' ? val : lngInput;
+
+    const latNum = parseFloat(currLat);
+    const lngNum = parseFloat(currLng);
+
     if (!isNaN(latNum) && !isNaN(lngNum)) {
       setField('koordinaten', { lat: latNum, lng: lngNum });
-    } else if (!lat && !lng) {
+    } else if (!currLat.trim() && !currLng.trim()) {
       setField('koordinaten', null);
     }
   }
@@ -208,10 +223,11 @@ export default function POIForm({ poiId }: POIFormProps) {
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setField('koordinaten', {
-          lat: Math.round(pos.coords.latitude * 1e6) / 1e6,
-          lng: Math.round(pos.coords.longitude * 1e6) / 1e6,
-        });
+        const lat = Math.round(pos.coords.latitude * 1e6) / 1e6;
+        const lng = Math.round(pos.coords.longitude * 1e6) / 1e6;
+        setField('koordinaten', { lat, lng });
+        setLatInput(lat.toString());
+        setLngInput(lng.toString());
       },
       (err) => setError('GPS-Position konnte nicht ermittelt werden.'),
       { enableHighAccuracy: true }
@@ -230,7 +246,7 @@ export default function POIForm({ poiId }: POIFormProps) {
       <div className="admin-header">
         <h1>{isNew ? '+ Neuer POI' : `✏️ ${t(formData.name as LocalizedText, 'de')}`}</h1>
         <div className="admin-header-right">
-          <a href="/admin">← Zurück zur Tabelle</a>
+          <Link href="/admin">← Zurück zur Übersicht</Link>
         </div>
       </div>
 
@@ -359,10 +375,8 @@ export default function POIForm({ poiId }: POIFormProps) {
                 <label>Lat</label>
                 <input
                   type="text"
-                  value={formData.koordinaten?.lat?.toString() ?? ''}
-                  onChange={(e) =>
-                    setKoordinaten(e.target.value, formData.koordinaten?.lng?.toString() ?? '')
-                  }
+                  value={latInput}
+                  onChange={(e) => handleCoordChange('lat', e.target.value)}
                   placeholder="52.xxxxx"
                 />
               </div>
@@ -370,10 +384,8 @@ export default function POIForm({ poiId }: POIFormProps) {
                 <label>Lng</label>
                 <input
                   type="text"
-                  value={formData.koordinaten?.lng?.toString() ?? ''}
-                  onChange={(e) =>
-                    setKoordinaten(formData.koordinaten?.lat?.toString() ?? '', e.target.value)
-                  }
+                  value={lngInput}
+                  onChange={(e) => handleCoordChange('lng', e.target.value)}
                   placeholder="13.xxxxx"
                 />
               </div>
@@ -385,7 +397,11 @@ export default function POIForm({ poiId }: POIFormProps) {
               <button
                 className="admin-btn-secondary"
                 style={{ width: '100%', marginTop: '8px' }}
-                onClick={() => setField('koordinaten', null)}
+                onClick={() => {
+                  setField('koordinaten', null);
+                  setLatInput('');
+                  setLngInput('');
+                }}
               >
                 Koordinaten entfernen
               </button>

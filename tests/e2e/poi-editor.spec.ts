@@ -11,6 +11,7 @@ import {
   loginInPlaywright,
   seedTestPOIs,
   TEST_EDITOR_EMAIL,
+  getTestDoc,
 } from '../utils/firebase-test-utils';
 
 const EXISTING_POI = {
@@ -160,24 +161,39 @@ test('EDIT-03: editing preserves bilder, audio, and foreign language texts', asy
   await page.locator('a:has-text("Test POI Preserved")').click();
   await page.locator('.admin-editor').waitFor({ state: 'visible', timeout: 15_000 });
 
-  // The form data should still contain the preserved fields
-  // (bilder/audio/en text are not editable in UI, but must survive the save)
-  // We verify the name loaded correctly which proves the full data roundtrip
-  await expect(page.locator('input[placeholder="z.B. Heinrich Zille"]')).toHaveValue('Test POI Preserved');
+  // We verify that the data in the backend remained intact for non-UI elements
+  const doc = await getTestDoc('pois', EXISTING_POI.id);
+  expect(doc).not.toBeNull();
+  expect(doc!.name.en).toEqual('Test POI EN');
+  expect(doc!.bilder).toEqual(EXISTING_POI.bilder);
+  expect(doc!.audio).toEqual(EXISTING_POI.audio);
 });
 
 // ═══ GEO-01: Koordinaten eingeben ═══
-test('GEO-01: manual coordinate entry does not work sequentially (form limitation)', async ({ page }) => {
+test('GEO-01: manual coordinate entry saves correctly sequentially', async ({ page }) => {
   await gotoNewPOI(page);
 
-  // Form limitation: setKoordinaten requires both lat AND lng to parse as valid numbers,
-  // but each input's onChange reads the other value from formData.koordinaten (which is null).
-  // Sequential filling therefore never sets koordinaten.
+  // Set name since it's required for saving
+  await page.locator('input[placeholder="z.B. Heinrich Zille"]').fill('Coord Test');
+
+  // Sequential filling of coordinates should correctly update local state
   await page.locator('input[placeholder="52.xxxxx"]').fill('52.3912');
   await page.locator('input[placeholder="13.xxxxx"]').fill('13.1899');
 
-  // Dokumentiert das aktuelle Verhalten: Koordinaten werden NICHT gesetzt
-  await expect(page.locator('body')).toContainText('Keine Koordinaten — POI erscheint nicht auf der Karte');
+  // Remove focus to ensure onChange is fully processed
+  await page.locator('input[placeholder="z.B. Heinrich Zille"]').focus();
+  
+  // Save POI
+  await page.locator('button:has-text("Speichern")').click();
+
+  // Redirects away
+  await page.waitForURL('**/admin', { timeout: 15_000 });
+  await page.locator('.admin-table').waitFor({ state: 'visible', timeout: 15_000 });
+
+  // Read backend directly to verify koordinaten decoupled state was persisted properly
+  const doc = await getTestDoc('pois', 'poi_sws_coord-test');
+  expect(doc).not.toBeNull();
+  expect(doc!.koordinaten).toEqual({ lat: 52.3912, lng: 13.1899 });
 });
 
 // ═══ GEO-02: Koordinaten entfernen ═══

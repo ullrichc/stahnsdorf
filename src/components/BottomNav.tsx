@@ -6,7 +6,7 @@ import styles from './BottomNav.module.css'
 
 const tabs = [
   { href: '/', icon: 'map', labels: { de: 'Karte', en: 'Map', fr: 'Carte' } },
-  { href: '/sammlungen', icon: 'library_books', labels: { de: 'Archiv', en: 'Archive', fr: 'Archive' } },
+  { href: '/sammlungen', icon: 'library_books', labels: { de: 'Sammlungen', en: 'Collections', fr: 'Collections' } },
   { href: '/info', icon: 'info', labels: { de: 'Info', en: 'Info', fr: 'Info' } },
   { href: '/einstellungen', icon: 'settings', labels: { de: 'Optionen', en: 'Settings', fr: 'Options' } },
 ]

@@ -84,7 +84,11 @@ describe('createNewPoi', () => {
   });
 });
 
-describe('buildMergedPois', () => {
+import fs from 'fs';
+import path from 'path';
+const hasScrapingData = fs.existsSync(path.resolve(process.cwd(), 'scraping', 'stahnsdorf_map_pois.json'));
+
+describe.skipIf(!hasScrapingData)('buildMergedPois', () => {
   it('returns 75 POIs (71 existing + 4 new)', () => {
     const result = buildMergedPois();
     expect(result).toHaveLength(75);
@@ -142,7 +146,7 @@ describe('buildMergedPois', () => {
   });
 });
 
-describe('buildMergedCollections', () => {
+describe.skipIf(!hasScrapingData)('buildMergedCollections', () => {
   it('renames all non-standard IDs in pois arrays', () => {
     const result = buildMergedCollections();
     const allPoiRefs = result.flatMap(c => c.pois);

@@ -14,6 +14,7 @@ import { signOut } from 'firebase/auth';
 import { db, auth } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
+import Link from 'next/link';
 import type {
   FirestoreCollection,
   FirestorePOI,
@@ -171,7 +172,7 @@ export default function CollectionsPage() {
       <div className="admin-header">
         <h1>🌲 Südwestkirchhof — Sammlungen</h1>
         <div className="admin-header-right">
-          <a href="/admin">← POI-Tabelle</a>
+          <Link href="/admin">← POI-Tabelle</Link>
           <span>{user?.email}</span>
           <a href="#" onClick={(e) => { e.preventDefault(); signOut(auth); }}>Abmelden</a>
         </div>

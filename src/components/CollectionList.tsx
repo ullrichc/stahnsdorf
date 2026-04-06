@@ -32,7 +32,7 @@ export default function CollectionList({ collections }: Props) {
         <div className={styles.headerLabel}>
           <span className={styles.labelRule} />
           <span className={styles.labelText}>
-            {locale === 'en' ? 'Archive of Eternity' : locale === 'fr' ? 'Archive de l\'Éternité' : 'Archiv der Ewigkeit'}
+            Südwestkirchhof Stahnsdorf
           </span>
         </div>
         <h1 className={styles.heading}>{headingText}</h1>

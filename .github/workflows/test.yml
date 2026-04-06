@@ -9,6 +9,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_FIREBASE_API_KEY: 'test-api-key'
+      NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: 'stahnsdorf-90e03.firebaseapp.com'
+      NEXT_PUBLIC_FIREBASE_PROJECT_ID: 'stahnsdorf-90e03'
+      NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: 'stahnsdorf-90e03.appspot.com'
+      NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: '123456789'
+      NEXT_PUBLIC_FIREBASE_APP_ID: '1:123456789:web:abcdef'
+      NEXT_PUBLIC_USE_FIREBASE_EMULATOR: 'true'
     steps:
       - uses: actions/checkout@v4
 
@@ -38,8 +46,6 @@ jobs:
 
       - name: Run E2E Tests
         run: npm run test:e2e
-        env:
-          NEXT_PUBLIC_USE_FIREBASE_EMULATOR: 'true'
 
       - name: Upload Playwright Report
         if: failure()

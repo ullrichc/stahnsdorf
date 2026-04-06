@@ -295,6 +295,7 @@ export default function BackupRestore() {
             className="admin-btn-new"
             onClick={() => handleExport('content')}
             disabled={exporting}
+            title="Exportiert saubere JSON (POIs und Sammlungen) ohne interne Metadaten wie Autoren oder Status."
           >
             📄 Inhalte exportieren
           </button>
@@ -303,13 +304,11 @@ export default function BackupRestore() {
             onClick={() => handleExport('full')}
             disabled={exporting}
             style={{ padding: '8px 16px' }}
+            title="Exportiert ein exaktes Abbild der Datenbank, um es bei Bedarf vollständig und ohne Datenverlust wiederherzustellen."
           >
             💾 Backup herunterladen
           </button>
         </div>
-        <p style={{ color: 'var(--admin-muted)', fontSize: '12px', marginTop: '8px' }}>
-          <strong>Inhalte:</strong> Saubere JSON ohne Firestore-Metadaten. <strong>Backup:</strong> Alle Felder, roundtrip-fähig.
-        </p>
       </div>
 
       {/* Import */}
@@ -326,6 +325,7 @@ export default function BackupRestore() {
           className="admin-btn-secondary"
           onClick={() => fileRef.current?.click()}
           style={{ padding: '8px 16px' }}
+          title="Fügt Daten hinzu oder überschreibt bestehende. Ihre aktuelle Datenbank wird dabei nicht gelöscht (außer bei explizitem Backup-Restore)."
         >
           📂 Aus JSON importieren
         </button>

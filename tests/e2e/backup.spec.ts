@@ -287,13 +287,16 @@ test('IMP-12: skip merge mode skips existing, imports new', async ({ page }) => 
 // ═══ IMP-13: Content-Import Overwrite (Fix for BUG-06) ═══
 test('IMP-13: content import overwrite succeeds by preserving immutable fields', async ({ page }) => {
   await seedTestPOIs([SEED_POI], TEST_EDITOR_EMAIL);
+  await seedTestCollections([SEED_COLLECTION], TEST_EDITOR_EMAIL);
   await gotoBackup(page);
 
   await uploadJSON(page, {
     pois: [
       { ...SEED_POI, name: { de: 'Overwrite Attempt' } },
     ],
-    collections: [],
+    collections: [
+      { ...SEED_COLLECTION, name: { de: 'Overwrite Attempt Collection' } },
+    ],
   });
 
   await expect(page.locator('text=Import-Vorschau')).toBeVisible({ timeout: 10_000 });
@@ -311,6 +314,7 @@ test('IMP-13: content import overwrite succeeds by preserving immutable fields',
 // ═══ IMP-14: Full-Backup Overwrite (Fix for BUG-07) ═══
 test('IMP-14: full backup overwrite succeeds by setting current user as geaendert_von', async ({ page }) => {
   await seedTestPOIs([SEED_POI], TEST_EDITOR_EMAIL);
+  await seedTestCollections([SEED_COLLECTION], TEST_EDITOR_EMAIL);
   await gotoBackup(page);
 
   await uploadJSON(page, {
@@ -327,7 +331,17 @@ test('IMP-14: full backup overwrite succeeds by setting current user as geaender
         geaendert_am: new Date().toISOString(),
       },
     ],
-    collections: [],
+    collections: [
+      {
+        ...SEED_COLLECTION,
+        name: { de: 'Backup Overwrite Col' },
+        publish_status: 'veröffentlicht',
+        erstellt_von: TEST_EDITOR_EMAIL,
+        erstellt_am: new Date().toISOString(),
+        geaendert_von: 'other-editor@example.com', // foreign → original caused BUG-07
+        geaendert_am: new Date().toISOString(),
+      },
+    ],
   });
 
   await expect(page.locator('text=Import-Vorschau')).toBeVisible({ timeout: 10_000 });

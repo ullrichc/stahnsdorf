@@ -1,0 +1,3064 @@
+{
+  "_backup": true,
+  "_timestamp": "2026-04-06T14:52:39.342Z",
+  "pois": [
+    {
+      "id": "poi_sws_adolf-bastian",
+      "typ": "grab",
+      "name": {
+        "de": "Adolf Bastian",
+        "en": "Adolf Bastian",
+        "fr": "Adolf Bastian"
+      },
+      "koordinaten": {
+        "lat": 52.38673,
+        "lng": 13.17995
+      },
+      "kurztext": {
+        "de": "Grab von Adolf Bastian; Ethnologe und Museumsgründer.",
+        "en": "Grave of Adolf Bastian; ethnologist and museum founder.",
+        "fr": "Tombe de Adolf Bastian ; ethnologue et fondateur de musée."
+      },
+      "beschreibung": {
+        "de": "Adolf Bastian (1826–1905) – Ethnologe und Museumsgründer.",
+        "en": "Adolf Bastian (1826–1905) – ethnologist and museum founder.",
+        "fr": "Adolf Bastian (1826–1905) – ethnologue et fondateur de musée."
+      },
+      "datum_von": "1826-06-26",
+      "datum_bis": "1905-02-02",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Adolf_Bastian",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Adolf Bastian, Wikipedia, https://de.wikipedia.org/wiki/Adolf_Bastian, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlgrabstelle 153/154",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_adolf-rohrbach",
+      "typ": "grab",
+      "name": {
+        "de": "Adolf Rohrbach",
+        "en": "Adolf Rohrbach",
+        "fr": "Adolf Rohrbach"
+      },
+      "koordinaten": {
+        "lat": 52.38884,
+        "lng": 13.17543
+      },
+      "kurztext": {
+        "de": "Grab von Adolf Rohrbach; Flugzeug- und Flugbootingenieur.",
+        "en": "Grave of Adolf Rohrbach; aircraft and flying-boat engineer.",
+        "fr": "Tombe de Adolf Rohrbach ; ingénieur aéronautique et des hydravions."
+      },
+      "beschreibung": {
+        "de": "Adolf Rohrbach (1889–1939) – Flugzeug- und Flugbootingenieur.",
+        "en": "Adolf Rohrbach (1889–1939) – aircraft and flying-boat engineer.",
+        "fr": "Adolf Rohrbach (1889–1939) – ingénieur aéronautique et des hydravions."
+      },
+      "datum_von": "1889-03-28",
+      "datum_bis": "1939",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Adolf_Rohrbach",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Im offiziellen Grabstättenplan ist nur das Geburtsdatum und das Todesjahr sicher ableitbar; der exakte Todestag wurde in dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Lietzensee, Gartenblock IV, Erbbegräbnis 19",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_albert-wilkening",
+      "typ": "grab",
+      "name": {
+        "de": "Albert Wilkening",
+        "en": "Albert Wilkening",
+        "fr": "Albert Wilkening"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Albert Wilkening; Jurist und langjähriger Leiter der DEFA in Babelsberg.",
+        "en": "Grave of Albert Wilkening; jurist and long-serving head of DEFA Babelsberg.",
+        "fr": "Tombe de Albert Wilkening ; juriste et directeur de longue date de la DEFA à Babelsberg."
+      },
+      "beschreibung": {
+        "de": "Albert Wilkening (1909–1990) – Jurist und langjähriger Leiter der DEFA in Babelsberg.",
+        "en": "Albert Wilkening (1909–1990) – jurist and long-serving head of DEFA Babelsberg.",
+        "fr": "Albert Wilkening (1909–1990) – juriste et directeur de longue date de la DEFA à Babelsberg."
+      },
+      "datum_von": "1909-02-05",
+      "datum_bis": "1990-07-24",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Albert_Wilkening",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Schöneberg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_alexander-von-kluck",
+      "typ": "grab",
+      "name": {
+        "de": "Alexander von Kluck",
+        "en": "Alexander von Kluck",
+        "fr": "Alexander von Kluck"
+      },
+      "koordinaten": {
+        "lat": 52.38805,
+        "lng": 13.18674
+      },
+      "kurztext": {
+        "de": "Grab von Alexander von Kluck; Generaloberst.",
+        "en": "Grave of Alexander von Kluck; colonel general.",
+        "fr": "Tombe de Alexander von Kluck ; général-colonel."
+      },
+      "beschreibung": {
+        "de": "Alexander von Kluck (1846–1934) – Generaloberst.",
+        "en": "Alexander von Kluck (1846–1934) – colonel general.",
+        "fr": "Alexander von Kluck (1846–1934) – général-colonel."
+      },
+      "datum_von": "1846-05-20",
+      "datum_bis": "1934-01-19",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Alexander_von_Kluck",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_alfred-schneider",
+      "typ": "grab",
+      "name": {
+        "de": "Alfred Schneider",
+        "en": "Alfred Schneider",
+        "fr": "Alfred Schneider"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Alfred Schneider; Zirkusartist und Löwendompteur.",
+        "en": "Grave of Alfred Schneider; circus performer and lion tamer.",
+        "fr": "Tombe de Alfred Schneider ; artiste de cirque et dompteur de lions."
+      },
+      "beschreibung": {
+        "de": "Alfred Schneider (1876–1941) – Zirkusartist und Löwendompteur.",
+        "en": "Alfred Schneider (1876–1941) – circus performer and lion tamer.",
+        "fr": "Alfred Schneider (1876–1941) – artiste de cirque et dompteur de lions."
+      },
+      "datum_von": "1876-06-23",
+      "datum_bis": "1941-12-23",
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_alte-umbettung",
+      "typ": "bereich",
+      "name": {
+        "de": "Alte Umbettung",
+        "en": "Alte Umbettung",
+        "fr": "Alte Umbettung"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Block mit umgebetteten Grabstätten des 19. Jahrhunderts.",
+        "en": "Section containing reinterred nineteenth-century graves.",
+        "fr": "Secteur réunissant des sépultures du XIXe siècle transférées ici."
+      },
+      "beschreibung": {
+        "de": "Der offizielle Grabstättenplan nennt die Alte Umbettung als Bereich für Grabstätten des 19. Jahrhunderts, die infolge der Germania-Planungen 1938/39 aus Schöneberg nach Stahnsdorf umgesetzt wurden. Der Nordrand des Friedhofs gehört zu den wichtigsten Umbettungszonen der Anlage.",
+        "en": "The official grave map describes Alte Umbettung as the area for nineteenth-century graves moved from Schöneberg to Stahnsdorf in 1938/39 during the Germania plans. The northern edge of the cemetery is one of the site’s key reinterment zones.",
+        "fr": "Le plan officiel décrit l’Alte Umbettung comme le secteur des sépultures du XIXe siècle transférées de Schöneberg à Stahnsdorf en 1938/39 dans le contexte des projets de Germania. Le bord nord du cimetière compte parmi les principales zones de translation."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Nördlicher Bereich des Friedhofs. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_anita-kupsch",
+      "typ": "grab",
+      "name": {
+        "de": "Anita Kupsch",
+        "en": "Anita Kupsch",
+        "fr": "Anita Kupsch"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Anita Kupsch; Schauspielerin und Synchronsprecherin.",
+        "en": "Grave of Anita Kupsch; actress and dubbing artist.",
+        "fr": "Tombe de Anita Kupsch ; actrice et comédienne de doublage."
+      },
+      "beschreibung": {
+        "de": "Anita Kupsch (1940–2025) – Schauspielerin und Synchronsprecherin.",
+        "en": "Anita Kupsch (1940–2025) – actress and dubbing artist.",
+        "fr": "Anita Kupsch (1940–2025) – actrice et comédienne de doublage."
+      },
+      "datum_von": "1940-05-18",
+      "datum_bis": "2025-07-03",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Anita_Kupsch",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Anita Kupsch, Wikipedia, https://de.wikipedia.org/wiki/Anita_Kupsch, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_anlage-opfer-krieg-und-gewaltherrschaft",
+      "typ": "bereich",
+      "name": {
+        "de": "Anlage für die Opfer von Krieg und Gewaltherrschaft",
+        "en": "Anlage für die Opfer von Krieg und Gewaltherrschaft",
+        "fr": "Anlage für die Opfer von Krieg und Gewaltherrschaft"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Zentraler Gedenkort für die Opfer von Krieg und Gewaltherrschaft auf dem Südwestkirchhof.",
+        "en": "Central memorial site for the victims of war and tyranny on the South-Western Cemetery.",
+        "fr": "Lieu central de mémoire pour les victimes de la guerre et de la tyrannie au Südwestkirchhof."
+      },
+      "beschreibung": {
+        "de": "Der offizielle Grabstättenplan führt diese Anlage als markierten Gedenkort. Aktuelle kirchliche und verbandliche Hinweise sprechen von mehr als 4.000 Opfern von Krieg und Gewaltherrschaft auf dem Südwestkirchhof; die Anlage steht für diesen erinnerungsgeschichtlichen Schwerpunkt der Gesamtanlage.",
+        "en": "The official grave map lists this memorial as a marked site. Current church and remembrance sources speak of more than 4,000 victims of war and tyranny buried on the cemetery; the site stands for this major commemorative layer of the grounds.",
+        "fr": "Le plan officiel des sépultures indique cet ensemble comme lieu de mémoire. Des sources ecclésiales et commémoratives actuelles évoquent plus de 4 000 victimes de la guerre et de la tyrannie sur le cimetière ; ce lieu représente cette dimension mémorielle majeure de l’ensemble."
+      },
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25",
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Im offiziellen Grabstättenplan als Gedenkort markiert; genaue GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_august-stramm",
+      "typ": "grab",
+      "name": {
+        "de": "August Stramm",
+        "en": "August Stramm",
+        "fr": "August Stramm"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von August Stramm; Dichter und Dramatiker des Expressionismus.",
+        "en": "Grave of August Stramm; Expressionist poet and playwright.",
+        "fr": "Tombe de August Stramm ; poète et dramaturge expressionniste."
+      },
+      "beschreibung": {
+        "de": "August Stramm (1874–1915) – Dichter und Dramatiker des Expressionismus.",
+        "en": "August Stramm (1874–1915) – Expressionist poet and playwright.",
+        "fr": "August Stramm (1874–1915) – poète et dramaturge expressionniste."
+      },
+      "datum_von": "1874-07-29",
+      "datum_bis": "1915-09-01",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/August_Stramm",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "August Stramm, Wikipedia, https://de.wikipedia.org/wiki/August_Stramm, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_berlin-south-western-cemetery",
+      "typ": "bereich",
+      "name": {
+        "de": "Berlin South-Western Cemetery",
+        "en": "Berlin South-Western Cemetery",
+        "fr": "Berlin South-Western Cemetery"
+      },
+      "koordinaten": {
+        "lat": 52.38382,
+        "lng": 13.17561
+      },
+      "kurztext": {
+        "de": "Commonwealth-Kriegsgräberstätte des Ersten Weltkriegs auf dem Südwestkirchhof.",
+        "en": "Commonwealth First World War war cemetery within the South-Western Cemetery.",
+        "fr": "Cimetière militaire du Commonwealth de la Première Guerre mondiale à l’intérieur du Südwestkirchhof."
+      },
+      "beschreibung": {
+        "de": "Die Commonwealth War Graves Commission nennt für den Berlin South-Western Cemetery derzeit 1.177 identifizierte Kriegstote des Ersten Weltkriegs und veröffentlicht exakte GPS-Koordinaten. Der Friedhof liegt etwa 1,6 Kilometer vom Haupteingang entfernt und grenzt an den italienischen Soldatenfriedhof.",
+        "en": "The Commonwealth War Graves Commission currently lists 1,177 identified First World War casualties for Berlin South-Western Cemetery and publishes exact GPS coordinates. The cemetery lies about 1.6 kilometres from the main entrance and adjoins the Italian military cemetery.",
+        "fr": "La Commonwealth War Graves Commission indique actuellement 1 177 victimes identifiées de la Première Guerre mondiale pour le Berlin South-Western Cemetery et publie des coordonnées GPS exactes. Le cimetière se situe à environ 1,6 kilomètre de l’entrée principale et jouxte le cimetière militaire italien."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Berlin South-Western Cemetery, Commonwealth War Graves Commission, https://www.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/90900/berlin-south-western-cemetery/, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Etwa 1,6 km vom Haupteingang entfernt; Beschilderung „Zur Kapelle“ und CWGC-Wegweisung folgen. Ältere Sekundärquellen nennen 1.172 oder 1.176 Bestattete; als aktuellste belastbare Angabe wurde hier die CWGC-Zahl von 1.177 identifizierten Kriegstoten übernommen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_carl-ludwig-schleich",
+      "typ": "grab",
+      "name": {
+        "de": "Carl Ludwig Schleich",
+        "en": "Carl Ludwig Schleich",
+        "fr": "Carl Ludwig Schleich"
+      },
+      "koordinaten": {
+        "lat": 52.38732,
+        "lng": 13.18542
+      },
+      "kurztext": {
+        "de": "Grab von Carl Ludwig Schleich; Arzt, Schriftsteller und Pionier der Lokalanästhesie.",
+        "en": "Grave of Carl Ludwig Schleich; physician, writer and pioneer of local anaesthesia.",
+        "fr": "Tombe de Carl Ludwig Schleich ; médecin, écrivain et pionnier de l’anesthésie locale."
+      },
+      "beschreibung": {
+        "de": "Carl Ludwig Schleich (1859–1922) – Arzt, Schriftsteller und Pionier der Lokalanästhesie.",
+        "en": "Carl Ludwig Schleich (1859–1922) – physician, writer and pioneer of local anaesthesia.",
+        "fr": "Carl Ludwig Schleich (1859–1922) – médecin, écrivain et pionnier de l’anesthésie locale."
+      },
+      "datum_von": "1859-07-19",
+      "datum_bis": "1922-03-07",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Carl_Ludwig_Schleich",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock I, Grabstelle 47",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_christusdenkmal",
+      "typ": "bereich",
+      "name": {
+        "de": "Christusdenkmal",
+        "en": "Christusdenkmal",
+        "fr": "Christusdenkmal"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Monumentales Christusrelief aus Carrara-Marmor nahe dem Haupteingang.",
+        "en": "Monumental Carrara marble relief of Christ near the main entrance.",
+        "fr": "Relief monumental du Christ en marbre de Carrare près de l’entrée principale."
+      },
+      "beschreibung": {
+        "de": "Das Christusdenkmal wurde nach dem offiziellen Grabstättenplan 1912 von Ludwig Manzel gestaltet und 1923 in der Nähe des Haupteingangs aufgestellt. Es gehört zu den bekanntesten Wahrzeichen des Südwestkirchhofs.",
+        "en": "According to the official grave map, the Christ monument was designed by Ludwig Manzel in 1912 and installed near the main entrance in 1923. It is one of the cemetery’s best-known landmarks.",
+        "fr": "Selon le plan officiel, le monument du Christ a été conçu par Ludwig Manzel en 1912 et installé en 1923 près de l’entrée principale. Il compte parmi les repères les plus connus du cimetière."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Nahe dem Haupteingang. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_conrad-matschoss",
+      "typ": "grab",
+      "name": {
+        "de": "Conrad Matschoß",
+        "en": "Conrad Matschoß",
+        "fr": "Conrad Matschoß"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Conrad Matschoß; Ingenieur und Technikhistoriker.",
+        "en": "Grave of Conrad Matschoß; engineer and historian of technology.",
+        "fr": "Tombe de Conrad Matschoß ; ingénieur et historien des techniques."
+      },
+      "beschreibung": {
+        "de": "Conrad Matschoß (1871–1942) – Ingenieur und Technikhistoriker.",
+        "en": "Conrad Matschoß (1871–1942) – engineer and historian of technology.",
+        "fr": "Conrad Matschoß (1871–1942) – ingénieur et historien des techniques."
+      },
+      "datum_von": "1871-06-09",
+      "datum_bis": "1942-03-21",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Conrad_Matscho%C3%9F",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_dieter-thomas-heck",
+      "typ": "grab",
+      "name": {
+        "de": "Dieter Thomas Heck",
+        "en": "Dieter Thomas Heck",
+        "fr": "Dieter Thomas Heck"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Dieter Thomas Heck; Moderator und Showmaster.",
+        "en": "Grave of Dieter Thomas Heck; television presenter and showmaster.",
+        "fr": "Tombe de Dieter Thomas Heck ; animateur de télévision et showmaster."
+      },
+      "beschreibung": {
+        "de": "Dieter Thomas Heck (1937–2018) – Moderator und Showmaster.",
+        "en": "Dieter Thomas Heck (1937–2018) – television presenter and showmaster.",
+        "fr": "Dieter Thomas Heck (1937–2018) – animateur de télévision et showmaster."
+      },
+      "datum_von": "1937-12-29",
+      "datum_bis": "2018-08-23",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Dieter_Thomas_Heck",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
+        "Dieter Thomas Heck, Wikipedia, https://de.wikipedia.org/wiki/Dieter_Thomas_Heck, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Urnenhain II Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_edmund-rumpler",
+      "typ": "grab",
+      "name": {
+        "de": "Edmund Rumpler",
+        "en": "Edmund Rumpler",
+        "fr": "Edmund Rumpler"
+      },
+      "koordinaten": {
+        "lat": 52.38845,
+        "lng": 13.18757
+      },
+      "kurztext": {
+        "de": "Grab von Edmund Rumpler; Ingenieur für Flugzeug- und Automobilkonstruktionen.",
+        "en": "Grave of Edmund Rumpler; engineer for aircraft and automobile design.",
+        "fr": "Tombe de Edmund Rumpler ; ingénieur en construction aéronautique et automobile."
+      },
+      "beschreibung": {
+        "de": "Edmund Rumpler (1872–1940) – Ingenieur für Flugzeug- und Automobilkonstruktionen.",
+        "en": "Edmund Rumpler (1872–1940) – engineer for aircraft and automobile design.",
+        "fr": "Edmund Rumpler (1872–1940) – ingénieur en construction aéronautique et automobile."
+      },
+      "datum_von": "1872-01-04",
+      "datum_bis": "1940-09-07",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Edmund_Rumpler",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock III, Erbbegräbnis 28",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_elisabeth-von-ardenne",
+      "typ": "grab",
+      "name": {
+        "de": "Elisabeth Baronin von Ardenne",
+        "en": "Elisabeth Baronin von Ardenne",
+        "fr": "Elisabeth Baronin von Ardenne"
+      },
+      "koordinaten": {
+        "lat": 52.38712,
+        "lng": 13.17647
+      },
+      "kurztext": {
+        "de": "Grab von Elisabeth Baronin von Ardenne; historisches Vorbild für Fontanes „Effi Briest“.",
+        "en": "Grave of Elisabeth Baronin von Ardenne; historical model for Fontane’s “Effi Briest”.",
+        "fr": "Tombe de Elisabeth Baronin von Ardenne ; modèle historique de l’« Effi Briest » de Fontane."
+      },
+      "beschreibung": {
+        "de": "Elisabeth Baronin von Ardenne (1853–1952) – historisches Vorbild für Fontanes „Effi Briest“.",
+        "en": "Elisabeth Baronin von Ardenne (1853–1952) – historical model for Fontane’s “Effi Briest”.",
+        "fr": "Elisabeth Baronin von Ardenne (1853–1952) – modèle historique de l’« Effi Briest » de Fontane."
+      },
+      "datum_von": "1853-10-26",
+      "datum_bis": "1952-02-04",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Elisabeth_von_Plotho",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Gartenblock V, Erbbegräbnis 112a",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_emil-krebs",
+      "typ": "grab",
+      "name": {
+        "de": "Emil Krebs",
+        "en": "Emil Krebs",
+        "fr": "Emil Krebs"
+      },
+      "koordinaten": {
+        "lat": 52.39001,
+        "lng": 13.17902
+      },
+      "kurztext": {
+        "de": "Grab von Emil Krebs; Sinologe und Sprachgenie.",
+        "en": "Grave of Emil Krebs; sinologist and linguistic prodigy.",
+        "fr": "Tombe de Emil Krebs ; sinologue et prodige des langues."
+      },
+      "beschreibung": {
+        "de": "Emil Krebs (1867–1930) – Sinologe und Sprachgenie.",
+        "en": "Emil Krebs (1867–1930) – sinologist and linguistic prodigy.",
+        "fr": "Emil Krebs (1867–1930) – sinologue et prodige des langues."
+      },
+      "datum_von": "1867-11-15",
+      "datum_bis": "1930-03-31",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Emil_Krebs",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Epiphanien, Gartenblock I, Gartenstelle 81",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_engelbert-humperdinck",
+      "typ": "grab",
+      "name": {
+        "de": "Engelbert Humperdinck",
+        "en": "Engelbert Humperdinck",
+        "fr": "Engelbert Humperdinck"
+      },
+      "koordinaten": {
+        "lat": 52.3872,
+        "lng": 13.18393
+      },
+      "kurztext": {
+        "de": "Grab von Engelbert Humperdinck; Komponist.",
+        "en": "Grave of Engelbert Humperdinck; composer.",
+        "fr": "Tombe de Engelbert Humperdinck ; compositeur."
+      },
+      "beschreibung": {
+        "de": "Engelbert Humperdinck (1854–1921) – Komponist.",
+        "en": "Engelbert Humperdinck (1854–1921) – composer.",
+        "fr": "Engelbert Humperdinck (1854–1921) – compositeur."
+      },
+      "datum_von": "1854-09-01",
+      "datum_bis": "1921-09-27",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Engelbert_Humperdinck",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Erlöser Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Erlöser, Feld 4, Erbbegräbnis 10",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_erik-jan-hanussen",
+      "typ": "grab",
+      "name": {
+        "de": "Erik Jan Hanussen",
+        "en": "Erik Jan Hanussen",
+        "fr": "Erik Jan Hanussen"
+      },
+      "koordinaten": {
+        "lat": 52.39061,
+        "lng": 13.18382
+      },
+      "kurztext": {
+        "de": "Grab von Erik Jan Hanussen; Hellseher und Varietékünstler.",
+        "en": "Grave of Erik Jan Hanussen; clairvoyant and variety performer.",
+        "fr": "Tombe de Erik Jan Hanussen ; voyant et artiste de variétés."
+      },
+      "beschreibung": {
+        "de": "Erik Jan Hanussen (1889–1933) – Hellseher und Varietékünstler.",
+        "en": "Erik Jan Hanussen (1889–1933) – clairvoyant and variety performer.",
+        "fr": "Erik Jan Hanussen (1889–1933) – voyant et artiste de variétés."
+      },
+      "datum_von": "1889-06-02",
+      "datum_bis": "1933-04-07",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Erik_Jan_Hanussen",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Charlottenburg, Gartenblock III, Grabstelle 50",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_ernst-gennat",
+      "typ": "grab",
+      "name": {
+        "de": "Ernst Gennat",
+        "en": "Ernst Gennat",
+        "fr": "Ernst Gennat"
+      },
+      "koordinaten": {
+        "lat": 52.38852,
+        "lng": 13.18782
+      },
+      "kurztext": {
+        "de": "Grab von Ernst Gennat; Kriminalist und Begründer der Berliner Mordkommission.",
+        "en": "Grave of Ernst Gennat; criminologist and founder of Berlin’s homicide squad.",
+        "fr": "Tombe de Ernst Gennat ; criminaliste et fondateur de la brigade des homicides berlinoise."
+      },
+      "beschreibung": {
+        "de": "Ernst Gennat (1880–1939) – Kriminalist und Begründer der Berliner Mordkommission.",
+        "en": "Ernst Gennat (1880–1939) – criminologist and founder of Berlin’s homicide squad.",
+        "fr": "Ernst Gennat (1880–1939) – criminaliste et fondateur de la brigade des homicides berlinoise."
+      },
+      "datum_von": "1880-01-01",
+      "datum_bis": "1939-08-21",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Ernst_Gennat",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock II, Gartenstelle 23",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_ernst-seger",
+      "typ": "grab",
+      "name": {
+        "de": "Ernst Seger"
+      },
+      "koordinaten": {
+        "lat": 52.39067,
+        "lng": 13.18178
+      },
+      "kurztext": {
+        "de": "Grab von Ernst Seger; Bildhauer."
+      },
+      "beschreibung": {
+        "de": "Ernst Seger – Bildhauer. Die Grabstätte befindet sich im Block Schöneberg, Feld 8, Wahlstelle 276 des Südwestkirchhofs Stahnsdorf."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04"
+      ],
+      "status": "bestätigt",
+      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Schöneberg, Feld 8, Wahlstelle 276. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_ferdinand-von-richthofen",
+      "typ": "grab",
+      "name": {
+        "de": "Ferdinand von Richthofen",
+        "en": "Ferdinand von Richthofen",
+        "fr": "Ferdinand von Richthofen"
+      },
+      "koordinaten": {
+        "lat": 52.39135,
+        "lng": 13.17956
+      },
+      "kurztext": {
+        "de": "Grab von Ferdinand von Richthofen; Geograph, Geologe und Asienforscher.",
+        "en": "Grave of Ferdinand von Richthofen; geographer, geologist and explorer of Asia.",
+        "fr": "Tombe de Ferdinand von Richthofen ; géographe, géologue et explorateur de l’Asie."
+      },
+      "beschreibung": {
+        "de": "Ferdinand von Richthofen (1833–1905) – Geograph, Geologe und Asienforscher.",
+        "en": "Ferdinand von Richthofen (1833–1905) – geographer, geologist and explorer of Asia.",
+        "fr": "Ferdinand von Richthofen (1833–1905) – géographe, géologue et explorateur de l’Asie."
+      },
+      "datum_von": "1833-05-05",
+      "datum_bis": "1905-10-06",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Ferdinand_von_Richthofen",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. C, Erbb. 127",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_franz-bracht",
+      "typ": "grab",
+      "name": {
+        "de": "Franz Bracht",
+        "en": "Franz Bracht",
+        "fr": "Franz Bracht"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Franz Bracht; Politiker und Reichsinnenminister.",
+        "en": "Grave of Franz Bracht; politician and Reich Minister of the Interior.",
+        "fr": "Tombe de Franz Bracht ; homme politique et ministre de l’Intérieur du Reich."
+      },
+      "beschreibung": {
+        "de": "Franz Bracht (1877–1933) – Politiker und Reichsinnenminister.",
+        "en": "Franz Bracht (1877–1933) – politician and Reich Minister of the Interior.",
+        "fr": "Franz Bracht (1877–1933) – homme politique et ministre de l’Intérieur du Reich."
+      },
+      "datum_von": "1877-11-23",
+      "datum_bis": "1933-11-26",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Franz_Bracht",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_friedhofseingang",
+      "typ": "entrance",
+      "name": {
+        "de": "Haupteingang",
+        "en": "Haupteingang",
+        "fr": "Haupteingang"
+      },
+      "koordinaten": {
+        "lat": 52.3885935,
+        "lng": 13.1890989
+      },
+      "kurztext": {
+        "de": "Historischer Hauptzugang an der Bahnhofstraße mit Verwaltungsbereich.",
+        "en": "Historic main entrance on Bahnhofstraße with the administrative area.",
+        "fr": "Entrée principale historique de la Bahnhofstraße avec la zone administrative."
+      },
+      "beschreibung": {
+        "de": "Der Haupteingang an der Bahnhofstraße ist der zentrale Zugang zum Südwestkirchhof. Öffentliche Quellen nennen hier Verwaltungsgebäude und Orientierungspunkte; vom Eingang führen Wegeachse und Beschilderung tief in die Anlage.",
+        "en": "The main entrance on Bahnhofstraße is the central access point to the South-Western Cemetery.",
+        "fr": "L’entrée principale de la Bahnhofstraße constitue l’accès central au Südwestkirchhof. Des sources publiques y situent les bâtiments administratifs et les points d’orientation ; les axes principaux et les itinéraires balisés partent d’ici."
+      },
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Bahnhofstraße 2, Hauptzugang des Friedhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_friedrich-weissler",
+      "typ": "grab",
+      "name": {
+        "de": "Friedrich Weißler",
+        "en": "Friedrich Weißler",
+        "fr": "Friedrich Weißler"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Friedrich Weißler; Jurist und Widerstandskämpfer in der Bekennenden Kirche.",
+        "en": "Grave of Friedrich Weißler; jurist and resistance figure in the Confessing Church.",
+        "fr": "Tombe de Friedrich Weißler ; juriste et résistant de l’Église confessante."
+      },
+      "beschreibung": {
+        "de": "Friedrich Weißler (1891–1937) – Jurist und Widerstandskämpfer in der Bekennenden Kirche.",
+        "en": "Friedrich Weißler (1891–1937) – jurist and resistance figure in the Confessing Church.",
+        "fr": "Friedrich Weißler (1891–1937) – juriste et résistant de l’Église confessante."
+      },
+      "datum_von": "1891-04-28",
+      "datum_bis": "1937-02-19",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wei%C3%9Fler",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_fritz-banneitz",
+      "typ": "grab",
+      "name": {
+        "de": "Fritz Banneitz",
+        "en": "Fritz Banneitz",
+        "fr": "Fritz Banneitz"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Fritz Banneitz; Ingenieur und Fernsehtechniker.",
+        "en": "Grave of Fritz Banneitz; engineer and television pioneer.",
+        "fr": "Tombe de Fritz Banneitz ; ingénieur et pionnier de la télévision."
+      },
+      "beschreibung": {
+        "de": "Fritz Banneitz (1885–1940) – Ingenieur und Fernsehtechniker.",
+        "en": "Fritz Banneitz (1885–1940) – engineer and television pioneer.",
+        "fr": "Fritz Banneitz (1885–1940) – ingénieur et pionnier de la télévision."
+      },
+      "datum_von": "1885-09-11",
+      "datum_bis": "1940-12-05",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_Banneitz",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_fw-murnau",
+      "typ": "grab",
+      "name": {
+        "de": "Friedrich Wilhelm Murnau",
+        "en": "Friedrich Wilhelm Murnau",
+        "fr": "Friedrich Wilhelm Murnau"
+      },
+      "koordinaten": {
+        "lat": 52.3882,
+        "lng": 13.18389
+      },
+      "kurztext": {
+        "de": "Grab von Friedrich Wilhelm Murnau; Stummfilmregisseur.",
+        "en": "Grave of Friedrich Wilhelm Murnau; silent film director.",
+        "fr": "Tombe de Friedrich Wilhelm Murnau ; réalisateur du cinéma muet."
+      },
+      "beschreibung": {
+        "de": "Friedrich Wilhelm Murnau (1888–1931) – Stummfilmregisseur und Schöpfer von „Nosferatu“. Seine Grabstätte gehört zu den bekanntesten Filmgräbern des Südwestkirchhofs und ist im offiziellen Grabstättenplan markiert.",
+        "en": "Friedrich Wilhelm Murnau (1888–1931) – silent film director and creator of “Nosferatu”. His grave is among the cemetery’s best-known film-related sites and is marked in the official grave map.",
+        "fr": "Friedrich Wilhelm Murnau (1888–1931) – réalisateur du cinéma muet et créateur de « Nosferatu ». Sa tombe compte parmi les sépultures cinématographiques les plus connues du cimetière."
+      },
+      "datum_von": "1888-12-28",
+      "datum_bis": "1931-03-11",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_Murnau",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Im offiziellen Grabstättenplan markierte Grabstätte; exakter Block in den hier verwendeten Quellen nicht einheitlich ausgewiesen. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Schöneberg, Feld 3a, Erb. 5",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_garnisongrab",
+      "typ": "bereich",
+      "name": {
+        "de": "Garnisongrab",
+        "en": "Garnisongrab",
+        "fr": "Garnisongrab"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Gemeinschaftsgrab mit umgebetteten Toten aus der Berliner Garnisonkirche und vom Alten Garnisonfriedhof.",
+        "en": "Collective grave containing reinterred dead from the Berlin Garrison Church and the Old Garrison Cemetery.",
+        "fr": "Tombe collective contenant des morts transférés depuis l’église de la garnison de Berlin et l’ancien cimetière de la garnison."
+      },
+      "beschreibung": {
+        "de": "Nach öffentlichen Beschreibungen wurden 1949 Gebeine aus der zerstörten Berliner Garnisonkirche in einem Gemeinschaftsgrab nahe der Kapelle beigesetzt; 2008 kamen weitere geborgene Überreste hinzu. Das Garnisongrab ist ein eigenständiger historischer Erinnerungsort innerhalb des Südwestkirchhofs.",
+        "en": "According to public descriptions, remains from the destroyed Berlin Garrison Church were buried in a collective grave near the chapel in 1949; further recovered remains were added in 2008. The Garrison Grave is a distinct historic place of remembrance within the cemetery.",
+        "fr": "Selon des descriptions publiques, des restes provenant de l’église berlinoise de la garnison détruite ont été enterrés en 1949 dans une tombe collective près de la chapelle ; d’autres restes exhumés y ont été ajoutés en 2008. La Garnisongrab constitue un lieu de mémoire historique distinct au sein du cimetière."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Nahe der Kapelle. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_georg-graf-von-arco",
+      "typ": "grab",
+      "name": {
+        "de": "Georg Graf von Arco",
+        "en": "Georg Graf von Arco",
+        "fr": "Georg Graf von Arco"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Georg Graf von Arco; Physiker und Funkpionier.",
+        "en": "Grave of Georg Graf von Arco; physicist and radio pioneer.",
+        "fr": "Tombe de Georg Graf von Arco ; physicien et pionnier de la radio."
+      },
+      "beschreibung": {
+        "de": "Georg Graf von Arco (1869–1940) – Physiker und Funkpionier.",
+        "en": "Georg Graf von Arco (1869–1940) – physicist and radio pioneer.",
+        "fr": "Georg Graf von Arco (1869–1940) – physicien et pionnier de la radio."
+      },
+      "datum_von": "1869-08-30",
+      "datum_bis": "1940-05-05",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Georg_Graf_von_Arco",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_gustav-kadelburg",
+      "typ": "grab",
+      "name": {
+        "de": "Gustav Kadelburg",
+        "en": "Gustav Kadelburg",
+        "fr": "Gustav Kadelburg"
+      },
+      "koordinaten": {
+        "lat": 52.38796,
+        "lng": 13.18378
+      },
+      "kurztext": {
+        "de": "Grab von Gustav Kadelburg; Lustspieldichter und Bühnenautor.",
+        "en": "Grave of Gustav Kadelburg; playwright and stage author.",
+        "fr": "Tombe de Gustav Kadelburg ; auteur dramatique et auteur de théâtre."
+      },
+      "beschreibung": {
+        "de": "Gustav Kadelburg (1851–1925) – Lustspieldichter und Bühnenautor.",
+        "en": "Gustav Kadelburg (1851–1925) – playwright and stage author.",
+        "fr": "Gustav Kadelburg (1851–1925) – auteur dramatique et auteur de théâtre."
+      },
+      "datum_von": "1851-07-26",
+      "datum_bis": "1925-09-11",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Gustav_Kadelburg",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock V, Erbbegräbnis 26",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_gustav-langenscheidt",
+      "typ": "grab",
+      "name": {
+        "de": "Gustav Langenscheidt",
+        "en": "Gustav Langenscheidt",
+        "fr": "Gustav Langenscheidt"
+      },
+      "koordinaten": {
+        "lat": 52.39117,
+        "lng": 13.17367
+      },
+      "kurztext": {
+        "de": "Grab von Gustav Langenscheidt; Sprachlehrer und Verlagsgründer.",
+        "en": "Grave of Gustav Langenscheidt; language teacher and publishing founder.",
+        "fr": "Tombe de Gustav Langenscheidt ; professeur de langues et fondateur d’édition."
+      },
+      "beschreibung": {
+        "de": "Gustav Langenscheidt (1832–1895) – Sprachlehrer und Verlagsgründer.",
+        "en": "Gustav Langenscheidt (1832–1895) – language teacher and publishing founder.",
+        "fr": "Gustav Langenscheidt (1832–1895) – professeur de langues et fondateur d’édition."
+      },
+      "datum_von": "1832-10-21",
+      "datum_bis": "1895-11-10",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Gustav_Langenscheidt",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. D, Erbb. 179",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_gustav-werner",
+      "typ": "grab",
+      "name": {
+        "de": "Gustav Werner",
+        "en": "Gustav Werner",
+        "fr": "Gustav Werner"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Gustav Werner; Königlicher Baurat und Erbauer der Friedhofskapelle.",
+        "en": "Grave of Gustav Werner; royal building councillor and builder of the cemetery chapel.",
+        "fr": "Tombe de Gustav Werner ; conseiller royal des bâtiments et constructeur de la chapelle du cimetière."
+      },
+      "beschreibung": {
+        "de": "Gustav Werner (1859–1917) – Königlicher Baurat und Erbauer der Friedhofskapelle. Öffentliche Quellen verorten seine Grabstätte gegenüber der von ihm entworfenen Kapelle. Im offiziellen Grabstättenplan ist die Station markiert.",
+        "en": "Gustav Werner (1859–1917) – royal building councillor and builder of the cemetery chapel.",
+        "fr": "Gustav Werner (1859–1917) – conseiller royal des bâtiments et constructeur de la chapelle du cimetière."
+      },
+      "datum_von": "1859-07-10",
+      "datum_bis": "1917-11-20",
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Gegenüber der von Gustav Werner erbauten Kapelle, im Bereich des Kapellenvorfelds. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_hanno-guenther",
+      "typ": "grab",
+      "name": {
+        "de": "Hanno Günther",
+        "en": "Hanno Günther",
+        "fr": "Hanno Günther"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Hanno Günther; Widerstandskämpfer gegen das NS-Regime.",
+        "en": "Grave of Hanno Günther; resistance fighter against the Nazi regime.",
+        "fr": "Tombe de Hanno Günther ; résistant au régime nazi."
+      },
+      "beschreibung": {
+        "de": "Hanno Günther (1921–1942) – Widerstandskämpfer gegen das NS-Regime.",
+        "en": "Hanno Günther (1921–1942) – resistance fighter against the Nazi regime.",
+        "fr": "Hanno Günther (1921–1942) – résistant au régime nazi."
+      },
+      "datum_von": "1921-01-12",
+      "datum_bis": "1942-12-03",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Hanno_G%C3%BCnther",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Urnenhain III Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_hans-essen",
+      "typ": "grab",
+      "name": {
+        "de": "Hans Henrik Freiherr von Essen"
+      },
+      "koordinaten": {
+        "lat": 52.38968,
+        "lng": 13.17891
+      },
+      "kurztext": {
+        "de": "Grab von Hans Henrik Freiherr von Essen; Diplomat, Schwedischer Gesandter in Berlin."
+      },
+      "beschreibung": {
+        "de": "Hans Henrik Freiherr von Essen – Diplomat, Schwedischer Gesandter in Berlin. Die Grabstätte befindet sich im Block Epiphanien, Schwedenblock, Erbbegräbnis 19 des Südwestkirchhofs Stahnsdorf."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04"
+      ],
+      "status": "bestätigt",
+      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Epiphanien, Schwedenblock, Erbbegräbnis 19. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_harald-kretzschmar",
+      "typ": "grab",
+      "name": {
+        "de": "Harald Kretzschmar",
+        "en": "Harald Kretzschmar",
+        "fr": "Harald Kretzschmar"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Harald Kretzschmar; Karikaturist, Grafiker und Feuilletonist.",
+        "en": "Grave of Harald Kretzschmar; cartoonist, graphic artist and feuilletonist.",
+        "fr": "Tombe de Harald Kretzschmar ; caricaturiste, graphiste et chroniqueur."
+      },
+      "beschreibung": {
+        "de": "Harald Kretzschmar (1931–2024) – Karikaturist, Grafiker und Feuilletonist.",
+        "en": "Harald Kretzschmar (1931–2024) – cartoonist, graphic artist and feuilletonist.",
+        "fr": "Harald Kretzschmar (1931–2024) – caricaturiste, graphiste et chroniqueur."
+      },
+      "datum_von": "1931",
+      "datum_bis": "2024",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Harald_Kretzschmar",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Harald Kretzschmar, Pirckheimer-Gesellschaft, https://pirckheimer-gesellschaft.org/blog/harald-kretzschmar-0, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Stahnsdorf Koordinaten vor Ort ermitteln. Der genaue Todestag wurde in den ausgewerteten öffentlichen Quellen dieser Recherche nicht separat ermittelt; Grabblock und Bestattungsort sind jedoch belegt.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_hauptkapelle",
+      "typ": "bauwerk",
+      "name": {
+        "de": "Friedhofskapelle",
+        "en": "Friedhofskapelle",
+        "fr": "Friedhofskapelle"
+      },
+      "koordinaten": {
+        "lat": 52.389506,
+        "lng": 13.180954
+      },
+      "kurztext": {
+        "de": "Holzkapelle im Stil norwegischer Stabkirchen; architektonisches Wahrzeichen des Friedhofs.",
+        "en": "Wooden chapel inspired by Norwegian stave churches; the architectural landmark of the cemetery.",
+        "fr": "Chapelle en bois inspirée des églises norvégiennes en bois debout ; repère architectural du cimetière."
+      },
+      "beschreibung": {
+        "de": "Die Friedhofskapelle wurde am 28. März 1909 nach nur vier Monaten Bauzeit eingeweiht. Gustav Werner entwarf sie nach dem Vorbild norwegischer Stabkirchen, jedoch in waagerechter Blockbauweise; ihren vollständig ausgestalteten Zustand erreichte sie 1911.",
+        "en": "The cemetery chapel was consecrated on 28 March 1909 after only four months of construction. Gustav Werner designed it after Norwegian stave churches, though in horizontal log construction; it reached its fully finished state in 1911.",
+        "fr": "La chapelle du cimetière a été consacrée le 28 mars 1909 après seulement quatre mois de travaux. Gustav Werner l’a conçue d’après le modèle des églises norvégiennes en bois debout, mais en construction horizontale de rondins ; elle a atteint son état pleinement achevé en 1911."
+      },
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
+        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Zentrale Kapelle des Südwestkirchhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_heinrich-luebbe",
+      "typ": "grab",
+      "name": {
+        "de": "Heinrich Lübbe",
+        "en": "Heinrich Lübbe",
+        "fr": "Heinrich Lübbe"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Heinrich Lübbe; Ingenieur, Pilot und Gründer der Arado-Flugwerke.",
+        "en": "Grave of Heinrich Lübbe; engineer, pilot and founder of Arado aircraft works.",
+        "fr": "Tombe de Heinrich Lübbe ; ingénieur, pilote et fondateur des usines aéronautiques Arado."
+      },
+      "beschreibung": {
+        "de": "Heinrich Lübbe (1884–1940) – Ingenieur, Pilot und Gründer der Arado-Flugwerke.",
+        "en": "Heinrich Lübbe (1884–1940) – engineer, pilot and founder of Arado aircraft works.",
+        "fr": "Heinrich Lübbe (1884–1940) – ingénieur, pilote et fondateur des usines aéronautiques Arado."
+      },
+      "datum_von": "1884-01-12",
+      "datum_bis": "1940-03-14",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Heinrich_L%C3%BCbbe",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_heinrich-zille",
+      "typ": "grab",
+      "name": {
+        "de": "Heinrich Zille",
+        "en": "Heinrich Zille",
+        "fr": "Heinrich Zille"
+      },
+      "koordinaten": {
+        "lat": 52.39016,
+        "lng": 13.17733
+      },
+      "kurztext": {
+        "de": "Grab von Heinrich Zille; Zeichner, Grafiker und Fotograf.",
+        "en": "Grave of Heinrich Zille; draughtsman, graphic artist and photographer.",
+        "fr": "Tombe de Heinrich Zille ; dessinateur, graphiste et photographe."
+      },
+      "beschreibung": {
+        "de": "Heinrich Zille (1858–1929) – sozialkritischer Zeichner, Grafiker und Fotograf. Öffentliche Quellen ordnen die Grabstätte dem Block Epiphanien zu; im offiziellen Grabstättenplan ist sie als Station markiert.",
+        "en": "Heinrich Zille (1858–1929) – socially critical draughtsman, graphic artist and photographer.",
+        "fr": "Heinrich Zille (1858–1929) – dessinateur, graphiste et photographe à la veine sociale."
+      },
+      "datum_von": "1858-01-10",
+      "datum_bis": "1929-08-09",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Heinrich_Zille",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Epiphanien Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Epiphanien, Feld 14, Grabstelle 34/35",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_heldenblock",
+      "typ": "bereich",
+      "name": {
+        "de": "Heldenblock / Deutscher Ehrenblock",
+        "en": "Heldenblock / Deutscher Ehrenblock",
+        "fr": "Heldenblock / Deutscher Ehrenblock"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Deutscher Kriegsgräberbereich des Ersten Weltkriegs auf dem Südwestkirchhof.",
+        "en": "German First World War military burial area on the South-Western Cemetery.",
+        "fr": "Secteur allemand de tombes de guerre de la Première Guerre mondiale au Südwestkirchhof."
+      },
+      "beschreibung": {
+        "de": "Öffentliche Beschreibungen nennen auf dem Südwestkirchhof neben dem britischen und italienischen Soldatenfriedhof auch einen deutschen Ehrenblock beziehungsweise Heldenblock. Er gehört zum erinnerungsgeschichtlichen Ensemble der drei Kriegsgräberstätten des Ersten Weltkriegs auf dem Gelände.",
+        "en": "Public descriptions mention, alongside the British and Italian war cemeteries, a German honour block or Heldenblock on the South-Western Cemetery. It forms part of the ensemble of three First World War military memorial areas on the grounds.",
+        "fr": "Des descriptions publiques mentionnent, aux côtés des cimetières militaires britannique et italien, un Ehrenblock ou Heldenblock allemand au Südwestkirchhof. Il fait partie de l’ensemble des trois espaces mémoriels militaires de la Première Guerre mondiale sur le site."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "prüfen",
+      "notiz": "Blockbezeichnung im Gelände; exakte GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Die Existenz des Blocks ist gut belegt, die genaue punktförmige Georeferenzierung wurde in dieser Recherche jedoch nicht belastbar ermittelt.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_hugo-conwentz",
+      "typ": "grab",
+      "name": {
+        "de": "Hugo Conwentz",
+        "en": "Hugo Conwentz",
+        "fr": "Hugo Conwentz"
+      },
+      "koordinaten": {
+        "lat": 52.38464,
+        "lng": 13.18068
+      },
+      "kurztext": {
+        "de": "Grab von Hugo Conwentz; Botaniker und Begründer der Naturschutzbewegung in Deutschland.",
+        "en": "Grave of Hugo Conwentz; botanist and pioneer of nature conservation in Germany.",
+        "fr": "Tombe de Hugo Conwentz ; botaniste et pionnier de la protection de la nature en Allemagne."
+      },
+      "beschreibung": {
+        "de": "Hugo Conwentz (1855–1922) – Botaniker und Begründer der Naturschutzbewegung in Deutschland.",
+        "en": "Hugo Conwentz (1855–1922) – botanist and pioneer of nature conservation in Germany.",
+        "fr": "Hugo Conwentz (1855–1922) – botaniste et pionnier de la protection de la nature en Allemagne."
+      },
+      "datum_von": "1855-01-20",
+      "datum_bis": "1922-05-12",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Hugo_Conwentz",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Neue Umbettung, Feld 17, Wahlstelle 178",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_hugo-distler",
+      "typ": "grab",
+      "name": {
+        "de": "Hugo Distler",
+        "en": "Hugo Distler",
+        "fr": "Hugo Distler"
+      },
+      "koordinaten": {
+        "lat": 52.3896318,
+        "lng": 13.1877715
+      },
+      "kurztext": {
+        "de": "Grab von Hugo Distler; Kirchenmusiker und Komponist.",
+        "en": "Grave of Hugo Distler; church musician and composer.",
+        "fr": "Tombe de Hugo Distler ; musicien d’église et compositeur."
+      },
+      "beschreibung": {
+        "de": "Hugo Distler (1908–1942) – Kirchenmusiker und Komponist.",
+        "en": "Hugo Distler (1908–1942) – church musician and composer.",
+        "fr": "Hugo Distler (1908–1942) – musicien d’église et compositeur."
+      },
+      "datum_von": "1908-06-24",
+      "datum_bis": "1942-11-01",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Hugo_Distler",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_inge-deutschkron",
+      "typ": "grab",
+      "name": {
+        "de": "Inge Deutschkron",
+        "en": "Inge Deutschkron",
+        "fr": "Inge Deutschkron"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Inge Deutschkron; Journalistin, Autorin und Holocaustüberlebende.",
+        "en": "Grave of Inge Deutschkron; journalist, author and Holocaust survivor.",
+        "fr": "Tombe de Inge Deutschkron ; journaliste, auteure et survivante de la Shoah."
+      },
+      "beschreibung": {
+        "de": "Inge Deutschkron (1922–2022) – Journalistin, Autorin und Holocaustüberlebende.",
+        "en": "Inge Deutschkron (1922–2022) – journalist, author and Holocaust survivor.",
+        "fr": "Inge Deutschkron (1922–2022) – journaliste, auteure et survivante de la Shoah."
+      },
+      "datum_von": "1922-08-23",
+      "datum_bis": "2022-03-09",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Inge_Deutschkron",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Inge Deutschkron, Wikipedia, https://de.wikipedia.org/wiki/Inge_Deutschkron, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_ingrid-steeger",
+      "typ": "grab",
+      "name": {
+        "de": "Ingrid Steeger",
+        "en": "Ingrid Steeger",
+        "fr": "Ingrid Steeger"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Ingrid Steeger; Schauspielerin.",
+        "en": "Grave of Ingrid Steeger; actress.",
+        "fr": "Tombe de Ingrid Steeger ; actrice."
+      },
+      "beschreibung": {
+        "de": "Ingrid Steeger (1947–2023) – Schauspielerin.",
+        "en": "Ingrid Steeger (1947–2023) – actress.",
+        "fr": "Ingrid Steeger (1947–2023) – actrice."
+      },
+      "datum_von": "1947",
+      "datum_bis": "2023",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Ingrid_Steeger",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Ingrid Steeger, Wikipedia, https://de.wikipedia.org/wiki/Ingrid_Steeger, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. In der ausgewerteten Quelle ist die Beisetzung auf dem Südwestkirchhof ausdrücklich genannt; die hier verwendeten Datumsfelder sind aus dem Wikipedia-Eintrag nur jahresgenau übernommen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_italienischer-soldatenfriedhof",
+      "typ": "bereich",
+      "name": {
+        "de": "Italienischer Soldatenfriedhof",
+        "en": "Italienischer Soldatenfriedhof",
+        "fr": "Italienischer Soldatenfriedhof"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Italienische Kriegsgräberstätte des Ersten Weltkriegs mit radialer Anlage und Obelisk.",
+        "en": "Italian First World War military cemetery with a radial layout and central obelisk.",
+        "fr": "Cimetière militaire italien de la Première Guerre mondiale à composition radiale autour d’un obélisque central."
+      },
+      "beschreibung": {
+        "de": "Der italienische Soldatenfriedhof ist eine in sich geschlossene Kriegsgräberstätte am südwestlichen Ende des Südwestkirchhofs. Öffentliche Sekundärquellen nennen 1.658 italienische Tote des Ersten Weltkriegs, 415 Grabsteine und eine kreisförmig-radiale Anlage mit Obelisk; er liegt direkt neben dem Commonwealth-Friedhof.",
+        "en": "The Italian military cemetery is a self-contained war cemetery at the south-western end of the South-Western Cemetery. Public secondary sources describe 1,658 Italian First World War dead, 415 gravestones and a circular-radial layout with an obelisk; it lies directly beside the Commonwealth cemetery.",
+        "fr": "Le cimetière militaire italien est une nécropole de guerre autonome située à l’extrémité sud-ouest du Südwestkirchhof. Des sources secondaires publiques évoquent 1 658 morts italiens de la Première Guerre mondiale, 415 stèles et une composition circulaire et radiale autour d’un obélisque ; il se trouve directement à côté du cimetière du Commonwealth."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Berlin Italian Military Cemetery, Remembering the Fallen, https://www.ww1cemeteries.com/ger-berlin-italian-military-cemetery.html, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Am südwestlichen Ende des Friedhofs, direkt benachbart zum Berlin South-Western Cemetery. Koordinaten vor Ort ermitteln. Öffentliche Quellen nennen teils rund 1.650, teils 1.658 italienische Tote; für die Struktur- und Orientierungsbeschreibung wurde die häufig genannte Zahl 1.658 übernommen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_joachim-gottschalk",
+      "typ": "grab",
+      "name": {
+        "de": "Joachim Gottschalk",
+        "en": "Joachim Gottschalk",
+        "fr": "Joachim Gottschalk"
+      },
+      "koordinaten": {
+        "lat": 52.3907147,
+        "lng": 13.1850974
+      },
+      "kurztext": {
+        "de": "Grab von Joachim Gottschalk; Schauspieler.",
+        "en": "Grave of Joachim Gottschalk; actor.",
+        "fr": "Tombe de Joachim Gottschalk ; acteur."
+      },
+      "beschreibung": {
+        "de": "Joachim Gottschalk (1904–1941) – Schauspieler.",
+        "en": "Joachim Gottschalk (1904–1941) – actor.",
+        "fr": "Joachim Gottschalk (1904–1941) – acteur."
+      },
+      "datum_von": "1904-04-10",
+      "datum_bis": "1941-11-06",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Joachim_Gottschalk",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_juergen-holtz",
+      "typ": "grab",
+      "name": {
+        "de": "Jürgen Holtz",
+        "en": "Jürgen Holtz",
+        "fr": "Jürgen Holtz"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Jürgen Holtz; Schauspieler und bildender Künstler.",
+        "en": "Grave of Jürgen Holtz; actor and visual artist.",
+        "fr": "Tombe de Jürgen Holtz ; acteur et artiste plasticien."
+      },
+      "beschreibung": {
+        "de": "Jürgen Holtz (1932–2020) – Schauspieler und bildender Künstler.",
+        "en": "Jürgen Holtz (1932–2020) – actor and visual artist.",
+        "fr": "Jürgen Holtz (1932–2020) – acteur et artiste plasticien."
+      },
+      "datum_von": "1932-08-10",
+      "datum_bis": "2020-06-21",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
+        "Jürgen Holtz, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_juergen-kluckert",
+      "typ": "grab",
+      "name": {
+        "de": "Jürgen Kluckert",
+        "en": "Jürgen Kluckert",
+        "fr": "Jürgen Kluckert"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Jürgen Kluckert; Schauspieler, Synchronsprecher und Hörspielsprecher.",
+        "en": "Grave of Jürgen Kluckert; actor, dubbing artist and audio drama performer.",
+        "fr": "Tombe de Jürgen Kluckert ; acteur, comédien de doublage et interprète radiophonique."
+      },
+      "beschreibung": {
+        "de": "Jürgen Kluckert (1943–2023) – Schauspieler, Synchronsprecher und Hörspielsprecher.",
+        "en": "Jürgen Kluckert (1943–2023) – actor, dubbing artist and audio drama performer.",
+        "fr": "Jürgen Kluckert (1943–2023) – acteur, comédien de doublage et interprète radiophonique."
+      },
+      "datum_von": "1943-12-29",
+      "datum_bis": "2023-08-16",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Jürgen Kluckert, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_julius-schaarwaechter",
+      "typ": "grab",
+      "name": {
+        "de": "Julius Cornelius Schaarwächter"
+      },
+      "koordinaten": {
+        "lat": 52.39134,
+        "lng": 13.18001
+      },
+      "kurztext": {
+        "de": "Grab von Julius Cornelius Schaarwächter; Hoffotograf, Verleger."
+      },
+      "beschreibung": {
+        "de": "Julius Cornelius Schaarwächter – Hoffotograf, Verleger. Die Grabstätte befindet sich im Alte Umbettung, Erbb. 101 des Südwestkirchhofs Stahnsdorf."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04"
+      ],
+      "status": "bestätigt",
+      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Alte Umbettung, Erbb. 101. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_julius-wissinger",
+      "typ": "grab",
+      "name": {
+        "de": "Julius Wissinger",
+        "en": "Julius Wissinger",
+        "fr": "Julius Wissinger"
+      },
+      "koordinaten": {
+        "lat": 52.3884,
+        "lng": 13.18023
+      },
+      "kurztext": {
+        "de": "Grab von Julius Wissinger; Kaufmann; Grabstätte mit expressionistischem Grabmal.",
+        "en": "Grave of Julius Wissinger; merchant; grave with an expressionist monument.",
+        "fr": "Tombe de Julius Wissinger ; commerçant ; tombe avec monument expressionniste."
+      },
+      "beschreibung": {
+        "de": "Julius Wissinger (1848–1920) – Kaufmann; Grabstätte mit expressionistischem Grabmal.",
+        "en": "Julius Wissinger (1848–1920) – merchant; grave with an expressionist monument.",
+        "fr": "Julius Wissinger (1848–1920) – commerçant ; tombe avec monument expressionniste."
+      },
+      "datum_von": "1848-07-09",
+      "datum_bis": "1920-04-07",
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Kapellenblock, Erbbegräbnis 42/53",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_karl-ludwig-manzel",
+      "typ": "grab",
+      "name": {
+        "de": "Karl Ludwig Manzel",
+        "en": "Karl Ludwig Manzel",
+        "fr": "Karl Ludwig Manzel"
+      },
+      "koordinaten": {
+        "lat": 52.38791,
+        "lng": 13.186
+      },
+      "kurztext": {
+        "de": "Grab von Karl Ludwig Manzel; Bildhauer und Präsident der Akademie der Künste.",
+        "en": "Grave of Karl Ludwig Manzel; sculptor and president of the Academy of Arts.",
+        "fr": "Tombe de Karl Ludwig Manzel ; sculpteur et président de l’Académie des arts."
+      },
+      "beschreibung": {
+        "de": "Karl Ludwig Manzel (1858–1936) – Bildhauer und Präsident der Akademie der Künste.",
+        "en": "Karl Ludwig Manzel (1858–1936) – sculptor and president of the Academy of Arts.",
+        "fr": "Karl Ludwig Manzel (1858–1936) – sculpteur et président de l’Académie des arts."
+      },
+      "datum_von": "1858-06-03",
+      "datum_bis": "1936-11-20",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Ludwig_Manzel",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock V, Grabstelle 1",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_louis-ferdinand-ullstein",
+      "typ": "grab",
+      "name": {
+        "de": "Louis-Ferdinand Ullstein",
+        "en": "Louis-Ferdinand Ullstein",
+        "fr": "Louis-Ferdinand Ullstein"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Louis-Ferdinand Ullstein; Verleger.",
+        "en": "Grave of Louis-Ferdinand Ullstein; publisher.",
+        "fr": "Tombe de Louis-Ferdinand Ullstein ; éditeur."
+      },
+      "beschreibung": {
+        "de": "Louis-Ferdinand Ullstein (1863–1933) – Verleger.",
+        "en": "Louis-Ferdinand Ullstein (1863–1933) – publisher.",
+        "fr": "Louis-Ferdinand Ullstein (1863–1933) – éditeur."
+      },
+      "datum_von": "1863-11-11",
+      "datum_bis": "1933-03-19",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Louis-Ferdinand_Ullstein",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_louis-meyer",
+      "typ": "grab",
+      "name": {
+        "de": "Louis Meyer",
+        "en": "Louis Meyer",
+        "fr": "Louis Meyer"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Louis Meyer; Gartenbau-Oberingenieur und Gestalter des Südwestkirchhofs.",
+        "en": "Grave of Louis Meyer; senior horticultural engineer and designer of the cemetery.",
+        "fr": "Tombe de Louis Meyer ; ingénieur horticole en chef et concepteur du cimetière."
+      },
+      "beschreibung": {
+        "de": "Louis Meyer (1877–1955) – Gartenbau-Oberingenieur und maßgeblicher Gestalter des Südwestkirchhofs. Nach Auflösung der Familiengrabstätte erhielt sein geretteter Grabstein einen Ehrenplatz nahe der Kapelle. Im offiziellen Grabstättenplan ist die Station markiert.",
+        "en": "Louis Meyer (1877–1955) – senior horticultural engineer and a key designer of the South-Western Cemetery. After his family grave was dissolved, his salvaged gravestone received an honorary place near the chapel.",
+        "fr": "Louis Meyer (1877–1955) – ingénieur horticole en chef et concepteur majeur du Südwestkirchhof. Après la dissolution de la tombe familiale, sa pierre tombale sauvée a reçu une place d’honneur près de la chapelle."
+      },
+      "datum_von": "1877-03-31",
+      "datum_bis": "1955-01-07",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Ehrenplatz nahe der Kapelle an der von Louis Meyer entworfenen Sichtachse. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_lovis-corinth",
+      "typ": "grab",
+      "name": {
+        "de": "Lovis Corinth",
+        "en": "Lovis Corinth",
+        "fr": "Lovis Corinth"
+      },
+      "koordinaten": {
+        "lat": 52.38764,
+        "lng": 13.17958
+      },
+      "kurztext": {
+        "de": "Grab von Lovis Corinth; Maler des deutschen Impressionismus und Expressionismus.",
+        "en": "Grave of Lovis Corinth; painter of German Impressionism and Expressionism.",
+        "fr": "Tombe de Lovis Corinth ; peintre de l’impressionnisme et de l’expressionnisme allemands."
+      },
+      "beschreibung": {
+        "de": "Lovis Corinth (1858–1925) – Maler des deutschen Impressionismus und Expressionismus.",
+        "en": "Lovis Corinth (1858–1925) – painter of German Impressionism and Expressionism.",
+        "fr": "Lovis Corinth (1858–1925) – peintre de l’impressionnisme et de l’expressionnisme allemands."
+      },
+      "datum_von": "1858-07-21",
+      "datum_bis": "1925-06-17",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Lovis_Corinth",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 8, Erbbegräbnis 47",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_maja-maranow",
+      "typ": "grab",
+      "name": {
+        "de": "Maja Maranow",
+        "en": "Maja Maranow",
+        "fr": "Maja Maranow"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Maja Maranow; Schauspielerin.",
+        "en": "Grave of Maja Maranow; actress.",
+        "fr": "Tombe de Maja Maranow ; actrice."
+      },
+      "beschreibung": {
+        "de": "Maja Maranow (1961–2016) – Schauspielerin.",
+        "en": "Maja Maranow (1961–2016) – actress.",
+        "fr": "Maja Maranow (1961–2016) – actrice."
+      },
+      "datum_von": "1961-03-20",
+      "datum_bis": "2016-01-04",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Maja_Maranow",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Maja Maranow, Wikipedia, https://de.wikipedia.org/wiki/Maja_Maranow, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_manfred-krug",
+      "typ": "grab",
+      "name": {
+        "de": "Manfred Krug",
+        "en": "Manfred Krug",
+        "fr": "Manfred Krug"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Manfred Krug; Schauspieler, Sänger und Schriftsteller.",
+        "en": "Grave of Manfred Krug; actor, singer and writer.",
+        "fr": "Tombe de Manfred Krug ; acteur, chanteur et écrivain."
+      },
+      "beschreibung": {
+        "de": "Manfred Krug (1937–2016) – Schauspieler, Sänger und Schriftsteller.",
+        "en": "Manfred Krug (1937–2016) – actor, singer and writer.",
+        "fr": "Manfred Krug (1937–2016) – acteur, chanteur et écrivain."
+      },
+      "datum_von": "1937-02-08",
+      "datum_bis": "2016-10-21",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Manfred_Krug",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
+        "Manfred Krug, Wikipedia, https://de.wikipedia.org/wiki/Manfred_Krug, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_mausoleum-caspary",
+      "typ": "mausoleum",
+      "name": {
+        "de": "Mausoleum Caspary",
+        "en": "Mausoleum Caspary",
+        "fr": "Mausoleum Caspary"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Großes Familienmausoleum schräg gegenüber der Kapelle.",
+        "en": "Large family mausoleum diagonally opposite the chapel.",
+        "fr": "Grand mausolée familial situé en diagonale en face de la chapelle."
+      },
+      "beschreibung": {
+        "de": "Die FH Potsdam beschreibt das Mausoleum Caspary als 1911 von der Charlottenburger Architektengemeinschaft Mohr & Weidner errichtetes Mausoleum der Industriellenfamilie Caspary. Wikimedia Commons weist außerdem auf die Trauernde von Heinrich Waderé und die aufwendige Ausstattung hin.",
+        "en": "FH Potsdam describes the Caspary Mausoleum as a mausoleum of the industrial Caspary family built in 1911 by the Charlottenburg architectural partnership Mohr & Weidner. Wikimedia Commons also notes the mourning figure by Heinrich Waderé and the elaborate interior decoration.",
+        "fr": "La FH Potsdam décrit le mausolée Caspary comme le mausolée de la famille industrielle Caspary, construit en 1911 par le cabinet d’architectes charlottenbourgeois Mohr & Weidner. Wikimedia Commons signale en outre la figure de deuil de Heinrich Waderé et le décor soigné."
+      },
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25",
+        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_mausoleum-felinus",
+      "typ": "mausoleum",
+      "name": {
+        "de": "Mausoleum Felinus",
+        "en": "Mausoleum Felinus",
+        "fr": "Mausoleum Felinus"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Historisches Mausoleum im Bereich Alte Umbettung.",
+        "en": "Historic mausoleum in the Alte Umbettung area.",
+        "fr": "Mausolée historique dans le secteur de l’Alte Umbettung."
+      },
+      "beschreibung": {
+        "de": "Das Mausoleum Felinus ist als Objekt in der Deutschen Digitalen Bibliothek nachgewiesen. Eine restaurierungswissenschaftliche Arbeit beschreibt es als eines der Mausoleen des Südwestkirchhofs; hinzu kommt der Christuskopf von Hans Latt und der Zusammenhang mit Umbettungen aus Berliner Friedhöfen.",
+        "en": "The Felinus Mausoleum is documented in the German Digital Library. A conservation study describes it as one of the mausolea of the South-Western Cemetery; it also includes the Christ head by Hans Latt and is connected to reinterments from Berlin cemeteries.",
+        "fr": "Le mausolée Felinus est documenté dans la Deutsche Digitale Bibliothek. Un travail de conservation le décrit comme l’un des mausolées du Südwestkirchhof ; il comprend en outre une tête du Christ de Hans Latt et s’inscrit dans le contexte des transferts depuis des cimetières berlinois."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Stahnsdorf, Südwestkirchhof : Mausoleum Felinus, Deutsche Digitale Bibliothek, https://www.deutsche-digitale-bibliothek.de/item/3EIPJMQORWYKSP7MLT7LWQKJFHM6ETEM, abgerufen 2026-03-25",
+        "Mausoleum Felinus, Südwestkirchhof Stahnsdorf / FH Potsdam, https://suedwestkirchhof.ekbo.de/fileadmin/sites/suedwestkirchhof-ekbo.de/FHP_Diplomarbeit_Hanini_Teichmann_Mausoleum_Felinus_2010_.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Bereich Alte Umbettung. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_mausoleum-harteneck",
+      "typ": "mausoleum",
+      "name": {
+        "de": "Mausoleum Harteneck",
+        "en": "Mausoleum Harteneck",
+        "fr": "Mausoleum Harteneck"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Mausoleum des Chemiefabrikanten Harteneck, schräg gegenüber der Kapelle.",
+        "en": "Mausoleum of the industrialist Harteneck, diagonally opposite the chapel.",
+        "fr": "Mausolée du chimiste industriel Harteneck, en diagonale en face de la chapelle."
+      },
+      "beschreibung": {
+        "de": "Nach der Projektseite der FH Potsdam gehört das Mausoleum Harteneck zu den beiden untersuchten Mausoleen schräg gegenüber der Kapelle. Es entstand in den 1910er Jahren, vermutlich nach Plänen von Adolf Wollenberg.",
+        "en": "According to the FH Potsdam project page, the Harteneck Mausoleum is one of the two mausolea studied diagonally opposite the chapel. It dates from the 1910s and was probably designed by Adolf Wollenberg.",
+        "fr": "Selon la page de projet de la FH Potsdam, le mausolée Harteneck fait partie des deux mausolées étudiés en diagonale en face de la chapelle. Il date des années 1910 et a probablement été conçu par Adolf Wollenberg."
+      },
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_max-adalbert",
+      "typ": "grab",
+      "name": {
+        "de": "Max Adalbert",
+        "en": "Max Adalbert",
+        "fr": "Max Adalbert"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Max Adalbert; Theater- und Filmschauspieler.",
+        "en": "Grave of Max Adalbert; stage and film actor.",
+        "fr": "Tombe de Max Adalbert ; acteur de théâtre et de cinéma."
+      },
+      "beschreibung": {
+        "de": "Max Adalbert (1874–1933) – Theater- und Filmschauspieler.",
+        "en": "Max Adalbert (1874–1933) – stage and film actor.",
+        "fr": "Max Adalbert (1874–1933) – acteur de théâtre et de cinéma."
+      },
+      "datum_von": "1874-12-19",
+      "datum_bis": "1933-09-07",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Max_Adalbert",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Max Adalbert, Wikipedia, https://de.wikipedia.org/wiki/Max_Adalbert, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Urnenhain I Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_max-jordan",
+      "typ": "grab",
+      "name": {
+        "de": "Max Jordan",
+        "en": "Max Jordan",
+        "fr": "Max Jordan"
+      },
+      "koordinaten": {
+        "lat": 52.38668,
+        "lng": 13.17977
+      },
+      "kurztext": {
+        "de": "Grab von Max Jordan; Kunsthistoriker und Museumsdirektor.",
+        "en": "Grave of Max Jordan; art historian and museum director.",
+        "fr": "Tombe de Max Jordan ; historien de l’art et directeur de musée."
+      },
+      "beschreibung": {
+        "de": "Max Jordan (1837–1906) – Kunsthistoriker und Museumsdirektor.",
+        "en": "Max Jordan (1837–1906) – art historian and museum director.",
+        "fr": "Max Jordan (1837–1906) – historien de l’art et directeur de musée."
+      },
+      "datum_von": "1837-01-19",
+      "datum_bis": "1906-11-11",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Max_Jordan",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlstelle 162",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_meta-seinemeyer",
+      "typ": "grab",
+      "name": {
+        "de": "Meta Seinemeyer",
+        "en": "Meta Seinemeyer",
+        "fr": "Meta Seinemeyer"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Meta Seinemeyer; lyrische Sopranistin.",
+        "en": "Grave of Meta Seinemeyer; lyric soprano.",
+        "fr": "Tombe de Meta Seinemeyer ; soprano lyrique."
+      },
+      "beschreibung": {
+        "de": "Meta Seinemeyer (1895–1929) – lyrische Sopranistin.",
+        "en": "Meta Seinemeyer (1895–1929) – lyric soprano.",
+        "fr": "Meta Seinemeyer (1895–1929) – soprano lyrique."
+      },
+      "datum_von": "1895-11-05",
+      "datum_bis": "1929-08-19",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Meta_Seinemeyer",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_neue-umbettung",
+      "typ": "bereich",
+      "name": {
+        "de": "Neue Umbettung",
+        "en": "Neue Umbettung",
+        "fr": "Neue Umbettung"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Großes Umbettungsfeld für aus Berliner Friedhöfen überführte Grabstätten.",
+        "en": "Large reinterment field for graves transferred from Berlin cemeteries.",
+        "fr": "Grand secteur de réinhumation pour des sépultures transférées depuis des cimetières berlinois."
+      },
+      "beschreibung": {
+        "de": "Neben der Alten Umbettung ist die Neue Umbettung die zweite große historische Verlagerungszone des Südwestkirchhofs. Öffentliche Quellen ordnen hier viele Grabstätten zu, die im Zuge der Berliner Umgestaltungsplanungen aus Schöneberger Friedhöfen nach Stahnsdorf gelangten.",
+        "en": "Alongside Alte Umbettung, Neue Umbettung is the second major historic transfer zone of the South-Western Cemetery. Public sources assign many graves here that reached Stahnsdorf during the relocation programmes linked to Berlin’s redesign plans.",
+        "fr": "Avec l’Alte Umbettung, la Neue Umbettung constitue la deuxième grande zone historique de transferts du Südwestkirchhof. Des sources publiques y placent de nombreuses tombes arrivées à Stahnsdorf lors des programmes de déplacement liés aux projets de transformation de Berlin."
+      },
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Südlicher Teil des Friedhofs. Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_otto-graf-lambsdorff",
+      "typ": "grab",
+      "name": {
+        "de": "Otto Graf Lambsdorff",
+        "en": "Otto Graf Lambsdorff",
+        "fr": "Otto Graf Lambsdorff"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Otto Graf Lambsdorff; Politiker und Bundeswirtschaftsminister.",
+        "en": "Grave of Otto Graf Lambsdorff; politician and federal minister for economic affairs.",
+        "fr": "Tombe de Otto Graf Lambsdorff ; homme politique et ministre fédéral de l’Économie."
+      },
+      "beschreibung": {
+        "de": "Otto Graf Lambsdorff (1926–2009) – Politiker und Bundeswirtschaftsminister.",
+        "en": "Otto Graf Lambsdorff (1926–2009) – politician and federal minister for economic affairs.",
+        "fr": "Otto Graf Lambsdorff (1926–2009) – homme politique et ministre fédéral de l’Économie."
+      },
+      "datum_von": "1926-12-20",
+      "datum_bis": "2009-12-05",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Otto_Graf_Lambsdorff",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_peter-sattmann",
+      "typ": "grab",
+      "name": {
+        "de": "Peter Sattmann",
+        "en": "Peter Sattmann",
+        "fr": "Peter Sattmann"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Peter Sattmann; Schauspieler, Regisseur und Bühnenautor.",
+        "en": "Grave of Peter Sattmann; actor, director and stage author.",
+        "fr": "Tombe de Peter Sattmann ; acteur, metteur en scène et auteur de théâtre."
+      },
+      "beschreibung": {
+        "de": "Peter Sattmann (1947–2025) – Schauspieler, Regisseur und Bühnenautor.",
+        "en": "Peter Sattmann (1947–2025) – actor, director and stage author.",
+        "fr": "Peter Sattmann (1947–2025) – acteur, metteur en scène et auteur de théâtre."
+      },
+      "datum_von": "1947-12-26",
+      "datum_bis": "2025-12-25",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Peter_Sattmann",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Peter Sattmann, Wikipedia, https://de.wikipedia.org/wiki/Peter_Sattmann, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_ralph-arthur-roberts",
+      "typ": "grab",
+      "name": {
+        "de": "Ralph Arthur Roberts",
+        "en": "Ralph Arthur Roberts",
+        "fr": "Ralph Arthur Roberts"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Ralph Arthur Roberts; Schauspieler und Theaterdirektor.",
+        "en": "Grave of Ralph Arthur Roberts; actor and theatre director.",
+        "fr": "Tombe de Ralph Arthur Roberts ; acteur et directeur de théâtre."
+      },
+      "beschreibung": {
+        "de": "Ralph Arthur Roberts (1884–1940) – Schauspieler und Theaterdirektor.",
+        "en": "Ralph Arthur Roberts (1884–1940) – actor and theatre director.",
+        "fr": "Ralph Arthur Roberts (1884–1940) – acteur et directeur de théâtre."
+      },
+      "datum_von": "1884-10-02",
+      "datum_bis": "1940-03-12",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Ralph_Arthur_Roberts",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_reinhold-felderhoff",
+      "typ": "grab",
+      "name": {
+        "de": "Reinhold Carl Thusmann Felderhoff"
+      },
+      "koordinaten": {
+        "lat": 52.387747,
+        "lng": 13.177103
+      },
+      "kurztext": {
+        "de": "Grab von Reinhold Carl Thusmann Felderhoff; Professor, Bildhauer, Graphiker."
+      },
+      "beschreibung": {
+        "de": "Reinhold Carl Thusmann Felderhoff – Professor, Bildhauer, Graphiker. Die Grabstätte befindet sich im Block Trinitatis, Feld 10, Wahlstelle 64 des Südwestkirchhofs Stahnsdorf."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04"
+      ],
+      "status": "bestätigt",
+      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Trinitatis, Feld 10, Wahlstelle 64. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_richard-huettig",
+      "typ": "grab",
+      "name": {
+        "de": "Richard Hüttig",
+        "en": "Richard Hüttig",
+        "fr": "Richard Hüttig"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Richard Hüttig; Widerstandskämpfer.",
+        "en": "Grave of Richard Hüttig; resistance fighter.",
+        "fr": "Tombe de Richard Hüttig ; résistant."
+      },
+      "beschreibung": {
+        "de": "Richard Hüttig (1908–1934) – Widerstandskämpfer.",
+        "en": "Richard Hüttig (1908–1934) – resistance fighter.",
+        "fr": "Richard Hüttig (1908–1934) – résistant."
+      },
+      "datum_von": "1908-03-18",
+      "datum_bis": "1934-06-14",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Richard_H%C3%BCttig",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_rudolf-breitscheid",
+      "typ": "grab",
+      "name": {
+        "de": "Rudolf Breitscheid",
+        "en": "Rudolf Breitscheid",
+        "fr": "Rudolf Breitscheid"
+      },
+      "koordinaten": {
+        "lat": 52.38804,
+        "lng": 13.17518
+      },
+      "kurztext": {
+        "de": "Grab von Rudolf Breitscheid; sozialdemokratischer Politiker und Widerstandskämpfer.",
+        "en": "Grave of Rudolf Breitscheid; social democratic politician and resistance fighter.",
+        "fr": "Tombe de Rudolf Breitscheid ; homme politique social-démocrate et résistant."
+      },
+      "beschreibung": {
+        "de": "Rudolf Breitscheid (1874–1944) – sozialdemokratischer Politiker und Widerstandskämpfer.",
+        "en": "Rudolf Breitscheid (1874–1944) – social democratic politician and resistance fighter.",
+        "fr": "Rudolf Breitscheid (1874–1944) – homme politique social-démocrate et résistant."
+      },
+      "datum_von": "1874-11-02",
+      "datum_bis": "1944-08-24",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Rudolf_Breitscheid",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Lietzensee, Feld 22, Wahlstelle 115",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_siegfried-jacobsohn",
+      "typ": "grab",
+      "name": {
+        "de": "Siegfried Jacobsohn",
+        "en": "Siegfried Jacobsohn",
+        "fr": "Siegfried Jacobsohn"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Siegfried Jacobsohn; Journalist und Begründer der „Weltbühne“.",
+        "en": "Grave of Siegfried Jacobsohn; journalist and founder of “Die Weltbühne”.",
+        "fr": "Tombe de Siegfried Jacobsohn ; journaliste et fondateur de « Die Weltbühne »."
+      },
+      "beschreibung": {
+        "de": "Siegfried Jacobsohn (1881–1926) – Journalist und Begründer der „Weltbühne“.",
+        "en": "Siegfried Jacobsohn (1881–1926) – journalist and founder of “Die Weltbühne”.",
+        "fr": "Siegfried Jacobsohn (1881–1926) – journaliste et fondateur de « Die Weltbühne »."
+      },
+      "datum_von": "1881-01-28",
+      "datum_bis": "1926-12-03",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Siegfried_Jacobsohn",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_theodor-fontane-jun",
+      "typ": "grab",
+      "name": {
+        "de": "Theodor Fontane",
+        "en": "Theodor Fontane",
+        "fr": "Theodor Fontane"
+      },
+      "koordinaten": {
+        "lat": 52.3882225,
+        "lng": 13.1805942
+      },
+      "kurztext": {
+        "de": "Grab von Theodor Fontane; Herausgeber des Werkes seines Vaters; zweiter Sohn Theodor Fontanes.",
+        "en": "Grave of Theodor Fontane; editor of his father’s works; second son of Theodor Fontane.",
+        "fr": "Tombe de Theodor Fontane ; éditeur de l’œuvre de son père ; deuxième fils de Theodor Fontane."
+      },
+      "beschreibung": {
+        "de": "Theodor Fontane (1856–1933) – Herausgeber des Werkes seines Vaters; zweiter Sohn Theodor Fontanes.",
+        "en": "Theodor Fontane (1856–1933) – editor of his father’s works; second son of Theodor Fontane.",
+        "fr": "Theodor Fontane (1856–1933) – éditeur de l’œuvre de son père ; deuxième fils de Theodor Fontane."
+      },
+      "datum_von": "1856-11-03",
+      "datum_bis": "1933-05-16",
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Kapellenblock Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_walter-gropius-senior",
+      "typ": "grab",
+      "name": {
+        "de": "Walter Gropius",
+        "en": "Walter Gropius",
+        "fr": "Walter Gropius"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Walter Gropius; Architekt; Vater des Bauhaus-Gründers Walter Gropius.",
+        "en": "Grave of Walter Gropius; architect; father of Bauhaus founder Walter Gropius.",
+        "fr": "Tombe de Walter Gropius ; architecte ; père du fondateur du Bauhaus Walter Gropius."
+      },
+      "beschreibung": {
+        "de": "Walter Gropius (1848–1911) – Architekt; Vater des Bauhaus-Gründers Walter Gropius.",
+        "en": "Walter Gropius (1848–1911) – architect; father of Bauhaus founder Walter Gropius.",
+        "fr": "Walter Gropius (1848–1911) – architecte ; père du fondateur du Bauhaus Walter Gropius."
+      },
+      "datum_von": "1848-05-22",
+      "datum_bis": "1911-12-19",
+      "wikipedia_url": "",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_walter-von-pannwitz",
+      "typ": "grab",
+      "name": {
+        "de": "Walter von Pannwitz",
+        "en": "Walter von Pannwitz",
+        "fr": "Walter von Pannwitz"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Walter von Pannwitz; Jurist, Kunstsammler und Mäzen.",
+        "en": "Grave of Walter von Pannwitz; jurist, art collector and patron.",
+        "fr": "Tombe de Walter von Pannwitz ; juriste, collectionneur d’art et mécène."
+      },
+      "beschreibung": {
+        "de": "Walter von Pannwitz (1856–1920) – Jurist, Kunstsammler und Mäzen.",
+        "en": "Walter von Pannwitz (1856–1920) – jurist, art collector and patron.",
+        "fr": "Walter von Pannwitz (1856–1920) – juriste, collectionneur d’art et mécène."
+      },
+      "datum_von": "1856-05-04",
+      "datum_bis": "1920-11-08",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Walter_von_Pannwitz",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_werner-von-siemens",
+      "typ": "grab",
+      "name": {
+        "de": "Werner von Siemens",
+        "en": "Werner von Siemens",
+        "fr": "Werner von Siemens"
+      },
+      "koordinaten": {
+        "lat": 52.3889,
+        "lng": 13.17921
+      },
+      "kurztext": {
+        "de": "Grab von Werner von Siemens; Erfinder, Industrieller und Unternehmensgründer.",
+        "en": "Grave of Werner von Siemens; inventor, industrialist and company founder.",
+        "fr": "Tombe de Werner von Siemens ; inventeur, industriel et fondateur d’entreprise."
+      },
+      "beschreibung": {
+        "de": "Werner von Siemens (1816–1892) – Erfinder, Industrieller und Unternehmensgründer. Seine Grabstätte im Block Trinitatis ist zugleich ein Familiengrab der Siemens-Familie und im offiziellen Grabstättenplan als Station markiert.",
+        "en": "Werner von Siemens (1816–1892) – inventor, industrialist and company founder. His grave in Block Trinitatis is also a family burial site of the Siemens family and is marked in the official grave map.",
+        "fr": "Werner von Siemens (1816–1892) – inventeur, industriel et fondateur d’entreprise. Sa tombe au bloc Trinitatis est aussi une sépulture familiale des Siemens."
+      },
+      "datum_von": "1816-12-13",
+      "datum_bis": "1892-12-06",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Werner_von_Siemens",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 3a, Erbbegräbnis 22",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_wilhelm-groener",
+      "typ": "grab",
+      "name": {
+        "de": "Wilhelm Groener",
+        "en": "Wilhelm Groener",
+        "fr": "Wilhelm Groener"
+      },
+      "koordinaten": null,
+      "kurztext": {
+        "de": "Grab von Wilhelm Groener; Reichswehrminister und Innenminister.",
+        "en": "Grave of Wilhelm Groener; Reichswehr minister and interior minister.",
+        "fr": "Tombe de Wilhelm Groener ; ministre de la Reichswehr et ministre de l’Intérieur."
+      },
+      "beschreibung": {
+        "de": "Wilhelm Groener (1867–1939) – Reichswehrminister und Innenminister.",
+        "en": "Wilhelm Groener (1867–1939) – Reichswehr minister and interior minister.",
+        "fr": "Wilhelm Groener (1867–1939) – ministre de la Reichswehr et ministre de l’Intérieur."
+      },
+      "datum_von": "1867-11-22",
+      "datum_bis": "1939-05-03",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Wilhelm_Groener",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "poi_sws_wilhelm-kuhnert",
+      "typ": "grab",
+      "name": {
+        "de": "Wilhelm Kuhnert",
+        "en": "Wilhelm Kuhnert",
+        "fr": "Wilhelm Kuhnert"
+      },
+      "koordinaten": {
+        "lat": 52.38999,
+        "lng": 13.17892
+      },
+      "kurztext": {
+        "de": "Grab von Wilhelm Kuhnert; Tiermaler und Illustrator.",
+        "en": "Grave of Wilhelm Kuhnert; animal painter and illustrator.",
+        "fr": "Tombe de Wilhelm Kuhnert ; peintre animalier et illustrateur."
+      },
+      "beschreibung": {
+        "de": "Wilhelm Kuhnert (1865–1926) – Tiermaler und Illustrator.",
+        "en": "Wilhelm Kuhnert (1865–1926) – animal painter and illustrator.",
+        "fr": "Wilhelm Kuhnert (1865–1926) – peintre animalier et illustrateur."
+      },
+      "datum_von": "1865-01-28",
+      "datum_bis": "1926-02-11",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Wilhelm_Kuhnert",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Epiphanien, Gbl. I, Grabstelle 85/86",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    }
+  ],
+  "collections": [
+    {
+      "id": "collection_sws_architektur-und-anlage",
+      "name": {
+        "de": "Architektur & Anlage",
+        "en": "Architecture & site design",
+        "fr": "Architecture & composition du site"
+      },
+      "kurztext": {
+        "de": "Kapelle, Eingänge, Landschaftsgestaltung und herausragende Mausoleen.",
+        "en": "Chapel, entrances, landscape design and outstanding mausolea.",
+        "fr": "Chapelle, entrées, aménagement paysager et mausolées remarquables."
+      },
+      "beschreibung": {
+        "de": "Hier stehen die die Kapelle, markante Mausoleen und die prägenden Gestalterfiguren der Anlage im Mittelpunkt.",
+        "en": "This collection focuses on the spatial composition of the forest cemetery, the chapel, major mausolea and the key design figures behind the grounds.",
+        "fr": "Cette collection met l’accent sur la composition spatiale du cimetière forestier, la chapelle, les grands mausolées et les principales figures qui ont façonné le site."
+      },
+      "pois": [
+        "poi_sws_hauptkapelle",
+        "poi_sws_friedhofseingang",
+        "poi_sws_christusdenkmal",
+        "poi_sws_mausoleum-caspary",
+        "poi_sws_mausoleum-harteneck",
+        "poi_sws_mausoleum-felinus",
+        "poi_sws_louis-meyer",
+        "poi_sws_gustav-werner",
+        "poi_sws_walter-gropius-senior"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_film-buehne-und-medien",
+      "name": {
+        "de": "Film, Bühne & Medien",
+        "en": "Film, stage & media",
+        "fr": "Cinéma, scène et médias"
+      },
+      "kurztext": {
+        "de": "Bekannte Namen aus Film, Theater, Fernsehen und Synchronkultur.",
+        "en": "Well-known names from film, theatre, television and voice acting.",
+        "fr": "Noms marquants du cinéma, du théâtre, de la télévision et du doublage."
+      },
+      "beschreibung": {
+        "de": "Der Südwestkirchhof ist auch ein Friedhof der Film- und Theatergeschichte: von Murnau und Gottschalk bis zu Manfred Krug, Ingrid Steeger oder Jürgen Kluckert.",
+        "en": "The South-Western Cemetery is also a cemetery of film and stage history: from Murnau and Gottschalk to Manfred Krug, Ingrid Steeger and Jürgen Kluckert.",
+        "fr": "Le Südwestkirchhof est aussi un cimetière de l’histoire du cinéma et de la scène : de Murnau et Gottschalk à Manfred Krug, Ingrid Steeger ou Jürgen Kluckert."
+      },
+      "pois": [
+        "poi_sws_fw-murnau",
+        "poi_sws_joachim-gottschalk",
+        "poi_sws_ralph-arthur-roberts",
+        "poi_sws_max-adalbert",
+        "poi_sws_manfred-krug",
+        "poi_sws_dieter-thomas-heck",
+        "poi_sws_juergen-holtz",
+        "poi_sws_anita-kupsch",
+        "poi_sws_maja-maranow",
+        "poi_sws_juergen-kluckert",
+        "poi_sws_ingrid-steeger",
+        "poi_sws_peter-sattmann",
+        "poi_sws_albert-wilkening"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_kriegsgedenken",
+      "name": {
+        "de": "Kriegsgedenken & Gewaltgeschichte",
+        "en": "War remembrance & histories of violence",
+        "fr": "Mémoire de guerre & histoire des violences"
+      },
+      "kurztext": {
+        "de": "Kriegsgräberstätten und Gedenkorte des 20. Jahrhunderts.",
+        "en": "War graves and memorial sites of the twentieth century.",
+        "fr": "Nécropoles militaires et lieux de mémoire du XXe siècle."
+      },
+      "beschreibung": {
+        "de": "Diese Sammlung umfasst die britische und italienische Kriegsgräberstätte, den deutschen Ehrenblock, das Garnisongrab und die zentrale Anlage für die Opfer von Krieg und Gewaltherrschaft.",
+        "en": "This collection includes the British and Italian war cemeteries, the German honour block, the Garrison Grave and the central memorial for victims of war and tyranny.",
+        "fr": "Cette collection comprend les cimetières militaires britannique et italien, le bloc d’honneur allemand, la tombe de garnison et le mémorial central pour les victimes de la guerre et de la tyrannie."
+      },
+      "pois": [
+        "poi_sws_anlage-opfer-krieg-und-gewaltherrschaft",
+        "poi_sws_berlin-south-western-cemetery",
+        "poi_sws_italienischer-soldatenfriedhof",
+        "poi_sws_heldenblock",
+        "poi_sws_garnisongrab"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_kunst-und-literatur",
+      "name": {
+        "de": "Kunst, Grafik & Literatur",
+        "en": "Art, graphics & literature",
+        "fr": "Art, graphisme et littérature"
+      },
+      "kurztext": {
+        "de": "Maler, Zeichner, Schriftsteller und kunsthistorisch bedeutsame Grabstätten.",
+        "en": "Painters, draughtsmen, writers and art-historically significant graves.",
+        "fr": "Peintres, dessinateurs, écrivains et tombes d’importance artistique."
+      },
+      "beschreibung": {
+        "de": "Diese Sammlung bündelt Grabstätten aus Malerei, Grafik, Literatur und Kunstgeschichte sowie expressionistisch oder skulptural herausragende Denkmäler.",
+        "en": "This collection brings together graves from painting, graphic arts, literature and art history, along with monuments notable for expressionist or sculptural design.",
+        "fr": "Cette collection réunit des tombes liées à la peinture, au graphisme, à la littérature et à l’histoire de l’art, ainsi que des monuments remarquables par leur expressionnisme ou leur sculpture."
+      },
+      "pois": [
+        "poi_sws_heinrich-zille",
+        "poi_sws_lovis-corinth",
+        "poi_sws_wilhelm-kuhnert",
+        "poi_sws_julius-wissinger",
+        "poi_sws_max-jordan",
+        "poi_sws_karl-ludwig-manzel",
+        "poi_sws_august-stramm",
+        "poi_sws_harald-kretzschmar"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_musik-und-opernkultur",
+      "name": {
+        "de": "Musik & Oper",
+        "en": "Music & opera",
+        "fr": "Musique & opéra"
+      },
+      "kurztext": {
+        "de": "Komponisten, Sängerinnen und musikalisch bedeutende Grabstätten.",
+        "en": "Composers, singers and musically important grave sites.",
+        "fr": "Compositeurs, chanteuses et sépultures musicalement importantes."
+      },
+      "beschreibung": {
+        "de": "Von Engelbert Humperdinck und Hugo Distler bis zu Meta Seinemeyer zeigt diese Sammlung die musikgeschichtliche Tiefe des Friedhofs.",
+        "en": "From Engelbert Humperdinck and Hugo Distler to Meta Seinemeyer, this collection shows the cemetery’s musical depth.",
+        "fr": "D’Engelbert Humperdinck et Hugo Distler à Meta Seinemeyer, cette collection montre la profondeur musicale du cimetière."
+      },
+      "pois": [
+        "poi_sws_engelbert-humperdinck",
+        "poi_sws_hugo-distler",
+        "poi_sws_gustav-kadelburg",
+        "poi_sws_meta-seinemeyer"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_politik-widerstand-und-militaer",
+      "name": {
+        "de": "Politik, Widerstand & Militär",
+        "en": "Politics, resistance & military",
+        "fr": "Politique, résistance & militaire"
+      },
+      "kurztext": {
+        "de": "Politische Biografien zwischen Kaiserreich, Weimarer Republik, NS-Zeit und Bundesrepublik.",
+        "en": "Political biographies spanning the Empire, the Weimar Republic, the Nazi era and the Federal Republic.",
+        "fr": "Biographies politiques couvrant l’Empire, la République de Weimar, l’époque nazie et la République fédérale."
+      },
+      "beschreibung": {
+        "de": "Die Bandbreite reicht von Rudolf Breitscheid und Friedrich Weißler bis zu Alexander von Kluck, Wilhelm Groener und Otto Graf Lambsdorff.",
+        "en": "The range extends from Rudolf Breitscheid and Friedrich Weißler to Alexander von Kluck, Wilhelm Groener and Otto Graf Lambsdorff.",
+        "fr": "L’ensemble va de Rudolf Breitscheid et Friedrich Weißler à Alexander von Kluck, Wilhelm Groener et Otto Graf Lambsdorff."
+      },
+      "pois": [
+        "poi_sws_franz-bracht",
+        "poi_sws_rudolf-breitscheid",
+        "poi_sws_hanno-guenther",
+        "poi_sws_alexander-von-kluck",
+        "poi_sws_friedrich-weissler",
+        "poi_sws_wilhelm-groener",
+        "poi_sws_otto-graf-lambsdorff",
+        "poi_sws_richard-huettig",
+        "poi_sws_heldenblock",
+        "poi_sws_garnisongrab"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_moderne-populaere-grabstaetten",
+      "name": {
+        "de": "Späte 20. & 21. Jahrhundert",
+        "en": "Late 20th & 21st century graves",
+        "fr": "Tombes de la fin du XXe et du XXIe siècle"
+      },
+      "kurztext": {
+        "de": "Jüngere prominente Bestattungen aus Fernsehen, Film, Kultur und Zeitgeschichte.",
+        "en": "More recent notable burials from television, film, culture and contemporary history.",
+        "fr": "Sépultures plus récentes issues de la télévision, du cinéma, de la culture et de l’histoire contemporaine."
+      },
+      "beschreibung": {
+        "de": "Für die App-Nutzung sind auch jüngere Grabstätten relevant, weil sie häufig nachgefragt werden und die bis heute fortdauernde Prominententradition des Friedhofs zeigen.",
+        "en": "For app use, more recent graves matter as they are frequently sought out and show the cemetery’s still-continuing tradition as a burial place for notable figures.",
+        "fr": "Pour l’usage de l’application, les tombes plus récentes sont importantes, car elles sont souvent recherchées et montrent que la tradition du cimetière comme lieu de sépulture de personnalités se poursuit jusqu’à aujourd’hui."
+      },
+      "pois": [
+        "poi_sws_manfred-krug",
+        "poi_sws_dieter-thomas-heck",
+        "poi_sws_juergen-holtz",
+        "poi_sws_inge-deutschkron",
+        "poi_sws_anita-kupsch",
+        "poi_sws_maja-maranow",
+        "poi_sws_harald-kretzschmar",
+        "poi_sws_juergen-kluckert",
+        "poi_sws_ingrid-steeger",
+        "poi_sws_peter-sattmann"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_umbettungen-und-friedhofsgeschichte",
+      "name": {
+        "de": "Umbettungen & Friedhofsgeschichte",
+        "en": "Reinterments & cemetery history",
+        "fr": "Translations de sépultures & histoire du cimetière"
+      },
+      "kurztext": {
+        "de": "Historische Verlagerungen, Planungsfiguren und Kernschichten der Anlagegeschichte.",
+        "en": "Historic relocations, planning figures and the core layers of the site’s history.",
+        "fr": "Déplacements historiques, figures de la planification et strates essentielles de l’histoire du site."
+      },
+      "beschreibung": {
+        "de": "Die Alte und Neue Umbettung, Louis Meyer, Gustav Werner und mehrere umgebettete Grabstätten machen die Geschichte des Friedhofs als Berliner Zentralfriedhof außerhalb der Stadtgrenzen sichtbar.",
+        "en": "Alte and Neue Umbettung, Louis Meyer, Gustav Werner and several reinterred graves make visible the history of the cemetery as a Berlin central cemetery outside the city limits.",
+        "fr": "L’Alte et la Neue Umbettung, Louis Meyer, Gustav Werner et plusieurs tombes transférées rendent visible l’histoire du cimetière comme nécropole centrale berlinoise hors des limites de la ville."
+      },
+      "pois": [
+        "poi_sws_alte-umbettung",
+        "poi_sws_neue-umbettung",
+        "poi_sws_louis-meyer",
+        "poi_sws_gustav-werner",
+        "poi_sws_walter-gropius-senior",
+        "poi_sws_gustav-langenscheidt",
+        "poi_sws_ferdinand-von-richthofen"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    },
+    {
+      "id": "collection_sws_wissenschaft-technik-und-industrie",
+      "name": {
+        "de": "Wissenschaft, Technik & Industrie",
+        "en": "Science, technology & industry",
+        "fr": "Science, technique & industrie"
+      },
+      "kurztext": {
+        "de": "Forscher, Ingenieure, Unternehmer und Technikpioniere.",
+        "en": "Researchers, engineers, entrepreneurs and technological pioneers.",
+        "fr": "Chercheurs, ingénieurs, entrepreneurs et pionniers de la technique."
+      },
+      "beschreibung": {
+        "de": "Diese Sammlung verbindet Naturwissenschaft, Industriegeschichte und Verkehrstechnik – von Siemens und Arco über Rumpler bis zu Emil Krebs und Hugo Conwentz.",
+        "en": "This collection links natural science, industrial history and transport technology – from Siemens and Arco to Rumpler, Emil Krebs and Hugo Conwentz.",
+        "fr": "Cette collection relie sciences, histoire industrielle et techniques de transport – de Siemens et Arco à Rumpler, Emil Krebs et Hugo Conwentz."
+      },
+      "pois": [
+        "poi_sws_werner-von-siemens",
+        "poi_sws_georg-graf-von-arco",
+        "poi_sws_hugo-conwentz",
+        "poi_sws_emil-krebs",
+        "poi_sws_adolf-rohrbach",
+        "poi_sws_edmund-rumpler",
+        "poi_sws_heinrich-luebbe",
+        "poi_sws_conrad-matschoss",
+        "poi_sws_gustav-langenscheidt",
+        "poi_sws_fritz-banneitz",
+        "poi_sws_adolf-bastian"
+      ],
+      "status": "bestätigt",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-04-06T14:52:39.342Z"
+    }
+  ]
+}
