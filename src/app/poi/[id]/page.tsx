@@ -1,9 +1,9 @@
-import poisData from '../../../../data/pois.json'
+import backupData from '../../../../data/stahnsdorf-backup-translated.json'
 import POIDetailClient from './POIDetailClient'
 
-// Build-time: Generiert statische Seiten für alle bekannten POIs aus lokalem JSON
+// Build-time: Generiert statische Seiten für alle bekannten POIs aus lokalem JSON Snapshot
 export function generateStaticParams() {
-  return (poisData as any[])
+  return (backupData.pois as any[])
     .filter((p) => p.koordinaten !== null)
     .map((poi) => ({ id: poi.id }))
 }

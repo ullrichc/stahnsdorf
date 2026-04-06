@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
-const SUPPORTED_LOCALES = ['de', 'en', 'fr'] as const
+const SUPPORTED_LOCALES = ['de', 'en', 'fr', 'pl', 'ru', 'sv'] as const
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 const DEFAULT_LOCALE: SupportedLocale = 'de'
 const STORAGE_KEY = 'locale'

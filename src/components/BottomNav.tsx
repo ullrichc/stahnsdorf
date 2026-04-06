@@ -1,19 +1,21 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { useLocaleContext, SupportedLocale } from '@/lib/LocaleContext'
+import { useLocaleContext } from '@/lib/LocaleContext'
+import { useDictionary, UIDictionary } from '@/lib/ui-dictionary'
 import styles from './BottomNav.module.css'
 
 const tabs = [
-  { href: '/', icon: 'map', labels: { de: 'Karte', en: 'Map', fr: 'Carte' } },
-  { href: '/sammlungen', icon: 'library_books', labels: { de: 'Sammlungen', en: 'Collections', fr: 'Collections' } },
-  { href: '/info', icon: 'info', labels: { de: 'Info', en: 'Info', fr: 'Info' } },
-  { href: '/einstellungen', icon: 'settings', labels: { de: 'Optionen', en: 'Settings', fr: 'Options' } },
+  { href: '/', icon: 'map', getLabel: (d: UIDictionary) => d.navMap },
+  { href: '/sammlungen', icon: 'library_books', getLabel: (d: UIDictionary) => d.navCollections },
+  { href: '/info', icon: 'info', getLabel: (d: UIDictionary) => d.navInfo },
+  { href: '/einstellungen', icon: 'settings', getLabel: (d: UIDictionary) => d.navSettings },
 ]
 
 export default function BottomNav() {
   const pathname = usePathname()
   const { locale } = useLocaleContext()
+  const dict = useDictionary(locale)
 
   // Don't show bottom nav on admin pages
   if (pathname?.startsWith('/admin')) return null
@@ -34,7 +36,7 @@ export default function BottomNav() {
           <span className={`material-symbols-outlined ${styles.icon} ${isActive(tab.href) ? 'material-symbols-filled' : ''}`}>
             {tab.icon}
           </span>
-          <span className={styles.label}>{tab.labels[locale] || tab.labels.de}</span>
+          <span className={styles.label}>{tab.getLabel(dict)}</span>
         </Link>
       ))}
     </nav>

@@ -7,6 +7,7 @@ import { POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import { createMarkerIcon } from './MapMarker'
 import { useLocale } from '@/lib/useLocale'
+import { useDictionary } from '@/lib/ui-dictionary'
 import POICard from './POICard'
 import styles from './MapView.module.css'
 
@@ -100,6 +101,7 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
 function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) => void }) {
   const map = useMapInstance()
   const locale = useLocale()
+  const dict = useDictionary(locale)
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<POI[]>([])
 
@@ -112,7 +114,10 @@ function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) =
     const matches = pois.filter(p => 
       (p.name && p.name.de && p.name.de.toLowerCase().includes(lower)) ||
       (p.name && p.name.en && p.name.en.toLowerCase().includes(lower)) ||
-      (p.name && p.name.fr && p.name.fr.toLowerCase().includes(lower))
+      (p.name && p.name.fr && p.name.fr.toLowerCase().includes(lower)) ||
+      (p.name && p.name.pl && p.name.pl.toLowerCase().includes(lower)) ||
+      (p.name && p.name.ru && p.name.ru.toLowerCase().includes(lower)) ||
+      (p.name && p.name.sv && p.name.sv.toLowerCase().includes(lower))
     )
     setResults(matches.slice(0, 5))
   }, [query, pois])
@@ -129,7 +134,7 @@ function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) =
       <input 
         type="search" 
         className={styles.searchInput}
-        placeholder={locale === 'en' ? 'Search names...' : locale === 'fr' ? 'Rechercher des noms...' : 'Namen suchen...'} 
+        placeholder={dict.searchPlaceholder} 
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

@@ -1,8 +1,9 @@
-import collectionsData from '../../../../data/collections.json'
+import backupData from '../../../../data/stahnsdorf-backup-translated.json'
 import SammlungDetailClient from './SammlungDetailClient'
 
+// Build-time: Generiert statische Seiten aus dem Unified Snapshot
 export function generateStaticParams() {
-  return (collectionsData as any[]).map((col) => ({ id: col.id }))
+  return (backupData.collections as any[]).map((col) => ({ id: col.id }))
 }
 
 export default async function SammlungPage({ params }: { params: Promise<{ id: string }> }) {

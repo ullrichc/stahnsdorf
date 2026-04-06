@@ -48,8 +48,7 @@ stahnsdorf/
 ├── firestore.rules          # Firestore Security Rules
 ├── firestore.indexes.json   # Firestore Composite Indexes
 ├── data/
-│   ├── pois.json            # 75 POIs (Build-Time Snapshot für generateStaticParams)
-│   └── collections.json     # 9 thematische Sammlungen
+│   └── stahnsdorf-backup-translated.json # Unified Build-Time Snapshot for generateStaticParams
 ├── docs/
 │   └── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
 ├── scripts/

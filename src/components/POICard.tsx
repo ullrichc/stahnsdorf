@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
+import { useDictionary } from '@/lib/ui-dictionary'
 import styles from './POICard.module.css'
 
 type Props = {
@@ -10,14 +11,7 @@ type Props = {
   onClose: () => void
 }
 
-const typeLabels: Record<string, Record<string, string>> = {
-  grab: { de: 'Grabstätte', en: 'Grave', fr: 'Tombe' },
-  bauwerk: { de: 'Bauwerk', en: 'Building', fr: 'Bâtiment' },
-  bereich: { de: 'Bereich', en: 'Section', fr: 'Section' },
-  denkmal: { de: 'Denkmal', en: 'Memorial', fr: 'Mémorial' },
-  mausoleum: { de: 'Mausoleum', en: 'Mausoleum', fr: 'Mausolée' },
-  gedenkanlage: { de: 'Gedenkanlage', en: 'Memorial site', fr: 'Lieu de mémoire' },
-}
+// Replaced by dictionary mapping
 
 import { useGeolocation } from '@/lib/useGeolocation'
 import { getDistanceMeters, formatDistance } from '@/lib/geo'
@@ -25,12 +19,22 @@ import { getDistanceMeters, formatDistance } from '@/lib/geo'
 export default function POICard({ poi, onClose }: Props) {
   const { location } = useGeolocation()
   const locale = useLocale()
+  const dict = useDictionary(locale)
 
   if (!poi) return null
 
   const distance = (location && poi.koordinaten) ? getDistanceMeters(location.lat, location.lng, poi.koordinaten.lat, poi.koordinaten.lng) : null
-  const label = typeLabels[poi.typ]?.[locale] || typeLabels[poi.typ]?.de || poi.typ
-  const awayText = locale === 'en' ? 'away' : locale === 'fr' ? 'de distance' : 'entfernt'
+  
+  const typeMap: Record<string, string> = {
+    grab: dict.typeGrab,
+    bauwerk: dict.typeBauwerk,
+    bereich: dict.typeBereich,
+    denkmal: dict.typeDenkmal,
+    mausoleum: dict.typeMausoleum,
+    gedenkanlage: dict.typeGedenkanlage,
+  }
+  const label = typeMap[poi.typ] || poi.typ
+
 
   return (
     <div className={styles.card}>
@@ -60,7 +64,7 @@ export default function POICard({ poi, onClose }: Props) {
             {distance !== null && (
               <span className={styles.distanceChip}>
                 <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>directions_walk</span>
-                {formatDistance(distance)} {awayText}
+                {formatDistance(distance)} {dict.away}
               </span>
             )}
           </div>
@@ -70,7 +74,7 @@ export default function POICard({ poi, onClose }: Props) {
 
         <div className={styles.actions}>
           <Link href={`/poi/${poi.id}`} className={styles.primaryBtn}>
-            {locale === 'en' ? 'Learn more' : locale === 'fr' ? 'En savoir plus' : 'Mehr erfahren'}
+            {dict.learnMore}
           </Link>
         </div>
       </div>

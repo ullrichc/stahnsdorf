@@ -6,6 +6,7 @@ import { useGeolocation } from '@/lib/useGeolocation'
 import { getDistanceMeters, formatDistance } from '@/lib/geo'
 import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
+import { useDictionary } from '@/lib/ui-dictionary'
 import styles from './CollectionList.module.css'
 
 type Props = {
@@ -16,14 +17,9 @@ export default function CollectionList({ collections }: Props) {
   const { location } = useGeolocation()
   const locale = useLocale()
   const { pois } = usePOIs()
+  const dict = useDictionary(locale)
 
   const getPOI = (id: string) => pois.find(p => p.id === id)
-
-  const headingText = locale === 'en' ? 'Collections' : locale === 'fr' ? 'Collections' : 'Sammlungen'
-  const subtitleText = locale === 'en' ? 'Thematic trails through the heritage site.' : locale === 'fr' ? 'Parcours thématiques à travers le site.' : 'Thematische Pfade durch das Flächendenkmal.'
-  const sitesText = locale === 'en' ? 'sites' : locale === 'fr' ? 'sites' : 'Orte'
-  const nearestText = locale === 'en' ? 'Nearest:' : locale === 'fr' ? 'Plus proche :' : 'Nächstes:'
-  const awayText = locale === 'en' ? 'away' : locale === 'fr' ? 'de distance' : 'entfernt'
 
   return (
     <div className={styles.container}>
@@ -35,8 +31,8 @@ export default function CollectionList({ collections }: Props) {
             Südwestkirchhof Stahnsdorf
           </span>
         </div>
-        <h1 className={styles.heading}>{headingText}</h1>
-        <p className={styles.subtitle}>{subtitleText}</p>
+        <h1 className={styles.heading}>{dict.collectionsTitle}</h1>
+        <p className={styles.subtitle}>{dict.collectionsSubtitle}</p>
       </header>
 
       <div className={styles.list}>
@@ -60,12 +56,12 @@ export default function CollectionList({ collections }: Props) {
                 <div className={styles.cardFooter}>
                   <span className={styles.countPill}>
                     <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>location_on</span>
-                    {collection.pois.length} {sitesText}
+                    {collection.pois.length} {dict.sitesCount}
                   </span>
                   {location && minDistance !== Infinity && (
                     <span className={styles.distanceTag}>
                       <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>directions_walk</span>
-                      {nearestText} {formatDistance(minDistance)} {awayText}
+                      {dict.nearest} {formatDistance(minDistance)} {dict.away}
                     </span>
                   )}
                 </div>
