@@ -3,7 +3,8 @@ import path from 'path'
 
 export default defineConfig({
   test: {
-    include: ['src/**/*.test.ts', 'tests/**/*.test.mjs', 'tests/**/*.test.ts'],
+    include: ['src/**/*.test.ts'],
+    exclude: ['tests/rules/**'],
   },
   resolve: {
     alias: {

@@ -232,8 +232,8 @@ test('IMP-10: content import new POIs and Collections succeeds', async ({ page }
   await expect(page.locator('text=1 Collections')).toBeVisible();
 });
 
-// ═══ IMP-11: Full-Backup Restore with foreign author → PERMISSION_DENIED ═══
-test('IMP-11: full backup restore with foreign erstellt_von fails (BUG-07)', async ({ page }) => {
+// ═══ IMP-11: Full-Backup Restore with foreign author overrides to active user (Fix for BUG-07) ═══
+test('IMP-11: full backup restore with foreign author succeeds by replacing audit fields', async ({ page }) => {
   await gotoBackup(page);
 
   await uploadJSON(page, {
@@ -258,8 +258,8 @@ test('IMP-11: full backup restore with foreign erstellt_von fails (BUG-07)', asy
   await expect(page.locator('text=Import-Vorschau')).toBeVisible({ timeout: 10_000 });
   await page.locator('button:has-text("Jetzt importieren")').click();
 
-  // Should fail with PERMISSION_DENIED
-  await expect(page.locator('text=Import fehlgeschlagen')).toBeVisible({ timeout: 15_000 });
+  // Should succeed now
+  await expect(page.locator('text=Import abgeschlossen')).toBeVisible({ timeout: 15_000 });
 });
 
 // ═══ IMP-12: Merge-Modus Skip ═══
@@ -284,8 +284,8 @@ test('IMP-12: skip merge mode skips existing, imports new', async ({ page }) => 
   await expect(page.locator('text=1 POIs')).toBeVisible();
 });
 
-// ═══ IMP-13: Content-Import Overwrite → BUG-06 ═══
-test('IMP-13: content import overwrite fails due to immutable erstellt_am (BUG-06)', async ({ page }) => {
+// ═══ IMP-13: Content-Import Overwrite (Fix for BUG-06) ═══
+test('IMP-13: content import overwrite succeeds by preserving immutable fields', async ({ page }) => {
   await seedTestPOIs([SEED_POI], TEST_EDITOR_EMAIL);
   await gotoBackup(page);
 
@@ -304,12 +304,12 @@ test('IMP-13: content import overwrite fails due to immutable erstellt_am (BUG-0
 
   await page.locator('button:has-text("Jetzt importieren")').click();
 
-  // Should fail with PERMISSION_DENIED because erstellt_am gets overwritten
-  await expect(page.locator('text=Import fehlgeschlagen')).toBeVisible({ timeout: 15_000 });
+  // Should succeed
+  await expect(page.locator('text=Import abgeschlossen')).toBeVisible({ timeout: 15_000 });
 });
 
-// ═══ IMP-14: Full-Backup Overwrite → BUG-07 ═══
-test('IMP-14: full backup overwrite fails due to geaendert_von mismatch (BUG-07)', async ({ page }) => {
+// ═══ IMP-14: Full-Backup Overwrite (Fix for BUG-07) ═══
+test('IMP-14: full backup overwrite succeeds by setting current user as geaendert_von', async ({ page }) => {
   await seedTestPOIs([SEED_POI], TEST_EDITOR_EMAIL);
   await gotoBackup(page);
 
@@ -323,7 +323,7 @@ test('IMP-14: full backup overwrite fails due to geaendert_von mismatch (BUG-07)
         publish_status: 'veröffentlicht',
         erstellt_von: TEST_EDITOR_EMAIL,
         erstellt_am: new Date().toISOString(),
-        geaendert_von: 'other-editor@example.com', // foreign → violates rule
+        geaendert_von: 'other-editor@example.com', // foreign → original caused BUG-07
         geaendert_am: new Date().toISOString(),
       },
     ],
@@ -338,8 +338,8 @@ test('IMP-14: full backup overwrite fails due to geaendert_von mismatch (BUG-07)
 
   await page.locator('button:has-text("Jetzt importieren")').click();
 
-  // Should fail with PERMISSION_DENIED
-  await expect(page.locator('text=Import fehlgeschlagen')).toBeVisible({ timeout: 15_000 });
+  // Should succeed
+  await expect(page.locator('text=Import abgeschlossen')).toBeVisible({ timeout: 15_000 });
 });
 
 // ═══ IMP-15: Destructive Restore (Skip mode, no new docs) ═══
@@ -413,8 +413,8 @@ test('IMP-16: invalid POI references in collections are cleaned during import', 
   // The import should have cleaned the invalid reference silently
 });
 
-// ═══ IMP-17: Merge-Modus-Selector Sichtbarkeit (BUG-08) ═══
-test('IMP-17: merge mode selector hidden when only Collections conflict (BUG-08)', async ({ page }) => {
+// ═══ IMP-17: Merge-Modus-Selector Sichtbarkeit (Fix for BUG-08) ═══
+test('IMP-17: merge mode selector is visible when only Collections conflict', async ({ page }) => {
   // Seed existing collection, no POIs
   await seedTestCollections([SEED_COLLECTION], TEST_EDITOR_EMAIL);
   await gotoBackup(page);
@@ -431,14 +431,9 @@ test('IMP-17: merge mode selector hidden when only Collections conflict (BUG-08)
 
   await expect(page.locator('text=Import-Vorschau')).toBeVisible({ timeout: 10_000 });
 
-  // BUG-08: Merge selector only shown when updatedPOIs.length > 0
-  // Since we have 0 updated POIs (poi is also seeded, but the seed was deleted during setup),
-  // but 1 updated Collection → the selector should NOT be visible
-  // The merge mode default "skip" takes effect silently for collections
   await expect(page.locator('text=bestehende Collections')).toBeVisible();
 
-  // Verify merge selector is NOT shown (because updatedPOIs.length === 0)
-  // The selector label is "Bei bestehenden Einträgen:"
+  // Verify merge selector IS shown
   const mergeSelector = page.locator('label:has-text("Bei bestehenden Einträgen")');
-  await expect(mergeSelector).not.toBeVisible();
+  await expect(mergeSelector).toBeVisible();
 });

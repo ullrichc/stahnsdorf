@@ -169,11 +169,17 @@ export default function BackupRestore() {
       let poiCount = 0;
       let colCount = 0;
 
+      const existingPoiSnap = await getDocs(query(fbCollection(db, 'pois')));
+      const existingColSnap = await getDocs(query(fbCollection(db, 'collections')));
+      const existingPois = new Map(existingPoiSnap.docs.map(d => [d.id, d.data()]));
+      const existingCols = new Map(existingColSnap.docs.map(d => [d.id, d.data()]));
+
       for (const poi of preview.data.pois) {
         const isExisting = preview.updatedPOIs.includes(poi.id);
         if (isExisting && mergeMode === 'skip') continue;
 
         const docData: any = { ...poi };
+        const existing = existingPois.get(poi.id);
 
         if (preview.isFullBackup) {
           // Restore timestamps from ISO strings
@@ -182,11 +188,18 @@ export default function BackupRestore() {
         } else {
           // Content import — add Firestore fields
           docData.publish_status = importStatus;
-          docData.erstellt_von = user?.email ?? 'import';
           docData.erstellt_am = now;
-          docData.geaendert_von = user?.email ?? 'import';
           docData.geaendert_am = now;
         }
+
+        // --- Enforce Security Rules (Fix BUG-06, BUG-07) ---
+        if (isExisting && existing) {
+          docData.erstellt_von = existing.erstellt_von;
+          docData.erstellt_am = existing.erstellt_am;
+        } else {
+          docData.erstellt_von = user?.email ?? 'import';
+        }
+        docData.geaendert_von = user?.email ?? 'import';
 
         await setDoc(doc(db, 'pois', poi.id), docData);
         poiCount++;
@@ -204,6 +217,7 @@ export default function BackupRestore() {
         if (isExisting && mergeMode === 'skip') continue;
 
         const docData: any = { ...col };
+        const existing = existingCols.get(col.id);
 
         // Strip invalid POI references
         docData.pois = (docData.pois ?? []).filter((pid: string) => allPoiIds.has(pid));
@@ -213,11 +227,18 @@ export default function BackupRestore() {
           if (docData.geaendert_am) docData.geaendert_am = Timestamp.fromDate(new Date(docData.geaendert_am));
         } else {
           docData.publish_status = importStatus;
-          docData.erstellt_von = user?.email ?? 'import';
           docData.erstellt_am = now;
-          docData.geaendert_von = user?.email ?? 'import';
           docData.geaendert_am = now;
         }
+
+        // --- Enforce Security Rules (Fix BUG-06, BUG-07) ---
+        if (isExisting && existing) {
+          docData.erstellt_von = existing.erstellt_von;
+          docData.erstellt_am = existing.erstellt_am;
+        } else {
+          docData.erstellt_von = user?.email ?? 'import';
+        }
+        docData.geaendert_von = user?.email ?? 'import';
 
         await setDoc(doc(db, 'collections', col.id), docData);
         colCount++;
@@ -226,9 +247,6 @@ export default function BackupRestore() {
       let deleteCount = 0;
       if (preview.isFullBackup && deleteMode) {
         // Find documents in DB that are not in backup and delete them
-        const existingPoiSnap = await getDocs(query(fbCollection(db, 'pois')));
-        const existingColSnap = await getDocs(query(fbCollection(db, 'collections')));
-        
         const backupPoiIds = new Set(preview.data.pois.map((p: any) => p.id));
         const backupColIds = new Set(preview.data.collections.map((c: any) => c.id));
 
@@ -359,7 +377,7 @@ export default function BackupRestore() {
             </div>
           )}
 
-          {preview.updatedPOIs.length > 0 && (
+          {(preview.updatedPOIs.length > 0 || preview.updatedCollections.length > 0) && (
             <div className="admin-field" style={{ marginTop: '12px' }}>
               <label>Bei bestehenden Einträgen:</label>
               <select value={mergeMode} onChange={(e) => setMergeMode(e.target.value as any)}>
