@@ -23,6 +23,7 @@ const content: Record<string, Record<string, string>> = {
     ru: 'Многие известные личности нашли здесь свое последнее пристанище, среди них художники, ученые и политики. Кладбище является не только местом скорби, но и важным памятником культуры и природы.',
     sv: 'Många kända personligheter har funnit sin sista vila här, däribland konstnärer, vetenskapsmän och politiker. Kyrkogården är inte bara en plats för sorg, utan också ett betydande kultur- och naturminne.'
   },
+  didYouKnowTitle: { de: 'Wussten Sie?', en: 'Did you know?', fr: 'Le saviez-vous ?', pl: 'Czy wiesz, że?', ru: 'Знаете ли вы?', sv: 'Visste du?' },
   didYouKnow: {
     de: 'Der Friedhof beherbergt die berühmte Holzkapelle, die nach norwegischen Stabkirchen gestaltet und 1911 fertiggestellt wurde.',
     en: 'The cemetery is home to the famous wooden chapel, modeled after Norwegian stave churches, completed in 1911.',
@@ -77,11 +78,10 @@ export default function InfoPage() {
         <p>{c('aboutText2')}</p>
       </section>
 
-      {/* Did You Know */}
       <section className={styles.section}>
         <h2 className={styles.heading}>
           <span className={`material-symbols-outlined ${styles.headingIcon}`} style={{ fontVariationSettings: "'FILL' 1, 'wght' 400" }}>auto_awesome</span>
-          {locale === 'en' ? 'Did you know?' : locale === 'fr' ? 'Le saviez-vous ?' : 'Wussten Sie?'}
+          {c('didYouKnowTitle')}
         </h2>
         <p>{c('didYouKnow')}</p>
       </section>

@@ -10,6 +10,7 @@ export type UIDictionary = {
   navCollections: string
   navInfo: string
   navSettings: string
+  back: string
   
   // Map View
   searchPlaceholder: string
@@ -29,6 +30,7 @@ export type UIDictionary = {
   typeMausoleum: string
   typeGedenkanlage: string
   learnMore: string
+  sources: string
 }
 
 export const ui: Record<SupportedLocale, UIDictionary> = {
@@ -39,6 +41,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Sammlungen',
     navInfo: 'Info',
     navSettings: 'Optionen',
+    back: 'Zurück',
     searchPlaceholder: 'Namen suchen...',
     collectionsTitle: 'Sammlungen',
     collectionsSubtitle: 'Thematische Pfade durch das Flächendenkmal.',
@@ -51,7 +54,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Denkmal',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Gedenkanlage',
-    learnMore: 'Mehr erfahren'
+    learnMore: 'Mehr erfahren',
+    sources: 'Quellen'
   },
   en: {
     settingsTitle: 'Settings',
@@ -60,6 +64,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Collections',
     navInfo: 'Info',
     navSettings: 'Settings',
+    back: 'Back',
     searchPlaceholder: 'Search names...',
     collectionsTitle: 'Collections',
     collectionsSubtitle: 'Thematic trails through the heritage site.',
@@ -72,7 +77,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Memorial',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Memorial site',
-    learnMore: 'Learn more'
+    learnMore: 'Learn more',
+    sources: 'Sources'
   },
   fr: {
     settingsTitle: 'Options',
@@ -81,6 +87,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Collections',
     navInfo: 'Info',
     navSettings: 'Options',
+    back: 'Retour',
     searchPlaceholder: 'Rechercher des noms...',
     collectionsTitle: 'Collections',
     collectionsSubtitle: 'Parcours thématiques à travers le site.',
@@ -93,7 +100,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Mémorial',
     typeMausoleum: 'Mausolée',
     typeGedenkanlage: 'Lieu de mémoire',
-    learnMore: 'En savoir plus'
+    learnMore: 'En savoir plus',
+    sources: 'Sources'
   },
   pl: {
     settingsTitle: 'Ustawienia',
@@ -102,6 +110,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Kolekcje',
     navInfo: 'Info',
     navSettings: 'Opcje',
+    back: 'Wróć',
     searchPlaceholder: 'Szukaj imion...',
     collectionsTitle: 'Kolekcje',
     collectionsSubtitle: 'Ścieżki tematyczne przez teren cmentarza.',
@@ -114,7 +123,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Pomnik',
     typeMausoleum: 'Mauzoleum',
     typeGedenkanlage: 'Miejsce pamięci',
-    learnMore: 'Dowiedz się więcej'
+    learnMore: 'Dowiedz się więcej',
+    sources: 'Źródła'
   },
   ru: {
     settingsTitle: 'Настройки',
@@ -123,6 +133,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Коллекции',
     navInfo: 'Инфо',
     navSettings: 'Опции',
+    back: 'Назад',
     searchPlaceholder: 'Поиск имен...',
     collectionsTitle: 'Коллекции',
     collectionsSubtitle: 'Тематические маршруты по территории памятника.',
@@ -135,7 +146,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Памятник',
     typeMausoleum: 'Мавзолей',
     typeGedenkanlage: 'Мемориал',
-    learnMore: 'Узнать больше'
+    learnMore: 'Узнать больше',
+    sources: 'Источники'
   },
   sv: {
     settingsTitle: 'Inställningar',
@@ -144,6 +156,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     navCollections: 'Samlingar',
     navInfo: 'Info',
     navSettings: 'Alternativ',
+    back: 'Tillbaka',
     searchPlaceholder: 'Sök namn...',
     collectionsTitle: 'Samlingar',
     collectionsSubtitle: 'Tematiska spår över kulturarvsplatsen.',
@@ -156,7 +169,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Minnesmärke',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Minnesplats',
-    learnMore: 'Läs mer'
+    learnMore: 'Läs mer',
+    sources: 'Källor'
   }
 }
 
