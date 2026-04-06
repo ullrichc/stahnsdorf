@@ -2,7 +2,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  output: 'export',
+  output: isProd ? 'export' : undefined,
   basePath: isProd ? '/stahnsdorf' : '',
   assetPrefix: isProd ? '/stahnsdorf/' : '',
 }

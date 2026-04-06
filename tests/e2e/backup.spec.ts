@@ -39,7 +39,7 @@ test.beforeEach(async () => {
 async function gotoBackup(page: Page) {
   await page.goto('/admin/backup');
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
-  await page.locator('text=Backup & Restore').waitFor({ state: 'visible', timeout: 15_000 });
+  await page.locator('h2:has-text("Backup & Restore")').waitFor({ state: 'visible', timeout: 15_000 });
 }
 
 // Helper: upload a JSON file via the hidden file input

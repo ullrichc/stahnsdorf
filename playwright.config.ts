@@ -14,7 +14,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: 0,
   workers: 1, // Sequential: Firebase Emulator has global state
-  reporter: 'html',
+  reporter: [['list'], ['html', { open: 'never' }]],
   use: {
     baseURL: 'http://localhost:3000', // No basePath in dev mode
     trace: 'retain-on-failure',

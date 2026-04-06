@@ -165,8 +165,8 @@ test('COL-07: delete collection with confirm', async ({ page }) => {
   page.on('dialog', (d) => d.accept());
   await page.locator('button:has-text("Löschen")').click();
 
-  // Collection should no longer be visible
-  await expect(page.locator('text=Test Sammlung')).not.toBeVisible({ timeout: 10_000 });
+  // Collection card should no longer be visible (use strong to target the card, not the modal h2)
+  await expect(page.locator('strong:has-text("Test Sammlung")')).not.toBeVisible({ timeout: 10_000 });
 });
 
 // ═══ COL-08: Publish-Status ändern ═══
