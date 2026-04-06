@@ -26,7 +26,7 @@ export default function AdminSidebar() {
     <aside className="admin-sidebar">
       {/* Brand */}
       <div className="admin-sidebar-brand">
-        <h1 className="admin-sidebar-title">The Eternal Archive</h1>
+        <h1 className="admin-sidebar-title">Südwestkirchhof Stahnsdorf</h1>
         <p className="admin-sidebar-subtitle">Digital Curator Suite</p>
       </div>
 
