@@ -10,7 +10,10 @@
     "test:watch": "vitest",
     "deploy:firestore": "firebase deploy --only firestore",
     "emulators": "firebase emulators:start",
-    "emulators:seed": "npx tsx scripts/seed-emulator.ts"
+    "emulators:seed": "npx tsx scripts/seed-emulator.ts",
+    "test:e2e": "firebase emulators:exec \"npx playwright test\"",
+    "test:e2e:ui": "firebase emulators:exec \"npx playwright test --ui\"",
+    "test:rules": "firebase emulators:exec \"npx vitest run tests/rules/firestore.rules.test.ts\""
   },
   "dependencies": {
     "firebase": "^12.11.0",
@@ -21,6 +24,8 @@
     "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.0",
+    "@playwright/test": "^1.59.1",
     "@types/leaflet": "^1.9.21",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
