@@ -26,8 +26,8 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 | Karte | [Leaflet 1.9](https://leafletjs.com/) |
 | Sprache | TypeScript, React 18 |
 | Backend | Firebase (Firestore, Auth) |
-| Tests | Vitest (48 Unit- und Integrationstests) |
-| Automatisierung | GitHub Actions für automatisiertes Deploy auf GitHub Pages |
+| Tests | Playwright (E2E), Vitest (Unit), Firestore Rules Sandbox |
+| Automatisierung | GitHub Actions für CI (Tests) und Deploy auf GitHub Pages |
 
 ## 🚀 Lokale Entwicklung
 
@@ -67,14 +67,17 @@ Um bei der lokalen Entwicklung nicht die echte Datenbank zu verändern, nutzt da
 4. Die App starten (`npm run dev`). Alles läuft nun sicher in der lokalen Sandbox.
 
 ### Tests ausführen
-Das Projekt verfügt über umfassende Unit/Integration-Tests.
+Das Projekt verfügt über eine umfassende Test-Suite (`Unit`, `E2E`, `Rules`), die komplett automatisiert und in CI (GitHub Actions) eingebunden ist. Die Integrationstests (`E2E` & `Rules`) laufen per CLI isoliert gegen die **Firebase Emulator Suite**.
+
 ```bash
-npm run test
+npm run test         # Unit Tests (via Vitest)
+npm run test:e2e     # E2E Playwright Tests (startet den Emulator automatisch)
+npm run test:rules   # Firestore Security Rules Tests (startet Emulator automatisch)
 ```
 
 ## 📦 Build & Deployment
 
-Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) bei jedem Push auf den `main`-Branch. Der Workflow baut den Static Export (`npm run build`) und lädt ihn auf GitHub Pages hoch. 
+Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) bei jedem Push auf den `main`-Branch, *nachdem* alle Tests im PR/Push-Workflow (`test.yml`) erfolgreich den Local Emulator passiert haben. 
 
 **Voraussetzung:** Die Firebase Environment-Variablen müssen als **Repository Secrets** in GitHub hinterlegt sein.
 

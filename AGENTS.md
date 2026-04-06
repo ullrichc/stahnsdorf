@@ -33,7 +33,8 @@ Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkar
 | Karte | Leaflet 1.9, react-leaflet 4 |
 | Sprache | TypeScript 6, React 18 |
 | Backend | Firebase (Firestore + Auth — aktiv) |
-| Tests | Vitest (48 Tests) |
+| Tests | Playwright (67 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
+| CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
 | Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`) |
 
@@ -191,7 +192,9 @@ Alle Felder verwenden **deutsche Namen**:
 ```bash
 npm install
 npm run dev              # Startet Entwicklungsserver
-npm run test             # Vitest (48 Tests)
+npm run test             # Unit Tests (Vitest)
+npm run test:e2e         # E2E Tests (Playwright + Emulator)
+npm run test:rules       # Security Rules (Vitest + Emulator)
 npm run build            # Static Export nach out/
 npm run deploy:firestore # Firestore Rules + Indexes deployen
 ```
