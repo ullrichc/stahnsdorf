@@ -282,6 +282,28 @@
   border-color: rgba(233, 193, 118, 0.60);
 }
 
+.admin-filter-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 8px 12px;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(68, 71, 74, 0.30);
+  background: var(--color-surface-container-lowest);
+  color: var(--color-on-surface);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.admin-filter-check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
 .admin-stats-card {
   display: flex;
   flex-direction: column;

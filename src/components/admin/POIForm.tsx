@@ -5,6 +5,7 @@ import { doc, getDoc, setDoc, deleteDoc, collection as fbCollection, getDocs, qu
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
+import { makePOIId } from '@/lib/slug';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import type {
@@ -156,7 +157,7 @@ export default function POIForm({ poiId }: POIFormProps) {
     try {
       const now = Timestamp.now();
       const id = isNew
-        ? 'poi_sws_' + name.toLowerCase().replace(/[^a-z0-9äöüß]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+        ? makePOIId(name)
         : poiId!;
 
       const docData: any = {

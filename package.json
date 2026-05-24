@@ -13,7 +13,7 @@
     "emulators:seed": "npx tsx scripts/seed-emulator.ts",
     "test:e2e": "firebase emulators:exec \"npx playwright test\"",
     "test:e2e:ui": "firebase emulators:exec \"npx playwright test --ui\"",
-    "test:rules": "firebase emulators:exec \"npx vitest run tests/rules/firestore.rules.test.ts\""
+    "test:rules": "firebase emulators:exec \"npx vitest run --config vitest.rules.config.ts\""
   },
   "dependencies": {
     "firebase": "^12.11.0",

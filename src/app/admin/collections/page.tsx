@@ -14,6 +14,7 @@ import { signOut } from 'firebase/auth';
 import { db, auth } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
+import { makeCollectionId } from '@/lib/slug';
 import Link from 'next/link';
 import type {
   FirestoreCollection,
@@ -115,7 +116,7 @@ export default function CollectionsPage() {
     try {
       const now = Timestamp.now();
       const id = editing._isNew
-        ? 'collection_sws_' + name.toLowerCase().replace(/[^a-z0-9äöüß]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+        ? makeCollectionId(name)
         : editing.id!;
 
       const { _isNew, ...rest } = editing;
@@ -129,6 +130,10 @@ export default function CollectionsPage() {
       if (_isNew) {
         docData.erstellt_von = user?.email ?? 'unbekannt';
         docData.erstellt_am = now;
+      } else {
+        const original = collections.find((col) => col.id === id);
+        docData.erstellt_von = original?.erstellt_von ?? editing.erstellt_von ?? user?.email ?? 'unbekannt';
+        docData.erstellt_am = original?.erstellt_am ?? editing.erstellt_am ?? now;
       }
 
       await setDoc(doc(db, 'collections', id), docData);

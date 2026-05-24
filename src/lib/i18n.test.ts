@@ -10,6 +10,10 @@ describe('t() translation function', () => {
     expect(t({ de: 'Hallo' }, 'fr')).toBe('Hallo')
   })
 
+  test('falls back to first available translation when requested locale and de are missing', () => {
+    expect(t({ en: 'Hello', fr: 'Bonjour' } as any, 'pl')).toBe('Hello')
+  })
+
   test('returns empty string when nothing is available', () => {
     expect(t({}, 'en')).toBe('')
   })

@@ -27,7 +27,7 @@ test('AUTH-01: successful login shows sidebar and POI table', async ({ page }) =
   // Sidebar visible with brand
   const sidebar = page.locator('.admin-sidebar');
   await expect(sidebar).toBeVisible();
-  await expect(sidebar.locator('.admin-sidebar-title')).toHaveText('The Eternal Archive');
+  await expect(sidebar.locator('.admin-sidebar-title')).toHaveText('Südwestkirchhof Stahnsdorf');
 
   // User name displayed in sidebar footer
   await expect(sidebar.locator('.admin-sidebar-user-role')).toHaveText('Archivist Mode');

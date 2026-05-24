@@ -121,6 +121,16 @@ test('TAB-02: text search filters by name', async ({ page }) => {
   await expect(rows).toHaveCount(3);
 });
 
+test('TAB-04: text search filters by id suffix', async ({ page }) => {
+  await loginAndWaitForTable(page);
+
+  await page.locator('.admin-search-input').fill('berliner-dom');
+
+  const rows = page.locator('.admin-table tbody tr');
+  await expect(rows).toHaveCount(1);
+  await expect(rows.first()).toContainText('Berliner Dom');
+});
+
 // ═══════════════════════════════════════════════════════════
 // TAB-03: "Neuer POI"-Button
 // ═══════════════════════════════════════════════════════════
@@ -183,6 +193,27 @@ test('FIL-03: combined type + publish filter', async ({ page }) => {
   const rows = page.locator('.admin-table tbody tr');
   await expect(rows).toHaveCount(1);
   await expect(rows.first()).toContainText('Alice Meier');
+});
+
+test('FIL-04: filter by editorial status', async ({ page }) => {
+  await loginAndWaitForTable(page);
+
+  const redaktionSelect = page.locator('.admin-filter-group').filter({ hasText: 'Redaktion' }).locator('select');
+  await redaktionSelect.selectOption('prüfen');
+
+  const rows = page.locator('.admin-table tbody tr');
+  await expect(rows).toHaveCount(1);
+  await expect(rows.first()).toContainText('Berliner Dom');
+});
+
+test('FIL-05: filter POIs without coordinates', async ({ page }) => {
+  await loginAndWaitForTable(page);
+
+  await page.locator('label:has-text("Ohne Koordinaten") input[type="checkbox"]').check();
+
+  const rows = page.locator('.admin-table tbody tr');
+  await expect(rows).toHaveCount(1);
+  await expect(rows.first()).toContainText('Berliner Dom');
 });
 
 // ═══════════════════════════════════════════════════════════

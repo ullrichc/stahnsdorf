@@ -65,7 +65,8 @@ export default function AdminPage() {
     if (search) {
       const s = search.toLowerCase();
       result = result.filter((p) =>
-        t(p.name, 'de').toLowerCase().includes(s)
+        t(p.name, 'de').toLowerCase().includes(s) ||
+        p.id.toLowerCase().includes(s)
       );
     }
     if (filterTyp) result = result.filter((p) => p.typ === filterTyp);
@@ -171,6 +172,22 @@ export default function AdminPage() {
               ))}
             </select>
           </div>
+          <div className="admin-filter-group">
+            <label className="admin-filter-label">Redaktion</label>
+            <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value)}>
+              <option value="">Alle Prüfstände</option>
+              <option value="bestätigt">bestätigt</option>
+              <option value="prüfen">prüfen</option>
+            </select>
+          </div>
+          <label className="admin-filter-check">
+            <input
+              type="checkbox"
+              checked={onlyNoCoords}
+              onChange={(e) => setOnlyNoCoords(e.target.checked)}
+            />
+            Ohne Koordinaten
+          </label>
         </div>
         <div className="admin-stats-card">
           <span className="admin-stats-label">Gesamt POIs</span>
