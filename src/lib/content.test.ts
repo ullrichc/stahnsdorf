@@ -40,6 +40,22 @@ describe('getPOIById', () => {
   })
 })
 
+describe('tree grave location hints', () => {
+  const expectedTreeNumbers = [
+    ['poi_sws_juergen-kluckert', 'Baum Nr. 1357A'],
+    ['poi_sws_maja-maranow', 'Baum Nr. 1635'],
+    ['poi_sws_arne-elsholtz', 'Baum Nr. 1611'],
+    ['poi_sws_manfred-krug', 'Baum Nr. 1829'],
+    ['poi_sws_guenther-heidemann', 'Baum Nr. 135'],
+    ['poi_sws_ingrid-steeger', 'Baum Nr. 482'],
+  ] as const
+
+  test.each(expectedTreeNumbers)('%s exposes %s as visible location hint', (poiId, treeNumber) => {
+    const poi = snapshotPois.find((item) => item.id === poiId)
+    expect(poi?.lagehinweis).toContain(treeNumber)
+  })
+})
+
 // ─── getAllCollections ────────────────────────────────────────
 
 describe('getAllCollections', () => {

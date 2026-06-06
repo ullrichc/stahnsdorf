@@ -15,6 +15,8 @@
     "emulators:seed": "npx tsx scripts/seed-emulator.ts",
     "coordinates:metadata": "node scripts/coordinate-metadata.mjs",
     "coordinates:manual-osmand": "node scripts/manual-osmand-coordinates.mjs",
+    "images:manifest": "node scripts/build-image-import-manifest.mjs",
+    "images:prepare": "node scripts/prepare-firebase-images.mjs",
     "import:images": "node scripts/import-poi-images.mjs",
     "osm:apply": "node scripts/apply-osm-candidates.mjs",
     "osm:candidates": "node scripts/osm-candidates.mjs",

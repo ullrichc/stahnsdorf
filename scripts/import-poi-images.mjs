@@ -13,7 +13,7 @@ import {
 } from './image-import-utils.mjs';
 
 const DEFAULT_INPUT = 'inputdata/bilder';
-const DEFAULT_POI_LIST = 'inputdata/bilder-poi-liste.json';
+const DEFAULT_POI_LIST = 'inputdata/bilder-import-manifest.json';
 const DEFAULT_REPORT_JSON = 'inputdata/bilder-import-report.json';
 const DEFAULT_REPORT_MD = 'inputdata/bilder-import-report.md';
 const DEFAULT_BUCKET = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'stahnsdorf-90e03.appspot.com';

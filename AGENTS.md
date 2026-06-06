@@ -51,7 +51,8 @@ stahnsdorf/
 ├── data/
 │   └── stahnsdorf-backup-translated.json # Unified Build-Time Snapshot for generateStaticParams
 ├── docs/
-│   └── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
+│   ├── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
+│   └── redaktionelle-leitlinien.md # Regeln für POI-Informationstexte
 ├── scripts/
 │   ├── apply-osm-candidates.mjs # OSM-Kandidaten in Backup-Snapshot übernehmen
 │   ├── import-poi-images.mjs # Lokaler Erstimport optimierter POI-Bilder nach Firebase Storage
@@ -151,6 +152,7 @@ Alle Felder verwenden **deutsche Namen**:
 
 ### Datenmodell
 - **`docs/schema.md` ist die Wahrheit.** Alle POI-Felder sind dort definiert.
+- **`docs/redaktionelle-leitlinien.md` gilt für POI-Texte.** Kurztexte verwenden kein „Grab von“. Beschreibungen sollen 1-2 prägnante Sätze sein und keine UI-Felder wie Name, Lebensdaten oder Lage wiederholen.
 - Deutsch ist die Quellsprache. Andere Sprachen (en, fr, pl, ru, sv) werden per KI generiert.
 - Nur POIs mit `koordinaten != null` erscheinen auf der Karte.
 - POIs ohne Koordinaten bleiben in der Datenbank bis sie vor Ort ermittelt werden.

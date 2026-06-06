@@ -92,6 +92,7 @@ npm run build
 
 Die zentrale Quelle der Wahrheit für das Datenmodell ist `docs/schema.md`.
 Die TypeScript-Typen in `src/lib/types.ts` müssen **immer** mit dem Schema synchron gehalten werden (`POI`, `Collection`, `FirestorePOI`).
+Redaktionelle Regeln für POI-Informationstexte stehen in `docs/redaktionelle-leitlinien.md`.
 
 ### OSM-Kandidaten exportieren
 OpenStreetMap kann als vertrauenswürdige Quelle für zusätzliche Gräber, Denkmäler, Mausoleen und Anlagen ausgewertet werden. Der Audit-Export liest alle OSM-Kandidaten innerhalb der OSM-Friedhofsfläche, gleicht sie mit dem vollständigen lokalen POI-Backup ab und schreibt eine Kandidatenliste mit importfähigen neuen POI-Vorschlägen:

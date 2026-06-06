@@ -42,7 +42,7 @@ Fallback-Reihenfolge in der App: gewünschte Sprache → Deutsch → erste verf�
 | `name` | `LocalizedText` | ja | Anzeigename |
 | `koordinaten` | `{ lat, lng } \| null` | nein | GPS-Position oder `null`. Nur POIs mit Koordinaten erscheinen in der App |
 | `koordinaten_quelle` | `KoordinatenQuelle \| null` | nein | Strukturierte Herkunft der aktuell gespeicherten GPS-Koordinate |
-| `lagehinweis` | `string` | nein | Grabstellen- oder Lagebeschreibung ohne GPS, z.B. Block/Feld/Wahlstelle |
+| `lagehinweis` | `string` | nein | Für Besucher sichtbare Grabstellen- oder Lagebeschreibung ohne GPS, z.B. Block/Feld/Wahlstelle oder Baumgrab mit Baumnummer |
 | `lagehinweis_quelle` | `string` | nein | Quelle des Lagehinweises, z.B. `wo-sie-ruhen.de` |
 | `kurztext` | `LocalizedText` | ja | Eine Zeile, erscheint beim Antippen in der App |
 | `beschreibung` | `LocalizedText` | ja | Reine inhaltliche Beschreibung — kein Status, keine Redaktionshinweise |
