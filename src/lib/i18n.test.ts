@@ -15,7 +15,7 @@ describe('t() translation function', () => {
   })
 
   test('returns empty string when nothing is available', () => {
-    expect(t({}, 'en')).toBe('')
+    expect(t({} as any, 'en')).toBe('')
   })
 
   test('defaults to de when no locale argument is given', () => {

@@ -9,13 +9,22 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "deploy:firestore": "firebase deploy --only firestore",
+    "deploy:storage": "firebase deploy --only storage",
+    "deploy:firebase": "firebase deploy --only firestore,storage",
     "emulators": "firebase emulators:start",
     "emulators:seed": "npx tsx scripts/seed-emulator.ts",
+    "coordinates:metadata": "node scripts/coordinate-metadata.mjs",
+    "coordinates:manual-osmand": "node scripts/manual-osmand-coordinates.mjs",
+    "import:images": "node scripts/import-poi-images.mjs",
+    "osm:apply": "node scripts/apply-osm-candidates.mjs",
+    "osm:candidates": "node scripts/osm-candidates.mjs",
     "test:e2e": "firebase emulators:exec \"npx playwright test\"",
     "test:e2e:ui": "firebase emulators:exec \"npx playwright test --ui\"",
     "test:rules": "firebase emulators:exec \"npx vitest run --config vitest.rules.config.ts\""
   },
   "dependencies": {
+    "browser-image-compression": "^2.0.2",
+    "exifr": "^7.1.3",
     "firebase": "^12.11.0",
     "leaflet": "^1.9.4",
     "next": "^16.2.1",
@@ -34,6 +43,7 @@
     "dotenv": "^17.4.0",
     "firebase-admin": "^13.7.0",
     "firebase-tools": "^15.13.0",
+    "sharp": "^0.34.5",
     "typescript": "^6.0.2",
     "vitest": "^4.1.2"
   }

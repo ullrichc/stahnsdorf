@@ -41,6 +41,9 @@ Fallback-Reihenfolge in der App: gewünschte Sprache → Deutsch → erste verf�
 | `typ` | `string` | ja | Kategorie des POI — siehe Werteliste |
 | `name` | `LocalizedText` | ja | Anzeigename |
 | `koordinaten` | `{ lat, lng } \| null` | nein | GPS-Position oder `null`. Nur POIs mit Koordinaten erscheinen in der App |
+| `koordinaten_quelle` | `KoordinatenQuelle \| null` | nein | Strukturierte Herkunft der aktuell gespeicherten GPS-Koordinate |
+| `lagehinweis` | `string` | nein | Grabstellen- oder Lagebeschreibung ohne GPS, z.B. Block/Feld/Wahlstelle |
+| `lagehinweis_quelle` | `string` | nein | Quelle des Lagehinweises, z.B. `wo-sie-ruhen.de` |
 | `kurztext` | `LocalizedText` | ja | Eine Zeile, erscheint beim Antippen in der App |
 | `beschreibung` | `LocalizedText` | ja | Reine inhaltliche Beschreibung — kein Status, keine Redaktionshinweise |
 | `datum_von` | `string \| null` | nein | Geburtsdatum (Person) oder Baudatum (Bauwerk). Format: `YYYY-MM-DD` |
@@ -70,6 +73,45 @@ Fallback-Reihenfolge in der App: gewünschte Sprache → Deutsch → erste verf�
 | `bestätigt` | Eintrag ist redaktionell geprüft und belastbar |
 | `prüfen` | Eintrag muss noch redaktionell nachgeprüft werden |
 
+### `KoordinatenQuelle`
+
+Beschreibt ausschließlich, woher die aktuell gespeicherte GPS-Koordinate (`koordinaten.lat/lng`) stammt. Grabstellenangaben wie Block/Feld/Wahlstelle gehören nicht hierher, sondern in `lagehinweis`.
+
+| Feld | Typ | Pflicht | Beschreibung |
+|---|---|---|---|
+| `typ` | `string` | ja | Wert aus der Liste unten |
+| `beleg` | `string` | ja | Kurzer Beleg, z.B. `OpenStreetMap: node 3524525179` |
+| `datum` | `string` | nein | Datum der Übernahme oder Erfassung, Format `YYYY-MM-DD` |
+| `genauigkeit` | `string` | nein | `hoch`, `mittel` oder `niedrig` |
+
+#### `koordinaten_quelle.typ`-Werte
+
+| Wert | Bedeutung |
+|---|---|
+| `osm` | GPS-Koordinate aus OpenStreetMap |
+| `wo-sie-ruhen` | GPS-Koordinate aus wo-sie-ruhen.de/API-Extraktion |
+| `manuell-osmand` | Vor Ort manuell erfasste Koordinate aus OsmAnd/Geo-Link |
+| `manuell-kamera` | Koordinate aus Kamera-/Bild-EXIF |
+| `redaktionell` | Redaktionell aus Karte, Plan, Luftbild oder Recherche gesetzt |
+| `altbestand` | Koordinate aus älterem Datenbestand, Herkunft nicht genauer bekannt |
+| `unbekannt` | Koordinate vorhanden, Herkunft noch nicht geklärt |
+
+Beispiel:
+
+```json
+{
+  "koordinaten": { "lat": 52.38806, "lng": 13.17515 },
+  "koordinaten_quelle": {
+    "typ": "osm",
+    "beleg": "OpenStreetMap: node 3524525179",
+    "datum": "2026-05-25",
+    "genauigkeit": "hoch"
+  },
+  "lagehinweis": "Block Lietzensee, Feld 22, Wahlstelle 115",
+  "lagehinweis_quelle": "wo-sie-ruhen.de"
+}
+```
+
 ### ID-Konvention
 
 ```
@@ -88,6 +130,16 @@ Kennungen: Kleinbuchstaben, Bindestriche, Umlaute transliteriert (`ä` → `ae`)
 | `nachweis` | `string` | ja | Urheber und Lizenz, z.B. `"Max Müller, CC BY-SA 4.0"` |
 | `nachweis_url` | `string` | nein | Link zur Quelle oder zum Urheber |
 | `beschriftung` | `LocalizedText` | nein | Bildunterschrift |
+| `storage_pfad` | `string` | nein | Interner Firebase-Storage-Pfad der Anzeigeversion |
+| `breite` | `number` | nein | Breite der Anzeigeversion in Pixeln |
+| `hoehe` | `number` | nein | Höhe der Anzeigeversion in Pixeln |
+| `mime_type` | `string` | nein | MIME-Type der optimierten Anzeigeversion, z.B. `image/jpeg` |
+| `vorschau_datei` | `string` | nein | Renderbare URL der Vorschauversion |
+| `vorschau_storage_pfad` | `string` | nein | Interner Firebase-Storage-Pfad der Vorschauversion |
+| `vorschau_breite` | `number` | nein | Breite der Vorschauversion in Pixeln |
+| `vorschau_hoehe` | `number` | nein | Höhe der Vorschauversion in Pixeln |
+| `quelle_datei` | `string` | nein | Ursprünglicher Dateiname beim Import, intern zur Duplikaterkennung |
+| `quelle_hash` | `string` | nein | Hash der ursprünglichen Datei beim Import, intern zur Duplikaterkennung |
 
 ---
 

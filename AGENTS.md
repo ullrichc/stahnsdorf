@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten, Sprachumschaltung. Daten kommen live aus **Firestore** mit IndexedDB-Offline-Cache. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Sammlungen-Editor und Backup/Restore.
+Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten, Sprachumschaltung. Daten kommen live aus **Firestore** mit IndexedDB-Offline-Cache. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und Backup/Restore.
 
 ## Techstack
 
@@ -32,11 +32,11 @@ Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkar
 | Framework | Next.js 16 (Static Export via `output: 'export'`) |
 | Karte | Leaflet 1.9, react-leaflet 4 |
 | Sprache | TypeScript 6, React 18 |
-| Backend | Firebase (Firestore + Auth — aktiv) |
+| Backend | Firebase (Firestore + Auth + Storage — aktiv) |
 | Tests | Playwright (67 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
-| Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`) |
+| Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |
 
 ## Projektstruktur
 
@@ -46,14 +46,18 @@ stahnsdorf/
 ├── firebase.json            # Firebase CLI Config
 ├── .firebaserc              # Firebase Projekt-Binding
 ├── firestore.rules          # Firestore Security Rules
+├── storage.rules            # Firebase Storage Security Rules für POI-Bilder
 ├── firestore.indexes.json   # Firestore Composite Indexes
 ├── data/
 │   └── stahnsdorf-backup-translated.json # Unified Build-Time Snapshot for generateStaticParams
 ├── docs/
 │   └── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
 ├── scripts/
+│   ├── apply-osm-candidates.mjs # OSM-Kandidaten in Backup-Snapshot übernehmen
+│   ├── import-poi-images.mjs # Lokaler Erstimport optimierter POI-Bilder nach Firebase Storage
 │   ├── migrate.ts           # Migrationsscript altes → neues Schema
 │   ├── migrate-to-firestore.ts  # Einmalige Migration JSON → Firestore
+│   ├── osm-candidates.mjs   # OSM-Audit: Kandidaten exportieren und mit POIs abgleichen
 │   └── setup-editors.ts     # Editor-Dokumente in Firestore anlegen
 ├── src/
 │   ├── app/                 # Next.js App Router
@@ -82,7 +86,7 @@ stahnsdorf/
 │   │       ├── POIForm.tsx   # Zwei-Spalten-Editor
 │   │       └── BackupRestore.tsx
 │   ├── lib/
-│   │   ├── firebase.ts       # Firebase App + Firestore + Auth + Offline
+│   │   ├── firebase.ts       # Firebase App + Firestore + Auth + Storage + Offline
 │   │   ├── useFirestore.ts   # Hooks: usePOIs, usePOI, useCollections, useCollection
 │   │   ├── content.ts        # Alte JSON-basierte Loader (nur noch für Tests)
 │   │   ├── types.ts          # TypeScript-Typen — entspricht docs/schema.md ✅
@@ -110,6 +114,8 @@ Alle Felder verwenden **deutsche Namen**:
 | `typ` | string | `grab`, `mausoleum`, `denkmal`, `gedenkanlage`, `bauwerk`, `bereich` |
 | `name` | LocalizedText | Anzeigename |
 | `koordinaten` | `{ lat, lng } \| null` | GPS-Position oder `null` |
+| `koordinaten_quelle` | object \| null | Herkunft der aktuell gespeicherten GPS-Koordinate |
+| `lagehinweis` / `lagehinweis_quelle` | string | Grabstellenangabe ohne GPS und deren Quelle |
 | `kurztext` | LocalizedText | Einzeiler für die App |
 | `beschreibung` | LocalizedText | Inhaltliche Beschreibung |
 | `datum_von` / `datum_bis` | string \| null | Geburts-/Sterbedatum, YYYY-MM-DD |
@@ -165,22 +171,23 @@ Alle Felder verwenden **deutsche Namen**:
 
 ### Firebase
 - Project-ID: `stahnsdorf-90e03`
-- Konfiguration über `NEXT_PUBLIC_FIREBASE_*` Umgebungsvariablen (7 Werte)
-- `src/lib/firebase.ts` initialisiert App + Firestore (mit Offline Persistence) + Auth
+- Konfiguration über `NEXT_PUBLIC_FIREBASE_*` Umgebungsvariablen inkl. `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+- `src/lib/firebase.ts` initialisiert App + Firestore (mit Offline Persistence) + Auth + Storage
 - **Test-Datenbank / Emulator:** Um lokal zu testen, ohne die echte Datenbank zu beeinflussen, nutzen wir die [Firebase Local Emulator Suite](https://firebase.google.com/docs/emulator-suite).
   - Aktiviert in `.env.local` über `NEXT_PUBLIC_USE_FIREBASE_EMULATOR=true`.
   - Starten mit `npm run emulators`.
 - Editor-Whitelist: Collection `editors/{email}` — nur über Firebase Console verwaltbar
-- Security Rules: öffentliches Lesen nur für `publish_status == "veröffentlicht"`, Schreiben nur für Editoren
-- CLI: `npm run deploy:firestore` deployed Rules + Indexes
+- Firestore Rules: öffentliches Lesen nur für `publish_status == "veröffentlicht"`, Schreiben nur für Editoren
+- Storage Rules: POI-Bilder öffentlich lesbar, Schreiben/Löschen nur für Editoren unter `poi-images/{poiId}/...`
+- CLI: `npm run deploy:firestore` deployed Firestore Rules + Indexes, `npm run deploy:storage` deployed Storage Rules
 
 ### Admin (`/admin`)
 - Google-Login mit Editor-Whitelist (`editors/{email}` Dokumente in Firestore)
 - Drei-Stufen Publish-Workflow: `entwurf` → `zur_prüfung` → `veröffentlicht`
 - POI-Tabelle mit Filter (Typ, Status, Publish-Status, Koordinaten) und Sortierung
-- Zwei-Spalten-Editor mit GPS-Koordinaten-Eingabe und Quellen-Liste
+- Zwei-Spalten-Editor mit GPS-Koordinaten-Eingabe, Koordinaten-Herkunft, Lagehinweisen, Bilderverwaltung und Quellen-Liste
 - Sammlungen-Editor mit POI-Multi-Select
-- Backup/Restore mit Inhalts-Export und vollständigem Backup (roundtrip-fähig)
+- Backup/Restore mit Inhalts-Export und vollständigem Firestore-Backup; Bilddateien aus Storage bleiben separate Medienobjekte
 
 ## Bekannte Probleme
 
@@ -191,9 +198,15 @@ Alle Felder verwenden **deutsche Namen**:
 ```bash
 npm install
 npm run dev              # Startet Entwicklungsserver
+npm run coordinates:metadata # Koordinaten-Herkunft und Lagehinweise aus Bestand ableiten
+npm run coordinates:manual-osmand # Manuell per OsmAnd erfasste GPS-Daten einspielen
+npm run osm:candidates   # OSM-Kandidaten-Audit nach inputdata/
+npm run osm:apply        # OSM-Kandidaten in data/stahnsdorf-backup-translated.json übernehmen
+npm run import:images    # Dry-Run für POI-Bildimport aus inputdata/bilder
 npm run test             # Unit Tests (Vitest)
 npm run test:e2e         # E2E Tests (Playwright + Emulator)
 npm run test:rules       # Security Rules (Vitest + Emulator)
 npm run build            # Static Export nach out/
 npm run deploy:firestore # Firestore Rules + Indexes deployen
+npm run deploy:storage   # Storage Rules deployen
 ```

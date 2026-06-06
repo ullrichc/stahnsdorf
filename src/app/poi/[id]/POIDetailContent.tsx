@@ -5,6 +5,7 @@ import { POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { resolveImageUrl } from '@/lib/images'
 import AudioPlayer from '@/components/AudioPlayer'
 import styles from './page.module.css'
 
@@ -61,6 +62,33 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
 
         {/* Audio player */}
         <AudioPlayer src={audioSrc} />
+
+        {/* Images */}
+        {poi.bilder && poi.bilder.length > 0 && (
+          <div className={styles.gallery}>
+            {poi.bilder.map((image, index) => {
+              const imageUrl = resolveImageUrl(image.datei)
+              const caption = image.beschriftung ? t(image.beschriftung, locale) : ''
+              return (
+                <figure className={styles.galleryItem} key={`${image.storage_pfad ?? image.datei}-${index}`}>
+                  {imageUrl && <img src={imageUrl} alt={caption || t(poi.name, locale)} />}
+                  {(caption || image.nachweis) && (
+                    <figcaption>
+                      {caption && <span className={styles.caption}>{caption}</span>}
+                      {image.nachweis_url ? (
+                        <a href={image.nachweis_url} target="_blank" rel="noopener noreferrer">
+                          {image.nachweis}
+                        </a>
+                      ) : (
+                        <span>{image.nachweis}</span>
+                      )}
+                    </figcaption>
+                  )}
+                </figure>
+              )
+            })}
+          </div>
+        )}
 
         {/* Wikipedia link */}
         {poi.wikipedia_url && (

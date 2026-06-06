@@ -21,6 +21,14 @@ const EXISTING_POI = {
   kurztext: { de: 'Kurz' },
   beschreibung: { de: 'Beschreibung' },
   koordinaten: { lat: 52.3912, lng: 13.1899 },
+  koordinaten_quelle: {
+    typ: 'osm' as const,
+    beleg: 'OpenStreetMap: node 123',
+    datum: '2026-05-25',
+    genauigkeit: 'hoch' as const,
+  },
+  lagehinweis: 'Block Test, Feld 1',
+  lagehinweis_quelle: 'wo-sie-ruhen.de',
   datum_von: '1850-03-01',
   datum_bis: '1920-07-15',
   wikipedia_url: 'https://de.wikipedia.org/wiki/Test',
@@ -232,6 +240,41 @@ test('GEO-04: invalid coordinate input does not crash', async ({ page }) => {
 
   // Should still show "Keine Koordinaten" since parseFloat('abc') is NaN
   await expect(page.locator('body')).toContainText('Keine Koordinaten — POI erscheint nicht auf der Karte');
+});
+
+// ═══ GEO-05: Koordinaten-Metadaten editieren ═══
+test('GEO-05: coordinate source and location hint fields are editable', async ({ page }) => {
+  await gotoExistingPOI(page);
+
+  const positionSection = page.locator('.admin-section').filter({ hasText: 'Position' });
+
+  await expect(positionSection.locator('select').nth(0)).toHaveValue('osm');
+  await expect(positionSection.locator('input[placeholder="z.B. OpenStreetMap: node 123"]')).toHaveValue('OpenStreetMap: node 123');
+  await expect(positionSection.locator('input[placeholder="YYYY-MM-DD"]').first()).toHaveValue('2026-05-25');
+  await expect(positionSection.locator('select').nth(1)).toHaveValue('hoch');
+  await expect(positionSection.locator('textarea[placeholder="z.B. Block Lietzensee, Feld 22, Wahlstelle 115"]')).toHaveValue('Block Test, Feld 1');
+  await expect(positionSection.locator('input[placeholder="z.B. wo-sie-ruhen.de"]')).toHaveValue('wo-sie-ruhen.de');
+
+  await positionSection.locator('select').nth(0).selectOption('manuell-osmand');
+  await positionSection.locator('input[placeholder="z.B. OpenStreetMap: node 123"]').fill('inputdata/neue_Koordinaten_über_OSM.txt: Test POI');
+  await positionSection.locator('input[placeholder="YYYY-MM-DD"]').first().fill('2026-06-06');
+  await positionSection.locator('select').nth(1).selectOption('mittel');
+  await positionSection.locator('textarea[placeholder="z.B. Block Lietzensee, Feld 22, Wahlstelle 115"]').fill('Block Neu, Feld 2');
+  await positionSection.locator('input[placeholder="z.B. wo-sie-ruhen.de"]').fill('Redaktion vor Ort');
+
+  await page.locator('button:has-text("Speichern")').click();
+  await page.waitForURL('**/admin', { timeout: 15_000 });
+
+  const doc = await getTestDoc('pois', EXISTING_POI.id);
+  expect(doc).not.toBeNull();
+  expect(doc!.koordinaten_quelle).toEqual({
+    typ: 'manuell-osmand',
+    beleg: 'inputdata/neue_Koordinaten_über_OSM.txt: Test POI',
+    datum: '2026-06-06',
+    genauigkeit: 'mittel',
+  });
+  expect(doc!.lagehinweis).toBe('Block Neu, Feld 2');
+  expect(doc!.lagehinweis_quelle).toBe('Redaktion vor Ort');
 });
 
 // ═══ SRC-01: Quelle hinzufügen ═══

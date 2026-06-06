@@ -1,0 +1,38 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /poi-images/{poiId}/{variant}/{fileName} {
+      allow read: if true;
+      allow create, update: if isEditor()
+        && isAllowedVariant(variant)
+        && isJpeg()
+        && isAllowedSize();
+      allow delete: if isEditor() && isAllowedVariant(variant);
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+
+    function isEditor() {
+      return request.auth != null
+        && request.auth.token.email is string
+        && firestore.exists(/databases/(default)/documents/editors/$(request.auth.token.email));
+    }
+
+    function isAllowedVariant(variant) {
+      return variant in ['display', 'thumb'];
+    }
+
+    function isJpeg() {
+      return request.resource != null
+        && request.resource.contentType == 'image/jpeg';
+    }
+
+    function isAllowedSize() {
+      return request.resource != null
+        && request.resource.size <= 10 * 1024 * 1024;
+    }
+  }
+}

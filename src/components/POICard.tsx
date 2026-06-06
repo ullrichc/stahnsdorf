@@ -4,6 +4,7 @@ import { POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { getImageDisplayUrl } from '@/lib/images'
 import styles from './POICard.module.css'
 
 type Props = {
@@ -34,6 +35,7 @@ export default function POICard({ poi, onClose }: Props) {
     gedenkanlage: dict.typeGedenkanlage,
   }
   const label = typeMap[poi.typ] || poi.typ
+  const previewUrl = getImageDisplayUrl(poi.bilder?.[0])
 
 
   return (
@@ -46,6 +48,12 @@ export default function POICard({ poi, onClose }: Props) {
       <button className={styles.close} onClick={onClose} aria-label="Schließen">
         <span className="material-symbols-outlined">close</span>
       </button>
+
+      {previewUrl && (
+        <div className={styles.preview}>
+          <img src={previewUrl} alt={t(poi.name, locale)} />
+        </div>
+      )}
 
       <div className={styles.content}>
         <span className={styles.badge}>{label}</span>

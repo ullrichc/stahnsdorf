@@ -12,7 +12,7 @@ const rootDir = path.resolve(__dirname, '..');
 const SCHEMA_FIELDS = new Set([
   'id', 'typ', 'name', 'koordinaten', 'kurztext', 'beschreibung',
   'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio',
-  'quellen', 'status', 'notiz',
+  'quellen', 'status', 'notiz', 'koordinaten_quelle', 'lagehinweis', 'lagehinweis_quelle',
 ]);
 
 /** Strip any fields not in docs/schema.md */
@@ -31,12 +31,22 @@ function stripToSchema(poi) {
 export function mergeCoordinates(poi, scraping) {
   const result = { ...poi };
   result.koordinaten = { lat: scraping.latitude, lng: scraping.longitude };
+  result.koordinaten_quelle = {
+    typ: 'wo-sie-ruhen',
+    beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
+    datum: '2026-04-04',
+    genauigkeit: 'hoch',
+  };
   result.status = 'bestätigt';
   const lage = scraping.location_note;
   const notiz = result.notiz || '';
   if (lage && !notiz.includes(lage)) {
     const prefix = notiz ? notiz.replace(/\s*$/, '') + ' ' : '';
     result.notiz = prefix + 'Lage laut wo-sie-ruhen.de: ' + lage;
+  }
+  if (lage) {
+    result.lagehinweis = lage;
+    result.lagehinweis_quelle = 'wo-sie-ruhen.de';
   }
   return result;
 }
@@ -66,6 +76,14 @@ export function createNewPoi(scraping) {
     typ: 'grab',
     name: { de: scraping.name },
     koordinaten: { lat: scraping.latitude, lng: scraping.longitude },
+    koordinaten_quelle: {
+      typ: 'wo-sie-ruhen',
+      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
+      datum: '2026-04-04',
+      genauigkeit: 'hoch',
+    },
+    lagehinweis: scraping.location_note,
+    lagehinweis_quelle: 'wo-sie-ruhen.de',
     kurztext: { de: `Grab von ${scraping.name}; ${scraping.beruf}.` },
     beschreibung: { de: `${scraping.name} – ${scraping.beruf}. Die Grabstätte befindet sich im ${scraping.location_note} des Südwestkirchhofs Stahnsdorf.` },
     datum_von: null,

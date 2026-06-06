@@ -1,6 +1,6 @@
 {
   "_backup": true,
-  "_timestamp": "2026-04-06T14:52:39.342Z",
+  "_timestamp": "2026-06-06T00:00:00.000Z",
   "pois": [
     {
       "id": "poi_sws_adolf-bastian",
@@ -48,7 +48,14 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "unbekannt",
+        "beleg": "Koordinate vorhanden, Herkunft im Altbestand nicht strukturiert dokumentiert",
+        "genauigkeit": "niedrig"
+      },
+      "lagehinweis": "Block Trinitatis, Feld 21, Wahlgrabstelle 153/154",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_adolf-rohrbach",
@@ -62,8 +69,8 @@
         "sv": "Adolf Rohrbach"
       },
       "koordinaten": {
-        "lat": 52.38884,
-        "lng": 13.17543
+        "lat": 52.3885405,
+        "lng": 13.1749617
       },
       "kurztext": {
         "de": "Grab von Adolf Rohrbach; Flugzeug- und Flugbootingenieur.",
@@ -88,15 +95,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 1395963543, https://www.openstreetmap.org/node/1395963543, Version 6, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Im offiziellen Grabstättenplan ist nur das Geburtsdatum und das Todesjahr sicher ableitbar; der exakte Todestag wurde in dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Lietzensee, Gartenblock IV, Erbbegräbnis 19",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Im offiziellen Grabstättenplan ist nur das Geburtsdatum und das Todesjahr sicher ableitbar; der exakte Todestag wurde in dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Lietzensee, Gartenblock IV, Erbbegräbnis 19 OSM-Koordinate übernommen (node 1395963543).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 1395963543",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Lietzensee, Gartenblock IV, Erbbegräbnis 19",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_albert-wilkening",
@@ -109,7 +125,10 @@
         "ru": "Альберт Вилкенинг",
         "sv": "Albert Wilkening"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.388375,
+        "lng": 13.183688
+      },
       "kurztext": {
         "de": "Grab von Albert Wilkening; Jurist und langjähriger Leiter der DEFA in Babelsberg.",
         "en": "Grave of Albert Wilkening; jurist and long-serving head of DEFA Babelsberg.",
@@ -135,13 +154,18 @@
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Schöneberg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "status": "prüfen",
+      "notiz": "Block Schöneberg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_alexander-von-kluck",
@@ -155,8 +179,8 @@
         "sv": "Alexander von Kluck"
       },
       "koordinaten": {
-        "lat": 52.38805,
-        "lng": 13.18674
+        "lat": 52.3881,
+        "lng": 13.18665
       },
       "kurztext": {
         "de": "Grab von Alexander von Kluck; Generaloberst.",
@@ -181,15 +205,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alexander von Kluck, https://osmand.net/map?pin=52.38810,13.18665#15/52.38810/13.18665"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Alexander von Kluck",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_alfred-schneider",
@@ -202,7 +235,10 @@
         "ru": "Альфред Шнайдер",
         "sv": "Alfred Schneider"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38666,
+        "lng": 13.1813
+      },
       "kurztext": {
         "de": "Grab von Alfred Schneider; Zirkusartist und Löwendompteur.",
         "en": "Grave of Alfred Schneider; circus performer and lion tamer.",
@@ -226,15 +262,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alfred Schneider, https://osmand.net/map?pin=52.38666,13.18130#15/52.38666/13.18130"
       ],
       "status": "bestätigt",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Alfred Schneider",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_alte-umbettung",
@@ -247,7 +290,10 @@
         "ru": "Старое перезахоронение",
         "sv": "Gammal ombegraving"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3912497,
+        "lng": 13.177239
+      },
       "kurztext": {
         "de": "Block mit umgebetteten Grabstätten des 19. Jahrhunderts.",
         "en": "Section containing reinterred nineteenth-century graves.",
@@ -270,15 +316,22 @@
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
         "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: way 247886093, https://www.openstreetmap.org/way/247886093, Version 6, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Nördlicher Bereich des Friedhofs. Koordinaten vor Ort ermitteln.",
+      "notiz": "Nördlicher Bereich des Friedhofs. Koordinaten vor Ort ermitteln. OSM-Koordinate übernommen (way 247886093).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247886093",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_anita-kupsch",
@@ -336,7 +389,10 @@
         "ru": "Памятник жертвам войны и насилия",
         "sv": "Minnesplats för krigets och tyranniets offer"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.390285,
+        "lng": 13.176252
+      },
       "kurztext": {
         "de": "Zentraler Gedenkort für die Opfer von Krieg und Gewaltherrschaft auf dem Südwestkirchhof.",
         "en": "Central memorial site for the victims of war and tyranny on the South-Western Cemetery.",
@@ -360,13 +416,18 @@
         "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25",
         "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Im offiziellen Grabstättenplan als Gedenkort markiert; genaue GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln.",
+      "status": "prüfen",
+      "notiz": "Im offiziellen Grabstättenplan als Gedenkort markiert; genaue GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_august-stramm",
@@ -458,7 +519,12 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "unbekannt",
+        "beleg": "Koordinate vorhanden, Herkunft im Altbestand nicht strukturiert dokumentiert",
+        "genauigkeit": "niedrig"
+      }
     },
     {
       "id": "poi_sws_carl-ludwig-schleich",
@@ -472,8 +538,8 @@
         "sv": "Carl Ludwig Schleich"
       },
       "koordinaten": {
-        "lat": 52.38732,
-        "lng": 13.18542
+        "lat": 52.3871715,
+        "lng": 13.1850813
       },
       "kurztext": {
         "de": "Grab von Carl Ludwig Schleich; Arzt, Schriftsteller und Pionier der Lokalanästhesie.",
@@ -498,15 +564,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525181, https://www.openstreetmap.org/node/3524525181, Version 5, Stand 2025-10-12T18:45:07Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock I, Grabstelle 47",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock I, Grabstelle 47 OSM-Koordinate übernommen (node 3524525181).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525181",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Erlöser, Gartenblock I, Grabstelle 47",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_christusdenkmal",
@@ -519,7 +594,10 @@
         "ru": "Памятник Христу",
         "sv": "Kristusmonument"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.387577,
+        "lng": 13.186071
+      },
       "kurztext": {
         "de": "Monumentales Christusrelief aus Carrara-Marmor nahe dem Haupteingang.",
         "en": "Monumental Carrara marble relief of Christ near the main entrance.",
@@ -541,15 +619,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547434586, https://www.openstreetmap.org/node/2547434586, Version 5, Stand 2021-10-17T16:31:44Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Nahe dem Haupteingang. Koordinaten vor Ort ermitteln.",
+      "notiz": "Nahe dem Haupteingang. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 2547434586).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547434586",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_conrad-matschoss",
@@ -562,7 +647,10 @@
         "ru": "Конрад Мацхосс",
         "sv": "Conrad Matchoß"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3892079,
+        "lng": 13.188257
+      },
       "kurztext": {
         "de": "Grab von Conrad Matschoß; Ingenieur und Technikhistoriker.",
         "en": "Grave of Conrad Matschoß; engineer and historian of technology.",
@@ -586,15 +674,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524541202, https://www.openstreetmap.org/node/3524541202, Version 5, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541202).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524541202",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_dieter-thomas-heck",
@@ -607,7 +702,10 @@
         "ru": "Дитер Томас Хек",
         "sv": "Dieter Thomas Heck"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.388073,
+        "lng": 13.1845617
+      },
       "kurztext": {
         "de": "Grab von Dieter Thomas Heck; Moderator und Showmaster.",
         "en": "Grave of Dieter Thomas Heck; television presenter and showmaster.",
@@ -632,15 +730,22 @@
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
-        "Dieter Thomas Heck, Wikipedia, https://de.wikipedia.org/wiki/Dieter_Thomas_Heck, abgerufen 2026-03-25"
+        "Dieter Thomas Heck, Wikipedia, https://de.wikipedia.org/wiki/Dieter_Thomas_Heck, abgerufen 2026-03-25",
+        "OpenStreetMap: node 12674156377, https://www.openstreetmap.org/node/12674156377, Version 1, Stand 2025-03-17T20:38:59Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Urnenhain II Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Urnenhain II Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 12674156377).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 12674156377",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_edmund-rumpler",
@@ -654,8 +759,8 @@
         "sv": "Edmund Rumpler"
       },
       "koordinaten": {
-        "lat": 52.38845,
-        "lng": 13.18757
+        "lat": 52.388368,
+        "lng": 13.1876035
       },
       "kurztext": {
         "de": "Grab von Edmund Rumpler; Ingenieur für Flugzeug- und Automobilkonstruktionen.",
@@ -680,15 +785,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 1395963544, https://www.openstreetmap.org/node/1395963544, Version 7, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock III, Erbbegräbnis 28",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock III, Erbbegräbnis 28 OSM-Koordinate übernommen (node 1395963544).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 1395963544",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Reformation, Gartenblock III, Erbbegräbnis 28",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_elisabeth-von-ardenne",
@@ -702,8 +816,8 @@
         "sv": "Elisabeth baronessan von Ardenne"
       },
       "koordinaten": {
-        "lat": 52.38712,
-        "lng": 13.17647
+        "lat": 52.3871648,
+        "lng": 13.1760964
       },
       "kurztext": {
         "de": "Grab von Elisabeth Baronin von Ardenne; historisches Vorbild für Fontanes „Effi Briest“.",
@@ -728,15 +842,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524541201, https://www.openstreetmap.org/node/3524541201, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Gartenblock V, Erbbegräbnis 112a",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Gartenblock V, Erbbegräbnis 112a OSM-Koordinate übernommen (node 3524541201).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524541201",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Trinitatis, Gartenblock V, Erbbegräbnis 112a",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_emil-krebs",
@@ -750,8 +873,8 @@
         "sv": "Emil Krebs"
       },
       "koordinaten": {
-        "lat": 52.39001,
-        "lng": 13.17902
+        "lat": 52.389838,
+        "lng": 13.1792617
       },
       "kurztext": {
         "de": "Grab von Emil Krebs; Sinologe und Sprachgenie.",
@@ -776,15 +899,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525180, https://www.openstreetmap.org/node/3524525180, Version 5, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Epiphanien, Gartenblock I, Gartenstelle 81",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Epiphanien, Gartenblock I, Gartenstelle 81 OSM-Koordinate übernommen (node 3524525180).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525180",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Epiphanien, Gartenblock I, Gartenstelle 81",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_engelbert-humperdinck",
@@ -798,8 +930,8 @@
         "sv": "Engelbert Humperdinck"
       },
       "koordinaten": {
-        "lat": 52.3872,
-        "lng": 13.18393
+        "lat": 52.3872202,
+        "lng": 13.1838328
       },
       "kurztext": {
         "de": "Grab von Engelbert Humperdinck; Komponist.",
@@ -824,15 +956,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 5303378520, https://www.openstreetmap.org/node/5303378520, Version 4, Stand 2025-10-12T17:43:42Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Erlöser, Feld 4, Erbbegräbnis 10",
+      "notiz": "Block Erlöser Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Erlöser, Feld 4, Erbbegräbnis 10 OSM-Koordinate übernommen (node 5303378520).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 5303378520",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Erlöser, Feld 4, Erbbegräbnis 10",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_erik-jan-hanussen",
@@ -846,8 +987,8 @@
         "sv": "Erik Jan Hanussen"
       },
       "koordinaten": {
-        "lat": 52.39061,
-        "lng": 13.18382
+        "lat": 52.39065,
+        "lng": 13.18388
       },
       "kurztext": {
         "de": "Grab von Erik Jan Hanussen; Hellseher und Varietékünstler.",
@@ -872,15 +1013,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Erik Jan Hannusen-Steinschneider, https://osmand.net/map?pin=52.39065,13.18388#15/52.39065/13.18388"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Charlottenburg, Gartenblock III, Grabstelle 50",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Charlottenburg, Gartenblock III, Grabstelle 50 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Erik Jan Hannusen-Steinschneider",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Charlottenburg, Gartenblock III, Grabstelle 50",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_ernst-gennat",
@@ -894,8 +1044,8 @@
         "sv": "Ernst Gennat"
       },
       "koordinaten": {
-        "lat": 52.38852,
-        "lng": 13.18782
+        "lat": 52.38836,
+        "lng": 13.1881443
       },
       "kurztext": {
         "de": "Grab von Ernst Gennat; Kriminalist und Begründer der Berliner Mordkommission.",
@@ -920,15 +1070,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524541199, https://www.openstreetmap.org/node/3524541199, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock II, Gartenstelle 23",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock II, Gartenstelle 23 OSM-Koordinate übernommen (node 3524541199).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524541199",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Reformation, Gartenblock II, Gartenstelle 23",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_ernst-seger",
@@ -969,7 +1128,15 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "wo-sie-ruhen",
+        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
+        "datum": "2026-04-04",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Schöneberg, Feld 8, Wahlstelle 276",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_ferdinand-von-richthofen",
@@ -1017,7 +1184,14 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "unbekannt",
+        "beleg": "Koordinate vorhanden, Herkunft im Altbestand nicht strukturiert dokumentiert",
+        "genauigkeit": "niedrig"
+      },
+      "lagehinweis": "Alte Umbettung, Abt. C, Erbb. 127",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_franz-bracht",
@@ -1030,7 +1204,10 @@
         "ru": "Франц Брахт",
         "sv": "Franz Bracht"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3903,
+        "lng": 13.18361
+      },
       "kurztext": {
         "de": "Grab von Franz Bracht; Politiker und Reichsinnenminister.",
         "en": "Grave of Franz Bracht; politician and Reich Minister of the Interior.",
@@ -1054,15 +1231,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Franz Bracht, https://osmand.net/map?pin=52.39030,13.18361#15/52.39030/13.18361"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Franz Bracht",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_friedhofseingang",
@@ -1106,7 +1290,12 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "altbestand",
+        "beleg": "Ausgangsdatei vor strukturierter Quellenpflege",
+        "genauigkeit": "niedrig"
+      }
     },
     {
       "id": "poi_sws_friedrich-weissler",
@@ -1119,7 +1308,10 @@
         "ru": "Фридрих Вайслер",
         "sv": "Friedrich Weissler"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3897641,
+        "lng": 13.1776014
+      },
       "kurztext": {
         "de": "Grab von Friedrich Weißler; Jurist und Widerstandskämpfer in der Bekennenden Kirche.",
         "en": "Grave of Friedrich Weißler; jurist and resistance figure in the Confessing Church.",
@@ -1143,15 +1335,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525183, https://www.openstreetmap.org/node/3524525183, Version 3, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525183).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525183",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_fritz-banneitz",
@@ -1164,7 +1363,10 @@
         "ru": "Фриц Баннейц",
         "sv": "Fritz Banneitz"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.39083,
+        "lng": 13.18516
+      },
       "kurztext": {
         "de": "Grab von Fritz Banneitz; Ingenieur und Fernsehtechniker.",
         "en": "Grave of Fritz Banneitz; engineer and television pioneer.",
@@ -1188,15 +1390,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fritz Banneitz, https://osmand.net/map?pin=52.39083,13.18516#15/52.39083/13.18516"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Fritz Banneitz",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_fw-murnau",
@@ -1210,8 +1419,8 @@
         "sv": "Friedrich Wilhelm Murnau"
       },
       "koordinaten": {
-        "lat": 52.3882,
-        "lng": 13.18389
+        "lat": 52.3881718,
+        "lng": 13.1839389
       },
       "kurztext": {
         "de": "Grab von Friedrich Wilhelm Murnau; Stummfilmregisseur.",
@@ -1236,15 +1445,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547426810, https://www.openstreetmap.org/node/2547426810, Version 4, Stand 2023-10-13T16:18:49Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Im offiziellen Grabstättenplan markierte Grabstätte; exakter Block in den hier verwendeten Quellen nicht einheitlich ausgewiesen. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Schöneberg, Feld 3a, Erb. 5",
+      "notiz": "Im offiziellen Grabstättenplan markierte Grabstätte; exakter Block in den hier verwendeten Quellen nicht einheitlich ausgewiesen. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Schöneberg, Feld 3a, Erb. 5 OSM-Koordinate übernommen (node 2547426810).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547426810",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Schöneberg, Feld 3a, Erb. 5",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_garnisongrab",
@@ -1299,7 +1517,10 @@
         "ru": "Георг Граф фон Арко",
         "sv": "Georg Graf von Arco"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3879409,
+        "lng": 13.1864837
+      },
       "kurztext": {
         "de": "Grab von Georg Graf von Arco; Physiker und Funkpionier.",
         "en": "Grave of Georg Graf von Arco; physicist and radio pioneer.",
@@ -1323,15 +1544,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6426483878, https://www.openstreetmap.org/node/6426483878, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483878).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6426483878",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_gustav-kadelburg",
@@ -1345,8 +1573,8 @@
         "sv": "Gustav Kadelburg"
       },
       "koordinaten": {
-        "lat": 52.38796,
-        "lng": 13.18378
+        "lat": 52.3879371,
+        "lng": 13.1837578
       },
       "kurztext": {
         "de": "Grab von Gustav Kadelburg; Lustspieldichter und Bühnenautor.",
@@ -1371,15 +1599,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547430877, https://www.openstreetmap.org/node/2547430877, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock V, Erbbegräbnis 26",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock V, Erbbegräbnis 26 OSM-Koordinate übernommen (node 2547430877).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547430877",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Erlöser, Gartenblock V, Erbbegräbnis 26",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_gustav-langenscheidt",
@@ -1393,8 +1630,8 @@
         "sv": "Gustav Langenscheidt"
       },
       "koordinaten": {
-        "lat": 52.39117,
-        "lng": 13.17367
+        "lat": 52.3912234,
+        "lng": 13.1737023
       },
       "kurztext": {
         "de": "Grab von Gustav Langenscheidt; Sprachlehrer und Verlagsgründer.",
@@ -1419,15 +1656,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547413974, https://www.openstreetmap.org/node/2547413974, Version 6, Stand 2023-10-13T16:18:49Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. D, Erbb. 179",
+      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. D, Erbb. 179 OSM-Koordinate übernommen (node 2547413974).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547413974",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Alte Umbettung, Abt. D, Erbb. 179",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_gustav-werner",
@@ -1440,7 +1686,10 @@
         "ru": "Густав Вернер",
         "sv": "Gustav Werner"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38899,
+        "lng": 13.18089
+      },
       "kurztext": {
         "de": "Grab von Gustav Werner; Königlicher Baurat und Erbauer der Friedhofskapelle.",
         "en": "Grave of Gustav Werner; royal building councillor and builder of the cemetery chapel.",
@@ -1465,15 +1714,22 @@
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
         "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Gustav Werner, https://osmand.net/map?pin=52.38899,13.18089#15/52.38899/13.18089"
       ],
       "status": "bestätigt",
-      "notiz": "Gegenüber der von Gustav Werner erbauten Kapelle, im Bereich des Kapellenvorfelds. Koordinaten vor Ort ermitteln.",
+      "notiz": "Gegenüber der von Gustav Werner erbauten Kapelle, im Bereich des Kapellenvorfelds. Koordinaten vor Ort ermitteln. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Gustav Werner",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_hanno-guenther",
@@ -1486,7 +1742,10 @@
         "ru": "Ханно Гюнтер",
         "sv": "Hanno Günther"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38424,
+        "lng": 13.18373
+      },
       "kurztext": {
         "de": "Grab von Hanno Günther; Widerstandskämpfer gegen das NS-Regime.",
         "en": "Grave of Hanno Günther; resistance fighter against the Nazi regime.",
@@ -1510,15 +1769,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hanno Günther, https://osmand.net/map?pin=52.38424,13.18373#15/52.38424/13.18373"
       ],
       "status": "bestätigt",
-      "notiz": "Block Urnenhain III Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Urnenhain III Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Hanno Günther",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_hans-essen",
@@ -1559,7 +1825,15 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "wo-sie-ruhen",
+        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
+        "datum": "2026-04-04",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Epiphanien, Schwedenblock, Erbbegräbnis 19",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_harald-kretzschmar",
@@ -1618,8 +1892,8 @@
         "sv": "Kyrkogårdskapell"
       },
       "koordinaten": {
-        "lat": 52.389506,
-        "lng": 13.180954
+        "lat": 52.3895066,
+        "lng": 13.1809545
       },
       "kurztext": {
         "de": "Holzkapelle im Stil norwegischer Stabkirchen; architektonisches Wahrzeichen des Friedhofs.",
@@ -1642,15 +1916,23 @@
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
         "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap/Nominatim: Norwegische Holzkirche, OSM way 228818020, https://www.openstreetmap.org/way/228818020, abgerufen 2026-05-24",
+        "OpenStreetMap: way 228818020, https://www.openstreetmap.org/way/228818020, Version 8, Stand 2022-01-15T21:10:24Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Zentrale Kapelle des Südwestkirchhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "notiz": "Zentrale Kapelle des Südwestkirchhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Koordinate anhand OpenStreetMap/Nominatim (Norwegische Holzkirche, OSM way 228818020) präzisiert. OSM-Koordinate übernommen (way 228818020).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap",
+        "datum": "2026-05-24",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_heinrich-luebbe",
@@ -1663,7 +1945,10 @@
         "ru": "Генрих Люббе",
         "sv": "Heinrich Lübbe"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38699,
+        "lng": 13.18005
+      },
       "kurztext": {
         "de": "Grab von Heinrich Lübbe; Ingenieur, Pilot und Gründer der Arado-Flugwerke.",
         "en": "Grave of Heinrich Lübbe; engineer, pilot and founder of Arado aircraft works.",
@@ -1687,15 +1972,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Heinrich Lübbe, https://osmand.net/map?pin=52.38699,13.18005#15/52.38699/13.18005"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Heinrich Lübbe",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_heinrich-zille",
@@ -1709,8 +2001,8 @@
         "sv": "Heinrich Zille"
       },
       "koordinaten": {
-        "lat": 52.39016,
-        "lng": 13.17733
+        "lat": 52.3900635,
+        "lng": 13.1773688
       },
       "kurztext": {
         "de": "Grab von Heinrich Zille; Zeichner, Grafiker und Fotograf.",
@@ -1735,15 +2027,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547420763, https://www.openstreetmap.org/node/2547420763, Version 5, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Epiphanien, Feld 14, Grabstelle 34/35",
+      "notiz": "Block Epiphanien Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Epiphanien, Feld 14, Grabstelle 34/35 OSM-Koordinate übernommen (node 2547420763).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547420763",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Epiphanien, Feld 14, Grabstelle 34/35",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_heldenblock",
@@ -1756,7 +2057,10 @@
         "ru": "Блок героев / Немецкий блок чести",
         "sv": "Hjälteblock / tyskt hedersblock"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3896726,
+        "lng": 13.184552
+      },
       "kurztext": {
         "de": "Deutscher Kriegsgräberbereich des Ersten Weltkriegs auf dem Südwestkirchhof.",
         "en": "German First World War military burial area on the South-Western Cemetery.",
@@ -1778,15 +2082,22 @@
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25"
+        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: way 247927301, https://www.openstreetmap.org/way/247927301, Version 4, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
       ],
-      "status": "prüfen",
-      "notiz": "Blockbezeichnung im Gelände; exakte GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Die Existenz des Blocks ist gut belegt, die genaue punktförmige Georeferenzierung wurde in dieser Recherche jedoch nicht belastbar ermittelt.",
+      "status": "bestätigt",
+      "notiz": "Blockbezeichnung im Gelände; exakte GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Die Existenz des Blocks ist gut belegt, die genaue punktförmige Georeferenzierung wurde in dieser Recherche jedoch nicht belastbar ermittelt. OSM-Koordinate übernommen (way 247927301).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247927301",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_hugo-conwentz",
@@ -1801,7 +2112,7 @@
       },
       "koordinaten": {
         "lat": 52.38464,
-        "lng": 13.18068
+        "lng": 13.18066
       },
       "kurztext": {
         "de": "Grab von Hugo Conwentz; Botaniker und Begründer der Naturschutzbewegung in Deutschland.",
@@ -1826,15 +2137,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hugo Conwentz, https://osmand.net/map?pin=52.38464,13.18066#15/52.38464/13.18066"
       ],
       "status": "bestätigt",
-      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Neue Umbettung, Feld 17, Wahlstelle 178",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Neue Umbettung, Feld 17, Wahlstelle 178 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Hugo Conwentz",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Neue Umbettung, Feld 17, Wahlstelle 178",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_hugo-distler",
@@ -1874,15 +2194,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524541200, https://www.openstreetmap.org/node/3524541200, Version 5, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 3524541200).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524541200",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_inge-deutschkron",
@@ -1940,7 +2267,10 @@
         "ru": "Ингрид Стигер",
         "sv": "Ingrid Steeger"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.39071,
+        "lng": 13.18288
+      },
       "kurztext": {
         "de": "Grab von Ingrid Steeger; Schauspielerin.",
         "en": "Grave of Ingrid Steeger; actress.",
@@ -1964,15 +2294,22 @@
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Ingrid Steeger, Wikipedia, https://de.wikipedia.org/wiki/Ingrid_Steeger, abgerufen 2026-03-25"
+        "Ingrid Steeger, Wikipedia, https://de.wikipedia.org/wiki/Ingrid_Steeger, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Ingrid Steeger, https://osmand.net/map?pin=52.39071,13.18288#15/52.39071/13.18288"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. In der ausgewerteten Quelle ist die Beisetzung auf dem Südwestkirchhof ausdrücklich genannt; die hier verwendeten Datumsfelder sind aus dem Wikipedia-Eintrag nur jahresgenau übernommen.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. In der ausgewerteten Quelle ist die Beisetzung auf dem Südwestkirchhof ausdrücklich genannt; die hier verwendeten Datumsfelder sind aus dem Wikipedia-Eintrag nur jahresgenau übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Ingrid Steeger",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_italienischer-soldatenfriedhof",
@@ -2055,15 +2392,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6426483875, https://www.openstreetmap.org/node/6426483875, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "notiz": "Block Charlottenburg Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6426483875).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6426483875",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_juergen-holtz",
@@ -2076,7 +2420,10 @@
         "ru": "Юрген Хольц",
         "sv": "Jürgen Holtz"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.387407,
+        "lng": 13.183335
+      },
       "kurztext": {
         "de": "Grab von Jürgen Holtz; Schauspieler und bildender Künstler.",
         "en": "Grave of Jürgen Holtz; actor and visual artist.",
@@ -2103,13 +2450,18 @@
         "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
         "Jürgen Holtz, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln.",
+      "status": "prüfen",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_juergen-kluckert",
@@ -2122,7 +2474,10 @@
         "ru": "Юрген Клюкерт",
         "sv": "Jürgen Kluckert"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.389368,
+        "lng": 13.17367
+      },
       "kurztext": {
         "de": "Grab von Jürgen Kluckert; Schauspieler, Synchronsprecher und Hörspielsprecher.",
         "en": "Grave of Jürgen Kluckert; actor, dubbing artist and audio drama performer.",
@@ -2148,13 +2503,18 @@
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Jürgen Kluckert, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "status": "prüfen",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_julius-schaarwaechter",
@@ -2195,7 +2555,15 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "wo-sie-ruhen",
+        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
+        "datum": "2026-04-04",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Alte Umbettung, Erbb. 101",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_julius-wissinger",
@@ -2209,8 +2577,8 @@
         "sv": "Julius Wissinger"
       },
       "koordinaten": {
-        "lat": 52.3884,
-        "lng": 13.18023
+        "lat": 52.3884597,
+        "lng": 13.1802241
       },
       "kurztext": {
         "de": "Grab von Julius Wissinger; Kaufmann; Grabstätte mit expressionistischem Grabmal.",
@@ -2235,15 +2603,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547423422, https://www.openstreetmap.org/node/2547423422, Version 3, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Kapellenblock, Erbbegräbnis 42/53",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Kapellenblock, Erbbegräbnis 42/53 OSM-Koordinate übernommen (node 2547423422).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547423422",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Kapellenblock, Erbbegräbnis 42/53",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_karl-ludwig-manzel",
@@ -2257,8 +2634,8 @@
         "sv": "Karl Ludwig Manzel"
       },
       "koordinaten": {
-        "lat": 52.38791,
-        "lng": 13.186
+        "lat": 52.3878795,
+        "lng": 13.1860552
       },
       "kurztext": {
         "de": "Grab von Karl Ludwig Manzel; Bildhauer und Präsident der Akademie der Künste.",
@@ -2283,15 +2660,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6426483877, https://www.openstreetmap.org/node/6426483877, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock V, Grabstelle 1",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock V, Grabstelle 1 OSM-Koordinate übernommen (node 6426483877).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6426483877",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Heilige Geist, Gartenblock V, Grabstelle 1",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_louis-ferdinand-ullstein",
@@ -2304,7 +2690,10 @@
         "ru": "Луи Фердинанд Ульштейн",
         "sv": "Louis Ferdinand Ullstein"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3902834,
+        "lng": 13.1830997
+      },
       "kurztext": {
         "de": "Grab von Louis-Ferdinand Ullstein; Verleger.",
         "en": "Grave of Louis-Ferdinand Ullstein; publisher.",
@@ -2328,15 +2717,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6432842244, https://www.openstreetmap.org/node/6432842244, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6432842244).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6432842244",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_louis-meyer",
@@ -2349,7 +2745,10 @@
         "ru": "Луи Мейер",
         "sv": "Louis Meyer"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38863,
+        "lng": 13.18071
+      },
       "kurztext": {
         "de": "Grab von Louis Meyer; Gartenbau-Oberingenieur und Gestalter des Südwestkirchhofs.",
         "en": "Grave of Louis Meyer; senior horticultural engineer and designer of the cemetery.",
@@ -2372,15 +2771,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Louis Meyer, https://osmand.net/map?pin=52.38863,13.18071#15/52.38863/13.18071"
       ],
       "status": "bestätigt",
-      "notiz": "Ehrenplatz nahe der Kapelle an der von Louis Meyer entworfenen Sichtachse. Koordinaten vor Ort ermitteln.",
+      "notiz": "Ehrenplatz nahe der Kapelle an der von Louis Meyer entworfenen Sichtachse. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. Dateiname nennt Louise Meyer; redaktionell Louis Meyer zugeordnet. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Louis Meyer",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_lovis-corinth",
@@ -2395,7 +2801,7 @@
       },
       "koordinaten": {
         "lat": 52.38764,
-        "lng": 13.17958
+        "lng": 13.17967
       },
       "kurztext": {
         "de": "Grab von Lovis Corinth; Maler des deutschen Impressionismus und Expressionismus.",
@@ -2420,15 +2826,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Lovis Corinth, https://osmand.net/map?pin=52.38764,13.17967#15/52.38764/13.17967"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 8, Erbbegräbnis 47",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 8, Erbbegräbnis 47 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Lovis Corinth",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Trinitatis, Feld 8, Erbbegräbnis 47",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_maja-maranow",
@@ -2441,7 +2856,10 @@
         "ru": "Майя Маранов",
         "sv": "Maya Maranov"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.390048,
+        "lng": 13.172593
+      },
       "kurztext": {
         "de": "Grab von Maja Maranow; Schauspielerin.",
         "en": "Grave of Maja Maranow; actress.",
@@ -2467,13 +2885,18 @@
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Maja Maranow, Wikipedia, https://de.wikipedia.org/wiki/Maja_Maranow, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "status": "prüfen",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_manfred-krug",
@@ -2486,7 +2909,10 @@
         "ru": "Манфред Круг",
         "sv": "Manfred Krug"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3907175,
+        "lng": 13.1726895
+      },
       "kurztext": {
         "de": "Grab von Manfred Krug; Schauspieler, Sänger und Schriftsteller.",
         "en": "Grave of Manfred Krug; actor, singer and writer.",
@@ -2511,15 +2937,22 @@
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
-        "Manfred Krug, Wikipedia, https://de.wikipedia.org/wiki/Manfred_Krug, abgerufen 2026-03-25"
+        "Manfred Krug, Wikipedia, https://de.wikipedia.org/wiki/Manfred_Krug, abgerufen 2026-03-25",
+        "OpenStreetMap: node 11260360524, https://www.openstreetmap.org/node/11260360524, Version 2, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 11260360524).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 11260360524",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_mausoleum-caspary",
@@ -2739,7 +3172,14 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "unbekannt",
+        "beleg": "Koordinate vorhanden, Herkunft im Altbestand nicht strukturiert dokumentiert",
+        "genauigkeit": "niedrig"
+      },
+      "lagehinweis": "Block Trinitatis, Feld 21, Wahlstelle 162",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_meta-seinemeyer",
@@ -2752,7 +3192,10 @@
         "ru": "Мета Сенемейер",
         "sv": "Meta Seinemeyer"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38848,
+        "lng": 13.186943
+      },
       "kurztext": {
         "de": "Grab von Meta Seinemeyer; lyrische Sopranistin.",
         "en": "Grave of Meta Seinemeyer; lyric soprano.",
@@ -2778,13 +3221,18 @@
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "status": "prüfen",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_neue-umbettung",
@@ -2840,7 +3288,10 @@
         "ru": "Отто Граф Ламбсдорф",
         "sv": "Otto Graf Lambsdorff"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3896428,
+        "lng": 13.1777823
+      },
       "kurztext": {
         "de": "Grab von Otto Graf Lambsdorff; Politiker und Bundeswirtschaftsminister.",
         "en": "Grave of Otto Graf Lambsdorff; politician and federal minister for economic affairs.",
@@ -2864,15 +3315,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525178, https://www.openstreetmap.org/node/3524525178, Version 5, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525178).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525178",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_peter-sattmann",
@@ -2885,7 +3343,10 @@
         "ru": "Питер Саттман",
         "sv": "Peter Sattman"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.387288,
+        "lng": 13.183312
+      },
       "kurztext": {
         "de": "Grab von Peter Sattmann; Schauspieler, Regisseur und Bühnenautor.",
         "en": "Grave of Peter Sattmann; actor, director and stage author.",
@@ -2911,13 +3372,18 @@
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Peter Sattmann, Wikipedia, https://de.wikipedia.org/wiki/Peter_Sattmann, abgerufen 2026-03-25"
       ],
-      "status": "bestätigt",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln.",
+      "status": "prüfen",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-kamera",
+        "beleg": "Kamera-EXIF aus lokalem Bildimport",
+        "genauigkeit": "mittel"
+      }
     },
     {
       "id": "poi_sws_ralph-arthur-roberts",
@@ -2930,7 +3396,10 @@
         "ru": "Ральф Артур Робертс",
         "sv": "Ralph Arthur Roberts"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3904108,
+        "lng": 13.1849274
+      },
       "kurztext": {
         "de": "Grab von Ralph Arthur Roberts; Schauspieler und Theaterdirektor.",
         "en": "Grave of Ralph Arthur Roberts; actor and theatre director.",
@@ -2954,15 +3423,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6426483876, https://www.openstreetmap.org/node/6426483876, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483876).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6426483876",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_reinhold-felderhoff",
@@ -3003,7 +3479,15 @@
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "koordinaten_quelle": {
+        "typ": "wo-sie-ruhen",
+        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
+        "datum": "2026-04-04",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Trinitatis, Feld 10, Wahlstelle 64",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_richard-huettig",
@@ -3016,7 +3500,10 @@
         "ru": "Рихард Хюттиг",
         "sv": "Richard Hüttig"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3901999,
+        "lng": 13.1869642
+      },
       "kurztext": {
         "de": "Grab von Richard Hüttig; Widerstandskämpfer.",
         "en": "Grave of Richard Hüttig; resistance fighter.",
@@ -3040,15 +3527,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524541198, https://www.openstreetmap.org/node/3524541198, Version 5, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541198).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524541198",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_rudolf-breitscheid",
@@ -3062,8 +3556,8 @@
         "sv": "Rudolf Breitscheid"
       },
       "koordinaten": {
-        "lat": 52.38804,
-        "lng": 13.17518
+        "lat": 52.3880655,
+        "lng": 13.1751195
       },
       "kurztext": {
         "de": "Grab von Rudolf Breitscheid; sozialdemokratischer Politiker und Widerstandskämpfer.",
@@ -3088,15 +3582,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525179, https://www.openstreetmap.org/node/3524525179, Version 5, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Lietzensee, Feld 22, Wahlstelle 115",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Lietzensee, Feld 22, Wahlstelle 115 OSM-Koordinate übernommen (node 3524525179).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525179",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Lietzensee, Feld 22, Wahlstelle 115",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_siegfried-jacobsohn",
@@ -3109,7 +3612,10 @@
         "ru": "Зигфрид Якобсон",
         "sv": "Siegfried Jacobsohn"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.39021,
+        "lng": 13.18429
+      },
       "kurztext": {
         "de": "Grab von Siegfried Jacobsohn; Journalist und Begründer der „Weltbühne“.",
         "en": "Grave of Siegfried Jacobsohn; journalist and founder of “Die Weltbühne”.",
@@ -3133,15 +3639,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Siegfried Jacobsohn, https://osmand.net/map?pin=52.39021,13.18429#15/52.39021/13.18429"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Siegfried Jacobsohn",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_theodor-fontane-jun",
@@ -3181,15 +3694,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 6168006685, https://www.openstreetmap.org/node/6168006685, Version 3, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "notiz": "Block Kapellenblock Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6168006685).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 6168006685",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_walter-gropius-senior",
@@ -3202,7 +3722,10 @@
         "ru": "Вальтер Гропиус",
         "sv": "Walter Gropius"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38454,
+        "lng": 13.18121
+      },
       "kurztext": {
         "de": "Grab von Walter Gropius; Architekt; Vater des Bauhaus-Gründers Walter Gropius.",
         "en": "Grave of Walter Gropius; architect; father of Bauhaus founder Walter Gropius.",
@@ -3226,15 +3749,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Walter Gropius, https://osmand.net/map?pin=52.38454,13.18121#15/52.38454/13.18121"
       ],
       "status": "bestätigt",
-      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Walter Gropius",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_walter-von-pannwitz",
@@ -3247,7 +3777,10 @@
         "ru": "Вальтер фон Паннвиц",
         "sv": "Walter von Pannwitz"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.3890375,
+        "lng": 13.1786474
+      },
       "kurztext": {
         "de": "Grab von Walter von Pannwitz; Jurist, Kunstsammler und Mäzen.",
         "en": "Grave of Walter von Pannwitz; jurist, art collector and patron.",
@@ -3271,15 +3804,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525177, https://www.openstreetmap.org/node/3524525177, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525177).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525177",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_werner-von-siemens",
@@ -3293,8 +3833,8 @@
         "sv": "Werner von Siemens"
       },
       "koordinaten": {
-        "lat": 52.3889,
-        "lng": 13.17921
+        "lat": 52.3890572,
+        "lng": 13.179377
       },
       "kurztext": {
         "de": "Grab von Werner von Siemens; Erfinder, Industrieller und Unternehmensgründer.",
@@ -3319,15 +3859,24 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 3524525182, https://www.openstreetmap.org/node/3524525182, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 3a, Erbbegräbnis 22",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 3a, Erbbegräbnis 22 OSM-Koordinate übernommen (node 3524525182).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 3524525182",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Block Trinitatis, Feld 3a, Erbbegräbnis 22",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
     },
     {
       "id": "poi_sws_wilhelm-groener",
@@ -3340,7 +3889,10 @@
         "ru": "Вильгельм Гренер",
         "sv": "Wilhelm Groener"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38879,
+        "lng": 13.18126
+      },
       "kurztext": {
         "de": "Grab von Wilhelm Groener; Reichswehrminister und Innenminister.",
         "en": "Grave of Wilhelm Groener; Reichswehr minister and interior minister.",
@@ -3364,15 +3916,22 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Wilhelm Gröner, https://osmand.net/map?pin=52.38879,13.18126#15/52.38879/13.18126"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden.",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-06-06T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Wilhelm Gröner",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_wilhelm-kuhnert",
@@ -3386,8 +3945,8 @@
         "sv": "Wilhelm Kuhnert"
       },
       "koordinaten": {
-        "lat": 52.38999,
-        "lng": 13.17892
+        "lat": 52.390034,
+        "lng": 13.1788119
       },
       "kurztext": {
         "de": "Grab von Wilhelm Kuhnert; Tiermaler und Illustrator.",
@@ -3412,15 +3971,872 @@
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "OpenStreetMap: node 2547415229, https://www.openstreetmap.org/node/2547415229, Version 6, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Epiphanien, Gbl. I, Grabstelle 85/86",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Epiphanien, Gbl. I, Grabstelle 85/86 OSM-Koordinate übernommen (node 2547415229).",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 2547415229",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      },
+      "lagehinweis": "Epiphanien, Gbl. I, Grabstelle 85/86",
+      "lagehinweis_quelle": "wo-sie-ruhen.de"
+    },
+    {
+      "id": "poi_sws_anonymes-graeberfeld",
+      "typ": "bereich",
+      "name": {
+        "de": "Anonymes Gräberfeld",
+        "en": "Anonymous burial field",
+        "fr": "Champ funéraire anonyme",
+        "pl": "Anonimowe pole grobowe",
+        "ru": "Безымянное поле захоронений",
+        "sv": "Anonymt gravfält"
+      },
+      "koordinaten": {
+        "lat": 52.3873188,
+        "lng": 13.1849771
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich für anonyme Bestattungen.",
+        "en": "Named cemetery section for anonymous burials.",
+        "fr": "Secteur nommé du cimetière pour les inhumations anonymes.",
+        "pl": "Nazwany sektor cmentarza przeznaczony do anonimowych pochówków.",
+        "ru": "Именованный участок кладбища для анонимных захоронений.",
+        "sv": "Namngiven kyrkogårdsdel för anonyma gravsättningar."
+      },
+      "beschreibung": {
+        "de": "Anonymes Gräberfeld ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Anonymous burial field is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Champ funéraire anonyme est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Anonimowe pole grobowe to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Безымянное поле захоронений — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Anonymt gravfält är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247897589, https://www.openstreetmap.org/way/247897589, Version 4, Stand 2025-10-12T18:45:07Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Anonymes Gräberfeld\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247897589",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_bestattungsareal-unter-baeumen",
+      "typ": "bereich",
+      "name": {
+        "de": "Bestattungsareal unter Bäumen",
+        "en": "Burial area under trees",
+        "fr": "Espace funéraire sous les arbres",
+        "pl": "Obszar pochówków pod drzewami",
+        "ru": "Участок захоронений под деревьями",
+        "sv": "Gravsättningsområde under träd"
+      },
+      "koordinaten": {
+        "lat": 52.3900095,
+        "lng": 13.1775672
+      },
+      "kurztext": {
+        "de": "Bestattungsbereich unter Bäumen, nach Art eines Friedwaldes.",
+        "en": "Burial section under trees, similar to a woodland cemetery.",
+        "fr": "Secteur d’inhumation sous les arbres, comparable à une forêt cinéraire.",
+        "pl": "Sektor pochówków pod drzewami, podobny do leśnego cmentarza.",
+        "ru": "Участок захоронений под деревьями, по типу лесного кладбища.",
+        "sv": "Gravsättningsområde under träd, liknande en skogskyrkogård."
+      },
+      "beschreibung": {
+        "de": "Bestattungsareal unter Bäumen ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Burial area under trees is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Espace funéraire sous les arbres est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Obszar pochówków pod drzewami to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Участок захоронений под деревьями — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Gravsättningsområde under träd är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247898281, https://www.openstreetmap.org/way/247898281, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"description\":\"Nach Art eines Friedwaldes\",\"name\":\"Bestattungsareal unter Bäumen\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247898281",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_namenlose-metallstatue",
+      "typ": "denkmal",
+      "name": {
+        "de": "Namenlose Metallstatue",
+        "en": "Unnamed metal statue",
+        "fr": "Statue métallique sans nom",
+        "pl": "Nienazwana metalowa statua",
+        "ru": "Безымянная металлическая статуя",
+        "sv": "Namnlös metallstaty"
+      },
+      "koordinaten": {
+        "lat": 52.3889777,
+        "lng": 13.187616
+      },
+      "kurztext": {
+        "de": "Namenlose Metallstatue auf dem Südwestkirchhof.",
+        "en": "Unnamed metal statue on the South-Western Cemetery.",
+        "fr": "Statue métallique sans nom dans le cimetière du Sud-Ouest.",
+        "pl": "Nienazwana metalowa statua na Cmentarzu Południowo-Zachodnim.",
+        "ru": "Безымянная металлическая статуя на Юго-Западном кладбище.",
+        "sv": "Namnlös metallstaty på Südwestkirchhof."
+      },
+      "beschreibung": {
+        "de": "Namenlose Metallstatue ist ein in OpenStreetMap verzeichnetes Denkmal beziehungsweise Kunstobjekt auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Unnamed metal statue is a memorial or artwork recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Statue métallique sans nom est un monument ou une œuvre recensé dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Nienazwana metalowa statua to pomnik lub obiekt artystyczny odnotowany w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Безымянная металлическая статуя — памятник или художественный объект, отмеченный в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Namnlös metallstaty är ett minnesmärke eller konstverk registrerat i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: node 13629435895, https://www.openstreetmap.org/node/13629435895, Version 1, Stand 2026-03-09T09:12:24Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"artwork_type\":\"statue\",\"material\":\"metal\",\"memorial\":\"statue\",\"tourism\":\"artwork\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 13629435895",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_namenlose-kriegsgraeber-gedenkanlage-1",
+      "typ": "gedenkanlage",
+      "name": {
+        "de": "Namenlose Kriegsgräber-Gedenkanlage I",
+        "en": "Unnamed war graves memorial I",
+        "fr": "Mémorial anonyme des tombes de guerre I",
+        "pl": "Nienazwane miejsce pamięci grobów wojennych I",
+        "ru": "Безымянный мемориал воинских захоронений I",
+        "sv": "Namnlös minnesanläggning för krigsgravar I"
+      },
+      "koordinaten": {
+        "lat": 52.3829744,
+        "lng": 13.1763357
+      },
+      "kurztext": {
+        "de": "Kriegsgräber-Gedenkanlage ohne eigenen OSM-Namen.",
+        "en": "War graves memorial without its own OSM name.",
+        "fr": "Mémorial de tombes de guerre sans nom propre dans OSM.",
+        "pl": "Miejsce pamięci grobów wojennych bez własnej nazwy w OSM.",
+        "ru": "Мемориал воинских захоронений без собственного названия в OSM.",
+        "sv": "Minnesanläggning för krigsgravar utan eget OSM-namn."
+      },
+      "beschreibung": {
+        "de": "Namenlose Kriegsgräber-Gedenkanlage I ist eine in OpenStreetMap verzeichnete Gedenkanlage auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Unnamed war graves memorial I is a memorial site recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Mémorial anonyme des tombes de guerre I est un mémorial recensé dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Nienazwane miejsce pamięci grobów wojennych I to miejsce pamięci odnotowane w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Безымянный мемориал воинских захоронений I — мемориальный объект, отмеченный в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Namnlös minnesanläggning för krigsgravar I är en minnesanläggning registrerad i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: node 11966089685, https://www.openstreetmap.org/node/11966089685, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 11966089685",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_namenlose-kriegsgraeber-gedenkanlage-2",
+      "typ": "gedenkanlage",
+      "name": {
+        "de": "Namenlose Kriegsgräber-Gedenkanlage II",
+        "en": "Unnamed war graves memorial II",
+        "fr": "Mémorial anonyme des tombes de guerre II",
+        "pl": "Nienazwane miejsce pamięci grobów wojennych II",
+        "ru": "Безымянный мемориал воинских захоронений II",
+        "sv": "Namnlös minnesanläggning för krigsgravar II"
+      },
+      "koordinaten": {
+        "lat": 52.3837054,
+        "lng": 13.175177
+      },
+      "kurztext": {
+        "de": "Kriegsgräber-Gedenkanlage ohne eigenen OSM-Namen.",
+        "en": "War graves memorial without its own OSM name.",
+        "fr": "Mémorial de tombes de guerre sans nom propre dans OSM.",
+        "pl": "Miejsce pamięci grobów wojennych bez własnej nazwy w OSM.",
+        "ru": "Мемориал воинских захоронений без собственного названия в OSM.",
+        "sv": "Minnesanläggning för krigsgravar utan eget OSM-namn."
+      },
+      "beschreibung": {
+        "de": "Namenlose Kriegsgräber-Gedenkanlage II ist eine in OpenStreetMap verzeichnete Gedenkanlage auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Unnamed war graves memorial II is a memorial site recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Mémorial anonyme des tombes de guerre II est un mémorial recensé dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Nienazwane miejsce pamięci grobów wojennych II to miejsce pamięci odnotowane w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Безымянный мемориал воинских захоронений II — мемориальный объект, отмеченный в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Namnlös minnesanläggning för krigsgravar II är en minnesanläggning registrerad i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: node 11966089686, https://www.openstreetmap.org/node/11966089686, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 11966089686",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_paul-manteufel",
+      "typ": "grab",
+      "name": {
+        "de": "Paul Manteufel",
+        "en": "Paul Manteufel",
+        "fr": "Paul Manteufel",
+        "pl": "Paul Manteufel",
+        "ru": "Пауль Мантефель",
+        "sv": "Paul Manteufel"
+      },
+      "koordinaten": {
+        "lat": 52.3863979,
+        "lng": 13.1811283
+      },
+      "kurztext": {
+        "de": "Grab von Prof. Dr. med. Paul Manteufel (1879–1941).",
+        "en": "Grave of Prof. Dr. med. Paul Manteufel (1879–1941).",
+        "fr": "Tombe du professeur docteur en médecine Paul Manteufel (1879–1941).",
+        "pl": "Grób prof. dr. med. Paula Manteufla (1879–1941).",
+        "ru": "Могила профессора, доктора медицины Пауля Мантефеля (1879–1941).",
+        "sv": "Grav för professor och medicine doktor Paul Manteufel (1879–1941)."
+      },
+      "beschreibung": {
+        "de": "Paul Manteufel ist eine in OpenStreetMap verzeichnete Grabstätte auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Paul Manteufel is a grave recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Paul Manteufel est une tombe recensée dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Paul Manteufel to grób odnotowany w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Пауль Мантефель — могила, отмеченная в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Paul Manteufel är en grav registrerad i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": "1879-07-11",
+      "datum_bis": "1941-01-14",
+      "wikipedia_url": "https://de.wikipedia.org/wiki/Paul_Manteufel",
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: node 12312719341, https://www.openstreetmap.org/node/12312719341, Version 2, Stand 2025-08-31T09:19:30Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"buried:wikidata\":\"Q1300956\",\"buried:wikipedia\":\"de:Paul Manteufel\",\"cemetery\":\"grave\",\"inscription\":\"Prof. Dr. med. Paul Manteufel\\n* 11.7.1879  14.1.1941\",\"name\":\"Grab Paul Manteufel\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 12312719341",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_heilige-geist",
+      "typ": "bereich",
+      "name": {
+        "de": "Heilige Geist",
+        "en": "Holy Spirit",
+        "fr": "Saint-Esprit",
+        "pl": "Duch Święty",
+        "ru": "Святой Дух",
+        "sv": "Helig Ande"
+      },
+      "koordinaten": {
+        "lat": 52.3888694,
+        "lng": 13.1860413
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich Heilige Geist.",
+        "en": "Named cemetery section Holy Spirit.",
+        "fr": "Secteur nommé du cimetière Saint-Esprit.",
+        "pl": "Nazwany sektor cmentarza Duch Święty.",
+        "ru": "Именованный участок кладбища «Святой Дух».",
+        "sv": "Namngiven kyrkogårdsdel Helig Ande."
+      },
+      "beschreibung": {
+        "de": "Heilige Geist ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Holy Spirit is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Saint-Esprit est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Duch Święty to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Святой Дух — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Helig Ande är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247944503, https://www.openstreetmap.org/way/247944503, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Heilige Geist\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247944503",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_michael-heinrich",
+      "typ": "grab",
+      "name": {
+        "de": "Michael Heinrich",
+        "en": "Michael Heinrich",
+        "fr": "Michael Heinrich",
+        "pl": "Michael Heinrich",
+        "ru": "Михаэль Хайнрих",
+        "sv": "Michael Heinrich"
+      },
+      "koordinaten": {
+        "lat": 52.3909401,
+        "lng": 13.1859802
+      },
+      "kurztext": {
+        "de": "Grab von Michael Heinrich (1956–2025), Lagehinweis Baum 1130.",
+        "en": "Grave of Michael Heinrich (1956–2025), location note tree 1130.",
+        "fr": "Tombe de Michael Heinrich (1956–2025), repère arbre 1130.",
+        "pl": "Grób Michaela Heinricha (1956–2025), wskazówka lokalizacyjna: drzewo 1130.",
+        "ru": "Могила Михаэля Хайнриха (1956–2025), ориентир: дерево 1130.",
+        "sv": "Grav för Michael Heinrich (1956–2025), lägesangivelse träd 1130."
+      },
+      "beschreibung": {
+        "de": "Michael Heinrich ist eine in OpenStreetMap verzeichnete Grabstätte auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Michael Heinrich is a grave recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Michael Heinrich est une tombe recensée dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Michael Heinrich to grób odnotowany w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Михаэль Хайнрих — могила, отмеченная в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Michael Heinrich är en grav registrerad i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": "1956-03-14",
+      "datum_bis": "2025-04-26",
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: node 12912566004, https://www.openstreetmap.org/node/12912566004, Version 1, Stand 2025-06-13T12:30:59Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"grave\",\"description\":\"Baum 1130\",\"inscription\":\"Michael Heinrich\\n* 14.3.1956\\n+ 26.4.2025\",\"name\":\"Michael Heinrich\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: node 12912566004",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_schoeneberg",
+      "typ": "bereich",
+      "name": {
+        "de": "Schöneberg",
+        "en": "Schöneberg",
+        "fr": "Schöneberg",
+        "pl": "Schöneberg",
+        "ru": "Шёнеберг",
+        "sv": "Schöneberg"
+      },
+      "koordinaten": {
+        "lat": 52.3896269,
+        "lng": 13.1824512
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich Schöneberg.",
+        "en": "Named cemetery section Schöneberg.",
+        "fr": "Secteur nommé du cimetière Schöneberg.",
+        "pl": "Nazwany sektor cmentarza Schöneberg.",
+        "ru": "Именованный участок кладбища «Шёнеберг».",
+        "sv": "Namngiven kyrkogårdsdel Schöneberg."
+      },
+      "beschreibung": {
+        "de": "Schöneberg ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Schöneberg is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Schöneberg est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Schöneberg to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Шёнеберг — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Schöneberg är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247939527, https://www.openstreetmap.org/way/247939527, Version 6, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schöneberg\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247939527",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_schwedischer-friedhof",
+      "typ": "bereich",
+      "name": {
+        "de": "Schwedischer Friedhof",
+        "en": "Swedish Cemetery",
+        "fr": "Cimetière suédois",
+        "pl": "Cmentarz szwedzki",
+        "ru": "Шведское кладбище",
+        "sv": "Svenska kyrkogården"
+      },
+      "koordinaten": {
+        "lat": 52.3892517,
+        "lng": 13.1791266
+      },
+      "kurztext": {
+        "de": "Benannter Bereich Schwedischer Friedhof.",
+        "en": "Named section Swedish Cemetery.",
+        "fr": "Secteur nommé Cimetière suédois.",
+        "pl": "Nazwany sektor Cmentarz szwedzki.",
+        "ru": "Именованный участок «Шведское кладбище».",
+        "sv": "Namngiven del Svenska kyrkogården."
+      },
+      "beschreibung": {
+        "de": "Schwedischer Friedhof ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Swedish Cemetery is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Cimetière suédois est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Cmentarz szwedzki to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Шведское кладбище — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Svenska kyrkogården är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247946680, https://www.openstreetmap.org/way/247946680, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwedischer Friedhof\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247946680",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_schwesternblock",
+      "typ": "bereich",
+      "name": {
+        "de": "Schwesternblock",
+        "en": "Sisters’ Block",
+        "fr": "Bloc des sœurs",
+        "pl": "Kwatera sióstr",
+        "ru": "Сестринский блок",
+        "sv": "Systerblocket"
+      },
+      "koordinaten": {
+        "lat": 52.3908613,
+        "lng": 13.185853
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich Schwesternblock.",
+        "en": "Named cemetery section Sisters’ Block.",
+        "fr": "Secteur nommé du cimetière Bloc des sœurs.",
+        "pl": "Nazwany sektor cmentarza Kwatera sióstr.",
+        "ru": "Именованный участок кладбища «Сестринский блок».",
+        "sv": "Namngiven kyrkogårdsdel Systerblocket."
+      },
+      "beschreibung": {
+        "de": "Schwesternblock ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Sisters’ Block is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Bloc des sœurs est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Kwatera sióstr to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Сестринский блок — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Systerblocket är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247904540, https://www.openstreetmap.org/way/247904540, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwesternblock\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247904540",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_trauerkapelle",
+      "typ": "bauwerk",
+      "name": {
+        "de": "Trauerkapelle",
+        "en": "Funeral Chapel",
+        "fr": "Chapelle funéraire",
+        "pl": "Kaplica pogrzebowa",
+        "ru": "Траурная капелла",
+        "sv": "Sorgekapell"
+      },
+      "koordinaten": {
+        "lat": 52.3896124,
+        "lng": 13.1806878
+      },
+      "kurztext": {
+        "de": "Christliche Trauerkapelle auf dem Südwestkirchhof.",
+        "en": "Christian funeral chapel on the South-Western Cemetery.",
+        "fr": "Chapelle funéraire chrétienne du cimetière du Sud-Ouest.",
+        "pl": "Chrześcijańska kaplica pogrzebowa na Cmentarzu Południowo-Zachodnim.",
+        "ru": "Христианская траурная капелла на Юго-Западном кладбище.",
+        "sv": "Kristet sorgkapell på Südwestkirchhof."
+      },
+      "beschreibung": {
+        "de": "Trauerkapelle ist ein in OpenStreetMap verzeichnetes Bauwerk auf dem Südwestkirchhof Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Funeral Chapel is a structure recorded in OpenStreetMap on the South-Western Cemetery in Stahnsdorf. The information was taken from OpenStreetMap.",
+        "fr": "Chapelle funéraire est un bâtiment recensé dans OpenStreetMap au cimetière du Sud-Ouest à Stahnsdorf. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Kaplica pogrzebowa to budowla odnotowana w OpenStreetMap na Cmentarzu Południowo-Zachodnim w Stahnsdorfie. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Траурная капелла — сооружение, отмеченное в OpenStreetMap на Юго-Западном кладбище в Штансдорфе. Сведения взяты из OpenStreetMap.",
+        "sv": "Sorgekapell är en byggnad registrerad i OpenStreetMap på Südwestkirchhof i Stahnsdorf. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 228818268, https://www.openstreetmap.org/way/228818268, Version 3, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"amenity\":\"place_of_worship\",\"building\":\"chapel\",\"chapel\":\"yes\",\"denomination\":\"protestant\",\"name\":\"Trauerkapelle\",\"religion\":\"christian\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 228818268",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_urnenhain-1",
+      "typ": "bereich",
+      "name": {
+        "de": "Urnenhain I",
+        "en": "Urn Grove I",
+        "fr": "Jardin des urnes I",
+        "pl": "Gaj urnowy I",
+        "ru": "Урновая роща I",
+        "sv": "Urnlund I"
+      },
+      "koordinaten": {
+        "lat": 52.3898778,
+        "lng": 13.1832759
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich Urnenhain I.",
+        "en": "Named cemetery section Urn Grove I.",
+        "fr": "Secteur nommé du cimetière Jardin des urnes I.",
+        "pl": "Nazwany sektor cmentarza Gaj urnowy I.",
+        "ru": "Именованный участок кладбища «Урновая роща I».",
+        "sv": "Namngiven kyrkogårdsdel Urnlund I."
+      },
+      "beschreibung": {
+        "de": "Urnenhain I ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Urn Grove I is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Jardin des urnes I est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Gaj urnowy I to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Урновая роща I — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Urnlund I är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247944649, https://www.openstreetmap.org/way/247944649, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain I\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247944649",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_urnenhain-2",
+      "typ": "bereich",
+      "name": {
+        "de": "Urnenhain II",
+        "en": "Urn Grove II",
+        "fr": "Jardin des urnes II",
+        "pl": "Gaj urnowy II",
+        "ru": "Урновая роща II",
+        "sv": "Urnlund II"
+      },
+      "koordinaten": {
+        "lat": 52.3884261,
+        "lng": 13.1847411
+      },
+      "kurztext": {
+        "de": "Benannter Friedhofsbereich Urnenhain II.",
+        "en": "Named cemetery section Urn Grove II.",
+        "fr": "Secteur nommé du cimetière Jardin des urnes II.",
+        "pl": "Nazwany sektor cmentarza Gaj urnowy II.",
+        "ru": "Именованный участок кладбища «Урновая роща II».",
+        "sv": "Namngiven kyrkogårdsdel Urnlund II."
+      },
+      "beschreibung": {
+        "de": "Urnenhain II ist ein in OpenStreetMap verzeichneter Bereich des Südwestkirchhofs Stahnsdorf. Die Angaben wurden aus OpenStreetMap übernommen.",
+        "en": "Urn Grove II is a section of the South-Western Cemetery in Stahnsdorf recorded in OpenStreetMap. The information was taken from OpenStreetMap.",
+        "fr": "Jardin des urnes II est un secteur du cimetière du Sud-Ouest à Stahnsdorf recensé dans OpenStreetMap. Les informations proviennent d’OpenStreetMap.",
+        "pl": "Gaj urnowy II to sektor Cmentarza Południowo-Zachodniego w Stahnsdorfie odnotowany w OpenStreetMap. Informacje pochodzą z OpenStreetMap.",
+        "ru": "Урновая роща II — участок Юго-Западного кладбища в Штансдорфе, отмеченный в OpenStreetMap. Сведения взяты из OpenStreetMap.",
+        "sv": "Urnlund II är en del av Südwestkirchhof i Stahnsdorf registrerad i OpenStreetMap. Uppgifterna har hämtats från OpenStreetMap."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "OpenStreetMap: way 247930944, https://www.openstreetmap.org/way/247930944, Version 4, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain II\"}",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-05-25T00:00:00.000Z",
+      "geaendert_am": "2026-05-25T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "osm",
+        "beleg": "OpenStreetMap: way 247930944",
+        "datum": "2026-05-25",
+        "genauigkeit": "hoch"
+      }
+    },
+    {
+      "id": "poi_sws_hermann-boost",
+      "typ": "grab",
+      "name": {
+        "de": "Hermann Boost",
+        "en": "Hermann Boost",
+        "fr": "Hermann Boost",
+        "pl": "Hermann Boost",
+        "ru": "Герман Бост",
+        "sv": "Hermann Boost"
+      },
+      "koordinaten": {
+        "lat": 52.38835,
+        "lng": 13.18766
+      },
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Hermann Boost",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "kurztext": {
+        "de": "Grab von Hermann Boost auf dem Südwestkirchhof Stahnsdorf.",
+        "en": "Grave of Hermann Boost at the South-Western Cemetery in Stahnsdorf.",
+        "fr": "Tombe de Hermann Boost au cimetière du Sud-Ouest à Stahnsdorf.",
+        "pl": "Grób Hermanna Boosta na Cmentarzu Południowo-Zachodnim w Stahnsdorfie.",
+        "ru": "Могила Германа Боста на Юго-Западном кладбище в Штансдорфе.",
+        "sv": "Grav för Hermann Boost på Südwestkirchhof i Stahnsdorf."
+      },
+      "beschreibung": {
+        "de": "Hermann Boost ist eine vor Ort manuell per OsmAnd verzeichnete Grabstätte auf dem Südwestkirchhof Stahnsdorf.",
+        "en": "Hermann Boost is a grave at the South-Western Cemetery in Stahnsdorf, recorded manually on site with OsmAnd.",
+        "fr": "Hermann Boost est une tombe du cimetière du Sud-Ouest à Stahnsdorf, relevée manuellement sur place avec OsmAnd.",
+        "pl": "Hermann Boost to grób na Cmentarzu Południowo-Zachodnim w Stahnsdorfie, ręcznie zarejestrowany w terenie za pomocą OsmAnd.",
+        "ru": "Герман Бост — могила на Юго-Западном кладбище в Штансдорфе, вручную зафиксированная на месте с помощью OsmAnd.",
+        "sv": "Hermann Boost är en grav på Südwestkirchhof i Stahnsdorf, manuellt registrerad på plats med OsmAnd."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hermann Boost, https://osmand.net/map?pin=52.38835,13.18766#15/52.38835/13.18766"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-06-06T00:00:00.000Z",
+      "geaendert_am": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "poi_sws_familie-schulte-schwarzer-engel",
+      "typ": "grab",
+      "name": {
+        "de": "Familie Schulte (Schwarzer Engel)",
+        "en": "Schulte family (Black Angel)",
+        "fr": "Famille Schulte (Ange noir)",
+        "pl": "Rodzina Schulte (Czarny Anioł)",
+        "ru": "Семья Шульте (Чёрный ангел)",
+        "sv": "Familjen Schulte (Svarta ängeln)"
+      },
+      "koordinaten": {
+        "lat": 52.38839,
+        "lng": 13.18684
+      },
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Fam. Schulte (Schwarzer Engel)",
+        "datum": "2026-06-06",
+        "genauigkeit": "hoch"
+      },
+      "kurztext": {
+        "de": "Grab der Familie Schulte mit dem Schwarzen Engel.",
+        "en": "Grave of the Schulte family with the Black Angel.",
+        "fr": "Tombe de la famille Schulte avec l’Ange noir.",
+        "pl": "Grób rodziny Schulte z Czarnym Aniołem.",
+        "ru": "Могила семьи Шульте с Чёрным ангелом.",
+        "sv": "Grav för familjen Schulte med Svarta ängeln."
+      },
+      "beschreibung": {
+        "de": "Familie Schulte (Schwarzer Engel) ist eine vor Ort manuell per OsmAnd verzeichnete Grabstätte auf dem Südwestkirchhof Stahnsdorf.",
+        "en": "Schulte family (Black Angel) is a grave at the South-Western Cemetery in Stahnsdorf, recorded manually on site with OsmAnd.",
+        "fr": "Famille Schulte (Ange noir) est une tombe du cimetière du Sud-Ouest à Stahnsdorf, relevée manuellement sur place avec OsmAnd.",
+        "pl": "Rodzina Schulte (Czarny Anioł) to grób na Cmentarzu Południowo-Zachodnim w Stahnsdorfie, ręcznie zarejestrowany w terenie za pomocą OsmAnd.",
+        "ru": "Семья Шульте (Чёрный ангел) — могила на Юго-Западном кладбище в Штансдорфе, вручную зафиксированная на месте с помощью OsmAnd.",
+        "sv": "Familjen Schulte (Svarta ängeln) är en grav på Südwestkirchhof i Stahnsdorf, manuellt registrerad på plats med OsmAnd."
+      },
+      "datum_von": null,
+      "datum_bis": null,
+      "wikipedia_url": null,
+      "bilder": [],
+      "audio": {},
+      "quellen": [
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fam. Schulte (Schwarzer Engel), https://osmand.net/map?pin=52.38839,13.18684#15/52.38839/13.18684"
+      ],
+      "status": "bestätigt",
+      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen.",
+      "publish_status": "veröffentlicht",
+      "erstellt_von": "system",
+      "geaendert_von": "system",
+      "erstellt_am": "2026-06-06T00:00:00.000Z",
+      "geaendert_am": "2026-06-06T00:00:00.000Z"
     }
   ],
   "collections": [

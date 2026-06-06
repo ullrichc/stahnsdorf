@@ -14,10 +14,11 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 ## 🔒 Redaktionswerkzeug (`/admin`)
 - **Sicherer Zugang** — Google-Login gekoppelt mit Editor-Whitelist (Firestore `editors`)
 - **POI-Management** — Tabelle mit Filterung (Typ, Status, Publish, Koordinaten) und Sortierung
-- **Zwei-Spalten-Editor** — Intuitive Eingabe von mehrsprachigen Texten, Geodaten und Referenzen
+- **Zwei-Spalten-Editor** — Intuitive Eingabe von mehrsprachigen Texten, Geodaten, Koordinaten-Herkunft, Lagehinweisen und Referenzen
 - **Publish-Workflow** — `Entwurf` → `Zur Prüfung` → `Veröffentlicht` (nur veröffentlichte Daten sind öffentlich sichtbar)
 - **Sammlungen-Editor** — Einfache Zuordnung von POIs zu thematischen Sammlungen
-- **Backup & Restore** — JSON-Export der Inhaltsdaten und vollständige Roundtrip-Backups
+- **Bilderverwaltung** — POI-Bilder direkt hochladen, nachweisen und in der App anzeigen
+- **Backup & Restore** — JSON-Export der Inhaltsdaten und vollständige Roundtrip-Backups; Bilddateien bleiben separat in Storage bzw. lokal gesichert
 
 ## 🛠 Technologie
 | Komponente | Technologie |
@@ -25,8 +26,8 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 | Framework | [Next.js 16](https://nextjs.org/) (Static Export) |
 | Karte | [Leaflet 1.9](https://leafletjs.com/) |
 | Sprache | TypeScript, React 18 |
-| Backend | Firebase (Firestore, Auth) |
-| Tests | Playwright (E2E), Vitest (Unit), Firestore Rules Sandbox |
+| Backend | Firebase (Firestore, Auth, Storage) |
+| Tests | Playwright (E2E), Vitest (Unit), Firebase Rules Sandbox |
 | Automatisierung | GitHub Actions für CI (Tests) und Deploy auf GitHub Pages |
 
 ## 🚀 Lokale Entwicklung
@@ -43,6 +44,7 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
    NEXT_PUBLIC_FIREBASE_API_KEY="..."
    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="..."
    NEXT_PUBLIC_FIREBASE_PROJECT_ID="..."
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="..."
    # ...weitere Felder
    ```
 
@@ -91,11 +93,60 @@ npm run build
 Die zentrale Quelle der Wahrheit für das Datenmodell ist `docs/schema.md`.
 Die TypeScript-Typen in `src/lib/types.ts` müssen **immer** mit dem Schema synchron gehalten werden (`POI`, `Collection`, `FirestorePOI`).
 
+### OSM-Kandidaten exportieren
+OpenStreetMap kann als vertrauenswürdige Quelle für zusätzliche Gräber, Denkmäler, Mausoleen und Anlagen ausgewertet werden. Der Audit-Export liest alle OSM-Kandidaten innerhalb der OSM-Friedhofsfläche, gleicht sie mit dem vollständigen lokalen POI-Backup ab und schreibt eine Kandidatenliste mit importfähigen neuen POI-Vorschlägen:
+
+```bash
+npm run osm:candidates
+```
+
+Ausgaben:
+- `inputdata/osm-poi-candidates.json` — vollständiger Audit mit OSM-Kandidaten, Match-Status, Vorschlägen und Quellen
+- `inputdata/osm-poi-candidates.md` — lesbarer Kurzbericht für die Redaktion
+
+Die geprüften OSM-Kandidaten können anschließend in den lokalen Backup-Snapshot übernommen werden:
+
+```bash
+npm run osm:apply
+```
+
+Dabei werden bestehende POIs mit OSM-Koordinaten und Quellen aktualisiert und neue POIs mit mehrsprachigen Grundtexten ergänzt.
+
+### Koordinaten-Herkunft strukturieren
+Der lokale Backup-Snapshot kann aus bestehenden Quellen und Notizen strukturierte Felder für GPS-Herkunft und Lagehinweise ableiten:
+
+```bash
+npm run coordinates:metadata
+```
+
+Der Befehl ergänzt `koordinaten_quelle`, `lagehinweis` und `lagehinweis_quelle`, ohne bestehende Freitext-Quellen oder Notizen zu entfernen.
+
+### Manuelle OsmAnd-Koordinaten einspielen
+Manuell vor Ort erfasste Geo-Links aus `inputdata/neue_Koordinaten_über_OSM.txt` können in den lokalen Backup-Snapshot übernommen werden:
+
+```bash
+npm run coordinates:manual-osmand
+```
+
+Der Import überschreibt keine Koordinaten mit `koordinaten_quelle.typ` `osm` oder `wo-sie-ruhen`. Neue manuelle Einträge werden mit `koordinaten_quelle.typ` `manuell-osmand` dokumentiert.
+
 ### Security Rules Deploy
-Wenn sich die Firebase Security Rules (`firestore.rules`) oder Indexe (`firestore.indexes.json`) ändern:
+Wenn sich die Firebase Security Rules (`firestore.rules`, `storage.rules`) oder Indexe (`firestore.indexes.json`) ändern:
 ```bash
 npm run deploy:firestore
+npm run deploy:storage
+npm run deploy:firebase   # Firestore + Storage zusammen
 ```
+
+### POI-Bilder importieren
+Der Erstimport liest die lokalen Originale aus `inputdata/bilder`, erzeugt optimierte Anzeige- und Vorschauversionen und ergänzt die POI-Bildreferenzen. Ohne `--apply` läuft der Import als Dry-Run und schreibt nur Reports:
+
+```bash
+npm run import:images
+npm run import:images -- --apply
+```
+
+Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage.
 
 ## 📄 Lizenz
 Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende
