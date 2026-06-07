@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten, Sprachumschaltung. Daten kommen live aus **Firestore** mit IndexedDB-Offline-Cache. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Sammlungen-Editor und Backup/Restore.
+Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten mit Bild-Lightbox/Zoom, Sprachumschaltung. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und Backup/Restore.
 
 ## Techstack
 
@@ -32,11 +32,12 @@ Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkar
 | Framework | Next.js 16 (Static Export via `output: 'export'`) |
 | Karte | Leaflet 1.9, react-leaflet 4 |
 | Sprache | TypeScript 6, React 18 |
-| Backend | Firebase (Firestore + Auth — aktiv) |
+| Bild-Zoom | react-zoom-pan-pinch |
+| Backend | Firebase (Firestore + Auth + Storage — aktiv) |
 | Tests | Playwright (67 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
-| Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`) |
+| Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |
 
 ## Projektstruktur
 
@@ -46,14 +47,22 @@ stahnsdorf/
 ├── firebase.json            # Firebase CLI Config
 ├── .firebaserc              # Firebase Projekt-Binding
 ├── firestore.rules          # Firestore Security Rules
+├── storage.rules            # Firebase Storage Security Rules für POI-Bilder
 ├── firestore.indexes.json   # Firestore Composite Indexes
 ├── data/
-│   └── stahnsdorf-backup-translated.json # Unified Build-Time Snapshot for generateStaticParams
+│   └── stahnsdorf-backup-translated.json # Redaktioneller Master-Snapshot für POIs, Sammlungen und Bildreferenzen
 ├── docs/
-│   └── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
+│   ├── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
+│   └── redaktionelle-leitlinien.md # Regeln für POI-Informationstexte
 ├── scripts/
+│   ├── apply-osm-candidates.mjs # OSM-Kandidaten in Backup-Snapshot übernehmen
+│   ├── build-image-import-manifest.mjs # Bilddateien den bestehenden POIs zuordnen
+│   ├── prepare-firebase-images.mjs # Optimierte Firebase-Bilddateien lokal vorbereiten
+│   ├── apply-image-manifest-to-backup.mjs # Bildreferenzen in den JSON-Master übernehmen
+│   ├── import-poi-images.mjs # Lokaler Erstimport optimierter POI-Bilder nach Firebase Storage
 │   ├── migrate.ts           # Migrationsscript altes → neues Schema
 │   ├── migrate-to-firestore.ts  # Einmalige Migration JSON → Firestore
+│   ├── osm-candidates.mjs   # OSM-Audit: Kandidaten exportieren und mit POIs abgleichen
 │   └── setup-editors.ts     # Editor-Dokumente in Firestore anlegen
 ├── src/
 │   ├── app/                 # Next.js App Router
@@ -82,7 +91,7 @@ stahnsdorf/
 │   │       ├── POIForm.tsx   # Zwei-Spalten-Editor
 │   │       └── BackupRestore.tsx
 │   ├── lib/
-│   │   ├── firebase.ts       # Firebase App + Firestore + Auth + Offline
+│   │   ├── firebase.ts       # Firebase App + Firestore + Auth + Storage + Offline
 │   │   ├── useFirestore.ts   # Hooks: usePOIs, usePOI, useCollections, useCollection
 │   │   ├── content.ts        # Alte JSON-basierte Loader (nur noch für Tests)
 │   │   ├── types.ts          # TypeScript-Typen — entspricht docs/schema.md ✅
@@ -110,6 +119,8 @@ Alle Felder verwenden **deutsche Namen**:
 | `typ` | string | `grab`, `mausoleum`, `denkmal`, `gedenkanlage`, `bauwerk`, `bereich` |
 | `name` | LocalizedText | Anzeigename |
 | `koordinaten` | `{ lat, lng } \| null` | GPS-Position oder `null` |
+| `koordinaten_quelle` | object \| null | Herkunft der aktuell gespeicherten GPS-Koordinate |
+| `lagehinweis` / `lagehinweis_quelle` | string | Grabstellenangabe ohne GPS und deren Quelle |
 | `kurztext` | LocalizedText | Einzeiler für die App |
 | `beschreibung` | LocalizedText | Inhaltliche Beschreibung |
 | `datum_von` / `datum_bis` | string \| null | Geburts-/Sterbedatum, YYYY-MM-DD |
@@ -145,6 +156,8 @@ Alle Felder verwenden **deutsche Namen**:
 
 ### Datenmodell
 - **`docs/schema.md` ist die Wahrheit.** Alle POI-Felder sind dort definiert.
+- **`data/stahnsdorf-backup-translated.json` ist die redaktionelle Quelle der Wahrheit für Inhalte.** Alle relevanten POI-Daten inklusive `bilder`-Referenzen müssen dort abgelegt sein. Firestore darf keine exklusiven Inhaltsdaten enthalten.
+- **`docs/redaktionelle-leitlinien.md` gilt für POI-Texte.** Kurztexte verwenden kein „Grab von“. Beschreibungen sollen 1-2 prägnante Sätze sein und keine UI-Felder wie Name, Lebensdaten oder Lage wiederholen.
 - Deutsch ist die Quellsprache. Andere Sprachen (en, fr, pl, ru, sv) werden per KI generiert.
 - Nur POIs mit `koordinaten != null` erscheinen auf der Karte.
 - POIs ohne Koordinaten bleiben in der Datenbank bis sie vor Ort ermittelt werden.
@@ -152,7 +165,7 @@ Alle Felder verwenden **deutsche Namen**:
 ### Code
 - `src/lib/types.ts` definiert die TypeScript-Typen — **muss mit `docs/schema.md` übereinstimmen.**
 - `src/lib/useFirestore.ts` enthält die Hooks für Firestore-Zugriff (visitor + admin).
-- `src/lib/content.ts` existiert noch für Tests, wird nicht mehr von der App genutzt.
+- `src/lib/content.ts` liest den JSON-Master für Tests und statische Parameter; die App lädt zur Laufzeit die daraus abgeleitete Firestore-Kopie.
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
 - Static Export: kein Server, kein SSR — alles client-seitig.
 - `basePath: '/stahnsdorf'` in Production (GitHub Pages).
@@ -165,22 +178,23 @@ Alle Felder verwenden **deutsche Namen**:
 
 ### Firebase
 - Project-ID: `stahnsdorf-90e03`
-- Konfiguration über `NEXT_PUBLIC_FIREBASE_*` Umgebungsvariablen (7 Werte)
-- `src/lib/firebase.ts` initialisiert App + Firestore (mit Offline Persistence) + Auth
+- Konfiguration über `NEXT_PUBLIC_FIREBASE_*` Umgebungsvariablen inkl. `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+- `src/lib/firebase.ts` initialisiert App + Firestore (mit Offline Persistence) + Auth + Storage
 - **Test-Datenbank / Emulator:** Um lokal zu testen, ohne die echte Datenbank zu beeinflussen, nutzen wir die [Firebase Local Emulator Suite](https://firebase.google.com/docs/emulator-suite).
   - Aktiviert in `.env.local` über `NEXT_PUBLIC_USE_FIREBASE_EMULATOR=true`.
   - Starten mit `npm run emulators`.
 - Editor-Whitelist: Collection `editors/{email}` — nur über Firebase Console verwaltbar
-- Security Rules: öffentliches Lesen nur für `publish_status == "veröffentlicht"`, Schreiben nur für Editoren
-- CLI: `npm run deploy:firestore` deployed Rules + Indexes
+- Firestore Rules: öffentliches Lesen nur für `publish_status == "veröffentlicht"`, Schreiben nur für Editoren
+- Storage Rules: POI-Bilder öffentlich lesbar, Schreiben/Löschen nur für Editoren unter `poi-images/{poiId}/...`
+- CLI: `npm run deploy:firestore` deployed Firestore Rules + Indexes, `npm run deploy:storage` deployed Storage Rules
 
 ### Admin (`/admin`)
 - Google-Login mit Editor-Whitelist (`editors/{email}` Dokumente in Firestore)
 - Drei-Stufen Publish-Workflow: `entwurf` → `zur_prüfung` → `veröffentlicht`
 - POI-Tabelle mit Filter (Typ, Status, Publish-Status, Koordinaten) und Sortierung
-- Zwei-Spalten-Editor mit GPS-Koordinaten-Eingabe und Quellen-Liste
+- Zwei-Spalten-Editor mit GPS-Koordinaten-Eingabe, Koordinaten-Herkunft, Lagehinweisen, Bilderverwaltung und Quellen-Liste
 - Sammlungen-Editor mit POI-Multi-Select
-- Backup/Restore mit Inhalts-Export und vollständigem Backup (roundtrip-fähig)
+- Backup/Restore mit Inhalts-Export und vollständigem Firestore-Backup; Bilddateien aus Storage bleiben separate Medienobjekte
 
 ## Bekannte Probleme
 
@@ -191,9 +205,18 @@ Alle Felder verwenden **deutsche Namen**:
 ```bash
 npm install
 npm run dev              # Startet Entwicklungsserver
+npm run coordinates:metadata # Koordinaten-Herkunft und Lagehinweise aus Bestand ableiten
+npm run coordinates:manual-osmand # Manuell per OsmAnd erfasste GPS-Daten einspielen
+npm run osm:candidates   # OSM-Kandidaten-Audit nach inputdata/
+npm run osm:apply        # OSM-Kandidaten in data/stahnsdorf-backup-translated.json übernehmen
+npm run images:manifest  # Bilddateien den bestehenden POIs zuordnen
+npm run images:prepare   # Optimierte Anzeige-/Vorschaubilder lokal vorbereiten
+npm run images:apply     # Dry-Run: Bildreferenzen in JSON-Master übernehmen
+npm run import:images    # Dry-Run für POI-Bildimport nach Firebase Storage/Firestore
 npm run test             # Unit Tests (Vitest)
 npm run test:e2e         # E2E Tests (Playwright + Emulator)
 npm run test:rules       # Security Rules (Vitest + Emulator)
 npm run build            # Static Export nach out/
 npm run deploy:firestore # Firestore Rules + Indexes deployen
+npm run deploy:storage   # Storage Rules deployen
 ```

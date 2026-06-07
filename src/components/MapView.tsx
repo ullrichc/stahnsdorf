@@ -8,11 +8,47 @@ import { t } from '@/lib/i18n'
 import { createMarkerIcon } from './MapMarker'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { readStoredMapView, writeStoredMapView } from '@/lib/map-view-state'
 import POICard from './POICard'
 import styles from './MapView.module.css'
 
 const CENTER: [number, number] = [52.389506, 13.180954]
 const ZOOM = 16
+
+function getInitialMapView(restore: boolean): { center: [number, number], zoom: number } {
+  if (!restore || typeof window === 'undefined') return { center: CENTER, zoom: ZOOM }
+
+  const stored = readStoredMapView(window.sessionStorage)
+  if (!stored) return { center: CENTER, zoom: ZOOM }
+
+  return { center: [stored.lat, stored.lng], zoom: stored.zoom }
+}
+
+function PersistMapView({ enabled }: { enabled: boolean }) {
+  const map = useMapInstance()
+
+  useEffect(() => {
+    if (!enabled || typeof window === 'undefined') return
+
+    const save = () => {
+      const center = map.getCenter()
+      writeStoredMapView(window.sessionStorage, {
+        lat: center.lat,
+        lng: center.lng,
+        zoom: map.getZoom(),
+      })
+    }
+
+    map.on('moveend zoomend', save)
+    save()
+
+    return () => {
+      map.off('moveend zoomend', save)
+    }
+  }, [enabled, map])
+
+  return null
+}
 
 function LocateButton() {
   const map = useMapInstance()
@@ -55,10 +91,12 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
       marker.on('click', () => onSelect(poi))
       marker.bindTooltip(t(poi.name, locale), {
         permanent: true,
+        interactive: true,
         direction: 'right',
         offset: [18, 0],
         className: 'poi-tooltip',
       })
+      marker.getTooltip()?.on('click', () => onSelect(poi))
       marker.addTo(map)
       return marker
     })
@@ -67,7 +105,10 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
 
     const setTooltipOpacity = (m: L.Marker, visible: boolean) => {
       const el = m.getTooltip()?.getElement()
-      if (el) el.style.opacity = visible ? '1' : '0'
+      if (el) {
+        el.style.opacity = visible ? '1' : '0'
+        el.style.pointerEvents = visible ? 'auto' : 'none'
+      }
     }
 
     const updateTooltipVisibility = () => {
@@ -155,6 +196,7 @@ function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) =
 
 export default function MapView({ poiIds, showSearch = false }: { poiIds?: string[], showSearch?: boolean }) {
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
+  const [{ center, zoom }] = useState(() => getInitialMapView(!poiIds))
   const locale = useLocale()
   const { pois, loading } = usePOIs()
 
@@ -168,7 +210,8 @@ export default function MapView({ poiIds, showSearch = false }: { poiIds?: strin
 
   return (
     <div className={styles.container}>
-      <ClientMap center={CENTER} zoom={ZOOM} className={styles.map} zoomControl={false}>
+      <ClientMap center={center} zoom={zoom} className={styles.map} zoomControl={false}>
+        <PersistMapView enabled={!poiIds} />
         {showSearch && <SearchOverlay pois={pois} onSelect={handleSelect} />}
         <POIMarkers pois={pois} onSelect={handleSelect} poiIds={poiIds} locale={locale} />
         <LocateButton />

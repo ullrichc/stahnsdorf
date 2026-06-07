@@ -209,6 +209,12 @@ a {
   border: 1px solid rgba(68, 71, 74, 0.3) !important;
   color: var(--color-text) !important;
   transition: opacity var(--transition-stately) !important;
+  cursor: pointer !important;
+}
+
+.poi-tooltip:hover {
+  color: var(--color-primary) !important;
+  border-color: rgba(233, 193, 118, 0.55) !important;
 }
 
 .poi-tooltip::before {

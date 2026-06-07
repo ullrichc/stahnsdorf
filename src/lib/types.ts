@@ -15,11 +15,39 @@ export type Koordinaten = {
   lng: number;
 };
 
+export type KoordinatenQuelleTyp =
+  | 'osm'
+  | 'wo-sie-ruhen'
+  | 'manuell-osmand'
+  | 'manuell-kamera'
+  | 'redaktionell'
+  | 'altbestand'
+  | 'unbekannt';
+
+export type KoordinatenGenauigkeit = 'hoch' | 'mittel' | 'niedrig';
+
+export type KoordinatenQuelle = {
+  typ: KoordinatenQuelleTyp;
+  beleg: string;
+  datum?: string;
+  genauigkeit?: KoordinatenGenauigkeit;
+};
+
 export type Bild = {
   datei: string;
   nachweis: string;
   nachweis_url?: string;
   beschriftung?: LocalizedText;
+  storage_pfad?: string;
+  breite?: number;
+  hoehe?: number;
+  mime_type?: string;
+  vorschau_datei?: string;
+  vorschau_storage_pfad?: string;
+  vorschau_breite?: number;
+  vorschau_hoehe?: number;
+  quelle_datei?: string;
+  quelle_hash?: string;
 };
 
 export type PoiTyp = 'grab' | 'mausoleum' | 'denkmal' | 'gedenkanlage' | 'bauwerk' | 'bereich';
@@ -30,6 +58,9 @@ export type POI = {
   typ: PoiTyp;
   name: LocalizedText;
   koordinaten: Koordinaten | null;
+  koordinaten_quelle?: KoordinatenQuelle | null;
+  lagehinweis?: string;
+  lagehinweis_quelle?: string;
   kurztext: LocalizedText;
   beschreibung: LocalizedText;
   datum_von?: string | null;

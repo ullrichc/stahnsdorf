@@ -29,6 +29,7 @@ export type UIDictionary = {
   typeDenkmal: string
   typeMausoleum: string
   typeGedenkanlage: string
+  locationHint: string
   learnMore: string
   sources: string
 }
@@ -54,6 +55,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Denkmal',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Gedenkanlage',
+    locationHint: 'Lage',
     learnMore: 'Mehr erfahren',
     sources: 'Quellen'
   },
@@ -77,6 +79,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Memorial',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Memorial site',
+    locationHint: 'Location',
     learnMore: 'Learn more',
     sources: 'Sources'
   },
@@ -100,6 +103,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Mémorial',
     typeMausoleum: 'Mausolée',
     typeGedenkanlage: 'Lieu de mémoire',
+    locationHint: 'Emplacement',
     learnMore: 'En savoir plus',
     sources: 'Sources'
   },
@@ -123,6 +127,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Pomnik',
     typeMausoleum: 'Mauzoleum',
     typeGedenkanlage: 'Miejsce pamięci',
+    locationHint: 'Położenie',
     learnMore: 'Dowiedz się więcej',
     sources: 'Źródła'
   },
@@ -146,6 +151,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Памятник',
     typeMausoleum: 'Мавзолей',
     typeGedenkanlage: 'Мемориал',
+    locationHint: 'Местоположение',
     learnMore: 'Узнать больше',
     sources: 'Источники'
   },
@@ -169,6 +175,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeDenkmal: 'Minnesmärke',
     typeMausoleum: 'Mausoleum',
     typeGedenkanlage: 'Minnesplats',
+    locationHint: 'Läge',
     learnMore: 'Läs mer',
     sources: 'Källor'
   }

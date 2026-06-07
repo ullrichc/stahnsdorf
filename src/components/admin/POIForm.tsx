@@ -5,14 +5,18 @@ import { doc, getDoc, setDoc, deleteDoc, collection as fbCollection, getDocs, qu
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
+import { makePOIId } from '@/lib/slug';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import POIImagesEditor from './POIImagesEditor';
 import type {
   FirestorePOI,
   PoiTyp,
   PublishStatus,
   Status,
   LocalizedText,
+  KoordinatenQuelleTyp,
+  KoordinatenGenauigkeit,
   Koordinaten,
   Bild,
 } from '@/lib/types';
@@ -26,11 +30,30 @@ const TYP_OPTIONS: { value: PoiTyp; label: string }[] = [
   { value: 'bereich', label: 'Bereich' },
 ];
 
+const KOORDINATEN_QUELLE_OPTIONS: { value: KoordinatenQuelleTyp; label: string }[] = [
+  { value: 'osm', label: 'OpenStreetMap' },
+  { value: 'wo-sie-ruhen', label: 'wo-sie-ruhen' },
+  { value: 'manuell-osmand', label: 'Manuell OsmAnd' },
+  { value: 'manuell-kamera', label: 'Manuell Kamera/EXIF' },
+  { value: 'redaktionell', label: 'Redaktionell' },
+  { value: 'altbestand', label: 'Altbestand' },
+  { value: 'unbekannt', label: 'Unbekannt' },
+];
+
+const KOORDINATEN_GENAUIGKEIT_OPTIONS: { value: KoordinatenGenauigkeit; label: string }[] = [
+  { value: 'hoch', label: 'hoch' },
+  { value: 'mittel', label: 'mittel' },
+  { value: 'niedrig', label: 'niedrig' },
+];
+
 const defaultPOI: Partial<FirestorePOI> = {
   id: '',
   typ: 'grab',
   name: { de: '' },
   koordinaten: null,
+  koordinaten_quelle: null,
+  lagehinweis: '',
+  lagehinweis_quelle: '',
   kurztext: { de: '' },
   beschreibung: { de: '' },
   datum_von: null,
@@ -129,10 +152,35 @@ export default function POIForm({ poiId }: POIFormProps) {
     const lngNum = parseFloat(currLng);
 
     if (!isNaN(latNum) && !isNaN(lngNum)) {
-      setField('koordinaten', { lat: latNum, lng: lngNum });
+      setFormData((prev) => ({
+        ...prev,
+        koordinaten: { lat: latNum, lng: lngNum },
+        koordinaten_quelle: {
+          typ: 'redaktionell',
+          beleg: 'Admin-Editor',
+          genauigkeit: 'mittel',
+        },
+      }));
     } else if (!currLat.trim() && !currLng.trim()) {
-      setField('koordinaten', null);
+      setFormData((prev) => ({ ...prev, koordinaten: null, koordinaten_quelle: null }));
     }
+  }
+
+  function setCoordinateSourceField(
+    key: 'typ' | 'beleg' | 'datum' | 'genauigkeit',
+    value: string
+  ) {
+    setFormData((prev) => {
+      const current = prev.koordinaten_quelle ?? {
+        typ: 'redaktionell' as KoordinatenQuelleTyp,
+        beleg: 'Admin-Editor',
+        genauigkeit: 'mittel' as KoordinatenGenauigkeit,
+      };
+      const next = { ...current, [key]: value };
+      if (key === 'datum' && !value.trim()) delete next.datum;
+      if (key === 'genauigkeit' && !value.trim()) delete next.genauigkeit;
+      return { ...prev, koordinaten_quelle: next };
+    });
   }
 
   // --- Publish Workflow ---
@@ -156,7 +204,7 @@ export default function POIForm({ poiId }: POIFormProps) {
     try {
       const now = Timestamp.now();
       const id = isNew
-        ? 'poi_sws_' + name.toLowerCase().replace(/[^a-z0-9äöüß]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+        ? makePOIId(name)
         : poiId!;
 
       const docData: any = {
@@ -180,6 +228,13 @@ export default function POIForm({ poiId }: POIFormProps) {
       if (!docData.datum_bis) docData.datum_bis = null;
       if (!docData.wikipedia_url) docData.wikipedia_url = null;
       if (!docData.notiz) docData.notiz = '';
+      if (!docData.koordinaten) docData.koordinaten_quelle = null;
+      if (docData.koordinaten_quelle) {
+        if (!docData.koordinaten_quelle.datum) delete docData.koordinaten_quelle.datum;
+        if (!docData.koordinaten_quelle.genauigkeit) delete docData.koordinaten_quelle.genauigkeit;
+      }
+      if (!docData.lagehinweis) delete docData.lagehinweis;
+      if (!docData.lagehinweis_quelle) delete docData.lagehinweis_quelle;
       docData.quellen = (docData.quellen ?? []).filter((q: string) => q.trim());
 
       await setDoc(doc(db, 'pois', id), docData);
@@ -225,7 +280,15 @@ export default function POIForm({ poiId }: POIFormProps) {
       (pos) => {
         const lat = Math.round(pos.coords.latitude * 1e6) / 1e6;
         const lng = Math.round(pos.coords.longitude * 1e6) / 1e6;
-        setField('koordinaten', { lat, lng });
+        setFormData((prev) => ({
+          ...prev,
+          koordinaten: { lat, lng },
+          koordinaten_quelle: {
+            typ: 'redaktionell',
+            beleg: 'Admin-Editor Browser-Geolocation',
+            genauigkeit: 'mittel',
+          },
+        }));
         setLatInput(lat.toString());
         setLngInput(lng.toString());
       },
@@ -343,6 +406,17 @@ export default function POIForm({ poiId }: POIFormProps) {
             </div>
           </div>
 
+          {/* Bilder */}
+          <div className="admin-section">
+            <div className="admin-section-title">Bilder</div>
+            <POIImagesEditor
+              poiId={poiId}
+              bilder={(formData.bilder ?? []) as Bild[]}
+              editorEmail={user?.email}
+              onChange={(nextImages) => setField('bilder', nextImages)}
+            />
+          </div>
+
           {/* Quellen */}
           <div className="admin-section">
             <div className="admin-section-title">Quellen</div>
@@ -394,22 +468,86 @@ export default function POIForm({ poiId }: POIFormProps) {
               </button>
             </div>
             {formData.koordinaten ? (
-              <button
-                className="admin-btn-secondary"
-                style={{ width: '100%', marginTop: '8px' }}
-                onClick={() => {
-                  setField('koordinaten', null);
-                  setLatInput('');
-                  setLngInput('');
-                }}
-              >
-                Koordinaten entfernen
-              </button>
+              <>
+                <div className="admin-field">
+                  <label>Koordinaten-Herkunft</label>
+                  <select
+                    value={formData.koordinaten_quelle?.typ ?? 'redaktionell'}
+                    onChange={(e) => setCoordinateSourceField('typ', e.target.value)}
+                  >
+                    {KOORDINATEN_QUELLE_OPTIONS.map((o) => (
+                      <option key={o.value} value={o.value}>{o.label}</option>
+                    ))}
+                  </select>
+                </div>
+                <div className="admin-field">
+                  <label>Beleg</label>
+                  <input
+                    type="text"
+                    value={formData.koordinaten_quelle?.beleg ?? ''}
+                    onChange={(e) => setCoordinateSourceField('beleg', e.target.value)}
+                    placeholder="z.B. OpenStreetMap: node 123"
+                  />
+                </div>
+                <div className="admin-row">
+                  <div className="admin-field">
+                    <label>Erfassungsdatum</label>
+                    <input
+                      type="text"
+                      value={formData.koordinaten_quelle?.datum ?? ''}
+                      onChange={(e) => setCoordinateSourceField('datum', e.target.value)}
+                      placeholder="YYYY-MM-DD"
+                    />
+                  </div>
+                  <div className="admin-field">
+                    <label>Genauigkeit</label>
+                    <select
+                      value={formData.koordinaten_quelle?.genauigkeit ?? ''}
+                      onChange={(e) => setCoordinateSourceField('genauigkeit', e.target.value)}
+                    >
+                      <option value="">–</option>
+                      {KOORDINATEN_GENAUIGKEIT_OPTIONS.map((o) => (
+                        <option key={o.value} value={o.value}>{o.label}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+                <button
+                  className="admin-btn-secondary"
+                  style={{ width: '100%', marginTop: '8px' }}
+                  onClick={() => {
+                    setFormData((prev) => ({ ...prev, koordinaten: null, koordinaten_quelle: null }));
+                    setLatInput('');
+                    setLngInput('');
+                  }}
+                >
+                  Koordinaten entfernen
+                </button>
+              </>
             ) : (
               <div className="hint" style={{ marginTop: '4px' }}>
                 Keine Koordinaten — POI erscheint nicht auf der Karte
               </div>
             )}
+
+            <div className="admin-field" style={{ marginTop: '16px' }}>
+              <label>Lagehinweis</label>
+              <textarea
+                rows={3}
+                value={formData.lagehinweis ?? ''}
+                onChange={(e) => setField('lagehinweis', e.target.value)}
+                placeholder="z.B. Block Lietzensee, Feld 22, Wahlstelle 115"
+              />
+            </div>
+            <div className="admin-field">
+              <label>Lagehinweis-Quelle</label>
+              <input
+                type="text"
+                value={formData.lagehinweis_quelle ?? ''}
+                onChange={(e) => setField('lagehinweis_quelle', e.target.value)}
+                placeholder="z.B. wo-sie-ruhen.de"
+              />
+            </div>
           </div>
 
           {/* Veröffentlichung */}

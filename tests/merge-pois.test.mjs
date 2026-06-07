@@ -7,6 +7,8 @@ describe('mergeCoordinates', () => {
     const scraping = { latitude: 52.38845, longitude: 13.18757, location_note: 'Block Reformation' };
     const result = mergeCoordinates(poi, scraping);
     expect(result.koordinaten).toEqual({ lat: 52.38845, lng: 13.18757 });
+    expect(result.koordinaten_quelle.typ).toBe('wo-sie-ruhen');
+    expect(result.lagehinweis).toBe('Block Reformation');
     expect(result.status).toBe('bestätigt');
   });
 
@@ -70,6 +72,14 @@ describe('createNewPoi', () => {
     expect(poi.id).toBe('poi_sws_reinhold-felderhoff');
     expect(poi.typ).toBe('grab');
     expect(poi.koordinaten).toEqual({ lat: 52.387747, lng: 13.177103 });
+    expect(poi.koordinaten_quelle).toEqual({
+      typ: 'wo-sie-ruhen',
+      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
+      datum: '2026-04-04',
+      genauigkeit: 'hoch',
+    });
+    expect(poi.lagehinweis).toBe('Block Trinitatis, Feld 10, Wahlstelle 64');
+    expect(poi.lagehinweis_quelle).toBe('wo-sie-ruhen.de');
     expect(poi.status).toBe('bestätigt');
     expect(poi.name.de).toBe('Reinhold Carl Thusmann Felderhoff');
     expect(poi.kurztext.de).toContain('Felderhoff');
@@ -79,7 +89,8 @@ describe('createNewPoi', () => {
     expect(poi.quellen).toContain('wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04');
     // Schema compliance: only valid fields
     const VALID_FIELDS = new Set(['id', 'typ', 'name', 'koordinaten', 'kurztext', 'beschreibung',
-      'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio', 'quellen', 'status', 'notiz']);
+      'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio', 'quellen', 'status', 'notiz',
+      'koordinaten_quelle', 'lagehinweis', 'lagehinweis_quelle']);
     Object.keys(poi).forEach(key => expect(VALID_FIELDS.has(key)).toBe(true));
   });
 });
@@ -135,7 +146,7 @@ describe.skipIf(!hasScrapingData)('buildMergedPois', () => {
     const VALID_FIELDS = new Set([
       'id', 'typ', 'name', 'koordinaten', 'kurztext', 'beschreibung',
       'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio',
-      'quellen', 'status', 'notiz',
+      'quellen', 'status', 'notiz', 'koordinaten_quelle', 'lagehinweis', 'lagehinweis_quelle',
     ]);
     const result = buildMergedPois();
     result.forEach(p => {

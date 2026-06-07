@@ -290,6 +290,9 @@ export default function BackupRestore() {
       {/* Export */}
       <div className="admin-section">
         <div className="admin-section-title">Export</div>
+        <p style={{ color: 'var(--admin-text-muted)', fontSize: '13px', lineHeight: 1.6, marginBottom: '12px' }}>
+          Bilddateien aus Firebase Storage sind nicht Teil des JSON-Backups. Exportiert werden die Bildreferenzen und Nachweise; die Originaldateien bleiben separat lokal gesichert.
+        </p>
         <div style={{ display: 'flex', gap: '12px' }}>
           <button
             className="admin-btn-new"
