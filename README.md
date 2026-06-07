@@ -9,6 +9,7 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 - **Automatische Spracherkennung** — Anzeige auf Deutsch, Englisch oder Französisch
 - **Globale Suche** — POIs nach Name finden
 - **Sammlungen** — thematisch kuratierte Gruppen (z.B. „Kunst & Kultur")
+- **POI-Bilder** — Detailseiten zeigen Bilder mit Lightbox, Zoom und Verschieben
 - **GPS-Entfernung** — zeigt die Live-Entfernung zum nächsten Ziel
 
 ## 🔒 Redaktionswerkzeug (`/admin`)
@@ -91,6 +92,7 @@ npm run build
 ## 📊 Datenmodell & Firebase Setup
 
 Die zentrale Quelle der Wahrheit für das Datenmodell ist `docs/schema.md`.
+Die zentrale Quelle der Wahrheit für die Inhalte ist `data/stahnsdorf-backup-translated.json`. Firestore ist die Laufzeitkopie für App und Admin, darf aber nicht der einzige Ort für redaktionelle Daten sein.
 Die TypeScript-Typen in `src/lib/types.ts` müssen **immer** mit dem Schema synchron gehalten werden (`POI`, `Collection`, `FirestorePOI`).
 Redaktionelle Regeln für POI-Informationstexte stehen in `docs/redaktionelle-leitlinien.md`.
 
@@ -140,14 +142,18 @@ npm run deploy:firebase   # Firestore + Storage zusammen
 ```
 
 ### POI-Bilder importieren
-Der Erstimport liest die lokalen Originale aus `inputdata/bilder`, erzeugt optimierte Anzeige- und Vorschauversionen und ergänzt die POI-Bildreferenzen. Ohne `--apply` läuft der Import als Dry-Run und schreibt nur Reports:
+Der Erstimport liest die lokalen Originale aus `inputdata/bilder` und `inputdata/0606bilder`, erzeugt optimierte Anzeige- und Vorschauversionen und ergänzt die POI-Bildreferenzen zuerst im JSON-Master. Ohne `--apply` laufen die Schreibschritte als Dry-Run:
 
 ```bash
+npm run images:manifest
+npm run images:prepare
+npm run images:apply
+npm run images:apply -- --apply
 npm run import:images
 npm run import:images -- --apply
 ```
 
-Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage.
+`images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage.
 
 ## 📄 Lizenz
 Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende

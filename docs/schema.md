@@ -9,6 +9,7 @@ Dieses Dokument beschreibt das verbindliche Schema für POIs und Collections.
 - POIs ohne Koordinaten werden in der Datenbank geführt, bis Koordinaten ermittelt sind.
 - Familiengräber sind normale POIs vom Typ `grab` — keine Sonderbehandlung.
 - Collections gruppieren POIs thematisch zur gemeinsamen Anzeige auf der Karte.
+- `data/stahnsdorf-backup-translated.json` ist die redaktionelle Quelle der Wahrheit für Inhalte. Firestore ist eine Laufzeitkopie und darf keine exklusiven POI-Daten enthalten.
 
 ---
 
@@ -123,6 +124,8 @@ Kennungen: Kleinbuchstaben, Bindestriche, Umlaute transliteriert (`ä` → `ae`)
 ---
 
 ## Bild-Objekt
+
+POI-Bilder werden explizit im Feld `bilder` des jeweiligen POI gespeichert. Die App leitet keine Bildliste automatisch aus der POI-ID oder aus Firebase-Storage-Ordnern ab.
 
 | Feld | Typ | Pflicht | Beschreibung |
 |---|---|---|---|

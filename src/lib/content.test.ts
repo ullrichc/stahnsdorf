@@ -56,6 +56,26 @@ describe('tree grave location hints', () => {
   })
 })
 
+describe('snapshot image references', () => {
+  const snapshotImages = snapshotPois.flatMap((poi) =>
+    (poi.bilder ?? []).map((image: any) => ({ poiId: poi.id, image })),
+  )
+
+  test('stores imported image references in the JSON master snapshot', () => {
+    expect(snapshotImages.length).toBeGreaterThanOrEqual(119)
+  })
+
+  test('stores renderable image URLs and credits for each imported image', () => {
+    for (const { poiId, image } of snapshotImages) {
+      expect(image.datei, poiId).toMatch(/^https:\/\/firebasestorage\.googleapis\.com\//)
+      expect(image.vorschau_datei, poiId).toMatch(/^https:\/\/firebasestorage\.googleapis\.com\//)
+      expect(image.storage_pfad, poiId).toMatch(/^poi-images\/.+\/display\/.+\.jpg$/)
+      expect(image.vorschau_storage_pfad, poiId).toMatch(/^poi-images\/.+\/thumb\/.+\.jpg$/)
+      expect(image.nachweis, poiId).toBeTruthy()
+    }
+  })
+})
+
 // ─── getAllCollections ────────────────────────────────────────
 
 describe('getAllCollections', () => {

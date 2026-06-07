@@ -91,7 +91,36 @@
       "datum_von": "1889-03-28",
       "datum_bis": "1939-07-06",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Adolf_Rohrbach",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-rohrbach%2Fdisplay%2F6595f26612-31-rohrbach-adolf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_adolf-rohrbach/display/6595f26612-31-rohrbach-adolf.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-rohrbach%2Fthumb%2F6595f26612-31-rohrbach-adolf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_adolf-rohrbach/thumb/6595f26612-31-rohrbach-adolf.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "31 Rohrbach, Adolf.jpg",
+          "quelle_hash": "6595f26612cb7540bb77eab1dd265fc1f3fcea78dd263dfdc0ab451b8a42e29a"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-rohrbach%2Fdisplay%2F3930d2fc6c-31a-rohrbach-adolf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_adolf-rohrbach/display/3930d2fc6c-31a-rohrbach-adolf.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-rohrbach%2Fthumb%2F3930d2fc6c-31a-rohrbach-adolf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_adolf-rohrbach/thumb/3930d2fc6c-31a-rohrbach-adolf.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "31a Rohrbach, Adolf.jpg",
+          "quelle_hash": "3930d2fc6c44077dca854c6ad9ffe8e75b70f8fc1d5379c6b6a6964d125ee048"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -149,7 +178,22 @@
       "datum_von": "1909-02-05",
       "datum_bis": "1990-07-24",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Albert_Wilkening",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_albert-wilkening%2Fdisplay%2F1362ebd7c6-16-wilkening-albert.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_albert-wilkening/display/1362ebd7c6-16-wilkening-albert.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_albert-wilkening%2Fthumb%2F1362ebd7c6-16-wilkening-albert.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_albert-wilkening/thumb/1362ebd7c6-16-wilkening-albert.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "16 Wilkening, Albert.jpg",
+          "quelle_hash": "1362ebd7c6f605ab948fa1d5260608c5458afadd41f00a3ed4d9f023e4285374"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -202,7 +246,36 @@
       "datum_von": "1846-05-20",
       "datum_bis": "1934-01-19",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Alexander_von_Kluck",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alexander-von-kluck%2Fdisplay%2F463bdc6bcf-06-kluck-alexander-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_alexander-von-kluck/display/463bdc6bcf-06-kluck-alexander-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alexander-von-kluck%2Fthumb%2F463bdc6bcf-06-kluck-alexander-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_alexander-von-kluck/thumb/463bdc6bcf-06-kluck-alexander-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "06 Kluck, Alexander von.jpg",
+          "quelle_hash": "463bdc6bcf71667b1776a8344477869dcbe6b9019d6b537c8e832bf79e80c51b"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alexander-von-kluck%2Fdisplay%2F078f47415a-06a-kluck-alexander-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_alexander-von-kluck/display/078f47415a-06a-kluck-alexander-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alexander-von-kluck%2Fthumb%2F078f47415a-06a-kluck-alexander-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_alexander-von-kluck/thumb/078f47415a-06a-kluck-alexander-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "06a Kluck, Alexander von.jpg",
+          "quelle_hash": "078f47415a83cdf134d067dff68b9392d8d9e035097a68a078833c7df176b6f7"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -259,7 +332,36 @@
       "datum_von": "1876-06-23",
       "datum_bis": "1941-12-23",
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alfred-schneider%2Fdisplay%2Fc929e9b078-17-schneider-alfred.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_alfred-schneider/display/c929e9b078-17-schneider-alfred.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alfred-schneider%2Fthumb%2Fc929e9b078-17-schneider-alfred.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_alfred-schneider/thumb/c929e9b078-17-schneider-alfred.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "17 Schneider, Alfred.jpg",
+          "quelle_hash": "c929e9b078002bbcb26f6c2e88d94e2484b206a52f8da3c2fb4d6de4c61e26e2"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alfred-schneider%2Fdisplay%2Fa5393e99d5-17a-schneider-alfred.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_alfred-schneider/display/a5393e99d5-17a-schneider-alfred.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alfred-schneider%2Fthumb%2Fa5393e99d5-17a-schneider-alfred.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_alfred-schneider/thumb/a5393e99d5-17a-schneider-alfred.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "17a Schneider, Alfred.jpg",
+          "quelle_hash": "a5393e99d556293e0694bb7efc902c3f2638b050ab0e07d35e1ce8ad218ac6dc"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -410,7 +512,36 @@
         "ru": "Памятник напоминает о людях, чья жизнь была разрушена войной, диктатурой и государственной властью. Он также делает Южно-Западное кладбище местом политической и общественной памяти.",
         "sv": "Anläggningen påminner om människor vars liv har förstörts av krig, diktatur och statligt våld. Den gör även Sydvästkyrkogården till en plats för politiskt och samhälleligt minne."
       },
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anlage-opfer-krieg-und-gewaltherrschaft%2Fdisplay%2F19f87c13bd-37-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_anlage-opfer-krieg-und-gewaltherrschaft/display/19f87c13bd-37-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anlage-opfer-krieg-und-gewaltherrschaft%2Fthumb%2F19f87c13bd-37-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_anlage-opfer-krieg-und-gewaltherrschaft/thumb/19f87c13bd-37-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "37 Anlage für die Opfer von Krieg und Gewaltherrschaft.jpg",
+          "quelle_hash": "19f87c13bd87bab5403bf0bce98fe1f8517ced5f7156d3df04dedce45b2364d5"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anlage-opfer-krieg-und-gewaltherrschaft%2Fdisplay%2F711c16d692-37a-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_anlage-opfer-krieg-und-gewaltherrschaft/display/711c16d692-37a-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anlage-opfer-krieg-und-gewaltherrschaft%2Fthumb%2F711c16d692-37a-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_anlage-opfer-krieg-und-gewaltherrschaft/thumb/711c16d692-37a-anlage-fuer-die-opfer-von-krieg-und-gewaltherrschaft.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "37a Anlage für die Opfer von Krieg und Gewaltherrschaft.jpg",
+          "quelle_hash": "711c16d69278e2fcd5519b7b940b946b7f8212d2408192e619ca15d611cc372c"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -561,7 +692,36 @@
       "datum_von": "1859-07-19",
       "datum_bis": "1922-03-07",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Carl_Ludwig_Schleich",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_carl-ludwig-schleich%2Fdisplay%2F0796481c99-09-schleich-carl-ludwig.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_carl-ludwig-schleich/display/0796481c99-09-schleich-carl-ludwig.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_carl-ludwig-schleich%2Fthumb%2F0796481c99-09-schleich-carl-ludwig.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_carl-ludwig-schleich/thumb/0796481c99-09-schleich-carl-ludwig.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "09 Schleich, Carl Ludwig.jpg",
+          "quelle_hash": "0796481c9951825f46896e34da5886b05f23b1f5e96544e88bbc69a412e5714d"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_carl-ludwig-schleich%2Fdisplay%2Fc718d53532-09a-schleich-carl-ludwig.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_carl-ludwig-schleich/display/c718d53532-09a-schleich-carl-ludwig.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_carl-ludwig-schleich%2Fthumb%2Fc718d53532-09a-schleich-carl-ludwig.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_carl-ludwig-schleich/thumb/c718d53532-09a-schleich-carl-ludwig.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "09a Schleich, Carl Ludwig.jpg",
+          "quelle_hash": "c718d535326dc562f4bcaa6d3cf898237292be7550334521fa08b50620a6de66"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -616,7 +776,22 @@
         "sv": "Kristusmonumentet av Ludwig Manzel tillhör de mest kända skulpturerna på Südwestkirchhof. Det förenar representativ gravkonst med det religiösa symbolspråket från den tidiga anläggningen."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_christusdenkmal%2Fdisplay%2Fa240bba2cc-08-christusdenkmal.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_christusdenkmal/display/a240bba2cc-08-christusdenkmal.jpg",
+          "breite": 779,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_christusdenkmal%2Fthumb%2Fa240bba2cc-08-christusdenkmal.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_christusdenkmal/thumb/a240bba2cc-08-christusdenkmal.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 296,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "08 Christusdenkmal.jpg",
+          "quelle_hash": "a240bba2cc74a809bcaca7adec0a53770e80068147f5ba11a5bf70291ddc201d"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -671,7 +846,36 @@
       "datum_von": "1871-06-09",
       "datum_bis": "1942-03-21",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Conrad_Matscho%C3%9F",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_conrad-matschoss%2Fdisplay%2F01c792e211-46-matschoss-conrad.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_conrad-matschoss/display/01c792e211-46-matschoss-conrad.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_conrad-matschoss%2Fthumb%2F01c792e211-46-matschoss-conrad.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_conrad-matschoss/thumb/01c792e211-46-matschoss-conrad.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "46 Matschoß, Conrad.jpg",
+          "quelle_hash": "01c792e211d8a6e9dc70f8dbee2fe290587d13a32eb0f787c48ecf4653df72e2"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_conrad-matschoss%2Fdisplay%2Fab22d691ca-46a-matschoss-conrad.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_conrad-matschoss/display/ab22d691ca-46a-matschoss-conrad.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_conrad-matschoss%2Fthumb%2Fab22d691ca-46a-matschoss-conrad.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_conrad-matschoss/thumb/ab22d691ca-46a-matschoss-conrad.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "46a Matschoß. Conrad.jpg",
+          "quelle_hash": "ab22d691ca7a6148942737e0e5b091b642b918f57c439bb8e92e66422cce9e6f"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -726,7 +930,36 @@
       "datum_von": "1937-12-29",
       "datum_bis": "2018-08-23",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Dieter_Thomas_Heck",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_dieter-thomas-heck%2Fdisplay%2Fba1ffd0734-15-heck-dieter-thomas.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_dieter-thomas-heck/display/ba1ffd0734-15-heck-dieter-thomas.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_dieter-thomas-heck%2Fthumb%2Fba1ffd0734-15-heck-dieter-thomas.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_dieter-thomas-heck/thumb/ba1ffd0734-15-heck-dieter-thomas.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "15 Heck, Dieter-Thomas.jpg",
+          "quelle_hash": "ba1ffd07349eaf724ad75f771eab9e4bdc1db69cb0d46aece19434e60904d9e2"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_dieter-thomas-heck%2Fdisplay%2Fa4f53cc0f3-15a-heck-dieter-thomas.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_dieter-thomas-heck/display/a4f53cc0f3-15a-heck-dieter-thomas.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_dieter-thomas-heck%2Fthumb%2Fa4f53cc0f3-15a-heck-dieter-thomas.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_dieter-thomas-heck/thumb/a4f53cc0f3-15a-heck-dieter-thomas.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "15a Heck, Dieter-Thomas.jpg",
+          "quelle_hash": "a4f53cc0f39210cf8f28861c62d893851805f9349684a2c82807e5ef4641fa7e"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
@@ -782,7 +1015,36 @@
       "datum_von": "1872-01-04",
       "datum_bis": "1940-09-07",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Edmund_Rumpler",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_edmund-rumpler%2Fdisplay%2F43c44e0b43-02-rumpler-edmund.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_edmund-rumpler/display/43c44e0b43-02-rumpler-edmund.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_edmund-rumpler%2Fthumb%2F43c44e0b43-02-rumpler-edmund.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_edmund-rumpler/thumb/43c44e0b43-02-rumpler-edmund.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "02 Rumpler, Edmund.jpg",
+          "quelle_hash": "43c44e0b43584d0eda4ff8614f84188d5ffc52f6c77c3bd7a1b76e3639451c01"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_edmund-rumpler%2Fdisplay%2F54d155a0aa-02a-rumpler-edmund.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_edmund-rumpler/display/54d155a0aa-02a-rumpler-edmund.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_edmund-rumpler%2Fthumb%2F54d155a0aa-02a-rumpler-edmund.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_edmund-rumpler/thumb/54d155a0aa-02a-rumpler-edmund.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "02a Rumpler, Edmund.jpg",
+          "quelle_hash": "54d155a0aa63953c4e2d1443f664587e22957c84060c4429ff95925e2258fe13"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -839,7 +1101,36 @@
       "datum_von": "1853-10-26",
       "datum_bis": "1952-02-04",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Elisabeth_von_Plotho",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_elisabeth-von-ardenne%2Fdisplay%2F4adf8fcfaf-29-ardenne-elisabeth-baronin-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_elisabeth-von-ardenne/display/4adf8fcfaf-29-ardenne-elisabeth-baronin-von.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_elisabeth-von-ardenne%2Fthumb%2F4adf8fcfaf-29-ardenne-elisabeth-baronin-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_elisabeth-von-ardenne/thumb/4adf8fcfaf-29-ardenne-elisabeth-baronin-von.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "29 Ardenne, Elisabeth Baronin von,.jpg",
+          "quelle_hash": "4adf8fcfaf53ef0b2388e3b9505a205edb9adca0b2b8c97180d9eb4c5127c96c"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_elisabeth-von-ardenne%2Fdisplay%2Fe469636b72-29a-ardenne-elisabeth-baronin-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_elisabeth-von-ardenne/display/e469636b72-29a-ardenne-elisabeth-baronin-von.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_elisabeth-von-ardenne%2Fthumb%2Fe469636b72-29a-ardenne-elisabeth-baronin-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_elisabeth-von-ardenne/thumb/e469636b72-29a-ardenne-elisabeth-baronin-von.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "29a Ardenne, Elisabeth Baronin von.jpg",
+          "quelle_hash": "e469636b72685c65d27106eefba5b5f8eed38e167cbb0263c3a1deed21174b3d"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -896,7 +1187,36 @@
       "datum_von": "1867-11-15",
       "datum_bis": "1930-03-31",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Emil_Krebs",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_emil-krebs%2Fdisplay%2Fc72481a669-42-krebs-emil.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_emil-krebs/display/c72481a669-42-krebs-emil.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_emil-krebs%2Fthumb%2Fc72481a669-42-krebs-emil.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_emil-krebs/thumb/c72481a669-42-krebs-emil.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "42 Krebs, Emil.jpg",
+          "quelle_hash": "c72481a669320224e7a9cb1b5fd37ff1a9c14640ab7a0b4b654d811cf40ff882"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_emil-krebs%2Fdisplay%2Fae725cdef3-42a-krebs-emil.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_emil-krebs/display/ae725cdef3-42a-krebs-emil.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_emil-krebs%2Fthumb%2Fae725cdef3-42a-krebs-emil.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_emil-krebs/thumb/ae725cdef3-42a-krebs-emil.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "42a Krebs, Emil.jpg",
+          "quelle_hash": "ae725cdef3fac2f0c989afae5b7d7696744397b979b01a19c0963c08891d66f1"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -953,7 +1273,36 @@
       "datum_von": "1854-09-01",
       "datum_bis": "1921-09-27",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Engelbert_Humperdinck",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_engelbert-humperdinck%2Fdisplay%2F812864e024-10-humperdinck-engelbert.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_engelbert-humperdinck/display/812864e024-10-humperdinck-engelbert.jpg",
+          "breite": 480,
+          "hoehe": 708,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_engelbert-humperdinck%2Fthumb%2F812864e024-10-humperdinck-engelbert.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_engelbert-humperdinck/thumb/812864e024-10-humperdinck-engelbert.jpg",
+          "vorschau_breite": 325,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "10 Humperdinck, Engelbert.jpg",
+          "quelle_hash": "812864e024e45df2f97a946cdf7c7ed397ded66eba3da2fc2071d674651b13ba"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_engelbert-humperdinck%2Fdisplay%2F470eddeffa-10a-humperdinck-engelbert.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_engelbert-humperdinck/display/470eddeffa-10a-humperdinck-engelbert.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_engelbert-humperdinck%2Fthumb%2F470eddeffa-10a-humperdinck-engelbert.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_engelbert-humperdinck/thumb/470eddeffa-10a-humperdinck-engelbert.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "10a Humperdinck, Engelbert.jpg",
+          "quelle_hash": "470eddeffafedd783a8e0bfd65d15b27e788fc5fe70e542e87fba22b10180c66"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1010,7 +1359,36 @@
       "datum_von": "1889-06-02",
       "datum_bis": "1933-04-07",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Erik_Jan_Hanussen",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F9990307540-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/9990307540-59-erik-jan-hanussen-steinschneider.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F9990307540-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/9990307540-59-erik-jan-hanussen-steinschneider.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "59 Erik Jan Hanussen-Steinschneider.jpg",
+          "quelle_hash": "99903075408b635a45406827db20d585435846f45677ea9049bb11d8a540b4fa"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "59a Erik Jan Hanussen-Steinschneider.jpg",
+          "quelle_hash": "1b161f2478377053d8e814487f9391abf618cffef1f02601b91b064e3858a1bd"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1067,7 +1445,36 @@
       "datum_von": "1880-01-01",
       "datum_bis": "1939-08-21",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ernst_Gennat",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ernst-gennat%2Fdisplay%2Fd4f1bc599d-01-gennat-ernst.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ernst-gennat/display/d4f1bc599d-01-gennat-ernst.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ernst-gennat%2Fthumb%2Fd4f1bc599d-01-gennat-ernst.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ernst-gennat/thumb/d4f1bc599d-01-gennat-ernst.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "01 Gennat, Ernst.jpg",
+          "quelle_hash": "d4f1bc599d12ade7e9038e3d3dd42062f15c18ef7f126c297d147c6cb02b7752"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ernst-gennat%2Fdisplay%2F6ba73e557d-01a-gennat-ernst.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ernst-gennat/display/6ba73e557d-01a-gennat-ernst.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ernst-gennat%2Fthumb%2F6ba73e557d-01a-gennat-ernst.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ernst-gennat/thumb/6ba73e557d-01a-gennat-ernst.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "01a Gennat, Ernst.jpg",
+          "quelle_hash": "6ba73e557dc6337b1ccbc5a1080cadbd02b2ae091c0fa29b615a3e396b907cdd"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1178,7 +1585,36 @@
       "datum_von": "1833-05-05",
       "datum_bis": "1905-10-06",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ferdinand_von_Richthofen",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ferdinand-von-richthofen%2Fdisplay%2Fa976f15b0f-44-richthofen-ferdinand-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ferdinand-von-richthofen/display/a976f15b0f-44-richthofen-ferdinand-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ferdinand-von-richthofen%2Fthumb%2Fa976f15b0f-44-richthofen-ferdinand-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ferdinand-von-richthofen/thumb/a976f15b0f-44-richthofen-ferdinand-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "44 Richthofen, Ferdinand von.jpg",
+          "quelle_hash": "a976f15b0f2c9bc24b15d520842fb9da32c3de13b347013e8cb4737b54da434b"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ferdinand-von-richthofen%2Fdisplay%2Fa868f02978-44a-richthofen-ferdinand-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ferdinand-von-richthofen/display/a868f02978-44a-richthofen-ferdinand-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ferdinand-von-richthofen%2Fthumb%2Fa868f02978-44a-richthofen-ferdinand-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ferdinand-von-richthofen/thumb/a868f02978-44a-richthofen-ferdinand-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "44a Richthofen, Ferdinand von.jpg",
+          "quelle_hash": "a868f029782cbe8ab684ee7921f84335a9803ddf8b79b2e4edddc7bdcc7809ae"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1233,7 +1669,22 @@
       "datum_von": "1877-11-23",
       "datum_bis": "1933-11-26",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Franz_Bracht",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fdisplay%2F9b31636d81-57-franz-bracht.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_franz-bracht/display/9b31636d81-57-franz-bracht.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fthumb%2F9b31636d81-57-franz-bracht.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_franz-bracht/thumb/9b31636d81-57-franz-bracht.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "57 Franz Bracht.jpg",
+          "quelle_hash": "9b31636d81482cfaec6e315334907dc7b27ad0159b72a3a9ac49ea016d0c509a"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1337,7 +1788,36 @@
       "datum_von": "1891-04-28",
       "datum_bis": "1937-02-19",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wei%C3%9Fler",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedrich-weissler%2Fdisplay%2F3f6bcc3cbc-39-weissler-friedrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_friedrich-weissler/display/3f6bcc3cbc-39-weissler-friedrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedrich-weissler%2Fthumb%2F3f6bcc3cbc-39-weissler-friedrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_friedrich-weissler/thumb/3f6bcc3cbc-39-weissler-friedrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "39 Weißler, Friedrich.jpg",
+          "quelle_hash": "3f6bcc3cbc816d4cb1ac7024efc675fe8025a592de7f7d43093364d2a8f7b77b"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedrich-weissler%2Fdisplay%2Fbf29ea8228-39a-weissler-friedrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_friedrich-weissler/display/bf29ea8228-39a-weissler-friedrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedrich-weissler%2Fthumb%2Fbf29ea8228-39a-weissler-friedrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_friedrich-weissler/thumb/bf29ea8228-39a-weissler-friedrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "39a Weißler, Friedrich.jpg",
+          "quelle_hash": "bf29ea822865bc5984a30581b25a23b951c3f119592470ddea30c4d6fe19aa6f"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1392,7 +1872,36 @@
       "datum_von": "1885-09-11",
       "datum_bis": "1940-12-05",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_Banneitz",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fritz-banneitz%2Fdisplay%2Fc91912c5b4-50-banneitz-fritz.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_fritz-banneitz/display/c91912c5b4-50-banneitz-fritz.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fritz-banneitz%2Fthumb%2Fc91912c5b4-50-banneitz-fritz.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_fritz-banneitz/thumb/c91912c5b4-50-banneitz-fritz.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "50 Banneitz, Fritz.jpg",
+          "quelle_hash": "c91912c5b4cd2219c9b113a0bbbfc484682aa5516c93fe4b28911f2d33d7f320"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fritz-banneitz%2Fdisplay%2F41ffb9dd91-50a-banneitz-fritz.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_fritz-banneitz/display/41ffb9dd91-50a-banneitz-fritz.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fritz-banneitz%2Fthumb%2F41ffb9dd91-50a-banneitz-fritz.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_fritz-banneitz/thumb/41ffb9dd91-50a-banneitz-fritz.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "50a Banneitz, Fritz.jpg",
+          "quelle_hash": "41ffb9dd915e66c7368d15fd339968d9f371059b3c6b23bf2fb47948bd57a728"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1447,7 +1956,36 @@
       "datum_von": "1888-12-28",
       "datum_bis": "1931-03-11",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_Murnau",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fw-murnau%2Fdisplay%2F3937f2aa0a-14-murnau-plumpe-friedrich-wilhelm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_fw-murnau/display/3937f2aa0a-14-murnau-plumpe-friedrich-wilhelm.jpg",
+          "breite": 683,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fw-murnau%2Fthumb%2F3937f2aa0a-14-murnau-plumpe-friedrich-wilhelm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_fw-murnau/thumb/3937f2aa0a-14-murnau-plumpe-friedrich-wilhelm.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 337,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "14 Murnau (Plumpe), Friedrich-Wilhelm.jpg",
+          "quelle_hash": "3937f2aa0adeb03dbf3de3d384adf509e0890dd6d8fc1ef9eedbe17b33034838"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fw-murnau%2Fdisplay%2F5ec8a172cd-14a-murnau-plumpe-friedrich-wilhelm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_fw-murnau/display/5ec8a172cd-14a-murnau-plumpe-friedrich-wilhelm.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_fw-murnau%2Fthumb%2F5ec8a172cd-14a-murnau-plumpe-friedrich-wilhelm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_fw-murnau/thumb/5ec8a172cd-14a-murnau-plumpe-friedrich-wilhelm.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "14a Murnau (Plumpe), Friedrich-Wilhelm.jpg",
+          "quelle_hash": "5ec8a172cd70ed13ef117610171b7a0a4b4ff5a059209d144214f9ef33e7a0e1"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1546,7 +2084,22 @@
       "datum_von": "1869-08-30",
       "datum_bis": "1940-05-05",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Georg_Graf_von_Arco",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_georg-graf-von-arco%2Fdisplay%2Fd4750763fc-07-arco-georg-graf-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_georg-graf-von-arco/display/d4750763fc-07-arco-georg-graf-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_georg-graf-von-arco%2Fthumb%2Fd4750763fc-07-arco-georg-graf-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_georg-graf-von-arco/thumb/d4750763fc-07-arco-georg-graf-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "07 Arco, Georg Graf von.jpg",
+          "quelle_hash": "d4750763fc0cd5bf2edf61ea8933a802531cdbc42dd2cdea38123d2d8e99a6bb"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1601,7 +2154,36 @@
       "datum_von": "1851-07-26",
       "datum_bis": "1925-09-11",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Gustav_Kadelburg",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-kadelburg%2Fdisplay%2F1ad884dcbc-13-kadelburg-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-kadelburg/display/1ad884dcbc-13-kadelburg-gustav.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-kadelburg%2Fthumb%2F1ad884dcbc-13-kadelburg-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-kadelburg/thumb/1ad884dcbc-13-kadelburg-gustav.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "13 Kadelburg, Gustav.jpg",
+          "quelle_hash": "1ad884dcbc31025510d6dab6685a60b104c35bc287845383adc8176bd57d697e"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-kadelburg%2Fdisplay%2F28739b9113-13a-kadelburg-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-kadelburg/display/28739b9113-13a-kadelburg-gustav.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-kadelburg%2Fthumb%2F28739b9113-13a-kadelburg-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-kadelburg/thumb/28739b9113-13a-kadelburg-gustav.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "13a Kadelburg, Gustav.jpg",
+          "quelle_hash": "28739b91136c8e2127b3bd43b08c657910a8a0ffc0e0407b82237d2c820d092d"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1658,7 +2240,36 @@
       "datum_von": "1832-10-21",
       "datum_bis": "1895-11-10",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Gustav_Langenscheidt",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-langenscheidt%2Fdisplay%2F1f55a9a97f-36-langenscheidt-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-langenscheidt/display/1f55a9a97f-36-langenscheidt-gustav.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-langenscheidt%2Fthumb%2F1f55a9a97f-36-langenscheidt-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-langenscheidt/thumb/1f55a9a97f-36-langenscheidt-gustav.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "36 Langenscheidt, Gustav.jpg",
+          "quelle_hash": "1f55a9a97fd98897c100cad7fb43124cbbc63e42e43e4f8917b2b8399006d025"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-langenscheidt%2Fdisplay%2F7fce615e58-36a-langenscheidt-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-langenscheidt/display/7fce615e58-36a-langenscheidt-gustav.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-langenscheidt%2Fthumb%2F7fce615e58-36a-langenscheidt-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-langenscheidt/thumb/7fce615e58-36a-langenscheidt-gustav.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "36a Langenscheidt, Gustav.jpg",
+          "quelle_hash": "7fce615e58fc0cb665ec7b6290ce327250c58e6409d401aafe30b2c1f3020f06"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1715,7 +2326,36 @@
       "datum_von": "1859-07-10",
       "datum_bis": "1917-11-20",
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-werner%2Fdisplay%2F0edc7ba189-19-werner-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-werner/display/0edc7ba189-19-werner-gustav.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-werner%2Fthumb%2F0edc7ba189-19-werner-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-werner/thumb/0edc7ba189-19-werner-gustav.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "19 Werner, Gustav.jpg",
+          "quelle_hash": "0edc7ba189694ac6d0d5d2ee73889c14542609ce201a926f059d3ed786e6d0d4"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-werner%2Fdisplay%2F96434855e4-19a-werner-gustav.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_gustav-werner/display/96434855e4-19a-werner-gustav.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_gustav-werner%2Fthumb%2F96434855e4-19a-werner-gustav.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_gustav-werner/thumb/96434855e4-19a-werner-gustav.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "19a Werner, Gustav.jpg",
+          "quelle_hash": "96434855e495377c8b06ae29f87df8a33d6b9da6390070c094bac2eb493b955b"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1771,7 +2411,36 @@
       "datum_von": "1921-01-12",
       "datum_bis": "1942-12-03",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Hanno_G%C3%BCnther",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hanno-guenther%2Fdisplay%2F875e2e9dd7-56-guenther-hanno-hans-joachim.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hanno-guenther/display/875e2e9dd7-56-guenther-hanno-hans-joachim.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hanno-guenther%2Fthumb%2F875e2e9dd7-56-guenther-hanno-hans-joachim.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hanno-guenther/thumb/875e2e9dd7-56-guenther-hanno-hans-joachim.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "56 Günther, Hanno (Hans-Joachim).jpg",
+          "quelle_hash": "875e2e9dd7440b8a8f7f4c1645885821a4a6d9f16a2f1f11c901f376484afb5f"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hanno-guenther%2Fdisplay%2F3bc2473079-56a-guenther-hanno-hans-joachim.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hanno-guenther/display/3bc2473079-56a-guenther-hanno-hans-joachim.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hanno-guenther%2Fthumb%2F3bc2473079-56a-guenther-hanno-hans-joachim.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hanno-guenther/thumb/3bc2473079-56a-guenther-hanno-hans-joachim.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "56a Günther, Hanno (Hans-Joachim).jpg",
+          "quelle_hash": "3bc247307931f9932ac94d74c0efc9efb2375d26302955da018331b717436b13"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1923,7 +2592,36 @@
         "ru": "Капелла является архитектурной достопримечательностью Южного западного кладбища. Ее деревянная конструкция и богато оформленная форма придают кладбищу неповторимый северный акцент.",
         "sv": "Kapellet är den arkitektoniska landmärket på Sydvästkyrkogården. Dess träkonstruktion och rikt utformade form ger kyrkogården en osviklig nordisk touch."
       },
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hauptkapelle%2Fdisplay%2Fe1d8795da3-45-friedhofskapelle.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hauptkapelle/display/e1d8795da3-45-friedhofskapelle.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hauptkapelle%2Fthumb%2Fe1d8795da3-45-friedhofskapelle.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hauptkapelle/thumb/e1d8795da3-45-friedhofskapelle.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "45 Friedhofskapelle.jpg",
+          "quelle_hash": "e1d8795da34dd5f5abd9f7898bd0f3c3725d04c332b759316295bfbee84efb7e"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hauptkapelle%2Fdisplay%2F47e376d44a-45a-friedhofskapelle.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hauptkapelle/display/47e376d44a-45a-friedhofskapelle.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hauptkapelle%2Fthumb%2F47e376d44a-45a-friedhofskapelle.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hauptkapelle/thumb/47e376d44a-45a-friedhofskapelle.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "45a Friedhofskapelle.jpg",
+          "quelle_hash": "47e376d44a99200a936c8892829a5eea5779704130f9608fb702e2c03eab2116"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -1980,7 +2678,36 @@
       "datum_von": "1884-01-12",
       "datum_bis": "1940-03-14",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Heinrich_L%C3%BCbbe",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-luebbe%2Fdisplay%2F4d226c51f1-25-luebbe-heinrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heinrich-luebbe/display/4d226c51f1-25-luebbe-heinrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-luebbe%2Fthumb%2F4d226c51f1-25-luebbe-heinrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heinrich-luebbe/thumb/4d226c51f1-25-luebbe-heinrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "25 Lübbe, Heinrich.jpg",
+          "quelle_hash": "4d226c51f11eef44aaafff7611cb1ccd46be138324bec2422b7c9118517ee353"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-luebbe%2Fdisplay%2F47871f4d31-25a-luebbe-heinrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heinrich-luebbe/display/47871f4d31-25a-luebbe-heinrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-luebbe%2Fthumb%2F47871f4d31-25a-luebbe-heinrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heinrich-luebbe/thumb/47871f4d31-25a-luebbe-heinrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "25a Lübbe, Heinrich.jpg",
+          "quelle_hash": "47871f4d31a28697ca69cd24ee5d1af8b512bdb7a4f5a81ff65959fcb5ac2906"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2035,7 +2762,36 @@
       "datum_von": "1858-01-10",
       "datum_bis": "1929-08-09",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Heinrich_Zille",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-zille%2Fdisplay%2Ffa58ddf83a-38-zille-heinrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heinrich-zille/display/fa58ddf83a-38-zille-heinrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-zille%2Fthumb%2Ffa58ddf83a-38-zille-heinrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heinrich-zille/thumb/fa58ddf83a-38-zille-heinrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "38 Zille, Heinrich.jpg",
+          "quelle_hash": "fa58ddf83a098b9e592ffdaa90d411d69ba2830893e2299a84ab4460ea9e23d0"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-zille%2Fdisplay%2F22baba6b1d-38a-zille-heinrich.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heinrich-zille/display/22baba6b1d-38a-zille-heinrich.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heinrich-zille%2Fthumb%2F22baba6b1d-38a-zille-heinrich.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heinrich-zille/thumb/22baba6b1d-38a-zille-heinrich.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "38a Zille, Heinrich.jpg",
+          "quelle_hash": "22baba6b1d8d4ed59edd22037b3ce0e66943f49e0b77249fdb007c69bddd6e7e"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2145,7 +2901,36 @@
       "datum_von": "1855-01-20",
       "datum_bis": "1922-05-12",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Hugo_Conwentz",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-conwentz%2Fdisplay%2Fb3d20fb75a-55-conwentz-hugo.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-conwentz/display/b3d20fb75a-55-conwentz-hugo.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-conwentz%2Fthumb%2Fb3d20fb75a-55-conwentz-hugo.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-conwentz/thumb/b3d20fb75a-55-conwentz-hugo.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "55 Conwentz, Hugo.jpg",
+          "quelle_hash": "b3d20fb75aa583c232057ab89ad2724cd56a6f58eadc66072023f5f5706af9d4"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-conwentz%2Fdisplay%2Fb8673164ea-55a-conwentz-hugo.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-conwentz/display/b8673164ea-55a-conwentz-hugo.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-conwentz%2Fthumb%2Fb8673164ea-55a-conwentz-hugo.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-conwentz/thumb/b8673164ea-55a-conwentz-hugo.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "55a Conwentz, Hugo.jpg",
+          "quelle_hash": "b8673164eaeb1368316b7791cc0d4c2598235971e9fc0985c97a93fc9eac59b7"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2202,7 +2987,36 @@
       "datum_von": "1908-06-24",
       "datum_bis": "1942-11-01",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Hugo_Distler",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2F3788d73927-61-hugo-distler.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/3788d73927-61-hugo-distler.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2F3788d73927-61-hugo-distler.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/3788d73927-61-hugo-distler.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "61 Hugo Distler.jpg",
+          "quelle_hash": "3788d73927b55feaf1e8048d3011dbe5120222402333724b33557d1d3c4208fc"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2Faeaf57714e-61a-hugo-distler.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/aeaf57714e-61a-hugo-distler.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2Faeaf57714e-61a-hugo-distler.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/aeaf57714e-61a-hugo-distler.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "61a Hugo Distler.jpg",
+          "quelle_hash": "aeaf57714ebf37fb53db5cb911867d32705e404ad4204264ea68cd91ad7f7d84"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2302,7 +3116,50 @@
       "datum_von": "1947-04-01",
       "datum_bis": "2023-12-22",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ingrid_Steeger",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "58 Ingrid Steeger (nicht auf Plan).jpg",
+          "quelle_hash": "0080b59d99700d1959116a30c4d05b49fd888b9c7e57d5270d0de59e2af5a3a6"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "58a Ingrid Steeger (nicht auf Plan).jpg",
+          "quelle_hash": "270dcc7165a3b46282906b003d474aea94d016d84eb94d045ff46acd0b9de5dc"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2Fc3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/c3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2Fc3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/c3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "58b Ingrid Steeger (Baumnummer 482).jpg",
+          "quelle_hash": "c3f3c7f3639966013899c4926622dd73227aa45a575b498deeaf1cb20e2c7f33"
+        }
+      ],
       "audio": {},
       "lagehinweis": "Baumgrab, Baum Nr. 482",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/0606bilder/58b Ingrid Steeger (Baumnummer 482).jpg",
@@ -2403,7 +3260,36 @@
       "datum_von": "1904-04-10",
       "datum_bis": "1941-11-06",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Joachim_Gottschalk",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_joachim-gottschalk%2Fdisplay%2F0ae65b8a1c-51-gottschalk-joachim.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_joachim-gottschalk/display/0ae65b8a1c-51-gottschalk-joachim.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_joachim-gottschalk%2Fthumb%2F0ae65b8a1c-51-gottschalk-joachim.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_joachim-gottschalk/thumb/0ae65b8a1c-51-gottschalk-joachim.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "51 Gottschalk, Joachim.jpg",
+          "quelle_hash": "0ae65b8a1c6f3cd51f1c23612abb554c439542d5b1efb2c1a87208df2fcf9405"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_joachim-gottschalk%2Fdisplay%2Ff211cc8645-51a-gottschalk-joachim.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_joachim-gottschalk/display/f211cc8645-51a-gottschalk-joachim.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_joachim-gottschalk%2Fthumb%2Ff211cc8645-51a-gottschalk-joachim.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_joachim-gottschalk/thumb/f211cc8645-51a-gottschalk-joachim.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "51a Gottschalk, Joachim.jpg",
+          "quelle_hash": "f211cc8645afa485ca75c28cee90cb471df14a1b0ec213486f6a3aebefc95d6f"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2458,7 +3344,36 @@
       "datum_von": "1932-08-10",
       "datum_bis": "2020-06-21",
       "wikipedia_url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-holtz%2Fdisplay%2F8aa9e851a3-12-holtz-juergen-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_juergen-holtz/display/8aa9e851a3-12-holtz-juergen-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-holtz%2Fthumb%2F8aa9e851a3-12-holtz-juergen-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_juergen-holtz/thumb/8aa9e851a3-12-holtz-juergen-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "12 Holtz, Jürgen (nicht auf Plan).jpg",
+          "quelle_hash": "8aa9e851a3e577e75ed40aee55e8ee90c9178be5333d637a56d678c78b9bee2b"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-holtz%2Fdisplay%2F65007e29b6-12a-holtz-juergen-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_juergen-holtz/display/65007e29b6-12a-holtz-juergen-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-holtz%2Fthumb%2F65007e29b6-12a-holtz-juergen-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_juergen-holtz/thumb/65007e29b6-12a-holtz-juergen-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "12a Holtz, Jürgen (nicht auf Plan).jpg",
+          "quelle_hash": "65007e29b6440fa5ad612fdec4f72684e52aa7a10950acce932e4f999e7aa7fe"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
@@ -2512,7 +3427,36 @@
       "datum_von": "1943-12-29",
       "datum_bis": "2023-08-16",
       "wikipedia_url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-kluckert%2Fdisplay%2F223de5a46b-32-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_juergen-kluckert/display/223de5a46b-32-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-kluckert%2Fthumb%2F223de5a46b-32-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_juergen-kluckert/thumb/223de5a46b-32-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "32 Kluckert, Jürgen (Baum Nr. 1357A nicht auf Plan).jpg",
+          "quelle_hash": "223de5a46bf6646d5c2fee213452fb5543c383ed331b37892d8d31ac877dc532"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-kluckert%2Fdisplay%2F01603fb5e2-32a-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_juergen-kluckert/display/01603fb5e2-32a-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_juergen-kluckert%2Fthumb%2F01603fb5e2-32a-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_juergen-kluckert/thumb/01603fb5e2-32a-kluckert-juergen-baum-nr-1357a-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "32a Kluckert, Jürgen (Baum Nr. 1357A nicht auf Plan).jpg",
+          "quelle_hash": "01603fb5e2a6962f89d137a7d00c04ce594792e60872b3eb0c3f821e3bae1b5d"
+        }
+      ],
       "audio": {},
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1357A",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/32 Kluckert, Jürgen (Baum Nr. 1357A nicht auf Plan).jpg",
@@ -2621,7 +3565,22 @@
       "datum_von": "1848-07-09",
       "datum_bis": "1920-04-07",
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_julius-wissinger%2Fdisplay%2Fca3436385e-22-wissinger-julius.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_julius-wissinger/display/ca3436385e-22-wissinger-julius.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_julius-wissinger%2Fthumb%2Fca3436385e-22-wissinger-julius.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_julius-wissinger/thumb/ca3436385e-22-wissinger-julius.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "22 Wissinger, Julius.jpg",
+          "quelle_hash": "ca3436385e297218dd2525203baeef90893d1ae609ef0f4db8909ff4d6320723"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2678,7 +3637,36 @@
       "datum_von": "1858-06-03",
       "datum_bis": "1936-11-20",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ludwig_Manzel",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2Fb5686cdae5-60-karl-ludwig-manzel.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/b5686cdae5-60-karl-ludwig-manzel.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2Fb5686cdae5-60-karl-ludwig-manzel.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/b5686cdae5-60-karl-ludwig-manzel.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "60 Karl-Ludwig Manzel.jpg",
+          "quelle_hash": "b5686cdae502ddd88614b1ca09cf8d893a09179534da0b05160aec4ad956d701"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2F72558aa517-60a-karl-ludwig-manzel.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/72558aa517-60a-karl-ludwig-manzel.jpg",
+          "breite": 1600,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2F72558aa517-60a-karl-ludwig-manzel.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/72558aa517-60a-karl-ludwig-manzel.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 480,
+          "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
+          "quelle_datei": "60a Karl-Ludwig Manzel.jpg",
+          "quelle_hash": "72558aa51788e996d412e7bf18f00d7b48063c8440046677493853170b9d99e4"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2735,7 +3723,36 @@
       "datum_von": "1863-11-11",
       "datum_bis": "1933-03-19",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Louis-Ferdinand_Ullstein",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-ferdinand-ullstein%2Fdisplay%2F253463ebe7-53-ullstein-louis-ferdinand.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_louis-ferdinand-ullstein/display/253463ebe7-53-ullstein-louis-ferdinand.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-ferdinand-ullstein%2Fthumb%2F253463ebe7-53-ullstein-louis-ferdinand.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_louis-ferdinand-ullstein/thumb/253463ebe7-53-ullstein-louis-ferdinand.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "53 Ullstein, Louis-Ferdinand.jpg",
+          "quelle_hash": "253463ebe74d7c84f061a1f445ef2b95c84c36cd13481bdbecda85c0f6f9ce06"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-ferdinand-ullstein%2Fdisplay%2F54b0e39be3-53a-ullstein-louis-ferdinand.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_louis-ferdinand-ullstein/display/54b0e39be3-53a-ullstein-louis-ferdinand.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-ferdinand-ullstein%2Fthumb%2F54b0e39be3-53a-ullstein-louis-ferdinand.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_louis-ferdinand-ullstein/thumb/54b0e39be3-53a-ullstein-louis-ferdinand.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "53a Ullstein, Louis-Ferdinand.jpg",
+          "quelle_hash": "54b0e39be3eb1c942525adef4e7dccd6626d3e69d3327dbcca2d11fef55998a2"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2789,7 +3806,36 @@
       },
       "datum_von": "1877-03-31",
       "datum_bis": "1955-01-07",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-meyer%2Fdisplay%2F26c078622d-21-meyer-louis.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_louis-meyer/display/26c078622d-21-meyer-louis.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-meyer%2Fthumb%2F26c078622d-21-meyer-louis.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_louis-meyer/thumb/26c078622d-21-meyer-louis.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "21 Meyer, Louis.jpg",
+          "quelle_hash": "26c078622d791de26c79a7d6a1ac968135dd665d0533ebf6fbc36565418dd5cd"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-meyer%2Fdisplay%2F9b348fb07f-21a-meyer-louis.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_louis-meyer/display/9b348fb07f-21a-meyer-louis.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_louis-meyer%2Fthumb%2F9b348fb07f-21a-meyer-louis.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_louis-meyer/thumb/9b348fb07f-21a-meyer-louis.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "21a Meyer, Louis.jpg",
+          "quelle_hash": "9b348fb07f553e612337780797670db4724bedffe8e64c9bd5058b3475a25880"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2844,7 +3890,36 @@
       "datum_von": "1858-07-21",
       "datum_bis": "1925-06-17",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Lovis_Corinth",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_lovis-corinth%2Fdisplay%2Fa5b0e83a5c-24-corinth-lovis.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_lovis-corinth/display/a5b0e83a5c-24-corinth-lovis.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_lovis-corinth%2Fthumb%2Fa5b0e83a5c-24-corinth-lovis.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_lovis-corinth/thumb/a5b0e83a5c-24-corinth-lovis.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "24 Corinth, Lovis.jpg",
+          "quelle_hash": "a5b0e83a5cc0fb56d8997806014b98fc05d25a7b078cf8a15bfcf53956543867"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_lovis-corinth%2Fdisplay%2F6a2c2769b0-24a-corinth-lovis.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_lovis-corinth/display/6a2c2769b0-24a-corinth-lovis.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_lovis-corinth%2Fthumb%2F6a2c2769b0-24a-corinth-lovis.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_lovis-corinth/thumb/6a2c2769b0-24a-corinth-lovis.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "24a Corinth, Lovis.jpg",
+          "quelle_hash": "6a2c2769b0ebe66c0997699912b749d8e545c984d549fdb5fb953f1a6e2ad98a"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -2901,7 +3976,50 @@
       "datum_von": "1961-03-20",
       "datum_bis": "2016-01-04",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Maja_Maranow",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fdisplay%2F6f8b9ae500-33-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_maja-maranow/display/6f8b9ae500-33-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fthumb%2F6f8b9ae500-33-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_maja-maranow/thumb/6f8b9ae500-33-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "33 Maranow, Maja (Baum Nr. 1635) (nicht auf Plan).jpg",
+          "quelle_hash": "6f8b9ae50099ac0773c25cb1dd9d895140ecf7e27c87065848606a61bd2e579c"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fdisplay%2F9fe2562bc1-33a-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_maja-maranow/display/9fe2562bc1-33a-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fthumb%2F9fe2562bc1-33a-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_maja-maranow/thumb/9fe2562bc1-33a-maranow-maja-baum-nr-1635-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "33a Maranow, Maja (Baum Nr. 1635) (nicht auf Plan).jpg",
+          "quelle_hash": "9fe2562bc1fe18e64c107d0561ca6a950a813250834afed8cb8912f7289a7e03"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fdisplay%2Fe264540384-33b-maranow-maja-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_maja-maranow/display/e264540384-33b-maranow-maja-baum-nr-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_maja-maranow%2Fthumb%2Fe264540384-33b-maranow-maja-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_maja-maranow/thumb/e264540384-33b-maranow-maja-baum-nr-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "33b Maranow, Maja; Baum Nr. (nicht auf Plan).jpg",
+          "quelle_hash": "e264540384188fd0e778ee57af7976c932e90f08c196126929c0a193766124dc"
+        }
+      ],
       "audio": {},
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1635",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/33 Maranow, Maja (Baum Nr. 1635) (nicht auf Plan).jpg",
@@ -2956,7 +4074,50 @@
       "datum_von": "1937-02-08",
       "datum_bis": "2016-10-21",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Manfred_Krug",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fdisplay%2Fa98fbb2161-35-krug-manfred-baum-nr-1829.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_manfred-krug/display/a98fbb2161-35-krug-manfred-baum-nr-1829.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fthumb%2Fa98fbb2161-35-krug-manfred-baum-nr-1829.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_manfred-krug/thumb/a98fbb2161-35-krug-manfred-baum-nr-1829.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "35 Krug, Manfred (Baum Nr.1829) .jpg",
+          "quelle_hash": "a98fbb2161ad05b509f81f6ccfe148859d2abc2e840a8396367d7cf510e384b4"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fdisplay%2F81f518b7f5-35a-krug-manfred.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_manfred-krug/display/81f518b7f5-35a-krug-manfred.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fthumb%2F81f518b7f5-35a-krug-manfred.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_manfred-krug/thumb/81f518b7f5-35a-krug-manfred.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "35a Krug, Manfred.jpg",
+          "quelle_hash": "81f518b7f5fdc22eec4df17503d85c13e01391af4398a97f81f491c2638b00bd"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fdisplay%2F7da2dd781c-35b-krug-manfred-baum-nr.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_manfred-krug/display/7da2dd781c-35b-krug-manfred-baum-nr.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_manfred-krug%2Fthumb%2F7da2dd781c-35b-krug-manfred-baum-nr.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_manfred-krug/thumb/7da2dd781c-35b-krug-manfred-baum-nr.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "35b Krug, Manfred; Baum Nr..jpg",
+          "quelle_hash": "7da2dd781c269a51e6e3921b5ef71e02baa0f20a628810dcc72ea1dc90214d68"
+        }
+      ],
       "audio": {},
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1829",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/35 Krug, Manfred (Baum Nr.1829) .jpg",
@@ -3186,7 +4347,22 @@
       "datum_von": "1837-01-19",
       "datum_bis": "1906-11-11",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Max_Jordan",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_max-jordan%2Fdisplay%2Ffdd19329c4-18-jordan-max.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_max-jordan/display/fdd19329c4-18-jordan-max.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_max-jordan%2Fthumb%2Ffdd19329c4-18-jordan-max.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_max-jordan/thumb/fdd19329c4-18-jordan-max.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "18 Jordan, Max.jpg",
+          "quelle_hash": "fdd19329c4df44cbd5f53c2fe0cf1af5d0e03d5b330cc2f1c0c405c929aab79e"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3241,7 +4417,36 @@
       "datum_von": "1895-11-05",
       "datum_bis": "1929-08-19",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Meta_Seinemeyer",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_meta-seinemeyer%2Fdisplay%2F62e22d5a53-04-seinemeyer-meta.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_meta-seinemeyer/display/62e22d5a53-04-seinemeyer-meta.jpg",
+          "breite": 480,
+          "hoehe": 750,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_meta-seinemeyer%2Fthumb%2F62e22d5a53-04-seinemeyer-meta.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_meta-seinemeyer/thumb/62e22d5a53-04-seinemeyer-meta.jpg",
+          "vorschau_breite": 307,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "04 Seinemeyer, Meta.jpg",
+          "quelle_hash": "62e22d5a53c09b9b0a304473a3c4e8c5a9ce269aab4f40f9aba637a3914f4325"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_meta-seinemeyer%2Fdisplay%2Fa19679234f-04a-seinemeyer-meta.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_meta-seinemeyer/display/a19679234f-04a-seinemeyer-meta.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_meta-seinemeyer%2Fthumb%2Fa19679234f-04a-seinemeyer-meta.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_meta-seinemeyer/thumb/a19679234f-04a-seinemeyer-meta.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "04a Seinemeyer, Meta.jpg",
+          "quelle_hash": "a19679234fc4290642db08a9599297c2e22b7e4dac3fa2d7a8a3b748cecc1f3b"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3337,7 +4542,36 @@
       "datum_von": "1926-12-20",
       "datum_bis": "2009-12-05",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Otto_Graf_Lambsdorff",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_otto-graf-lambsdorff%2Fdisplay%2F065c0cb4fa-40-lambsdorff-otto-graf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_otto-graf-lambsdorff/display/065c0cb4fa-40-lambsdorff-otto-graf.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_otto-graf-lambsdorff%2Fthumb%2F065c0cb4fa-40-lambsdorff-otto-graf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_otto-graf-lambsdorff/thumb/065c0cb4fa-40-lambsdorff-otto-graf.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "40 Lambsdorff, Otto Graf.jpg",
+          "quelle_hash": "065c0cb4fa9b99e55b5ab78f29c1237db5d105da08bb65d58b16829264d1b702"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_otto-graf-lambsdorff%2Fdisplay%2F089cb1606f-40a-lambsdorff-otto-graf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_otto-graf-lambsdorff/display/089cb1606f-40a-lambsdorff-otto-graf.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_otto-graf-lambsdorff%2Fthumb%2F089cb1606f-40a-lambsdorff-otto-graf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_otto-graf-lambsdorff/thumb/089cb1606f-40a-lambsdorff-otto-graf.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "40a Lambsdorff, Otto Graf.jpg",
+          "quelle_hash": "089cb1606f5c257cc83657cc42750888b1a40b85befcc05076ec0042884d6bc4"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3392,7 +4626,36 @@
       "datum_von": "1947-12-26",
       "datum_bis": "2025-12-25",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Peter_Sattmann",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_peter-sattmann%2Fdisplay%2F609558cf57-11-sattmann-peter-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_peter-sattmann/display/609558cf57-11-sattmann-peter-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_peter-sattmann%2Fthumb%2F609558cf57-11-sattmann-peter-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_peter-sattmann/thumb/609558cf57-11-sattmann-peter-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "11 Sattmann, Peter (nicht auf Plan).jpg",
+          "quelle_hash": "609558cf57fea4bb17915020ab16c15981f23d82648854c72a3ec4158cff0c13"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_peter-sattmann%2Fdisplay%2F298d48d171-11a-sattmann-peter-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_peter-sattmann/display/298d48d171-11a-sattmann-peter-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_peter-sattmann%2Fthumb%2F298d48d171-11a-sattmann-peter-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_peter-sattmann/thumb/298d48d171-11a-sattmann-peter-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "11a Sattmann, Peter (nicht auf Plan).jpg",
+          "quelle_hash": "298d48d1716cd23a1fab31233ca3f1f446b999ac833c7b85a5612aeab748ea76"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
@@ -3446,7 +4709,36 @@
       "datum_von": "1884-10-02",
       "datum_bis": "1940-03-12",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ralph_Arthur_Roberts",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ralph-arthur-roberts%2Fdisplay%2Feb017ae0e8-49-roberts-schoenherr-ralph-arthur.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ralph-arthur-roberts/display/eb017ae0e8-49-roberts-schoenherr-ralph-arthur.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ralph-arthur-roberts%2Fthumb%2Feb017ae0e8-49-roberts-schoenherr-ralph-arthur.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ralph-arthur-roberts/thumb/eb017ae0e8-49-roberts-schoenherr-ralph-arthur.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "49 Roberts-Schönherr, Ralph Arthur.jpg",
+          "quelle_hash": "eb017ae0e8625a4d6bb5ce5ca74ddf4a41c0435dd646a30fdbe9aefdcf33e176"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ralph-arthur-roberts%2Fdisplay%2F0b35579008-49a-roberts-schoenherr-ralph-arthur.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ralph-arthur-roberts/display/0b35579008-49a-roberts-schoenherr-ralph-arthur.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ralph-arthur-roberts%2Fthumb%2F0b35579008-49a-roberts-schoenherr-ralph-arthur.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ralph-arthur-roberts/thumb/0b35579008-49a-roberts-schoenherr-ralph-arthur.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "49a Roberts-Schönherr, Ralph Arthur.jpg",
+          "quelle_hash": "0b3557900887a434f3264b1e89042a5838da95e2b9f73333d82a81a28f4f9e36"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3499,7 +4791,22 @@
       "datum_von": "1865-01-25",
       "datum_bis": "1919-12-18",
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_reinhold-felderhoff%2Fdisplay%2Faea02b9676-28-felderhoff-reinhold.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_reinhold-felderhoff/display/aea02b9676-28-felderhoff-reinhold.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_reinhold-felderhoff%2Fthumb%2Faea02b9676-28-felderhoff-reinhold.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_reinhold-felderhoff/thumb/aea02b9676-28-felderhoff-reinhold.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "28 Felderhoff, Reinhold.jpg",
+          "quelle_hash": "aea02b9676db763070642dcd3da0ada86a974d1207a961d1835aa031e6706fdc"
+        }
+      ],
       "audio": {},
       "quellen": [
         "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
@@ -3555,7 +4862,36 @@
       "datum_von": "1908-03-18",
       "datum_bis": "1934-06-14",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Richard_H%C3%BCttig",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_richard-huettig%2Fdisplay%2F787da5136d-48-huettig-richard.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_richard-huettig/display/787da5136d-48-huettig-richard.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_richard-huettig%2Fthumb%2F787da5136d-48-huettig-richard.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_richard-huettig/thumb/787da5136d-48-huettig-richard.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "48 Hüttig, Richard.jpg",
+          "quelle_hash": "787da5136d62eb2756e0fb5011c0ec669c3801d0881f325c19bbe76f35c63f82"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_richard-huettig%2Fdisplay%2Fc429a5b395-48a-huettig-richard.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_richard-huettig/display/c429a5b395-48a-huettig-richard.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_richard-huettig%2Fthumb%2Fc429a5b395-48a-huettig-richard.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_richard-huettig/thumb/c429a5b395-48a-huettig-richard.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "48a Hüttig, Richard.jpg",
+          "quelle_hash": "c429a5b39575a8449104e390f07c681263319055481b0365b9c53c145b8b197f"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3610,7 +4946,36 @@
       "datum_von": "1874-11-02",
       "datum_bis": "1944-08-24",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Rudolf_Breitscheid",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_rudolf-breitscheid%2Fdisplay%2Fe2ed3e46e3-30-breitscheid-rudolf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_rudolf-breitscheid/display/e2ed3e46e3-30-breitscheid-rudolf.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_rudolf-breitscheid%2Fthumb%2Fe2ed3e46e3-30-breitscheid-rudolf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_rudolf-breitscheid/thumb/e2ed3e46e3-30-breitscheid-rudolf.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "30 Breitscheid, Rudolf.jpg",
+          "quelle_hash": "e2ed3e46e3a2e83b0aa147caf6506c2845d9b72aa9f951c7e6969f34ca8066c7"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_rudolf-breitscheid%2Fdisplay%2Fb35f4effd2-30a-breitscheid-rudolf.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_rudolf-breitscheid/display/b35f4effd2-30a-breitscheid-rudolf.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_rudolf-breitscheid%2Fthumb%2Fb35f4effd2-30a-breitscheid-rudolf.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_rudolf-breitscheid/thumb/b35f4effd2-30a-breitscheid-rudolf.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "30a Breitscheid, Rudolf.jpg",
+          "quelle_hash": "b35f4effd27d352cb9b422ce640d4be6b0804e5fdc68ce4db5c789c1f8f5160c"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3667,7 +5032,36 @@
       "datum_von": "1881-01-28",
       "datum_bis": "1926-12-03",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Siegfried_Jacobsohn",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_siegfried-jacobsohn%2Fdisplay%2Fdb3589e663-52-jacobsohn-siegfried.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_siegfried-jacobsohn/display/db3589e663-52-jacobsohn-siegfried.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_siegfried-jacobsohn%2Fthumb%2Fdb3589e663-52-jacobsohn-siegfried.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_siegfried-jacobsohn/thumb/db3589e663-52-jacobsohn-siegfried.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "52 Jacobsohn, Siegfried.jpg",
+          "quelle_hash": "db3589e6633a62047a03f8fc1bd1d99ee0e37c53dd707bdfbae9f703c23a1bfb"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_siegfried-jacobsohn%2Fdisplay%2F95f24b3806-52a-jacobsohn-siegfried.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_siegfried-jacobsohn/display/95f24b3806-52a-jacobsohn-siegfried.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_siegfried-jacobsohn%2Fthumb%2F95f24b3806-52a-jacobsohn-siegfried.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_siegfried-jacobsohn/thumb/95f24b3806-52a-jacobsohn-siegfried.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "52a Jacobsohn, Siegfried.jpg",
+          "quelle_hash": "95f24b38069da01c39ade31c93aab1e5bdd774ab69698235d8141cf86982cc44"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3722,7 +5116,36 @@
       "datum_von": "1856-11-03",
       "datum_bis": "1933-05-16",
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_theodor-fontane-jun%2Fdisplay%2F181acba1b4-23-fontane-theodor.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_theodor-fontane-jun/display/181acba1b4-23-fontane-theodor.jpg",
+          "breite": 480,
+          "hoehe": 725,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_theodor-fontane-jun%2Fthumb%2F181acba1b4-23-fontane-theodor.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_theodor-fontane-jun/thumb/181acba1b4-23-fontane-theodor.jpg",
+          "vorschau_breite": 318,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "23 Fontane, Theodor.jpg",
+          "quelle_hash": "181acba1b49b8c057987a7a3ef86ca345e619af0a2cc33986108068756da2b08"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_theodor-fontane-jun%2Fdisplay%2F5d418065c9-23a-fontane-theodor.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_theodor-fontane-jun/display/5d418065c9-23a-fontane-theodor.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_theodor-fontane-jun%2Fthumb%2F5d418065c9-23a-fontane-theodor.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_theodor-fontane-jun/thumb/5d418065c9-23a-fontane-theodor.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "23a Fontane, Theodor.jpg",
+          "quelle_hash": "5d418065c9343a5a936405ffd8ae8993fd0072bc585f51072ed95945254a35e0"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3777,7 +5200,36 @@
       "datum_von": "1848-05-22",
       "datum_bis": "1911-12-19",
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-gropius-senior%2Fdisplay%2F0a4873d96a-54-gropius-walter.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_walter-gropius-senior/display/0a4873d96a-54-gropius-walter.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-gropius-senior%2Fthumb%2F0a4873d96a-54-gropius-walter.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_walter-gropius-senior/thumb/0a4873d96a-54-gropius-walter.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "54 Gropius, Walter.jpg",
+          "quelle_hash": "0a4873d96a46f3c008d4bfef1befdd6b0c55d729a51e6a3fed2bbc3401459425"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-gropius-senior%2Fdisplay%2F773a6312c5-54a-gropius-walter.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_walter-gropius-senior/display/773a6312c5-54a-gropius-walter.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-gropius-senior%2Fthumb%2F773a6312c5-54a-gropius-walter.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_walter-gropius-senior/thumb/773a6312c5-54a-gropius-walter.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "54a Gropius, Walter.jpg",
+          "quelle_hash": "773a6312c5271ebbe1d3cd54d8200a9743b1bc11093e75dcfdcba6b3053ca6e2"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3832,7 +5284,36 @@
       "datum_von": "1856-05-04",
       "datum_bis": "1920-11-08",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Walter_von_Pannwitz",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-von-pannwitz%2Fdisplay%2Fd65f150694-27-pannwitz-walter-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_walter-von-pannwitz/display/d65f150694-27-pannwitz-walter-von.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-von-pannwitz%2Fthumb%2Fd65f150694-27-pannwitz-walter-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_walter-von-pannwitz/thumb/d65f150694-27-pannwitz-walter-von.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "27 Pannwitz, Walter von.jpg",
+          "quelle_hash": "d65f150694886e1d34ae75d03d5b059fc0ccb56845d088cb3293d1bef09b40a9"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-von-pannwitz%2Fdisplay%2Fe1286f8c01-27a-pannwitz-walter-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_walter-von-pannwitz/display/e1286f8c01-27a-pannwitz-walter-von.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_walter-von-pannwitz%2Fthumb%2Fe1286f8c01-27a-pannwitz-walter-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_walter-von-pannwitz/thumb/e1286f8c01-27a-pannwitz-walter-von.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "27a Pannwitz, Walter von.jpg",
+          "quelle_hash": "e1286f8c010ecf91e653595ad545bae13e60f02eaa251a580e631bb07d3df002"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3887,7 +5368,36 @@
       "datum_von": "1816-12-13",
       "datum_bis": "1892-12-06",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Werner_von_Siemens",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_werner-von-siemens%2Fdisplay%2Fb6c7c856a2-26-siemens-werner-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_werner-von-siemens/display/b6c7c856a2-26-siemens-werner-von.jpg",
+          "breite": 590,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_werner-von-siemens%2Fthumb%2Fb6c7c856a2-26-siemens-werner-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_werner-von-siemens/thumb/b6c7c856a2-26-siemens-werner-von.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 391,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "26 Siemens, Werner von.jpg",
+          "quelle_hash": "b6c7c856a27667ac72a68f4feaac8e6248156dfa5661ac1b5dbc3099072793ac"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_werner-von-siemens%2Fdisplay%2Fa18761f374-26a-siemens-werner-von.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_werner-von-siemens/display/a18761f374-26a-siemens-werner-von.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_werner-von-siemens%2Fthumb%2Fa18761f374-26a-siemens-werner-von.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_werner-von-siemens/thumb/a18761f374-26a-siemens-werner-von.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "26a Siemens, Werner von.jpg",
+          "quelle_hash": "a18761f37422af6999296d4248d3e57d0872cf205cd30f8b87c0d6809329f717"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3944,7 +5454,36 @@
       "datum_von": "1867-11-22",
       "datum_bis": "1939-05-03",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Wilhelm_Groener",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-groener%2Fdisplay%2F47bd018dcd-20-groener-wilhelm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_wilhelm-groener/display/47bd018dcd-20-groener-wilhelm.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-groener%2Fthumb%2F47bd018dcd-20-groener-wilhelm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_wilhelm-groener/thumb/47bd018dcd-20-groener-wilhelm.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "20 Gröner, Wilhelm.jpg",
+          "quelle_hash": "47bd018dcd3486a53d3f295c18c992992bb1030ce1d96834be69390644a6706a"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-groener%2Fdisplay%2F2d1ada3add-20a-groener-wilhem.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_wilhelm-groener/display/2d1ada3add-20a-groener-wilhem.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-groener%2Fthumb%2F2d1ada3add-20a-groener-wilhem.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_wilhelm-groener/thumb/2d1ada3add-20a-groener-wilhem.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "20a Gröner, Wilhem.jpg",
+          "quelle_hash": "2d1ada3add0bc1810b91458b751535886053da77380f99e781c6eba0a0644694"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -3999,7 +5538,36 @@
       "datum_von": "1865-01-28",
       "datum_bis": "1926-02-11",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Wilhelm_Kuhnert",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-kuhnert%2Fdisplay%2F8cb96e1c84-41-kuhnert-wilhelm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_wilhelm-kuhnert/display/8cb96e1c84-41-kuhnert-wilhelm.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-kuhnert%2Fthumb%2F8cb96e1c84-41-kuhnert-wilhelm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_wilhelm-kuhnert/thumb/8cb96e1c84-41-kuhnert-wilhelm.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "41 Kuhnert, Wilhelm.jpg",
+          "quelle_hash": "8cb96e1c84aa0ed4da36088e68acde84f9585d8c8bfbcf924b71c18204c40720"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-kuhnert%2Fdisplay%2F15ed195c13-41a-kuhnert-wilhelm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_wilhelm-kuhnert/display/15ed195c13-41a-kuhnert-wilhelm.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_wilhelm-kuhnert%2Fthumb%2F15ed195c13-41a-kuhnert-wilhelm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_wilhelm-kuhnert/thumb/15ed195c13-41a-kuhnert-wilhelm.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "41a Kuhnert, Wilhelm.jpg",
+          "quelle_hash": "15ed195c132d525e687a3abae8afa97185d4abaeffa0b69f7169a8eb7cc65c10"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -4805,7 +6373,36 @@
       "datum_von": "1864-05-08",
       "datum_bis": "1941-10-19",
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hermann-boost%2Fdisplay%2Fcc865de4f0-03-boost-hermann-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hermann-boost/display/cc865de4f0-03-boost-hermann-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hermann-boost%2Fthumb%2Fcc865de4f0-03-boost-hermann-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hermann-boost/thumb/cc865de4f0-03-boost-hermann-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "03 Boost, Hermann (nicht auf Plan).jpg",
+          "quelle_hash": "cc865de4f074113b98af237683914d0ed7bc1923468fa78c767019dd221b1974"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hermann-boost%2Fdisplay%2Fbe92eea6b8-03a-boost-hermann-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hermann-boost/display/be92eea6b8-03a-boost-hermann-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hermann-boost%2Fthumb%2Fbe92eea6b8-03a-boost-hermann-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hermann-boost/thumb/be92eea6b8-03a-boost-hermann-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "03a Boost, Hermann (nicht auf Plan).jpg",
+          "quelle_hash": "be92eea6b8142f3b2dbd21d9868782babceb0d390fc08ee34641a12c3a67ab16"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hermann Boost, https://osmand.net/map?pin=52.38835,13.18766#15/52.38835/13.18766",
@@ -4859,7 +6456,36 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_familie-schulte-schwarzer-engel%2Fdisplay%2F913cdbd2f4-05-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_familie-schulte-schwarzer-engel/display/913cdbd2f4-05-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_familie-schulte-schwarzer-engel%2Fthumb%2F913cdbd2f4-05-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_familie-schulte-schwarzer-engel/thumb/913cdbd2f4-05-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "05 Schwarzer Engel (Fam. Schulte; nicht auf Plan).jpg",
+          "quelle_hash": "913cdbd2f452c632c62c2a44be0dfb33232b6e6fc883dee33f385c67c4e69eb7"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_familie-schulte-schwarzer-engel%2Fdisplay%2F26bbb7a40f-05a-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_familie-schulte-schwarzer-engel/display/26bbb7a40f-05a-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg",
+          "breite": 705,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_familie-schulte-schwarzer-engel%2Fthumb%2F26bbb7a40f-05a-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_familie-schulte-schwarzer-engel/thumb/26bbb7a40f-05a-schwarzer-engel-fam-schulte-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 327,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "05a Schwarzer Engel (Fam. Schulte; nicht auf Plan).jpg",
+          "quelle_hash": "26bbb7a40f16b983f2183dd193263b5d559b1970eb70b9d9caae8f2595f61f63"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fam. Schulte (Schwarzer Engel), https://osmand.net/map?pin=52.38839,13.18684#15/52.38839/13.18684"
@@ -4914,7 +6540,50 @@
       "datum_von": "1944-08-14",
       "datum_bis": "2016-04-26",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Arne_Elsholtz",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fdisplay%2F09e002ba06-34-elsholtz-arne-baum-nr-1611-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_arne-elsholtz/display/09e002ba06-34-elsholtz-arne-baum-nr-1611-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fthumb%2F09e002ba06-34-elsholtz-arne-baum-nr-1611-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_arne-elsholtz/thumb/09e002ba06-34-elsholtz-arne-baum-nr-1611-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "34 Elsholtz, Arne (Baum Nr. 1611) (nicht auf Plan).jpg",
+          "quelle_hash": "09e002ba066f1d198d1e37a0045f6099c21406ecaa7e74e8f0b26379da40df30"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fdisplay%2F8d7c7c3f75-34a-elsholtz-arne-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_arne-elsholtz/display/8d7c7c3f75-34a-elsholtz-arne-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fthumb%2F8d7c7c3f75-34a-elsholtz-arne-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_arne-elsholtz/thumb/8d7c7c3f75-34a-elsholtz-arne-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "34a Elsholtz, Arne (nicht auf Plan).jpg",
+          "quelle_hash": "8d7c7c3f759649e661430cc07b6479bd5aae34f03c8be2a2259ca5051a46d27f"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fdisplay%2Ff50c9aa8fa-34b-elsholtz-arne-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_arne-elsholtz/display/f50c9aa8fa-34b-elsholtz-arne-baum-nr-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_arne-elsholtz%2Fthumb%2Ff50c9aa8fa-34b-elsholtz-arne-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_arne-elsholtz/thumb/f50c9aa8fa-34b-elsholtz-arne-baum-nr-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "34b Elsholtz, Arne; Baum Nr. (nicht auf Plan).jpg",
+          "quelle_hash": "f50c9aa8fa04d946bed2f01f81658909da2d34514d11c8b02a3fd80e4c755e09"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Wikipedia: Arne Elsholtz, https://de.wikipedia.org/wiki/Arne_Elsholtz, abgerufen 2026-06-06",
@@ -4971,7 +6640,36 @@
       "datum_von": "1931-05-05",
       "datum_bis": "2016-05-10",
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_guenther-heidemann%2Fdisplay%2F0b7e3cc977-43-heidemann-guenther-baum-nr-135-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_guenther-heidemann/display/0b7e3cc977-43-heidemann-guenther-baum-nr-135-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_guenther-heidemann%2Fthumb%2F0b7e3cc977-43-heidemann-guenther-baum-nr-135-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_guenther-heidemann/thumb/0b7e3cc977-43-heidemann-guenther-baum-nr-135-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "43 Heidemann, Günther (Baum Nr. 135) (nicht auf Plan).jpg",
+          "quelle_hash": "0b7e3cc977473b7ba722252c882e2199d4e3d8aa7304bfb01d3672d446ebda60"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_guenther-heidemann%2Fdisplay%2F972df6074e-43a-heidemann-guenther-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_guenther-heidemann/display/972df6074e-43a-heidemann-guenther-baum-nr-nicht-auf-plan.jpg",
+          "breite": 720,
+          "hoehe": 480,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_guenther-heidemann%2Fthumb%2F972df6074e-43a-heidemann-guenther-baum-nr-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_guenther-heidemann/thumb/972df6074e-43a-heidemann-guenther-baum-nr-nicht-auf-plan.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "43a Heidemann, Günther; Baum Nr. (nicht auf Plan).jpg",
+          "quelle_hash": "972df6074e0ce20e757e8c2bcd5baa8841bd1d1e71f6e15b275a0b0541f382f2"
+        }
+      ],
       "audio": {},
       "quellen": [
         "filmportal.de: Günther Schmidt, https://www.filmportal.de/person/guenther-schmidt_9e5143e8f8484af3b1a321be503250f1, abgerufen 2026-06-06",
@@ -5019,7 +6717,36 @@
       "datum_von": "1885-10-23",
       "datum_bis": "1929-05-10",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Kurt_Kroner",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_kurt-kroner%2Fdisplay%2Ff12dbb1802-47-kroner-kurt-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_kurt-kroner/display/f12dbb1802-47-kroner-kurt-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_kurt-kroner%2Fthumb%2Ff12dbb1802-47-kroner-kurt-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_kurt-kroner/thumb/f12dbb1802-47-kroner-kurt-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "47 Kroner, Kurt (nicht auf Plan).jpg",
+          "quelle_hash": "f12dbb18026f3c8f8e89948ec9d66922ec019bacff6ac0302f05150057822ebf"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_kurt-kroner%2Fdisplay%2Fa36b35c23e-47a-kroner-kurt-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_kurt-kroner/display/a36b35c23e-47a-kroner-kurt-nicht-auf-plan.jpg",
+          "breite": 480,
+          "hoehe": 720,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_kurt-kroner%2Fthumb%2Fa36b35c23e-47a-kroner-kurt-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_kurt-kroner/thumb/a36b35c23e-47a-kroner-kurt-nicht-auf-plan.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "47a Kroner, Kurt (nicht auf Plan).jpg",
+          "quelle_hash": "a36b35c23e95f863130d73225254e645b31c03a12fdf16ece27f0f6d5fb9a5f2"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Wikipedia: Kurt Kroner, https://de.wikipedia.org/wiki/Kurt_Kroner, abgerufen 2026-06-06",

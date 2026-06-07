@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten, Sprachumschaltung. Daten kommen live aus **Firestore** mit IndexedDB-Offline-Cache. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und Backup/Restore.
+Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten mit Bild-Lightbox/Zoom, Sprachumschaltung. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und Backup/Restore.
 
 ## Techstack
 
@@ -32,6 +32,7 @@ Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkar
 | Framework | Next.js 16 (Static Export via `output: 'export'`) |
 | Karte | Leaflet 1.9, react-leaflet 4 |
 | Sprache | TypeScript 6, React 18 |
+| Bild-Zoom | react-zoom-pan-pinch |
 | Backend | Firebase (Firestore + Auth + Storage — aktiv) |
 | Tests | Playwright (67 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
@@ -49,12 +50,15 @@ stahnsdorf/
 ├── storage.rules            # Firebase Storage Security Rules für POI-Bilder
 ├── firestore.indexes.json   # Firestore Composite Indexes
 ├── data/
-│   └── stahnsdorf-backup-translated.json # Unified Build-Time Snapshot for generateStaticParams
+│   └── stahnsdorf-backup-translated.json # Redaktioneller Master-Snapshot für POIs, Sammlungen und Bildreferenzen
 ├── docs/
 │   ├── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
 │   └── redaktionelle-leitlinien.md # Regeln für POI-Informationstexte
 ├── scripts/
 │   ├── apply-osm-candidates.mjs # OSM-Kandidaten in Backup-Snapshot übernehmen
+│   ├── build-image-import-manifest.mjs # Bilddateien den bestehenden POIs zuordnen
+│   ├── prepare-firebase-images.mjs # Optimierte Firebase-Bilddateien lokal vorbereiten
+│   ├── apply-image-manifest-to-backup.mjs # Bildreferenzen in den JSON-Master übernehmen
 │   ├── import-poi-images.mjs # Lokaler Erstimport optimierter POI-Bilder nach Firebase Storage
 │   ├── migrate.ts           # Migrationsscript altes → neues Schema
 │   ├── migrate-to-firestore.ts  # Einmalige Migration JSON → Firestore
@@ -152,6 +156,7 @@ Alle Felder verwenden **deutsche Namen**:
 
 ### Datenmodell
 - **`docs/schema.md` ist die Wahrheit.** Alle POI-Felder sind dort definiert.
+- **`data/stahnsdorf-backup-translated.json` ist die redaktionelle Quelle der Wahrheit für Inhalte.** Alle relevanten POI-Daten inklusive `bilder`-Referenzen müssen dort abgelegt sein. Firestore darf keine exklusiven Inhaltsdaten enthalten.
 - **`docs/redaktionelle-leitlinien.md` gilt für POI-Texte.** Kurztexte verwenden kein „Grab von“. Beschreibungen sollen 1-2 prägnante Sätze sein und keine UI-Felder wie Name, Lebensdaten oder Lage wiederholen.
 - Deutsch ist die Quellsprache. Andere Sprachen (en, fr, pl, ru, sv) werden per KI generiert.
 - Nur POIs mit `koordinaten != null` erscheinen auf der Karte.
@@ -160,7 +165,7 @@ Alle Felder verwenden **deutsche Namen**:
 ### Code
 - `src/lib/types.ts` definiert die TypeScript-Typen — **muss mit `docs/schema.md` übereinstimmen.**
 - `src/lib/useFirestore.ts` enthält die Hooks für Firestore-Zugriff (visitor + admin).
-- `src/lib/content.ts` existiert noch für Tests, wird nicht mehr von der App genutzt.
+- `src/lib/content.ts` liest den JSON-Master für Tests und statische Parameter; die App lädt zur Laufzeit die daraus abgeleitete Firestore-Kopie.
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
 - Static Export: kein Server, kein SSR — alles client-seitig.
 - `basePath: '/stahnsdorf'` in Production (GitHub Pages).
@@ -204,7 +209,10 @@ npm run coordinates:metadata # Koordinaten-Herkunft und Lagehinweise aus Bestand
 npm run coordinates:manual-osmand # Manuell per OsmAnd erfasste GPS-Daten einspielen
 npm run osm:candidates   # OSM-Kandidaten-Audit nach inputdata/
 npm run osm:apply        # OSM-Kandidaten in data/stahnsdorf-backup-translated.json übernehmen
-npm run import:images    # Dry-Run für POI-Bildimport aus inputdata/bilder
+npm run images:manifest  # Bilddateien den bestehenden POIs zuordnen
+npm run images:prepare   # Optimierte Anzeige-/Vorschaubilder lokal vorbereiten
+npm run images:apply     # Dry-Run: Bildreferenzen in JSON-Master übernehmen
+npm run import:images    # Dry-Run für POI-Bildimport nach Firebase Storage/Firestore
 npm run test             # Unit Tests (Vitest)
 npm run test:e2e         # E2E Tests (Playwright + Emulator)
 npm run test:rules       # Security Rules (Vitest + Emulator)
