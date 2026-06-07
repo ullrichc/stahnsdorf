@@ -20,6 +20,7 @@ const DEFAULT_BUCKET = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'stahn
 
 const args = parseArgs(process.argv.slice(2));
 const apply = args.apply === true;
+const force = args.force === true;
 const inputDir = args.input ?? DEFAULT_INPUT;
 const poiListPath = args['poi-list'] ?? DEFAULT_POI_LIST;
 const reportJson = args['report-json'] ?? DEFAULT_REPORT_JSON;
@@ -87,7 +88,8 @@ for (const row of rows) {
       }
 
       const current = snap.data()?.bilder ?? [];
-      if (hasExistingImage(current, image)) {
+      const existingIndex = findExistingImageIndex(current, image);
+      if (existingIndex >= 0 && !force) {
         report.skipped.push({ datei: row.filePath, poi_id: row.poiId, grund: 'Bereits vorhanden' });
         continue;
       }
@@ -107,8 +109,12 @@ for (const row of rows) {
       image.vorschau_breite = optimized.thumb.width;
       image.vorschau_hoehe = optimized.thumb.height;
 
+      const nextImages = existingIndex >= 0
+        ? current.map((existing, index) => (index === existingIndex ? { ...existing, ...image } : existing))
+        : [...current, image];
+
       await poiRef.update({
-        bilder: [...current, image],
+        bilder: nextImages,
         geaendert_von: 'image-import',
         geaendert_am: FieldValue.serverTimestamp(),
       });
@@ -151,7 +157,11 @@ function flattenRows(list, inputRoot) {
 }
 
 function hasExistingImage(existingImages, image) {
-  return existingImages.some((existing) =>
+  return findExistingImageIndex(existingImages, image) >= 0;
+}
+
+function findExistingImageIndex(existingImages, image) {
+  return existingImages.findIndex((existing) =>
     existing.storage_pfad === image.storage_pfad
     || existing.vorschau_storage_pfad === image.vorschau_storage_pfad
     || existing.quelle_hash === image.quelle_hash

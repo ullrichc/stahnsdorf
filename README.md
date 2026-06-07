@@ -153,7 +153,7 @@ npm run import:images
 npm run import:images -- --apply
 ```
 
-`images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage.
+`images:prepare` wendet EXIF-Orientierung an und schreibt daraus neue JPEGs. `images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage. Bereits importierte Storage-Dateien können mit `npm run import:images -- --apply --force` gezielt überschrieben werden.
 
 ## 📄 Lizenz
 Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende

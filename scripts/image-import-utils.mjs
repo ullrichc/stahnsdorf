@@ -80,7 +80,7 @@ export async function optimizeImage(filePath) {
 }
 
 async function resize(filePath, maxSize, quality) {
-  const image = sharp(filePath, { rotate: true }).resize({
+  const image = sharp(filePath).rotate().resize({
     width: maxSize,
     height: maxSize,
     fit: 'inside',
