@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc, deleteDoc, collection as fbCollection, getDocs, query, Timestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc, collection as fbCollection, getDocs, query, Timestamp, runTransaction, writeBatch } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
-import { makePOIId } from '@/lib/slug';
+import { makePOIIdCandidate } from '@/lib/slug';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import POIImagesEditor from './POIImagesEditor';
@@ -20,6 +20,9 @@ import type {
   Koordinaten,
   Bild,
 } from '@/lib/types';
+import { adminPoiEditHref } from '@/lib/redirect';
+import { parseCoordinatePair } from '@/lib/geo';
+import { normalizeImageForFirestore, assertAtomicWriteLimit } from '@/lib/admin-data';
 
 const TYP_OPTIONS: { value: PoiTyp; label: string }[] = [
   { value: 'grab', label: 'Grab' },
@@ -148,21 +151,30 @@ export default function POIForm({ poiId }: POIFormProps) {
     const currLat = type === 'lat' ? val : latInput;
     const currLng = type === 'lng' ? val : lngInput;
 
-    const latNum = parseFloat(currLat);
-    const lngNum = parseFloat(currLng);
+    try {
+      const nextCoordinates = parseCoordinatePair(currLat, currLng);
+      if (!nextCoordinates) {
+        setFormData((prev) => ({ ...prev, koordinaten: null, koordinaten_quelle: null }));
+        return;
+      }
 
-    if (!isNaN(latNum) && !isNaN(lngNum)) {
+      const originalCoordinates = originalData?.koordinaten;
+      const matchesOriginal = !!originalCoordinates
+        && originalCoordinates.lat === nextCoordinates.lat
+        && originalCoordinates.lng === nextCoordinates.lng;
       setFormData((prev) => ({
         ...prev,
-        koordinaten: { lat: latNum, lng: lngNum },
-        koordinaten_quelle: {
+        koordinaten: nextCoordinates,
+        koordinaten_quelle: matchesOriginal
+          ? originalData?.koordinaten_quelle ?? null
+          : {
           typ: 'redaktionell',
           beleg: 'Admin-Editor',
           genauigkeit: 'mittel',
         },
       }));
-    } else if (!currLat.trim() && !currLng.trim()) {
-      setFormData((prev) => ({ ...prev, koordinaten: null, koordinaten_quelle: null }));
+    } catch {
+      // Raw inputs are validated on save; keep the last complete pair meanwhile.
     }
   }
 
@@ -198,18 +210,23 @@ export default function POIForm({ poiId }: POIFormProps) {
       return;
     }
 
+    let parsedCoordinates: Koordinaten | null;
+    try {
+      parsedCoordinates = parseCoordinatePair(latInput, lngInput);
+    } catch (coordinateError: any) {
+      setError(coordinateError.message);
+      return;
+    }
+
     setSaving(true);
     setError(null);
 
     try {
       const now = Timestamp.now();
-      const id = isNew
-        ? makePOIId(name)
-        : poiId!;
-
       const docData: any = {
         ...formData,
-        id,
+        koordinaten: parsedCoordinates,
+        bilder: (formData.bilder ?? []).map(normalizeImageForFirestore),
         geaendert_von: user?.email ?? 'unbekannt',
         geaendert_am: now,
       };
@@ -237,9 +254,25 @@ export default function POIForm({ poiId }: POIFormProps) {
       if (!docData.lagehinweis_quelle) delete docData.lagehinweis_quelle;
       docData.quellen = (docData.quellen ?? []).filter((q: string) => q.trim());
 
-      await setDoc(doc(db, 'pois', id), docData);
+      let savedId = poiId!;
+      if (isNew) {
+        savedId = await runTransaction(db, async (transaction) => {
+          for (let attempt = 1; attempt <= 100; attempt++) {
+            const candidate = makePOIIdCandidate(name, attempt);
+            const candidateRef = doc(db, 'pois', candidate);
+            const existing = await transaction.get(candidateRef);
+            if (!existing.exists()) {
+              transaction.set(candidateRef, { ...docData, id: candidate });
+              return candidate;
+            }
+          }
+          throw new Error('Für diesen Namen konnte keine freie POI-ID erzeugt werden.');
+        });
+      } else {
+        await setDoc(doc(db, 'pois', savedId), { ...docData, id: savedId });
+      }
 
-      router.push('/admin');
+      router.push(isNew ? adminPoiEditHref(savedId) : '/admin');
     } catch (err: any) {
       setError('Fehler beim Speichern: ' + err.message);
     }
@@ -252,18 +285,26 @@ export default function POIForm({ poiId }: POIFormProps) {
     
     setSaving(true);
     try {
-      // 1. Delete POI
-      await deleteDoc(doc(db, 'pois', poiId));
-
-      // 2. Remove POI reference from all collections
       const colSnap = await getDocs(query(fbCollection(db, 'collections')));
-      for (const colDoc of colSnap.docs) {
+      const referencingCollections = colSnap.docs.filter((colDoc) => {
         const data = colDoc.data();
-        if (data.pois && Array.isArray(data.pois) && data.pois.includes(poiId)) {
-          const updatedPois = data.pois.filter((id: string) => id !== poiId);
-          await setDoc(doc(db, 'collections', colDoc.id), { ...data, pois: updatedPois });
-        }
+        return Array.isArray(data.pois) && data.pois.includes(poiId);
+      });
+      assertAtomicWriteLimit(referencingCollections.length + 1);
+
+      const batch = writeBatch(db);
+      const now = Timestamp.now();
+      for (const colDoc of referencingCollections) {
+        const data = colDoc.data();
+        const updatedPois = data.pois.filter((id: string) => id !== poiId);
+        batch.update(colDoc.ref, {
+          pois: updatedPois,
+          geaendert_von: user?.email ?? 'unbekannt',
+          geaendert_am: now,
+        });
       }
+      batch.delete(doc(db, 'pois', poiId));
+      await batch.commit();
 
       router.push('/admin');
     } catch (err: any) {

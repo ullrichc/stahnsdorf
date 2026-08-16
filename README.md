@@ -11,6 +11,8 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 - **Sammlungen** — thematisch kuratierte Gruppen (z.B. „Kunst & Kultur")
 - **POI-Bilder** — Detailseiten zeigen Bilder mit Lightbox, Zoom und Verschieben
 - **GPS-Entfernung** — zeigt die Live-Entfernung zum nächsten Ziel
+- **Vor-Ort-Ortung** — kontinuierliche hochgenaue Position mit Genauigkeitskreis und sichtbaren Fehlermeldungen
+- **Offline-taugliche Oberfläche** — Firestore-Cache, Retry-Zustände und lokal gebündelte SVG-Icons
 
 ## 🔒 Redaktionswerkzeug (`/admin`)
 - **Sicherer Zugang** — Google-Login gekoppelt mit Editor-Whitelist (Firestore `editors`)
@@ -20,6 +22,7 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 - **Sammlungen-Editor** — Einfache Zuordnung von POIs zu thematischen Sammlungen
 - **Bilderverwaltung** — POI-Bilder direkt hochladen, nachweisen und in der App anzeigen
 - **Backup & Restore** — JSON-Export der Inhaltsdaten und vollständige Roundtrip-Backups; Bilddateien bleiben separat in Storage bzw. lokal gesichert
+- **Sichere Schreibvorgänge** — POI-Löschung bereinigt Collection-Referenzen atomar; Restore schreibt bis maximal 500 Operationen vollständig oder gar nicht
 
 ## 🛠 Technologie
 | Komponente | Technologie |
@@ -74,13 +77,16 @@ Das Projekt verfügt über eine umfassende Test-Suite (`Unit`, `E2E`, `Rules`), 
 
 ```bash
 npm run test         # Unit Tests (via Vitest)
+npm run typecheck    # TypeScript prüfen
 npm run test:e2e     # E2E Playwright Tests (startet den Emulator automatisch)
 npm run test:rules   # Firestore Security Rules Tests (startet Emulator automatisch)
+npm run build        # Production Static Export
+npm run verify:export # Export-Routen, 404-Fallback, Icons und Browser-Zoom prüfen
 ```
 
 ## 📦 Build & Deployment
 
-Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) bei jedem Push auf den `main`-Branch, *nachdem* alle Tests im PR/Push-Workflow (`test.yml`) erfolgreich den Local Emulator passiert haben. 
+Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) nach einem erfolgreichen Lauf des Workflows `test.yml` auf `main`. Der Test-Workflow führt Unit-, TypeScript-, Rules- und E2E-Tests sowie den Production-Build und eine Prüfung des Export-Artefakts aus.
 
 **Voraussetzung:** Die Firebase Environment-Variablen müssen als **Repository Secrets** in GitHub hinterlegt sein.
 
@@ -95,6 +101,8 @@ Die zentrale Quelle der Wahrheit für das Datenmodell ist `docs/schema.md`.
 Die zentrale Quelle der Wahrheit für die Inhalte ist `data/stahnsdorf-backup-translated.json`. Firestore ist die Laufzeitkopie für App und Admin, darf aber nicht der einzige Ort für redaktionelle Daten sein.
 Die TypeScript-Typen in `src/lib/types.ts` müssen **immer** mit dem Schema synchron gehalten werden (`POI`, `Collection`, `FirestorePOI`).
 Redaktionelle Regeln für POI-Informationstexte stehen in `docs/redaktionelle-leitlinien.md`.
+
+POI- und Sammlungsdetails verwenden statische Query-Routen (`/poi?id=…`, `/sammlung?id=…`, `/admin/poi/edit?id=…`). So sind neue Firestore-Dokumente im statischen GitHub-Pages-Export sofort erreichbar. Alte Pfad-Links werden vom exportierten 404-Fallback auf die kanonischen Query-Routen umgeleitet.
 
 ### OSM-Kandidaten exportieren
 OpenStreetMap kann als vertrauenswürdige Quelle für zusätzliche Gräber, Denkmäler, Mausoleen und Anlagen ausgewertet werden. Der Audit-Export liest alle OSM-Kandidaten innerhalb der OSM-Friedhofsfläche, gleicht sie mit dem vollständigen lokalen POI-Backup ab und schreibt eine Kandidatenliste mit importfähigen neuen POI-Vorschlägen:

@@ -5,6 +5,8 @@ import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
 import styles from './POICard.module.css'
+import { poiDetailHref } from '@/lib/redirect'
+import AppIcon from './AppIcon'
 
 type Props = {
   poi: POI | null
@@ -34,8 +36,8 @@ export default function POICard({ poi, onClose }: Props) {
         <div className={styles.dragBar} />
       </div>
 
-      <button className={styles.close} onClick={onClose} aria-label="Schließen">
-        <span className="material-symbols-outlined">close</span>
+      <button className={styles.close} onClick={onClose} aria-label={dict.close}>
+        <AppIcon name="close" />
       </button>
 
       <div className={styles.content}>
@@ -46,7 +48,7 @@ export default function POICard({ poi, onClose }: Props) {
 
         {poi.lagehinweis && (
           <p className={styles.locationHint}>
-            <span className="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <AppIcon name="location_on" />
             <span>
               <strong>{dict.locationHint}:</strong> {poi.lagehinweis}
             </span>
@@ -54,9 +56,9 @@ export default function POICard({ poi, onClose }: Props) {
         )}
 
         <div className={styles.actions}>
-          <Link href={`/poi/${poi.id}`} className={styles.primaryBtn}>
+          <Link href={poiDetailHref(poi.id)} className={styles.primaryBtn}>
             <span>{dict.learnMore}</span>
-            <span className="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            <AppIcon name="arrow_forward" />
           </Link>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { useLocaleContext, SupportedLocale } from '@/lib/LocaleContext'
 import { useDictionary } from '@/lib/ui-dictionary'
 import styles from './page.module.css'
+import AppIcon from '@/components/AppIcon'
 
 const localeNames: Record<SupportedLocale, string> = {
   de: 'Deutsch',
@@ -25,7 +26,7 @@ export default function SettingsPage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
-          <span className={`material-symbols-outlined ${styles.sectionIcon}`}>translate</span>
+          <AppIcon name="translate" className={styles.sectionIcon} />
           {dict.languageLabel}
         </h2>
         <div className={styles.langGrid}>
@@ -34,6 +35,7 @@ export default function SettingsPage() {
               key={l}
               className={`${styles.langBtn} ${l === locale ? styles.langActive : ''}`}
               onClick={() => setLocale(l)}
+              aria-pressed={l === locale}
             >
               <span className={styles.langCode}>{l.toUpperCase()}</span>
               <span className={styles.langName}>{localeNames[l]}</span>

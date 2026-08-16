@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch'
 import { POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
@@ -10,13 +10,18 @@ import { useDictionary } from '@/lib/ui-dictionary'
 import { resolveImageUrl } from '@/lib/images'
 import { getLightboxNextIndex, getLightboxPreviousIndex, shouldCloseLightbox } from '@/lib/image-lightbox'
 import { formatDateRange, linkifySourceText } from '@/lib/poi-display'
+import { feedbackFormUrl } from '@/lib/feedback'
 import AudioPlayer from '@/components/AudioPlayer'
 import styles from './page.module.css'
+import AppIcon from '@/components/AppIcon'
 
 export default function POIDetailContent({ poi }: { poi: POI }) {
   const locale = useLocale()
   const dict = useDictionary(locale)
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null)
+  const lightboxRef = useRef<HTMLDivElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const openerRef = useRef<HTMLElement | null>(null)
 
   const audioSrc = (poi.audio && typeof poi.audio === 'object') ? poi.audio[locale] || poi.audio['de'] : undefined
   
@@ -41,17 +46,45 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
   const activeImagePosition = activeImageIndex ?? 0
   const poiName = t(poi.name, locale)
   const hasMultipleImages = images.length > 1
+  const lightboxOpen = activeImageIndex !== null
 
   useEffect(() => {
-    if (activeImageIndex === null) return
+    if (!lightboxOpen) return
 
-    const previousOverflow = document.body.style.overflow
+    const scrollY = window.scrollY
+    const previousStyles = {
+      overflow: document.body.style.overflow,
+      position: document.body.style.position,
+      top: document.body.style.top,
+      width: document.body.style.width,
+    }
     document.body.style.overflow = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${scrollY}px`
+    document.body.style.width = '100%'
+    closeButtonRef.current?.focus()
 
     function handleKeyDown(event: KeyboardEvent) {
       if (shouldCloseLightbox(event.key)) {
+        event.preventDefault()
         setActiveImageIndex(null)
         return
+      }
+
+      if (event.key === 'Tab') {
+        const focusable = Array.from(
+          lightboxRef.current?.querySelectorAll<HTMLElement>('button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])') ?? [],
+        )
+        if (focusable.length === 0) return
+        const first = focusable[0]
+        const last = focusable[focusable.length - 1]
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault()
+          last.focus()
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault()
+          first.focus()
+        }
       }
 
       if (event.key === 'ArrowRight') {
@@ -70,10 +103,15 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
     window.addEventListener('keydown', handleKeyDown)
 
     return () => {
-      document.body.style.overflow = previousOverflow
+      document.body.style.overflow = previousStyles.overflow
+      document.body.style.position = previousStyles.position
+      document.body.style.top = previousStyles.top
+      document.body.style.width = previousStyles.width
+      window.scrollTo(0, scrollY)
       window.removeEventListener('keydown', handleKeyDown)
+      openerRef.current?.focus()
     }
-  }, [activeImageIndex, images.length])
+  }, [lightboxOpen, images.length])
 
   const renderSource = (source: string) => linkifySourceText(source).map((segment, index) => {
     if (segment.type === 'link') {
@@ -91,8 +129,8 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
     <div className={styles.page}>
       {/* Header with back button */}
       <div className={styles.header}>
-        <Link href="/" className={styles.back}>
-          <span className="material-symbols-outlined">arrow_back</span>
+        <Link href="/" className={styles.back} aria-label={dict.back}>
+          <AppIcon name="arrow_back" />
         </Link>
       </div>
 
@@ -107,7 +145,7 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
         {dateRange && (
           <div className={styles.chips}>
             <span className={styles.dateChip}>
-              <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>history</span>
+              <AppIcon name="history" style={{ fontSize: '14px' }} />
               {dateRange}
             </span>
           </div>
@@ -133,8 +171,11 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
                     <button
                       type="button"
                       className={styles.galleryButton}
-                      onClick={() => setActiveImageIndex(index)}
-                      aria-label={`${caption || poiName} vergrößern`}
+                      onClick={(event) => {
+                        openerRef.current = event.currentTarget
+                        setActiveImageIndex(index)
+                      }}
+                      aria-label={`${caption || poiName}: ${dict.enlargeImage}`}
                     >
                       <img src={imageUrl} alt={caption || poiName} />
                     </button>
@@ -160,9 +201,10 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
         {activeImage && activeImageUrl && (
           <div
             className={styles.lightbox}
+            ref={lightboxRef}
             role="dialog"
             aria-modal="true"
-            aria-label="Bild vergrößert anzeigen"
+            aria-label={dict.imageViewer}
             onMouseDown={(event) => {
               if (event.target === event.currentTarget) setActiveImageIndex(null)
             }}
@@ -170,11 +212,12 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
             <div className={styles.lightboxChrome}>
               <button
                 type="button"
+                ref={closeButtonRef}
                 className={styles.lightboxIconButton}
                 onClick={() => setActiveImageIndex(null)}
-                aria-label="Bild schließen"
+                aria-label={dict.close}
               >
-                <span className="material-symbols-outlined" aria-hidden="true">close</span>
+                <AppIcon name="close" />
               </button>
             </div>
 
@@ -186,9 +229,9 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
                   onClick={() => setActiveImageIndex((current) =>
                     current === null ? current : getLightboxPreviousIndex(current, images.length),
                   )}
-                  aria-label="Vorheriges Bild"
+                  aria-label={dict.previousImage}
                 >
-                  <span className="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+                  <AppIcon name="chevron_left" />
                 </button>
                 <button
                   type="button"
@@ -196,9 +239,9 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
                   onClick={() => setActiveImageIndex((current) =>
                     current === null ? current : getLightboxNextIndex(current, images.length),
                   )}
-                  aria-label="Nächstes Bild"
+                  aria-label={dict.nextImage}
                 >
-                  <span className="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+                  <AppIcon name="chevron_right" />
                 </button>
               </>
             )}
@@ -217,14 +260,14 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
               {({ zoomIn, zoomOut, resetTransform }) => (
                 <>
                   <div className={styles.lightboxZoomControls}>
-                    <button type="button" onClick={() => zoomOut()} aria-label="Verkleinern">
-                      <span className="material-symbols-outlined" aria-hidden="true">zoom_out</span>
+                    <button type="button" onClick={() => zoomOut()} aria-label={dict.zoomOut}>
+                      <AppIcon name="zoom_out" />
                     </button>
-                    <button type="button" onClick={() => resetTransform()} aria-label="Ansicht zurücksetzen">
-                      <span className="material-symbols-outlined" aria-hidden="true">center_focus_strong</span>
+                    <button type="button" onClick={() => resetTransform()} aria-label={dict.resetView}>
+                      <AppIcon name="center_focus_strong" />
                     </button>
-                    <button type="button" onClick={() => zoomIn()} aria-label="Vergrößern">
-                      <span className="material-symbols-outlined" aria-hidden="true">zoom_in</span>
+                    <button type="button" onClick={() => zoomIn()} aria-label={dict.zoomIn}>
+                      <AppIcon name="zoom_in" />
                     </button>
                   </div>
                   <TransformComponent
@@ -262,7 +305,7 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
 
         {poi.lagehinweis && (
           <div className={styles.locationHint}>
-            <span className="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <AppIcon name="location_on" />
             <div>
               <span className={styles.locationLabel}>{dict.locationHint}</span>
               <p>{poi.lagehinweis}</p>
@@ -280,7 +323,7 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
               className={styles.secondaryBtn}
             >
               Wikipedia
-              <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+              <AppIcon name="open_in_new" style={{ fontSize: '16px' }} />
             </a>
           </div>
         )}
@@ -296,6 +339,19 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
             ))}
           </div>
         )}
+
+        <div className={styles.feedback}>
+          <p>{dict.poiFeedbackText}</p>
+          <a
+            href={feedbackFormUrl(poiName)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.feedbackLink}
+          >
+            {dict.poiFeedbackLink}
+            <AppIcon name="open_in_new" style={{ fontSize: '16px' }} />
+          </a>
+        </div>
       </div>
     </div>
   )

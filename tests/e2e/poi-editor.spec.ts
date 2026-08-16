@@ -10,6 +10,7 @@ import {
   setupTestEnvironment,
   loginInPlaywright,
   seedTestPOIs,
+  seedTestCollections,
   TEST_EDITOR_EMAIL,
   getTestDoc,
 } from '../utils/firebase-test-utils';
@@ -32,7 +33,12 @@ const EXISTING_POI = {
   datum_von: '1850-03-01',
   datum_bis: '1920-07-15',
   wikipedia_url: 'https://de.wikipedia.org/wiki/Test',
-  bilder: [{ url: 'https://example.com/img.jpg', nachweis: 'Public Domain', beschreibung: { de: 'Bild' } }],
+  bilder: [{
+    datei: 'https://example.com/img.jpg',
+    nachweis: 'Public Domain',
+    nachweis_url: 'https://example.com/source',
+    beschriftung: { de: 'Bild' },
+  }],
   audio: { de: 'https://example.com/audio.mp3' },
   quellen: ['Quelle 1', 'Quelle 2'],
   status: 'bestätigt' as const,
@@ -54,7 +60,7 @@ async function gotoNewPOI(page: any) {
 // Helper: login and navigate to existing POI
 async function gotoExistingPOI(page: any) {
   await seedTestPOIs([EXISTING_POI], TEST_EDITOR_EMAIL);
-  await page.goto(`/admin/poi/${EXISTING_POI.id}`);
+  await page.goto(`/admin/poi/edit?id=${encodeURIComponent(EXISTING_POI.id)}`);
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
   await page.locator('.admin-editor').waitFor({ state: 'visible', timeout: 15_000 });
 }
@@ -99,10 +105,12 @@ test('NEW-04: name generates correct ID and saves', async ({ page }) => {
   await page.locator('input[placeholder="z.B. Heinrich Zille"]').fill('Heinrich Zille');
   await page.locator('button:has-text("Speichern")').click();
 
-  // Should redirect to /admin after save
-  await page.waitForURL('**/admin', { timeout: 15_000 });
+  // Newly created POIs stay editable so image upload is immediately available.
+  await page.waitForURL('**/admin/poi/edit?id=poi_sws_heinrich-zille', { timeout: 15_000 });
+  await expect(page.locator('input[type="file"]')).toBeEnabled();
 
-  // Verify POI appears in table with correct ID slug
+  // Verify POI appears in the table with the generated ID.
+  await page.goto('/admin');
   await page.locator('.admin-table').waitFor({ state: 'visible', timeout: 15_000 });
   await expect(page.locator('.admin-table')).toContainText('Heinrich Zille');
   await expect(page.locator('.admin-table')).toContainText('heinrich-zille');
@@ -114,11 +122,7 @@ test('NEW-05: audit fields set on create', async ({ page }) => {
 
   await page.locator('input[placeholder="z.B. Heinrich Zille"]').fill('Audit Test');
   await page.locator('button:has-text("Speichern")').click();
-  await page.waitForURL('**/admin', { timeout: 15_000 });
-
-  // Navigate to the created POI
-  await page.locator('.admin-table').waitFor({ state: 'visible' });
-  await page.locator('a:has-text("Audit Test")').click();
+  await page.waitForURL('**/admin/poi/edit?id=poi_sws_audit-test', { timeout: 15_000 });
   await page.locator('.admin-editor').waitFor({ state: 'visible', timeout: 15_000 });
 
   // Metadata section should show the test editor email
@@ -194,9 +198,7 @@ test('GEO-01: manual coordinate entry saves correctly sequentially', async ({ pa
   // Save POI
   await page.locator('button:has-text("Speichern")').click();
 
-  // Redirects away
-  await page.waitForURL('**/admin', { timeout: 15_000 });
-  await page.locator('.admin-table').waitFor({ state: 'visible', timeout: 15_000 });
+  await page.waitForURL('**/admin/poi/edit?id=poi_sws_coord-test', { timeout: 15_000 });
 
   // Read backend directly to verify koordinaten decoupled state was persisted properly
   const doc = await getTestDoc('pois', 'poi_sws_coord-test');
@@ -240,6 +242,66 @@ test('GEO-04: invalid coordinate input does not crash', async ({ page }) => {
 
   // Should still show "Keine Koordinaten" since parseFloat('abc') is NaN
   await expect(page.locator('body')).toContainText('Keine Koordinaten — POI erscheint nicht auf der Karte');
+
+  await page.locator('input[placeholder="z.B. Heinrich Zille"]').fill('Invalid Coord');
+  await page.locator('button:has-text("Speichern")').click();
+  await expect(page.locator('body')).toContainText('Koordinaten müssen gültige Zahlen sein.');
+});
+
+test('EDIT-01b: image metadata stays local until save and empty source URL is removed', async ({ page }) => {
+  await gotoExistingPOI(page);
+
+  const sourceUrl = page.locator('.admin-images-editor .admin-field').filter({ hasText: 'Nachweis-URL' }).locator('input');
+  await sourceUrl.fill('');
+
+  const beforeSave = await getTestDoc('pois', EXISTING_POI.id);
+  expect(beforeSave?.bilder[0].nachweis_url).toBe('https://example.com/source');
+
+  await page.locator('button:has-text("Speichern")').click();
+  await page.waitForURL('**/admin', { timeout: 15_000 });
+
+  const afterSave = await getTestDoc('pois', EXISTING_POI.id);
+  expect(afterSave?.bilder[0]).not.toHaveProperty('nachweis_url');
+});
+
+test('EDIT-01c: reordering images does not persist pending metadata edits', async ({ page }) => {
+  const secondImage = {
+    datei: 'https://example.com/second.jpg',
+    nachweis: 'Second Credit',
+    beschriftung: { de: 'Zweites Bild' },
+  };
+  await seedTestPOIs([{
+    ...EXISTING_POI,
+    bilder: [...EXISTING_POI.bilder, secondImage],
+  }], TEST_EDITOR_EMAIL);
+  await page.goto(`/admin/poi/edit?id=${encodeURIComponent(EXISTING_POI.id)}`);
+  await loginInPlaywright(page, TEST_EDITOR_EMAIL);
+  await page.locator('.admin-editor').waitFor({ state: 'visible', timeout: 15_000 });
+
+  const firstCredit = page.locator('.admin-image-item').first().locator('.admin-field').filter({ hasText: 'Nachweis' }).first().locator('input');
+  await firstCredit.fill('Noch nicht gespeichert');
+  await page.locator('.admin-image-item').first().locator('.admin-image-actions button').nth(1).click();
+
+  await expect.poll(async () => (await getTestDoc('pois', EXISTING_POI.id))?.bilder[0].datei).toBe(secondImage.datei);
+  const backend = await getTestDoc('pois', EXISTING_POI.id);
+  expect(backend?.bilder[1].nachweis).toBe('Public Domain');
+  await expect(page.locator('.admin-image-item').nth(1).locator('.admin-field').filter({ hasText: 'Nachweis' }).first().locator('input')).toHaveValue('Noch nicht gespeichert');
+});
+
+test('NEW-06: duplicate names receive a collision-safe id', async ({ page }) => {
+  await seedTestPOIs([{
+    ...EXISTING_POI,
+    id: 'poi_sws_gleicher-name',
+    name: { de: 'Gleicher Name' },
+  }], TEST_EDITOR_EMAIL);
+  await gotoNewPOI(page);
+
+  await page.locator('input[placeholder="z.B. Heinrich Zille"]').fill('Gleicher Name');
+  await page.locator('button:has-text("Speichern")').click();
+
+  await page.waitForURL('**/admin/poi/edit?id=poi_sws_gleicher-name-2', { timeout: 15_000 });
+  expect(await getTestDoc('pois', 'poi_sws_gleicher-name')).not.toBeNull();
+  expect(await getTestDoc('pois', 'poi_sws_gleicher-name-2')).not.toBeNull();
 });
 
 // ═══ GEO-05: Koordinaten-Metadaten editieren ═══
@@ -319,11 +381,9 @@ test('SRC-03: empty sources filtered on save', async ({ page }) => {
   await inputs.nth(2).fill('   ');
 
   await page.locator('button:has-text("Speichern")').click();
-  await page.waitForURL('**/admin', { timeout: 15_000 });
+  await page.waitForURL('**/admin/poi/edit?id=poi_sws_source-filter-test', { timeout: 15_000 });
 
-  // Re-open and verify only 1 source remains
-  await page.locator('.admin-table').waitFor({ state: 'visible' });
-  await page.locator('a:has-text("Source Filter Test")').click();
+  // The newly saved POI is reloaded in-place; only the non-empty source remains.
   await page.locator('.admin-editor').waitFor({ state: 'visible', timeout: 15_000 });
   await expect(page.locator('.source-list input[type="text"]')).toHaveCount(1);
 });
@@ -342,6 +402,30 @@ test('DEL-01: delete POI with confirm', async ({ page }) => {
   // POI should no longer be in the table
   await page.locator('.admin-table').waitFor({ state: 'visible' });
   await expect(page.locator('.admin-table')).not.toContainText('Test POI');
+});
+
+test('DEL-01b: deleting a POI atomically cleans collection references and audit fields', async ({ page }) => {
+  await seedTestCollections([{
+    id: 'collection_sws-delete-reference',
+    name: { de: 'Delete Reference' },
+    kurztext: { de: 'Kurz' },
+    beschreibung: { de: 'Beschreibung' },
+    pois: [EXISTING_POI.id],
+    status: 'bestätigt',
+    notiz: '',
+    publish_status: 'entwurf',
+  }], 'other-editor@example.com');
+  await gotoExistingPOI(page);
+
+  page.on('dialog', (dialog) => dialog.accept());
+  await page.locator('button:has-text("Löschen")').click();
+  await page.waitForURL('**/admin', { timeout: 15_000 });
+
+  expect(await getTestDoc('pois', EXISTING_POI.id)).toBeNull();
+  const collection = await getTestDoc('collections', 'collection_sws-delete-reference');
+  expect(collection?.pois).toEqual([]);
+  expect(collection?.erstellt_von).toBe('other-editor@example.com');
+  expect(collection?.geaendert_von).toBe(TEST_EDITOR_EMAIL);
 });
 
 // ═══ DEL-02: POI löschen abbrechen ═══

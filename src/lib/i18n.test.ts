@@ -18,6 +18,11 @@ describe('t() translation function', () => {
     expect(t({} as any, 'en')).toBe('')
   })
 
+  test('returns empty string for a missing localized value', () => {
+    expect(t(undefined, 'en')).toBe('')
+    expect(t(null, 'de')).toBe('')
+  })
+
   test('defaults to de when no locale argument is given', () => {
     expect(t({ de: 'Standard', en: 'Default' })).toBe('Standard')
   })

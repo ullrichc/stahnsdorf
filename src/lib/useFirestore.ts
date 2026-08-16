@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 import { db } from './firebase';
 import type { POI, Collection } from './types';
+import { isValidCoordinates } from './geo';
 
 /**
  * Hook: Alle veröffentlichten POIs mit Koordinaten laden.
@@ -13,9 +14,14 @@ export function usePOIs() {
   const [pois, setPois] = useState<POI[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const retry = useCallback(() => setAttempt((value) => value + 1), []);
 
   useEffect(() => {
+    let cancelled = false;
     async function load() {
+      setLoading(true);
+      setError(null);
       try {
         const q = query(
           collection(db, 'pois'),
@@ -24,18 +30,19 @@ export function usePOIs() {
         const snap = await getDocs(q);
         const data = snap.docs
           .map((d) => d.data() as POI)
-          .filter((poi) => poi.koordinaten !== null);
-        setPois(data);
+          .filter((poi) => isValidCoordinates(poi.koordinaten));
+        if (!cancelled) setPois(data);
       } catch (err: any) {
         console.error('Fehler beim Laden der POIs:', err);
-        setError(err.message);
+        if (!cancelled) setError('load-failed');
       }
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
     load();
-  }, []);
+    return () => { cancelled = true; };
+  }, [attempt]);
 
-  return { pois, loading, error };
+  return { pois, loading, error, retry };
 }
 
 /**
@@ -45,25 +52,34 @@ export function usePOI(id: string) {
   const [poi, setPoi] = useState<POI | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [notFound, setNotFound] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  const retry = useCallback(() => setAttempt((value) => value + 1), []);
 
   useEffect(() => {
+    let cancelled = false;
     async function load() {
+      setLoading(true);
+      setError(null);
+      setNotFound(false);
+      setPoi(null);
       try {
         const snap = await getDoc(doc(db, 'pois', id));
         if (snap.exists()) {
-          setPoi(snap.data() as POI);
+          if (!cancelled) setPoi(snap.data() as POI);
         } else {
-          setError('POI nicht gefunden.');
+          if (!cancelled) setNotFound(true);
         }
       } catch (err: any) {
-        setError(err.message);
+        if (!cancelled) setError('load-failed');
       }
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
     load();
-  }, [id]);
+    return () => { cancelled = true; };
+  }, [id, attempt]);
 
-  return { poi, loading, error };
+  return { poi, loading, error, notFound, retry };
 }
 
 /**
@@ -73,26 +89,32 @@ export function useCollections() {
   const [collections, setCollections] = useState<Collection[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const retry = useCallback(() => setAttempt((value) => value + 1), []);
 
   useEffect(() => {
+    let cancelled = false;
     async function load() {
+      setLoading(true);
+      setError(null);
       try {
         const q = query(
           collection(db, 'collections'),
           where('publish_status', '==', 'veröffentlicht')
         );
         const snap = await getDocs(q);
-        setCollections(snap.docs.map((d) => d.data() as Collection));
+        if (!cancelled) setCollections(snap.docs.map((d) => d.data() as Collection));
       } catch (err: any) {
         console.error('Fehler beim Laden der Collections:', err);
-        setError(err.message);
+        if (!cancelled) setError('load-failed');
       }
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
     load();
-  }, []);
+    return () => { cancelled = true; };
+  }, [attempt]);
 
-  return { collections, loading, error };
+  return { collections, loading, error, retry };
 }
 
 /**
@@ -102,23 +124,32 @@ export function useCollection(id: string) {
   const [data, setData] = useState<Collection | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [notFound, setNotFound] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  const retry = useCallback(() => setAttempt((value) => value + 1), []);
 
   useEffect(() => {
+    let cancelled = false;
     async function load() {
+      setLoading(true);
+      setError(null);
+      setNotFound(false);
+      setData(null);
       try {
         const snap = await getDoc(doc(db, 'collections', id));
         if (snap.exists()) {
-          setData(snap.data() as Collection);
+          if (!cancelled) setData(snap.data() as Collection);
         } else {
-          setError('Sammlung nicht gefunden.');
+          if (!cancelled) setNotFound(true);
         }
       } catch (err: any) {
-        setError(err.message);
+        if (!cancelled) setError('load-failed');
       }
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
     load();
-  }, [id]);
+    return () => { cancelled = true; };
+  }, [id, attempt]);
 
-  return { collection: data, loading, error };
+  return { collection: data, loading, error, notFound, retry };
 }

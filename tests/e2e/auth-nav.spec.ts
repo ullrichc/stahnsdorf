@@ -103,38 +103,33 @@ test('AUTH-04: logout via sidebar button returns to login', async ({ page }) => 
 });
 
 // ═══════════════════════════════════════════════════════════
-// NAV-01: Sidebar sichtbar nach Login mit 4 Links
+// NAV-01: Sidebar sichtbar nach Login mit 3 eindeutigen Links
 // ═══════════════════════════════════════════════════════════
-test('NAV-01: sidebar shows 4 navigation links after login', async ({ page }) => {
+test('NAV-01: sidebar shows 3 unique navigation links after login', async ({ page }) => {
   await page.goto('/admin');
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
 
   const navLinks = page.locator('.admin-sidebar-nav .admin-sidebar-link');
-  await expect(navLinks).toHaveCount(4);
+  await expect(navLinks).toHaveCount(3);
 
   // Verify link labels
-  await expect(navLinks.nth(0)).toContainText('Übersicht');
-  await expect(navLinks.nth(1)).toContainText('POIs');
-  await expect(navLinks.nth(2)).toContainText('Sammlungen');
-  await expect(navLinks.nth(3)).toContainText('Backup');
+  await expect(navLinks.nth(0)).toContainText('POIs');
+  await expect(navLinks.nth(1)).toContainText('Sammlungen');
+  await expect(navLinks.nth(2)).toContainText('Backup');
 });
 
 // ═══════════════════════════════════════════════════════════
 // NAV-02: Active-State on /admin — BUG-01 validation
 // ═══════════════════════════════════════════════════════════
-test('NAV-02: both Übersicht and POIs are .active on /admin (BUG-01)', async ({ page }) => {
+test('NAV-02: only POIs is active on /admin', async ({ page }) => {
   await page.goto('/admin');
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
 
   const navLinks = page.locator('.admin-sidebar-nav .admin-sidebar-link');
 
-  // Both "Übersicht" and "POIs" link to /admin with exact:true, so both should be .active
   await expect(navLinks.nth(0)).toHaveClass(/active/);
-  await expect(navLinks.nth(1)).toHaveClass(/active/);
-
-  // "Sammlungen" and "Backup" should NOT be active
+  await expect(navLinks.nth(1)).not.toHaveClass(/active/);
   await expect(navLinks.nth(2)).not.toHaveClass(/active/);
-  await expect(navLinks.nth(3)).not.toHaveClass(/active/);
 });
 
 // ═══════════════════════════════════════════════════════════
@@ -145,10 +140,10 @@ test('NAV-03: Sammlungen link is .active on /admin/collections', async ({ page }
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
 
   const navLinks = page.locator('.admin-sidebar-nav .admin-sidebar-link');
-  await expect(navLinks.nth(2)).toHaveClass(/active/);
+  await expect(navLinks.nth(1)).toHaveClass(/active/);
   // Others should not be active
   await expect(navLinks.nth(0)).not.toHaveClass(/active/);
-  await expect(navLinks.nth(1)).not.toHaveClass(/active/);
+  await expect(navLinks.nth(2)).not.toHaveClass(/active/);
 });
 
 // ═══════════════════════════════════════════════════════════
@@ -159,7 +154,7 @@ test('NAV-04: Backup link is .active on /admin/backup', async ({ page }) => {
   await loginInPlaywright(page, TEST_EDITOR_EMAIL);
 
   const navLinks = page.locator('.admin-sidebar-nav .admin-sidebar-link');
-  await expect(navLinks.nth(3)).toHaveClass(/active/);
+  await expect(navLinks.nth(2)).toHaveClass(/active/);
 });
 
 // ═══════════════════════════════════════════════════════════

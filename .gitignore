@@ -47,3 +47,5 @@ playwright-report/
 # Verschiedenes
 *.log
 inputdata/
+.tmp-poi-text-translation-cache.json
+outputs/

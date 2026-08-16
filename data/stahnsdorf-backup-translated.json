@@ -5736,8 +5736,8 @@
         "OpenStreetMap: node 13629435895, https://www.openstreetmap.org/node/13629435895, Version 1, Stand 2026-03-09T09:12:24Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"artwork_type\":\"statue\",\"material\":\"metal\",\"memorial\":\"statue\",\"tourism\":\"artwork\"} Die genaue Bedeutung/Widmung der namenlosen Metallstatue wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen.",
-      "publish_status": "veröffentlicht",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"artwork_type\":\"statue\",\"material\":\"metal\",\"memorial\":\"statue\",\"tourism\":\"artwork\"} Die genaue Bedeutung/Widmung der namenlosen Metallstatue wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-05-25T00:00:00.000Z",
@@ -5789,8 +5789,8 @@
         "OpenStreetMap: node 11966089685, https://www.openstreetmap.org/node/11966089685, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen.",
-      "publish_status": "veröffentlicht",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-05-25T00:00:00.000Z",
@@ -5842,8 +5842,8 @@
         "OpenStreetMap: node 11966089686, https://www.openstreetmap.org/node/11966089686, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der zweiten namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen.",
-      "publish_status": "veröffentlicht",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der zweiten namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-05-25T00:00:00.000Z",
@@ -6002,8 +6002,8 @@
         "OpenStreetMap: node 12912566004, https://www.openstreetmap.org/node/12912566004, Version 1, Stand 2025-06-13T12:30:59Z, abgerufen 2026-05-25"
       ],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"grave\",\"description\":\"Baum 1130\",\"inscription\":\"Michael Heinrich\\n* 14.3.1956\\n+ 26.4.2025\",\"name\":\"Michael Heinrich\"} Zu Michael Heinrich wurden in den ausgewerteten Quellen keine belastbaren biografischen Angaben über OSM-Inschrift und Lebensdaten hinaus gefunden.",
-      "publish_status": "veröffentlicht",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"grave\",\"description\":\"Baum 1130\",\"inscription\":\"Michael Heinrich\\n* 14.3.1956\\n+ 26.4.2025\",\"name\":\"Michael Heinrich\"} Zu Michael Heinrich wurden in den ausgewerteten Quellen keine belastbaren biografischen Angaben über OSM-Inschrift und Lebensdaten hinaus gefunden. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-05-25T00:00:00.000Z",

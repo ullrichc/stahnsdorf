@@ -7,6 +7,8 @@ import { useAuth } from '@/components/admin/AuthGate';
 import type { FirestorePOI, PoiTyp, PublishStatus, Status } from '@/lib/types';
 import { t } from '@/lib/i18n';
 import Link from 'next/link';
+import { adminPoiEditHref, poiDetailHref } from '@/lib/redirect';
+import AppIcon from '@/components/AppIcon';
 
 const TYP_LABEL: Record<PoiTyp, string> = {
   grab: 'Grab',
@@ -136,7 +138,7 @@ export default function AdminPage() {
           <h1 className="admin-page-title">Point of Interest Management</h1>
         </div>
         <Link href="/admin/poi/new" className="admin-btn-primary">
-          <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>add</span>
+          <AppIcon name="add" style={{ fontSize: '18px' }} />
           Neuer POI
         </Link>
       </div>
@@ -144,7 +146,7 @@ export default function AdminPage() {
       {/* Toolbar */}
       <div className="admin-toolbar">
         <div className="admin-search-wrap">
-          <span className="material-symbols-outlined admin-search-icon">search</span>
+          <AppIcon name="search" className="admin-search-icon" />
           <input
             type="search"
             placeholder="Nach Name oder ID filtern..."
@@ -215,7 +217,7 @@ export default function AdminPage() {
             {filtered.map((poi) => (
               <tr key={poi.id}>
                 <td className="name-cell">
-                  <Link href={`/admin/poi/${poi.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link href={adminPoiEditHref(poi.id)} style={{ color: 'inherit', textDecoration: 'none' }}>
                     {t(poi.name, 'de')}
                   </Link>
                   <span className="name-id">{poi.id?.split('_').pop()}</span>
@@ -243,11 +245,11 @@ export default function AdminPage() {
                     : '—'}
                 </td>
                 <td className="admin-actions">
-                  <Link href={`/admin/poi/${poi.id}`} className="admin-action-btn" title="Bearbeiten">
-                    <span className="material-symbols-outlined">edit</span>
+                  <Link href={adminPoiEditHref(poi.id)} className="admin-action-btn" title="Bearbeiten">
+                    <AppIcon name="edit" />
                   </Link>
-                  <Link href={`/poi/${poi.id}`} target="_blank" className="admin-action-btn" title="Vorschau">
-                    <span className="material-symbols-outlined">visibility</span>
+                  <Link href={poiDetailHref(poi.id)} target="_blank" className="admin-action-btn" title="Vorschau">
+                    <AppIcon name="visibility" />
                   </Link>
                 </td>
               </tr>

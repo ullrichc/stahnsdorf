@@ -9,12 +9,13 @@ import {
   setDoc,
   deleteDoc,
   Timestamp,
+  runTransaction,
 } from 'firebase/firestore';
 import { signOut } from 'firebase/auth';
 import { db, auth } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import { t } from '@/lib/i18n';
-import { makeCollectionId } from '@/lib/slug';
+import { makeCollectionIdCandidate } from '@/lib/slug';
 import Link from 'next/link';
 import type {
   FirestoreCollection,
@@ -115,9 +116,7 @@ export default function CollectionsPage() {
 
     try {
       const now = Timestamp.now();
-      const id = editing._isNew
-        ? makeCollectionId(name)
-        : editing.id!;
+      let id = editing.id!;
 
       const { _isNew, ...rest } = editing;
       const docData: any = {
@@ -136,7 +135,22 @@ export default function CollectionsPage() {
         docData.erstellt_am = original?.erstellt_am ?? editing.erstellt_am ?? now;
       }
 
-      await setDoc(doc(db, 'collections', id), docData);
+      if (_isNew) {
+        id = await runTransaction(db, async (transaction) => {
+          for (let attempt = 1; attempt <= 100; attempt++) {
+            const candidate = makeCollectionIdCandidate(name, attempt);
+            const candidateRef = doc(db, 'collections', candidate);
+            const existing = await transaction.get(candidateRef);
+            if (!existing.exists()) {
+              transaction.set(candidateRef, { ...docData, id: candidate });
+              return candidate;
+            }
+          }
+          throw new Error('Für diesen Namen konnte keine freie Sammlungs-ID erzeugt werden.');
+        });
+      } else {
+        await setDoc(doc(db, 'collections', id), docData);
+      }
       setEditing(null);
       await loadData();
     } catch (err: any) {

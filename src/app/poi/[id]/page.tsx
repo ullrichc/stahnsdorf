@@ -1,5 +1,6 @@
 import backupData from '../../../../data/stahnsdorf-backup-translated.json'
-import POIDetailClient from './POIDetailClient'
+import LegacyRouteRedirect from '@/components/LegacyRouteRedirect'
+import { poiDetailHref } from '@/lib/redirect'
 
 // Build-time: Generiert statische Seiten für alle bekannten POIs aus lokalem JSON Snapshot
 export function generateStaticParams() {
@@ -11,5 +12,5 @@ export function generateStaticParams() {
 // Server-Component die den Client-Wrapper rendert
 export default async function POIDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  return <POIDetailClient id={id} />
+  return <LegacyRouteRedirect href={poiDetailHref(id)} />
 }

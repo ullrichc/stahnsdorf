@@ -85,7 +85,7 @@
   border-left: 3px solid var(--color-primary);
 }
 
-.admin-sidebar-link .material-symbols-outlined {
+.admin-sidebar-link .app-icon {
   font-size: 20px;
 }
 
@@ -101,7 +101,7 @@
   margin-bottom: 12px;
 }
 
-.admin-sidebar-user .material-symbols-outlined {
+.admin-sidebar-user .app-icon {
   font-size: 36px;
   color: var(--color-on-surface-variant);
 }
@@ -143,7 +143,7 @@
   color: var(--color-error);
 }
 
-.admin-sidebar-logout .material-symbols-outlined {
+.admin-sidebar-logout .app-icon {
   font-size: 18px;
 }
 
@@ -478,7 +478,7 @@
   color: var(--color-primary);
 }
 
-.admin-action-btn .material-symbols-outlined {
+.admin-action-btn .app-icon {
   font-size: 18px;
 }
 

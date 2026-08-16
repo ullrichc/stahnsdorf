@@ -1,4 +1,5 @@
 import type { Bild } from './types';
+import { resolveAppPath } from './app-path';
 
 export const DEFAULT_IMAGE_CREDIT = 'Förderverein Südwestkirchhof Stahnsdorf e.V.';
 export const MAX_UPLOAD_BYTES = 20 * 1024 * 1024;
@@ -54,14 +55,7 @@ export function resolveImageUrl(urlOrPath?: string): string | undefined {
   const value = urlOrPath.trim();
   if (/^(https?:|data:|blob:)/.test(value)) return value;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (process.env.NODE_ENV === 'production' ? '/stahnsdorf' : '');
-  const normalizedBase = basePath.replace(/\/$/, '');
-  const normalizedPath = value.startsWith('/') ? value : `/${value}`;
-
-  if (normalizedBase && normalizedPath === normalizedBase) return normalizedPath;
-  if (normalizedBase && normalizedPath.startsWith(`${normalizedBase}/`)) return normalizedPath;
-
-  return `${normalizedBase}${normalizedPath}`;
+  return resolveAppPath(value);
 }
 
 export function getImageDisplayUrl(image?: Bild): string | undefined {

@@ -19,6 +19,16 @@ export function makePOIId(name: string): string {
   return `poi_sws_${slugifyKennung(name)}`
 }
 
+export function makePOIIdCandidate(name: string, attempt: number): string {
+  const base = makePOIId(name)
+  return attempt <= 1 ? base : `${base}-${attempt}`
+}
+
 export function makeCollectionId(name: string): string {
   return `collection_sws_${slugifyKennung(name)}`
+}
+
+export function makeCollectionIdCandidate(name: string, attempt: number): string {
+  const base = makeCollectionId(name)
+  return attempt <= 1 ? base : `${base}-${attempt}`
 }

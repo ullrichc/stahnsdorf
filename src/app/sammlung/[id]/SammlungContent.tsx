@@ -7,6 +7,7 @@ import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
 import DynamicMapView from '@/components/DynamicMapView'
 import styles from './page.module.css'
+import AppIcon from '@/components/AppIcon'
 
 export default function SammlungContent({ collection }: { collection: Collection }) {
   const locale = useLocale()
@@ -17,7 +18,7 @@ export default function SammlungContent({ collection }: { collection: Collection
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <Link href="/sammlungen" className={styles.backButton}>
-            <span className="material-symbols-outlined" style={{ fontSize: '20px', marginRight: '4px' }}>arrow_back</span>
+            <AppIcon name="arrow_back" style={{ fontSize: '20px', marginRight: '4px' }} />
             {dict.back}
           </Link>
           <h1 className={styles.title}>{t(collection.name, locale)}</h1>

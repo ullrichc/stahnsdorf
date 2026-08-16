@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState, useEffect, createContext, useContext, useCallback } from 'react';
 import {
   signInWithPopup,
   GoogleAuthProvider,
@@ -10,12 +10,14 @@ import {
 } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import { auth, db } from '@/lib/firebase';
+import AppIcon from '@/components/AppIcon';
 
 type AuthState = {
   user: User | null;
   isEditor: boolean;
   loading: boolean;
   error: string | null;
+  errorKind: 'denied' | 'retryable' | null;
 };
 
 const AuthContext = createContext<AuthState>({
@@ -23,6 +25,7 @@ const AuthContext = createContext<AuthState>({
   isEditor: false,
   loading: true,
   error: null,
+  errorKind: null,
 });
 
 export function useAuth() {
@@ -35,42 +38,49 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
     isEditor: false,
     loading: true,
     error: null,
+    errorKind: null,
   });
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (!user) {
-        setState({ user: null, isEditor: false, loading: false, error: null });
-        return;
-      }
-
-      // Whitelist check: config/editors/{email}
-      try {
-        const editorDoc = await getDoc(
-          doc(db, 'editors', user.email ?? '')
-        );
-        if (editorDoc.exists()) {
-          setState({ user, isEditor: true, loading: false, error: null });
-        } else {
-          setState({
-            user,
-            isEditor: false,
-            loading: false,
-            error: 'Zugriff verweigert. Dieser Account ist nicht als Editor freigeschaltet.',
-          });
-        }
-      } catch (err: any) {
+  const verifyEditor = useCallback(async (user: User) => {
+    setState({ user, isEditor: false, loading: true, error: null, errorKind: null });
+    try {
+      const editorDoc = await getDoc(doc(db, 'editors', user.email ?? ''));
+      if (editorDoc.exists()) {
+        setState({ user, isEditor: true, loading: false, error: null, errorKind: null });
+      } else {
         setState({
           user,
           isEditor: false,
           loading: false,
           error: 'Zugriff verweigert. Dieser Account ist nicht als Editor freigeschaltet.',
+          errorKind: 'denied',
         });
       }
+    } catch (err: any) {
+      const denied = err?.code === 'permission-denied' || err?.code === 'firestore/permission-denied';
+      setState({
+        user,
+        isEditor: false,
+        loading: false,
+        error: denied
+          ? 'Zugriff verweigert. Die Editor-Berechtigung fehlt.'
+          : 'Die Editor-Berechtigung konnte wegen eines Verbindungsfehlers nicht geprüft werden.',
+        errorKind: denied ? 'denied' : 'retryable',
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        setState({ user: null, isEditor: false, loading: false, error: null, errorKind: null });
+        return;
+      }
+      await verifyEditor(user);
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [verifyEditor]);
 
   // Loading
   if (state.loading) {
@@ -89,14 +99,21 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
 
   // Logged in but not editor
   if (!state.isEditor) {
+    const retryable = state.errorKind === 'retryable';
     return (
       <div className="admin-auth-denied">
-        <h2><span className="material-symbols-outlined" style={{ verticalAlign: 'middle', marginRight: '8px' }}>block</span>Zugriff verweigert</h2>
+        <h2><AppIcon name="block" style={{ verticalAlign: 'middle', marginRight: '8px' }} />{retryable ? 'Prüfung fehlgeschlagen' : 'Zugriff verweigert'}</h2>
         <p>{state.error}</p>
         <p className="admin-auth-email">{state.user.email}</p>
-        <button onClick={() => signOut(auth)} className="admin-btn-secondary">
-          Mit anderem Konto anmelden
-        </button>
+        {retryable ? (
+          <button onClick={() => verifyEditor(state.user!)} className="admin-btn-secondary">
+            Erneut versuchen
+          </button>
+        ) : (
+          <button onClick={() => signOut(auth)} className="admin-btn-secondary">
+            Mit anderem Konto anmelden
+          </button>
+        )}
       </div>
     );
   }
@@ -128,7 +145,7 @@ function LoginScreen() {
   return (
     <div className="admin-login">
       <div className="admin-login-card">
-        <h1><span className="material-symbols-outlined" style={{ verticalAlign: 'middle', marginRight: '8px', color: 'var(--color-tertiary)' }}>park</span>Südwestkirchhof</h1>
+        <h1><AppIcon name="park" style={{ verticalAlign: 'middle', marginRight: '8px', color: 'var(--color-tertiary)' }} />Südwestkirchhof</h1>
         <h2>Redaktionswerkzeug</h2>
         <p>Melde dich an, um POIs zu bearbeiten.</p>
         <button

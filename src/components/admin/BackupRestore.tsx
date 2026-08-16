@@ -6,14 +6,14 @@ import {
   getDocs,
   query,
   doc,
-  setDoc,
-  deleteDoc,
+  writeBatch,
   Timestamp,
 } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/components/admin/AuthGate';
 import type { FirestorePOI, FirestoreCollection } from '@/lib/types';
 import { t } from '@/lib/i18n';
+import { assertAtomicWriteLimit } from '@/lib/admin-data';
 
 type ExportMode = 'content' | 'full';
 
@@ -174,7 +174,27 @@ export default function BackupRestore() {
       const existingPois = new Map(existingPoiSnap.docs.map(d => [d.id, d.data()]));
       const existingCols = new Map(existingColSnap.docs.map(d => [d.id, d.data()]));
 
-      for (const poi of preview.data.pois) {
+      const poiWrites = preview.data.pois.filter((poi: any) => (
+        !preview.updatedPOIs.includes(poi.id) || mergeMode !== 'skip'
+      ));
+      const collectionWrites = preview.data.collections.filter((col: any) => (
+        !preview.updatedCollections.includes(col.id) || mergeMode !== 'skip'
+      ));
+      const backupPoiIds = new Set(preview.data.pois.map((p: any) => p.id));
+      const backupColIds = new Set(preview.data.collections.map((c: any) => c.id));
+      const poiDeletes = preview.isFullBackup && deleteMode
+        ? existingPoiSnap.docs.filter((item) => !backupPoiIds.has(item.id))
+        : [];
+      const collectionDeletes = preview.isFullBackup && deleteMode
+        ? existingColSnap.docs.filter((item) => !backupColIds.has(item.id))
+        : [];
+
+      assertAtomicWriteLimit(
+        poiWrites.length + collectionWrites.length + poiDeletes.length + collectionDeletes.length,
+      );
+      const batch = writeBatch(db);
+
+      for (const poi of poiWrites) {
         const isExisting = preview.updatedPOIs.includes(poi.id);
         if (isExisting && mergeMode === 'skip') continue;
 
@@ -201,18 +221,17 @@ export default function BackupRestore() {
         }
         docData.geaendert_von = user?.email ?? 'import';
 
-        await setDoc(doc(db, 'pois', poi.id), docData);
+        batch.set(doc(db, 'pois', poi.id), docData);
         poiCount++;
       }
 
       // All POI IDs that now exist
       const allPoiIds = new Set([
-        ...preview.updatedPOIs,
-        ...preview.newPOIs,
-        ...(await getDocs(query(fbCollection(db, 'pois')))).docs.map((d) => d.id),
+        ...(deleteMode && preview.isFullBackup ? [] : existingPoiSnap.docs.map((d) => d.id)),
+        ...preview.data.pois.map((poi: any) => poi.id),
       ]);
 
-      for (const col of preview.data.collections) {
+      for (const col of collectionWrites) {
         const isExisting = preview.updatedCollections.includes(col.id);
         if (isExisting && mergeMode === 'skip') continue;
 
@@ -240,29 +259,21 @@ export default function BackupRestore() {
         }
         docData.geaendert_von = user?.email ?? 'import';
 
-        await setDoc(doc(db, 'collections', col.id), docData);
+        batch.set(doc(db, 'collections', col.id), docData);
         colCount++;
       }
 
       let deleteCount = 0;
-      if (preview.isFullBackup && deleteMode) {
-        // Find documents in DB that are not in backup and delete them
-        const backupPoiIds = new Set(preview.data.pois.map((p: any) => p.id));
-        const backupColIds = new Set(preview.data.collections.map((c: any) => c.id));
-
-        for (const pd of existingPoiSnap.docs) {
-          if (!backupPoiIds.has(pd.id)) {
-            await deleteDoc(doc(db, 'pois', pd.id));
-            deleteCount++;
-          }
-        }
-        for (const cd of existingColSnap.docs) {
-          if (!backupColIds.has(cd.id)) {
-            await deleteDoc(doc(db, 'collections', cd.id));
-            deleteCount++;
-          }
-        }
+      for (const pd of poiDeletes) {
+        batch.delete(pd.ref);
+        deleteCount++;
       }
+      for (const cd of collectionDeletes) {
+        batch.delete(cd.ref);
+        deleteCount++;
+      }
+
+      await batch.commit();
 
       setMessage(`✅ Import abgeschlossen: ${poiCount} POIs, ${colCount} Collections.${deleteCount > 0 ? ` (${deleteCount} veraltete gelöscht)` : ''}`);
       setPreview(null);

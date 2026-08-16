@@ -1,5 +1,6 @@
 import backupData from '../../../../data/stahnsdorf-backup-translated.json'
-import SammlungDetailClient from './SammlungDetailClient'
+import LegacyRouteRedirect from '@/components/LegacyRouteRedirect'
+import { collectionDetailHref } from '@/lib/redirect'
 
 // Build-time: Generiert statische Seiten aus dem Unified Snapshot
 export function generateStaticParams() {
@@ -8,5 +9,5 @@ export function generateStaticParams() {
 
 export default async function SammlungPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  return <SammlungDetailClient id={id} />
+  return <LegacyRouteRedirect href={collectionDetailHref(id)} />
 }

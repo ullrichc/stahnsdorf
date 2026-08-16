@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest'
-import { getDistanceMeters, formatDistance } from './geo'
+import { getDistanceMeters, formatDistance, isValidCoordinates, parseCoordinatePair } from './geo'
 
 describe('getDistanceMeters', () => {
   test('returns 0 for same point', () => {
@@ -28,6 +28,10 @@ describe('formatDistance', () => {
     expect(formatDistance(9.9)).toBe('Gerade hier')
   })
 
+  test('accepts a localized label for the immediate location', () => {
+    expect(formatDistance(3, 'Right here')).toBe('Right here')
+  })
+
   test('returns meters string for 10–999m', () => {
     expect(formatDistance(42)).toBe('42m')
     expect(formatDistance(500)).toBe('500m')
@@ -49,5 +53,26 @@ describe('formatDistance', () => {
   test('rounds meters to nearest integer', () => {
     expect(formatDistance(42.7)).toBe('43m')
     expect(formatDistance(99.4)).toBe('99m')
+  })
+})
+
+describe('coordinate validation', () => {
+  test('accepts finite coordinates in range', () => {
+    expect(isValidCoordinates({ lat: 52.39, lng: 13.18 })).toBe(true)
+  })
+
+  test('rejects missing, non-finite and out-of-range coordinates', () => {
+    expect(isValidCoordinates(null)).toBe(false)
+    expect(isValidCoordinates({})).toBe(false)
+    expect(isValidCoordinates({ lat: Number.NaN, lng: 13 })).toBe(false)
+    expect(isValidCoordinates({ lat: 91, lng: 13 })).toBe(false)
+    expect(isValidCoordinates({ lat: 52, lng: 181 })).toBe(false)
+  })
+
+  test('parses only complete coordinate pairs', () => {
+    expect(parseCoordinatePair('52.39', '13.18')).toEqual({ lat: 52.39, lng: 13.18 })
+    expect(parseCoordinatePair('', '')).toBeNull()
+    expect(() => parseCoordinatePair('52.39', '')).toThrow('vollständig')
+    expect(() => parseCoordinatePair('52abc', '13.18')).toThrow('gültige Zahlen')
   })
 })

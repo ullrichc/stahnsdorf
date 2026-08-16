@@ -9,6 +9,7 @@ import {
   loginInPlaywright,
   seedTestPOIs,
   seedTestCollections,
+  getTestDoc,
   TEST_EDITOR_EMAIL,
 } from '../utils/firebase-test-utils';
 
@@ -97,6 +98,23 @@ test('COL-03: new collection generates correct ID', async ({ page }) => {
   // Modal should close, collection should appear
   // ID should be collection_sws_architektur-anlage (& → -, multiple dashes collapsed)
   await expect(page.locator('text=Architektur & Anlage')).toBeVisible({ timeout: 10_000 });
+});
+
+test('COL-03b: duplicate collection names receive a collision-safe ID', async ({ page }) => {
+  await seedTestCollections([{
+    ...EXISTING_COLLECTION,
+    id: 'collection_sws_gleiche-sammlung',
+    name: { de: 'Gleiche Sammlung' },
+  }], TEST_EDITOR_EMAIL);
+  await loginOnCollections(page);
+
+  await page.locator('button:has-text("+ Neue Sammlung")').click();
+  const nameInput = page.locator('.admin-field').filter({ hasText: 'Name' }).locator('input');
+  await nameInput.fill('Gleiche Sammlung');
+  await page.locator('button:has-text("Speichern")').click();
+
+  await expect.poll(async () => getTestDoc('collections', 'collection_sws_gleiche-sammlung-2')).not.toBeNull();
+  expect(await getTestDoc('collections', 'collection_sws_gleiche-sammlung')).not.toBeNull();
 });
 
 // ═══ COL-04: Name ändern und speichern ═══

@@ -411,6 +411,35 @@
   text-decoration: underline;
 }
 
+/* ===== Feedback ===== */
+
+.feedback {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(68, 71, 74, 0.15);
+}
+
+.feedback p {
+  margin-bottom: 12px;
+  color: var(--color-on-surface-variant);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.feedbackLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.feedbackLink:hover {
+  text-decoration: underline;
+}
+
 /* ===== Not Found ===== */
 
 .notFound {

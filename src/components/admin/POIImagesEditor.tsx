@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { doc, Timestamp, updateDoc } from 'firebase/firestore';
 import { deleteObject, getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { db, storage } from '@/lib/firebase';
@@ -14,6 +14,7 @@ import {
   validateImageFile,
 } from '@/lib/images';
 import type { Bild } from '@/lib/types';
+import { normalizeImageForFirestore } from '@/lib/admin-data';
 
 type Props = {
   poiId?: string;
@@ -24,19 +25,26 @@ type Props = {
 
 export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }: Props) {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const persistedImagesRef = useRef<Bild[]>(bilder.map(normalizeImageForFirestore));
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
   const canUpload = !!poiId;
 
-  async function persist(next: Bild[]) {
-    if (!poiId) return;
+  useEffect(() => {
+    persistedImagesRef.current = bilder.map(normalizeImageForFirestore);
+  }, [poiId]);
+
+  async function persist(next: Bild[]): Promise<Bild[]> {
+    if (!poiId) return next;
+    const normalized = next.map(normalizeImageForFirestore);
     await updateDoc(doc(db, 'pois', poiId), {
-      bilder: next,
+      bilder: normalized,
       geaendert_von: editorEmail ?? 'unbekannt',
       geaendert_am: Timestamp.now(),
     });
-    onChange(next);
+    persistedImagesRef.current = normalized;
+    return normalized;
   }
 
   async function handleFiles(files: FileList | null) {
@@ -45,7 +53,8 @@ export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }
     setMessage(null);
 
     try {
-      let nextImages = [...bilder];
+      let nextDraftImages = [...bilder];
+      let nextPersistedImages = [...persistedImagesRef.current];
 
       for (const file of Array.from(files)) {
         const validation = validateImageFile(file);
@@ -83,9 +92,10 @@ export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }
             nachweis: credit || DEFAULT_IMAGE_CREDIT,
           };
 
-          const updated = [...nextImages, image];
-          await persist(updated);
-          nextImages = updated;
+          nextPersistedImages = [...nextPersistedImages, image];
+          await persist(nextPersistedImages);
+          nextDraftImages = [...nextDraftImages, image];
+          onChange(nextDraftImages);
         } catch (err) {
           await Promise.allSettled([deleteObject(displayRef), deleteObject(thumbRef)]);
           throw err;
@@ -99,32 +109,35 @@ export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }
     }
   }
 
-  async function updateImage(index: number, patch: Partial<Bild>) {
-    const next = bilder.map((image, i) => (i === index ? { ...image, ...patch } : image));
+  function updateImage(index: number, patch: Partial<Bild>) {
+    const next = bilder.map((image, i) => (
+      i === index ? normalizeImageForFirestore({ ...image, ...patch }) : image
+    ));
     onChange(next);
-    if (!poiId) return;
+  }
 
-    setBusy(true);
-    setMessage(null);
-    try {
-      await persist(next);
-    } catch (err: any) {
-      setMessage(`Bilddaten konnten nicht gespeichert werden: ${err.message}`);
-    } finally {
-      setBusy(false);
-    }
+  function updateImageUrl(index: number, value: string) {
+    const nextImage = { ...bilder[index] };
+    if (value.trim()) nextImage.nachweis_url = value;
+    else delete nextImage.nachweis_url;
+    onChange(bilder.map((image, imageIndex) => (
+      imageIndex === index ? normalizeImageForFirestore(nextImage) : image
+    )));
   }
 
   async function moveImage(index: number, direction: -1 | 1) {
     const target = index + direction;
     if (target < 0 || target >= bilder.length) return;
-    const next = [...bilder];
-    [next[index], next[target]] = [next[target], next[index]];
+    const nextDraft = [...bilder];
+    [nextDraft[index], nextDraft[target]] = [nextDraft[target], nextDraft[index]];
+    const nextPersisted = [...persistedImagesRef.current];
+    [nextPersisted[index], nextPersisted[target]] = [nextPersisted[target], nextPersisted[index]];
 
     setBusy(true);
     setMessage(null);
     try {
-      await persist(next);
+      await persist(nextPersisted);
+      onChange(nextDraft);
     } catch (err: any) {
       setMessage(`Reihenfolge konnte nicht gespeichert werden: ${err.message}`);
     } finally {
@@ -134,12 +147,14 @@ export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }
 
   async function removeImage(index: number, removeStorageFile: boolean) {
     const image = bilder[index];
-    const next = bilder.filter((_, i) => i !== index);
+    const nextDraft = bilder.filter((_, i) => i !== index);
+    const nextPersisted = persistedImagesRef.current.filter((_, i) => i !== index);
 
     setBusy(true);
     setMessage(null);
     try {
-      await persist(next);
+      await persist(nextPersisted);
+      onChange(nextDraft);
       if (removeStorageFile) {
         const paths = [image.storage_pfad, image.vorschau_storage_pfad].filter(Boolean) as string[];
         await Promise.allSettled(paths.map((path) => deleteObject(ref(storage, path))));
@@ -199,7 +214,7 @@ export default function POIImagesEditor({ poiId, bilder, editorEmail, onChange }
                   <label>Nachweis-URL</label>
                   <input
                     value={image.nachweis_url ?? ''}
-                    onChange={(event) => updateImage(index, { nachweis_url: event.target.value || undefined })}
+                    onChange={(event) => updateImageUrl(index, event.target.value)}
                   />
                 </div>
                 <div className="admin-field">

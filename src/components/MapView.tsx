@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import L from 'leaflet'
 import ClientMap, { useMapInstance } from './ClientMap'
 import { usePOIs } from '@/lib/useFirestore'
-import { POI } from '@/lib/types'
+import { Koordinaten, POI } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import { createMarkerIcon } from './MapMarker'
 import { useLocale } from '@/lib/useLocale'
@@ -11,6 +11,8 @@ import { useDictionary } from '@/lib/ui-dictionary'
 import { readStoredMapView, writeStoredMapView } from '@/lib/map-view-state'
 import POICard from './POICard'
 import styles from './MapView.module.css'
+import { isValidCoordinates } from '@/lib/geo'
+import AppIcon from './AppIcon'
 
 const CENTER: [number, number] = [52.389506, 13.180954]
 const ZOOM = 16
@@ -53,27 +55,90 @@ function PersistMapView({ enabled }: { enabled: boolean }) {
 function LocateButton() {
   const map = useMapInstance()
   const markerRef = useRef<L.CircleMarker | null>(null)
+  const accuracyRef = useRef<L.Circle | null>(null)
+  const firstFixRef = useRef(true)
+  const [tracking, setTracking] = useState(false)
+  const [error, setError] = useState(false)
+  const locale = useLocale()
+  const dict = useDictionary(locale)
 
-  const handleLocate = useCallback(() => {
-    map.locate({ setView: true, maxZoom: 17 })
-    map.once('locationfound', (e) => {
+  useEffect(() => {
+    const handleFound = (event: L.LocationEvent) => {
       if (markerRef.current) {
         markerRef.current.remove()
       }
-      markerRef.current = L.circleMarker(e.latlng, {
+      if (accuracyRef.current) {
+        accuracyRef.current.remove()
+      }
+      markerRef.current = L.circleMarker(event.latlng, {
         radius: 8,
         fillColor: '#4285f4',
         fillOpacity: 1,
         color: '#ffffff',
         weight: 2,
       }).addTo(map)
-    })
+      accuracyRef.current = L.circle(event.latlng, {
+        radius: event.accuracy,
+        color: '#4285f4',
+        fillColor: '#4285f4',
+        fillOpacity: 0.12,
+        weight: 1,
+      }).addTo(map)
+      setError(false)
+
+      if (firstFixRef.current) {
+        map.setView(event.latlng, Math.max(map.getZoom(), 17))
+        firstFixRef.current = false
+      }
+    }
+
+    const handleError = () => {
+      map.stopLocate()
+      setTracking(false)
+      setError(true)
+    }
+    map.on('locationfound', handleFound)
+    map.on('locationerror', handleError)
+
+    return () => {
+      map.stopLocate()
+      map.off('locationfound', handleFound)
+      map.off('locationerror', handleError)
+      markerRef.current?.remove()
+      accuracyRef.current?.remove()
+    }
   }, [map])
 
+  const handleLocate = useCallback(() => {
+    if (tracking) {
+      map.stopLocate()
+      setTracking(false)
+      return
+    }
+
+    firstFixRef.current = true
+    setError(false)
+    setTracking(true)
+    map.locate({
+      watch: true,
+      enableHighAccuracy: true,
+      timeout: 30000,
+      maximumAge: 30000,
+    })
+  }, [map, tracking])
+
   return (
-    <button className={styles.locate} onClick={handleLocate} aria-label="Locate">
-      <span className="material-symbols-outlined">my_location</span>
-    </button>
+    <div className={styles.locateWrap}>
+      {error && <div className={styles.locateError} role="status">{dict.locationError}</div>}
+      <button
+        className={styles.locate}
+        onClick={handleLocate}
+        aria-label={dict.locate}
+        aria-pressed={tracking}
+      >
+        <AppIcon name="my_location" />
+      </button>
+    </div>
   )
 }
 
@@ -85,8 +150,11 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
     // Guard against Leaflet HMR race: if the map pane is gone, skip
     if (!map.getPane('markerPane')) return
 
-    const markers = filtered.filter(poi => poi.koordinaten).map((poi) => {
-      const coords: [number, number] = [poi.koordinaten!.lat, poi.koordinaten!.lng]
+    const validPOIs = filtered.filter(
+      (poi): poi is POI & { koordinaten: Koordinaten } => isValidCoordinates(poi.koordinaten),
+    )
+    const markers = validPOIs.map((poi) => {
+      const coords: [number, number] = [poi.koordinaten.lat, poi.koordinaten.lng]
       const marker = L.marker(coords, { icon: createMarkerIcon(poi) })
       marker.on('click', () => onSelect(poi))
       marker.bindTooltip(t(poi.name, locale), {
@@ -164,7 +232,8 @@ function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) =
   }, [query, pois])
 
   const handleResultClick = (poi: POI) => {
-    map.setView([poi.koordinaten!.lat, poi.koordinaten!.lng], 18)
+    if (!isValidCoordinates(poi.koordinaten)) return
+    map.setView([poi.koordinaten.lat, poi.koordinaten.lng], 18)
     onSelect(poi)
     setQuery('')
     setResults([])
@@ -198,14 +267,27 @@ export default function MapView({ poiIds, showSearch = false }: { poiIds?: strin
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
   const [{ center, zoom }] = useState(() => getInitialMapView(!poiIds))
   const locale = useLocale()
-  const { pois, loading } = usePOIs()
+  const { pois, loading, error, retry } = usePOIs()
+  const dict = useDictionary(locale)
 
   const handleSelect = useCallback((poi: POI) => {
     setSelectedPOI(poi)
   }, [])
 
   if (loading) {
-    return <div className={styles.container} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Karte wird geladen…</div>
+    return <div className={styles.container} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{dict.mapLoading}</div>
+  }
+
+  if (error) {
+    return (
+      <div className={styles.container} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px' }}>
+        <div>
+          <h2>{dict.loadErrorTitle}</h2>
+          <p>{dict.loadErrorBody}</p>
+          <button type="button" onClick={retry}>{dict.retry}</button>
+        </div>
+      </div>
+    )
   }
 
   return (

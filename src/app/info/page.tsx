@@ -2,6 +2,8 @@
 
 import { useLocale } from '@/lib/useLocale'
 import styles from './page.module.css'
+import AppIcon from '@/components/AppIcon'
+import { feedbackFormUrl } from '@/lib/feedback'
 
 const content: Record<string, Record<string, string>> = {
   title: { de: 'Information', en: 'Information', fr: 'Informations', pl: 'Informacje', ru: 'Информация', sv: 'Information' },
@@ -51,6 +53,22 @@ const content: Record<string, Record<string, string>> = {
     sv: 'Öppet dagligen, även på helgdagar.'
   },
   routePlan: { de: 'Route planen', en: 'Plan route', fr: 'Planifier l\'itinéraire', pl: 'Planuj trasę', ru: 'Проложить маршрут', sv: 'Planera rutt' },
+  feedbackText: {
+    de: 'Haben Sie Hinweise, Korrekturen oder Anregungen zur App? Wir freuen uns über Ihre Rückmeldung.',
+    en: 'Do you have comments, corrections or suggestions about the app? We welcome your feedback.',
+    fr: 'Vous avez des remarques, des corrections ou des suggestions concernant l’application ? Nous serons heureux de recevoir votre avis.',
+    pl: 'Masz uwagi, poprawki lub sugestie dotyczące aplikacji? Chętnie poznamy Twoją opinię.',
+    ru: 'У вас есть замечания, исправления или предложения по приложению? Мы будем рады вашей обратной связи.',
+    sv: 'Har du synpunkter, rättelser eller förslag om appen? Vi tar gärna emot din återkoppling.'
+  },
+  feedbackLink: {
+    de: 'Rückmeldung zur App geben',
+    en: 'Give feedback on the app',
+    fr: 'Donner votre avis sur l’application',
+    pl: 'Przekaż opinię o aplikacji',
+    ru: 'Оставить отзыв о приложении',
+    sv: 'Ge återkoppling om appen'
+  },
 }
 
 const openingHours = [
@@ -71,7 +89,7 @@ export default function InfoPage() {
       {/* About Section */}
       <section className={styles.section}>
         <h2 className={styles.heading}>
-          <span className={`material-symbols-outlined ${styles.headingIcon}`}>history_edu</span>
+          <AppIcon name="history_edu" className={styles.headingIcon} />
           {c('aboutTitle')}
         </h2>
         <p>{c('aboutText1')}</p>
@@ -80,7 +98,7 @@ export default function InfoPage() {
 
       <section className={styles.section}>
         <h2 className={styles.heading}>
-          <span className={`material-symbols-outlined ${styles.headingIcon}`} style={{ fontVariationSettings: "'FILL' 1, 'wght' 400" }}>auto_awesome</span>
+          <AppIcon name="auto_awesome" className={styles.headingIcon} />
           {c('didYouKnowTitle')}
         </h2>
         <p>{c('didYouKnow')}</p>
@@ -89,7 +107,7 @@ export default function InfoPage() {
       {/* Opening Hours */}
       <section className={styles.section}>
         <h2 className={styles.heading}>
-          <span className={`material-symbols-outlined ${styles.headingIcon}`}>schedule</span>
+          <AppIcon name="schedule" className={styles.headingIcon} />
           {c('openingTitle')}
         </h2>
         {openingHours.map((h, i) => (
@@ -104,12 +122,12 @@ export default function InfoPage() {
       {/* Contact */}
       <div className={styles.contactCard}>
         <h2 className={styles.heading}>
-          <span className={`material-symbols-outlined ${styles.headingIcon}`}>contact_support</span>
+          <AppIcon name="contact_support" className={styles.headingIcon} />
           {c('contactTitle')}
         </h2>
 
         <div className={styles.contactRow}>
-          <span className={`material-symbols-outlined ${styles.contactIcon}`}>location_on</span>
+          <AppIcon name="location_on" className={styles.contactIcon} />
           <div className={styles.contactText}>
             <strong>Förderverein Südwestkirchhof Stahnsdorf e.V.</strong>
             Bahnhofstraße 2<br />
@@ -118,15 +136,15 @@ export default function InfoPage() {
         </div>
 
         <div className={styles.contactRow}>
-          <span className={`material-symbols-outlined ${styles.contactIcon}`}>call</span>
+          <AppIcon name="call" className={styles.contactIcon} />
           <div className={styles.contactText}>
-            0179 3793503<br />
-            03329 614106
+            <a href="tel:+491793793503">0179 3793503</a><br />
+            <a href="tel:+493329614106">03329 614106</a>
           </div>
         </div>
 
         <div className={styles.contactRow}>
-          <span className={`material-symbols-outlined ${styles.contactIcon}`}>language</span>
+          <AppIcon name="language" className={styles.contactIcon} />
           <div className={styles.contactText}>
             <a href="https://www.suedwestkirchhof.de" target="_blank" rel="noopener noreferrer">
               www.suedwestkirchhof.de
@@ -147,10 +165,23 @@ export default function InfoPage() {
       {/* Visitor Notice */}
       <section className={styles.section}>
         <h2 className={styles.heading}>
-          <span className={`material-symbols-outlined ${styles.headingIcon}`}>info</span>
+          <AppIcon name="info" className={styles.headingIcon} />
           {c('accessibilityTitle')}
         </h2>
         <p>{c('accessibilityText')}</p>
+      </section>
+
+      <section className={styles.section}>
+        <p>{c('feedbackText')}</p>
+        <a
+          href={feedbackFormUrl()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.feedbackLink}
+        >
+          {c('feedbackLink')}
+          <AppIcon name="open_in_new" />
+        </a>
       </section>
     </div>
   )

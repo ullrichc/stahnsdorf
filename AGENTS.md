@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkarten mit Bild-Lightbox/Zoom, Sprachumschaltung. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und Backup/Restore.
+Die App funktioniert: Leaflet-Karte mit Markern, kontinuierlicher GPS-Ortung samt Genauigkeitskreis, Sammlungsansicht, POI-Detailkarten mit zugänglicher Bild-Lightbox/Zoom, Sprachumschaltung und lokal gebündelten SVG-Icons. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und atomarem Backup/Restore bis zur Firestore-Batchgrenze.
 
 ## Techstack
 
@@ -33,8 +33,9 @@ Die App funktioniert: Leaflet-Karte mit Markern, Sammlungsansicht, POI-Detailkar
 | Karte | Leaflet 1.9, react-leaflet 4 |
 | Sprache | TypeScript 6, React 18 |
 | Bild-Zoom | react-zoom-pan-pinch |
+| Icons | lucide-react (gebündelte SVGs, offline-fähig) |
 | Backend | Firebase (Firestore + Auth + Storage — aktiv) |
-| Tests | Playwright (67 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
+| Tests | Playwright (77 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
 | Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |
@@ -68,8 +69,8 @@ stahnsdorf/
 │   ├── app/                 # Next.js App Router
 │   │   ├── page.tsx         # Startseite (Karte)
 │   │   ├── info/            # Infoseite
-│   │   ├── poi/[id]/        # POI-Detailseite (Server+Client Split)
-│   │   ├── sammlung/[id]/   # Einzelne Sammlung (Server+Client Split)
+│   │   ├── poi/             # Statische Query-Detailseite (`/poi?id=...`) + Legacy-[id]
+│   │   ├── sammlung/        # Statische Query-Detailseite (`/sammlung?id=...`) + Legacy-[id]
 │   │   ├── sammlungen/      # Sammlungsübersicht
 │   │   └── admin/           # 🔒 Redaktionswerkzeug
 │   │       ├── layout.tsx   # AuthGate Wrapper
@@ -101,7 +102,7 @@ stahnsdorf/
 │   │   └── useGeolocation.ts
 │   └── styles/               # CSS Module
 ├── public/
-│   └── 404.html              # SPA-Fallback für GitHub Pages
+│   └──                       # `404.html` wird aus `src/app/not-found.tsx` exportiert
 ├── .env.local                # Firebase-Credentials (nicht im Repo)
 ├── .env.example              # Vorlage für .env.local
 └── next.config.js            # Static Export, basePath=/stahnsdorf
@@ -169,7 +170,8 @@ Alle Felder verwenden **deutsche Namen**:
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
 - Static Export: kein Server, kein SSR — alles client-seitig.
 - `basePath: '/stahnsdorf'` in Production (GitHub Pages).
-- Dynamic Routes nutzen **Server+Client Split**: Server-Component exportiert `generateStaticParams` (aus lokalem JSON), rendert Client-Component (lädt Daten aus Firestore).
+- Laufzeit-IDs nutzen statische Query-Routen: `/poi?id=<id>`, `/sammlung?id=<id>` und `/admin/poi/edit?id=<id>`. Dadurch funktionieren neu in Firestore angelegte Inhalte ohne neuen Build. Die alten `[id]`-Routen bleiben als Legacy-Export bestehen; `src/app/not-found.tsx` konvertiert unbekannte alte Pfade.
+- Firestore-Hooks unterscheiden Netzwerkfehler von „nicht gefunden“, bieten Retry und ignorieren Ergebnisse nach dem Unmount.
 
 ### Sprachen
 - Unterstützt: `de`, `en`, `fr`, `pl`, `ru`, `sv`
@@ -195,6 +197,8 @@ Alle Felder verwenden **deutsche Namen**:
 - Zwei-Spalten-Editor mit GPS-Koordinaten-Eingabe, Koordinaten-Herkunft, Lagehinweisen, Bilderverwaltung und Quellen-Liste
 - Sammlungen-Editor mit POI-Multi-Select
 - Backup/Restore mit Inhalts-Export und vollständigem Firestore-Backup; Bilddateien aus Storage bleiben separate Medienobjekte
+- Restore und POI-Löschung verwenden atomare Firestore-Batches. Restore wird vor dem Schreiben abgelehnt, wenn mehr als 500 Operationen nötig wären.
+- Bild-Metadaten werden im Formular gesammelt und mit „Speichern“ geschrieben; Upload, Reihenfolge und Entfernen bleiben unmittelbare Aktionen.
 
 ## Bekannte Probleme
 
@@ -214,9 +218,13 @@ npm run images:prepare   # Optimierte Anzeige-/Vorschaubilder lokal vorbereiten
 npm run images:apply     # Dry-Run: Bildreferenzen in JSON-Master übernehmen
 npm run import:images    # Dry-Run für POI-Bildimport nach Firebase Storage/Firestore
 npm run test             # Unit Tests (Vitest)
+npm run typecheck        # TypeScript ohne Ausgabe prüfen
 npm run test:e2e         # E2E Tests (Playwright + Emulator)
 npm run test:rules       # Security Rules (Vitest + Emulator)
 npm run build            # Static Export nach out/
+npm run verify:export    # Query-Routen, 404, Offline-Fonts und Zoom im Export prüfen
 npm run deploy:firestore # Firestore Rules + Indexes deployen
 npm run deploy:storage   # Storage Rules deployen
 ```
+
+Der GitHub-Pages-Deploy läuft über `workflow_run` erst nach erfolgreicher vollständiger Test-Suite inklusive Production-Build und Exportprüfung.

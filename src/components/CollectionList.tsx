@@ -8,13 +8,15 @@ import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
 import styles from './CollectionList.module.css'
+import { collectionDetailHref } from '@/lib/redirect'
+import AppIcon from './AppIcon'
 
 type Props = {
   collections: Collection[]
 }
 
 export default function CollectionList({ collections }: Props) {
-  const { location } = useGeolocation()
+  const { location, error: locationError } = useGeolocation()
   const locale = useLocale()
   const { pois } = usePOIs()
   const dict = useDictionary(locale)
@@ -36,6 +38,11 @@ export default function CollectionList({ collections }: Props) {
       </header>
 
       <div className={styles.list}>
+        {locationError !== null && (
+          <p role="status">
+            {locationError === 0 ? dict.locationUnavailable : dict.locationError}
+          </p>
+        )}
         {collections.map((collection) => {
           let minDistance = Infinity
           if (location) {
@@ -49,25 +56,25 @@ export default function CollectionList({ collections }: Props) {
           }
 
           return (
-            <Link key={collection.id} href={`/sammlung/${collection.id}`} className={styles.card}>
+            <Link key={collection.id} href={collectionDetailHref(collection.id)} className={styles.card}>
               <div className={styles.cardContent}>
                 <h2 className={styles.name}>{t(collection.name, locale)}</h2>
                 <p className={styles.description}>{t(collection.beschreibung, locale)}</p>
                 <div className={styles.cardFooter}>
                   <span className={styles.countPill}>
-                    <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>location_on</span>
+                    <AppIcon name="location_on" style={{ fontSize: '14px' }} />
                     {collection.pois.length} {dict.sitesCount}
                   </span>
                   {location && minDistance !== Infinity && (
                     <span className={styles.distanceTag}>
-                      <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>directions_walk</span>
-                      {dict.nearest} {formatDistance(minDistance)} {dict.away}
+                      <AppIcon name="directions_walk" style={{ fontSize: '14px' }} />
+                      {dict.nearest} {formatDistance(minDistance, dict.currentLocation)} {dict.away}
                     </span>
                   )}
                 </div>
               </div>
               <div className={styles.arrowWrap}>
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <AppIcon name="arrow_forward" />
               </div>
             </Link>
           )

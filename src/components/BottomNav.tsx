@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useLocaleContext } from '@/lib/LocaleContext'
 import { useDictionary, UIDictionary } from '@/lib/ui-dictionary'
 import styles from './BottomNav.module.css'
+import AppIcon from './AppIcon'
 
 const tabs = [
   { href: '/', icon: 'map', getLabel: (d: UIDictionary) => d.navMap },
@@ -32,10 +33,9 @@ export default function BottomNav() {
           key={tab.href}
           href={tab.href}
           className={`${styles.tab} ${isActive(tab.href) ? styles.active : ''}`}
+          aria-current={isActive(tab.href) ? 'page' : undefined}
         >
-          <span className={`material-symbols-outlined ${styles.icon} ${isActive(tab.href) ? 'material-symbols-filled' : ''}`}>
-            {tab.icon}
-          </span>
+          <AppIcon name={tab.icon} className={styles.icon} strokeWidth={isActive(tab.href) ? 2.5 : 2} />
           <span className={styles.label}>{tab.getLabel(dict)}</span>
         </Link>
       ))}

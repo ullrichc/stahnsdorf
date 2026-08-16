@@ -200,3 +200,15 @@
 .section a:hover {
   opacity: 0.8;
 }
+
+.feedbackLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.feedbackLink :global(.app-icon) {
+  width: 16px;
+  height: 16px;
+}

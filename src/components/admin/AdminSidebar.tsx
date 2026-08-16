@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { useAuth } from './AuthGate';
+import AppIcon from '@/components/AppIcon';
 
 const navItems = [
-  { href: '/admin', icon: 'grid_view', label: 'Übersicht', exact: true },
   { href: '/admin', icon: 'museum', label: 'POIs', exact: true },
   { href: '/admin/collections', icon: 'library_books', label: 'Sammlungen', exact: false },
   { href: '/admin/backup', icon: 'backup', label: 'Backup', exact: false },
@@ -38,7 +38,7 @@ export default function AdminSidebar() {
             href={item.href}
             className={`admin-sidebar-link ${isActive(item.href, item.exact) ? 'active' : ''}`}
           >
-            <span className="material-symbols-outlined">{item.icon}</span>
+            <AppIcon name={item.icon} />
             {item.label}
           </Link>
         ))}
@@ -47,7 +47,7 @@ export default function AdminSidebar() {
       {/* Footer */}
       <div className="admin-sidebar-footer">
         <div className="admin-sidebar-user">
-          <span className="material-symbols-outlined">account_circle</span>
+          <AppIcon name="account_circle" />
           <div>
             <span className="admin-sidebar-user-name">
               {user?.displayName || 'Admin'}
@@ -59,7 +59,7 @@ export default function AdminSidebar() {
           className="admin-sidebar-logout"
           onClick={() => signOut(auth)}
         >
-          <span className="material-symbols-outlined">logout</span>
+          <AppIcon name="logout" />
           Abmelden
         </button>
       </div>
