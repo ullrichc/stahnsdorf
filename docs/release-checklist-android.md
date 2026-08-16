@@ -9,4 +9,4 @@ Diese Prüfung muss auf einem echten Android-Gerät jeweils in Chrome und Firefo
 5. Berechtigung zurücksetzen, beim nächsten Versuch ablehnen und die sichtbare Fehlermeldung prüfen.
 6. Flugmodus aktivieren und einen Kaltstart der Ortung abwarten; nach spätestens 30 Sekunden muss eine Fehlermeldung erscheinen.
 7. Flugmodus deaktivieren und erneut orten; ein späterer Erfolg muss die alte Fehlermeldung entfernen.
-8. In Firefox die Adressleiste durch Scrollen ein- und ausblenden; BottomNav und POI-Blatt dürfen sich nicht gegeneinander verschieben oder den Detailbutton verdecken.
+8. In Firefox auf Karte, POI-Detail, Info, Sammlungen und Optionen die Adressleiste durch Scrollen ein- und ausblenden; die BottomNav muss am unteren Fensterrand bleiben und darf weder Inhalte noch den Detailbutton verdecken.

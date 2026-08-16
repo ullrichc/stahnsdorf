@@ -79,6 +79,45 @@ describe('applyManualOSMAndCoordinates', () => {
     });
   });
 
+  it('matches alternate manual names for Anita Kupsch and Garnisongrab', () => {
+    const input = `Anita Kupsch (Krahn)
+Standort: geo:52.39102,13.18236
+https://osmand.net/map?pin=52.39102,13.18236
+Garnisonsgrab
+Standort: geo:52.38951,13.18014
+https://osmand.net/map?pin=52.38951,13.18014`;
+    const backup = {
+      pois: [
+        {
+          id: 'poi_sws_anita-kupsch',
+          typ: 'grab',
+          name: { de: 'Anita Kupsch' },
+          koordinaten: null,
+          koordinaten_quelle: null,
+          quellen: [],
+          notiz: '',
+        },
+        {
+          id: 'poi_sws_garnisongrab',
+          typ: 'bereich',
+          name: { de: 'Garnisongrab' },
+          koordinaten: null,
+          koordinaten_quelle: null,
+          quellen: [],
+          notiz: '',
+        },
+      ],
+    };
+
+    const result = applyManualOSMAndCoordinates(backup, parseManualOSMAndCoordinates(input), { datum: '2026-08-16' });
+
+    expect(result.manualOSMAndSummary.updated).toHaveLength(2);
+    expect(result.pois.find((poi) => poi.id === 'poi_sws_anita-kupsch').koordinaten)
+      .toEqual({ lat: 52.39102, lng: 13.18236 });
+    expect(result.pois.find((poi) => poi.id === 'poi_sws_garnisongrab').koordinaten)
+      .toEqual({ lat: 52.38951, lng: 13.18014 });
+  });
+
   it('adds new POIs for unmatched manual entries', () => {
     const result = applyManualOSMAndCoordinates({ pois: [] }, parseManualOSMAndCoordinates(INPUT), { datum: '2026-06-06' });
     const boost = result.pois.find((poi) => poi.id === 'poi_sws_hermann-boost');

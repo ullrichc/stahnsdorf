@@ -16,6 +16,8 @@ const ID_ALIASES = new Map([
   ['friedrich-wilhelm-murnau', 'poi_sws_fw-murnau'],
   ['ralph-arthur-roberts-schoenherr', 'poi_sws_ralph-arthur-roberts'],
   ['friedhofskapelle', 'poi_sws_hauptkapelle'],
+  ['anita-kupsch-krahn', 'poi_sws_anita-kupsch'],
+  ['garnisonsgrab', 'poi_sws_garnisongrab'],
 ]);
 
 const NEW_MANUAL_POI_DETAILS = {

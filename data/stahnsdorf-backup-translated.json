@@ -1,6 +1,6 @@
 {
   "_backup": true,
-  "_timestamp": "2026-06-06T00:00:00.000Z",
+  "_timestamp": "2026-08-16T00:00:00.000Z",
   "pois": [
     {
       "id": "poi_sws_adolf-bastian",
@@ -36,7 +36,36 @@
       "datum_von": "1826-06-26",
       "datum_bis": "1905-02-02",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Adolf_Bastian",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-bastian%2Fdisplay%2F18bc6d1aa1-70-adolf-bastian.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_adolf-bastian/display/18bc6d1aa1-70-adolf-bastian.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-bastian%2Fthumb%2F18bc6d1aa1-70-adolf-bastian.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_adolf-bastian/thumb/18bc6d1aa1-70-adolf-bastian.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "70 Adolf Bastian.jpg",
+          "quelle_hash": "18bc6d1aa167eb1f69e40591d2a6e765cf4e5c2cc4f1fd61178cee0e3c98ab71"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-bastian%2Fdisplay%2Fd87947dac2-70a-adolf-bastian.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_adolf-bastian/display/d87947dac2-70a-adolf-bastian.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_adolf-bastian%2Fthumb%2Fd87947dac2-70a-adolf-bastian.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_adolf-bastian/thumb/d87947dac2-70a-adolf-bastian.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "70a Adolf Bastian.jpg",
+          "quelle_hash": "d87947dac2156296e3676b0bb3eb753f1dd9ff962f8bc46df7fc1220120c00d0"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
@@ -414,7 +443,22 @@
         "sv": "Den gamla omläggningen bevarar gravplatser som på grund av Berlins omgestaltningsplaner från slutet av 1930-talet flyttades till Stahnsdorf. Området visar tydligt hur stadsplanering, minneskultur och kyrkogårdshistoria samverkar."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alte-umbettung%2Fdisplay%2F83190572bd-66-alte-umbettung.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_alte-umbettung/display/83190572bd-66-alte-umbettung.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_alte-umbettung%2Fthumb%2F83190572bd-66-alte-umbettung.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_alte-umbettung/thumb/83190572bd-66-alte-umbettung.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "66 Alte Umbettung.JPG",
+          "quelle_hash": "83190572bd73098ab79899033ac084a1057e14eceb3c98d1aff5bd6d8684e426"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
@@ -447,7 +491,10 @@
         "ru": "Анита Купш",
         "sv": "Anita Kupsch"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.39102,
+        "lng": 13.18236
+      },
       "kurztext": {
         "de": "Schauspielerin und Synchronsprecherin.",
         "en": "Actress and voice actress.",
@@ -467,19 +514,55 @@
       "datum_von": "1940-05-18",
       "datum_bis": "2025-07-03",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Anita_Kupsch",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anita-kupsch%2Fdisplay%2F3529b455a7-64-anita-krahn-kupsch.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_anita-kupsch/display/3529b455a7-64-anita-krahn-kupsch.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anita-kupsch%2Fthumb%2F3529b455a7-64-anita-krahn-kupsch.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_anita-kupsch/thumb/3529b455a7-64-anita-krahn-kupsch.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "64 Anita Krahn (Kupsch).jpg",
+          "quelle_hash": "3529b455a704662ad6d11335222d89afe0e55c99a93ab76a1e879a87d7d97f42"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anita-kupsch%2Fdisplay%2F73966cc0ba-64a-anita-krahn-kupsch-baumnummer.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_anita-kupsch/display/73966cc0ba-64a-anita-krahn-kupsch-baumnummer.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anita-kupsch%2Fthumb%2F73966cc0ba-64a-anita-krahn-kupsch-baumnummer.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_anita-kupsch/thumb/73966cc0ba-64a-anita-krahn-kupsch-baumnummer.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "64a Anita Krahn (Kupsch) Baumnummer.jpg",
+          "quelle_hash": "73966cc0ba6763614f0340feff813831f1abc3597a3e04c92c95eb31eb430744"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Anita Kupsch, Wikipedia, https://de.wikipedia.org/wiki/Anita_Kupsch, abgerufen 2026-03-25"
+        "Anita Kupsch, Wikipedia, https://de.wikipedia.org/wiki/Anita_Kupsch, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Anita Kupsch (Krahn), https://osmand.net/map?pin=52.39102,13.18236#15/52.39102/13.18236"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Charlottenburg. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Anita Kupsch (Krahn)",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_anlage-opfer-krieg-und-gewaltherrschaft",
@@ -572,7 +655,10 @@
         "ru": "Август Штрамм",
         "sv": "August Stramm"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38848,
+        "lng": 13.18665
+      },
       "kurztext": {
         "de": "Dichter und Dramatiker des Expressionismus.",
         "en": "Poets and playwrights of Expressionism.",
@@ -592,19 +678,41 @@
       "datum_von": "1874-07-29",
       "datum_bis": "1915-09-01",
       "wikipedia_url": "https://de.wikipedia.org/wiki/August_Stramm",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_august-stramm%2Fdisplay%2Fcc9e8ffb51-59-august-stramm.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_august-stramm/display/cc9e8ffb51-59-august-stramm.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_august-stramm%2Fthumb%2Fcc9e8ffb51-59-august-stramm.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_august-stramm/thumb/cc9e8ffb51-59-august-stramm.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "59 August Stramm.jpg",
+          "quelle_hash": "cc9e8ffb51241f215632d6188f41b9ed3b898d3808d739b2029fca7bba2fe7d9"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "August Stramm, Wikipedia, https://de.wikipedia.org/wiki/August_Stramm, abgerufen 2026-03-25"
+        "August Stramm, Wikipedia, https://de.wikipedia.org/wiki/August_Stramm, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, August Stramm, https://osmand.net/map?pin=52.38848,13.18665#17/52.38848/13.18665"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Heilig Geist. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: August Stramm",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_berlin-south-western-cemetery",
@@ -638,7 +746,78 @@
         "sv": "Commonwealth-krigskyrkogården minner om mer än tusen identifierade döda från första världskriget. Dess tydliga utformning följer det internationella minneskulturen hos Commonwealth War Graves Commission."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fdisplay%2Fc81594b3bd-67-englischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/display/c81594b3bd-67-englischer-soldatenfriedhof.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fthumb%2Fc81594b3bd-67-englischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/thumb/c81594b3bd-67-englischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "67 Englischer Soldatenfriedhof.jpg",
+          "quelle_hash": "c81594b3bdf9e174a5385b34a688d0cba623ea98224907b59cae345fa7d87498"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fdisplay%2F0959167081-67a-englischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/display/0959167081-67a-englischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fthumb%2F0959167081-67a-englischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/thumb/0959167081-67a-englischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "67a Englischer Soldatenfriedhof.jpg",
+          "quelle_hash": "0959167081acb93e86511b095843ffcb1cea314f5326fe548e4037090aa81a10"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fdisplay%2Fe1b23a65d1-67b-englischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/display/e1b23a65d1-67b-englischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fthumb%2Fe1b23a65d1-67b-englischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/thumb/e1b23a65d1-67b-englischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "67b Englischer Soldatenfriedhof.jpg",
+          "quelle_hash": "e1b23a65d1833e3c62f5fc0e6409bb8e0ee4369e862ae18ce7eacb22ef03227c"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fdisplay%2F95fc3e1a1a-67c-englischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/display/95fc3e1a1a-67c-englischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fthumb%2F95fc3e1a1a-67c-englischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/thumb/95fc3e1a1a-67c-englischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "67c Englischer Soldatenfriedhof.jpg",
+          "quelle_hash": "95fc3e1a1aeed36852e443e020501c3b2da50b04e0ec96f87714b1ece36cdbfd"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fdisplay%2F0887ea0138-67d-englischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/display/0887ea0138-67d-englischer-soldatenfriedhof.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_berlin-south-western-cemetery%2Fthumb%2F0887ea0138-67d-englischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_berlin-south-western-cemetery/thumb/0887ea0138-67d-englischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "67d Englischer Soldatenfriedhof.jpg",
+          "quelle_hash": "0887ea01383066d6548ae2a147dc2510fa856bcb902ae6c1ff0b448a0f800e3d"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Berlin South-Western Cemetery, Commonwealth War Graves Commission, https://www.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/90900/berlin-south-western-cemetery/, abgerufen 2026-03-25",
@@ -1361,13 +1540,13 @@
       "wikipedia_url": "https://de.wikipedia.org/wiki/Erik_Jan_Hanussen",
       "bilder": [
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F9990307540-orientation-fixed-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/9990307540-orientation-fixed-59-erik-jan-hanussen-steinschneider.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F9990307540-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/9990307540-59-erik-jan-hanussen-steinschneider.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F9990307540-orientation-fixed-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/9990307540-orientation-fixed-59-erik-jan-hanussen-steinschneider.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F9990307540-59-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/9990307540-59-erik-jan-hanussen-steinschneider.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -1375,13 +1554,13 @@
           "quelle_hash": "99903075408b635a45406827db20d585435846f45677ea9049bb11d8a540b4fa"
         },
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F1b161f2478-orientation-fixed-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/1b161f2478-orientation-fixed-59a-erik-jan-hanussen-steinschneider.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fdisplay%2F1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/display/1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F1b161f2478-orientation-fixed-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/1b161f2478-orientation-fixed-59a-erik-jan-hanussen-steinschneider.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_erik-jan-hanussen%2Fthumb%2F1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_erik-jan-hanussen/thumb/1b161f2478-59a-erik-jan-hanussen-steinschneider.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -1671,13 +1850,13 @@
       "wikipedia_url": "https://de.wikipedia.org/wiki/Franz_Bracht",
       "bilder": [
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fdisplay%2F9b31636d81-orientation-fixed-57-franz-bracht.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_franz-bracht/display/9b31636d81-orientation-fixed-57-franz-bracht.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fdisplay%2F9b31636d81-57-franz-bracht.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_franz-bracht/display/9b31636d81-57-franz-bracht.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fthumb%2F9b31636d81-orientation-fixed-57-franz-bracht.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_franz-bracht/thumb/9b31636d81-orientation-fixed-57-franz-bracht.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_franz-bracht%2Fthumb%2F9b31636d81-57-franz-bracht.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_franz-bracht/thumb/9b31636d81-57-franz-bracht.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -1736,7 +1915,36 @@
         "ru": "Главный вход объединяет прибытие, ориентацию и управление Южно-Западным кладбищем. Отсюда открывается участок как просторное лесное кладбище с четкой сетью тропинок.",
         "sv": "Huvudentrén samlar ankomst, orientering och förvaltning av Sydvästkyrkogården. Härifrån öppnar anläggningen upp sig som en storskalig skogskyrkogård med tydlig vägledning."
       },
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedhofseingang%2Fdisplay%2F00e9a0c42f-57-eingang.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_friedhofseingang/display/00e9a0c42f-57-eingang.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedhofseingang%2Fthumb%2F00e9a0c42f-57-eingang.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_friedhofseingang/thumb/00e9a0c42f-57-eingang.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "57 Eingang.jpg",
+          "quelle_hash": "00e9a0c42ff11feb14be3d20e7ae0810acb335b585912cf8a1011157e7aefd54"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedhofseingang%2Fdisplay%2F8abefa9944-57a-eingang.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_friedhofseingang/display/8abefa9944-57a-eingang.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_friedhofseingang%2Fthumb%2F8abefa9944-57a-eingang.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_friedhofseingang/thumb/8abefa9944-57a-eingang.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "57a Eingang.jpg",
+          "quelle_hash": "8abefa99445109594fd9d2543ead8d86df6e08264d93a40c1b6c98d2f758d46e"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
@@ -2019,7 +2227,10 @@
         "ru": "Гарнизонная могила",
         "sv": "Garnisons grav"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38951,
+        "lng": 13.18014
+      },
       "kurztext": {
         "de": "Gemeinschaftsgrab aus Berliner Garnisonsgeschichte.",
         "en": "Communal grave from Berlin garrison history.",
@@ -2037,18 +2248,40 @@
         "sv": "Garnisonsgraven påminner om ben som återbegravdes efter förstörelsen av Berlins garnisonskyrka. Det förenar militär-, stads- och efterkrigshistoria på en egen minnesplats."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_garnisongrab%2Fdisplay%2F9ee61e8728-74-garnisonsgrab.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_garnisongrab/display/9ee61e8728-74-garnisonsgrab.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_garnisongrab%2Fthumb%2F9ee61e8728-74-garnisonsgrab.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_garnisongrab/thumb/9ee61e8728-74-garnisonsgrab.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "74 Garnisonsgrab.jpg",
+          "quelle_hash": "9ee61e8728d88bd84944c86042e6fa413730246d353a74a0c9be771550e5e1c4"
+        }
+      ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Garnisonsgrab, https://osmand.net/map?pin=52.38951,13.18014#17/52.38951/13.18014"
       ],
       "status": "bestätigt",
-      "notiz": "Nahe der Kapelle. Koordinaten vor Ort ermitteln.",
+      "notiz": "Nahe der Kapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Garnisonsgrab",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_georg-graf-von-arco",
@@ -2493,19 +2726,49 @@
       "datum_von": "1873",
       "datum_bis": "1923-01-31",
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hans-essen%2Fdisplay%2F52b93b56ae-77-hans-henrik-freiherr-von-essen.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hans-essen/display/52b93b56ae-77-hans-henrik-freiherr-von-essen.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hans-essen%2Fthumb%2F52b93b56ae-77-hans-henrik-freiherr-von-essen.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hans-essen/thumb/52b93b56ae-77-hans-henrik-freiherr-von-essen.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "77 Hans Henrik Freiherr von Essen.jpg",
+          "quelle_hash": "52b93b56ae9729e5148447146eddfbae5f274bae629ebcafbaa0cf9160917580"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hans-essen%2Fdisplay%2F3e2d91dc83-77a-hans-henrik-freiherr-von-essen.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hans-essen/display/3e2d91dc83-77a-hans-henrik-freiherr-von-essen.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hans-essen%2Fthumb%2F3e2d91dc83-77a-hans-henrik-freiherr-von-essen.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hans-essen/thumb/3e2d91dc83-77a-hans-henrik-freiherr-von-essen.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "77a Hans Henrik Freiherr von Essen.jpg",
+          "quelle_hash": "3e2d91dc8394e6c930b0d22e4259fcc179dd693c2442e927b0d9a374c145c1ec"
+        }
+      ],
       "audio": {},
       "quellen": [
         "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
-        "List of ambassadors of Sweden to Germany, Wikipedia, https://en.wikipedia.org/wiki/List_of_ambassadors_of_Sweden_to_Germany, abgerufen 2026-06-06"
+        "List of ambassadors of Sweden to Germany, Wikipedia, https://en.wikipedia.org/wiki/List_of_ambassadors_of_Sweden_to_Germany, abgerufen 2026-06-06",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hans Henrik Freiherr von Essen, https://osmand.net/map?pin=52.38963,13.17885#16/52.38963/13.17885"
       ],
       "status": "bestätigt",
-      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Epiphanien, Schwedenblock, Erbbegräbnis 19. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Der genaue Geburtstag wurde in den ausgewerteten Quellen nicht gefunden; belegt ist bislang nur das Geburtsjahr 1873. Das Sterbedatum 1923-01-31 wurde aus der Amtszeitangabe als schwedischer Gesandter mit „died in office“ übernommen.",
+      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Epiphanien, Schwedenblock, Erbbegräbnis 19. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Der genaue Geburtstag wurde in den ausgewerteten Quellen nicht gefunden; belegt ist bislang nur das Geburtsjahr 1873. Das Sterbedatum 1923-01-31 wurde aus der Amtszeitangabe als schwedischer Gesandter mit „died in office“ übernommen. Manuelle OsmAnd-Kontrollmessung vom 2026-08-16 (52.38963, 13.17885) liegt ca. 7 m von der bestehenden wo-sie-ruhen-Koordinate entfernt; bestehende Koordinate nicht überschrieben.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z",
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
       "koordinaten_quelle": {
         "typ": "wo-sie-ruhen",
         "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
@@ -2526,7 +2789,10 @@
         "ru": "Харальд Кречмар",
         "sv": "Harald Kretzschmar"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38644,
+        "lng": 13.18569
+      },
       "kurztext": {
         "de": "Karikaturist, Grafiker und Feuilletonist.",
         "en": "Cartoonist, graphic artist, and feuilletonist.",
@@ -2546,20 +2812,56 @@
       "datum_von": "1931-05-23",
       "datum_bis": "2024-06-27",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Harald_Kretzschmar",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_harald-kretzschmar%2Fdisplay%2Fe91b14bea4-78-harald-kretzschmar.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_harald-kretzschmar/display/e91b14bea4-78-harald-kretzschmar.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_harald-kretzschmar%2Fthumb%2Fe91b14bea4-78-harald-kretzschmar.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_harald-kretzschmar/thumb/e91b14bea4-78-harald-kretzschmar.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "78 Harald Kretzschmar.jpg",
+          "quelle_hash": "e91b14bea41949c995480f632bfb151a0e4947340be638b5520bc5383dfd4e31"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_harald-kretzschmar%2Fdisplay%2Fa9f8e4ebcc-78a-harald-kretzschmar.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_harald-kretzschmar/display/a9f8e4ebcc-78a-harald-kretzschmar.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_harald-kretzschmar%2Fthumb%2Fa9f8e4ebcc-78a-harald-kretzschmar.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_harald-kretzschmar/thumb/a9f8e4ebcc-78a-harald-kretzschmar.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "78a Harald Kretzschmar.jpg",
+          "quelle_hash": "a9f8e4ebcc7f9bd71d472997ef43febf00bba804e19851b10d2ffe5ab45e4ed4"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
         "Harald Kretzschmar, Pirckheimer-Gesellschaft, https://pirckheimer-gesellschaft.org/blog/harald-kretzschmar-0, abgerufen 2026-03-25",
-        "ArchInform: Harald Kretzschmar, https://deu.archinform.net/arch/102769.htm, abgerufen 2026-06-06"
+        "ArchInform: Harald Kretzschmar, https://deu.archinform.net/arch/102769.htm, abgerufen 2026-06-06",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Harald Kretzschmar, https://osmand.net/map?pin=52.38644,13.18569#17/52.38644/13.18569"
       ],
       "status": "bestätigt",
-      "notiz": "Block Stahnsdorf Koordinaten vor Ort ermitteln. Der genaue Todestag wurde in den ausgewerteten öffentlichen Quellen dieser Recherche nicht separat ermittelt; Grabblock und Bestattungsort sind jedoch belegt. Die exakten Lebensdaten wurden nachrecherchiert und mit ArchInform ergänzt.",
+      "notiz": "Block Stahnsdorf. Der genaue Todestag wurde in den ausgewerteten öffentlichen Quellen dieser Recherche nicht separat ermittelt; Grabblock und Bestattungsort sind jedoch belegt. Die exakten Lebensdaten wurden nachrecherchiert und mit ArchInform ergänzt. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Harald Kretzschmar",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_hauptkapelle",
@@ -2846,7 +3148,50 @@
         "sv": "Den tyska hedersblocket minner om de som föll i första världskriget. Tillsammans med de brittiska och italienska krigskyrkogårdarna bildar det ett viktigt minnesensemble på kyrkogården."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fdisplay%2F68191af149-61-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heldenblock/display/68191af149-61-heldenblock-deutscher-ehrenblock.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fthumb%2F68191af149-61-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heldenblock/thumb/68191af149-61-heldenblock-deutscher-ehrenblock.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "61 Heldenblock (Deutscher Ehrenblock).jpg",
+          "quelle_hash": "68191af1492b14227107ce907dbd6f3911002efabc161bb3b42e7de4d74e0836"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fdisplay%2F30b1c18099-61a-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heldenblock/display/30b1c18099-61a-heldenblock-deutscher-ehrenblock.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fthumb%2F30b1c18099-61a-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heldenblock/thumb/30b1c18099-61a-heldenblock-deutscher-ehrenblock.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "61a Heldenblock (Deutscher Ehrenblock).jpg",
+          "quelle_hash": "30b1c18099d5bfd86b3f2e19c5cdf6531b3e446d674e5b278b57ff3818d8c7fd"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fdisplay%2Fc96279d649-61b-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_heldenblock/display/c96279d649-61b-heldenblock-deutscher-ehrenblock.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_heldenblock%2Fthumb%2Fc96279d649-61b-heldenblock-deutscher-ehrenblock.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_heldenblock/thumb/c96279d649-61b-heldenblock-deutscher-ehrenblock.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "61b Heldenblock (Deutscher Ehrenblock).jpg",
+          "quelle_hash": "c96279d649eb1310bec9dc9e732d16bde9d88ded1227c823143ae92bf3d6eae1"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
@@ -2989,13 +3334,13 @@
       "wikipedia_url": "https://de.wikipedia.org/wiki/Hugo_Distler",
       "bilder": [
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2F3788d73927-orientation-fixed-61-hugo-distler.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/3788d73927-orientation-fixed-61-hugo-distler.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2F3788d73927-61-hugo-distler.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/3788d73927-61-hugo-distler.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2F3788d73927-orientation-fixed-61-hugo-distler.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/3788d73927-orientation-fixed-61-hugo-distler.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2F3788d73927-61-hugo-distler.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/3788d73927-61-hugo-distler.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3003,13 +3348,13 @@
           "quelle_hash": "3788d73927b55feaf1e8048d3011dbe5120222402333724b33557d1d3c4208fc"
         },
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2Faeaf57714e-orientation-fixed-61a-hugo-distler.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/aeaf57714e-orientation-fixed-61a-hugo-distler.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fdisplay%2Faeaf57714e-61a-hugo-distler.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_hugo-distler/display/aeaf57714e-61a-hugo-distler.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2Faeaf57714e-orientation-fixed-61a-hugo-distler.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/aeaf57714e-orientation-fixed-61a-hugo-distler.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_hugo-distler%2Fthumb%2Faeaf57714e-61a-hugo-distler.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_hugo-distler/thumb/aeaf57714e-61a-hugo-distler.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3048,7 +3393,10 @@
         "ru": "Инге Дойчкрон",
         "sv": "Inge Deutschkron"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38863,
+        "lng": 13.18037
+      },
       "kurztext": {
         "de": "Journalistin, Autorin und Holocaustüberlebende.",
         "en": "Journalist, author, and Holocaust survivor.",
@@ -3068,19 +3416,55 @@
       "datum_von": "1922-08-23",
       "datum_bis": "2022-03-09",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Inge_Deutschkron",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_inge-deutschkron%2Fdisplay%2F30532a98ea-73-inge-deutschkron.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_inge-deutschkron/display/30532a98ea-73-inge-deutschkron.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_inge-deutschkron%2Fthumb%2F30532a98ea-73-inge-deutschkron.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_inge-deutschkron/thumb/30532a98ea-73-inge-deutschkron.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "73 Inge Deutschkron.jpg",
+          "quelle_hash": "30532a98eadc89ee269e213063542f3a86a5a36fe2fba6497a687cf0e7511244"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_inge-deutschkron%2Fdisplay%2F2d4cfa3de2-73a-inge-deutschkron.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_inge-deutschkron/display/2d4cfa3de2-73a-inge-deutschkron.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_inge-deutschkron%2Fthumb%2F2d4cfa3de2-73a-inge-deutschkron.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_inge-deutschkron/thumb/2d4cfa3de2-73a-inge-deutschkron.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "73a Inge Deutschkron.jpg",
+          "quelle_hash": "2d4cfa3de2b992e0533989cad2ac60d1be1dd8489f74578c41f6a83c4425d140"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Inge Deutschkron, Wikipedia, https://de.wikipedia.org/wiki/Inge_Deutschkron, abgerufen 2026-03-25"
+        "Inge Deutschkron, Wikipedia, https://de.wikipedia.org/wiki/Inge_Deutschkron, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Inge Deutschkron, https://osmand.net/map?pin=52.38863,13.18037#17/52.38863/13.18037"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Kapellenblock. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Inge Deutschkron",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_ingrid-steeger",
@@ -3118,13 +3502,13 @@
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ingrid_Steeger",
       "bilder": [
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F0080b59d99-orientation-fixed-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/0080b59d99-orientation-fixed-58-ingrid-steeger-nicht-auf-plan.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F0080b59d99-orientation-fixed-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/0080b59d99-orientation-fixed-58-ingrid-steeger-nicht-auf-plan.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/0080b59d99-58-ingrid-steeger-nicht-auf-plan.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3132,13 +3516,13 @@
           "quelle_hash": "0080b59d99700d1959116a30c4d05b49fd888b9c7e57d5270d0de59e2af5a3a6"
         },
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F270dcc7165-orientation-fixed-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/270dcc7165-orientation-fixed-58a-ingrid-steeger-nicht-auf-plan.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2F270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F270dcc7165-orientation-fixed-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/270dcc7165-orientation-fixed-58a-ingrid-steeger-nicht-auf-plan.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2F270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/270dcc7165-58a-ingrid-steeger-nicht-auf-plan.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3146,13 +3530,13 @@
           "quelle_hash": "270dcc7165a3b46282906b003d474aea94d016d84eb94d045ff46acd0b9de5dc"
         },
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2Fc3f3c7f363-orientation-fixed-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/c3f3c7f363-orientation-fixed-58b-ingrid-steeger-baumnummer-482.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fdisplay%2Fc3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_ingrid-steeger/display/c3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2Fc3f3c7f363-orientation-fixed-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/c3f3c7f363-orientation-fixed-58b-ingrid-steeger-baumnummer-482.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_ingrid-steeger%2Fthumb%2Fc3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_ingrid-steeger/thumb/c3f3c7f363-58b-ingrid-steeger-baumnummer-482.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3194,7 +3578,10 @@
         "ru": "Итальянское военное кладбище",
         "sv": "italiensk militärkyrkogård"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38307,
+        "lng": 13.17644
+      },
       "kurztext": {
         "de": "Italienische Kriegsgräberstätte des Ersten Weltkriegs.",
         "en": "Italian war cemetery of the First World War.",
@@ -3212,19 +3599,83 @@
         "sv": "Den italienska soldatskyrkogården påminner om italienska krigsoffer från första världskriget. Dess geometriska anläggning med obelisk ger minnet en egen, starkt formell gestalt."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fdisplay%2F0e3577091d-68-italienischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/display/0e3577091d-68-italienischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fthumb%2F0e3577091d-68-italienischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/thumb/0e3577091d-68-italienischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "68 Italienischer Soldatenfriedhof.jpg",
+          "quelle_hash": "0e3577091d78ba6bc80550ea01cde5acacc9f7bd088946fdee6ede7c2a881125"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fdisplay%2F3dff7435b7-68a-italienischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/display/3dff7435b7-68a-italienischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fthumb%2F3dff7435b7-68a-italienischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/thumb/3dff7435b7-68a-italienischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "68a Italienischer Soldatenfriedhof.jpg",
+          "quelle_hash": "3dff7435b75a42820f88dc3c26a342e2662a197a9df46aaa7673a13abbe253a6"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fdisplay%2F49c8de3209-68c-italienischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/display/49c8de3209-68c-italienischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fthumb%2F49c8de3209-68c-italienischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/thumb/49c8de3209-68c-italienischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "68c Italienischer Soldatenfriedhof.jpg",
+          "quelle_hash": "49c8de3209b306830e7407a82bdf9b60f1e9894a44ea0ad3affe41825f46a1fa"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fdisplay%2F4a4cb522ce-68d-italienischer-soldatenfriedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/display/4a4cb522ce-68d-italienischer-soldatenfriedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_italienischer-soldatenfriedhof%2Fthumb%2F4a4cb522ce-68d-italienischer-soldatenfriedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_italienischer-soldatenfriedhof/thumb/4a4cb522ce-68d-italienischer-soldatenfriedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "68d Italienischer Soldatenfriedhof.jpg",
+          "quelle_hash": "4a4cb522cedcb6e91b1b7440c7fd5f714dcdde324dc9cb6be89396e85ef4c599"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Berlin Italian Military Cemetery, Remembering the Fallen, https://www.ww1cemeteries.com/ger-berlin-italian-military-cemetery.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Italienischer Soldatenfriedhof, https://osmand.net/map?pin=52.38307,13.17644#15/52.38307/13.17644"
       ],
       "status": "bestätigt",
-      "notiz": "Am südwestlichen Ende des Friedhofs, direkt benachbart zum Berlin South-Western Cemetery. Koordinaten vor Ort ermitteln. Öffentliche Quellen nennen teils rund 1.650, teils 1.658 italienische Tote; für die Struktur- und Orientierungsbeschreibung wurde die häufig genannte Zahl 1.658 übernommen.",
+      "notiz": "Am südwestlichen Ende des Friedhofs, direkt benachbart zum Berlin South-Western Cemetery. Öffentliche Quellen nennen teils rund 1.650, teils 1.658 italienische Tote; für die Struktur- und Orientierungsbeschreibung wurde die häufig genannte Zahl 1.658 übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Italienischer Soldatenfriedhof",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_joachim-gottschalk",
@@ -3639,13 +4090,13 @@
       "wikipedia_url": "https://de.wikipedia.org/wiki/Ludwig_Manzel",
       "bilder": [
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2Fb5686cdae5-orientation-fixed-60-karl-ludwig-manzel.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/b5686cdae5-orientation-fixed-60-karl-ludwig-manzel.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2Fb5686cdae5-60-karl-ludwig-manzel.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/b5686cdae5-60-karl-ludwig-manzel.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2Fb5686cdae5-orientation-fixed-60-karl-ludwig-manzel.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/b5686cdae5-orientation-fixed-60-karl-ludwig-manzel.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2Fb5686cdae5-60-karl-ludwig-manzel.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/b5686cdae5-60-karl-ludwig-manzel.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -3653,13 +4104,13 @@
           "quelle_hash": "b5686cdae502ddd88614b1ca09cf8d893a09179534da0b05160aec4ad956d701"
         },
         {
-          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2F72558aa517-orientation-fixed-60a-karl-ludwig-manzel.jpg?alt=media",
-          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/72558aa517-orientation-fixed-60a-karl-ludwig-manzel.jpg",
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fdisplay%2F72558aa517-60a-karl-ludwig-manzel.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/display/72558aa517-60a-karl-ludwig-manzel.jpg",
           "breite": 1600,
           "hoehe": 1600,
           "mime_type": "image/jpeg",
-          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2F72558aa517-orientation-fixed-60a-karl-ludwig-manzel.jpg?alt=media",
-          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/72558aa517-orientation-fixed-60a-karl-ludwig-manzel.jpg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_karl-ludwig-manzel%2Fthumb%2F72558aa517-60a-karl-ludwig-manzel.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_karl-ludwig-manzel/thumb/72558aa517-60a-karl-ludwig-manzel.jpg",
           "vorschau_breite": 480,
           "vorschau_hoehe": 480,
           "nachweis": "Förderverein Südwestkirchhof Stahnsdorf e.V.",
@@ -4152,7 +4603,10 @@
         "ru": "Мавзолей Каспари",
         "sv": "Casparys mausoleum"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38913,
+        "lng": 13.1807
+      },
       "kurztext": {
         "de": "Familienmausoleum der Industriellenfamilie Caspary.",
         "en": "Family mausoleum of the industrialist Caspary family.",
@@ -4169,19 +4623,41 @@
         "ru": "Мавзолей относится к более сложным частным памятным сооружениям кладбища. Архитектура и оформление демонстрируют стремление к представительству состоятельных берлинских семейств до Первой мировой войны.",
         "sv": "Mausoleet tillhör de mer påkostade privata minnesbyggnaderna på kyrkogården. Arkitektur och inredning visar den representativa anspråket hos välbärgade berlinska familjer före första världskriget."
       },
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-caspary%2Fdisplay%2F87e09972ce-72-mausoleum-caspary.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_mausoleum-caspary/display/87e09972ce-72-mausoleum-caspary.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-caspary%2Fthumb%2F87e09972ce-72-mausoleum-caspary.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_mausoleum-caspary/thumb/87e09972ce-72-mausoleum-caspary.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "72 Mausoleum Caspary.JPG",
+          "quelle_hash": "87e09972ce0739a09c7e525ee7d2b6d1df63119ed3e9b62385f2fd45e50dcc79"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25",
-        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Caspary, https://osmand.net/map?pin=52.38913,13.18070#18/52.38913/13.18070"
       ],
       "status": "bestätigt",
-      "notiz": "Schräg gegenüber der Friedhofskapelle. Koordinaten vor Ort ermitteln.",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Mausoleum Caspary",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_mausoleum-felinus",
@@ -4194,7 +4670,10 @@
         "ru": "Мавзолей Фелинус",
         "sv": "Mausoleum Felinus"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.39124,
+        "lng": 13.17449
+      },
       "kurztext": {
         "de": "Historisches Mausoleum aus dem Umbettungskontext.",
         "en": "Historical mausoleum from the reburial context.",
@@ -4212,20 +4691,56 @@
         "sv": "Mausoleet Felinus förenar privat minne med historien om flyttade gravplatser i Berlin. Dess bevarade konst- och byggnadsdelar gör det till ett viktigt objekt för kyrkogårdens minnesvård."
       },
       "wikipedia_url": "",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-felinus%2Fdisplay%2F7fe1d1855b-65-mausoleum-felinus.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_mausoleum-felinus/display/7fe1d1855b-65-mausoleum-felinus.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-felinus%2Fthumb%2F7fe1d1855b-65-mausoleum-felinus.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_mausoleum-felinus/thumb/7fe1d1855b-65-mausoleum-felinus.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "65 Mausoleum Felinus.jpg",
+          "quelle_hash": "7fe1d1855b4c7015f9a9b443c0bf72b48a9b10a2cc21c0c3b9a8facd5586978f"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-felinus%2Fdisplay%2Fa469ed577b-65a-mausolueum-felinus.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_mausoleum-felinus/display/a469ed577b-65a-mausolueum-felinus.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-felinus%2Fthumb%2Fa469ed577b-65a-mausolueum-felinus.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_mausoleum-felinus/thumb/a469ed577b-65a-mausolueum-felinus.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "65a Mausolueum Felinus.jpg",
+          "quelle_hash": "a469ed577ba1eb34d59794e505b864cf9d087dd1a94fd0fa2cf67e628dd480a7"
+        }
+      ],
       "audio": {},
       "quellen": [
         "Stahnsdorf, Südwestkirchhof : Mausoleum Felinus, Deutsche Digitale Bibliothek, https://www.deutsche-digitale-bibliothek.de/item/3EIPJMQORWYKSP7MLT7LWQKJFHM6ETEM, abgerufen 2026-03-25",
         "Mausoleum Felinus, Südwestkirchhof Stahnsdorf / FH Potsdam, https://suedwestkirchhof.ekbo.de/fileadmin/sites/suedwestkirchhof-ekbo.de/FHP_Diplomarbeit_Hanini_Teichmann_Mausoleum_Felinus_2010_.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Felinus, https://osmand.net/map?pin=52.39124,13.17449#15/52.39124/13.17449"
       ],
       "status": "bestätigt",
-      "notiz": "Bereich Alte Umbettung. Koordinaten vor Ort ermitteln.",
+      "notiz": "Bereich Alte Umbettung. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Mausoleum Felinus",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_mausoleum-harteneck",
@@ -4238,7 +4753,10 @@
         "ru": "Мавзолей Хартенек",
         "sv": "Mausoleum Harteneck"
       },
-      "koordinaten": null,
+      "koordinaten": {
+        "lat": 52.38903,
+        "lng": 13.17985
+      },
       "kurztext": {
         "de": "Mausoleum des Chemiefabrikanten Harteneck.",
         "en": "Mausoleum of the chemical manufacturer Harteneck.",
@@ -4255,18 +4773,40 @@
         "ru": "Мавзолей является примером представительной похоронной архитектуры зажиточного берлинского общества. Его создание в 1910-х годах приходится на ранний расцвет Южно-Западного кладбища.",
         "sv": "Mausoléet står för den representativa gravarkitekturen hos Berlins välbärgade borgerskap. Dess tillkomst på 1910-talet faller in i den tidiga blomstringstiden för Sydvästkyrkogården."
       },
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-harteneck%2Fdisplay%2F8317080561-75-mausoleum-harteneck.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_mausoleum-harteneck/display/8317080561-75-mausoleum-harteneck.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_mausoleum-harteneck%2Fthumb%2F8317080561-75-mausoleum-harteneck.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_mausoleum-harteneck/thumb/8317080561-75-mausoleum-harteneck.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "75 Mausoleum Harteneck.jpg",
+          "quelle_hash": "8317080561d64d5f933bbfd7de51cf21da48319e05896152edee8add3542c3b6"
+        }
+      ],
       "audio": {},
       "quellen": [
-        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25"
+        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25",
+        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Harteneck, https://osmand.net/map?pin=52.38903,13.17985#17/52.38903/13.17985"
       ],
       "status": "bestätigt",
-      "notiz": "Schräg gegenüber der Friedhofskapelle. Koordinaten vor Ort ermitteln.",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
       "erstellt_am": "2026-04-06T14:52:39.342Z",
-      "geaendert_am": "2026-04-06T14:52:39.342Z"
+      "geaendert_am": "2026-08-16T00:00:00.000Z",
+      "koordinaten_quelle": {
+        "typ": "manuell-osmand",
+        "beleg": "inputdata/neue_Koordinaten_über_OSM.txt: Mausoleum Harteneck",
+        "datum": "2026-08-16",
+        "genauigkeit": "hoch"
+      }
     },
     {
       "id": "poi_sws_max-adalbert",
@@ -5624,7 +6164,22 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anonymes-graeberfeld%2Fdisplay%2F5bf2dcb64d-79-anonymes-graeberfeld.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_anonymes-graeberfeld/display/5bf2dcb64d-79-anonymes-graeberfeld.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_anonymes-graeberfeld%2Fthumb%2F5bf2dcb64d-79-anonymes-graeberfeld.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_anonymes-graeberfeld/thumb/5bf2dcb64d-79-anonymes-graeberfeld.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "79 Anonymes Gräberfeld.jpg",
+          "quelle_hash": "5bf2dcb64de4523d399f02165a4957a72d9b715867d7e3dfcc375a33f63bcdd9"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 247897589, https://www.openstreetmap.org/way/247897589, Version 4, Stand 2025-10-12T18:45:07Z, abgerufen 2026-05-25"
@@ -5730,7 +6285,36 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_namenlose-metallstatue%2Fdisplay%2F1b16aa32f9-58-namenlose-metallstatue.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_namenlose-metallstatue/display/1b16aa32f9-58-namenlose-metallstatue.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_namenlose-metallstatue%2Fthumb%2F1b16aa32f9-58-namenlose-metallstatue.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_namenlose-metallstatue/thumb/1b16aa32f9-58-namenlose-metallstatue.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "58 namenlose Metallstatue.jpg",
+          "quelle_hash": "1b16aa32f91ab78748c81d65b08de71e3315bb6d381c609aa5bc6b233b1f5b50"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_namenlose-metallstatue%2Fdisplay%2F202c855843-58a-namenlose-metallstatue.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_namenlose-metallstatue/display/202c855843-58a-namenlose-metallstatue.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_namenlose-metallstatue%2Fthumb%2F202c855843-58a-namenlose-metallstatue.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_namenlose-metallstatue/thumb/202c855843-58a-namenlose-metallstatue.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "58a namenlose Metallstatue.jpg",
+          "quelle_hash": "202c855843f6b162c2ac083c4b190dc0906a17c87cc62d112af7eacd7cecd141"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: node 13629435895, https://www.openstreetmap.org/node/13629435895, Version 1, Stand 2026-03-09T09:12:24Z, abgerufen 2026-05-25"
@@ -5889,7 +6473,22 @@
       "datum_von": "1879-07-11",
       "datum_bis": "1941-01-14",
       "wikipedia_url": "https://de.wikipedia.org/wiki/Paul_Manteufel",
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_paul-manteufel%2Fdisplay%2Fd96bbaff07-69-prof-dr-med-paul-manteufel.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_paul-manteufel/display/d96bbaff07-69-prof-dr-med-paul-manteufel.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_paul-manteufel%2Fthumb%2Fd96bbaff07-69-prof-dr-med-paul-manteufel.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_paul-manteufel/thumb/d96bbaff07-69-prof-dr-med-paul-manteufel.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "69 Prof. Dr. Med. Paul Manteufel.jpg",
+          "quelle_hash": "d96bbaff07d241dde41ac0db7b5182bbc5297e1255eeed4281db980b1c73f782"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: node 12312719341, https://www.openstreetmap.org/node/12312719341, Version 2, Stand 2025-08-31T09:19:30Z, abgerufen 2026-05-25",
@@ -6102,7 +6701,36 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwedischer-friedhof%2Fdisplay%2F66cf310355-76-schwedischer-friedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_schwedischer-friedhof/display/66cf310355-76-schwedischer-friedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwedischer-friedhof%2Fthumb%2F66cf310355-76-schwedischer-friedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_schwedischer-friedhof/thumb/66cf310355-76-schwedischer-friedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "76 Schwedischer Friedhof.jpg",
+          "quelle_hash": "66cf3103554496a89d9c71a2ec2fbf614c8bb3cb78e5e012a68eff9456902d7c"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwedischer-friedhof%2Fdisplay%2Fa34e1d9d34-76a-schwedischer-friedhof.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_schwedischer-friedhof/display/a34e1d9d34-76a-schwedischer-friedhof.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwedischer-friedhof%2Fthumb%2Fa34e1d9d34-76a-schwedischer-friedhof.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_schwedischer-friedhof/thumb/a34e1d9d34-76a-schwedischer-friedhof.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "76a Schwedischer Friedhof.jpg",
+          "quelle_hash": "a34e1d9d34a0c44f19fc2f824c444ebde8af47eb0d4db9efd4cf26b1083e4da5"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 247946680, https://www.openstreetmap.org/way/247946680, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
@@ -6155,7 +6783,22 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwesternblock%2Fdisplay%2Fdb41ffbbc5-62-schwesternblock.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_schwesternblock/display/db41ffbbc5-62-schwesternblock.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_schwesternblock%2Fthumb%2Fdb41ffbbc5-62-schwesternblock.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_schwesternblock/thumb/db41ffbbc5-62-schwesternblock.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "62 Schwesternblock.jpg",
+          "quelle_hash": "db41ffbbc5f727f59b9291e9b879b780fb18dde41789427f9aff686c8684971c"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 247904540, https://www.openstreetmap.org/way/247904540, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
@@ -6208,7 +6851,36 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_trauerkapelle%2Fdisplay%2Fcbddba24a9-71-trauerkapelle.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_trauerkapelle/display/cbddba24a9-71-trauerkapelle.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_trauerkapelle%2Fthumb%2Fcbddba24a9-71-trauerkapelle.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_trauerkapelle/thumb/cbddba24a9-71-trauerkapelle.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "71 Trauerkapelle.jpg",
+          "quelle_hash": "cbddba24a934ed619fffda5c46ab4f887c8c970eee76c1f2b08b535f2e8802e8"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_trauerkapelle%2Fdisplay%2F8c669f6f77-71a-trauerkapelle.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_trauerkapelle/display/8c669f6f77-71a-trauerkapelle.jpg",
+          "breite": 1067,
+          "hoehe": 1600,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_trauerkapelle%2Fthumb%2F8c669f6f77-71a-trauerkapelle.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_trauerkapelle/thumb/8c669f6f77-71a-trauerkapelle.jpg",
+          "vorschau_breite": 320,
+          "vorschau_hoehe": 480,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "71a Trauerkapelle.jpg",
+          "quelle_hash": "8c669f6f77be67d249789a077b9df09115745e93f6409156882e2e0de5f1273d"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 228818268, https://www.openstreetmap.org/way/228818268, Version 3, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
@@ -6261,7 +6933,22 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-1%2Fdisplay%2Fa77d629486-63-urnenhain-i.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_urnenhain-1/display/a77d629486-63-urnenhain-i.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-1%2Fthumb%2Fa77d629486-63-urnenhain-i.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_urnenhain-1/thumb/a77d629486-63-urnenhain-i.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "63 Urnenhain I.jpg",
+          "quelle_hash": "a77d6294862bd1887774c3a213883299375b4a8641104fb8568846df8760cb38"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 247944649, https://www.openstreetmap.org/way/247944649, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
@@ -6314,7 +7001,50 @@
       "datum_von": null,
       "datum_bis": null,
       "wikipedia_url": null,
-      "bilder": [],
+      "bilder": [
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fdisplay%2F2efc76fbb9-60-urnenhain-ii.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_urnenhain-2/display/2efc76fbb9-60-urnenhain-ii.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fthumb%2F2efc76fbb9-60-urnenhain-ii.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_urnenhain-2/thumb/2efc76fbb9-60-urnenhain-ii.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "60 Urnenhain II.jpg",
+          "quelle_hash": "2efc76fbb9f67cfa284974a74d50d871990dee50dca4e65de45bcce526d0ba6f"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fdisplay%2Fc79b94cb39-60a-urnenhain-ii.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_urnenhain-2/display/c79b94cb39-60a-urnenhain-ii.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fthumb%2Fc79b94cb39-60a-urnenhain-ii.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_urnenhain-2/thumb/c79b94cb39-60a-urnenhain-ii.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "60a Urnenhain II.jpg",
+          "quelle_hash": "c79b94cb396cdd7969d07e76fc6eb6c4a67d35fe71b1b3a239a16b967e94f7bc"
+        },
+        {
+          "datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fdisplay%2F05cb734788-60b-urnenhain-ii.jpg?alt=media",
+          "storage_pfad": "poi-images/poi_sws_urnenhain-2/display/05cb734788-60b-urnenhain-ii.jpg",
+          "breite": 1600,
+          "hoehe": 1067,
+          "mime_type": "image/jpeg",
+          "vorschau_datei": "https://firebasestorage.googleapis.com/v0/b/stahnsdorf-90e03.firebasestorage.app/o/poi-images%2Fpoi_sws_urnenhain-2%2Fthumb%2F05cb734788-60b-urnenhain-ii.jpg?alt=media",
+          "vorschau_storage_pfad": "poi-images/poi_sws_urnenhain-2/thumb/05cb734788-60b-urnenhain-ii.jpg",
+          "vorschau_breite": 480,
+          "vorschau_hoehe": 320,
+          "nachweis": "Lars Uhlemann",
+          "quelle_datei": "60b Urnenhain II.jpg",
+          "quelle_hash": "05cb734788d874ab304c8d5032252edd0b1080a7a604d7ffedac095c490d4d32"
+        }
+      ],
       "audio": {},
       "quellen": [
         "OpenStreetMap: way 247930944, https://www.openstreetmap.org/way/247930944, Version 4, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"

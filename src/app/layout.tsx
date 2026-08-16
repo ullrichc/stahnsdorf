@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de" suppressHydrationWarning>
       <body>
         <LocaleProvider>
-          <main style={{ paddingBottom: 'var(--nav-height)' }}>{children}</main>
+          <main className="app-main">{children}</main>
           <BottomNav />
         </LocaleProvider>
       </body>

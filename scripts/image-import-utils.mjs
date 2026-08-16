@@ -50,6 +50,13 @@ export async function readImageCredit(filePath) {
   return extractCredit(metadata ?? {});
 }
 
+export async function resolveImageCredit(filePath, manifestCredit) {
+  if (typeof manifestCredit === 'string' && manifestCredit.trim()) {
+    return manifestCredit.trim();
+  }
+  return readImageCredit(filePath);
+}
+
 export function extractCredit(metadata) {
   const keys = [
     'dc:creator',

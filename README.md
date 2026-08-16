@@ -150,7 +150,7 @@ npm run deploy:firebase   # Firestore + Storage zusammen
 ```
 
 ### POI-Bilder importieren
-Der Erstimport liest die lokalen Originale aus `inputdata/bilder` und `inputdata/0606bilder`, erzeugt optimierte Anzeige- und Vorschauversionen und ergänzt die POI-Bildreferenzen zuerst im JSON-Master. Ohne `--apply` laufen die Schreibschritte als Dry-Run:
+Der Erstimport liest lokale Originale aus einem Fotoordner, erzeugt optimierte Anzeige- und Vorschauversionen und ergänzt die POI-Bildreferenzen zuerst im JSON-Master. Ohne `--apply` laufen die Schreibschritte als Dry-Run:
 
 ```bash
 npm run images:manifest
@@ -161,7 +161,16 @@ npm run import:images
 npm run import:images -- --apply
 ```
 
-`images:prepare` wendet EXIF-Orientierung an und schreibt daraus neue JPEGs. `images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage. Bereits importierte Storage-Dateien können mit `npm run import:images -- --apply --force` gezielt überschrieben werden.
+Weitere Aufnahme-Batches werden auf Basis des bestehenden Gesamtmanifests ergänzt. Die führenden Plan-Nummern müssen nur innerhalb eines Fotoordners eindeutig sein; ein bereits verarbeiteter Quellordner wird abgelehnt:
+
+```bash
+npm run images:manifest -- \
+  --old-manifest inputdata/bilder-import-manifest.json \
+  --input inputdata/0816bilder \
+  --output inputdata/bilder-import-manifest.json
+```
+
+`images:prepare` wendet EXIF-Orientierung an und schreibt daraus neue JPEGs. Ein im Importmanifest ausdrücklich gesetzter `nachweis` hat Vorrang vor dem Urheber aus den Bildmetadaten und dem Standardnachweis. `images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage. Bereits importierte Storage-Dateien können mit `npm run import:images -- --apply --force` gezielt überschrieben werden. Für alle Schritte muss derselbe Firebase-Bucket verwendet werden; bei CLI-Aufrufen kann er mit `--bucket <bucket-name>` explizit gesetzt werden.
 
 ## 📄 Lizenz
 Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende

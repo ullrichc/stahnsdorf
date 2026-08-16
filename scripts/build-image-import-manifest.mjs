@@ -3,14 +3,21 @@ import { readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import exifr from 'exifr';
 
-const OLD_MANIFEST = 'inputdata/bilder-poi-liste.json';
-const NEW_IMAGE_DIR = 'inputdata/0606bilder';
-const POI_BACKUP = 'data/stahnsdorf-backup-translated.json';
-const OUTPUT = 'inputdata/bilder-import-manifest.json';
+const args = parseArgs(process.argv.slice(2));
+const oldManifestPath = args['old-manifest'] ?? 'inputdata/bilder-poi-liste.json';
+const inputDirectory = args.input ?? 'inputdata/0606bilder';
+const backupPath = args.backup ?? 'data/stahnsdorf-backup-translated.json';
+const outputPath = args.output ?? 'inputdata/bilder-import-manifest.json';
 
 const NAME_OVERRIDES = new Map([
+  ['anita krahn', 'Anita Kupsch'],
+  ['eingang', 'Haupteingang'],
+  ['englischer soldatenfriedhof', 'Berlin South-Western Cemetery'],
   ['erik jan hanussen steinschneider', 'Erik Jan Hanussen'],
+  ['garnisonsgrab', 'Garnisongrab'],
+  ['heldenblock', 'Heldenblock / Deutscher Ehrenblock'],
   ['karl ludwig manzel', 'Karl Ludwig Manzel'],
+  ['prof dr med paul manteufel', 'Paul Manteufel'],
 ]);
 
 const MANUAL_POI_MATCHES = new Map([
@@ -30,13 +37,23 @@ const MANUAL_IMAGE_FILE_RENAMES = new Map([
   ['inputdata/bilder/21a Meyer, Louise.jpg', 'inputdata/bilder/21a Meyer, Louis.jpg'],
 ]);
 
-const oldManifest = JSON.parse(await readFile(OLD_MANIFEST, 'utf8'));
-const backup = JSON.parse(await readFile(POI_BACKUP, 'utf8'));
+const IMAGE_CREDIT_OVERRIDES = new Map([
+  ['66 Alte Umbettung.JPG', 'Lars Uhlemann'],
+  ['72 Mausoleum Caspary.JPG', 'Lars Uhlemann'],
+]);
+
+const oldManifest = JSON.parse(await readFile(oldManifestPath, 'utf8'));
+const backup = JSON.parse(await readFile(backupPath, 'utf8'));
 const pois = backup.pois ?? [];
 const poiById = new Map(pois.map((poi) => [poi.id, poi]));
-const existingPlanNumbers = new Set((oldManifest.pois ?? []).map((poi) => poi.plan_nummer).filter(Boolean));
+const existingSourceDirectories = oldManifest.source_directories
+  ?? [oldManifest.source_directory].filter(Boolean);
 
-const newFiles = (await readdir(NEW_IMAGE_DIR))
+if (existingSourceDirectories.includes(inputDirectory)) {
+  throw new Error(`Bildordner ${inputDirectory} wurde bereits importiert.`);
+}
+
+const newFiles = (await readdir(inputDirectory))
   .filter((file) => /\.jpe?g$/i.test(file))
   .sort((a, b) => a.localeCompare(b, 'de', { numeric: true }));
 
@@ -44,9 +61,6 @@ const groups = new Map();
 for (const fileName of newFiles) {
   const plan = parsePlanNumber(fileName);
   if (!plan) continue;
-  if (existingPlanNumbers.has(plan)) {
-    throw new Error(`Plan-Nummer ${plan} ist bereits im alten Manifest vorhanden.`);
-  }
   if (!groups.has(plan)) groups.set(plan, []);
   groups.get(plan).push(fileName);
 }
@@ -63,13 +77,14 @@ for (const [plan, files] of groups) {
 
   const bilder = [];
   for (const fileName of files) {
-    const filePath = path.join(NEW_IMAGE_DIR, fileName).replaceAll('\\', '/');
+    const filePath = path.join(inputDirectory, fileName).replaceAll('\\', '/');
     const fileStat = await stat(filePath);
     const metadata = await exifr.parse(filePath, { gps: true, tiff: true, exif: true }).catch(() => ({}));
 
     bilder.push({
       datei: filePath,
       dateiname: fileName,
+      nachweis: IMAGE_CREDIT_OVERRIDES.get(fileName),
       variante: parseVariant(fileName),
       gps: metadata?.latitude && metadata?.longitude ? {
         lat: round(metadata.latitude),
@@ -109,16 +124,16 @@ for (const [plan, files] of groups) {
 const output = {
   ...oldManifest,
   generated_at: new Date().toISOString(),
-  source_manifests: [OLD_MANIFEST],
-  source_directories: [oldManifest.source_directory, NEW_IMAGE_DIR],
+  source_manifests: [...new Set([...(oldManifest.source_manifests ?? []), oldManifestPath])],
+  source_directories: [...new Set([...existingSourceDirectories, inputDirectory])],
   poi_count: (oldManifest.pois ?? []).length + generatedPois.length,
   image_count: (oldManifest.image_count ?? countImages(oldManifest)) + generatedPois.reduce((sum, poi) => sum + poi.bilder.length, 0),
   pois: [...applyManualPOIMatches(oldManifest.pois ?? []), ...generatedPois],
 };
 
-await writeFile(OUTPUT, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
 
-console.log(`Manifest geschrieben: ${OUTPUT}`);
+console.log(`Manifest geschrieben: ${outputPath}`);
 console.log(`Neue POI-Gruppen: ${generatedPois.length}`);
 console.log(`Neue Bilder: ${generatedPois.reduce((sum, poi) => sum + poi.bilder.length, 0)}`);
 console.log(`Gesamtbilder: ${output.image_count}`);
@@ -213,4 +228,21 @@ function maxDateString(values) {
 
 function countImages(manifest) {
   return (manifest.pois ?? []).reduce((sum, poi) => sum + (poi.bilder ?? []).length, 0);
+}
+
+function parseArgs(argv) {
+  const parsed = {};
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    if (!arg.startsWith('--')) continue;
+    const key = arg.slice(2);
+    const next = argv[i + 1];
+    if (!next || next.startsWith('--')) {
+      parsed[key] = true;
+    } else {
+      parsed[key] = next;
+      i += 1;
+    }
+  }
+  return parsed;
 }

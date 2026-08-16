@@ -5,7 +5,7 @@ import {
   buildPOIImageStoragePaths,
   fileHash,
   optimizeImage,
-  readImageCredit,
+  resolveImageCredit,
   storageMediaUrl,
 } from './image-import-utils.mjs';
 
@@ -40,7 +40,7 @@ for (const row of rows) {
     const hash = await fileHash(row.filePath);
     const paths = buildPOIImageStoragePaths(row.poiId, `${hash.slice(0, 10)}-${row.fileName}`);
     const optimized = await optimizeImage(row.filePath);
-    const credit = await readImageCredit(row.filePath);
+    const credit = await resolveImageCredit(row.filePath, row.credit);
     const displayOut = path.join(outDir, paths.display);
     const thumbOut = path.join(outDir, paths.thumb);
 
@@ -102,6 +102,7 @@ function flattenRows(list) {
     poiName: poi.vorhandener_poi_name ?? poi.name_natuerlich ?? poi.name_dateiname,
     filePath: image.datei,
     fileName: image.dateiname ?? path.basename(image.datei),
+    credit: image.nachweis,
   })));
 }
 
