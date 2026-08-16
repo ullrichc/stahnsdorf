@@ -73,7 +73,7 @@
   --transition-fast: 150ms ease-out;
 
   /* Layout */
-  --nav-height: 72px;
+  --nav-height: calc(72px + env(safe-area-inset-bottom));
   --content-max-width: 640px;
 }
 

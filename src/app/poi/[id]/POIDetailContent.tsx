@@ -328,18 +328,6 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
           </div>
         )}
 
-        {/* Sources */}
-        {poi.quellen && poi.quellen.length > 0 && (
-          <div className={styles.sources}>
-            <span className={styles.sourcesLabel}>
-              {dict.sources}
-            </span>
-            {poi.quellen.map((q, i) => (
-              <p key={i} className={styles.sourceItem}>{renderSource(q)}</p>
-            ))}
-          </div>
-        )}
-
         <div className={styles.feedback}>
           <p>{dict.poiFeedbackText}</p>
           <a
@@ -352,6 +340,18 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
             <AppIcon name="open_in_new" style={{ fontSize: '16px' }} />
           </a>
         </div>
+
+        {/* Sources */}
+        {poi.quellen && poi.quellen.length > 0 && (
+          <div className={styles.sources}>
+            <span className={styles.sourcesLabel}>
+              {dict.sources}
+            </span>
+            {poi.quellen.map((q, i) => (
+              <p key={i} className={styles.sourceItem}>{renderSource(q)}</p>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

@@ -35,7 +35,7 @@ Die App funktioniert: Leaflet-Karte mit Markern, kontinuierlicher GPS-Ortung sam
 | Bild-Zoom | react-zoom-pan-pinch |
 | Icons | lucide-react (gebündelte SVGs, offline-fähig) |
 | Backend | Firebase (Firestore + Auth + Storage — aktiv) |
-| Tests | Playwright (77 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
+| Tests | Playwright (78 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
 | Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |

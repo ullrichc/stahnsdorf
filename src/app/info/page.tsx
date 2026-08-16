@@ -97,6 +97,19 @@ export default function InfoPage() {
       </section>
 
       <section className={styles.section}>
+        <p>{c('feedbackText')}</p>
+        <a
+          href={feedbackFormUrl()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.feedbackLink}
+        >
+          {c('feedbackLink')}
+          <AppIcon name="open_in_new" />
+        </a>
+      </section>
+
+      <section className={styles.section}>
         <h2 className={styles.heading}>
           <AppIcon name="auto_awesome" className={styles.headingIcon} />
           {c('didYouKnowTitle')}
@@ -171,18 +184,6 @@ export default function InfoPage() {
         <p>{c('accessibilityText')}</p>
       </section>
 
-      <section className={styles.section}>
-        <p>{c('feedbackText')}</p>
-        <a
-          href={feedbackFormUrl()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.feedbackLink}
-        >
-          {c('feedbackLink')}
-          <AppIcon name="open_in_new" />
-        </a>
-      </section>
     </div>
   )
 }
