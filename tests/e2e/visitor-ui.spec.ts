@@ -101,7 +101,7 @@ test('map uses SVG markers, a collapsed search, and opens a focused POI', async 
   await expect(page.getByRole('heading', { name: 'Person mit GPS' })).toBeVisible();
   expect(await page.locator('.poi-tooltip').evaluateAll((tooltips) =>
     tooltips.filter((tooltip) => getComputedStyle(tooltip).opacity !== '0').length,
-  )).toBe(1);
+  )).toBe(2);
 
   const attributionBox = await page.locator('.leaflet-control-attribution').boundingBox();
   const cardBox = await page.getByTestId('poi-card').boundingBox();
@@ -110,13 +110,16 @@ test('map uses SVG markers, a collapsed search, and opens a focused POI', async 
   expect(attributionBox!.y + attributionBox!.height).toBeLessThanOrEqual(cardBox!.y);
 });
 
-test('compact map controls and markers do not overlap on a narrow phone', async ({ page }) => {
+test('labeled map controls and markers do not overlap on a narrow phone', async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 740 });
   await page.goto('/');
 
-  const compactMarker = page.locator('.marker-container').first();
-  await expect(compactMarker).toBeVisible();
-  expect((await compactMarker.boundingBox())!.width).toBeLessThanOrEqual(24);
+  const labeledMarker = page.locator('.marker-container').first();
+  await expect(labeledMarker).toBeVisible();
+  expect((await labeledMarker.boundingBox())!.width).toBe(48);
+  expect(await page.locator('.poi-tooltip').evaluateAll((tooltips) =>
+    tooltips.filter((tooltip) => getComputedStyle(tooltip).opacity !== '0').length,
+  )).toBe(2);
 
   await page.getByRole('button', { name: 'Namen suchen...' }).click();
   await page.getByPlaceholder('Namen suchen...').fill('Person');

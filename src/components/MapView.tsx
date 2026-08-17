@@ -260,7 +260,7 @@ function POIMarkers({
     } else if (poiIds && entries.length > 0 && fittedPoiIdsRef.current !== poiIds.join('|')) {
       fittedPoiIdsRef.current = poiIds.join('|')
       const group = L.featureGroup(entries.map(({ marker }) => marker));
-      map.fitBounds(group.getBounds(), { padding: [32, 32], maxZoom: 18 });
+      map.fitBounds(group.getBounds(), { padding: [32, 32], maxZoom: 18, animate: false });
     }
 
     return () => {
@@ -384,9 +384,16 @@ export default function MapView({
   focusPoiId?: string
 }) {
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
-  const [initialView] = useState(() => resolveInitialMapView(
-    !poiIds && typeof window !== 'undefined' ? window.sessionStorage : null,
-  ))
+  const [{ center, zoom, restored }] = useState(() => {
+    const initialView = resolveInitialMapView(
+      !poiIds && typeof window !== 'undefined' ? window.sessionStorage : null,
+    )
+    return {
+      center: [initialView.lat, initialView.lng] as [number, number],
+      zoom: initialView.zoom,
+      restored: initialView.restored,
+    }
+  })
   const locale = useLocale()
   const { pois, loading, error, retry } = usePOIs()
   const dict = useDictionary(locale)
@@ -414,8 +421,8 @@ export default function MapView({
   return (
     <div className={`${styles.container} ${selectedPOI ? styles.hasSelection : ''}`}>
       <ClientMap
-        center={[initialView.lat, initialView.lng]}
-        zoom={initialView.zoom}
+        center={center}
+        zoom={zoom}
         className={styles.map}
         zoomControl={false}
       >
@@ -432,7 +439,7 @@ export default function MapView({
           selectedPoiId={selectedPOI?.id}
           focusPoiId={focusPoiId}
         />
-        <LocateButton autoStart={!poiIds && !initialView.restored} />
+        <LocateButton autoStart={!poiIds && !restored} />
       </ClientMap>
       <POICard poi={selectedPOI} onClose={() => setSelectedPOI(null)} />
     </div>

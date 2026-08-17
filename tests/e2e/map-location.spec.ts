@@ -22,7 +22,14 @@ test('map and bottom navigation fit into the mobile visual viewport without page
 
 test('location error stops tracking and leaves the locate button ready to retry', async ({ page, context }) => {
   await context.clearPermissions()
-  await page.addInitScript(() => window.localStorage.setItem('locale', 'de'))
+  await page.addInitScript(() => {
+    window.localStorage.setItem('locale', 'de')
+    window.sessionStorage.setItem('stahnsdorf.mapView', JSON.stringify({
+      lat: 52.3895066,
+      lng: 13.1809545,
+      zoom: 19,
+    }))
+  })
   await page.goto('/')
 
   const locateButton = page.getByRole('button', { name: 'Eigenen Standort anzeigen' })
