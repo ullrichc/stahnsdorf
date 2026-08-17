@@ -3,8 +3,8 @@
 Diese Prüfung muss auf einem echten Android-Gerät jeweils in Chrome und Firefox durchgeführt werden. Browser-Simulationen liefern keinen belastbaren GPS-Kaltstart.
 
 1. Website-Daten und Standortberechtigung für die App löschen.
-2. App per HTTPS öffnen, Ortungsbutton antippen und Berechtigung erlauben.
-3. Prüfen, dass spätestens nach einem GPS-Fix Positionspunkt und Genauigkeitskreis erscheinen.
+2. App per HTTPS öffnen und prüfen, dass zunächst die Friedhofskapelle auf Zoom 19 mit sichtbaren POI-Namen erscheint.
+3. Standortberechtigung erlauben. Auf dem Friedhof muss der erste GPS-Fix automatisch Positionspunkt und Genauigkeitskreis anzeigen und die Karte auf die aktuelle Position setzen.
 4. Einige Meter gehen und prüfen, dass die Position aktualisiert wird, ohne die Karte bei jedem Fix zurückzuzwingen.
 5. Berechtigung zurücksetzen, beim nächsten Versuch ablehnen und die sichtbare Fehlermeldung prüfen.
 6. Flugmodus aktivieren und einen Kaltstart der Ortung abwarten; nach spätestens 30 Sekunden muss eine Fehlermeldung erscheinen.

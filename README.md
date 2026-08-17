@@ -3,14 +3,14 @@
 Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/), einen der größten und landschaftlich eindrucksvollsten Friedhöfe Europas (ca. 206 Hektar). Das System besteht aus einer dynamischen Visitor-App und einem integrierten Redaktionswerkzeug für die Verwaltung der Daten.
 
 ## ✨ Funktionen - Visitor App
-- **Interaktive Leaflet-Karte** mit CARTO Dark Matter, lokalem OSM-Overlay für Friedhofsfläche und Wege, kompakten SVG-Markern und Deep Zoom bis Stufe 22
+- **Interaktive Leaflet-Karte** mit CARTO Dark Matter, lokalem OSM-Overlay für Friedhofsfläche und Wege, kompakten SVG-Markern und Deep Zoom bis Stufe 22; eine frische Sitzung startet an der Friedhofskapelle auf der beschrifteten Zoomstufe 19
 - **Live-Daten aus Firestore** — POIs und Sammlungen werden in Echtzeit geladen
 - **Offline-Unterstützung** — Daten werden via IndexedDB zwischengespeichert
 - **Automatische Spracherkennung** — Anzeige auf Deutsch, Englisch, Französisch, Polnisch, Russisch oder Schwedisch
 - **Globale Suche** — einklappbare Namenssuche mit direktem Kartenfokus
 - **Sammlungen** — thematisch kuratierte Gruppen mit Beschreibung, GPS-Ortsliste und Karte
 - **POI-Bilder** — Detailseiten zeigen Bilder mit Lightbox, Zoom und Verschieben
-- **Vor-Ort-Ortung** — kontinuierliche hochgenaue Position mit Genauigkeitskreis und sichtbaren Fehlermeldungen
+- **Vor-Ort-Ortung** — kontinuierliche hochgenaue Position mit Genauigkeitskreis; ein beim Start verfügbarer GPS-Fix innerhalb der Friedhofsgrenze ersetzt automatisch den Kapellenfokus
 - **Offline-taugliche Oberfläche** — Firestore-Cache, Retry-Zustände und lokal gebündelte SVG-Icons
 
 ## 🔒 Redaktionswerkzeug (`/admin`)

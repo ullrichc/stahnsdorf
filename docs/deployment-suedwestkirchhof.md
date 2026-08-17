@@ -135,7 +135,7 @@ Nach der Installation werden mindestens folgende Punkte geprüft:
 2. POI-Marker, Detailansichten und Bilder werden geladen.
 3. Ein direkter POI-Link funktioniert auch nach Neuladen der Seite.
 4. Sammlungen, Sprachwechsel und Audio funktionieren.
-5. GPS-Abfrage funktioniert auf Android und iPhone.
+5. Eine frische Karten-Sitzung startet an der Friedhofskapelle mit sichtbaren POI-Namen. Bei bereits freigegebenem GPS und einem Standort innerhalb des Friedhofs wird stattdessen die aktuelle Position fokussiert; außerhalb bleibt der Kapellenfokus bestehen.
 6. Browser-Zoom bleibt möglich.
 7. Ein freigeschalteter Editor kann sich unter `/stahnsdorf/admin` anmelden.
 8. Die Browserkonsole zeigt keine 404-, CSP-, CORS- oder Firebase-Fehler.

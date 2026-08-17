@@ -1,5 +1,10 @@
 import { describe, expect, test, vi } from 'vitest';
-import { readStoredMapView, writeStoredMapView, type StoredMapView } from './map-view-state';
+import {
+  readStoredMapView,
+  resolveInitialMapView,
+  writeStoredMapView,
+  type StoredMapView,
+} from './map-view-state';
 
 function storage(initial?: string) {
   let value = initial ?? null;
@@ -28,5 +33,23 @@ describe('map view state', () => {
     writeStoredMapView(store, view);
 
     expect(readStoredMapView(store)).toEqual(view);
+  });
+
+  test('starts a fresh map at the chapel with labels visible', () => {
+    expect(resolveInitialMapView(storage())).toEqual({
+      lat: 52.3895066,
+      lng: 13.1809545,
+      zoom: 19,
+      restored: false,
+    });
+  });
+
+  test('restores the current session map view without treating it as fresh', () => {
+    const view: StoredMapView = { lat: 52.386, lng: 13.177, zoom: 17 };
+
+    expect(resolveInitialMapView(storage(JSON.stringify(view)))).toEqual({
+      ...view,
+      restored: true,
+    });
   });
 });

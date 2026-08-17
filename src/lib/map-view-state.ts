@@ -1,10 +1,27 @@
 export const MAP_VIEW_STORAGE_KEY = 'stahnsdorf.mapView';
 
+export const DEFAULT_MAP_VIEW = {
+  lat: 52.3895066,
+  lng: 13.1809545,
+  zoom: 19,
+} as const;
+
 export type StoredMapView = {
   lat: number;
   lng: number;
   zoom: number;
 };
+
+export type InitialMapView = StoredMapView & {
+  restored: boolean;
+};
+
+export function resolveInitialMapView(storage: Pick<Storage, 'getItem'> | null): InitialMapView {
+  const stored = storage ? readStoredMapView(storage) : null;
+  return stored
+    ? { ...stored, restored: true }
+    : { ...DEFAULT_MAP_VIEW, restored: false };
+}
 
 export function readStoredMapView(storage: Pick<Storage, 'getItem'>, key = MAP_VIEW_STORAGE_KEY): StoredMapView | null {
   try {

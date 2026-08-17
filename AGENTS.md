@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit CARTO-Dark-Matter-Kacheln, lokal gebündeltem OSM-Overlay für Friedhofsfläche und Wege, zoomabhängigen SVG-Markern, Kartenfokus aus POI-Details und kontinuierlicher GPS-Ortung samt Genauigkeitskreis; Sammlungsdetails enthalten Beschreibung, GPS-Ortsliste und Karte. POI-Detailkarten bieten semantisch lokalisierte Datumsangaben sowie eine zugängliche Bild-Lightbox mit Zoom. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und atomarem Backup/Restore bis zur Firestore-Batchgrenze.
+Die App funktioniert: Leaflet-Karte mit CARTO-Dark-Matter-Kacheln, lokal gebündeltem OSM-Overlay für Friedhofsfläche und Wege, zoomabhängigen SVG-Markern, Kartenfokus aus POI-Details und kontinuierlicher GPS-Ortung samt Genauigkeitskreis. Eine frische Hauptkarten-Sitzung startet an der Friedhofskapelle mit Zoom 19; ein erster GPS-Fix innerhalb der Friedhofsgrenze übernimmt automatisch den Fokus. Sammlungsdetails enthalten Beschreibung, GPS-Ortsliste und Karte. POI-Detailkarten bieten semantisch lokalisierte Datumsangaben sowie eine zugängliche Bild-Lightbox mit Zoom. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und atomarem Backup/Restore bis zur Firestore-Batchgrenze.
 
 ## Techstack
 
@@ -175,6 +175,7 @@ Alle Felder verwenden **deutsche Namen**:
 - `src/lib/content.ts` liest den JSON-Master für Tests und statische Parameter; die App lädt zur Laufzeit die daraus abgeleitete Firestore-Kopie.
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
 - `public/map-overlay.geojson` wird nur bewusst mit `npm run map:overlay` aus OSM-Way 25029213 erzeugt. Build und Laufzeit fragen Overpass nicht ab. Wege werden an der Friedhofsfläche abgeschnitten; die Exportprüfung begrenzt die Datei auf 350 KB.
+- Die frische Hauptkarte startet an `poi_sws_hauptkapelle` mit Zoom 19. Automatische Ortung darf den Startfokus nur für einen ersten GPS-Fix innerhalb der Friedhofsgrenze ersetzen; gespeicherte Sitzungsansichten und Sammlungs-Karten bleiben davon unberührt.
 - Static Export: kein Server, kein SSR — alles client-seitig.
 - `basePath: '/stahnsdorf'` in Production (GitHub Pages).
 - Laufzeit-IDs nutzen statische Query-Routen: `/poi?id=<id>`, `/sammlung?id=<id>` und `/admin/poi/edit?id=<id>`. Dadurch funktionieren neu in Firestore angelegte Inhalte ohne neuen Build. Die alten `[id]`-Routen bleiben als Legacy-Export bestehen; `src/app/not-found.tsx` konvertiert unbekannte alte Pfade.

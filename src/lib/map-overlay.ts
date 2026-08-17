@@ -7,6 +7,58 @@ export type MapOverlayProperties = {
   service?: string
 }
 
+type LatLng = {
+  lat: number
+  lng: number
+}
+
+// OSM way 25029213, also used as the cemetery feature in map-overlay.geojson.
+const CEMETERY_BOUNDARY: ReadonlyArray<readonly [number, number]> = [
+  [13.186771, 52.391542],
+  [13.179748, 52.39142],
+  [13.172189, 52.391288],
+  [13.17223, 52.390603],
+  [13.172284, 52.390134],
+  [13.172437, 52.389556],
+  [13.172649, 52.388974],
+  [13.172917, 52.388506],
+  [13.17321, 52.387731],
+  [13.173378, 52.387064],
+  [13.173349, 52.386162],
+  [13.172755, 52.384584],
+  [13.172238, 52.383798],
+  [13.171976, 52.383099],
+  [13.17093, 52.381507],
+  [13.170356, 52.381572],
+  [13.170382, 52.38148],
+  [13.170496, 52.381363],
+  [13.170767, 52.381267],
+  [13.171988, 52.380837],
+  [13.17323, 52.380317],
+  [13.175036, 52.380707],
+  [13.181169, 52.38162],
+  [13.183537, 52.382226],
+  [13.191425, 52.384342],
+  [13.188742, 52.38735],
+  [13.190082, 52.387823],
+  [13.189106, 52.388874],
+]
+
+export function isInsideCemetery(point: LatLng): boolean {
+  let inside = false
+
+  for (let i = 0, j = CEMETERY_BOUNDARY.length - 1; i < CEMETERY_BOUNDARY.length; j = i++) {
+    const [lngI, latI] = CEMETERY_BOUNDARY[i]
+    const [lngJ, latJ] = CEMETERY_BOUNDARY[j]
+    const crossesLatitude = (latI > point.lat) !== (latJ > point.lat)
+    const boundaryLng = ((lngJ - lngI) * (point.lat - latI)) / (latJ - latI) + lngI
+
+    if (crossesLatitude && point.lng < boundaryLng) inside = !inside
+  }
+
+  return inside
+}
+
 export function mapOverlayAssetPath(): string {
   return resolveAppPath('/map-overlay.geojson')
 }
@@ -48,4 +100,3 @@ export function getOverlayFeatureStyle(
     interactive: false,
   }
 }
-

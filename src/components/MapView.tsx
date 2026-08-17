@@ -8,24 +8,13 @@ import { t } from '@/lib/i18n'
 import { createMarkerIcon } from './MapMarker'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
-import { readStoredMapView, writeStoredMapView } from '@/lib/map-view-state'
+import { resolveInitialMapView, writeStoredMapView } from '@/lib/map-view-state'
 import POICard from './POICard'
 import styles from './MapView.module.css'
 import { isValidCoordinates } from '@/lib/geo'
 import AppIcon from './AppIcon'
 import MapOverlay from './MapOverlay'
-
-const CENTER: [number, number] = [52.389506, 13.180954]
-const ZOOM = 16
-
-function getInitialMapView(restore: boolean): { center: [number, number], zoom: number } {
-  if (!restore || typeof window === 'undefined') return { center: CENTER, zoom: ZOOM }
-
-  const stored = readStoredMapView(window.sessionStorage)
-  if (!stored) return { center: CENTER, zoom: ZOOM }
-
-  return { center: [stored.lat, stored.lng], zoom: stored.zoom }
-}
+import { isInsideCemetery } from '@/lib/map-overlay'
 
 function PersistMapView({ enabled }: { enabled: boolean }) {
   const map = useMapInstance()
@@ -53,15 +42,32 @@ function PersistMapView({ enabled }: { enabled: boolean }) {
   return null
 }
 
-function LocateButton() {
+function LocateButton({ autoStart = false }: { autoStart?: boolean }) {
   const map = useMapInstance()
   const markerRef = useRef<L.CircleMarker | null>(null)
   const accuracyRef = useRef<L.Circle | null>(null)
   const firstFixRef = useRef(true)
+  const automaticFixRef = useRef(false)
+  const showErrorRef = useRef(true)
+  const autoStartedRef = useRef(false)
   const [tracking, setTracking] = useState(false)
   const [error, setError] = useState(false)
   const locale = useLocale()
   const dict = useDictionary(locale)
+
+  const startLocating = useCallback((automatic: boolean) => {
+    firstFixRef.current = true
+    automaticFixRef.current = automatic
+    showErrorRef.current = !automatic
+    setError(false)
+    setTracking(true)
+    map.locate({
+      watch: true,
+      enableHighAccuracy: true,
+      timeout: 30000,
+      maximumAge: 30000,
+    })
+  }, [map])
 
   useEffect(() => {
     const handleFound = (event: L.LocationEvent) => {
@@ -88,7 +94,17 @@ function LocateButton() {
       setError(false)
 
       if (firstFixRef.current) {
-        map.setView(event.latlng, Math.max(map.getZoom(), 17))
+        const insideCemetery = isInsideCemetery(event.latlng)
+        if (!automaticFixRef.current || insideCemetery) {
+          map.setView(event.latlng, Math.max(map.getZoom(), 19))
+        } else {
+          map.stopLocate()
+          setTracking(false)
+          markerRef.current.remove()
+          accuracyRef.current.remove()
+          markerRef.current = null
+          accuracyRef.current = null
+        }
         firstFixRef.current = false
       }
     }
@@ -96,7 +112,7 @@ function LocateButton() {
     const handleError = () => {
       map.stopLocate()
       setTracking(false)
-      setError(true)
+      setError(showErrorRef.current)
     }
     map.on('locationfound', handleFound)
     map.on('locationerror', handleError)
@@ -110,6 +126,12 @@ function LocateButton() {
     }
   }, [map])
 
+  useEffect(() => {
+    if (!autoStart || autoStartedRef.current) return
+    autoStartedRef.current = true
+    startLocating(true)
+  }, [autoStart, startLocating])
+
   const handleLocate = useCallback(() => {
     if (tracking) {
       map.stopLocate()
@@ -117,16 +139,8 @@ function LocateButton() {
       return
     }
 
-    firstFixRef.current = true
-    setError(false)
-    setTracking(true)
-    map.locate({
-      watch: true,
-      enableHighAccuracy: true,
-      timeout: 30000,
-      maximumAge: 30000,
-    })
-  }, [map, tracking])
+    startLocating(false)
+  }, [map, startLocating, tracking])
 
   return (
     <div className={styles.locateWrap}>
@@ -370,7 +384,9 @@ export default function MapView({
   focusPoiId?: string
 }) {
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
-  const [{ center, zoom }] = useState(() => getInitialMapView(!poiIds))
+  const [initialView] = useState(() => resolveInitialMapView(
+    !poiIds && typeof window !== 'undefined' ? window.sessionStorage : null,
+  ))
   const locale = useLocale()
   const { pois, loading, error, retry } = usePOIs()
   const dict = useDictionary(locale)
@@ -397,7 +413,12 @@ export default function MapView({
 
   return (
     <div className={`${styles.container} ${selectedPOI ? styles.hasSelection : ''}`}>
-      <ClientMap center={center} zoom={zoom} className={styles.map} zoomControl={false}>
+      <ClientMap
+        center={[initialView.lat, initialView.lng]}
+        zoom={initialView.zoom}
+        className={styles.map}
+        zoomControl={false}
+      >
         <MapOverlay />
         <PersistMapView enabled={!poiIds} />
         {showSearch && (
@@ -411,7 +432,7 @@ export default function MapView({
           selectedPoiId={selectedPOI?.id}
           focusPoiId={focusPoiId}
         />
-        <LocateButton />
+        <LocateButton autoStart={!poiIds && !initialView.restored} />
       </ClientMap>
       <POICard poi={selectedPOI} onClose={() => setSelectedPOI(null)} />
     </div>

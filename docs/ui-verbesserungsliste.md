@@ -12,6 +12,7 @@ Nach dem vierten Durchgang sind keine neuen offenen UI-Punkte dokumentiert.
 
 ## Umgesetzt am 17.08.2026
 
+- Eine frische Hauptkarten-Sitzung startet an der Friedhofskapelle mit Zoom 19 und sichtbaren POI-Namen. Ein automatischer erster GPS-Fix übernimmt den Fokus nur innerhalb der Friedhofsgrenze.
 - Die Besucherkarte besitzt ein eigenes, lokal gebündeltes OSM-Overlay aus Friedhofsfläche und Wegen. Es liegt nicht interaktiv zwischen Kacheln und Markern, wird zoomabhängig dargestellt und funktioniert auf Start- und Sammlungskarten.
 - Der Kopf der POI-Detailseite ist auf 56 px verdichtet; der Zurück-Button hat eine 44-px-Antippfläche.
 - Lagehinweis und Kartenlink stehen kompakt zusammen. Feedback und sichtbare Quellen werden als zurückhaltende Metabereiche dargestellt.
