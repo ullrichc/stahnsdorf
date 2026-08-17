@@ -30,8 +30,13 @@ export function normalizeInternalRedirect(value: string | null): string | null {
   return `${url.pathname}${url.search}${url.hash}`
 }
 
-export function poiDetailHref(id: string): string {
-  return `/poi?id=${encodeURIComponent(id)}`
+export function poiDetailHref(id: string, returnTo?: string): string {
+  const returnParam = returnTo ? `&from=${encodeURIComponent(returnTo)}` : ''
+  return `/poi?id=${encodeURIComponent(id)}${returnParam}`
+}
+
+export function mapPoiHref(id: string): string {
+  return `/?poi=${encodeURIComponent(id)}`
 }
 
 export function adminPoiEditHref(id: string): string {

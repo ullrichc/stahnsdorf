@@ -1,9 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { Collection, POI } from '@/lib/types'
+import { Collection } from '@/lib/types'
 import { usePOIs } from '@/lib/useFirestore'
-import { useGeolocation } from '@/lib/useGeolocation'
-import { getDistanceMeters, formatDistance } from '@/lib/geo'
 import { t } from '@/lib/i18n'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
@@ -16,12 +14,10 @@ type Props = {
 }
 
 export default function CollectionList({ collections }: Props) {
-  const { location, error: locationError } = useGeolocation()
   const locale = useLocale()
-  const { pois } = usePOIs()
+  const { pois, loading: poisLoading, error: poisError, retry: retryPois } = usePOIs()
   const dict = useDictionary(locale)
-
-  const getPOI = (id: string) => pois.find(p => p.id === id)
+  const mappablePoiIds = new Set(pois.map((poi) => poi.id))
 
   return (
     <div className={styles.container}>
@@ -38,22 +34,14 @@ export default function CollectionList({ collections }: Props) {
       </header>
 
       <div className={styles.list}>
-        {locationError !== null && (
-          <p role="status">
-            {locationError === 0 ? dict.locationUnavailable : dict.locationError}
-          </p>
+        {poisError && (
+          <div className={styles.dataError} role="alert">
+            <p>{dict.loadErrorBody}</p>
+            <button type="button" onClick={retryPois}>{dict.retry}</button>
+          </div>
         )}
         {collections.map((collection) => {
-          let minDistance = Infinity
-          if (location) {
-            collection.pois.forEach(id => {
-              const p = getPOI(id)
-              if (p && p.koordinaten) {
-                const d = getDistanceMeters(location.lat, location.lng, p.koordinaten.lat, p.koordinaten.lng)
-                if (d < minDistance) minDistance = d
-              }
-            })
-          }
+          const visiblePoiCount = collection.pois.filter((id) => mappablePoiIds.has(id)).length
 
           return (
             <Link key={collection.id} href={collectionDetailHref(collection.id)} className={styles.card}>
@@ -63,14 +51,8 @@ export default function CollectionList({ collections }: Props) {
                 <div className={styles.cardFooter}>
                   <span className={styles.countPill}>
                     <AppIcon name="location_on" style={{ fontSize: '14px' }} />
-                    {collection.pois.length} {dict.sitesCount}
+                    {poisLoading || poisError ? '–' : visiblePoiCount} {dict.sitesCount}
                   </span>
-                  {location && minDistance !== Infinity && (
-                    <span className={styles.distanceTag}>
-                      <AppIcon name="directions_walk" style={{ fontSize: '14px' }} />
-                      {dict.nearest} {formatDistance(minDistance, dict.currentLocation)} {dict.away}
-                    </span>
-                  )}
                 </div>
               </div>
               <div className={styles.arrowWrap}>

@@ -17,6 +17,8 @@
     "emulators:seed": "npx tsx scripts/seed-emulator.ts",
     "coordinates:metadata": "node scripts/coordinate-metadata.mjs",
     "coordinates:manual-osmand": "node scripts/manual-osmand-coordinates.mjs",
+    "editorial:cleanup": "node scripts/cleanup-editorial-data.mjs",
+    "map:overlay": "node scripts/build-map-overlay.mjs",
     "images:manifest": "node scripts/build-image-import-manifest.mjs",
     "images:prepare": "node scripts/prepare-firebase-images.mjs",
     "images:apply": "node scripts/apply-image-manifest-to-backup.mjs",

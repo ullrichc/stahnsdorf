@@ -61,8 +61,6 @@ const NEW_MANUAL_POI_DETAILS = {
   },
 };
 
-const MANUAL_SOURCE = 'Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt';
-
 export function parseManualOSMAndCoordinates(text) {
   const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
   const entries = [];
@@ -178,10 +176,9 @@ function updateExistingPOI(poi, entry, { datum, timestamp }) {
   poi.koordinaten = entry.koordinaten;
   poi.koordinaten_quelle = coordinateSource(entry, datum);
   poi.status = 'bestätigt';
-  poi.quellen = appendUnique(poi.quellen ?? [], sourceLine(entry));
   poi.notiz = appendNote(
     poi.notiz ?? '',
-    'Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.'
+    `Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.${entry.url ? ` Link: ${entry.url}` : ''}`
   );
   if ('geaendert_am' in poi) poi.geaendert_am = timestamp;
   if ('geaendert_von' in poi) poi.geaendert_von = 'system';
@@ -204,9 +201,9 @@ function createNewManualPOI(entry, { datum, timestamp }) {
     wikipedia_url: null,
     bilder: [],
     audio: {},
-    quellen: [sourceLine(entry)],
+    quellen: [],
     status: 'bestätigt',
-    notiz: 'Aus manueller OsmAnd-Koordinatendatei übernommen.',
+    notiz: `Aus manueller OsmAnd-Koordinatendatei übernommen.${entry.url ? ` Link: ${entry.url}` : ''}`,
     publish_status: 'veröffentlicht',
     erstellt_von: 'system',
     geaendert_von: 'system',
@@ -224,10 +221,6 @@ function coordinateSource(entry, datum) {
   };
 }
 
-function sourceLine(entry) {
-  return [MANUAL_SOURCE, entry.name, entry.url].filter(Boolean).join(', ');
-}
-
 function buildManualDescription(name) {
   return {
     de: `${name.de} ist eine vor Ort manuell per OsmAnd verzeichnete Grabstätte auf dem Südwestkirchhof Stahnsdorf.`,
@@ -237,11 +230,6 @@ function buildManualDescription(name) {
     ru: `${name.ru} — могила на Юго-Западном кладбище в Штансдорфе, вручную зафиксированная на месте с помощью OsmAnd.`,
     sv: `${name.sv} är en grav på Südwestkirchhof i Stahnsdorf, manuellt registrerad på plats med OsmAnd.`,
   };
-}
-
-function appendUnique(list = [], value) {
-  if (!value) return list;
-  return list.includes(value) ? list : [...list, value];
 }
 
 function appendNote(note = '', addition) {

@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import L from 'leaflet'
 import ClientMap, { useMapInstance } from './ClientMap'
 import { usePOIs } from '@/lib/useFirestore'
@@ -13,6 +13,7 @@ import POICard from './POICard'
 import styles from './MapView.module.css'
 import { isValidCoordinates } from '@/lib/geo'
 import AppIcon from './AppIcon'
+import MapOverlay from './MapOverlay'
 
 const CENTER: [number, number] = [52.389506, 13.180954]
 const ZOOM = 16
@@ -135,6 +136,7 @@ function LocateButton() {
         onClick={handleLocate}
         aria-label={dict.locate}
         aria-pressed={tracking}
+        data-testid="locate-button"
       >
         <AppIcon name="my_location" />
       </button>
@@ -142,9 +144,28 @@ function LocateButton() {
   )
 }
 
-function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect: (poi: POI) => void, poiIds?: string[], locale: string }) {
+function POIMarkers({
+  pois,
+  onSelect,
+  poiIds,
+  locale,
+  selectedPoiId,
+  focusPoiId,
+}: {
+  pois: POI[]
+  onSelect: (poi: POI) => void
+  poiIds?: string[]
+  locale: string
+  selectedPoiId?: string
+  focusPoiId?: string
+}) {
   const map = useMapInstance()
-  const filtered = poiIds ? pois.filter(p => poiIds.includes(p.id)) : pois
+  const focusedOnceRef = useRef<string | null>(null)
+  const fittedPoiIdsRef = useRef<string | null>(null)
+  const filtered = useMemo(
+    () => poiIds ? pois.filter((poi) => poiIds.includes(poi.id)) : pois,
+    [poiIds, pois],
+  )
 
   useEffect(() => {
     // Guard against Leaflet HMR race: if the map pane is gone, skip
@@ -153,10 +174,21 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
     const validPOIs = filtered.filter(
       (poi): poi is POI & { koordinaten: Koordinaten } => isValidCoordinates(poi.koordinaten),
     )
-    const markers = validPOIs.map((poi) => {
+    const entries = validPOIs.map((poi) => {
       const coords: [number, number] = [poi.koordinaten.lat, poi.koordinaten.lng]
-      const marker = L.marker(coords, { icon: createMarkerIcon(poi) })
-      marker.on('click', () => onSelect(poi))
+      const selected = selectedPoiId === poi.id
+      const marker = L.marker(coords, {
+        icon: createMarkerIcon(poi, { compact: map.getZoom() <= 16 && !selected, selected }),
+        zIndexOffset: selected ? 1000 : 0,
+      })
+      const select = () => {
+        map.panInside(coords, {
+          paddingTopLeft: [24, 80],
+          paddingBottomRight: [24, 300],
+        })
+        onSelect(poi)
+      }
+      marker.on('click', select)
       marker.bindTooltip(t(poi.name, locale), {
         permanent: true,
         interactive: true,
@@ -164,12 +196,13 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
         offset: [18, 0],
         className: 'poi-tooltip',
       })
-      marker.getTooltip()?.on('click', () => onSelect(poi))
+      marker.getTooltip()?.on('click', select)
       marker.addTo(map)
-      return marker
+      return { marker, poi }
     })
 
-    let isZoomedIn = map.getZoom() >= 17
+    let showFullMarkers = map.getZoom() >= 17
+    let showAllTooltips = map.getZoom() >= 19
 
     const setTooltipOpacity = (m: L.Marker, visible: boolean) => {
       const el = m.getTooltip()?.getElement()
@@ -180,39 +213,79 @@ function POIMarkers({ pois, onSelect, poiIds, locale }: { pois: POI[], onSelect:
     }
 
     const updateTooltipVisibility = () => {
-      isZoomedIn = map.getZoom() >= 17
-      markers.forEach((m) => setTooltipOpacity(m, isZoomedIn))
+      showFullMarkers = map.getZoom() >= 17
+      showAllTooltips = map.getZoom() >= 19
+      entries.forEach(({ marker, poi }) => {
+        const selected = selectedPoiId === poi.id
+        marker.setIcon(createMarkerIcon(poi, {
+          compact: !showFullMarkers && !selected,
+          selected,
+        }))
+        marker.setZIndexOffset(selected ? 1000 : 0)
+        setTooltipOpacity(marker, showAllTooltips || selected)
+      })
     }
 
     // Show tooltip on hover/touch when zoomed out
-    markers.forEach((m) => {
-      m.on('mouseover', () => { if (!isZoomedIn) setTooltipOpacity(m, true) })
-      m.on('mouseout',  () => { if (!isZoomedIn) setTooltipOpacity(m, false) })
+    entries.forEach(({ marker, poi }) => {
+      marker.on('mouseover', () => { if (!showAllTooltips) setTooltipOpacity(marker, true) })
+      marker.on('mouseout',  () => {
+        if (!showAllTooltips && selectedPoiId !== poi.id) setTooltipOpacity(marker, false)
+      })
     })
     
     updateTooltipVisibility() // Initial state
     map.on('zoomend', updateTooltipVisibility)
 
-    if (poiIds && filtered.length > 0) {
-      const group = L.featureGroup(markers);
-      map.fitBounds(group.getBounds(), { padding: [50, 50], maxZoom: 17 });
+    const focused = entries.find(({ poi }) => poi.id === focusPoiId)
+    if (focused && focusedOnceRef.current !== focusPoiId) {
+      focusedOnceRef.current = focusPoiId ?? null
+      map.setView(focused.marker.getLatLng(), Math.max(map.getZoom(), 18), { animate: false })
+      onSelect(focused.poi)
+      updateTooltipVisibility()
+    } else if (poiIds && entries.length > 0 && fittedPoiIdsRef.current !== poiIds.join('|')) {
+      fittedPoiIdsRef.current = poiIds.join('|')
+      const group = L.featureGroup(entries.map(({ marker }) => marker));
+      map.fitBounds(group.getBounds(), { padding: [32, 32], maxZoom: 18 });
     }
 
     return () => {
       map.off('zoomend', updateTooltipVisibility)
-      markers.forEach((m) => m.remove())
+      entries.forEach(({ marker }) => marker.remove())
     }
-  }, [map, filtered, onSelect, locale])
+  }, [map, filtered, onSelect, locale, poiIds, selectedPoiId, focusPoiId])
 
   return null
 }
 
-function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) => void }) {
+function SearchOverlay({
+  pois,
+  onSelect,
+  activePoiId,
+}: {
+  pois: POI[]
+  onSelect: (poi: POI) => void
+  activePoiId?: string
+}) {
   const map = useMapInstance()
   const locale = useLocale()
   const dict = useDictionary(locale)
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<POI[]>([])
+  const [open, setOpen] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (open) inputRef.current?.focus()
+  }, [open])
+
+  useEffect(() => {
+    if (activePoiId) {
+      setOpen(false)
+      setQuery('')
+      setResults([])
+    }
+  }, [activePoiId])
 
   useEffect(() => {
     if (query.trim().length < 2) {
@@ -237,33 +310,65 @@ function SearchOverlay({ pois, onSelect }: { pois: POI[], onSelect: (poi: POI) =
     onSelect(poi)
     setQuery('')
     setResults([])
+    setOpen(false)
   }
 
   return (
     <div className={styles.searchContainer}>
-      <input 
-        type="search" 
-        className={styles.searchInput}
-        placeholder={dict.searchPlaceholder} 
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      {results.length > 0 && (
-        <ul className={styles.searchResults}>
-          {results.map(poi => (
-            <li key={poi.id}>
-              <button className={styles.searchResultItem} onClick={() => handleResultClick(poi)}>
-                {t(poi.name, locale)}
-              </button>
-            </li>
-          ))}
-        </ul>
+      <button
+        type="button"
+        className={styles.searchToggle}
+        aria-label={dict.searchPlaceholder}
+        aria-expanded={open}
+        onClick={() => {
+          setOpen((value) => !value)
+          if (open) {
+            setQuery('')
+            setResults([])
+          }
+        }}
+      >
+        <AppIcon name={open ? 'close' : 'search'} />
+      </button>
+      {open && (
+        <div className={styles.searchPanel} data-testid="search-panel">
+          <input
+            ref={inputRef}
+            type="search"
+            className={styles.searchInput}
+            placeholder={dict.searchPlaceholder}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === 'Escape') setOpen(false)
+            }}
+          />
+          {results.length > 0 && (
+            <ul className={styles.searchResults}>
+              {results.map(poi => (
+                <li key={poi.id}>
+                  <button className={styles.searchResultItem} onClick={() => handleResultClick(poi)}>
+                    {t(poi.name, locale)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       )}
     </div>
   )
 }
 
-export default function MapView({ poiIds, showSearch = false }: { poiIds?: string[], showSearch?: boolean }) {
+export default function MapView({
+  poiIds,
+  showSearch = false,
+  focusPoiId,
+}: {
+  poiIds?: string[]
+  showSearch?: boolean
+  focusPoiId?: string
+}) {
   const [selectedPOI, setSelectedPOI] = useState<POI | null>(null)
   const [{ center, zoom }] = useState(() => getInitialMapView(!poiIds))
   const locale = useLocale()
@@ -291,11 +396,21 @@ export default function MapView({ poiIds, showSearch = false }: { poiIds?: strin
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${selectedPOI ? styles.hasSelection : ''}`}>
       <ClientMap center={center} zoom={zoom} className={styles.map} zoomControl={false}>
+        <MapOverlay />
         <PersistMapView enabled={!poiIds} />
-        {showSearch && <SearchOverlay pois={pois} onSelect={handleSelect} />}
-        <POIMarkers pois={pois} onSelect={handleSelect} poiIds={poiIds} locale={locale} />
+        {showSearch && (
+          <SearchOverlay pois={pois} onSelect={handleSelect} activePoiId={selectedPOI?.id} />
+        )}
+        <POIMarkers
+          pois={pois}
+          onSelect={handleSelect}
+          poiIds={poiIds}
+          locale={locale}
+          selectedPoiId={selectedPOI?.id}
+          focusPoiId={focusPoiId}
+        />
         <LocateButton />
       </ClientMap>
       <POICard poi={selectedPOI} onClose={() => setSelectedPOI(null)} />

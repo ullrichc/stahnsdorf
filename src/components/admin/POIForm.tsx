@@ -23,6 +23,7 @@ import type {
 import { adminPoiEditHref } from '@/lib/redirect';
 import { parseCoordinatePair } from '@/lib/geo';
 import { normalizeImageForFirestore, assertAtomicWriteLimit } from '@/lib/admin-data';
+import { formatHistoricalDate, parseGermanDate } from '@/lib/poi-display';
 
 const TYP_OPTIONS: { value: PoiTyp; label: string }[] = [
   { value: 'grab', label: 'Grab' },
@@ -84,6 +85,9 @@ export default function POIForm({ poiId }: POIFormProps) {
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [dateFromInput, setDateFromInput] = useState('');
+  const [dateToInput, setDateToInput] = useState('');
+  const [coordinateSourceDateInput, setCoordinateSourceDateInput] = useState('');
 
   // Load existing POI
   useEffect(() => {
@@ -97,6 +101,9 @@ export default function POIForm({ poiId }: POIFormProps) {
           const data = snap.data() as FirestorePOI;
           setFormData(data);
           setOriginalData(data);
+          setDateFromInput(formatHistoricalDate(data.datum_von));
+          setDateToInput(formatHistoricalDate(data.datum_bis));
+          setCoordinateSourceDateInput(formatHistoricalDate(data.koordinaten_quelle?.datum));
           if (data.koordinaten) {
             setLatInput(data.koordinaten.lat.toString());
             setLngInput(data.koordinaten.lng.toString());
@@ -162,6 +169,9 @@ export default function POIForm({ poiId }: POIFormProps) {
       const matchesOriginal = !!originalCoordinates
         && originalCoordinates.lat === nextCoordinates.lat
         && originalCoordinates.lng === nextCoordinates.lng;
+      setCoordinateSourceDateInput(matchesOriginal
+        ? formatHistoricalDate(originalData?.koordinaten_quelle?.datum)
+        : '');
       setFormData((prev) => ({
         ...prev,
         koordinaten: nextCoordinates,
@@ -211,8 +221,16 @@ export default function POIForm({ poiId }: POIFormProps) {
     }
 
     let parsedCoordinates: Koordinaten | null;
+    let parsedDateFrom: string | null;
+    let parsedDateTo: string | null;
+    let parsedCoordinateSourceDate: string | null;
     try {
       parsedCoordinates = parseCoordinatePair(latInput, lngInput);
+      parsedDateFrom = parseGermanDate(dateFromInput);
+      parsedDateTo = parseGermanDate(dateToInput);
+      parsedCoordinateSourceDate = parsedCoordinates
+        ? parseGermanDate(coordinateSourceDateInput)
+        : null;
     } catch (coordinateError: any) {
       setError(coordinateError.message);
       return;
@@ -226,6 +244,8 @@ export default function POIForm({ poiId }: POIFormProps) {
       const docData: any = {
         ...formData,
         koordinaten: parsedCoordinates,
+        datum_von: parsedDateFrom,
+        datum_bis: parsedDateTo,
         bilder: (formData.bilder ?? []).map(normalizeImageForFirestore),
         geaendert_von: user?.email ?? 'unbekannt',
         geaendert_am: now,
@@ -247,7 +267,11 @@ export default function POIForm({ poiId }: POIFormProps) {
       if (!docData.notiz) docData.notiz = '';
       if (!docData.koordinaten) docData.koordinaten_quelle = null;
       if (docData.koordinaten_quelle) {
-        if (!docData.koordinaten_quelle.datum) delete docData.koordinaten_quelle.datum;
+        if (parsedCoordinateSourceDate) {
+          docData.koordinaten_quelle.datum = parsedCoordinateSourceDate;
+        } else {
+          delete docData.koordinaten_quelle.datum;
+        }
         if (!docData.koordinaten_quelle.genauigkeit) delete docData.koordinaten_quelle.genauigkeit;
       }
       if (!docData.lagehinweis) delete docData.lagehinweis;
@@ -419,9 +443,9 @@ export default function POIForm({ poiId }: POIFormProps) {
                 <label>Datum von</label>
                 <input
                   type="text"
-                  value={formData.datum_von ?? ''}
-                  onChange={(e) => setField('datum_von', e.target.value || null)}
-                  placeholder="YYYY-MM-DD"
+                  value={dateFromInput}
+                  onChange={(e) => setDateFromInput(e.target.value)}
+                  placeholder="TT.MM.JJJJ"
                 />
                 <div className="hint">Geburtsdatum oder Baudatum</div>
               </div>
@@ -429,9 +453,9 @@ export default function POIForm({ poiId }: POIFormProps) {
                 <label>Datum bis</label>
                 <input
                   type="text"
-                  value={formData.datum_bis ?? ''}
-                  onChange={(e) => setField('datum_bis', e.target.value || null)}
-                  placeholder="YYYY-MM-DD"
+                  value={dateToInput}
+                  onChange={(e) => setDateToInput(e.target.value)}
+                  placeholder="TT.MM.JJJJ"
                 />
                 <div className="hint">Sterbedatum oder Abriss</div>
               </div>
@@ -535,9 +559,9 @@ export default function POIForm({ poiId }: POIFormProps) {
                     <label>Erfassungsdatum</label>
                     <input
                       type="text"
-                      value={formData.koordinaten_quelle?.datum ?? ''}
-                      onChange={(e) => setCoordinateSourceField('datum', e.target.value)}
-                      placeholder="YYYY-MM-DD"
+                      value={coordinateSourceDateInput}
+                      onChange={(e) => setCoordinateSourceDateInput(e.target.value)}
+                      placeholder="TT.MM.JJJJ"
                     />
                   </div>
                   <div className="admin-field">
@@ -560,6 +584,7 @@ export default function POIForm({ poiId }: POIFormProps) {
                     setFormData((prev) => ({ ...prev, koordinaten: null, koordinaten_quelle: null }));
                     setLatInput('');
                     setLngInput('');
+                    setCoordinateSourceDateInput('');
                   }}
                 >
                   Koordinaten entfernen

@@ -124,6 +124,19 @@
   font-weight: 700;
 }
 
+.legalLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.legalLink :global(.app-icon) {
+  width: 15px;
+  height: 15px;
+}
+
 .routeBtn {
   display: block;
   width: 100%;

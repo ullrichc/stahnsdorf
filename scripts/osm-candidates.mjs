@@ -305,10 +305,12 @@ export function matchCandidate(candidate, existingPois) {
 function hasOSMSource(existing, candidate) {
   const haystack = [
     ...(existing.quellen ?? []),
+    existing.koordinaten_quelle?.beleg ?? '',
     existing.notiz ?? '',
   ].join('\n');
   const needles = [
     candidate.osm?.url,
+    candidate.osm?.type && candidate.osm?.id ? `OpenStreetMap: ${candidate.osm.type} ${candidate.osm.id}` : null,
     candidate.osm?.type && candidate.osm?.id ? `OSM ${candidate.osm.type} ${candidate.osm.id}` : null,
     candidate.osm?.type && candidate.osm?.id ? `${candidate.osm.type}/${candidate.osm.id}` : null,
   ].filter(Boolean);
@@ -332,15 +334,21 @@ function matchResult(kind, reason, poi, candidate) {
   };
 }
 
-function sourceLine(candidate, fetchedAt) {
+function sourceLine(candidate) {
   const bits = [
     `OpenStreetMap: ${candidate.osm.type} ${candidate.osm.id}`,
     candidate.osm.url,
   ];
   if (candidate.osm.version) bits.push(`Version ${candidate.osm.version}`);
-  if (candidate.osm.timestamp) bits.push(`Stand ${candidate.osm.timestamp}`);
-  bits.push(`abgerufen ${fetchedAt}`);
+  if (candidate.osm.timestamp) bits.push(`Stand ${formatOSMTimestamp(candidate.osm.timestamp)}`);
   return bits.join(', ');
+}
+
+function formatOSMTimestamp(value) {
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$/);
+  if (!match) return value;
+  const [, year, month, day, hour, minute, second] = match;
+  return `${day}.${month}.${year}, ${hour}:${minute}:${second} UTC`;
 }
 
 export function createProposedPOI(candidate, fetchedAt) {
@@ -362,9 +370,9 @@ export function createProposedPOI(candidate, fetchedAt) {
     wikipedia_url: candidate.osm.wikipediaUrl,
     bilder: [],
     audio: {},
-    quellen: [sourceLine(candidate, fetchedAt)],
+    quellen: [],
     status: 'bestätigt',
-    notiz: `Aus OSM-Kandidatenexport übernommen. OSM-Tags: ${JSON.stringify(candidate.osm.tags)}`,
+    notiz: `Aus OSM-Kandidatenexport übernommen. OSM-Tags: ${JSON.stringify(candidate.osm.tags)}\n\nQuellenarchiv:\n- ${sourceLine(candidate)}`,
   };
 
   Object.keys(poi).forEach((key) => {
@@ -423,7 +431,7 @@ export function buildAuditResult({ elements, existingPois, fetchedAt, endpoint, 
         match_reason: candidate.match.reason,
         distance_meters: distance === null ? null : Number(distance.toFixed(1)),
         suggested_coordinates: hasCoordinateSuggestion ? candidate.koordinaten : null,
-        source: sourceLine(candidate, fetchedAt),
+        source: sourceLine(candidate),
       };
     });
 

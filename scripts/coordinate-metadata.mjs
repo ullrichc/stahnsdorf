@@ -20,11 +20,10 @@ export function inferCoordinateSource(poi) {
   }
 
   const wsrSource = quellen.find((source) => /wo-sie-ruhen\.de/i.test(source));
-  if (wsrSource && /API-Extraktion/i.test(wsrSource) && /Neu aus wo-sie-ruhen\.de API/i.test(text)) {
+  if (wsrSource && /Quelle:\s*wo-sie-ruhen\.de/i.test(text)) {
     return {
       typ: 'wo-sie-ruhen',
-      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
-      datum: extractDate(wsrSource) ?? '2026-04-04',
+      beleg: 'wo-sie-ruhen.de',
       genauigkeit: 'hoch',
     };
   }
@@ -61,10 +60,10 @@ export function extractLagehinweis(note = '') {
     };
   }
 
-  const apiMatch = note.match(/Neu aus wo-sie-ruhen\.de API\.\s*Lage:\s*(.+?)(?:\.\s*Ehrengrab|\.$|$)/i);
-  if (apiMatch?.[1]) {
+  const importedMatch = note.match(/Quelle:\s*wo-sie-ruhen\.de\.\s*Lage:\s*(.+?)(?:\.\s*Ehrengrab|\.$|$)/i);
+  if (importedMatch?.[1]) {
     return {
-      lagehinweis: cleanLage(apiMatch[1]),
+      lagehinweis: cleanLage(importedMatch[1]),
       lagehinweis_quelle: 'wo-sie-ruhen.de',
     };
   }

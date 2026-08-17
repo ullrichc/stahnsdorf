@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import DynamicMapView from '@/components/DynamicMapView'
 import { normalizeInternalRedirect } from '@/lib/redirect'
 
-function RedirectHandler() {
+function MapPageContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -16,16 +16,15 @@ function RedirectHandler() {
     }
   }, [router, searchParams])
 
-  return null
+  return <DynamicMapView showSearch={true} focusPoiId={searchParams.get('poi') ?? undefined} />
 }
 
 export default function MapPage() {
   return (
     <>
       <Suspense fallback={null}>
-        <RedirectHandler />
+        <MapPageContent />
       </Suspense>
-      <DynamicMapView showSearch={true} />
     </>
   )
 }

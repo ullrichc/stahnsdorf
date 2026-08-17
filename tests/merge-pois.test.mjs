@@ -74,8 +74,7 @@ describe('createNewPoi', () => {
     expect(poi.koordinaten).toEqual({ lat: 52.387747, lng: 13.177103 });
     expect(poi.koordinaten_quelle).toEqual({
       typ: 'wo-sie-ruhen',
-      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
-      datum: '2026-04-04',
+      beleg: 'wo-sie-ruhen.de',
       genauigkeit: 'hoch',
     });
     expect(poi.lagehinweis).toBe('Block Trinitatis, Feld 10, Wahlstelle 64');
@@ -86,7 +85,8 @@ describe('createNewPoi', () => {
     expect(poi.beschreibung.de).toContain('Felderhoff');
     expect(poi.bilder).toEqual([]);
     expect(poi.audio).toEqual({});
-    expect(poi.quellen).toContain('wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04');
+    expect(poi.quellen).toContain('wo-sie-ruhen.de');
+    expect(poi.notiz).toContain('Quelle: wo-sie-ruhen.de. Lage: Block Trinitatis, Feld 10, Wahlstelle 64.');
     // Schema compliance: only valid fields
     const VALID_FIELDS = new Set(['id', 'typ', 'name', 'koordinaten', 'kurztext', 'beschreibung',
       'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio', 'quellen', 'status', 'notiz',

@@ -68,11 +68,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Adolf Bastian, Wikipedia, https://de.wikipedia.org/wiki/Adolf_Bastian, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Adolf Bastian, Wikipedia](https://de.wikipedia.org/wiki/Adolf_Bastian)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlgrabstelle 153/154",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlgrabstelle 153/154\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Adolf Bastian, Wikipedia, https://de.wikipedia.org/wiki/Adolf_Bastian; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -152,13 +152,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 1395963543, https://www.openstreetmap.org/node/1395963543, Version 6, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25",
-        "Landesbildungsserver Baden-Württemberg: Adolf Rohrbach, https://www.schule-bw.de/faecher-und-schularten/gesellschaftswissenschaftliche-und-philosophische-faecher/geschichte/unterricht/7-8/3-2.5/friedrichshafen/zeppelins-flieger2.html/biografien/rohrbach_html, abgerufen 2026-06-06"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Landesbildungsserver Baden-Württemberg: Adolf Rohrbach](https://www.schule-bw.de/faecher-und-schularten/gesellschaftswissenschaftliche-und-philosophische-faecher/geschichte/unterricht/7-8/3-2.5/friedrichshafen/zeppelins-flieger2.html/biografien/rohrbach_html)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Lage laut wo-sie-ruhen.de: Block Lietzensee, Gartenblock IV, Erbbegräbnis 19 OSM-Koordinate übernommen (node 1395963543). Der exakte Todestag wurde nachrecherchiert und mit dem Landesbildungsserver Baden-Württemberg auf 1939-07-06 ergänzt.",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Lage laut wo-sie-ruhen.de: Block Lietzensee, Gartenblock IV, Erbbegräbnis 19 OSM-Koordinate übernommen (node 1395963543). Der exakte Todestag wurde nachrecherchiert und mit dem Landesbildungsserver Baden-Württemberg auf 1939-07-06 ergänzt.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 1395963543, https://www.openstreetmap.org/node/1395963543, Version 6, Stand 12.10.2025, 19:14:46 UTC; Abrufdatum: 25.05.2026\n- Landesbildungsserver Baden-Württemberg: Adolf Rohrbach, https://www.schule-bw.de/faecher-und-schularten/gesellschaftswissenschaftliche-und-philosophische-faecher/geschichte/unterricht/7-8/3-2.5/friedrichshafen/zeppelins-flieger2.html/biografien/rohrbach_html; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -225,11 +223,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "prüfen",
-      "notiz": "Block Schöneberg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Block Schöneberg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -307,12 +304,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alexander von Kluck, https://osmand.net/map?pin=52.38810,13.18665#15/52.38810/13.18665"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock VI, Erbbegräbnis 12 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alexander von Kluck, https://osmand.net/map?pin=52.38810,13.18665#15/52.38810/13.18665",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -393,12 +388,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alfred Schneider, https://osmand.net/map?pin=52.38666,13.18130#15/52.38666/13.18130"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Alfred Schneider, https://osmand.net/map?pin=52.38666,13.18130#15/52.38666/13.18130",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -461,13 +454,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: way 247886093, https://www.openstreetmap.org/way/247886093, Version 6, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Nördlicher Bereich des Friedhofs. Koordinaten vor Ort ermitteln. OSM-Koordinate übernommen (way 247886093).",
+      "notiz": "Nördlicher Bereich des Friedhofs. Koordinaten vor Ort ermitteln. OSM-Koordinate übernommen (way 247886093).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: way 247886093, https://www.openstreetmap.org/way/247886093, Version 6, Stand 12.10.2025, 19:56:30 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -546,12 +537,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Anita Kupsch, Wikipedia, https://de.wikipedia.org/wiki/Anita_Kupsch, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Anita Kupsch (Krahn), https://osmand.net/map?pin=52.39102,13.18236#15/52.39102/13.18236"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Anita Kupsch, Wikipedia](https://de.wikipedia.org/wiki/Anita_Kupsch)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Charlottenburg. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Anita Kupsch, Wikipedia, https://de.wikipedia.org/wiki/Anita_Kupsch; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Anita Kupsch (Krahn), https://osmand.net/map?pin=52.39102,13.18236#15/52.39102/13.18236",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -627,12 +617,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+        "[Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge](https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf)",
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)"
       ],
       "status": "prüfen",
-      "notiz": "Im offiziellen Grabstättenplan als Gedenkort markiert; genaue GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Im offiziellen Grabstättenplan als Gedenkort markiert; genaue GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf; Abrufdatum: 25.03.2026\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -696,12 +685,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "August Stramm, Wikipedia, https://de.wikipedia.org/wiki/August_Stramm, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, August Stramm, https://osmand.net/map?pin=52.38848,13.18665#17/52.38848/13.18665"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[August Stramm, Wikipedia](https://de.wikipedia.org/wiki/August_Stramm)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Heilig Geist. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- August Stramm, Wikipedia, https://de.wikipedia.org/wiki/August_Stramm; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, August Stramm, https://osmand.net/map?pin=52.38848,13.18665#17/52.38848/13.18665",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -820,12 +808,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Berlin South-Western Cemetery, Commonwealth War Graves Commission, https://www.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/90900/berlin-south-western-cemetery/, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Berlin South-Western Cemetery, Commonwealth War Graves Commission](https://www.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/90900/berlin-south-western-cemetery/)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons](https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Etwa 1,6 km vom Haupteingang entfernt; Beschilderung „Zur Kapelle“ und CWGC-Wegweisung folgen. Ältere Sekundärquellen nennen 1.172 oder 1.176 Bestattete; als aktuellste belastbare Angabe wurde hier die CWGC-Zahl von 1.177 identifizierten Kriegstoten übernommen.",
+      "notiz": "Etwa 1,6 km vom Haupteingang entfernt; Beschilderung „Zur Kapelle“ und CWGC-Wegweisung folgen. Ältere Sekundärquellen nennen 1.172 oder 1.176 Bestattete; als aktuellste belastbare Angabe wurde hier die CWGC-Zahl von 1.177 identifizierten Kriegstoten übernommen.\n\nQuellenarchiv:\n- Berlin South-Western Cemetery, Commonwealth War Graves Commission, https://www.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/90900/berlin-south-western-cemetery/; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -903,12 +891,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525181, https://www.openstreetmap.org/node/3524525181, Version 5, Stand 2025-10-12T18:45:07Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock I, Grabstelle 47 OSM-Koordinate übernommen (node 3524525181).",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock I, Grabstelle 47 OSM-Koordinate übernommen (node 3524525181).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525181, https://www.openstreetmap.org/node/3524525181, Version 5, Stand 12.10.2025, 18:45:07 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -973,12 +959,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547434586, https://www.openstreetmap.org/node/2547434586, Version 5, Stand 2021-10-17T16:31:44Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Nahe dem Haupteingang. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 2547434586).",
+      "notiz": "Nahe dem Haupteingang. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 2547434586).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547434586, https://www.openstreetmap.org/node/2547434586, Version 5, Stand 17.10.2021, 16:31:44 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1057,12 +1041,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524541202, https://www.openstreetmap.org/node/3524541202, Version 5, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541202).",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541202).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524541202, https://www.openstreetmap.org/node/3524541202, Version 5, Stand 13.10.2025, 08:02:47 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1141,13 +1123,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
-        "Dieter Thomas Heck, Wikipedia, https://de.wikipedia.org/wiki/Dieter_Thomas_Heck, abgerufen 2026-03-25",
-        "OpenStreetMap: node 12674156377, https://www.openstreetmap.org/node/12674156377, Version 1, Stand 2025-03-17T20:38:59Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html)",
+        "[Dieter Thomas Heck, Wikipedia](https://de.wikipedia.org/wiki/Dieter_Thomas_Heck)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Urnenhain II Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 12674156377).",
+      "notiz": "Block Urnenhain II Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 12674156377).\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html; Abrufdatum: 25.03.2026\n- Dieter Thomas Heck, Wikipedia, https://de.wikipedia.org/wiki/Dieter_Thomas_Heck; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 12674156377, https://www.openstreetmap.org/node/12674156377, Version 1, Stand 17.03.2025, 20:38:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1226,12 +1207,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 1395963544, https://www.openstreetmap.org/node/1395963544, Version 7, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock III, Erbbegräbnis 28 OSM-Koordinate übernommen (node 1395963544).",
+      "notiz": "Block Reformation Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock III, Erbbegräbnis 28 OSM-Koordinate übernommen (node 1395963544).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 1395963544, https://www.openstreetmap.org/node/1395963544, Version 7, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1312,12 +1291,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524541201, https://www.openstreetmap.org/node/3524541201, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Gartenblock V, Erbbegräbnis 112a OSM-Koordinate übernommen (node 3524541201).",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Gartenblock V, Erbbegräbnis 112a OSM-Koordinate übernommen (node 3524541201).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524541201, https://www.openstreetmap.org/node/3524541201, Version 4, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1398,12 +1375,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525180, https://www.openstreetmap.org/node/3524525180, Version 5, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Epiphanien, Gartenblock I, Gartenstelle 81 OSM-Koordinate übernommen (node 3524525180).",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Epiphanien, Gartenblock I, Gartenstelle 81 OSM-Koordinate übernommen (node 3524525180).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525180, https://www.openstreetmap.org/node/3524525180, Version 5, Stand 12.10.2025, 18:21:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1484,12 +1459,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 5303378520, https://www.openstreetmap.org/node/5303378520, Version 4, Stand 2025-10-12T17:43:42Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Erlöser, Feld 4, Erbbegräbnis 10 OSM-Koordinate übernommen (node 5303378520).",
+      "notiz": "Block Erlöser Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Erlöser, Feld 4, Erbbegräbnis 10 OSM-Koordinate übernommen (node 5303378520).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 5303378520, https://www.openstreetmap.org/node/5303378520, Version 4, Stand 12.10.2025, 17:43:42 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1570,12 +1543,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Erik Jan Hannusen-Steinschneider, https://osmand.net/map?pin=52.39065,13.18388#15/52.39065/13.18388"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Charlottenburg, Gartenblock III, Grabstelle 50 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Charlottenburg, Gartenblock III, Grabstelle 50 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Erik Jan Hannusen-Steinschneider, https://osmand.net/map?pin=52.39065,13.18388#15/52.39065/13.18388",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1656,12 +1627,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524541199, https://www.openstreetmap.org/node/3524541199, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock II, Gartenstelle 23 OSM-Koordinate übernommen (node 3524541199).",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Reformation, Gartenblock II, Gartenstelle 23 OSM-Koordinate übernommen (node 3524541199).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524541199, https://www.openstreetmap.org/node/3524541199, Version 4, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1711,11 +1680,11 @@
       "bilder": [],
       "audio": {},
       "quellen": [
-        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
-        "Wikipedia: Ernst Seger, https://de.wikipedia.org/wiki/Ernst_Seger, abgerufen 2026-06-06"
+        "wo-sie-ruhen.de",
+        "[Ernst Seger, Wikipedia](https://de.wikipedia.org/wiki/Ernst_Seger)"
       ],
       "status": "bestätigt",
-      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Schöneberg, Feld 8, Wahlstelle 276. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Geburts- und Sterbedatum wurden nachrecherchiert und nach Wikipedia/Personendaten ergänzt.",
+      "notiz": "Quelle: wo-sie-ruhen.de. Lage: Block Schöneberg, Feld 8, Wahlstelle 276. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Geburts- und Sterbedatum wurden nachrecherchiert und nach Wikipedia/Personendaten ergänzt.\n\nQuellenarchiv:\n- Wikipedia: Ernst Seger, https://de.wikipedia.org/wiki/Ernst_Seger; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1723,8 +1692,7 @@
       "geaendert_am": "2026-04-06T14:52:39.342Z",
       "koordinaten_quelle": {
         "typ": "wo-sie-ruhen",
-        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
-        "datum": "2026-04-04",
+        "beleg": "wo-sie-ruhen.de",
         "genauigkeit": "hoch"
       },
       "lagehinweis": "Block Schöneberg, Feld 8, Wahlstelle 276",
@@ -1796,11 +1764,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. C, Erbb. 127",
+      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. C, Erbb. 127\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1866,12 +1833,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Franz Bracht, https://osmand.net/map?pin=52.39030,13.18361#15/52.39030/13.18361"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Franz Bracht, https://osmand.net/map?pin=52.39030,13.18361#15/52.39030/13.18361",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -1886,7 +1851,7 @@
     },
     {
       "id": "poi_sws_friedhofseingang",
-      "typ": "entrance",
+      "typ": "bauwerk",
       "name": {
         "de": "Haupteingang",
         "en": "Haupteingang",
@@ -1947,10 +1912,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)"
       ],
       "status": "bestätigt",
-      "notiz": "Bahnhofstraße 2, Hauptzugang des Friedhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.",
+      "notiz": "Bahnhofstraße 2, Hauptzugang des Friedhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert.\n\nQuellenarchiv:\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2028,12 +1993,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525183, https://www.openstreetmap.org/node/3524525183, Version 3, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525183).",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525183).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525183, https://www.openstreetmap.org/node/3524525183, Version 3, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2112,12 +2075,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fritz Banneitz, https://osmand.net/map?pin=52.39083,13.18516#15/52.39083/13.18516"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fritz Banneitz, https://osmand.net/map?pin=52.39083,13.18516#15/52.39083/13.18516",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2196,12 +2157,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547426810, https://www.openstreetmap.org/node/2547426810, Version 4, Stand 2023-10-13T16:18:49Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Im offiziellen Grabstättenplan markierte Grabstätte; exakter Block in den hier verwendeten Quellen nicht einheitlich ausgewiesen. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Schöneberg, Feld 3a, Erb. 5 OSM-Koordinate übernommen (node 2547426810).",
+      "notiz": "Im offiziellen Grabstättenplan markierte Grabstätte; exakter Block in den hier verwendeten Quellen nicht einheitlich ausgewiesen. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Schöneberg, Feld 3a, Erb. 5 OSM-Koordinate übernommen (node 2547426810).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547426810, https://www.openstreetmap.org/node/2547426810, Version 4, Stand 13.10.2023, 16:18:49 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2266,11 +2225,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Garnisonsgrab, https://osmand.net/map?pin=52.38951,13.18014#17/52.38951/13.18014"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Nahe der Kapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Nahe der Kapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Garnisonsgrab, https://osmand.net/map?pin=52.38951,13.18014#17/52.38951/13.18014",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2335,12 +2293,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6426483878, https://www.openstreetmap.org/node/6426483878, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483878).",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483878).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6426483878, https://www.openstreetmap.org/node/6426483878, Version 2, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2419,12 +2375,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547430877, https://www.openstreetmap.org/node/2547430877, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock V, Erbbegräbnis 26 OSM-Koordinate übernommen (node 2547430877).",
+      "notiz": "Block Erlöser Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Erlöser, Gartenblock V, Erbbegräbnis 26 OSM-Koordinate übernommen (node 2547430877).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547430877, https://www.openstreetmap.org/node/2547430877, Version 4, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2505,12 +2459,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547413974, https://www.openstreetmap.org/node/2547413974, Version 6, Stand 2023-10-13T16:18:49Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. D, Erbb. 179 OSM-Koordinate übernommen (node 2547413974).",
+      "notiz": "Block Alte Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Alte Umbettung, Abt. D, Erbb. 179 OSM-Koordinate übernommen (node 2547413974).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547413974, https://www.openstreetmap.org/node/2547413974, Version 6, Stand 13.10.2023, 16:18:49 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2591,13 +2543,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Gustav Werner, https://osmand.net/map?pin=52.38899,13.18089#15/52.38899/13.18089"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Gegenüber der von Gustav Werner erbauten Kapelle, im Bereich des Kapellenvorfelds. Koordinaten vor Ort ermitteln. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Gegenüber der von Gustav Werner erbauten Kapelle, im Bereich des Kapellenvorfelds. Koordinaten vor Ort ermitteln. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Gustav Werner, https://osmand.net/map?pin=52.38899,13.18089#15/52.38899/13.18089",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2676,12 +2626,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hanno Günther, https://osmand.net/map?pin=52.38424,13.18373#15/52.38424/13.18373"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Urnenhain III Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Urnenhain III Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hanno Günther, https://osmand.net/map?pin=52.38424,13.18373#15/52.38424/13.18373",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2758,12 +2706,11 @@
       ],
       "audio": {},
       "quellen": [
-        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
-        "List of ambassadors of Sweden to Germany, Wikipedia, https://en.wikipedia.org/wiki/List_of_ambassadors_of_Sweden_to_Germany, abgerufen 2026-06-06",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hans Henrik Freiherr von Essen, https://osmand.net/map?pin=52.38963,13.17885#16/52.38963/13.17885"
+        "wo-sie-ruhen.de",
+        "[List of ambassadors of Sweden to Germany, Wikipedia](https://en.wikipedia.org/wiki/List_of_ambassadors_of_Sweden_to_Germany)"
       ],
       "status": "bestätigt",
-      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Epiphanien, Schwedenblock, Erbbegräbnis 19. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Der genaue Geburtstag wurde in den ausgewerteten Quellen nicht gefunden; belegt ist bislang nur das Geburtsjahr 1873. Das Sterbedatum 1923-01-31 wurde aus der Amtszeitangabe als schwedischer Gesandter mit „died in office“ übernommen. Manuelle OsmAnd-Kontrollmessung vom 2026-08-16 (52.38963, 13.17885) liegt ca. 7 m von der bestehenden wo-sie-ruhen-Koordinate entfernt; bestehende Koordinate nicht überschrieben.",
+      "notiz": "Quelle: wo-sie-ruhen.de. Lage: Block Epiphanien, Schwedenblock, Erbbegräbnis 19. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Der genaue Geburtstag wurde in den ausgewerteten Quellen nicht gefunden; belegt ist bislang nur das Geburtsjahr 1873. Das Sterbedatum 1923-01-31 wurde aus der Amtszeitangabe als schwedischer Gesandter mit „died in office“ übernommen. Manuelle OsmAnd-Kontrollmessung vom 2026-08-16 (52.38963, 13.17885) liegt ca. 7 m von der bestehenden wo-sie-ruhen-Koordinate entfernt; bestehende Koordinate nicht überschrieben.\n\nQuellenarchiv:\n- List of ambassadors of Sweden to Germany, Wikipedia, https://en.wikipedia.org/wiki/List_of_ambassadors_of_Sweden_to_Germany; Abrufdatum: 06.06.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hans Henrik Freiherr von Essen, https://osmand.net/map?pin=52.38963,13.17885#16/52.38963/13.17885",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2771,8 +2718,7 @@
       "geaendert_am": "2026-08-16T00:00:00.000Z",
       "koordinaten_quelle": {
         "typ": "wo-sie-ruhen",
-        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
-        "datum": "2026-04-04",
+        "beleg": "wo-sie-ruhen.de",
         "genauigkeit": "hoch"
       },
       "lagehinweis": "Block Epiphanien, Schwedenblock, Erbbegräbnis 19",
@@ -2844,13 +2790,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Harald Kretzschmar, Pirckheimer-Gesellschaft, https://pirckheimer-gesellschaft.org/blog/harald-kretzschmar-0, abgerufen 2026-03-25",
-        "ArchInform: Harald Kretzschmar, https://deu.archinform.net/arch/102769.htm, abgerufen 2026-06-06",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Harald Kretzschmar, https://osmand.net/map?pin=52.38644,13.18569#17/52.38644/13.18569"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Harald Kretzschmar, Pirckheimer-Gesellschaft](https://pirckheimer-gesellschaft.org/blog/harald-kretzschmar-0)",
+        "[ArchInform: Harald Kretzschmar](https://deu.archinform.net/arch/102769.htm)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Stahnsdorf. Der genaue Todestag wurde in den ausgewerteten öffentlichen Quellen dieser Recherche nicht separat ermittelt; Grabblock und Bestattungsort sind jedoch belegt. Die exakten Lebensdaten wurden nachrecherchiert und mit ArchInform ergänzt. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Stahnsdorf. Der genaue Todestag wurde in den ausgewerteten öffentlichen Quellen dieser Recherche nicht separat ermittelt; Grabblock und Bestattungsort sind jedoch belegt. Die exakten Lebensdaten wurden nachrecherchiert und mit ArchInform ergänzt. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Harald Kretzschmar, Pirckheimer-Gesellschaft, https://pirckheimer-gesellschaft.org/blog/harald-kretzschmar-0; Abrufdatum: 25.03.2026\n- ArchInform: Harald Kretzschmar, https://deu.archinform.net/arch/102769.htm; Abrufdatum: 06.06.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Harald Kretzschmar, https://osmand.net/map?pin=52.38644,13.18569#17/52.38644/13.18569",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -2926,14 +2871,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap/Nominatim: Norwegische Holzkirche, OSM way 228818020, https://www.openstreetmap.org/way/228818020, abgerufen 2026-05-24",
-        "OpenStreetMap: way 228818020, https://www.openstreetmap.org/way/228818020, Version 8, Stand 2022-01-15T21:10:24Z, abgerufen 2026-05-25"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)",
+        "[Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons](https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Zentrale Kapelle des Südwestkirchhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Koordinate anhand OpenStreetMap/Nominatim (Norwegische Holzkirche, OSM way 228818020) präzisiert. OSM-Koordinate übernommen (way 228818020).",
+      "notiz": "Zentrale Kapelle des Südwestkirchhofs. Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Koordinate anhand OpenStreetMap/Nominatim (Norwegische Holzkirche, OSM way 228818020) präzisiert. OSM-Koordinate übernommen (way 228818020).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026\n- Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap/Nominatim: Norwegische Holzkirche, OSM way 228818020, https://www.openstreetmap.org/way/228818020; Abrufdatum: 24.05.2026\n- OpenStreetMap: way 228818020, https://www.openstreetmap.org/way/228818020, Version 8, Stand 15.01.2022, 21:10:24 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3012,12 +2954,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Heinrich Lübbe, https://osmand.net/map?pin=52.38699,13.18005#15/52.38699/13.18005"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Heinrich Lübbe, https://osmand.net/map?pin=52.38699,13.18005#15/52.38699/13.18005",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3096,12 +3036,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547420763, https://www.openstreetmap.org/node/2547420763, Version 5, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Epiphanien, Feld 14, Grabstelle 34/35 OSM-Koordinate übernommen (node 2547420763).",
+      "notiz": "Block Epiphanien Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Epiphanien, Feld 14, Grabstelle 34/35 OSM-Koordinate übernommen (node 2547420763).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547420763, https://www.openstreetmap.org/node/2547420763, Version 5, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3194,12 +3132,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: way 247927301, https://www.openstreetmap.org/way/247927301, Version 4, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge](https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Blockbezeichnung im Gelände; exakte GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Die Existenz des Blocks ist gut belegt, die genaue punktförmige Georeferenzierung wurde in dieser Recherche jedoch nicht belastbar ermittelt. OSM-Koordinate übernommen (way 247927301).",
+      "notiz": "Blockbezeichnung im Gelände; exakte GPS-Koordinate in den ausgewerteten öffentlichen Quellen nicht gefunden. Koordinaten vor Ort ermitteln. Die Existenz des Blocks ist gut belegt, die genaue punktförmige Georeferenzierung wurde in dieser Recherche jedoch nicht belastbar ermittelt. OSM-Koordinate übernommen (way 247927301).\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Gedenkveranstaltung auf dem Südwestkirchhof Stahnsdorf, Volksbund Deutsche Kriegsgräberfürsorge, https://berlin.volksbund.de/aktuell/termine/detailseite/volkstrauertag-2025-gedenkveranstaltung-auf-dem-suedwestkirchhof-stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: way 247927301, https://www.openstreetmap.org/way/247927301, Version 4, Stand 12.10.2025, 19:14:46 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3278,12 +3215,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hugo Conwentz, https://osmand.net/map?pin=52.38464,13.18066#15/52.38464/13.18066"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Neue Umbettung, Feld 17, Wahlstelle 178 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Neue Umbettung, Feld 17, Wahlstelle 178 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hugo Conwentz, https://osmand.net/map?pin=52.38464,13.18066#15/52.38464/13.18066",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3364,12 +3299,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524541200, https://www.openstreetmap.org/node/3524541200, Version 5, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 3524541200).",
+      "notiz": "Block Reformation Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 3524541200).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524541200, https://www.openstreetmap.org/node/3524541200, Version 5, Stand 12.10.2025, 19:56:30 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3448,12 +3381,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Inge Deutschkron, Wikipedia, https://de.wikipedia.org/wiki/Inge_Deutschkron, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Inge Deutschkron, https://osmand.net/map?pin=52.38863,13.18037#17/52.38863/13.18037"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Inge Deutschkron, Wikipedia](https://de.wikipedia.org/wiki/Inge_Deutschkron)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Kapellenblock. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Inge Deutschkron, Wikipedia, https://de.wikipedia.org/wiki/Inge_Deutschkron; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Inge Deutschkron, https://osmand.net/map?pin=52.38863,13.18037#17/52.38863/13.18037",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3548,13 +3480,12 @@
       "lagehinweis": "Baumgrab, Baum Nr. 482",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/0606bilder/58b Ingrid Steeger (Baumnummer 482).jpg",
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Ingrid Steeger, Wikipedia, https://de.wikipedia.org/wiki/Ingrid_Steeger, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Ingrid Steeger, https://osmand.net/map?pin=52.39071,13.18288#15/52.39071/13.18288",
-        "tagesschau.de: Klimbim-Schauspielerin Steeger gestorben, https://www.tagesschau.de/inland/gesellschaft/steeger-ingrid-tod-100.html, abgerufen 2026-06-06"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Ingrid Steeger, Wikipedia](https://de.wikipedia.org/wiki/Ingrid_Steeger)",
+        "[tagesschau.de: Klimbim-Schauspielerin Steeger gestorben](https://www.tagesschau.de/inland/gesellschaft/steeger-ingrid-tod-100.html)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. In der ausgewerteten Quelle ist die Beisetzung auf dem Südwestkirchhof ausdrücklich genannt; die hier verwendeten Datumsfelder sind aus dem Wikipedia-Eintrag nur jahresgenau übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen. Die exakten Lebensdaten wurden nachrecherchiert und ergänzt.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. In der ausgewerteten Quelle ist die Beisetzung auf dem Südwestkirchhof ausdrücklich genannt; die hier verwendeten Datumsfelder sind aus dem Wikipedia-Eintrag nur jahresgenau übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen. Die exakten Lebensdaten wurden nachrecherchiert und ergänzt.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Ingrid Steeger, Wikipedia, https://de.wikipedia.org/wiki/Ingrid_Steeger; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Ingrid Steeger, https://osmand.net/map?pin=52.39071,13.18288#15/52.39071/13.18288\n- tagesschau.de: Klimbim-Schauspielerin Steeger gestorben, https://www.tagesschau.de/inland/gesellschaft/steeger-ingrid-tod-100.html; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3659,12 +3590,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Berlin Italian Military Cemetery, Remembering the Fallen, https://www.ww1cemeteries.com/ger-berlin-italian-military-cemetery.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Italienischer Soldatenfriedhof, https://osmand.net/map?pin=52.38307,13.17644#15/52.38307/13.17644"
+        "[Berlin Italian Military Cemetery, Remembering the Fallen](https://www.ww1cemeteries.com/ger-berlin-italian-military-cemetery.html)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Am südwestlichen Ende des Friedhofs, direkt benachbart zum Berlin South-Western Cemetery. Öffentliche Quellen nennen teils rund 1.650, teils 1.658 italienische Tote; für die Struktur- und Orientierungsbeschreibung wurde die häufig genannte Zahl 1.658 übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Am südwestlichen Ende des Friedhofs, direkt benachbart zum Berlin South-Western Cemetery. Öffentliche Quellen nennen teils rund 1.650, teils 1.658 italienische Tote; für die Struktur- und Orientierungsbeschreibung wurde die häufig genannte Zahl 1.658 übernommen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Berlin Italian Military Cemetery, Remembering the Fallen, https://www.ww1cemeteries.com/ger-berlin-italian-military-cemetery.html; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Italienischer Soldatenfriedhof, https://osmand.net/map?pin=52.38307,13.17644#15/52.38307/13.17644",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3743,12 +3673,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6426483875, https://www.openstreetmap.org/node/6426483875, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6426483875).",
+      "notiz": "Block Charlottenburg Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6426483875).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6426483875, https://www.openstreetmap.org/node/6426483875, Version 2, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3827,12 +3755,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
-        "Jürgen Holtz, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html)",
+        "[Jürgen Holtz, Wikipedia](https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz)"
       ],
       "status": "prüfen",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html; Abrufdatum: 25.03.2026\n- Jürgen Holtz, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Holtz; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3912,11 +3840,11 @@
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1357A",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/32 Kluckert, Jürgen (Baum Nr. 1357A nicht auf Plan).jpg",
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Jürgen Kluckert, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Jürgen Kluckert, Wikipedia](https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert)"
       ],
       "status": "prüfen",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Jürgen Kluckert, Wikipedia, https://de.wikipedia.org/wiki/J%C3%BCrgen_Kluckert; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3963,11 +3891,11 @@
       "bilder": [],
       "audio": {},
       "quellen": [
-        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
-        "Deutsche Digitale Bibliothek: J. C. Schaarwächter, https://www.deutsche-digitale-bibliothek.de/person/gnd/129471372, abgerufen 2026-06-06"
+        "wo-sie-ruhen.de",
+        "[Deutsche Digitale Bibliothek: J. C. Schaarwächter](https://www.deutsche-digitale-bibliothek.de/person/gnd/129471372)"
       ],
       "status": "bestätigt",
-      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Alte Umbettung, Erbb. 101. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Die exakten Lebensdaten wurden nachrecherchiert und mit der Deutschen Digitalen Bibliothek ergänzt.",
+      "notiz": "Quelle: wo-sie-ruhen.de. Lage: Alte Umbettung, Erbb. 101. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Die exakten Lebensdaten wurden nachrecherchiert und mit der Deutschen Digitalen Bibliothek ergänzt.\n\nQuellenarchiv:\n- Deutsche Digitale Bibliothek: J. C. Schaarwächter, https://www.deutsche-digitale-bibliothek.de/person/gnd/129471372; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -3975,8 +3903,7 @@
       "geaendert_am": "2026-04-06T14:52:39.342Z",
       "koordinaten_quelle": {
         "typ": "wo-sie-ruhen",
-        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
-        "datum": "2026-04-04",
+        "beleg": "wo-sie-ruhen.de",
         "genauigkeit": "hoch"
       },
       "lagehinweis": "Alte Umbettung, Erbb. 101",
@@ -4034,12 +3961,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547423422, https://www.openstreetmap.org/node/2547423422, Version 3, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Kapellenblock, Erbbegräbnis 42/53 OSM-Koordinate übernommen (node 2547423422).",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Kapellenblock, Erbbegräbnis 42/53 OSM-Koordinate übernommen (node 2547423422).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547423422, https://www.openstreetmap.org/node/2547423422, Version 3, Stand 12.10.2025, 19:14:46 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4120,12 +4045,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6426483877, https://www.openstreetmap.org/node/6426483877, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock V, Grabstelle 1 OSM-Koordinate übernommen (node 6426483877).",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Heilige Geist, Gartenblock V, Grabstelle 1 OSM-Koordinate übernommen (node 6426483877).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6426483877, https://www.openstreetmap.org/node/6426483877, Version 2, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4206,12 +4129,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6432842244, https://www.openstreetmap.org/node/6432842244, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6432842244).",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6432842244).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6432842244, https://www.openstreetmap.org/node/6432842244, Version 2, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4289,12 +4210,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Louis Meyer, https://osmand.net/map?pin=52.38863,13.18071#15/52.38863/13.18071"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)"
       ],
       "status": "bestätigt",
-      "notiz": "Ehrenplatz nahe der Kapelle an der von Louis Meyer entworfenen Sichtachse. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. Dateiname nennt Louise Meyer; redaktionell Louis Meyer zugeordnet. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Ehrenplatz nahe der Kapelle an der von Louis Meyer entworfenen Sichtachse. Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. Dateiname nennt Louise Meyer; redaktionell Louis Meyer zugeordnet. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Louis Meyer, https://osmand.net/map?pin=52.38863,13.18071#15/52.38863/13.18071",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4373,12 +4292,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Lovis Corinth, https://osmand.net/map?pin=52.38764,13.17967#15/52.38764/13.17967"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 8, Erbbegräbnis 47 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 8, Erbbegräbnis 47 Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Lovis Corinth, https://osmand.net/map?pin=52.38764,13.17967#15/52.38764/13.17967",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4475,11 +4392,11 @@
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1635",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/33 Maranow, Maja (Baum Nr. 1635) (nicht auf Plan).jpg",
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Maja Maranow, Wikipedia, https://de.wikipedia.org/wiki/Maja_Maranow, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Maja Maranow, Wikipedia](https://de.wikipedia.org/wiki/Maja_Maranow)"
       ],
       "status": "prüfen",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Maja Maranow, Wikipedia, https://de.wikipedia.org/wiki/Maja_Maranow; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4573,13 +4490,12 @@
       "lagehinweis": "Block Lietzensee; Baumgrab, Baum Nr. 1829",
       "lagehinweis_quelle": "Lokales Grabfoto: inputdata/bilder/35 Krug, Manfred (Baum Nr.1829) .jpg",
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html, abgerufen 2026-03-25",
-        "Manfred Krug, Wikipedia, https://de.wikipedia.org/wiki/Manfred_Krug, abgerufen 2026-03-25",
-        "OpenStreetMap: node 11260360524, https://www.openstreetmap.org/node/11260360524, Version 2, Stand 2025-10-12T19:14:46Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html)",
+        "[Manfred Krug, Wikipedia](https://de.wikipedia.org/wiki/Manfred_Krug)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 11260360524).",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 11260360524).\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Winterlicher Friedhofsspaziergang mit Olaf Ihlefeldt, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/eventkalender-detailansicht/winterlicher-friedhofsspaziergang.html; Abrufdatum: 25.03.2026\n- Manfred Krug, Wikipedia, https://de.wikipedia.org/wiki/Manfred_Krug; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 11260360524, https://www.openstreetmap.org/node/11260360524, Version 2, Stand 12.10.2025, 19:14:46 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4641,12 +4557,11 @@
       ],
       "audio": {},
       "quellen": [
-        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25",
-        "Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Caspary, https://osmand.net/map?pin=52.38913,13.18070#18/52.38913/13.18070"
+        "[Mausoleen Caspary und Harteneck, Fachhochschule Potsdam](https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck)",
+        "[Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons](https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck; Abrufdatum: 25.03.2026\n- Wikimedia Commons: Südwestkirchhof Stahnsdorf, Wikimedia Commons, https://commons.wikimedia.org/wiki/Category%3AS%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Caspary, https://osmand.net/map?pin=52.38913,13.18070#18/52.38913/13.18070",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4723,13 +4638,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Stahnsdorf, Südwestkirchhof : Mausoleum Felinus, Deutsche Digitale Bibliothek, https://www.deutsche-digitale-bibliothek.de/item/3EIPJMQORWYKSP7MLT7LWQKJFHM6ETEM, abgerufen 2026-03-25",
-        "Mausoleum Felinus, Südwestkirchhof Stahnsdorf / FH Potsdam, https://suedwestkirchhof.ekbo.de/fileadmin/sites/suedwestkirchhof-ekbo.de/FHP_Diplomarbeit_Hanini_Teichmann_Mausoleum_Felinus_2010_.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Felinus, https://osmand.net/map?pin=52.39124,13.17449#15/52.39124/13.17449"
+        "[Stahnsdorf, Südwestkirchhof : Mausoleum Felinus, Deutsche Digitale Bibliothek](https://www.deutsche-digitale-bibliothek.de/item/3EIPJMQORWYKSP7MLT7LWQKJFHM6ETEM)",
+        "[Mausoleum Felinus, Südwestkirchhof Stahnsdorf / FH Potsdam](https://suedwestkirchhof.ekbo.de/fileadmin/sites/suedwestkirchhof-ekbo.de/FHP_Diplomarbeit_Hanini_Teichmann_Mausoleum_Felinus_2010_.pdf)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Bereich Alte Umbettung. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Bereich Alte Umbettung. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Stahnsdorf, Südwestkirchhof : Mausoleum Felinus, Deutsche Digitale Bibliothek, https://www.deutsche-digitale-bibliothek.de/item/3EIPJMQORWYKSP7MLT7LWQKJFHM6ETEM; Abrufdatum: 25.03.2026\n- Mausoleum Felinus, Südwestkirchhof Stahnsdorf / FH Potsdam, https://suedwestkirchhof.ekbo.de/fileadmin/sites/suedwestkirchhof-ekbo.de/FHP_Diplomarbeit_Hanini_Teichmann_Mausoleum_Felinus_2010_.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Felinus, https://osmand.net/map?pin=52.39124,13.17449#15/52.39124/13.17449",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4791,11 +4705,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Harteneck, https://osmand.net/map?pin=52.38903,13.17985#17/52.38903/13.17985"
+        "[Mausoleen Caspary und Harteneck, Fachhochschule Potsdam](https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck)"
       ],
       "status": "bestätigt",
-      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Schräg gegenüber der Friedhofskapelle. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Mausoleen Caspary und Harteneck, Fachhochschule Potsdam, https://www.fh-potsdam.de/forschung-transfer/projekte/mausoleen-caspary-und-harteneck; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Mausoleum Harteneck, https://osmand.net/map?pin=52.38903,13.17985#17/52.38903/13.17985",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4842,11 +4755,11 @@
       "bilder": [],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Max Adalbert, Wikipedia, https://de.wikipedia.org/wiki/Max_Adalbert, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Max Adalbert, Wikipedia](https://de.wikipedia.org/wiki/Max_Adalbert)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Urnenhain I Koordinaten vor Ort ermitteln.",
+      "notiz": "Block Urnenhain I Koordinaten vor Ort ermitteln.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Max Adalbert, Wikipedia, https://de.wikipedia.org/wiki/Max_Adalbert; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4905,11 +4818,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlstelle 162",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 21, Wahlstelle 162\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -4989,11 +4901,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "prüfen",
-      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.",
+      "notiz": "Block Heilig Geist Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5037,11 +4948,11 @@
       "bilder": [],
       "audio": {},
       "quellen": [
-        "Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25"
+        "[Über den Kirchhof, Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/kirchhof.html)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Südlicher Teil des Friedhofs. Koordinaten vor Ort ermitteln.",
+      "notiz": "Südlicher Teil des Friedhofs. Koordinaten vor Ort ermitteln.\n\nQuellenarchiv:\n- Über den Kirchhof, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/kirchhof.html; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5114,12 +5025,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525178, https://www.openstreetmap.org/node/3524525178, Version 5, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525178).",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525178).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525178, https://www.openstreetmap.org/node/3524525178, Version 5, Stand 13.10.2025, 08:02:47 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5198,12 +5107,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Peter Sattmann, Wikipedia, https://de.wikipedia.org/wiki/Peter_Sattmann, abgerufen 2026-03-25",
-        "tagesschau.de: Schauspieler Peter Sattmann im Alter von 77 Jahren gestorben, https://www.tagesschau.de/kultur/peter-sattmann-tot-100.html, abgerufen 2026-06-06"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+        "[Peter Sattmann, Wikipedia](https://de.wikipedia.org/wiki/Peter_Sattmann)",
+        "[tagesschau.de: Schauspieler Peter Sattmann im Alter von 77 Jahren gestorben](https://www.tagesschau.de/kultur/peter-sattmann-tot-100.html)"
       ],
       "status": "prüfen",
-      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. Die vorhandenen Lebensdaten wurden bei der Textüberarbeitung gegen aktuelle Nachrufe plausibilisiert.",
+      "notiz": "Block Nathanael Koordinaten vor Ort ermitteln. Koordinate aus Kamera-EXIF, vor Ort prüfen. Die vorhandenen Lebensdaten wurden bei der Textüberarbeitung gegen aktuelle Nachrufe plausibilisiert.\n\nQuellenarchiv:\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Peter Sattmann, Wikipedia, https://de.wikipedia.org/wiki/Peter_Sattmann; Abrufdatum: 25.03.2026\n- tagesschau.de: Schauspieler Peter Sattmann im Alter von 77 Jahren gestorben, https://www.tagesschau.de/kultur/peter-sattmann-tot-100.html; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5281,12 +5190,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6426483876, https://www.openstreetmap.org/node/6426483876, Version 2, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483876).",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 6426483876).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6426483876, https://www.openstreetmap.org/node/6426483876, Version 2, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5349,11 +5256,11 @@
       ],
       "audio": {},
       "quellen": [
-        "wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04",
-        "Akademie der Künste: Reinhold Karl Thusmann Felderhoff, https://www.adk.de/de/akademie/mitglieder/suche.htm?we_objectID=53909, abgerufen 2026-06-06"
+        "wo-sie-ruhen.de",
+        "[Akademie der Künste: Reinhold Karl Thusmann Felderhoff](https://www.adk.de/de/akademie/mitglieder/suche.htm?we_objectID=53909)"
       ],
       "status": "bestätigt",
-      "notiz": "Neu aus wo-sie-ruhen.de API. Lage: Block Trinitatis, Feld 10, Wahlstelle 64. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Das Geburtsdatum ist in Quellen uneinheitlich: Akademie der Künste und Wikimedia Commons nennen 1865-01-25, Wikipedia nennt 1865-02-25. Eingetragen ist der AdK-Wert; Abweichung bleibt redaktionell notiert.",
+      "notiz": "Quelle: wo-sie-ruhen.de. Lage: Block Trinitatis, Feld 10, Wahlstelle 64. Ehrengrab: nein. Biografische Daten und Übersetzungen noch ergänzen. Das Geburtsdatum ist in Quellen uneinheitlich: Akademie der Künste und Wikimedia Commons nennen 1865-01-25, Wikipedia nennt 1865-02-25. Eingetragen ist der AdK-Wert; Abweichung bleibt redaktionell notiert.\n\nQuellenarchiv:\n- Akademie der Künste: Reinhold Karl Thusmann Felderhoff, https://www.adk.de/de/akademie/mitglieder/suche.htm?we_objectID=53909; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5361,8 +5268,7 @@
       "geaendert_am": "2026-04-06T14:52:39.342Z",
       "koordinaten_quelle": {
         "typ": "wo-sie-ruhen",
-        "beleg": "wo-sie-ruhen.de API-Extraktion 2026-04-04",
-        "datum": "2026-04-04",
+        "beleg": "wo-sie-ruhen.de",
         "genauigkeit": "hoch"
       },
       "lagehinweis": "Block Trinitatis, Feld 10, Wahlstelle 64",
@@ -5434,12 +5340,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524541198, https://www.openstreetmap.org/node/3524541198, Version 5, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541198).",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. OSM-Koordinate übernommen (node 3524541198).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524541198, https://www.openstreetmap.org/node/3524541198, Version 5, Stand 12.10.2025, 18:21:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5518,12 +5422,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525179, https://www.openstreetmap.org/node/3524525179, Version 5, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Lietzensee, Feld 22, Wahlstelle 115 OSM-Koordinate übernommen (node 3524525179).",
+      "notiz": "Block Lietzensee Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Lietzensee, Feld 22, Wahlstelle 115 OSM-Koordinate übernommen (node 3524525179).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525179, https://www.openstreetmap.org/node/3524525179, Version 5, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5604,12 +5506,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Siegfried Jacobsohn, https://osmand.net/map?pin=52.39021,13.18429#15/52.39021/13.18429"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Charlottenburg Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Siegfried Jacobsohn, https://osmand.net/map?pin=52.39021,13.18429#15/52.39021/13.18429",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5688,12 +5588,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 6168006685, https://www.openstreetmap.org/node/6168006685, Version 3, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6168006685).",
+      "notiz": "Block Kapellenblock Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. OSM-Koordinate übernommen (node 6168006685).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 6168006685, https://www.openstreetmap.org/node/6168006685, Version 3, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5772,12 +5670,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Walter Gropius, https://osmand.net/map?pin=52.38454,13.18121#15/52.38454/13.18121"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Neue Umbettung Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Walter Gropius, https://osmand.net/map?pin=52.38454,13.18121#15/52.38454/13.18121",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5856,12 +5752,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525177, https://www.openstreetmap.org/node/3524525177, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525177).",
+      "notiz": "Block Trinitatis Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. OSM-Koordinate übernommen (node 3524525177).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525177, https://www.openstreetmap.org/node/3524525177, Version 4, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -5940,12 +5834,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 3524525182, https://www.openstreetmap.org/node/3524525182, Version 4, Stand 2023-02-03T15:42:26Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 3a, Erbbegräbnis 22 OSM-Koordinate übernommen (node 3524525182).",
+      "notiz": "Block Trinitatis Koordinaten nur angenähert. Bestandskoordinate aus der Ausgangsdatei übernommen; exakte Lage in den öffentlichen Quellen dieser Recherche nicht separat verifiziert. Lage laut wo-sie-ruhen.de: Block Trinitatis, Feld 3a, Erbbegräbnis 22 OSM-Koordinate übernommen (node 3524525182).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 3524525182, https://www.openstreetmap.org/node/3524525182, Version 4, Stand 03.02.2023, 15:42:26 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6026,12 +5918,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Wilhelm Gröner, https://osmand.net/map?pin=52.38879,13.18126#15/52.38879/13.18126"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.",
+      "notiz": "Block Kapellenblock Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Koordinate aus Kamera-EXIF, vor Ort prüfen. Manuelle OsmAnd-Koordinate aus inputdata/neue_Koordinaten_über_OSM.txt übernommen.\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Wilhelm Gröner, https://osmand.net/map?pin=52.38879,13.18126#15/52.38879/13.18126",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6110,12 +6000,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf, abgerufen 2026-03-25",
-        "Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-03-25",
-        "OpenStreetMap: node 2547415229, https://www.openstreetmap.org/node/2547415229, Version 6, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)"
       ],
       "status": "bestätigt",
-      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Epiphanien, Gbl. I, Grabstelle 85/86 OSM-Koordinate übernommen (node 2547415229).",
+      "notiz": "Block Epiphanien Koordinaten vor Ort ermitteln. Exakte GPS-Koordinaten wurden in den ausgewerteten öffentlichen Quellen nicht für jede Einzelgrabstätte gefunden. Lage laut wo-sie-ruhen.de: Epiphanien, Gbl. I, Grabstelle 85/86 OSM-Koordinate übernommen (node 2547415229).\n\nQuellenarchiv:\n- Personen und Bauwerke / Grabstättenplan, Südwestkirchhof Stahnsdorf, https://www.suedwestkirchhof.de/files/suedwestkirchhof/content/pdf/SWK-Grabstaettenplan.pdf; Abrufdatum: 25.03.2026\n- Südwestkirchhof Stahnsdorf, Wikipedia, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 25.03.2026\n- OpenStreetMap: node 2547415229, https://www.openstreetmap.org/node/2547415229, Version 6, Stand 12.10.2025, 18:21:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6181,11 +6069,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247897589, https://www.openstreetmap.org/way/247897589, Version 4, Stand 2025-10-12T18:45:07Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Anonymes Gräberfeld\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Anonymes Gräberfeld\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247897589, https://www.openstreetmap.org/way/247897589, Version 4, Stand 12.10.2025, 18:45:07 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6234,11 +6120,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247898281, https://www.openstreetmap.org/way/247898281, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"description\":\"Nach Art eines Friedwaldes\",\"name\":\"Bestattungsareal unter Bäumen\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"description\":\"Nach Art eines Friedwaldes\",\"name\":\"Bestattungsareal unter Bäumen\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247898281, https://www.openstreetmap.org/way/247898281, Version 2, Stand 09.04.2024, 14:06:18 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6316,11 +6200,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: node 13629435895, https://www.openstreetmap.org/node/13629435895, Version 1, Stand 2026-03-09T09:12:24Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"artwork_type\":\"statue\",\"material\":\"metal\",\"memorial\":\"statue\",\"tourism\":\"artwork\"} Die genaue Bedeutung/Widmung der namenlosen Metallstatue wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"artwork_type\":\"statue\",\"material\":\"metal\",\"memorial\":\"statue\",\"tourism\":\"artwork\"} Die genaue Bedeutung/Widmung der namenlosen Metallstatue wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.\n\nQuellenarchiv:\n- OpenStreetMap: node 13629435895, https://www.openstreetmap.org/node/13629435895, Version 1, Stand 09.03.2026, 09:12:24 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6369,11 +6251,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: node 11966089685, https://www.openstreetmap.org/node/11966089685, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.\n\nQuellenarchiv:\n- OpenStreetMap: node 11966089685, https://www.openstreetmap.org/node/11966089685, Version 1, Stand 09.06.2024, 08:18:53 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6422,11 +6302,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: node 11966089686, https://www.openstreetmap.org/node/11966089686, Version 1, Stand 2024-06-09T08:18:53Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der zweiten namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"historic\":\"memorial\",\"memorial\":\"war_memorial\"} Die genaue Widmung der zweiten namenlosen Kriegsgräber-Gedenkanlage wurde in den ausgewerteten Quellen nicht gefunden; vor Ort prüfen. Nicht öffentlich anzeigen; im Datenbestand behalten.\n\nQuellenarchiv:\n- OpenStreetMap: node 11966089686, https://www.openstreetmap.org/node/11966089686, Version 1, Stand 09.06.2024, 08:18:53 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6491,11 +6369,10 @@
       ],
       "audio": {},
       "quellen": [
-        "OpenStreetMap: node 12312719341, https://www.openstreetmap.org/node/12312719341, Version 2, Stand 2025-08-31T09:19:30Z, abgerufen 2026-05-25",
-        "Deutsche Digitale Bibliothek: Paul Manteufel, https://www.deutsche-digitale-bibliothek.de/person/gnd/12823606X, abgerufen 2026-06-06"
+        "[Deutsche Digitale Bibliothek: Paul Manteufel](https://www.deutsche-digitale-bibliothek.de/person/gnd/12823606X)"
       ],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"buried:wikidata\":\"Q1300956\",\"buried:wikipedia\":\"de:Paul Manteufel\",\"cemetery\":\"grave\",\"inscription\":\"Prof. Dr. med. Paul Manteufel\\n* 11.7.1879  14.1.1941\",\"name\":\"Grab Paul Manteufel\"} Berufliche Einordnung als Hygieniker, Bakteriologe und Tropenarzt wurde nachrecherchiert und ergänzt.",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"buried:wikidata\":\"Q1300956\",\"buried:wikipedia\":\"de:Paul Manteufel\",\"cemetery\":\"grave\",\"inscription\":\"Prof. Dr. med. Paul Manteufel\\n* 11.7.1879  14.1.1941\",\"name\":\"Grab Paul Manteufel\"} Berufliche Einordnung als Hygieniker, Bakteriologe und Tropenarzt wurde nachrecherchiert und ergänzt.\n\nQuellenarchiv:\n- OpenStreetMap: node 12312719341, https://www.openstreetmap.org/node/12312719341, Version 2, Stand 31.08.2025, 09:19:30 UTC; Abrufdatum: 25.05.2026\n- Deutsche Digitale Bibliothek: Paul Manteufel, https://www.deutsche-digitale-bibliothek.de/person/gnd/12823606X; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6544,11 +6421,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247944503, https://www.openstreetmap.org/way/247944503, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Heilige Geist\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Heilige Geist\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247944503, https://www.openstreetmap.org/way/247944503, Version 2, Stand 09.04.2024, 14:06:18 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6597,11 +6472,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: node 12912566004, https://www.openstreetmap.org/node/12912566004, Version 1, Stand 2025-06-13T12:30:59Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"grave\",\"description\":\"Baum 1130\",\"inscription\":\"Michael Heinrich\\n* 14.3.1956\\n+ 26.4.2025\",\"name\":\"Michael Heinrich\"} Zu Michael Heinrich wurden in den ausgewerteten Quellen keine belastbaren biografischen Angaben über OSM-Inschrift und Lebensdaten hinaus gefunden. Nicht öffentlich anzeigen; im Datenbestand behalten.",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"grave\",\"description\":\"Baum 1130\",\"inscription\":\"Michael Heinrich\\n* 14.3.1956\\n+ 26.4.2025\",\"name\":\"Michael Heinrich\"} Zu Michael Heinrich wurden in den ausgewerteten Quellen keine belastbaren biografischen Angaben über OSM-Inschrift und Lebensdaten hinaus gefunden. Nicht öffentlich anzeigen; im Datenbestand behalten.\n\nQuellenarchiv:\n- OpenStreetMap: node 12912566004, https://www.openstreetmap.org/node/12912566004, Version 1, Stand 13.06.2025, 12:30:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "entwurf",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6650,11 +6523,9 @@
       "wikipedia_url": null,
       "bilder": [],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247939527, https://www.openstreetmap.org/way/247939527, Version 6, Stand 2025-10-13T08:02:47Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schöneberg\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schöneberg\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247939527, https://www.openstreetmap.org/way/247939527, Version 6, Stand 13.10.2025, 08:02:47 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6732,11 +6603,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247946680, https://www.openstreetmap.org/way/247946680, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwedischer Friedhof\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwedischer Friedhof\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247946680, https://www.openstreetmap.org/way/247946680, Version 2, Stand 09.04.2024, 14:06:18 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6800,11 +6669,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247904540, https://www.openstreetmap.org/way/247904540, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwesternblock\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Schwesternblock\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247904540, https://www.openstreetmap.org/way/247904540, Version 2, Stand 09.04.2024, 14:06:18 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6882,11 +6749,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 228818268, https://www.openstreetmap.org/way/228818268, Version 3, Stand 2025-10-12T19:56:30Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"amenity\":\"place_of_worship\",\"building\":\"chapel\",\"chapel\":\"yes\",\"denomination\":\"protestant\",\"name\":\"Trauerkapelle\",\"religion\":\"christian\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"amenity\":\"place_of_worship\",\"building\":\"chapel\",\"chapel\":\"yes\",\"denomination\":\"protestant\",\"name\":\"Trauerkapelle\",\"religion\":\"christian\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 228818268, https://www.openstreetmap.org/way/228818268, Version 3, Stand 12.10.2025, 19:56:30 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -6950,11 +6815,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247944649, https://www.openstreetmap.org/way/247944649, Version 2, Stand 2024-04-09T14:06:18Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain I\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain I\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247944649, https://www.openstreetmap.org/way/247944649, Version 2, Stand 09.04.2024, 14:06:18 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7046,11 +6909,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "OpenStreetMap: way 247930944, https://www.openstreetmap.org/way/247930944, Version 4, Stand 2025-10-12T18:21:59Z, abgerufen 2026-05-25"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain II\"}",
+      "notiz": "Aus OpenStreetMap übernommen. OSM-Tags: {\"cemetery\":\"sector\",\"name\":\"Urnenhain II\"}\n\nQuellenarchiv:\n- OpenStreetMap: way 247930944, https://www.openstreetmap.org/way/247930944, Version 4, Stand 12.10.2025, 18:21:59 UTC; Abrufdatum: 25.05.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7135,11 +6996,10 @@
       ],
       "audio": {},
       "quellen": [
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hermann Boost, https://osmand.net/map?pin=52.38835,13.18766#15/52.38835/13.18766",
-        "Deutsche Digitale Bibliothek: Hermann Boost, https://www.deutsche-digitale-bibliothek.de/person/gnd/117620564, abgerufen 2026-06-06"
+        "[Deutsche Digitale Bibliothek: Hermann Boost](https://www.deutsche-digitale-bibliothek.de/person/gnd/117620564)"
       ],
       "status": "bestätigt",
-      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen. Die Lebensdaten wurden nachrecherchiert und mit der Deutschen Digitalen Bibliothek ergänzt.",
+      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen. Die Lebensdaten wurden nachrecherchiert und mit der Deutschen Digitalen Bibliothek ergänzt.\n\nQuellenarchiv:\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Hermann Boost, https://osmand.net/map?pin=52.38835,13.18766#15/52.38835/13.18766\n- Deutsche Digitale Bibliothek: Hermann Boost, https://www.deutsche-digitale-bibliothek.de/person/gnd/117620564; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7217,11 +7077,9 @@
         }
       ],
       "audio": {},
-      "quellen": [
-        "Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fam. Schulte (Schwarzer Engel), https://osmand.net/map?pin=52.38839,13.18684#15/52.38839/13.18684"
-      ],
+      "quellen": [],
       "status": "bestätigt",
-      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen. Zu Familie Schulte wurden in den ausgewerteten Quellen keine belastbaren Lebensdaten oder biografischen Angaben gefunden; bislang nur die manuelle OsmAnd-Erfassung und der Hinweis „Schwarzer Engel“. Vor Ort/Grabinschrift nachrecherchieren.",
+      "notiz": "Aus manueller OsmAnd-Koordinatendatei übernommen. Zu Familie Schulte wurden in den ausgewerteten Quellen keine belastbaren Lebensdaten oder biografischen Angaben gefunden; bislang nur die manuelle OsmAnd-Erfassung und der Hinweis „Schwarzer Engel“. Vor Ort/Grabinschrift nachrecherchieren.\n\nQuellenarchiv:\n- Manuelle GPS-Erfassung via OsmAnd: inputdata/neue_Koordinaten_über_OSM.txt, Fam. Schulte (Schwarzer Engel), https://osmand.net/map?pin=52.38839,13.18684#15/52.38839/13.18684",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7316,12 +7174,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Wikipedia: Arne Elsholtz, https://de.wikipedia.org/wiki/Arne_Elsholtz, abgerufen 2026-06-06",
-        "Wikipedia: Südwestkirchhof Stahnsdorf, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-06-06",
+        "[Arne Elsholtz, Wikipedia](https://de.wikipedia.org/wiki/Arne_Elsholtz)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
         "Lokale Grabfotos: inputdata/bilder/34*.jpg"
       ],
       "status": "prüfen",
-      "notiz": "Baumgrab laut Foto Baumnummer 1611. Kamera-EXIF streut zwischen den drei Bildern maximal ca. 33,8 m; Koordinate vor Ort prüfen.",
+      "notiz": "Baumgrab laut Foto Baumnummer 1611. Kamera-EXIF streut zwischen den drei Bildern maximal ca. 33,8 m; Koordinate vor Ort prüfen.\n\nQuellenarchiv:\n- Wikipedia: Arne Elsholtz, https://de.wikipedia.org/wiki/Arne_Elsholtz; Abrufdatum: 06.06.2026\n- Wikipedia: Südwestkirchhof Stahnsdorf, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7402,11 +7260,11 @@
       ],
       "audio": {},
       "quellen": [
-        "filmportal.de: Günther Schmidt, https://www.filmportal.de/person/guenther-schmidt_9e5143e8f8484af3b1a321be503250f1, abgerufen 2026-06-06",
+        "[filmportal.de: Günther Schmidt](https://www.filmportal.de/person/guenther-schmidt_9e5143e8f8484af3b1a321be503250f1)",
         "Lokale Grabfotos: inputdata/bilder/43*.jpg"
       ],
       "status": "prüfen",
-      "notiz": "Nicht mit dem Boxer Günther Heidemann (1932–2010) verwechseln. Filmportal führt Günther Schmidt als Hauptnamen und Günther Heidemann als weiteren Namen. Nur eines der zwei Fotos enthält EXIF-GPS; Koordinate vor Ort prüfen.",
+      "notiz": "Nicht mit dem Boxer Günther Heidemann (1932–2010) verwechseln. Filmportal führt Günther Schmidt als Hauptnamen und Günther Heidemann als weiteren Namen. Nur eines der zwei Fotos enthält EXIF-GPS; Koordinate vor Ort prüfen.\n\nQuellenarchiv:\n- filmportal.de: Günther Schmidt, https://www.filmportal.de/person/guenther-schmidt_9e5143e8f8484af3b1a321be503250f1; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7479,12 +7337,12 @@
       ],
       "audio": {},
       "quellen": [
-        "Wikipedia: Kurt Kroner, https://de.wikipedia.org/wiki/Kurt_Kroner, abgerufen 2026-06-06",
-        "Wikipedia: Südwestkirchhof Stahnsdorf, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf, abgerufen 2026-06-06",
+        "[Kurt Kroner, Wikipedia](https://de.wikipedia.org/wiki/Kurt_Kroner)",
+        "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
         "Lokale Grabfotos: inputdata/bilder/47*.jpg"
       ],
       "status": "prüfen",
-      "notiz": "Keine EXIF-GPS-Daten in den beiden lokalen Fotos. Lagehinweis extern belegt; Koordinate vor Ort ermitteln.",
+      "notiz": "Keine EXIF-GPS-Daten in den beiden lokalen Fotos. Lagehinweis extern belegt; Koordinate vor Ort ermitteln.\n\nQuellenarchiv:\n- Wikipedia: Kurt Kroner, https://de.wikipedia.org/wiki/Kurt_Kroner; Abrufdatum: 06.06.2026\n- Wikipedia: Südwestkirchhof Stahnsdorf, https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf; Abrufdatum: 06.06.2026",
       "publish_status": "veröffentlicht",
       "erstellt_von": "system",
       "geaendert_von": "system",
@@ -7512,12 +7370,12 @@
         "sv": "Kapell, ingångar, mausoleer och viktiga gestalter bakom anläggningen."
       },
       "beschreibung": {
-        "de": "Diese Sammlung zeigt den Südwestkirchhof als gestalteten Ort: Holzkapellen, Hauptzugang, Christusdenkmal, Mausoleen und die Planer, die den Charakter des Waldfriedhofs geprägt haben.",
-        "en": "This collection presents the South-Western Cemetery as a designed place: timber chapels, the main entrance, the Christ monument, mausolea and the planners who shaped the woodland cemetery’s character.",
-        "fr": "Cette collection présente le cimetière du Sud-Ouest comme un lieu conçu: chapelles en bois, entrée principale, monument du Christ, mausolées et concepteurs qui ont façonné le caractère du cimetière forestier.",
-        "pl": "Ta kolekcja pokazuje Cmentarz Południowo-Zachodni jako miejsce świadomie zaprojektowane: drewniane kaplice, główne wejście, pomnik Chrystusa, mauzolea oraz projektantów, którzy ukształtowali charakter leśnego cmentarza.",
-        "ru": "Эта коллекция показывает Юго-Западное кладбище как продуманно созданное пространство: деревянные часовни, главный вход, памятник Христу, мавзолеи и проектировщиков, сформировавших характер лесного кладбища.",
-        "sv": "Denna samling visar Südwestkirchhof som en gestaltad plats: träkapell, huvudentré, Kristusmonument, mausoleer och planerare som formade skogskyrkogårdens karaktär."
+        "de": "Holzkapellen, Hauptzugang, Christusdenkmal und Mausoleen prägen den Charakter des Waldfriedhofs. Seine Planer verbanden Architektur und Landschaft zu einem besonderen Ensemble.",
+        "en": "Timber chapels, the main entrance, the Christ monument and mausoleums shape the character of the woodland cemetery. Its planners combined architecture and landscape into a distinctive ensemble.",
+        "fr": "Les chapelles en bois, l’entrée principale, le monument du Christ et les mausolées façonnent le caractère du cimetière forestier. Ses concepteurs ont uni architecture et paysage en un ensemble singulier.",
+        "pl": "Drewniane kaplice, główne wejście, pomnik Chrystusa i mauzolea kształtują charakter leśnego cmentarza. Jego projektanci połączyli architekturę i krajobraz w wyjątkowy zespół.",
+        "ru": "Деревянные часовни, главный вход, памятник Христу и мавзолеи формируют облик лесного кладбища. Его создатели объединили архитектуру и ландшафт в выразительный ансамбль.",
+        "sv": "Träkapellen, huvudentrén, Kristusmonumentet och mausoleerna präglar skogskyrkogårdens karaktär. Planerarna förenade arkitektur och landskap till en särpräglad helhet."
       },
       "pois": [
         "poi_sws_hauptkapelle",
@@ -7557,12 +7415,12 @@
         "sv": "Återbegravningar, kyrkogårdsområden och förändrade gravformer."
       },
       "beschreibung": {
-        "de": "Alte und Neue Umbettung, Urnenhaine, besondere Blöcke und neuere Bestattungsformen machen sichtbar, wie sich der Südwestkirchhof als Berliner Zentralfriedhof entwickelt hat.",
-        "en": "Old and new reinterment areas, urn groves, special sections and newer burial forms show how the South-Western Cemetery developed as a central Berlin cemetery.",
-        "fr": "Anciennes et nouvelles zones de transfert, jardins d’urnes, secteurs particuliers et formes d’inhumation récentes montrent l’évolution du cimetière du Sud-Ouest comme nécropole centrale berlinoise.",
-        "pl": "Stare i nowe pola przeniesionych grobów, gaje urnowe, szczególne sektory i nowsze formy pochówku pokazują rozwój cmentarza jako centralnej nekropolii Berlina.",
-        "ru": "Старые и новые участки перезахоронений, урновые рощи, особые кварталы и новые формы погребения показывают развитие кладбища как центрального берлинского некрополя.",
-        "sv": "Gamla och nya områden för återbegravningar, urnlundar, särskilda kvarter och nyare gravformer visar hur Südwestkirchhof utvecklades som Berlins centralkyrkogård."
+        "de": "Alte und Neue Umbettung, Urnenhaine, besondere Blöcke und neuere Bestattungsformen veranschaulichen den Wandel vom Berliner Zentralfriedhof zum heutigen Erinnerungs- und Bestattungsort.",
+        "en": "The Old and New Reinterment sections, urn groves, distinctive burial blocks and newer forms of burial illustrate the transition from a Berlin central cemetery to today’s place of remembrance and burial.",
+        "fr": "Les anciennes et nouvelles zones de réinhumation, les bosquets d’urnes, les secteurs particuliers et les formes funéraires récentes illustrent le passage d’un cimetière central berlinois au lieu actuel de mémoire et d’inhumation.",
+        "pl": "Stare i Nowe Kwatery Przeniesionych Grobów, gaje urnowe, szczególne sektory i nowsze formy pochówku ukazują przemianę berlińskiego cmentarza centralnego we współczesne miejsce pamięci i pochówku.",
+        "ru": "Старый и Новый участки перезахоронений, урновые рощи, особые кварталы и новые формы погребения показывают путь от берлинского центрального кладбища к современному месту памяти и захоронения.",
+        "sv": "Gamla och Nya återbegravningsområdet, urnlundar, särskilda kvarter och nyare gravskick visar utvecklingen från Berlins centralkyrkogård till dagens minnes- och begravningsplats."
       },
       "pois": [
         "poi_sws_alte-umbettung",
@@ -7602,12 +7460,12 @@
         "sv": "Krigsgravar, hederskvarter och minnesanläggningar från 1900-talet."
       },
       "beschreibung": {
-        "de": "Diese Sammlung bündelt die großen Orte des Kriegsgedenkens auf dem Südwestkirchhof: britische und italienische Gräberstätten, deutsche Ehrenbereiche und zentrale Anlagen für Opfer von Krieg und Gewaltherrschaft.",
-        "en": "This collection brings together the major places of war remembrance at the South-Western Cemetery: British and Italian war graves, German honour sections and central memorials for victims of war and tyranny.",
-        "fr": "Cette collection réunit les grands lieux de mémoire de guerre du cimetière: sépultures britanniques et italiennes, carrés d’honneur allemands et mémoriaux centraux pour les victimes de la guerre et de la tyrannie.",
-        "pl": "Kolekcja łączy najważniejsze miejsca pamięci wojennej na cmentarzu: brytyjskie i włoskie kwatery wojenne, niemieckie pola honorowe oraz centralne miejsca pamięci ofiar wojny i tyranii.",
-        "ru": "Коллекция объединяет важнейшие места военной памяти на кладбище: британские и итальянские военные захоронения, немецкие почётные участки и центральные мемориалы жертв войны и тирании.",
-        "sv": "Samlingen för samman kyrkogårdens viktigaste platser för krigsminne: brittiska och italienska krigsgravar, tyska hedersområden och centrala minnesplatser för offer för krig och förtryck."
+        "de": "Britische und italienische Gräberstätten, deutsche Ehrenbereiche und Gedenkanlagen erinnern an Kriegstote und Opfer von Gewaltherrschaft. Ihre unterschiedlichen Formen spiegeln den Wandel des Gedenkens im 20. Jahrhundert.",
+        "en": "British and Italian war cemeteries, German fields of honour and memorial sites commemorate the war dead and victims of tyranny. Their different forms reflect changes in remembrance during the twentieth century.",
+        "fr": "Les cimetières militaires britanniques et italiens, les carrés d’honneur allemands et les mémoriaux commémorent les morts de guerre et les victimes de la tyrannie. Leurs formes diverses reflètent l’évolution de la mémoire au XXe siècle.",
+        "pl": "Brytyjskie i włoskie cmentarze wojenne, niemieckie kwatery honorowe oraz miejsca pamięci upamiętniają poległych i ofiary przemocy państwowej. Ich różne formy odzwierciedlają przemiany pamięci w XX wieku.",
+        "ru": "Британские и итальянские воинские захоронения, немецкие почётные участки и мемориалы напоминают о погибших на войне и жертвах тирании. Их разные формы отражают изменения культуры памяти в XX веке.",
+        "sv": "Brittiska och italienska krigskyrkogårdar, tyska hederskvarter och minnesplatser hedrar krigsdöda och offer för förtryck. Deras olika former speglar hur minneskulturen förändrades under 1900-talet."
       },
       "pois": [
         "poi_sws_anlage-opfer-krieg-und-gewaltherrschaft",
@@ -7644,12 +7502,12 @@
         "sv": "Biografier präglade av motstånd, förföljelse och våldshistoria."
       },
       "beschreibung": {
-        "de": "Vom politischen Widerstand bis zu Verfolgung und Erinnerung an die NS-Zeit zeigt diese Sammlung Lebenswege, an denen sich deutsche Geschichte besonders eindringlich verdichtet.",
-        "en": "From political resistance to persecution and remembrance of the Nazi era, this collection shows lives in which German history becomes especially tangible.",
-        "fr": "De la résistance politique à la persécution et à la mémoire de la période nazie, cette collection présente des vies où l’histoire allemande se condense avec force.",
-        "pl": "Od oporu politycznego po prześladowania i pamięć o czasach nazizmu, ta kolekcja pokazuje życiorysy, w których niemiecka historia staje się szczególnie wyrazista.",
-        "ru": "От политического сопротивления до преследований и памяти о нацистской эпохе — эта коллекция показывает судьбы, в которых особенно ощутима немецкая история.",
-        "sv": "Från politiskt motstånd till förföljelse och minnet av nazitiden visar denna samling livsöden där tysk historia blir särskilt påtaglig."
+        "de": "Lebenswege von Verfolgten und Menschen des politischen Widerstands machen die Gewalt der nationalsozialistischen Herrschaft und ihre Folgen sichtbar. Gedenkorte bewahren die Erinnerung an ihre Opfer.",
+        "en": "The lives of persecuted people and members of the political resistance reveal the violence of Nazi rule and its consequences. Memorial sites preserve the memory of its victims.",
+        "fr": "Les parcours de personnes persécutées et de membres de la résistance politique rendent visibles la violence du régime national-socialiste et ses conséquences. Les lieux commémoratifs préservent la mémoire de ses victimes.",
+        "pl": "Losy osób prześladowanych i uczestników oporu politycznego ukazują przemoc rządów narodowosocjalistycznych oraz jej następstwa. Miejsca pamięci zachowują pamięć o ofiarach.",
+        "ru": "Судьбы преследуемых и участников политического сопротивления показывают насилие национал-социалистического режима и его последствия. Мемориальные места сохраняют память о жертвах.",
+        "sv": "Förföljdas och politiska motståndskämpars livsöden synliggör naziregimens våld och följder. Minnesplatser bevarar minnet av dess offer."
       },
       "pois": [
         "poi_sws_rudolf-breitscheid",
@@ -7686,12 +7544,12 @@
         "sv": "Statsförvaltning, militär, ministerier och politiskt ansvar."
       },
       "beschreibung": {
-        "de": "Diese Sammlung führt politische und militärische Biografien vom Kaiserreich über Weimar und Nationalsozialismus bis in die Bundesrepublik zusammen.",
-        "en": "This collection links political and military biographies from the German Empire through Weimar and National Socialism to the Federal Republic.",
-        "fr": "Cette collection relie des biographies politiques et militaires de l’Empire allemand à la République fédérale, en passant par Weimar et le national-socialisme.",
-        "pl": "Kolekcja łączy biografie polityczne i wojskowe od Cesarstwa Niemieckiego przez Republikę Weimarską i narodowy socjalizm po Republikę Federalną.",
-        "ru": "Коллекция объединяет политические и военные биографии от Германской империи через Веймар и национал-социализм до Федеративной Республики.",
-        "sv": "Samlingen knyter samman politiska och militära biografier från kejsarriket via Weimar och nationalsocialismen till Förbundsrepubliken."
+        "de": "Militärs, Minister, Beamte und politische Akteure stehen für Brüche und Kontinuitäten vom Kaiserreich über die Weimarer Republik und den Nationalsozialismus bis in die Bundesrepublik.",
+        "en": "Military officers, ministers, civil servants and political figures embody ruptures and continuities from the German Empire through the Weimar Republic and National Socialism to the Federal Republic.",
+        "fr": "Militaires, ministres, fonctionnaires et acteurs politiques incarnent les ruptures et les continuités de l’Empire allemand à la République fédérale, en passant par Weimar et le national-socialisme.",
+        "pl": "Wojskowi, ministrowie, urzędnicy i działacze polityczni ukazują zerwania i ciągłości od Cesarstwa Niemieckiego przez Republikę Weimarską i narodowy socjalizm po Republikę Federalną.",
+        "ru": "Военные, министры, государственные служащие и политические деятели олицетворяют разрывы и преемственность от Германской империи через Веймарскую республику и национал-социализм до Федеративной Республики.",
+        "sv": "Militärer, ministrar, ämbetsmän och politiska aktörer speglar brott och kontinuiteter från kejsardömet via Weimarrepubliken och nationalsocialismen till Förbundsrepubliken."
       },
       "pois": [
         "poi_sws_alexander-von-kluck",
@@ -7729,12 +7587,12 @@
         "sv": "Kända namn från film, tv, DEFA och dubbning."
       },
       "beschreibung": {
-        "de": "Der Südwestkirchhof ist auch ein Ort der Film- und Fernsehgeschichte: von Murnau und Gottschalk über Manfred Krug bis zu Stimmen, Regie und Produktion der Synchron- und DEFA-Kultur.",
-        "en": "The South-Western Cemetery is also a place of film and television history: from Murnau and Gottschalk to Manfred Krug, and to the voices, direction and production of dubbing and DEFA culture.",
-        "fr": "Le cimetière du Sud-Ouest est aussi un lieu de l’histoire du cinéma et de la télévision: de Murnau et Gottschalk à Manfred Krug, jusqu’aux voix, à la réalisation et à la production du doublage et de la DEFA.",
-        "pl": "Cmentarz jest także miejscem historii filmu i telewizji: od Murnaua i Gottschalka po Manfreda Kruga, głosy, reżyserię i produkcję kultury dubbingu oraz DEFA.",
-        "ru": "Кладбище является также местом истории кино и телевидения: от Мурнау и Готшалька до Манфреда Круга, голосов, режиссуры и производства культуры дубляжа и DEFA.",
-        "sv": "Südwestkirchhof är också en plats för film- och tv-historia: från Murnau och Gottschalk till Manfred Krug och till rösterna, regin och produktionen inom dubbning och DEFA-kultur."
+        "de": "Regisseure, Schauspieler, Synchronstimmen und Filmschaffende stehen für Film- und Fernsehgeschichte von der Stummfilmzeit über die DEFA bis zur Gegenwart.",
+        "en": "Directors, actors, dubbing voices and filmmakers represent the history of film and television from the silent era and DEFA to the present day.",
+        "fr": "Réalisateurs, comédiens, voix de doublage et professionnels du cinéma retracent l’histoire du cinéma et de la télévision, du muet et de la DEFA jusqu’à nos jours.",
+        "pl": "Reżyserzy, aktorzy, artyści dubbingowi i filmowcy reprezentują historię filmu i telewizji od kina niemego i DEFA po współczesność.",
+        "ru": "Режиссёры, актёры, мастера дубляжа и кинематографисты представляют историю кино и телевидения от немого фильма и студии DEFA до современности.",
+        "sv": "Regissörer, skådespelare, dubbningsröster och filmskapare representerar film- och tv-historia från stumfilmstiden och DEFA till nutiden."
       },
       "pois": [
         "poi_sws_fw-murnau",
@@ -7779,12 +7637,12 @@
         "sv": "Teater, varieté, show och populär underhållning."
       },
       "beschreibung": {
-        "de": "Diese Sammlung schaut auf die öffentliche Bühne: Schauspiel, Theaterleitung, Varieté, Zirkus, Show und jene Unterhaltungsformen, die Stadt- und Medienkultur geprägt haben.",
-        "en": "This collection looks at the public stage: acting, theatre management, variety, circus, show business and forms of entertainment that shaped urban and media culture.",
-        "fr": "Cette collection regarde la scène publique: jeu d’acteur, direction théâtrale, variétés, cirque, spectacle et formes de divertissement qui ont marqué la culture urbaine et médiatique.",
-        "pl": "Kolekcja koncentruje się na scenie publicznej: aktorstwie, dyrekcji teatralnej, variété, cyrku, show i formach rozrywki, które kształtowały kulturę miejską i medialną.",
-        "ru": "Коллекция посвящена публичной сцене: актёрству, театральному руководству, варьете, цирку, шоу и формам развлечения, сформировавшим городскую и медийную культуру.",
-        "sv": "Samlingen riktar blicken mot den offentliga scenen: skådespeleri, teaterledning, varieté, cirkus, show och underhållningsformer som präglade stads- och mediekultur."
+        "de": "Schauspiel, Theaterleitung, Varieté, Zirkus und Show erzählen von der Entwicklung populärer Unterhaltung und ihrem Einfluss auf Stadt- und Medienkultur.",
+        "en": "Acting, theatre management, variety, circus and show business trace the development of popular entertainment and its influence on urban and media culture.",
+        "fr": "Le jeu théâtral, la direction de théâtre, les variétés, le cirque et le spectacle racontent l’évolution du divertissement populaire et son influence sur la culture urbaine et médiatique.",
+        "pl": "Aktorstwo, kierowanie teatrem, variété, cyrk i widowisko opowiadają o rozwoju popularnej rozrywki oraz jej wpływie na kulturę miejską i medialną.",
+        "ru": "Актёрское искусство, руководство театрами, варьете, цирк и шоу рассказывают о развитии массовых развлечений и их влиянии на городскую и медиакультуру.",
+        "sv": "Skådespeleri, teaterledning, varieté, cirkus och show skildrar den populära underhållningens utveckling och dess inflytande på stads- och mediekulturen."
       },
       "pois": [
         "poi_sws_ralph-arthur-roberts",
@@ -7821,12 +7679,12 @@
         "sv": "Kompositörer, kyrkomusik, opera och musikalisk scenkultur."
       },
       "beschreibung": {
-        "de": "Von Engelbert Humperdinck und Hugo Distler bis Meta Seinemeyer zeigt diese Sammlung die musikalische Tiefe des Friedhofs.",
-        "en": "From Engelbert Humperdinck and Hugo Distler to Meta Seinemeyer, this collection shows the cemetery’s musical depth.",
-        "fr": "D’Engelbert Humperdinck et Hugo Distler à Meta Seinemeyer, cette collection montre la profondeur musicale du cimetière.",
-        "pl": "Od Engelberta Humperdincka i Hugo Distlera po Metę Seinemeyer kolekcja ukazuje muzyczną głębię cmentarza.",
-        "ru": "От Энгельберта Хумпердинка и Хуго Дистлера до Меты Зайнемайер эта коллекция показывает музыкальную глубину кладбища.",
-        "sv": "Från Engelbert Humperdinck och Hugo Distler till Meta Seinemeyer visar samlingen kyrkogårdens musikaliska djup."
+        "de": "Komponisten, Sängerinnen und Sänger sowie Kirchenmusiker stehen für die große Spannweite musikalischer Kultur zwischen Opernbühne, Konzertsaal und Kirche.",
+        "en": "Composers, singers and church musicians represent the breadth of musical culture across the opera stage, concert hall and church.",
+        "fr": "Compositeurs, chanteuses, chanteurs et musiciens d’église témoignent de l’ampleur de la culture musicale entre scène lyrique, salle de concert et église.",
+        "pl": "Kompozytorzy, śpiewaczki, śpiewacy i muzycy kościelni ukazują szeroki zakres kultury muzycznej między sceną operową, salą koncertową a kościołem.",
+        "ru": "Композиторы, певицы, певцы и церковные музыканты представляют широкую панораму музыкальной культуры между оперной сценой, концертным залом и церковью.",
+        "sv": "Kompositörer, sångare och kyrkomusiker representerar musiklivets stora bredd mellan operascen, konsertsal och kyrka."
       },
       "pois": [
         "poi_sws_engelbert-humperdinck",
@@ -7860,12 +7718,12 @@
         "sv": "Författare, förläggare, journalister och liv präglade av språk."
       },
       "beschreibung": {
-        "de": "Diese Sammlung verbindet literarische, publizistische und sprachgeschichtliche Biografien: von Fontane und Jacobsohn über Ullstein bis zu Emil Krebs und Gustav Langenscheidt.",
-        "en": "This collection links literary, journalistic and linguistic biographies: from Fontane and Jacobsohn to Ullstein, Emil Krebs and Gustav Langenscheidt.",
-        "fr": "Cette collection relie des biographies littéraires, journalistiques et linguistiques: de Fontane et Jacobsohn à Ullstein, Emil Krebs et Gustav Langenscheidt.",
-        "pl": "Kolekcja łączy biografie literackie, publicystyczne i językowe: od Fontanego i Jacobsohna po Ullsteina, Emila Krebsa i Gustava Langenscheidta.",
-        "ru": "Коллекция объединяет литературные, публицистические и языковые биографии: от Фонтане и Якобсона до Ульштайна, Эмиля Кребса и Густава Лангеншайдта.",
-        "sv": "Samlingen för samman litterära, journalistiska och språkhistoriska biografier: från Fontane och Jacobsohn till Ullstein, Emil Krebs och Gustav Langenscheidt."
+        "de": "Schriftsteller, Verleger, Journalisten und Sprachforscher prägten Literatur, Presse und Sprachvermittlung vom 19. Jahrhundert bis in die Moderne.",
+        "en": "Writers, publishers, journalists and linguists shaped literature, the press and language education from the nineteenth century into the modern era.",
+        "fr": "Écrivains, éditeurs, journalistes et linguistes ont marqué la littérature, la presse et la transmission des langues du XIXe siècle à l’époque moderne.",
+        "pl": "Pisarze, wydawcy, dziennikarze i językoznawcy kształtowali literaturę, prasę oraz nauczanie języków od XIX wieku po czasy nowoczesne.",
+        "ru": "Писатели, издатели, журналисты и языковеды формировали литературу, прессу и языковое образование с XIX века до эпохи модерна.",
+        "sv": "Författare, förläggare, journalister och språkforskare formade litteratur, press och språkförmedling från 1800-talet in i modern tid."
       },
       "pois": [
         "poi_sws_theodor-fontane-jun",
@@ -7903,12 +7761,12 @@
         "sv": "Konstnärsbiografier, fotografer, skulptur och framstående gravmonument."
       },
       "beschreibung": {
-        "de": "Malerei, Grafik, Fotografie, Skulptur und Grabkunst treffen hier zusammen. Die Sammlung zeigt Personen der Kunstgeschichte ebenso wie besondere Denkmäler und gestaltete Grabstätten.",
-        "en": "Painting, graphic art, photography, sculpture and funerary art meet here. The collection presents figures from art history as well as distinctive monuments and designed graves.",
-        "fr": "Peinture, graphisme, photographie, sculpture et art funéraire se rencontrent ici. La collection présente des figures de l’histoire de l’art ainsi que des monuments et tombes remarquables.",
-        "pl": "Spotykają się tu malarstwo, grafika, fotografia, rzeźba i sztuka sepulkralna. Kolekcja pokazuje postaci historii sztuki oraz szczególne pomniki i zaprojektowane groby.",
-        "ru": "Здесь встречаются живопись, графика, фотография, скульптура и надгробное искусство. Коллекция показывает деятелей истории искусства, а также выразительные памятники и оформленные могилы.",
-        "sv": "Måleri, grafik, fotografi, skulptur och gravkonst möts här. Samlingen visar konsthistoriska personer liksom särskilda monument och gestaltade gravar."
+        "de": "Malerei, Grafik, Fotografie, Skulptur und Grabkunst begegnen sich in Künstlerbiografien, Denkmälern und besonders gestalteten Grabstätten.",
+        "en": "Painting, graphic art, photography, sculpture and funerary art meet in artists’ lives, monuments and exceptionally designed graves.",
+        "fr": "Peinture, arts graphiques, photographie, sculpture et art funéraire se rencontrent dans les parcours d’artistes, les monuments et les sépultures particulièrement travaillées.",
+        "pl": "Malarstwo, grafika, fotografia, rzeźba i sztuka sepulkralna spotykają się w biografiach artystów, pomnikach i wyjątkowo zaprojektowanych grobach.",
+        "ru": "Живопись, графика, фотография, скульптура и надгробное искусство соединяются в биографиях художников, памятниках и особо оформленных захоронениях.",
+        "sv": "Måleri, grafik, fotografi, skulptur och gravkonst möts i konstnärsliv, monument och särskilt gestaltade gravplatser."
       },
       "pois": [
         "poi_sws_heinrich-zille",
@@ -7951,12 +7809,12 @@
         "sv": "Forskare, lärda, medicin, naturkunskap och humaniora."
       },
       "beschreibung": {
-        "de": "Die Sammlung zeigt die wissenschaftliche Spannweite des Friedhofs: Ethnologie, Geographie, Naturschutz, Medizin, Sprachen, Kunstgeschichte und Technikgeschichte.",
-        "en": "This collection shows the cemetery’s scientific range: ethnology, geography, nature conservation, medicine, languages, art history and the history of technology.",
-        "fr": "Cette collection montre l’étendue scientifique du cimetière: ethnologie, géographie, protection de la nature, médecine, langues, histoire de l’art et histoire des techniques.",
-        "pl": "Kolekcja pokazuje naukową rozpiętość cmentarza: etnologię, geografię, ochronę przyrody, medycynę, języki, historię sztuki i historię techniki.",
-        "ru": "Коллекция показывает научный диапазон кладбища: этнологию, географию, охрану природы, медицину, языки, историю искусства и историю техники.",
-        "sv": "Samlingen visar kyrkogårdens vetenskapliga bredd: etnologi, geografi, naturskydd, medicin, språk, konsthistoria och teknikhistoria."
+        "de": "Ethnologie, Geographie, Naturschutz, Medizin, Sprachwissenschaft, Kunstgeschichte und Technikgeschichte belegen die wissenschaftliche Vielfalt der hier bestatteten Forscher und Gelehrten.",
+        "en": "Ethnology, geography, nature conservation, medicine, linguistics, art history and the history of technology demonstrate the scholarly diversity of the researchers and academics buried here.",
+        "fr": "Ethnologie, géographie, protection de la nature, médecine, linguistique, histoire de l’art et histoire des techniques témoignent de la diversité scientifique des chercheurs et savants inhumés ici.",
+        "pl": "Etnologia, geografia, ochrona przyrody, medycyna, językoznawstwo, historia sztuki i historia techniki ukazują naukową różnorodność pochowanych tu badaczy i uczonych.",
+        "ru": "Этнология, география, охрана природы, медицина, языкознание, история искусства и техники показывают научное многообразие похороненных здесь исследователей и учёных.",
+        "sv": "Etnologi, geografi, naturskydd, medicin, språkvetenskap, konsthistoria och teknikhistoria visar den vetenskapliga bredden bland de forskare och lärda som är begravda här."
       },
       "pois": [
         "poi_sws_adolf-bastian",
@@ -7994,12 +7852,12 @@
         "sv": "Ingenjörer, entreprenörer och pionjärer inom radio, flyg och fordon."
       },
       "beschreibung": {
-        "de": "Diese Sammlung verbindet Industriegeschichte und technische Innovation: Elektrotechnik, Funk, Flugzeugbau, Automobilbau, Fernsehtechnik und Ingenieurwesen.",
-        "en": "This collection links industrial history and technical innovation: electrical engineering, radio, aircraft construction, automobile design, television technology and engineering.",
-        "fr": "Cette collection relie histoire industrielle et innovation technique: électrotechnique, radio, construction aéronautique, automobile, technologie télévisuelle et ingénierie.",
-        "pl": "Kolekcja łączy historię przemysłu i innowacje techniczne: elektrotechnikę, radio, budowę samolotów, konstrukcję samochodów, technikę telewizyjną i inżynierię.",
-        "ru": "Коллекция объединяет промышленную историю и технические инновации: электротехнику, радио, авиастроение, автомобилестроение, телевизионную технику и инженерное дело.",
-        "sv": "Samlingen förenar industrihistoria och teknisk innovation: elektroteknik, radio, flygplanskonstruktion, fordonsutveckling, tv-teknik och ingenjörskonst."
+        "de": "Elektrotechnik, Funk, Flugzeug- und Automobilbau, Fernsehtechnik und Ingenieurwesen stehen für industrielle Entwicklung und technische Innovation.",
+        "en": "Electrical engineering, radio, aircraft and automobile construction, television technology and engineering represent industrial development and technical innovation.",
+        "fr": "Électrotechnique, radio, construction aéronautique et automobile, télévision et ingénierie témoignent du développement industriel et de l’innovation technique.",
+        "pl": "Elektrotechnika, radio, budowa samolotów i samochodów, technika telewizyjna oraz inżynieria reprezentują rozwój przemysłowy i innowacje techniczne.",
+        "ru": "Электротехника, радио, авиа- и автомобилестроение, телевизионная техника и инженерное дело представляют промышленное развитие и технические инновации.",
+        "sv": "Elektroteknik, radio, flygplans- och biltillverkning, televisionsteknik och ingenjörskonst representerar industriell utveckling och teknisk innovation."
       },
       "pois": [
         "poi_sws_werner-von-siemens",

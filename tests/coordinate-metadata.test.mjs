@@ -21,17 +21,16 @@ describe('inferCoordinateSource', () => {
     });
   });
 
-  it('detects wo-sie-ruhen coordinates from API imports', () => {
+  it('detects wo-sie-ruhen coordinates from source and location notes', () => {
     const source = inferCoordinateSource({
       koordinaten: { lat: 52.387747, lng: 13.177103 },
-      quellen: ['wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04'],
-      notiz: 'Neu aus wo-sie-ruhen.de API. Lage: Block Trinitatis, Feld 10, Wahlstelle 64. Ehrengrab: nein.',
+      quellen: ['wo-sie-ruhen.de'],
+      notiz: 'Quelle: wo-sie-ruhen.de. Lage: Block Trinitatis, Feld 10, Wahlstelle 64. Ehrengrab: nein.',
     });
 
     expect(source).toEqual({
       typ: 'wo-sie-ruhen',
-      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
-      datum: '2026-04-04',
+      beleg: 'wo-sie-ruhen.de',
       genauigkeit: 'hoch',
     });
   });
@@ -78,8 +77,8 @@ describe('extractLagehinweis', () => {
     });
   });
 
-  it('extracts location hints from wo-sie-ruhen API notes', () => {
-    expect(extractLagehinweis('Neu aus wo-sie-ruhen.de API. Lage: Block Schöneberg, Feld 8, Wahlstelle 276. Ehrengrab: nein.')).toEqual({
+  it('extracts location hints from imported wo-sie-ruhen notes', () => {
+    expect(extractLagehinweis('Quelle: wo-sie-ruhen.de. Lage: Block Schöneberg, Feld 8, Wahlstelle 276. Ehrengrab: nein.')).toEqual({
       lagehinweis: 'Block Schöneberg, Feld 8, Wahlstelle 276',
       lagehinweis_quelle: 'wo-sie-ruhen.de',
     });
@@ -92,8 +91,8 @@ describe('backfillCoordinateMetadata', () => {
       pois: [{
         id: 'poi_sws_test',
         koordinaten: { lat: 52.0, lng: 13.0 },
-        quellen: ['wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04'],
-        notiz: 'Neu aus wo-sie-ruhen.de API. Lage: Block Test, Feld 1. Ehrengrab: nein.',
+        quellen: ['wo-sie-ruhen.de'],
+        notiz: 'Quelle: wo-sie-ruhen.de. Lage: Block Test, Feld 1. Ehrengrab: nein.',
       }],
       collections: [],
     });

@@ -3,14 +3,13 @@
 Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof Stahnsdorf](https://www.suedwestkirchhof.de/), einen der größten und landschaftlich eindrucksvollsten Friedhöfe Europas (ca. 206 Hektar). Das System besteht aus einer dynamischen Visitor-App und einem integrierten Redaktionswerkzeug für die Verwaltung der Daten.
 
 ## ✨ Funktionen - Visitor App
-- **Interaktive Leaflet-Karte** mit Deep Zoom (bis Stufe 22) für präzise Grabsuche
+- **Interaktive Leaflet-Karte** mit CARTO Dark Matter, lokalem OSM-Overlay für Friedhofsfläche und Wege, kompakten SVG-Markern und Deep Zoom bis Stufe 22
 - **Live-Daten aus Firestore** — POIs und Sammlungen werden in Echtzeit geladen
 - **Offline-Unterstützung** — Daten werden via IndexedDB zwischengespeichert
-- **Automatische Spracherkennung** — Anzeige auf Deutsch, Englisch oder Französisch
-- **Globale Suche** — POIs nach Name finden
-- **Sammlungen** — thematisch kuratierte Gruppen (z.B. „Kunst & Kultur")
+- **Automatische Spracherkennung** — Anzeige auf Deutsch, Englisch, Französisch, Polnisch, Russisch oder Schwedisch
+- **Globale Suche** — einklappbare Namenssuche mit direktem Kartenfokus
+- **Sammlungen** — thematisch kuratierte Gruppen mit Beschreibung, GPS-Ortsliste und Karte
 - **POI-Bilder** — Detailseiten zeigen Bilder mit Lightbox, Zoom und Verschieben
-- **GPS-Entfernung** — zeigt die Live-Entfernung zum nächsten Ziel
 - **Vor-Ort-Ortung** — kontinuierliche hochgenaue Position mit Genauigkeitskreis und sichtbaren Fehlermeldungen
 - **Offline-taugliche Oberfläche** — Firestore-Cache, Retry-Zustände und lokal gebündelte SVG-Icons
 
@@ -82,11 +81,20 @@ npm run test:e2e     # E2E Playwright Tests (startet den Emulator automatisch)
 npm run test:rules   # Firestore Security Rules Tests (startet Emulator automatisch)
 npm run build        # Production Static Export
 npm run verify:export # Export-Routen, 404-Fallback, Icons und Browser-Zoom prüfen
+npm run map:overlay  # Statisches OSM-Karten-Overlay bewusst aktualisieren
 ```
 
 ## 📦 Build & Deployment
 
 Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) nach einem erfolgreichen Lauf des Workflows `test.yml` auf `main`. Der Test-Workflow führt Unit-, TypeScript-, Rules- und E2E-Tests sowie den Production-Build und eine Prüfung des Export-Artefakts aus.
+
+Die Installation unter `https://www.suedwestkirchhof.de/stahnsdorf/` und ein mögliches automatisches Deployment auf den Webserver sind in [`docs/deployment-suedwestkirchhof.md`](docs/deployment-suedwestkirchhof.md) beschrieben.
+
+### Statisches Karten-Overlay
+
+`public/map-overlay.geojson` enthält die Friedhofsfläche aus [OSM-Way 25029213](https://www.openstreetmap.org/way/25029213) sowie die darin verlaufenden Wege. Die Datei wird mit `npm run map:overlay` über Overpass neu erzeugt, an der Friedhofsgrenze abgeschnitten, auf sechs Nachkommastellen gerundet und stabil sortiert. Dieser Befehl ist nur nötig, wenn sich das OSM-Wegenetz geändert hat; Entwicklung, Build und App laden keine Daten von Overpass.
+
+Die Fläche ist in allen Zoomstufen sichtbar. Hauptwege (`service`, `pedestrian`) erscheinen ab Zoom 15, kleinere Wege ab Zoom 17. Die Exportprüfung begrenzt das Overlay auf 350 KB. OSM-Quelle, Datenstand und Erzeugungszeit bleiben als Metadaten in der Datei erhalten; die Attribution wird in der Karte angezeigt.
 
 **Voraussetzung:** Die Firebase Environment-Variablen müssen als **Repository Secrets** in GitHub hinterlegt sein.
 
@@ -100,7 +108,7 @@ npm run build
 Die zentrale Quelle der Wahrheit für das Datenmodell ist `docs/schema.md`.
 Die zentrale Quelle der Wahrheit für die Inhalte ist `data/stahnsdorf-backup-translated.json`. Firestore ist die Laufzeitkopie für App und Admin, darf aber nicht der einzige Ort für redaktionelle Daten sein.
 Die TypeScript-Typen in `src/lib/types.ts` müssen **immer** mit dem Schema synchron gehalten werden (`POI`, `Collection`, `FirestorePOI`).
-Redaktionelle Regeln für POI-Informationstexte stehen in `docs/redaktionelle-leitlinien.md`.
+Redaktionelle Regeln für POI-Texte, Quellen und Sammlungsbeschreibungen stehen in `docs/redaktionelle-leitlinien.md`.
 
 POI- und Sammlungsdetails verwenden statische Query-Routen (`/poi?id=…`, `/sammlung?id=…`, `/admin/poi/edit?id=…`). So sind neue Firestore-Dokumente im statischen GitHub-Pages-Export sofort erreichbar. Alte Pfad-Links werden vom exportierten 404-Fallback auf die kanonischen Query-Routen umgeleitet.
 
@@ -121,7 +129,9 @@ Die geprüften OSM-Kandidaten können anschließend in den lokalen Backup-Snapsh
 npm run osm:apply
 ```
 
-Dabei werden bestehende POIs mit OSM-Koordinaten und Quellen aktualisiert und neue POIs mit mehrsprachigen Grundtexten ergänzt.
+Dabei werden bestehende POIs mit OSM-Koordinaten und strukturierter Koordinatenherkunft aktualisiert und neue POIs mit mehrsprachigen Grundtexten ergänzt.
+
+OSM-Belege erscheinen nicht in der öffentlichen Quellenliste. Der vollständige technische Beleg wird intern im `notiz`-Quellenarchiv gesichert; Node, Way oder Relation und das Übernahmedatum bleiben strukturiert in `koordinaten_quelle` gespeichert.
 
 ### Koordinaten-Herkunft strukturieren
 Der lokale Backup-Snapshot kann aus bestehenden Quellen und Notizen strukturierte Felder für GPS-Herkunft und Lagehinweise ableiten:
@@ -140,6 +150,16 @@ npm run coordinates:manual-osmand
 ```
 
 Der Import überschreibt keine Koordinaten mit `koordinaten_quelle.typ` `osm` oder `wo-sie-ruhen`. Neue manuelle Einträge werden mit `koordinaten_quelle.typ` `manuell-osmand` dokumentiert.
+
+### Redaktionelle Daten bereinigen
+
+Die abgestimmten Quellenregeln und mehrsprachigen Sammlungsbeschreibungen können reproduzierbar auf den JSON-Master angewendet werden:
+
+```bash
+npm run editorial:cleanup
+```
+
+Der idempotente Lauf entfernt Grabstättenplan-, OpenStreetMap- und manuelle OsmAnd-Verweise aus der öffentlichen Quellenliste, archiviert entfernte Angaben in `notiz`, formatiert Quellen-Datumsangaben deutsch und setzt die Beschreibungen aller zwölf Sammlungen in den sechs Zielsprachen.
 
 ### Security Rules Deploy
 Wenn sich die Firebase Security Rules (`firestore.rules`, `storage.rules`) oder Indexe (`firestore.indexes.json`) ändern:
@@ -173,4 +193,4 @@ npm run images:manifest -- \
 `images:prepare` wendet EXIF-Orientierung an und schreibt daraus neue JPEGs. Ein im Importmanifest ausdrücklich gesetzter `nachweis` hat Vorrang vor dem Urheber aus den Bildmetadaten und dem Standardnachweis. `images:apply` schreibt die Bildreferenzen aus `inputdata/firebase-bilder-manifest.json` nach `data/stahnsdorf-backup-translated.json`. Die App kann Bilder nur anzeigen, wenn die POI-Daten explizite `bilder`-Einträge enthalten; aus der POI-ID wird keine Bildliste automatisch abgeleitet. Die Originaldateien bleiben lokal unverändert. Das JSON-Backup enthält Bildreferenzen und Nachweise, aber keine Binärdateien aus Firebase Storage. Bereits importierte Storage-Dateien können mit `npm run import:images -- --apply --force` gezielt überschrieben werden. Für alle Schritte muss derselbe Firebase-Bucket verwendet werden; bei CLI-Aufrufen kann er mit `--bucket <bucket-name>` explizit gesetzt werden.
 
 ## 📄 Lizenz
-Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende
+Kartendaten: © [OpenStreetMap](https://www.openstreetmap.org/copyright) Mitwirkende, © [CARTO](https://carto.com/attributions)

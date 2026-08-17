@@ -30,12 +30,7 @@ export default function POICard({ poi, onClose }: Props) {
   const label = typeMap[poi.typ] || poi.typ
 
   return (
-    <div className={styles.card}>
-      {/* Drag Handle */}
-      <div className={styles.dragHandle}>
-        <div className={styles.dragBar} />
-      </div>
-
+    <div className={styles.card} data-testid="poi-card">
       <button className={styles.close} onClick={onClose} aria-label={dict.close}>
         <AppIcon name="close" />
       </button>
@@ -56,7 +51,7 @@ export default function POICard({ poi, onClose }: Props) {
         )}
 
         <div className={styles.actions}>
-          <Link href={poiDetailHref(poi.id)} className={styles.primaryBtn}>
+          <Link href={poiDetailHref(poi.id, '/')} className={styles.primaryBtn}>
             <span>{dict.learnMore}</span>
             <AppIcon name="arrow_forward" />
           </Link>

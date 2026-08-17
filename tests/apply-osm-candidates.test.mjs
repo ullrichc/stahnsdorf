@@ -48,8 +48,9 @@ describe('applyOSMAuditToBackup', () => {
       genauigkeit: 'hoch',
     });
     expect(result.pois[0].status).toBe('bestätigt');
-    expect(result.pois[0].quellen[0]).toContain('OpenStreetMap: node 1');
+    expect(result.pois[0].quellen).toEqual([]);
     expect(result.pois[0].notiz).toContain('OSM-Koordinate übernommen');
+    expect(result.pois[0].notiz).toContain('https://www.openstreetmap.org/node/1');
   });
 
   it('adds trusted new POIs with localized text and Firestore backup fields', () => {
@@ -86,6 +87,8 @@ describe('applyOSMAuditToBackup', () => {
     expect(result.pois[0].kurztext.ru).toContain('Могила');
     expect(result.pois[0].publish_status).toBe('veröffentlicht');
     expect(result.pois[0].koordinaten_quelle.typ).toBe('osm');
+    expect(result.pois[0].quellen).toEqual([]);
+    expect(result.pois[0].notiz).toContain('https://www.openstreetmap.org/node/12312719341');
     expect(result.pois[0].wikipedia_url).toBe('https://de.wikipedia.org/wiki/Paul_Manteufel');
   });
 
@@ -112,6 +115,7 @@ describe('applyOSMAuditToBackup', () => {
     const twice = applyOSMAuditToBackup(once, audit, { fetchedAt: '2026-05-25' });
 
     expect(twice.pois.filter((poi) => poi.id === 'poi_sws_michael-heinrich')).toHaveLength(1);
+    expect(twice.pois[0].notiz.match(/https:\/\/www\.openstreetmap\.org\/node\/12912566004/g)).toHaveLength(1);
   });
 
   it('chooses the richer OSM object when several candidates match the same existing POI', () => {
@@ -155,8 +159,8 @@ describe('applyOSMAuditToBackup', () => {
 
     const result = applyOSMAuditToBackup(backup, audit, { fetchedAt: '2026-05-25' });
     expect(result.pois[0].koordinaten).toEqual({ lat: 52.3900635, lng: 13.1773688 });
-    expect(result.pois[0].quellen).toHaveLength(1);
-    expect(result.pois[0].quellen[0]).toContain('node 2547420763');
+    expect(result.pois[0].quellen).toEqual([]);
+    expect(result.pois[0].notiz).toContain('node 2547420763');
   });
 
   it('uses editorial names for unnamed OSM objects', () => {

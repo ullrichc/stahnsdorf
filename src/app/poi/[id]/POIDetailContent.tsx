@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch'
 import { POI } from '@/lib/types'
@@ -9,15 +10,21 @@ import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
 import { resolveImageUrl } from '@/lib/images'
 import { getLightboxNextIndex, getLightboxPreviousIndex, shouldCloseLightbox } from '@/lib/image-lightbox'
-import { formatDateRange, linkifySourceText } from '@/lib/poi-display'
+import { formatPoiDate, linkifySourceText } from '@/lib/poi-display'
 import { feedbackFormUrl } from '@/lib/feedback'
+import { mapPoiHref, normalizeInternalRedirect } from '@/lib/redirect'
+import { isValidCoordinates } from '@/lib/geo'
+import { shouldUseBrowserBack } from '@/lib/navigation'
 import AudioPlayer from '@/components/AudioPlayer'
 import styles from './page.module.css'
 import AppIcon from '@/components/AppIcon'
+import { getPoiTypeLabel } from '@/lib/poi-type'
 
 export default function POIDetailContent({ poi }: { poi: POI }) {
   const locale = useLocale()
   const dict = useDictionary(locale)
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null)
   const lightboxRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -25,20 +32,16 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
 
   const audioSrc = (poi.audio && typeof poi.audio === 'object') ? poi.audio[locale] || poi.audio['de'] : undefined
   
-  // Resolve localized type labels from the central dictionary mapping
-  const getTypeLabel = (typ: string): string => {
-    switch (typ) {
-      case 'grab': return dict.typeGrab
-      case 'bauwerk': return dict.typeBauwerk
-      case 'bereich': return dict.typeBereich
-      case 'denkmal': return dict.typeDenkmal
-      case 'mausoleum': return dict.typeMausoleum
-      case 'gedenkanlage': return dict.typeGedenkanlage
-      default: return typ
-    }
-  }
-  const label = getTypeLabel(poi.typ)
-  const dateRange = formatDateRange(poi.datum_von, poi.datum_bis)
+  const label = getPoiTypeLabel(poi.typ, dict)
+  const dateText = formatPoiDate(poi.typ, poi.datum_von, poi.datum_bis, {
+    range: dict.dateRange,
+    born: dict.dateBorn,
+    died: dict.dateDied,
+    built: dict.dateBuilt,
+    created: dict.dateCreated,
+    until: dict.dateUntil,
+  })
+  const hasCoordinates = isValidCoordinates(poi.koordinaten)
   const images = poi.bilder ?? []
   const activeImage = activeImageIndex !== null ? images[activeImageIndex] : undefined
   const activeImageUrl = resolveImageUrl(activeImage?.datei)
@@ -129,24 +132,33 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
     <div className={styles.page}>
       {/* Header with back button */}
       <div className={styles.header}>
-        <Link href="/" className={styles.back} aria-label={dict.back}>
+        <button
+          type="button"
+          className={styles.back}
+          aria-label={dict.back}
+          onClick={() => {
+            const fallback = normalizeInternalRedirect(searchParams.get('from')) ?? '/'
+            if (shouldUseBrowserBack(document.referrer, window.location.origin, window.history.length)) {
+              router.back()
+            } else {
+              router.push(fallback)
+            }
+          }}
+        >
           <AppIcon name="arrow_back" />
-        </Link>
+        </button>
+        <span className={styles.headerLabel}>{label}</span>
       </div>
 
       <div className={styles.content}>
-        {/* Type badge */}
-        <span className={styles.badge}>{label}</span>
-
         {/* Name */}
         <h1 className={styles.name}>{t(poi.name, locale)}</h1>
 
-        {/* Date & distance chips */}
-        {dateRange && (
+        {/* Date */}
+        {dateText && (
           <div className={styles.chips}>
             <span className={styles.dateChip}>
-              <AppIcon name="history" style={{ fontSize: '14px' }} />
-              {dateRange}
+              {dateText}
             </span>
           </div>
         )}
@@ -155,6 +167,24 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
         <div className={styles.textBlock}>
           <p className={styles.description}>{t(poi.beschreibung, locale)}</p>
         </div>
+
+        {(poi.lagehinweis || hasCoordinates) && (
+          <div className={styles.locationHint}>
+            <AppIcon name="location_on" />
+            <div className={styles.locationContent}>
+              <div className={styles.locationHeader}>
+                <span className={styles.locationLabel}>{dict.locationHint}</span>
+                {hasCoordinates && (
+                  <Link href={mapPoiHref(poi.id)} className={styles.mapLink}>
+                    {dict.showOnMap}
+                    <AppIcon name="arrow_forward" />
+                  </Link>
+                )}
+              </div>
+              {poi.lagehinweis && <p>{poi.lagehinweis}</p>}
+            </div>
+          </div>
+        )}
 
         {/* Audio player */}
         <AudioPlayer src={audioSrc} />
@@ -303,16 +333,6 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
           </div>
         )}
 
-        {poi.lagehinweis && (
-          <div className={styles.locationHint}>
-            <AppIcon name="location_on" />
-            <div>
-              <span className={styles.locationLabel}>{dict.locationHint}</span>
-              <p>{poi.lagehinweis}</p>
-            </div>
-          </div>
-        )}
-
         {/* Wikipedia link */}
         {poi.wikipedia_url && (
           <div className={styles.actions}>
@@ -329,16 +349,18 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
         )}
 
         <div className={styles.feedback}>
-          <p>{dict.poiFeedbackText}</p>
-          <a
-            href={feedbackFormUrl(poiName)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.feedbackLink}
-          >
-            {dict.poiFeedbackLink}
-            <AppIcon name="open_in_new" style={{ fontSize: '16px' }} />
-          </a>
+          <p>
+            {dict.poiFeedbackText}{' '}
+            <a
+              href={feedbackFormUrl(poiName)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.feedbackLink}
+            >
+              {dict.poiFeedbackLink}{' '}
+              <AppIcon name="open_in_new" style={{ fontSize: '16px' }} />
+            </a>
+          </p>
         </div>
 
         {/* Sources */}

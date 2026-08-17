@@ -5,6 +5,7 @@ import { useLocaleContext } from '@/lib/LocaleContext'
 import { useDictionary, UIDictionary } from '@/lib/ui-dictionary'
 import styles from './BottomNav.module.css'
 import AppIcon from './AppIcon'
+import { isNavigationTabActive } from '@/lib/navigation'
 
 const tabs = [
   { href: '/', icon: 'map', getLabel: (d: UIDictionary) => d.navMap },
@@ -21,10 +22,7 @@ export default function BottomNav() {
   // Don't show bottom nav on admin pages
   if (pathname?.startsWith('/admin')) return null
 
-  const isActive = (href: string) => {
-    if (href === '/') return pathname === '/'
-    return pathname?.startsWith(href)
-  }
+  const isActive = (href: string) => isNavigationTabActive(pathname ?? '', href)
 
   return (
     <nav className={styles.nav}>

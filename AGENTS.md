@@ -23,7 +23,7 @@ Design-Entscheidungen am Schema sollten immer mit Blick auf diese Mehrfachnutzun
 
 ## Aktueller Stand
 
-Die App funktioniert: Leaflet-Karte mit Markern, kontinuierlicher GPS-Ortung samt Genauigkeitskreis, Sammlungsansicht, POI-Detailkarten mit zugänglicher Bild-Lightbox/Zoom, Sprachumschaltung und lokal gebündelten SVG-Icons. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und atomarem Backup/Restore bis zur Firestore-Batchgrenze.
+Die App funktioniert: Leaflet-Karte mit CARTO-Dark-Matter-Kacheln, lokal gebündeltem OSM-Overlay für Friedhofsfläche und Wege, zoomabhängigen SVG-Markern, Kartenfokus aus POI-Details und kontinuierlicher GPS-Ortung samt Genauigkeitskreis; Sammlungsdetails enthalten Beschreibung, GPS-Ortsliste und Karte. POI-Detailkarten bieten semantisch lokalisierte Datumsangaben sowie eine zugängliche Bild-Lightbox mit Zoom. Die redaktionelle Quelle der Wahrheit ist `data/stahnsdorf-backup-translated.json`; **Firestore** ist die Laufzeitkopie für App und Admin und wird clientseitig mit IndexedDB-Offline-Cache gelesen. Ein **Redaktionswerkzeug** (`/admin`) ist implementiert mit Google-Login, Editor-Whitelist, POI-Tabelle mit Filtern, Zwei-Spalten-Editor, Bilderverwaltung, Sammlungen-Editor und atomarem Backup/Restore bis zur Firestore-Batchgrenze.
 
 ## Techstack
 
@@ -35,7 +35,7 @@ Die App funktioniert: Leaflet-Karte mit Markern, kontinuierlicher GPS-Ortung sam
 | Bild-Zoom | react-zoom-pan-pinch |
 | Icons | lucide-react (gebündelte SVGs, offline-fähig) |
 | Backend | Firebase (Firestore + Auth + Storage — aktiv) |
-| Tests | Playwright (83 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
+| Tests | Playwright (90 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
 | Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
 | Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |
@@ -57,6 +57,7 @@ stahnsdorf/
 │   └── redaktionelle-leitlinien.md # Regeln für POI-Informationstexte
 ├── scripts/
 │   ├── apply-osm-candidates.mjs # OSM-Kandidaten in Backup-Snapshot übernehmen
+│   ├── build-map-overlay.mjs # Friedhofsfläche und Wege als statisches GeoJSON erzeugen
 │   ├── build-image-import-manifest.mjs # Bilddateien den bestehenden POIs zuordnen
 │   ├── prepare-firebase-images.mjs # Optimierte Firebase-Bilddateien lokal vorbereiten
 │   ├── apply-image-manifest-to-backup.mjs # Bildreferenzen in den JSON-Master übernehmen
@@ -64,6 +65,7 @@ stahnsdorf/
 │   ├── migrate.ts           # Migrationsscript altes → neues Schema
 │   ├── migrate-to-firestore.ts  # Einmalige Migration JSON → Firestore
 │   ├── osm-candidates.mjs   # OSM-Audit: Kandidaten exportieren und mit POIs abgleichen
+│   ├── seed-emulator.ts      # JSON-Master in den lokalen Firestore-Emulator laden
 │   └── setup-editors.ts     # Editor-Dokumente in Firestore anlegen
 ├── src/
 │   ├── app/                 # Next.js App Router
@@ -81,8 +83,9 @@ stahnsdorf/
 │   │       └── backup/      # Backup & Restore
 │   ├── components/
 │   │   ├── ClientMap.tsx     # Leaflet-Container (Raw Leaflet, nicht react-leaflet)
+│   │   ├── MapOverlay.tsx    # Lokales, nicht interaktives OSM-Overlay
 │   │   ├── MapView.tsx       # Kartenansicht mit Firestore-Daten
-│   │   ├── MapMarker.tsx     # Marker-Icons (Emoji-basiert)
+│   │   ├── MapMarker.tsx     # Zoomabhängige Lucide-SVG-Marker
 │   │   ├── POICard.tsx       # POI-Detailkarte
 │   │   ├── CollectionList.tsx
 │   │   ├── BottomNav.tsx     # Navigation unten
@@ -102,7 +105,7 @@ stahnsdorf/
 │   │   └── useGeolocation.ts
 │   └── styles/               # CSS Module
 ├── public/
-│   └──                       # `404.html` wird aus `src/app/not-found.tsx` exportiert
+│   └── map-overlay.geojson   # Gebündelte OSM-Friedhofsfläche und Wege
 ├── .env.local                # Firebase-Credentials (nicht im Repo)
 ├── .env.example              # Vorlage für .env.local
 └── next.config.js            # Static Export, basePath=/stahnsdorf
@@ -128,7 +131,7 @@ Alle Felder verwenden **deutsche Namen**:
 | `wikipedia_url` | string \| null | Link zur Wikipedia |
 | `bilder` | Bild[] | Mit `nachweis` (Pflicht) und `nachweis_url` |
 | `audio` | `{ [sprache]: url }` | Audio-URLs pro Sprache |
-| `quellen` | string[] | Freitext-Quellenangaben |
+| `quellen` | string[] | Inhaltliche Quellenangaben; benannte Links als `[Titel](URL)`, ohne Abrufdaten oder technische GPS-Quellen |
 | `status` | string | `bestätigt` oder `prüfen` |
 | `notiz` | string | Intern — Lagehinweise, Unsicherheiten |
 
@@ -159,8 +162,11 @@ Alle Felder verwenden **deutsche Namen**:
 - **`docs/schema.md` ist die Wahrheit.** Alle POI-Felder sind dort definiert.
 - **`data/stahnsdorf-backup-translated.json` ist die redaktionelle Quelle der Wahrheit für Inhalte.** Alle relevanten POI-Daten inklusive `bilder`-Referenzen müssen dort abgelegt sein. Firestore darf keine exklusiven Inhaltsdaten enthalten.
 - **`docs/redaktionelle-leitlinien.md` gilt für POI-Texte.** Kurztexte verwenden kein „Grab von“. Beschreibungen sollen 1-2 prägnante Sätze sein und keine UI-Felder wie Name, Lebensdaten oder Lage wiederholen.
+- Sammlungsbeschreibungen sprechen direkt über Thema und historischen Zusammenhang; Formulierungen wie „Diese Sammlung zeigt/bündelt/verbindet“ entfallen.
+- Datumswerte bleiben intern ISO-formatiert, werden in App und Admin aber deutsch als `TT.MM.JJJJ` dargestellt bzw. eingegeben.
+- Sichtbare Quellen enthalten keine Abrufdaten. Grabstättenplan-, OpenStreetMap- und manuelle OsmAnd-Verweise werden nur intern archiviert; die GPS-Herkunft bleibt in `koordinaten_quelle` strukturiert erhalten.
 - Deutsch ist die Quellsprache. Andere Sprachen (en, fr, pl, ru, sv) werden per KI generiert.
-- Nur POIs mit `koordinaten != null` erscheinen auf der Karte.
+- Nur veröffentlichte POIs mit gültigen Koordinaten erscheinen in Besucherkarte und Sammlungs-Ortslisten.
 - POIs ohne Koordinaten bleiben in der Datenbank bis sie vor Ort ermittelt werden.
 
 ### Code
@@ -168,6 +174,7 @@ Alle Felder verwenden **deutsche Namen**:
 - `src/lib/useFirestore.ts` enthält die Hooks für Firestore-Zugriff (visitor + admin).
 - `src/lib/content.ts` liest den JSON-Master für Tests und statische Parameter; die App lädt zur Laufzeit die daraus abgeleitete Firestore-Kopie.
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
+- `public/map-overlay.geojson` wird nur bewusst mit `npm run map:overlay` aus OSM-Way 25029213 erzeugt. Build und Laufzeit fragen Overpass nicht ab. Wege werden an der Friedhofsfläche abgeschnitten; die Exportprüfung begrenzt die Datei auf 350 KB.
 - Static Export: kein Server, kein SSR — alles client-seitig.
 - `basePath: '/stahnsdorf'` in Production (GitHub Pages).
 - Laufzeit-IDs nutzen statische Query-Routen: `/poi?id=<id>`, `/sammlung?id=<id>` und `/admin/poi/edit?id=<id>`. Dadurch funktionieren neu in Firestore angelegte Inhalte ohne neuen Build. Die alten `[id]`-Routen bleiben als Legacy-Export bestehen; `src/app/not-found.tsx` konvertiert unbekannte alte Pfade.
@@ -211,6 +218,8 @@ npm install
 npm run dev              # Startet Entwicklungsserver
 npm run coordinates:metadata # Koordinaten-Herkunft und Lagehinweise aus Bestand ableiten
 npm run coordinates:manual-osmand # Manuell per OsmAnd erfasste GPS-Daten einspielen
+npm run editorial:cleanup # Quellen bereinigen und Sammlungsbeschreibungen aktualisieren
+npm run map:overlay       # Statisches OSM-Overlay aus Fläche und Wegen aktualisieren
 npm run osm:candidates   # OSM-Kandidaten-Audit nach inputdata/
 npm run osm:apply        # OSM-Kandidaten in data/stahnsdorf-backup-translated.json übernehmen
 npm run images:manifest  # Bilddateien den bestehenden POIs zuordnen

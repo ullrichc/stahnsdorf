@@ -29,6 +29,7 @@
   border-radius: 0.75rem;
   transition: all var(--transition-stately);
   min-width: 56px;
+  min-height: 48px;
 }
 
 .tab:hover {
@@ -51,9 +52,9 @@
 
 .label {
   font-family: var(--font-manrope), 'Manrope', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   margin-top: 2px;
 }

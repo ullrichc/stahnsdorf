@@ -7,6 +7,7 @@ const requiredFiles = [
   path.join('admin', 'poi', 'edit.html'),
   'sammlung.html',
   '404.html',
+  'map-overlay.geojson',
 ];
 
 for (const relativePath of requiredFiles) {
@@ -16,6 +17,15 @@ for (const relativePath of requiredFiles) {
 const notFoundHtml = await readFile(path.join(outputDir, '404.html'), 'utf8');
 if (!notFoundHtml.includes('data-legacy-route-fallback')) {
   throw new Error('out/404.html enthält den Legacy-Routen-Fallback nicht.');
+}
+
+const overlayBuffer = await readFile(path.join(outputDir, 'map-overlay.geojson'));
+if (overlayBuffer.byteLength > 350 * 1024) {
+  throw new Error(`Karten-Overlay ist mit ${overlayBuffer.byteLength} Bytes größer als 350 KB.`);
+}
+const overlay = JSON.parse(overlayBuffer.toString('utf8'));
+if (overlay.type !== 'FeatureCollection' || overlay.features?.[0]?.properties?.kind !== 'cemetery') {
+  throw new Error('out/map-overlay.geojson enthält keine gültige Friedhofsfläche.');
 }
 
 const textFiles = await collectTextFiles(outputDir);
@@ -34,7 +44,7 @@ for (const file of textFiles) {
   }
 }
 
-console.log('Static-Export geprüft: Query-Routen, 404-Fallback, Offline-Fonts und Browser-Zoom.');
+console.log('Static-Export geprüft: Query-Routen, 404-Fallback, Karten-Overlay, Offline-Fonts und Browser-Zoom.');
 
 async function collectTextFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });

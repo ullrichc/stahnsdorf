@@ -6,11 +6,12 @@
 /* ===== Header ===== */
 
 .header {
-  position: relative;
   background: var(--color-surface-container-low);
-  height: 80px;
-  display: flex;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
   align-items: center;
+  gap: 12px;
   padding: 0 24px;
 }
 
@@ -18,8 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(40, 42, 44, 0.90);
   backdrop-filter: blur(8px);
@@ -39,23 +40,22 @@
   transform: scale(0.95);
 }
 
+.headerLabel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-on-surface);
+}
+
 /* ===== Content ===== */
 
 .content {
   padding: 24px;
   max-width: var(--content-max-width);
   margin: 0 auto;
-}
-
-.badge {
-  display: inline-block;
-  font-family: var(--font-manrope), 'Manrope', sans-serif;
-  font-size: 0.625rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--color-primary);
-  margin-bottom: 8px;
 }
 
 .name {
@@ -79,14 +79,13 @@
 .dateChip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: var(--color-secondary-container);
-  color: var(--color-on-secondary-container);
+  background: var(--color-surface-container-high);
+  color: var(--color-on-surface-variant);
   padding: 6px 12px;
   border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  border: 1px solid rgba(188, 203, 181, 0.1);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(143, 145, 148, 0.22);
 }
 
 .locationHint {
@@ -106,6 +105,19 @@
   color: var(--color-primary);
   font-size: 20px;
   line-height: 1.2;
+}
+
+.locationContent {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.locationHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 16px;
 }
 
 .locationHint p {
@@ -378,9 +390,11 @@
 /* ===== Sources ===== */
 
 .sources {
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(68, 71, 74, 0.15);
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(68, 71, 74, 0.16);
+  border-radius: 0.75rem;
+  background: var(--color-surface-container-low);
 }
 
 .sourcesLabel {
@@ -411,29 +425,50 @@
   text-decoration: underline;
 }
 
+.mapLink {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: -6px 0;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.mapLink:hover {
+  text-decoration: underline;
+}
+
 /* ===== Feedback ===== */
 
 .feedback {
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(68, 71, 74, 0.15);
+  margin-top: 24px;
+  padding: 14px 16px;
+  border: 1px solid rgba(68, 71, 74, 0.16);
+  border-radius: 0.75rem;
+  background: var(--color-surface-container-low);
 }
 
 .feedback p {
-  margin-bottom: 12px;
+  margin: 0;
   color: var(--color-on-surface-variant);
   font-size: 0.875rem;
   line-height: 1.6;
 }
 
 .feedbackLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline;
   color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.feedbackLink svg {
+  display: inline-block;
+  vertical-align: -3px;
 }
 
 .feedbackLink:hover {

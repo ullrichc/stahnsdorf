@@ -89,7 +89,11 @@ describe('matchCandidate', () => {
       id: 'poi_sws_hauptkapelle',
       name: { de: 'Friedhofskapelle' },
       koordinaten: { lat: 52.3895, lng: 13.181 },
-      quellen: ['OpenStreetMap/Nominatim: Norwegische Holzkirche, OSM way 228818020, https://www.openstreetmap.org/way/228818020'],
+      koordinaten_quelle: {
+        typ: 'osm',
+        beleg: 'OpenStreetMap: way 228818020',
+      },
+      quellen: [],
     },
     {
       id: 'poi_sws_heldenblock',
@@ -132,7 +136,7 @@ describe('matchCandidate', () => {
     expect(result.poi.id).toBe('poi_sws_heinrich-zille');
   });
 
-  it('matches existing POIs by OSM source URL already stored in sources', () => {
+  it('matches existing POIs by their structured OSM coordinate source', () => {
     const result = matchCandidate({
       name: 'Norwegische Holzkirche',
       koordinaten: { lat: 52.3895, lng: 13.181 },
@@ -195,9 +199,9 @@ describe('createProposedPOI', () => {
       genauigkeit: 'hoch',
     });
     expect(poi.status).toBe('bestätigt');
-    expect(poi.quellen).toEqual([
-      'OpenStreetMap: way 789, https://www.openstreetmap.org/way/789, Version 3, Stand 2026-05-20T12:00:00Z, abgerufen 2026-05-25',
-    ]);
+    expect(poi.quellen).toEqual([]);
+    expect(poi.notiz).toContain('OpenStreetMap: way 789');
+    expect(poi.notiz).toContain('https://www.openstreetmap.org/way/789');
     expect(poi.notiz).toContain('OSM-Tags');
 
     const validFields = new Set(['id', 'typ', 'name', 'koordinaten', 'koordinaten_quelle', 'lagehinweis', 'lagehinweis_quelle', 'kurztext', 'beschreibung', 'datum_von', 'datum_bis', 'wikipedia_url', 'bilder', 'audio', 'quellen', 'status', 'notiz']);

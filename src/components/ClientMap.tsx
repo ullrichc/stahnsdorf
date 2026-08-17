@@ -36,16 +36,21 @@ export default function ClientMap({ center, zoom, className, zoomControl = true,
       zoom,
       zoomControl: false, // We manually add it below to control position safely
       maxZoom: 22,
+      preferCanvas: true,
+      attributionControl: false,
     })
 
     if (zoomControl) {
       L.control.zoom({ position: 'bottomright' }).addTo(instance)
     }
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxNativeZoom: 19,
+    L.control.attribution({ position: 'bottomleft', prefix: false }).addTo(instance)
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxNativeZoom: 20,
       maxZoom: 22,
+      subdomains: 'abcd',
     }).addTo(instance)
 
     // Handle Next.js soft navigations causing 0x0 size mounts

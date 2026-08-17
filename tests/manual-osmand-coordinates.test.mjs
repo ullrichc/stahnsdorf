@@ -64,7 +64,7 @@ describe('applyManualOSMAndCoordinates', () => {
         name: { de: 'Hanno Günther' },
         koordinaten: { lat: 1, lng: 2 },
         koordinaten_quelle: { typ: 'manuell-kamera', beleg: 'Kamera-EXIF' },
-        quellen: [],
+        quellen: ['Bestandsquelle'],
         notiz: '',
       }],
     };
@@ -77,6 +77,8 @@ describe('applyManualOSMAndCoordinates', () => {
       datum: '2026-06-06',
       genauigkeit: 'hoch',
     });
+    expect(result.pois[0].quellen).toEqual(['Bestandsquelle']);
+    expect(result.pois[0].notiz).toContain('https://osmand.net/map?pin=52.38424,13.18373');
   });
 
   it('matches alternate manual names for Anita Kupsch and Garnisongrab', () => {
@@ -127,6 +129,8 @@ https://osmand.net/map?pin=52.38951,13.18014`;
     expect(boost.typ).toBe('grab');
     expect(boost.koordinaten).toEqual({ lat: 52.38835, lng: 13.18766 });
     expect(boost.koordinaten_quelle.typ).toBe('manuell-osmand');
+    expect(boost.quellen).toEqual([]);
+    expect(boost.notiz).toContain('https://osmand.net/map?pin=52.38835,13.18766');
     expect(boost.publish_status).toBe('veröffentlicht');
   });
 });

@@ -35,6 +35,14 @@ const content: Record<string, Record<string, string>> = {
     sv: 'På kyrkogården finns det berömda träkapellet, som är utformat efter norska stavkyrkor och färdigställdes 1911.'
   },
   contactTitle: { de: 'Kontakt', en: 'Contact', fr: 'Contact', pl: 'Kontakt', ru: 'Контакты', sv: 'Kontakt' },
+  legalLink: {
+    de: 'Impressum & Datenschutz',
+    en: 'Legal notice & privacy policy',
+    fr: 'Mentions légales et confidentialité',
+    pl: 'Nota prawna i polityka prywatności',
+    ru: 'Правовая информация и политика конфиденциальности',
+    sv: 'Juridisk information och integritetspolicy'
+  },
   accessibilityTitle: { de: 'Besucherhinweis', en: 'Visitor Notice', fr: 'Avis aux visiteurs', pl: 'Informacje dla odwiedzających', ru: 'Информация для посетителей', sv: 'Besöksinformation' },
   accessibilityText: {
     de: 'Bitte verhalten Sie sich den Verstorbenen und dem Ort angemessen. Hunde sind an der Leine zu führen, und das Befahren mit Fahrrädern ist nur auf den Hauptwegen gestattet. Vielen Dank für Ihren Beitrag zur Erhaltung dieser historischen Stätte.',
@@ -161,6 +169,21 @@ export default function InfoPage() {
           <div className={styles.contactText}>
             <a href="https://www.suedwestkirchhof.de" target="_blank" rel="noopener noreferrer">
               www.suedwestkirchhof.de
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.contactRow}>
+          <AppIcon name="history_edu" className={styles.contactIcon} />
+          <div className={styles.contactText}>
+            <a
+              href="https://www.suedwestkirchhof.de/impressum.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.legalLink}
+            >
+              {c('legalLink')}
+              <AppIcon name="open_in_new" />
             </a>
           </div>
         </div>

@@ -47,14 +47,14 @@ Fallback-Reihenfolge in der App: gewünschte Sprache → Deutsch → erste verf�
 | `lagehinweis_quelle` | `string` | nein | Quelle des Lagehinweises, z.B. `wo-sie-ruhen.de` |
 | `kurztext` | `LocalizedText` | ja | Eine Zeile, erscheint beim Antippen in der App |
 | `beschreibung` | `LocalizedText` | ja | Reine inhaltliche Beschreibung — kein Status, keine Redaktionshinweise |
-| `datum_von` | `string \| null` | nein | Geburtsdatum (Person) oder Baudatum (Bauwerk). Format: `YYYY-MM-DD` |
-| `datum_bis` | `string \| null` | nein | Sterbedatum (Person) oder Ende/Abriss (Bauwerk). Format: `YYYY-MM-DD` |
+| `datum_von` | `string \| null` | nein | Geburtsdatum (Person) oder Baudatum (Bauwerk). Intern: `YYYY-MM-DD` oder `YYYY`; Anzeige und Admin-Eingabe: `TT.MM.JJJJ` oder `JJJJ` |
+| `datum_bis` | `string \| null` | nein | Sterbedatum (Person) oder Ende/Abriss (Bauwerk). Intern: `YYYY-MM-DD` oder `YYYY`; Anzeige und Admin-Eingabe: `TT.MM.JJJJ` oder `JJJJ` |
 | `wikipedia_url` | `string \| null` | nein | Direktlink zur Wikipedia-Seite |
 | `bilder` | `Bild[]` | nein | Bilder mit Pflicht-Nachweis — siehe Bild-Objekt |
 | `audio` | `{ [sprache]: string }` | nein | URLs zu Audiodateien, eine pro Sprache. Leeres Objekt `{}` wenn keine vorhanden |
-| `quellen` | `string[]` | nein | Quellenangaben als Freitext, intern |
+| `quellen` | `string[]` | nein | Inhaltliche Quellenangaben für die Detailansicht. Links werden explizit als `[Titel](URL)` gespeichert; Abrufdaten und technische GPS-Quellen wie OpenStreetMap gehören nicht in die sichtbare Quellenangabe |
 | `status` | `string` | ja | `bestätigt` oder `prüfen` |
-| `notiz` | `string` | nein | Interne Notiz — Koordinatenhinweise, Unsicherheiten, Redaktionelles. Erscheint nicht in der App |
+| `notiz` | `string` | nein | Interne Notiz — Koordinatenhinweise, Unsicherheiten, Redaktionelles und optional ein Abschnitt `Quellenarchiv:`. Erscheint nicht in der App |
 
 ### `typ`-Werte
 
@@ -82,7 +82,7 @@ Beschreibt ausschließlich, woher die aktuell gespeicherte GPS-Koordinate (`koor
 |---|---|---|---|
 | `typ` | `string` | ja | Wert aus der Liste unten |
 | `beleg` | `string` | ja | Kurzer Beleg, z.B. `OpenStreetMap: node 3524525179` |
-| `datum` | `string` | nein | Datum der Übernahme oder Erfassung, Format `YYYY-MM-DD` |
+| `datum` | `string` | nein | Datum der Übernahme oder Erfassung. Intern: `YYYY-MM-DD`; Anzeige und Admin-Eingabe: `TT.MM.JJJJ` |
 | `genauigkeit` | `string` | nein | `hoch`, `mittel` oder `niedrig` |
 
 #### `koordinaten_quelle.typ`-Werte
@@ -90,7 +90,7 @@ Beschreibt ausschließlich, woher die aktuell gespeicherte GPS-Koordinate (`koor
 | Wert | Bedeutung |
 |---|---|
 | `osm` | GPS-Koordinate aus OpenStreetMap |
-| `wo-sie-ruhen` | GPS-Koordinate aus wo-sie-ruhen.de/API-Extraktion |
+| `wo-sie-ruhen` | GPS-Koordinate aus wo-sie-ruhen.de |
 | `manuell-osmand` | Vor Ort manuell erfasste Koordinate aus OsmAnd/Geo-Link |
 | `manuell-kamera` | Koordinate aus Kamera-/Bild-EXIF |
 | `redaktionell` | Redaktionell aus Karte, Plan, Luftbild oder Recherche gesetzt |
@@ -188,8 +188,8 @@ collection_sws_<kennung>
   "bilder": [],
   "audio": {},
   "quellen": [
-    "Wikipedia: Südwestkirchhof Stahnsdorf, abgerufen 2026-03-25",
-    "Wikipedia: Adolf Bastian, abgerufen 2026-03-25"
+    "[Südwestkirchhof Stahnsdorf, Wikipedia](https://de.wikipedia.org/wiki/S%C3%BCdwestkirchhof_Stahnsdorf)",
+    "[Adolf Bastian, Wikipedia](https://de.wikipedia.org/wiki/Adolf_Bastian)"
   ],
   "status": "prüfen",
   "notiz": "Block Trinitatis. Koordinaten vor Ort ermitteln."

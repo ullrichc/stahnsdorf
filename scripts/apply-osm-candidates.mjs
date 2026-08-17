@@ -281,15 +281,21 @@ function buildDescription(typ, name) {
   ]));
 }
 
-function sourceLine(candidate, fetchedAt) {
+function sourceLine(candidate) {
   const bits = [
     `OpenStreetMap: ${candidate.osm.type} ${candidate.osm.id}`,
     candidate.osm.url,
   ];
   if (candidate.osm.version) bits.push(`Version ${candidate.osm.version}`);
-  if (candidate.osm.timestamp) bits.push(`Stand ${candidate.osm.timestamp}`);
-  bits.push(`abgerufen ${fetchedAt}`);
+  if (candidate.osm.timestamp) bits.push(`Stand ${formatOSMTimestamp(candidate.osm.timestamp)}`);
   return bits.join(', ');
+}
+
+function formatOSMTimestamp(value) {
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$/);
+  if (!match) return value;
+  const [, year, month, day, hour, minute, second] = match;
+  return `${day}.${month}.${year}, ${hour}:${minute}:${second} UTC`;
 }
 
 function coordinateSource(candidate, fetchedAt) {
@@ -310,14 +316,26 @@ function wikipediaTagToUrl(value) {
   return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/\s+/g, '_'))}`;
 }
 
-function appendUnique(list = [], value) {
-  if (!value) return list;
-  return list.some((item) => item.includes(value) || value.includes(item)) ? list : [...list, value];
-}
-
 function appendNote(note = '', addition) {
   if (!addition || note.includes(addition)) return note;
   return note ? `${note} ${addition}` : addition;
+}
+
+function appendSourceArchive(note = '', source) {
+  if (!source || note.includes(source)) return note;
+  const trimmed = note.trimEnd();
+  if (trimmed.includes('\nQuellenarchiv:') || trimmed.startsWith('Quellenarchiv:')) {
+    return `${trimmed}\n- ${source}`;
+  }
+  return `${trimmed}${trimmed ? '\n\n' : ''}Quellenarchiv:\n- ${source}`;
+}
+
+function appendOSMProvenance(note, candidate) {
+  const withCoordinateNote = appendNote(
+    note,
+    `OSM-Koordinate übernommen (${candidate.osm.type} ${candidate.osm.id}).`,
+  );
+  return appendSourceArchive(withCoordinateNote, sourceLine(candidate));
 }
 
 function createNewPOI(candidate, { fetchedAt, timestamp }) {
@@ -345,9 +363,12 @@ function createNewPOI(candidate, { fetchedAt, timestamp }) {
     wikipedia_url: wikipediaUrl,
     bilder: [],
     audio: {},
-    quellen: [sourceLine(candidate, fetchedAt)],
+    quellen: [],
     status: 'bestätigt',
-    notiz: `Aus OpenStreetMap übernommen. OSM-Tags: ${JSON.stringify(candidate.osm.tags)}`,
+    notiz: appendSourceArchive(
+      `Aus OpenStreetMap übernommen. OSM-Tags: ${JSON.stringify(candidate.osm.tags)}`,
+      sourceLine(candidate),
+    ),
     publish_status: 'veröffentlicht',
     erstellt_von: 'system',
     geaendert_von: 'system',
@@ -368,8 +389,7 @@ export function applyOSMAuditToBackup(backup, audit, options = {}) {
     poi.koordinaten = candidate.koordinaten;
     poi.koordinaten_quelle = coordinateSource(candidate, fetchedAt);
     poi.status = 'bestätigt';
-    poi.quellen = appendUnique(poi.quellen ?? [], sourceLine(candidate, fetchedAt));
-    poi.notiz = appendNote(poi.notiz ?? '', `OSM-Koordinate übernommen (${candidate.osm.type} ${candidate.osm.id}).`);
+    poi.notiz = appendOSMProvenance(poi.notiz ?? '', candidate);
     if ('geaendert_am' in poi) poi.geaendert_am = timestamp;
   }
 
@@ -382,7 +402,7 @@ export function applyOSMAuditToBackup(backup, audit, options = {}) {
       Object.assign(existing, {
         koordinaten: poi.koordinaten,
         koordinaten_quelle: poi.koordinaten_quelle,
-        quellen: appendUnique(existing.quellen ?? [], poi.quellen[0]),
+        notiz: appendOSMProvenance(existing.notiz ?? '', candidate),
         status: 'bestätigt',
         publish_status: existing.publish_status ?? 'veröffentlicht',
         geaendert_am: timestamp,

@@ -33,8 +33,7 @@ export function mergeCoordinates(poi, scraping) {
   result.koordinaten = { lat: scraping.latitude, lng: scraping.longitude };
   result.koordinaten_quelle = {
     typ: 'wo-sie-ruhen',
-    beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
-    datum: '2026-04-04',
+    beleg: 'wo-sie-ruhen.de',
     genauigkeit: 'hoch',
   };
   result.status = 'bestätigt';
@@ -78,8 +77,7 @@ export function createNewPoi(scraping) {
     koordinaten: { lat: scraping.latitude, lng: scraping.longitude },
     koordinaten_quelle: {
       typ: 'wo-sie-ruhen',
-      beleg: 'wo-sie-ruhen.de API-Extraktion 2026-04-04',
-      datum: '2026-04-04',
+      beleg: 'wo-sie-ruhen.de',
       genauigkeit: 'hoch',
     },
     lagehinweis: scraping.location_note,
@@ -91,9 +89,9 @@ export function createNewPoi(scraping) {
     wikipedia_url: null,
     bilder: [],
     audio: {},
-    quellen: ['wo-sie-ruhen.de, Südwestkirchhof Stahnsdorf, API-Extraktion 2026-04-04'],
+    quellen: ['wo-sie-ruhen.de'],
     status: 'bestätigt',
-    notiz: `Neu aus wo-sie-ruhen.de API. Lage: ${scraping.location_note}. Ehrengrab: ${scraping.ehrengrab ? 'ja' : 'nein'}. Biografische Daten und Übersetzungen noch ergänzen.`,
+    notiz: `Quelle: wo-sie-ruhen.de. Lage: ${scraping.location_note}. Ehrengrab: ${scraping.ehrengrab ? 'ja' : 'nein'}. Biografische Daten und Übersetzungen noch ergänzen.`,
   };
 }
 

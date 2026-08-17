@@ -42,7 +42,6 @@ function formatSource(ref: any): string {
   if (ref.title) parts.push(ref.title);
   if (ref.publisher && ref.publisher !== ref.title) parts.push(ref.publisher);
   if (ref.url) parts.push(ref.url);
-  if (ref.accessed) parts.push(`abgerufen ${ref.accessed}`);
   return parts.join(', ');
 }
 

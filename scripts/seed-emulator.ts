@@ -1,5 +1,5 @@
 /**
- * Seed-Skript: data/pois.json + data/collections.json → lokaler Firestore Emulator
+ * Seed-Skript: redaktioneller JSON-Master → lokaler Firestore Emulator
  * 
  * Verwendet das Firebase Admin SDK, um Sicherheitsregeln im Emulator zu umgehen.
  *
@@ -34,9 +34,11 @@ const MIGRATION_AUTHOR = "seed";
 async function main() {
   console.log(`🌱 Befülle lokalen Firestore Emulator (${PROJECT_ID}) mit Testdaten...`);
 
+  const backupPath = resolve(__dirname, "../data/stahnsdorf-backup-translated.json");
+  const backup = JSON.parse(readFileSync(backupPath, "utf-8"));
+
   // 1. POIs
-  const poiPath = resolve(__dirname, "../data/pois.json");
-  const pois = JSON.parse(readFileSync(poiPath, "utf-8"));
+  const pois = backup.pois;
   let poiCount = 0;
   
   for (const poi of pois) {
@@ -58,8 +60,7 @@ async function main() {
   console.log("");
 
   // 2. Collections
-  const colPath = resolve(__dirname, "../data/collections.json");
-  const collections = JSON.parse(readFileSync(colPath, "utf-8"));
+  const collections = backup.collections;
   let colCount = 0;
   
   for (const col of collections) {

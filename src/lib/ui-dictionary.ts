@@ -19,6 +19,7 @@ export type UIDictionary = {
   locationError: string
   locationUnavailable: string
   currentLocation: string
+  showOnMap: string
   
   // Collections List
   collectionsTitle: string
@@ -39,6 +40,8 @@ export type UIDictionary = {
   retry: string
   backToMap: string
   backToCollections: string
+  collectionPlaces: string
+  collectionMap: string
   
   // POI Card
   typeGrab: string
@@ -49,6 +52,12 @@ export type UIDictionary = {
   typeGedenkanlage: string
   locationHint: string
   learnMore: string
+  dateRange: string
+  dateBorn: string
+  dateDied: string
+  dateBuilt: string
+  dateCreated: string
+  dateUntil: string
   sources: string
   poiFeedbackText: string
   poiFeedbackLink: string
@@ -81,6 +90,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Standort konnte nicht ermittelt werden.',
     locationUnavailable: 'Standortbestimmung wird nicht unterstützt.',
     currentLocation: 'Gerade hier',
+    showOnMap: 'Auf der Karte zeigen',
     collectionsTitle: 'Sammlungen',
     collectionsSubtitle: 'Thematische Pfade durch das Flächendenkmal.',
     sitesCount: 'Orte',
@@ -99,6 +109,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Erneut versuchen',
     backToMap: 'Zurück zur Karte',
     backToCollections: 'Zurück zu Sammlungen',
+    collectionPlaces: 'Orte dieser Sammlung',
+    collectionMap: 'Karte der Sammlung',
     typeGrab: 'Grabstätte',
     typeBauwerk: 'Bauwerk',
     typeBereich: 'Bereich',
@@ -107,6 +119,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Gedenkanlage',
     locationHint: 'Lage',
     learnMore: 'Mehr erfahren',
+    dateRange: 'bis',
+    dateBorn: 'geboren',
+    dateDied: 'gestorben',
+    dateBuilt: 'erbaut',
+    dateCreated: 'entstanden',
+    dateUntil: 'bis',
     sources: 'Quellen',
     poiFeedbackText: 'Fehlt eine Information oder ist eine Angabe nicht korrekt?',
     poiFeedbackLink: 'Hinweis zu diesem Eintrag geben',
@@ -137,6 +155,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Your location could not be determined.',
     locationUnavailable: 'Location services are not supported.',
     currentLocation: 'Right here',
+    showOnMap: 'Show on map',
     collectionsTitle: 'Collections',
     collectionsSubtitle: 'Thematic trails through the heritage site.',
     sitesCount: 'sites',
@@ -155,6 +174,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Try again',
     backToMap: 'Back to map',
     backToCollections: 'Back to collections',
+    collectionPlaces: 'Places in this collection',
+    collectionMap: 'Collection map',
     typeGrab: 'Grave',
     typeBauwerk: 'Building',
     typeBereich: 'Section',
@@ -163,6 +184,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Memorial site',
     locationHint: 'Location',
     learnMore: 'Learn more',
+    dateRange: 'to',
+    dateBorn: 'born',
+    dateDied: 'died',
+    dateBuilt: 'built',
+    dateCreated: 'created',
+    dateUntil: 'until',
     sources: 'Sources',
     poiFeedbackText: 'Is any information missing or is any information incorrect?',
     poiFeedbackLink: 'Submit information about this entry',
@@ -193,6 +220,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Votre position n’a pas pu être déterminée.',
     locationUnavailable: 'La localisation n’est pas prise en charge.',
     currentLocation: 'Juste ici',
+    showOnMap: 'Afficher sur la carte',
     collectionsTitle: 'Collections',
     collectionsSubtitle: 'Parcours thématiques à travers le site.',
     sitesCount: 'sites',
@@ -211,6 +239,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Réessayer',
     backToMap: 'Retour à la carte',
     backToCollections: 'Retour aux collections',
+    collectionPlaces: 'Lieux de cette collection',
+    collectionMap: 'Carte de la collection',
     typeGrab: 'Tombe',
     typeBauwerk: 'Bâtiment',
     typeBereich: 'Section',
@@ -219,6 +249,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Lieu de mémoire',
     locationHint: 'Emplacement',
     learnMore: 'En savoir plus',
+    dateRange: 'à',
+    dateBorn: 'naissance',
+    dateDied: 'décès',
+    dateBuilt: 'construit',
+    dateCreated: 'créé',
+    dateUntil: 'jusqu’en',
     sources: 'Sources',
     poiFeedbackText: 'Une information manque-t-elle ou une indication est-elle incorrecte ?',
     poiFeedbackLink: 'Donner une indication sur cette entrée',
@@ -249,6 +285,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Nie udało się ustalić lokalizacji.',
     locationUnavailable: 'Lokalizacja nie jest obsługiwana.',
     currentLocation: 'Właśnie tutaj',
+    showOnMap: 'Pokaż na mapie',
     collectionsTitle: 'Kolekcje',
     collectionsSubtitle: 'Ścieżki tematyczne przez teren cmentarza.',
     sitesCount: 'miejsc',
@@ -267,6 +304,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Spróbuj ponownie',
     backToMap: 'Wróć do mapy',
     backToCollections: 'Wróć do kolekcji',
+    collectionPlaces: 'Miejsca w tej kolekcji',
+    collectionMap: 'Mapa kolekcji',
     typeGrab: 'Grób',
     typeBauwerk: 'Budowla',
     typeBereich: 'Sekcja',
@@ -275,6 +314,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Miejsce pamięci',
     locationHint: 'Położenie',
     learnMore: 'Dowiedz się więcej',
+    dateRange: 'do',
+    dateBorn: 'urodzenie',
+    dateDied: 'śmierć',
+    dateBuilt: 'zbudowany',
+    dateCreated: 'powstał',
+    dateUntil: 'do',
     sources: 'Źródła',
     poiFeedbackText: 'Brakuje informacji lub któraś z nich jest nieprawidłowa?',
     poiFeedbackLink: 'Przekaż uwagę dotyczącą tego wpisu',
@@ -305,6 +350,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Не удалось определить местоположение.',
     locationUnavailable: 'Определение местоположения не поддерживается.',
     currentLocation: 'Прямо здесь',
+    showOnMap: 'Показать на карте',
     collectionsTitle: 'Коллекции',
     collectionsSubtitle: 'Тематические маршруты по территории памятника.',
     sitesCount: 'мест',
@@ -323,6 +369,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Повторить',
     backToMap: 'Вернуться к карте',
     backToCollections: 'Вернуться к коллекциям',
+    collectionPlaces: 'Места этой коллекции',
+    collectionMap: 'Карта коллекции',
     typeGrab: 'Могила',
     typeBauwerk: 'Сооружение',
     typeBereich: 'Участок',
@@ -331,6 +379,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Мемориал',
     locationHint: 'Местоположение',
     learnMore: 'Узнать больше',
+    dateRange: 'по',
+    dateBorn: 'рождение',
+    dateDied: 'смерть',
+    dateBuilt: 'построено',
+    dateCreated: 'создано',
+    dateUntil: 'до',
     sources: 'Источники',
     poiFeedbackText: 'Не хватает информации или какие-либо сведения указаны неверно?',
     poiFeedbackLink: 'Сообщить об этом объекте',
@@ -361,6 +415,7 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     locationError: 'Din plats kunde inte fastställas.',
     locationUnavailable: 'Platstjänster stöds inte.',
     currentLocation: 'Precis här',
+    showOnMap: 'Visa på kartan',
     collectionsTitle: 'Samlingar',
     collectionsSubtitle: 'Tematiska spår över kulturarvsplatsen.',
     sitesCount: 'platser',
@@ -379,6 +434,8 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     retry: 'Försök igen',
     backToMap: 'Tillbaka till kartan',
     backToCollections: 'Tillbaka till samlingar',
+    collectionPlaces: 'Platser i samlingen',
+    collectionMap: 'Samlingskarta',
     typeGrab: 'Grav',
     typeBauwerk: 'Byggnad',
     typeBereich: 'Sektion',
@@ -387,6 +444,12 @@ export const ui: Record<SupportedLocale, UIDictionary> = {
     typeGedenkanlage: 'Minnesplats',
     locationHint: 'Läge',
     learnMore: 'Läs mer',
+    dateRange: 'till',
+    dateBorn: 'född',
+    dateDied: 'död',
+    dateBuilt: 'uppförd',
+    dateCreated: 'skapad',
+    dateUntil: 'till',
     sources: 'Källor',
     poiFeedbackText: 'Saknas information eller är någon uppgift felaktig?',
     poiFeedbackLink: 'Lämna information om denna post',

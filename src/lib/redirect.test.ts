@@ -2,6 +2,7 @@ import { describe, expect, test } from 'vitest'
 import {
   adminPoiEditHref,
   collectionDetailHref,
+  mapPoiHref,
   normalizeInternalRedirect,
   poiDetailHref,
 } from './redirect'
@@ -50,11 +51,20 @@ describe('canonical POI hrefs', () => {
     expect(poiDetailHref('poi with spaces')).toBe('/poi?id=poi%20with%20spaces')
   })
 
+  test('encodes an optional internal return context', () => {
+    expect(poiDetailHref('poi_sws_test', '/sammlung?id=collection_sws_test'))
+      .toBe('/poi?id=poi_sws_test&from=%2Fsammlung%3Fid%3Dcollection_sws_test')
+  })
+
   test('encodes admin POI ids in the query string', () => {
     expect(adminPoiEditHref('poi/with/slashes')).toBe('/admin/poi/edit?id=poi%2Fwith%2Fslashes')
   })
 
   test('encodes collection ids in the query string', () => {
     expect(collectionDetailHref('collection with spaces')).toBe('/sammlung?id=collection%20with%20spaces')
+  })
+
+  test('encodes focused POI ids for the map', () => {
+    expect(mapPoiHref('poi/with spaces')).toBe('/?poi=poi%2Fwith%20spaces')
   })
 })
