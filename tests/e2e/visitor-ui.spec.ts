@@ -112,6 +112,11 @@ test('map uses SVG markers, a collapsed search, and opens a focused POI', async 
 
 test('labeled map controls and markers do not overlap on a narrow phone', async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 740 });
+  await page.addInitScript(() => window.sessionStorage.setItem('stahnsdorf.mapView', JSON.stringify({
+    lat: 52.3895066,
+    lng: 13.1809545,
+    zoom: 18,
+  })));
   await page.goto('/');
 
   const labeledMarker = page.locator('.marker-container').first();

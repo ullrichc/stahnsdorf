@@ -216,7 +216,7 @@ function POIMarkers({
     })
 
     let showFullMarkers = map.getZoom() >= 17
-    let showAllTooltips = map.getZoom() >= 19
+    let showAllTooltips = map.getZoom() >= 18
 
     const setTooltipOpacity = (m: L.Marker, visible: boolean) => {
       const el = m.getTooltip()?.getElement()
@@ -228,7 +228,7 @@ function POIMarkers({
 
     const updateTooltipVisibility = () => {
       showFullMarkers = map.getZoom() >= 17
-      showAllTooltips = map.getZoom() >= 19
+      showAllTooltips = map.getZoom() >= 18
       entries.forEach(({ marker, poi }) => {
         const selected = selectedPoiId === poi.id
         marker.setIcon(createMarkerIcon(poi, {
