@@ -10,6 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
+      APP_BASE_PATH: /stahnsdorf
       NEXT_PUBLIC_FIREBASE_API_KEY: 'test-api-key'
       NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: 'stahnsdorf-90e03.firebaseapp.com'
       NEXT_PUBLIC_FIREBASE_PROJECT_ID: 'stahnsdorf-90e03'

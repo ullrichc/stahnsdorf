@@ -88,7 +88,7 @@ npm run map:overlay  # Statisches OSM-Karten-Overlay bewusst aktualisieren
 
 Das Deployment erfolgt automatisiert via **GitHub Actions** (`.github/workflows/deploy.yml`) nach einem erfolgreichen Lauf des Workflows `test.yml` auf `main`. Der Test-Workflow führt Unit-, TypeScript-, Rules- und E2E-Tests sowie den Production-Build und eine Prüfung des Export-Artefakts aus.
 
-Die Installation unter `https://www.suedwestkirchhof.de/stahnsdorf/` und ein mögliches automatisches Deployment auf den Webserver sind in [`docs/deployment-suedwestkirchhof.md`](docs/deployment-suedwestkirchhof.md) beschrieben.
+GitHub Pages wird weiterhin mit dem Basispfad `/stahnsdorf` gebaut. Für die Vereinswebsite wird mit `APP_BASE_PATH=/files/app` ein separater Export für `https://www.suedwestkirchhof.de/files/app/` erzeugt. Installation und ein mögliches automatisches Deployment auf den Webserver sind in [`docs/deployment-suedwestkirchhof.md`](docs/deployment-suedwestkirchhof.md) beschrieben. Eine kompakte Übergabe für den Hoster steht in [`docs/anleitung-webhoster.md`](docs/anleitung-webhoster.md).
 
 ### Statisches Karten-Overlay
 
@@ -101,6 +101,11 @@ Die Fläche ist in allen Zoomstufen sichtbar. Hauptwege (`service`, `pedestrian`
 Manuelles Build:
 ```bash
 npm run build
+```
+
+Build für die Vereinswebsite:
+```bash
+APP_BASE_PATH=/files/app npm run build
 ```
 
 ## 📊 Datenmodell & Firebase Setup

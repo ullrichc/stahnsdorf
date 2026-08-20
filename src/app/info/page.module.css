@@ -20,11 +20,11 @@
 /* ===== Section Cards ===== */
 
 .section {
-  background: var(--color-surface-container-lowest);
-  padding: 24px;
-  border-radius: 1rem;
-  margin-bottom: 20px;
-  border: 1px solid rgba(68, 71, 74, 0.15);
+  background: var(--color-surface-container-low);
+  padding: 16px;
+  border-radius: 0.75rem;
+  margin-bottom: 16px;
+  border: 1px solid rgba(68, 71, 74, 0.16);
 }
 
 .heading {
@@ -49,6 +49,10 @@
   line-height: 1.7;
   color: var(--color-on-surface-variant);
   margin-bottom: 8px;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
 }
 
 /* ===== Opening Hours ===== */
@@ -89,18 +93,18 @@
 /* ===== Contact Card ===== */
 
 .contactCard {
-  background: var(--color-surface-container-high);
-  padding: 24px;
-  border-radius: 1rem;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow-lg);
+  background: var(--color-surface-container-low);
+  padding: 16px;
+  border: 1px solid rgba(68, 71, 74, 0.16);
+  border-radius: 0.75rem;
+  margin-bottom: 16px;
 }
 
 .contactRow {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .contactRow:last-child {
@@ -124,6 +128,11 @@
   font-weight: 700;
 }
 
+.contactSeparator {
+  margin: 0 8px;
+  color: var(--color-outline);
+}
+
 .legalLink {
   display: inline-flex;
   align-items: center;
@@ -135,34 +144,6 @@
 .legalLink :global(.app-icon) {
   width: 15px;
   height: 15px;
-}
-
-.routeBtn {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding: 14px;
-  border-radius: 999px;
-  background: var(--gradient-brass);
-  color: var(--color-on-primary-fixed);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  border: none;
-  cursor: pointer;
-}
-
-.routeBtn:hover {
-  filter: brightness(1.1);
-  transform: scale(1.02);
-}
-
-.routeBtn:active {
-  transform: scale(0.98);
 }
 
 /* ===== Note ===== */

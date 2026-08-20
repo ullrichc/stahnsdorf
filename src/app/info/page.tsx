@@ -11,46 +11,54 @@ const content: Record<string, Record<string, string>> = {
   aboutTitle: { de: 'Über den Friedhof', en: 'About the Cemetery', fr: 'À propos du cimetière', pl: 'O cmentarzu', ru: 'О кладбище', sv: 'Om kyrkogården' },
   aboutText1: {
     de: 'Der Südwestkirchhof Stahnsdorf wurde 1909 als Waldfriedhof für die Berliner Kirchengemeinden angelegt. Mit über 206 Hektar gehört er zu den größten Friedhöfen Europas. Die Anlage zeichnet sich durch ihren einzigartigen Waldcharakter und die architektonisch bemerkenswerte Hauptkapelle im norwegischen Stabkirchenstil aus.',
-    en: 'The Südwestkirchhof Stahnsdorf was established in 1909 as a woodland cemetery for Berlin\'s church congregations. At over 206 hectares, it is one of the largest cemeteries in Europe. The grounds are distinguished by their unique forest character and the architecturally remarkable main chapel in Norwegian stave church style.',
-    fr: 'Le Südwestkirchhof Stahnsdorf a été créé en 1909 comme cimetière forestier pour les paroisses de Berlin. Avec plus de 206 hectares, c\'est l\'un des plus grands cimetières d\'Europe.',
-    pl: 'Südwestkirchhof Stahnsdorf został założony w 1909 roku jako cmentarz leśny dla berlińskich parafii. Z powierzchnią ponad 206 hektarów jest jednym z największych cmentarzy w Europie. Obiekt wyróżnia się unikalnym leśnym charakterem i niezwykłą architekturą głównej kaplicy w stylu norweskiego kościoła klepkowego.',
-    ru: 'Юго-западное кладбище (Штансдорф) было основано в 1909 году как лесное кладбище для берлинских приходов. Имея площадь более 206 гектаров, оно является одним из крупнейших кладбищ в Европе. Территория отличается уникальным лесным характером и примечательной архитектурой главной часовни в стиле норвежской ставкирки.',
-    sv: 'Sydvästra kyrkogården i Stahnsdorf (Südwestkirchhof Stahnsdorf) anlades 1909 som en skogskyrkogård för Berlins församlingar. Med sina över 206 hektar är den en av Europas största kyrkogårdar. Platsen kännetecknas av sin unika skogskaraktär och den arkitektoniskt anmärkningsvärda huvudkapellet i norsk stavkyrkostil.'
+    en: 'Südwestkirchhof Stahnsdorf was established in 1909 as a woodland cemetery for Berlin\'s church congregations. Covering more than 206 hectares, it is one of the largest cemeteries in Europe. The grounds are distinguished by their unique woodland character and the architecturally remarkable main chapel, designed in the style of a Norwegian stave church.',
+    fr: 'Le Südwestkirchhof Stahnsdorf a été aménagé en 1909 comme cimetière forestier destiné aux paroisses berlinoises. Avec plus de 206 hectares, il compte parmi les plus grands cimetières d’Europe. Le site se distingue par son caractère boisé unique et par sa remarquable chapelle principale, inspirée des églises norvégiennes en bois debout.',
+    pl: 'Südwestkirchhof Stahnsdorf założono w 1909 roku jako cmentarz leśny dla berlińskich parafii. Zajmuje ponad 206 hektarów i należy do największych cmentarzy w Europie. Teren wyróżnia się wyjątkowym leśnym charakterem oraz niezwykłą kaplicą główną, wzorowaną na norweskich kościołach klepkowych.',
+    ru: 'Юго-Западное кладбище Штансдорф было основано в 1909 году как лесное кладбище для берлинских приходов. Его площадь превышает 206 гектаров, что делает его одним из крупнейших кладбищ Европы. Территория отличается уникальным лесным обликом и примечательной главной часовней в стиле норвежской ставкирки.',
+    sv: 'Südwestkirchhof Stahnsdorf anlades 1909 som en skogskyrkogård för Berlins församlingar. Med sina drygt 206 hektar är den en av Europas största kyrkogårdar. Området präglas av sin unika skogskaraktär och det arkitektoniskt särpräglade huvudkapellet i norsk stavkyrkostil.'
   },
   aboutText2: {
     de: 'Zahlreiche bekannte Persönlichkeiten fanden hier ihre letzte Ruhestätte, darunter Künstler, Wissenschaftler und Politiker. Der Friedhof ist nicht nur ein Ort der Trauer, sondern auch ein bedeutendes Kultur- und Naturdenkmal.',
-    en: 'Numerous notable figures found their final resting place here, including artists, scientists, and politicians. The cemetery is not only a place of mourning but also an important cultural and natural monument.',
-    fr: 'De nombreuses personnalités y ont trouvé leur dernière demeure, notamment des artistes, des scientifiques et des politiciens.',
-    pl: 'Liczne znane osobistości znalazły tu miejsce ostatniego spoczynku, w tym artyści, naukowcy i politycy. Cmentarz to nie tylko miejsce żałoby, ale również ważny zabytek kultury i przyrody.',
-    ru: 'Многие известные личности нашли здесь свое последнее пристанище, среди них художники, ученые и политики. Кладбище является не только местом скорби, но и важным памятником культуры и природы.',
-    sv: 'Många kända personligheter har funnit sin sista vila här, däribland konstnärer, vetenskapsmän och politiker. Kyrkogården är inte bara en plats för sorg, utan också ett betydande kultur- och naturminne.'
+    en: 'Many notable figures found their final resting place here, including artists, scientists, and politicians. The cemetery is both a place of remembrance and an important cultural and natural monument.',
+    fr: 'De nombreuses personnalités y ont trouvé leur dernière demeure, notamment des artistes, des scientifiques et des responsables politiques. Le cimetière est à la fois un lieu de recueillement et un important site du patrimoine culturel et naturel.',
+    pl: 'Wiele znanych osobistości znalazło tu miejsce ostatniego spoczynku, wśród nich artyści, naukowcy i politycy. Cmentarz jest nie tylko miejscem zadumy, lecz także ważnym zabytkiem kultury i przyrody.',
+    ru: 'Здесь нашли последнее пристанище многие известные люди, в том числе деятели искусства, учёные и политики. Кладбище является не только местом скорби и памяти, но и важным памятником культуры и природы.',
+    sv: 'Många kända personer har fått sin sista vila här, bland dem konstnärer, forskare och politiker. Kyrkogården är inte bara en plats för sorg och minnen, utan också ett betydelsefullt kultur- och naturminne.'
   },
   didYouKnowTitle: { de: 'Wussten Sie?', en: 'Did you know?', fr: 'Le saviez-vous ?', pl: 'Czy wiesz, że?', ru: 'Знаете ли вы?', sv: 'Visste du?' },
   didYouKnow: {
     de: 'Der Friedhof beherbergt die berühmte Holzkapelle, die nach norwegischen Stabkirchen gestaltet und 1911 fertiggestellt wurde.',
-    en: 'The cemetery is home to the famous wooden chapel, modeled after Norwegian stave churches, completed in 1911.',
-    fr: 'Le cimetière abrite la célèbre chapelle en bois, inspirée des églises en bois debout norvégiennes, achevée en 1911.',
-    pl: 'Na terenie cmentarza znajduje się słynna drewniana kaplica, wzorowana na norweskich kościołach klepkowych, oddana do użytku w 1911 roku.',
-    ru: 'На кладбище находится знаменитая деревянная часовня, построенная по образцу норвежских ставкирок и завершенная в 1911 году.',
-    sv: 'På kyrkogården finns det berömda träkapellet, som är utformat efter norska stavkyrkor och färdigställdes 1911.'
+    en: 'The cemetery is home to its famous wooden chapel, modeled on Norwegian stave churches and completed in 1911.',
+    fr: 'Le cimetière abrite une célèbre chapelle en bois, inspirée des églises norvégiennes en bois debout et achevée en 1911.',
+    pl: 'Na terenie cmentarza znajduje się słynna drewniana kaplica, wzorowana na norweskich kościołach klepkowych i ukończona w 1911 roku.',
+    ru: 'На кладбище находится знаменитая деревянная часовня, созданная по образцу норвежских ставкирок и завершённая в 1911 году.',
+    sv: 'På kyrkogården finns det berömda träkapellet, som utformades efter norska stavkyrkor och stod färdigt 1911.'
   },
   contactTitle: { de: 'Kontakt', en: 'Contact', fr: 'Contact', pl: 'Kontakt', ru: 'Контакты', sv: 'Kontakt' },
+  createdBy: {
+    de: 'App erstellt von Dr. Carsten Ullrich',
+    en: 'App created by Dr. Carsten Ullrich',
+    fr: 'Application créée par le Dr Carsten Ullrich',
+    pl: 'Aplikację stworzył dr Carsten Ullrich',
+    ru: 'Приложение разработал д-р Карстен Ульрих',
+    sv: 'Appen skapades av dr Carsten Ullrich'
+  },
   legalLink: {
     de: 'Impressum & Datenschutz',
     en: 'Legal notice & privacy policy',
-    fr: 'Mentions légales et confidentialité',
+    fr: 'Mentions légales et protection des données',
     pl: 'Nota prawna i polityka prywatności',
-    ru: 'Правовая информация и политика конфиденциальности',
-    sv: 'Juridisk information och integritetspolicy'
+    ru: 'Правовая информация и защита данных',
+    sv: 'Juridisk information och dataskydd'
   },
   accessibilityTitle: { de: 'Besucherhinweis', en: 'Visitor Notice', fr: 'Avis aux visiteurs', pl: 'Informacje dla odwiedzających', ru: 'Информация для посетителей', sv: 'Besöksinformation' },
   accessibilityText: {
     de: 'Bitte verhalten Sie sich den Verstorbenen und dem Ort angemessen. Hunde sind an der Leine zu führen, und das Befahren mit Fahrrädern ist nur auf den Hauptwegen gestattet. Vielen Dank für Ihren Beitrag zur Erhaltung dieser historischen Stätte.',
-    en: 'Please behave respectfully towards the deceased and the grounds. Dogs must be kept on a leash, and cycling is only permitted on main paths. Thank you for contributing to the preservation of this historic site.',
-    fr: 'Veuillez vous comporter de manière respectueuse. Les chiens doivent être tenus en laisse. Merci de contribuer à la préservation de ce site.',
-    pl: 'Prosimy o zachowanie odpowiednie do powagi miejsca. Psy należy trzymać na smyczy, a jazda na rowerze jest dozwolona tylko na głównych ścieżkach. Dziękujemy za wkład w ochronę tego historycznego miejsca.',
-    ru: 'Пожалуйста, ведите себя подобающим образом по отношению к умершим и этому месту. Собак следует держать на поводке, а катание на велосипедах разрешено только по главным аллеям. Спасибо за ваш вклад в сохранение этого исторического памятника.',
-    sv: 'Vänligen uppträd respektfullt mot de avlidna och platsen. Hundar måste hållas i koppel, och cykling är endast tillåten på huvudvägarna. Tack för ditt bidrag till att bevara denna historiska plats.'
+    en: 'Please show respect for the deceased and the dignity of the grounds. Dogs must be kept on a leash, and cycling is permitted only on the main paths. Thank you for helping preserve this historic site.',
+    fr: 'Veuillez respecter les défunts et la dignité du lieu. Les chiens doivent être tenus en laisse et les vélos ne sont autorisés que sur les allées principales. Merci de contribuer à la préservation de ce site historique.',
+    pl: 'Prosimy o zachowanie szacunku dla zmarłych i powagi tego miejsca. Psy należy prowadzić na smyczy, a jazda na rowerze jest dozwolona wyłącznie na głównych alejach. Dziękujemy za pomoc w zachowaniu tego historycznego miejsca.',
+    ru: 'Просим уважительно относиться к памяти усопших и к этому месту. Собак следует держать на поводке, а катание на велосипедах разрешено только по главным аллеям. Спасибо за помощь в сохранении этого исторического памятника.',
+    sv: 'Vänligen visa hänsyn till de avlidna och platsens värdighet. Hundar ska hållas kopplade och cykling är endast tillåten på huvudvägarna. Tack för att du hjälper till att bevara denna historiska plats.'
   },
   dailyOpen: {
     de: 'Täglich geöffnet, auch an Feiertagen.',
@@ -60,14 +68,14 @@ const content: Record<string, Record<string, string>> = {
     ru: 'Открыто ежедневно, включая праздничные дни.',
     sv: 'Öppet dagligen, även på helgdagar.'
   },
-  routePlan: { de: 'Route planen', en: 'Plan route', fr: 'Planifier l\'itinéraire', pl: 'Planuj trasę', ru: 'Проложить маршрут', sv: 'Planera rutt' },
+  routePlan: { de: 'Route planen', en: 'Get directions', fr: 'Itinéraire', pl: 'Wyznacz trasę', ru: 'Проложить маршрут', sv: 'Hitta hit' },
   feedbackText: {
     de: 'Haben Sie Hinweise, Korrekturen oder Anregungen zur App? Wir freuen uns über Ihre Rückmeldung.',
     en: 'Do you have comments, corrections or suggestions about the app? We welcome your feedback.',
     fr: 'Vous avez des remarques, des corrections ou des suggestions concernant l’application ? Nous serons heureux de recevoir votre avis.',
-    pl: 'Masz uwagi, poprawki lub sugestie dotyczące aplikacji? Chętnie poznamy Twoją opinię.',
-    ru: 'У вас есть замечания, исправления или предложения по приложению? Мы будем рады вашей обратной связи.',
-    sv: 'Har du synpunkter, rättelser eller förslag om appen? Vi tar gärna emot din återkoppling.'
+    pl: 'Czy mają Państwo uwagi, poprawki lub sugestie dotyczące aplikacji? Chętnie poznamy Państwa opinię.',
+    ru: 'У вас есть замечания, исправления или предложения по приложению? Будем рады вашим отзывам.',
+    sv: 'Har du synpunkter, rättelser eller förslag som rör appen? Vi tar gärna emot din återkoppling.'
   },
   feedbackLink: {
     de: 'Rückmeldung zur App geben',
@@ -75,15 +83,15 @@ const content: Record<string, Record<string, string>> = {
     fr: 'Donner votre avis sur l’application',
     pl: 'Przekaż opinię o aplikacji',
     ru: 'Оставить отзыв о приложении',
-    sv: 'Ge återkoppling om appen'
+    sv: 'Lämna synpunkter på appen'
   },
 }
 
 const openingHours = [
-  { season: { de: 'Winter (Nov - Feb)', en: 'Winter (Nov - Feb)', fr: 'Hiver (Nov - Fév)', pl: 'Zima (Lis - Lut)', ru: 'Зима (Ноя - Фев)', sv: 'Vinter (Nov - Feb)' }, time: '08:00 – 16:00' },
-  { season: { de: 'Frühjahr (März - April)', en: 'Spring (Mar - Apr)', fr: 'Printemps (Mars - Avr)', pl: 'Wiosna (Mar - Kwi)', ru: 'Весна (Мар - Апр)', sv: 'Vår (Mar - Apr)' }, time: '08:00 – 18:00' },
-  { season: { de: 'Sommer (Mai - Aug)', en: 'Summer (May - Aug)', fr: 'Été (Mai - Août)', pl: 'Lato (Maj - Sie)', ru: 'Лето (Май - Авг)', sv: 'Sommar (Maj - Aug)' }, time: '08:00 – 20:00' },
-  { season: { de: 'Herbst (Sept - Okt)', en: 'Autumn (Sep - Oct)', fr: 'Automne (Sep - Oct)', pl: 'Jesień (Wrz - Paź)', ru: 'Осень (Сен - Окт)', sv: 'Höst (Sep - Okt)' }, time: '08:00 – 18:00' },
+  { season: { de: 'Winter (Nov.–Feb.)', en: 'Winter (Nov–Feb)', fr: 'Hiver (nov.–févr.)', pl: 'Zima (lis–lut)', ru: 'Зима (нояб.–февр.)', sv: 'Vinter (nov–feb)' }, time: '08:00 – 16:00' },
+  { season: { de: 'Frühjahr (März–Apr.)', en: 'Spring (Mar–Apr)', fr: 'Printemps (mars–avr.)', pl: 'Wiosna (mar–kwi)', ru: 'Весна (март–апр.)', sv: 'Vår (mars–apr)' }, time: '08:00 – 18:00' },
+  { season: { de: 'Sommer (Mai–Aug.)', en: 'Summer (May–Aug)', fr: 'Été (mai–août)', pl: 'Lato (maj–sie)', ru: 'Лето (май–авг.)', sv: 'Sommar (maj–aug)' }, time: '08:00 – 20:00' },
+  { season: { de: 'Herbst (Sept.–Okt.)', en: 'Autumn (Sep–Oct)', fr: 'Automne (sept.–oct.)', pl: 'Jesień (wrz–paź)', ru: 'Осень (сент.–окт.)', sv: 'Höst (sep–okt)' }, time: '08:00 – 18:00' },
 ]
 
 export default function InfoPage() {
@@ -151,15 +159,15 @@ export default function InfoPage() {
           <AppIcon name="location_on" className={styles.contactIcon} />
           <div className={styles.contactText}>
             <strong>Förderverein Südwestkirchhof Stahnsdorf e.V.</strong>
-            Bahnhofstraße 2<br />
-            14532 Stahnsdorf
+            Bahnhofstraße 2, 14532 Stahnsdorf
           </div>
         </div>
 
         <div className={styles.contactRow}>
           <AppIcon name="call" className={styles.contactIcon} />
           <div className={styles.contactText}>
-            <a href="tel:+491793793503">0179 3793503</a><br />
+            <a href="tel:+491793793503">0179 3793503</a>
+            <span className={styles.contactSeparator} aria-hidden="true">·</span>
             <a href="tel:+493329614106">03329 614106</a>
           </div>
         </div>
@@ -169,6 +177,21 @@ export default function InfoPage() {
           <div className={styles.contactText}>
             <a href="https://www.suedwestkirchhof.de" target="_blank" rel="noopener noreferrer">
               www.suedwestkirchhof.de
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.contactRow}>
+          <AppIcon name="code" className={styles.contactIcon} />
+          <div className={styles.contactText}>
+            <a
+              href="https://www.carstenullrich.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.legalLink}
+            >
+              {c('createdBy')}
+              <AppIcon name="open_in_new" />
             </a>
           </div>
         </div>
@@ -188,14 +211,20 @@ export default function InfoPage() {
           </div>
         </div>
 
-        <a
-          href="https://www.google.com/maps/dir/?api=1&destination=52.389506,13.180954"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.routeBtn}
-        >
-          {c('routePlan')}
-        </a>
+        <div className={styles.contactRow}>
+          <AppIcon name="directions_walk" className={styles.contactIcon} />
+          <div className={styles.contactText}>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=52.389506,13.180954"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.legalLink}
+            >
+              {c('routePlan')}
+              <AppIcon name="open_in_new" />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Visitor Notice */}

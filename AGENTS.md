@@ -37,7 +37,7 @@ Die App funktioniert: Leaflet-Karte mit CARTO-Dark-Matter-Kacheln, lokal gebünd
 | Backend | Firebase (Firestore + Auth + Storage — aktiv) |
 | Tests | Playwright (90 E2E Tests), Vitest (Unit), Firebase Rules Sandbox |
 | CI/CD | GitHub Actions (Tests bei PR/Push, Deploy auf Pages) |
-| Hosting | GitHub Pages (Pfad `/stahnsdorf`) |
+| Hosting | GitHub Pages (`/stahnsdorf`) und Vereinswebsite (`/files/app`) |
 | Firebase CLI | `firebase-tools` (devDependency, `npm run deploy:firestore`, `npm run deploy:storage`) |
 
 ## Projektstruktur
@@ -53,6 +53,8 @@ stahnsdorf/
 ├── data/
 │   └── stahnsdorf-backup-translated.json # Redaktioneller Master-Snapshot für POIs, Sammlungen und Bildreferenzen
 ├── docs/
+│   ├── anleitung-webhoster.md # Kompakte technische Übergabe an den Webhoster
+│   ├── deployment-suedwestkirchhof.md # Build, Installation und automatisches Deployment
 │   ├── schema.md            # ⭐ Verbindliches Datenmodell — IMMER zuerst lesen
 │   └── redaktionelle-leitlinien.md # Regeln für POI-Informationstexte
 ├── scripts/
@@ -108,7 +110,7 @@ stahnsdorf/
 │   └── map-overlay.geojson   # Gebündelte OSM-Friedhofsfläche und Wege
 ├── .env.local                # Firebase-Credentials (nicht im Repo)
 ├── .env.example              # Vorlage für .env.local
-└── next.config.js            # Static Export, basePath=/stahnsdorf
+└── next.config.js            # Static Export, konfigurierbarer Production-basePath
 ```
 
 ## Datenmodell (Kurzfassung)
@@ -177,7 +179,7 @@ Alle Felder verwenden **deutsche Namen**:
 - `public/map-overlay.geojson` wird nur bewusst mit `npm run map:overlay` aus OSM-Way 25029213 erzeugt. Build und Laufzeit fragen Overpass nicht ab. Wege werden an der Friedhofsfläche abgeschnitten; die Exportprüfung begrenzt die Datei auf 350 KB.
 - Die frische Hauptkarte startet an `poi_sws_hauptkapelle` mit Zoom 19. Automatische Ortung darf den Startfokus nur für einen ersten GPS-Fix innerhalb der Friedhofsgrenze ersetzen; gespeicherte Sitzungsansichten und Sammlungs-Karten bleiben davon unberührt.
 - Static Export: kein Server, kein SSR — alles client-seitig.
-- `basePath: '/stahnsdorf'` in Production (GitHub Pages).
+- Der Production-`basePath` kommt aus `APP_BASE_PATH`; ohne Variable bleibt der Standard `/stahnsdorf` für GitHub Pages. Der Webhoster-Build verwendet `/files/app`.
 - Laufzeit-IDs nutzen statische Query-Routen: `/poi?id=<id>`, `/sammlung?id=<id>` und `/admin/poi/edit?id=<id>`. Dadurch funktionieren neu in Firestore angelegte Inhalte ohne neuen Build. Die alten `[id]`-Routen bleiben als Legacy-Export bestehen; `src/app/not-found.tsx` konvertiert unbekannte alte Pfade.
 - Firestore-Hooks unterscheiden Netzwerkfehler von „nicht gefunden“, bieten Retry und ignorieren Ergebnisse nach dem Unmount.
 

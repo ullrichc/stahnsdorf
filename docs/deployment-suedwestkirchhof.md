@@ -1,8 +1,10 @@
 # Deployment auf suedwestkirchhof.de
 
+Eine kompakte, direkt an den Webhoster gerichtete Übergabe steht in [`anleitung-webhoster.md`](anleitung-webhoster.md). Dieses Dokument enthält darüber hinaus die internen Schritte für Build, GitHub-Konfiguration und Inbetriebnahme.
+
 Diese Anleitung beschreibt die Bereitstellung der Karten-App unter
 
-`https://www.suedwestkirchhof.de/stahnsdorf/`
+`https://www.suedwestkirchhof.de/files/app/`
 
 sowie die spätere automatische Veröffentlichung mit GitHub Actions.
 
@@ -10,13 +12,13 @@ sowie die spätere automatische Veröffentlichung mit GitHub Actions.
 
 Die App ist ein statischer Next.js-Export. Der Webserver benötigt daher weder Node.js noch PHP noch eine eigene Datenbank. Firestore, Firebase Authentication und Firebase Storage bleiben unverändert die Backend-Dienste.
 
-Der Produktions-Build verwendet bereits den `basePath` `/stahnsdorf`. Der Inhalt des Build-Ordners `out/` muss deshalb direkt in das Verzeichnis ausgeliefert werden, das unter `/stahnsdorf/` erreichbar ist. Der Ordner `out` selbst darf nicht als zusätzliche Verzeichnisebene kopiert werden.
+Der Production-`basePath` wird beim Build festgelegt. GitHub Pages verwendet weiterhin `/stahnsdorf`; der separate Build für die Vereinswebsite verwendet `/files/app`. Der Inhalt des Build-Ordners `out/` muss direkt in das Contao-Verzeichnis ausgeliefert werden, das unter `/files/app/` erreichbar ist. Der Ordner `out` selbst darf nicht als zusätzliche Verzeichnisebene kopiert werden.
 
 Die bisherige GitHub-Pages-Version sollte zunächst als Test- und Rückfallversion erhalten bleiben.
 
 ## Aufgaben des Vereins
 
-1. Die Ziel-URL `https://www.suedwestkirchhof.de/stahnsdorf/` bestätigen.
+1. Die Ziel-URL `https://www.suedwestkirchhof.de/files/app/` bestätigen.
 2. Auf der bestehenden Website einen Menüpunkt wie „Digitale Karte“ oder „Friedhofsplan“ anlegen.
 3. Die Datenschutzerklärung hinsichtlich Firebase, Google-Anmeldung und OpenStreetMap-Kartenkacheln prüfen und gegebenenfalls ergänzen.
 4. In Firebase unter **Authentication → Settings → Authorized domains** eintragen:
@@ -32,8 +34,7 @@ Die GPS-Position der Besucher wird nach aktuellem Code nur im Browser verarbeite
 npm ci
 npm test
 npm run typecheck
-npm run build
-npm run verify:export
+APP_BASE_PATH=/files/app npm run build
 ```
 
 Der fertige statische Export liegt anschließend im Ordner `out/`.
@@ -49,63 +50,64 @@ Die im Browser verwendete Firebase-Webkonfiguration ist keine geheime Server-Zug
 
 ## Manuelle Installation durch den Hoster
 
-Im Document Root der bestehenden Website wird ein Unterordner `stahnsdorf` angelegt:
+In der Contao-Dateiverwaltung wird der öffentlich erreichbare Unterordner `files/app` verwendet:
 
 ```text
 <document-root>/
 ├── index.html
 ├── kirchhof.html
 ├── ...
-└── stahnsdorf/
-    ├── index.html
-    ├── 404.html
-    ├── poi.html
-    ├── sammlung.html
-    ├── admin.html
-    ├── _next/
-    ├── media/
-    └── ...
+└── files/
+    └── app/
+        ├── index.html
+        ├── 404.html
+        ├── poi.html
+        ├── sammlung.html
+        ├── admin.html
+        ├── _next/
+        ├── media/
+        └── ...
 ```
 
-Der vollständige Inhalt von `out/` wird nach `<document-root>/stahnsdorf/` kopiert.
+Der vollständige Inhalt von `out/` wird nach `<document-root>/files/app/` kopiert.
 
 ### Apache
 
-Im Verzeichnis `stahnsdorf` kann folgende `.htaccess` verwendet werden:
+Im Verzeichnis `files/app` kann folgende `.htaccess` verwendet werden:
 
 ```apache
 DirectoryIndex index.html
 RewriteEngine On
-RewriteBase /stahnsdorf/
+RewriteBase /files/app/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
-ErrorDocument 404 /stahnsdorf/404.html
+ErrorDocument 404 /files/app/404.html
 ```
 
-Zusätzlich muss `/stahnsdorf` dauerhaft auf `/stahnsdorf/` umgeleitet werden. Falls `.htaccess` deaktiviert ist, werden dieselben Regeln in der Virtual-Host-Konfiguration hinterlegt.
+Zusätzlich muss `/files/app` dauerhaft auf `/files/app/` umgeleitet werden. Falls `.htaccess` deaktiviert ist, werden dieselben Regeln in der Virtual-Host-Konfiguration hinterlegt.
 
 ### nginx
 
 ```nginx
-location = /stahnsdorf {
-    return 301 /stahnsdorf/;
+location = /files/app {
+    return 301 /files/app/;
 }
 
-location /stahnsdorf/ {
+location /files/app/ {
     try_files $uri $uri.html $uri/ =404;
-    error_page 404 =404 /stahnsdorf/404.html;
+    error_page 404 =404 /files/app/404.html;
 }
 ```
 
 Die Auflösung von URLs ohne `.html` ist unter anderem für folgende Routen erforderlich:
 
-- `/stahnsdorf/poi?id=<poi-id>`
-- `/stahnsdorf/sammlung?id=<sammlungs-id>`
-- `/stahnsdorf/admin/poi/edit?id=<poi-id>`
+- `/files/app/poi?id=<poi-id>`
+- `/files/app/sammlung?id=<sammlungs-id>`
+- `/files/app/admin/poi/edit?id=<poi-id>`
 
 ## Anforderungen an den Webserver
 
@@ -117,7 +119,7 @@ Die Auflösung von URLs ohne `.html` ist unter anderem für folgende Routen erfo
 
 Falls eine Content-Security-Policy aktiv ist, müssen die tatsächlich genutzten Verbindungen mindestens für folgende Ziele geprüft und freigegeben werden:
 
-- `https://*.tile.openstreetmap.org`
+- `https://*.basemaps.cartocdn.com`
 - `https://firestore.googleapis.com`
 - `https://firebasestorage.googleapis.com`
 - `https://identitytoolkit.googleapis.com`
@@ -125,7 +127,7 @@ Falls eine Content-Security-Policy aktiv ist, müssen die tatsächlich genutzten
 - `https://*.firebaseapp.com`
 - `https://accounts.google.com`
 
-Das Redaktionswerkzeug ist unter `https://www.suedwestkirchhof.de/stahnsdorf/admin` erreichbar. Die statische HTML-Seite ist öffentlich abrufbar; Anmeldung und Schreibrechte werden durch Google-Login, Editor-Whitelist und Firebase Rules geschützt.
+Das Redaktionswerkzeug ist unter `https://www.suedwestkirchhof.de/files/app/admin` erreichbar. Die statische HTML-Seite ist öffentlich abrufbar; Anmeldung und Schreibrechte werden durch Google-Login, Editor-Whitelist und Firebase Rules geschützt.
 
 ## Abnahme der manuellen Installation
 
@@ -137,10 +139,10 @@ Nach der Installation werden mindestens folgende Punkte geprüft:
 4. Sammlungen, Sprachwechsel und Audio funktionieren.
 5. Eine frische Karten-Sitzung startet an der Friedhofskapelle mit sichtbaren POI-Namen. Bei bereits freigegebenem GPS und einem Standort innerhalb des Friedhofs wird stattdessen die aktuelle Position fokussiert; außerhalb bleibt der Kapellenfokus bestehen.
 6. Browser-Zoom bleibt möglich.
-7. Ein freigeschalteter Editor kann sich unter `/stahnsdorf/admin` anmelden.
+7. Ein freigeschalteter Editor kann sich unter `/files/app/admin` anmelden.
 8. Die Browserkonsole zeigt keine 404-, CSP-, CORS- oder Firebase-Fehler.
 9. Unbekannte und alte Routen werden von `404.html` korrekt behandelt.
-10. Die bestehende Website außerhalb von `/stahnsdorf/` bleibt unverändert.
+10. Die bestehende Website außerhalb von `/files/app/` bleibt unverändert.
 
 ## Automatisches Deployment mit GitHub Actions
 
@@ -172,18 +174,18 @@ releases/
 ├── <commit-2>/
 └── <commit-3>/
 
-stahnsdorf -> releases/<aktuelle-version>
+app -> releases/<aktuelle-version>
 ```
 
 So kann erst vollständig hochgeladen und danach auf die neue Version umgeschaltet werden. Ein Rollback besteht lediglich darin, den Link wieder auf die vorherige Version zu setzen.
 
-Falls der Hoster keine Releases und Symlinks unterstützt, kann direkt nach `stahnsdorf/` synchronisiert werden. Das ist einfacher, bietet aber ein schwächeres Rollback und kann während des Uploads kurzzeitig einen gemischten Dateistand ausliefern.
+Falls der Hoster keine Releases und Symlinks unterstützt, kann direkt nach `files/app/` synchronisiert werden. Das ist einfacher, bietet aber ein schwächeres Rollback und kann während des Uploads kurzzeitig einen gemischten Dateistand ausliefern.
 
 ### GitHub Environment
 
 Im Repository unter **Settings → Environments** wird ein Environment `production-website` angelegt:
 
-- Deployment-URL: `https://www.suedwestkirchhof.de/stahnsdorf/`
+- Deployment-URL: `https://www.suedwestkirchhof.de/files/app/`
 - nur Branch `main` darf deployen
 - optional: erforderliche manuelle Freigabe durch einen Verantwortlichen
 - optional: Selbstfreigabe des Auslösers verhindern
@@ -205,9 +207,14 @@ Der Hostschlüssel muss vom Hoster über einen unabhängigen, vertrauenswürdige
 
 ### Build-Artefakt hochladen
 
-Der Build-Job in `.github/workflows/deploy.yml` erhält nach `npm run build` zusätzlich:
+Für die Vereinswebsite wird ein eigener Build-Schritt mit `APP_BASE_PATH: /files/app` benötigt. Nach diesem Build wird das Hoster-Artefakt hochgeladen:
 
 ```yaml
+- name: Build website export
+  run: npm run build
+  env:
+    APP_BASE_PATH: /files/app
+
 - name: Upload static export
   uses: actions/upload-artifact@v4
   with:
@@ -216,7 +223,7 @@ Der Build-Job in `.github/workflows/deploy.yml` erhält nach `npm run build` zus
     retention-days: 14
 ```
 
-Das vorhandene spezielle GitHub-Pages-Artefakt kann parallel weitergeführt werden.
+Das GitHub-Pages-Artefakt wird weiterhin separat mit `APP_BASE_PATH: /stahnsdorf` gebaut. Wegen der im Export eingebetteten Pfade dürfen die beiden Build-Artefakte nicht vertauscht werden.
 
 ### Beispiel für den Deployment-Job
 
@@ -226,7 +233,7 @@ deploy-webserver:
   runs-on: ubuntu-latest
   environment:
     name: production-website
-    url: https://www.suedwestkirchhof.de/stahnsdorf/
+    url: https://www.suedwestkirchhof.de/files/app/
   concurrency: production-website
 
   steps:
@@ -275,7 +282,7 @@ Für ein atomares Release-Deployment wird statt des direkten Zielordners zunäch
 
 Folgender Text kann an den Hoster geschickt werden:
 
-> Unterstützt der Server SSH/SFTP und rsync? Bitte nennen Sie Hostname, Port, Benutzernamen und den exakten absoluten Zielpfad für `https://www.suedwestkirchhof.de/stahnsdorf/`. Bitte richten Sie einen nur auf die App-Verzeichnisse beschränkten Deploy-Benutzer ein und übermitteln Sie den SSH-Hostschlüssel über einen unabhängigen, vertrauenswürdigen Weg. Können Releases in getrennte Ordner hochgeladen und anschließend per Symlink atomar aktiviert werden?
+> Unterstützt der Server SSH/SFTP und rsync? Bitte nennen Sie Hostname, Port, Benutzernamen und den exakten absoluten Zielpfad für `https://www.suedwestkirchhof.de/files/app/`. Bitte richten Sie einen nur auf die App-Verzeichnisse beschränkten Deploy-Benutzer ein und übermitteln Sie den SSH-Hostschlüssel über einen unabhängigen, vertrauenswürdigen Weg. Können Releases in getrennte Ordner hochgeladen und anschließend per Symlink atomar aktiviert werden?
 
 ## Weiterführende Dokumentation
 
