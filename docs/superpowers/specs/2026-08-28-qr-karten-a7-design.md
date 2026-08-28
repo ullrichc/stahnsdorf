@@ -13,13 +13,16 @@ Zwei druckfertige PDF-Dateien machen den Zugang zur Karten-App des Südwestkirch
 - DIN A7 bezeichnet das zugeschnittene Papierformat vor dem Laminieren; der verschweißte Laminatrand vergrößert die fertige Karte
 - weißer Hintergrund mit den Farben des bestehenden Festplakats `outputs/festplakat-fest-2026-09-05.html`
 - Dunkelgrün `#00362C`, Mittelgrün `#15574D` und Orange `#F28F04`
-- 46 x 46 mm großer, kontrastreicher QR-Code in Dunkelgrün auf Weiß
-- Fehlerkorrekturstufe M, mindestens vier QR-Module weiße Ruhezone und mindestens 0,8 mm gedruckte Modulgröße
+- insgesamt 46 x 46 mm großer, kontrastreicher QR-Code in Dunkelgrün auf Weiß; dieses Außenmaß schließt die weiße Ruhezone ein
+- Fehlerkorrekturstufe M, exakt vier QR-Module weiße Ruhezone und mindestens 0,8 mm gedruckte Modulgröße
 - Überschrift: "Karte des Südwestkirchhofs"
 - Handlungsaufforderung: "Mit der Smartphone-Kamera scannen"
 - ausgeschriebene Ersatzadresse: `suedwestkirchhof.de/app`
 - Sicherheitsabstand von mindestens 5 mm zu allen Schnittkanten
-- Überschrift in einer kräftigen Serifenschrift, Handlungsaufforderung und Adresse in einer gut lesbaren serifenlosen Schrift
+- Überschrift zentriert und kräftig, Handlungsaufforderung und Adresse zentriert in einer gut lesbaren serifenlosen Schrift
+- die konkrete Schriftwahl, Schriftgröße und Feinabstimmung der Abstände liegt im gestalterischen Ermessen der Umsetzung, solange der 5-mm-Sicherheitsabstand, die QR-Größe und die klare Hierarchie eingehalten werden
+- alle verwendeten Schriften werden vollständig in die PDF eingebettet oder in Pfade umgewandelt
+- der orangefarbene Akzent wird als kurze waagerechte Linie zwischen Überschrift und QR-Code eingesetzt
 - keine Beschnittzugabe
 
 ## A4-Druckbogen
@@ -30,8 +33,10 @@ Zwei druckfertige PDF-Dateien machen den Zugang zur Karten-App des Südwestkirch
 - jede A7-Karte wird auf dem A4-Bogen um 90 Grad gedreht, damit acht Karten nahezu ohne Verschnitt passen
 - die gedrehte Karte misst auf dem Bogen 105 x 74 mm; das Raster misst damit 210 x 296 mm
 - das Raster wird vertikal zentriert und beginnt 0,5 mm unter der oberen Seitenkante
-- Spaltengrenze bei x = 105 mm; Zeilengrenzen bei y = 0,5 / 74,5 / 148,5 / 222,5 / 296,5 mm
-- Schnittlinien in 0,15 pt und Hellgrau `#B8C0BC`, exakt auf den Kartengrenzen; die Linien werden beim Schneiden entfernt beziehungsweise liegen nur auf der späteren Schnittkante
+- Spaltengrenze bei x = 105 mm; innere Zeilengrenzen bei y = 74,5 / 148,5 / 222,5 mm
+- Schnittlinien in 0,15 pt und Hellgrau `#B8C0BC`, exakt auf den inneren Kartengrenzen; die Linien werden beim Schneiden entfernt beziehungsweise liegen nur auf der späteren Schnittkante
+- die A4-Blattkanten dienen als äußere Kartengrenzen; bei Druckern ohne Randlosfunktion sind dort keine gedruckten Schnittlinien erforderlich
+- die beiden äußeren Kartenreihen dürfen durch den verbleibenden Millimeter insgesamt höchstens 0,5 mm von der nominalen A7-Höhe abweichen; diese Schneidetoleranz ist für die anschließende Laminierung akzeptiert
 - nach dem Ausschneiden werden die Karten ins Hochformat gedreht
 - alle Karten sind inhaltlich und gestalterisch identisch mit der Einzelkarte
 - Druckhinweis im PDF-Metadatenfeld und in der Übergabe: mit 100 % beziehungsweise "Tatsächliche Größe" drucken, nicht "An Seite anpassen"
