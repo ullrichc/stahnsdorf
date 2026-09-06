@@ -176,6 +176,7 @@ Alle Felder verwenden **deutsche Namen**:
 - `src/lib/useFirestore.ts` enthält die Hooks für Firestore-Zugriff (visitor + admin).
 - `src/lib/content.ts` liest den JSON-Master für Tests und statische Parameter; die App lädt zur Laufzeit die daraus abgeleitete Firestore-Kopie.
 - Die Karte nutzt **Raw Leaflet** (nicht react-leaflet), obwohl react-leaflet installiert ist.
+- CARTO-Dark-Matter-Kacheln werden mit dem projektgebundenen Basemaps-Key des Vereins als `key`-Parameter in `src/components/ClientMap.tsx` geladen. Der Key ist Bestandteil des statischen Browser-Bundles; ein Wechsel erfordert einen neuen Build und dessen Veröffentlichung. CARTO- und OpenStreetMap-Attribution müssen sichtbar bleiben.
 - `public/map-overlay.geojson` wird nur bewusst mit `npm run map:overlay` aus OSM-Way 25029213 erzeugt. Build und Laufzeit fragen Overpass nicht ab. Wege werden an der Friedhofsfläche abgeschnitten; die Exportprüfung begrenzt die Datei auf 350 KB.
 - Die frische Hauptkarte startet an `poi_sws_hauptkapelle` mit Zoom 19. Automatische Ortung darf den Startfokus nur für einen ersten GPS-Fix innerhalb der Friedhofsgrenze ersetzen; gespeicherte Sitzungsansichten und Sammlungs-Karten bleiben davon unberührt.
 - Static Export: kein Server, kein SSR — alles client-seitig.

@@ -92,6 +92,8 @@ GitHub Pages wird weiterhin mit dem Basispfad `/stahnsdorf` gebaut. Für die Ver
 
 ### Statisches Karten-Overlay
 
+Die CARTO-Dark-Matter-Hintergrundkarte verwendet den projektgebundenen Basemaps-Key des Vereins als `key`-Parameter in `src/components/ClientMap.tsx`. Er wird mit dem Browser-Code ausgeliefert; für lokale Entwicklung, GitHub Pages und den Webhoster-Build ist keine zusätzliche Umgebungsvariable nötig. Bei einem Schlüsselwechsel muss die App neu gebaut und veröffentlicht werden. Falls nach der Aktualisierung noch „API key required“ erscheint, die Seite mit `Strg+F5` neu laden. Die CARTO- und OpenStreetMap-Attribution bleibt sichtbar.
+
 `public/map-overlay.geojson` enthält die Friedhofsfläche aus [OSM-Way 25029213](https://www.openstreetmap.org/way/25029213) sowie die darin verlaufenden Wege. Die Datei wird mit `npm run map:overlay` über Overpass neu erzeugt, an der Friedhofsgrenze abgeschnitten, auf sechs Nachkommastellen gerundet und stabil sortiert. Dieser Befehl ist nur nötig, wenn sich das OSM-Wegenetz geändert hat; Entwicklung, Build und App laden keine Daten von Overpass.
 
 Die Fläche ist in allen Zoomstufen sichtbar. Hauptwege (`service`, `pedestrian`) erscheinen ab Zoom 15, kleinere Wege ab Zoom 17. Die Exportprüfung begrenzt das Overlay auf 350 KB. OSM-Quelle, Datenstand und Erzeugungszeit bleiben als Metadaten in der Datei erhalten; die Attribution wird in der Karte angezeigt.

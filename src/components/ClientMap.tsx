@@ -46,7 +46,7 @@ export default function ClientMap({ center, zoom, className, zoomControl = true,
 
     L.control.attribution({ position: 'bottomleft', prefix: false }).addTo(instance)
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_2yux_1_536979048de1583437057be5', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
       maxNativeZoom: 20,
       maxZoom: 22,
