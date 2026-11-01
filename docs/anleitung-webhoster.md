@@ -48,12 +48,13 @@ RewriteEngine On
 RewriteBase /files/app/
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
 ErrorDocument 404 /files/app/404.html
 ```
+
+Die HTML-Auflösung muss auch dann greifen, wenn ein gleichnamiger Ordner existiert: Next.js exportiert beispielsweise `info.html` neben `info/` mit internen Navigationsdaten. Deshalb darf hier keine zusätzliche Bedingung `!-d` stehen.
 
 Die Weiterleitung von `/files/app` auf `/files/app/` muss bei Bedarf in der übergeordneten `.htaccess` oder im Virtual Host eingerichtet werden. Falls `.htaccess` deaktiviert ist, sind die Regeln direkt in die Virtual-Host-Konfiguration zu übernehmen.
 

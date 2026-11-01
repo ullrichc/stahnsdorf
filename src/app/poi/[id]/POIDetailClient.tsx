@@ -5,9 +5,11 @@ import { usePOI } from '@/lib/useFirestore'
 import POIDetailContent from './POIDetailContent'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { useBookmarkPageUnavailable } from '@/lib/ActiveDialogContext'
 
 export default function POIDetailClient({ id }: { id: string }) {
   const { poi, loading, error, notFound, retry } = usePOI(id)
+  useBookmarkPageUnavailable(loading || !!error || notFound || !poi)
   const locale = useLocale()
   const dict = useDictionary(locale)
 

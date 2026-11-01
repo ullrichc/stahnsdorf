@@ -9,11 +9,13 @@ const STORAGE_KEY = 'locale'
 type LocaleContextType = {
   locale: SupportedLocale
   setLocale: (locale: SupportedLocale) => void
+  initialized: boolean
 }
 
 const LocaleContext = createContext<LocaleContextType>({
   locale: DEFAULT_LOCALE,
   setLocale: () => {},
+  initialized: false,
 })
 
 function detectBrowserLocale(): SupportedLocale {
@@ -26,7 +28,8 @@ function detectBrowserLocale(): SupportedLocale {
 
 function getInitialLocale(): SupportedLocale {
   if (typeof window === 'undefined') return DEFAULT_LOCALE
-  const stored = localStorage.getItem(STORAGE_KEY)
+  let stored: string | null = null
+  try { stored = window.localStorage.getItem(STORAGE_KEY) } catch { /* Storage may be disabled. */ }
   if (stored && (SUPPORTED_LOCALES as readonly string[]).includes(stored)) {
     return stored as SupportedLocale
   }
@@ -45,7 +48,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (mounted) {
       document.documentElement.lang = locale
-      localStorage.setItem(STORAGE_KEY, locale)
+      try { window.localStorage.setItem(STORAGE_KEY, locale) } catch { /* Language still works without persistence. */ }
     }
   }, [locale, mounted])
 
@@ -54,7 +57,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <LocaleContext.Provider value={{ locale, setLocale }}>
+    <LocaleContext.Provider value={{ locale, setLocale, initialized: mounted }}>
       {children}
     </LocaleContext.Provider>
   )

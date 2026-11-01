@@ -188,6 +188,8 @@ Alle Felder verwenden **deutsche Namen**:
 - Unterstützt: `de`, `en`, `fr`, `pl`, `ru`, `sv`
 - Fallback: gewünschte Sprache → `de` → erste verfügbare
 - `LocaleContext` liefert die aktuelle Sprache im gesamten Component-Tree
+- Der mobile Lesezeichen-Hinweis (`BookmarkHint`, `BookmarkHelp`) wartet auf die Sprachinitialisierung. Übersetzungen und herstellerbasierte Anleitungen stehen typisiert in `src/lib/bookmark-copy.ts`; Browsererkennung in `bookmark-browser.ts`. Mehrdeutige iPad-Kennungen bekommen allgemeine Hilfe.
+- „Schließen“ merkt die Bestätigung unter `swk:<basePath>:bookmark-hint:v1` lokal. Bei gesperrtem Speicher folgen Sitzungsspeicher und Dokumentzustand; nach vollständigem Neuladen ohne beide Speicher kann der Hinweis erneut erscheinen. Admin-, Fehlerseiten und Standalone-Fenster sind ausgenommen. `ActiveDialogContext` koordiniert Lesezeichen-Hilfe und Bild-Lightbox; der Hinweis reserviert Platz statt die Karte zu überdecken.
 
 ### Firebase
 - Project-ID: `stahnsdorf-90e03`

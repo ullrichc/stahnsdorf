@@ -7,6 +7,7 @@ Eine interaktive Kartenanwendung und POI-Datenbank für den [Südwestkirchhof St
 - **Live-Daten aus Firestore** — POIs und Sammlungen werden in Echtzeit geladen
 - **Offline-Unterstützung** — Daten werden via IndexedDB zwischengespeichert
 - **Automatische Spracherkennung** — Anzeige auf Deutsch, Englisch, Französisch, Polnisch, Russisch oder Schwedisch
+- **Lesezeichen-Hinweis** — beim ersten mobilen Besuch mit automatisch passender Browseranleitung und „Schließen“; die Hilfe bleibt auf der Infoseite erreichbar
 - **Globale Suche** — einklappbare Namenssuche mit direktem Kartenfokus
 - **Sammlungen** — thematisch kuratierte Gruppen mit Beschreibung, GPS-Ortsliste und Karte
 - **POI-Bilder** — Detailseiten zeigen Bilder mit Lightbox, Zoom und Verschieben
@@ -83,6 +84,12 @@ npm run build        # Production Static Export
 npm run verify:export # Export-Routen, 404-Fallback, Icons und Browser-Zoom prüfen
 npm run map:overlay  # Statisches OSM-Karten-Overlay bewusst aktualisieren
 ```
+
+### Lesezeichen-Hinweis
+
+Der Hinweis erscheint auf öffentlichen Seiten bei einem ersten mobilen Besuch, nicht im Admin, auf Fehlerseiten oder im Standalone-Modus. „Schließen“ speichert nur die Hinweisbestätigung, nicht den Erfolg eines Browser-Lesezeichens. Die Speicherung gilt pro Browser, Origin und App-Unterpfad; ohne verfügbaren lokalen bzw. Sitzungsspeicher bleibt nur der laufende Dokumentzustand. Die Anleitung lässt sich jederzeit auf der Infoseite erneut öffnen. Unklare Browserkennungen, etwa Safari-artige iPad-Kennungen, erhalten allgemeine Hilfe mit freiwilliger Korrektur.
+
+Implementierung und Prüfstand: [Lesezeichen-Plan](docs/superpowers/plans/2026-11-01-bookmark-hint.md). Automatisierte UA-Fixtures sind keine Tests nativer Browsermenüs; reale iPhone-/Android- und Screenreader-Prüfungen bleiben getrennt ausgewiesen.
 
 ## 📦 Build & Deployment
 

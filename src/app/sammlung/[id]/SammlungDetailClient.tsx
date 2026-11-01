@@ -5,9 +5,11 @@ import { useCollection } from '@/lib/useFirestore'
 import SammlungContent from './SammlungContent'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { useBookmarkPageUnavailable } from '@/lib/ActiveDialogContext'
 
 export default function SammlungDetailClient({ id }: { id: string }) {
   const { collection, loading, error, notFound, retry } = useCollection(id)
+  useBookmarkPageUnavailable(loading || !!error || notFound || !collection)
   const locale = useLocale()
   const dict = useDictionary(locale)
 

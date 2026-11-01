@@ -19,8 +19,10 @@ import AudioPlayer from '@/components/AudioPlayer'
 import styles from './page.module.css'
 import AppIcon from '@/components/AppIcon'
 import { getPoiTypeLabel } from '@/lib/poi-type'
+import { useActiveDialog } from '@/lib/ActiveDialogContext'
 
 export default function POIDetailContent({ poi }: { poi: POI }) {
+  const { activeDialog, openDialog, closeDialog } = useActiveDialog()
   const locale = useLocale()
   const dict = useDictionary(locale)
   const router = useRouter()
@@ -52,9 +54,18 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
   const lightboxOpen = activeImageIndex !== null
 
   useEffect(() => {
+    if (activeDialog !== 'lightbox') setActiveImageIndex(null)
+  }, [activeDialog])
+  useEffect(() => () => closeDialog('lightbox'), [closeDialog, poi.id])
+  useEffect(() => {
+    if (!lightboxOpen) closeDialog('lightbox')
+  }, [lightboxOpen, closeDialog])
+
+  useEffect(() => {
     if (!lightboxOpen) return
 
     const scrollY = window.scrollY
+    const route = `${window.location.pathname}${window.location.search}`
     const previousStyles = {
       overflow: document.body.style.overflow,
       position: document.body.style.position,
@@ -112,7 +123,7 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
       document.body.style.width = previousStyles.width
       window.scrollTo(0, scrollY)
       window.removeEventListener('keydown', handleKeyDown)
-      openerRef.current?.focus()
+      if (route === `${window.location.pathname}${window.location.search}` && openerRef.current?.isConnected) openerRef.current.focus()
     }
   }, [lightboxOpen, images.length])
 
@@ -202,6 +213,7 @@ export default function POIDetailContent({ poi }: { poi: POI }) {
                       type="button"
                       className={styles.galleryButton}
                       onClick={(event) => {
+                        if (!openDialog('lightbox')) return
                         openerRef.current = event.currentTarget
                         setActiveImageIndex(index)
                       }}
