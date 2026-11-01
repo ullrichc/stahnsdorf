@@ -5,9 +5,11 @@ import { useSearchParams } from 'next/navigation'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
 import POIDetailClient from './[id]/POIDetailClient'
+import { useBookmarkPageUnavailable } from '@/lib/ActiveDialogContext'
 
 export default function POIQueryPageClient() {
   const id = useSearchParams().get('id')
+  useBookmarkPageUnavailable(!id)
   const locale = useLocale()
   const dict = useDictionary(locale)
 

@@ -6,8 +6,10 @@ import { getAppBasePath } from '@/lib/app-path'
 import { normalizeInternalRedirect } from '@/lib/redirect'
 import { useLocale } from '@/lib/useLocale'
 import { useDictionary } from '@/lib/ui-dictionary'
+import { useBookmarkPageUnavailable } from '@/lib/ActiveDialogContext'
 
 export default function NotFound() {
+  useBookmarkPageUnavailable()
   const locale = useLocale()
   const dict = useDictionary(locale)
 

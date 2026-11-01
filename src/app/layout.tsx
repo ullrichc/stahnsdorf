@@ -3,6 +3,8 @@ import '@/styles/globals.css'
 import { Metadata, Viewport } from 'next'
 import BottomNav from '@/components/BottomNav'
 import { LocaleProvider } from '@/lib/LocaleContext'
+import { ActiveDialogProvider } from '@/lib/ActiveDialogContext'
+import BookmarkHint from '@/components/BookmarkHint'
 
 export const metadata: Metadata = {
   title: 'Südwestkirchhof Stahnsdorf',
@@ -19,8 +21,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de" suppressHydrationWarning>
       <body>
         <LocaleProvider>
-          <main className="app-main">{children}</main>
-          <BottomNav />
+          <ActiveDialogProvider>
+            <main className="app-main">{children}</main>
+            <BookmarkHint />
+            <BottomNav />
+          </ActiveDialogProvider>
         </LocaleProvider>
       </body>
     </html>

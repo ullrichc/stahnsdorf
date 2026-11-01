@@ -3,6 +3,7 @@
 import { useLocale } from '@/lib/useLocale'
 import styles from './page.module.css'
 import AppIcon from '@/components/AppIcon'
+import { BookmarkHelpButton } from '@/components/BookmarkHelp'
 import { feedbackFormUrl } from '@/lib/feedback'
 
 const content: Record<string, Record<string, string>> = {
@@ -228,6 +229,7 @@ export default function InfoPage() {
       </div>
 
       {/* Visitor Notice */}
+      <section className={styles.section}><BookmarkHelpButton /></section>
       <section className={styles.section}>
         <h2 className={styles.heading}>
           <AppIcon name="info" className={styles.headingIcon} />
