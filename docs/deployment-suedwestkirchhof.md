@@ -81,12 +81,13 @@ RewriteEngine On
 RewriteBase /files/app/
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
 ErrorDocument 404 /files/app/404.html
 ```
+
+Gleichnamige Next.js-Datenordner wie `info/` dürfen die Auflösung auf `info.html` nicht verhindern; daher wird hier bewusst nicht auf `!-d` geprüft.
 
 Zusätzlich muss `/files/app` dauerhaft auf `/files/app/` umgeleitet werden. Falls `.htaccess` deaktiviert ist, werden dieselben Regeln in der Virtual-Host-Konfiguration hinterlegt.
 
